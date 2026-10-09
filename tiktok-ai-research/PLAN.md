@@ -123,3 +123,13 @@ See the chat message (same list, numbered 1–8).
 - Export layout, third-party guides: https://www.scrolldecoded.com/blog/tiktok-data-export-guide/ · https://aitrove.app/export-tiktok-favorites/ · https://www.getphyllo.com/post/how-to-download-tiktok-data-see-everything-the-app-knows-about-you
 - Claude in Chrome overview: https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome.md
 - Cloud environment network access: https://code.claude.com/docs/en/cloud-environments#network-access
+
+## Decisions from Haji (2026-10-09)
+
+- Volume: hundreds, not thousands.
+- Folders: keep existing saved folders; I create the new ones.
+- Scope: organize ALL liked videos into saved folders first; deep dive only the AI folder.
+- Unlike policy: unlike only after a verified save. Goal is a clean Likes tab.
+- Creator deep-dive cap: last 50 posts per AI creator.
+- Dashboard: cloud-hosted claude.ai artifact.
+- Browser: Claude in Chrome is open on Haji's computer with TikTok. Note: this cloud session has no link to it; the browser work must run from a session started in the Claude desktop app / Cowork (or a claude.ai session with Devices → his computer selected).
