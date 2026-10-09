@@ -6,30 +6,30 @@ Legend: **YOU** = something you do. **ME** = I do it, you do nothing.
 
 ---
 
-## Part 1 — Setup (YOU, one time, about 15 minutes total)
+## Part 1 — Setup (YOU, one time)
 
-**Step 1. Request your TikTok data export (phone, 2 minutes).**
-Open TikTok → Profile → ☰ (top right) → Settings and privacy → Account → Download your data → choose **JSON** (not TXT) → Request data.
-*Why:* this gives me TikTok's official list of every video you ever liked and saved. It is the safety net. When we unlike hundreds of videos, this file proves nothing was lost. It takes 1 to 4 days to arrive. When it does, download it on your phone and upload the zip into this chat.
+**Step 1. Unblock tiktok.com for this chat. DONE and verified 2026-10-09.**
 
-**Step 2. Unblock tiktok.com for this chat (20 seconds).**
-At the top of this chat, click the environment name in the title bar → Edit → Network access. If there is a "full" or "unrestricted" option, pick it. If it only allows adding domains, add `tiktok.com`, `tiktokv.com`, `tiktokcdn.com`, `tiktokcdn-us.com`, `ttwstatic.com`, keep "Allow package managers" checked, save.
-*Why:* my machine is currently blocked from TikTok. Unblocking lets me pull each video file, read every frame and every word, then delete it. This is the fast, highest quality way to know what is in a video.
+**Step 2. Install the Claude in Chrome extension (3 minutes, skip if you already have it).**
+Open Google Chrome → go to the Chrome Web Store → search "Claude in Chrome" → Add to Chrome → sign in with your Claude account → click the puzzle-piece icon in Chrome's toolbar → click the pin next to Claude.
+*Why:* TikTok has no official way for a program to save or unlike videos. The only way is clicking inside your own logged-in Chrome. This extension is what lets me click.
 
-**Step 3. Install and open the Claude desktop app on your Mac (3 minutes, skip if already installed).**
-Download from claude.ai/download, install, sign in with the same account you use here, leave it open.
-*Why:* this app is the bridge between this chat and your Mac. Without it, I cannot reach your Chrome.
+**Step 3. Turn the extension on inside the Claude desktop app (1 minute).**
+Open the Claude desktop app on your Mac (update it first if it asks) → click your initials in the lower-left corner → Settings → Connectors → find "Claude in Chrome" → Configure → switch it on.
+*Why:* this tells the desktop app it is allowed to use your Chrome.
 
-**Step 4. Have TikTok open and logged in, in Chrome, with the Claude in Chrome extension installed and signed in (2 minutes).**
-Chrome → TikTok.com → make sure you are logged in → open your profile → Liked tab. Check the Claude extension icon shows you signed in.
-*Why:* TikTok has no official way for a program to save or unlike videos. The only way is clicking inside your own logged-in browser. The extension is what lets me click.
+**Step 4. Start the browser session in the desktop app (1 minute).**
+In the Claude desktop app: start a new conversation. If the message box shows "Chat" and "Cowork", pick Cowork. If it does not show those, just start the conversation. Open the "+" (or Connectors) menu in the message box and turn on Claude in Chrome for this conversation (it is off by default every time). Make sure TikTok is open and logged in, in Chrome. Then paste this:
 
-**Step 5. Link your Mac to this chat (10 seconds).**
-In the box where you type to me, tap **+** → **Devices** → pick your Mac → send me the word "linked".
-If there is no Devices option: open the Claude desktop app → new Cowork chat → paste: "Continue the TikTok project from repo hajidunn-coder/CodingStrategies, branch claude/tiktok-video-ai-research-yeiwkd. Read tiktok-ai-research/STEPS.md and start at Step 6." Then do the rest there.
-*Why:* this is the moment my tools for your Chrome switch on.
+> You are working in my real Chrome through Claude in Chrome. TikTok is open and I am logged in. Go to my profile and open the Liked tab. Scroll all the way to the bottom until no more videos load. Collect every video link on that tab. Then open the Saved tab, note the names of every folder (collection) I have, and collect every video link in each folder with its folder name. Save everything as a plain text file on my Desktop called tiktok_links.txt, one line per video in the form: liked|<link>  or  saved|<folder name>|<link>. Do not like, unlike, save, or change anything. Tell me when the file is ready and how many links you found.
 
----
+*Why:* the Liked tab is private to you, so only a browser logged in as you can see it. This gives me the full list.
+
+**Step 5. Drop the file into THIS chat (10 seconds).**
+When the desktop session says the file is ready, drag `tiktok_links.txt` from your Desktop into this chat and send it.
+*Why:* this chat is where the reading, sorting and research happens. That file is the hand-off.
+
+**Step 1b (optional, any time). Request your TikTok data export.** Phone → TikTok → Profile → ☰ → Settings and privacy → Account → Download your data → JSON → Request. Not needed to start. It arrives in a few days and is only the backup copy of your liked list.
 
 ## Part 2 — Sorting every liked video into folders
 
@@ -59,8 +59,9 @@ I list the videos I could not confidently place, with a one-line summary each.
 
 ## Part 3 — Doing the work inside TikTok (needs your Mac on, Chrome open)
 
-**Step 11. Create the new folders (ME, 2 minutes).**
-In your Chrome, I create each approved folder.
+**Step 11. Hand the sorting file to the desktop session (YOU, 10 seconds).**
+I give you a file called `tiktok_sort.txt` (video link → folder). Drag it into the desktop app conversation from Step 4 and send: "Create any folders in this file that do not exist yet, then for each line: open the video, Save it to that folder, confirm it appears in the folder, write the result to tiktok_log.txt on my Desktop, then Unlike it. Do 25, then stop and show me the log." 
+*Why:* the clicking can only happen in your Chrome, and the desktop app is the only thing connected to it.
 
 **Step 12. Batch 1, 25 videos, you watch (ME, YOU present, about 10 minutes).**
 For each video: open it → Save → pick the folder → open the folder and confirm the video is there → write it to the log → Unlike. Human pace, a few seconds between clicks.
