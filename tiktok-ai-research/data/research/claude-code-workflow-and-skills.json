@@ -1,0 +1,1293 @@
+[
+ {
+  "name": "Anthropic context-engineering guidance (trim CLAUDE.md, replace NEVER rules with judgment, skills on demand)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/memory",
+  "exists": "verified",
+  "evidence": "Could not fetch claude.com/blog directly (DNS blocked in this sandbox); the July 24 2026 post is corroborated by multiple secondary writeups (aiweekly, techstrong, i-scoop, dotzlaw) that quote 'We removed over 80% of Claude Code's system prompt' and name author Thariq Shihipar. The official docs now encode the same guidance: code.claude.com/docs/en/memory says target under 200 lines per CLAUDE.md, remove conflicting instructions, run /doctor prompt-audit; /doctor trims 'content Claude can derive from the codebase' and keeps 'pitfalls, rationale, and conventions that differ from tool defaults'. code.claude.com/docs/en/costs: 'Aim to keep CLAUDE.md under 200 lines'.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Anthropic's own guidance for Claude 5-era models: thin CLAUDE.md (purpose + gotchas), move procedures into skills that load on demand, delete stacked NEVER/ALWAYS rules that conflict.",
+  "claimed_in_videos": "Anthropic cut 80%+ of the system prompt with 0% eval loss; keep CLAUDE.md to repo purpose + gotchas; run /doctor to right-size.",
+  "reality_check": "Holds. The 80% figure and 'no measurable loss' are Anthropic's own internal evals (not independent), but the operational advice is now literally in the official docs and tooling.",
+  "verdict": "USE NOW",
+  "why": "Haji runs many repos with Claude Code; a bloated or self-contradicting CLAUDE.md silently degrades every session and costs tokens on every turn. This is the single highest-leverage, zero-cost change in the whole theme.",
+  "how_to_adopt": "In each repo: run `/doctor` then `/doctor prompt-audit` (needs Claude Code v2.1.283+). Accept the trims, move procedure-like sections into .claude/skills/<name>/SKILL.md or .claude/rules/ with paths: frontmatter. Target under 200 lines.",
+  "risks": "Trim one repo first and watch behaviour for a week; some NEVER rules exist because of a real past incident and should become a PreToolUse hook rather than be deleted.",
+  "source_video_ids": [
+   "7667277568420203796"
+  ]
+ },
+ {
+  "name": "Claude Code /doctor (and /doctor prompt-audit)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/commands",
+  "exists": "verified",
+  "evidence": "Commands reference (fetched 2026-10-10): '/doctor [prompt-audit [path]]' is a bundled skill; checkup covers installation health, unused skills/MCP/plugins vs context cost, CLAUDE.md duplication and derivable content, permissions; prompt-audit requires v2.1.283+; alias /checkup. `claude doctor` in the terminal is read-only diagnostics.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Setup checkup that proposes CLAUDE.md trims and migrations into skills, flags unused extensions, and (prompt-audit) finds outdated or conflicting instructions.",
+  "claimed_in_videos": "A new command that right-sizes your skills and CLAUDE.md for the new models.",
+  "reality_check": "True as described. prompt-audit is the part that actually hunts conflicting/legacy instructions; plain /doctor is a broader health check.",
+  "verdict": "USE NOW",
+  "why": "Five minutes per repo, free, and it does the audit the creators are describing by hand.",
+  "how_to_adopt": "`claude --version` (need >= 2.1.283), then `/doctor` and `/doctor prompt-audit` in each project. Also run `/skill-doctor` (v2.1.252+) to see which installed skills cost context and never fire.",
+  "risks": "Proposed edits are only applied after confirmation; review them, do not blindly accept.",
+  "source_video_ids": [
+   "7667277568420203796",
+   "7679592166569692429"
+  ]
+ },
+ {
+  "name": "Claude Code /code-review ultra (alias /ultrareview)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/ultrareview",
+  "exists": "verified",
+  "evidence": "Official doc fetched 2026-10-10: research preview; runs a fleet of reviewer agents in an Anthropic cloud sandbox; findings independently reproduced; needs claude.ai login; Pro and Max get 3 free runs (one-time, no refresh), then $5-$25 per review billed to usage credits; 5-10 min per run; diff limit 500 files / 8,000 lines; `claude ultrareview` subcommand for CI; not on Bedrock/Vertex/Foundry or ZDR orgs.",
+  "cost": "freemium ($5-25/run after 3 free)",
+  "maintained": "active",
+  "what_it_does": "Deep multi-agent cloud code review of a branch or PR with verified findings.",
+  "claimed_in_videos": "Spins up a fleet of cloud agents to hunt bugs; Pro/Max get three free until May 5th.",
+  "reality_check": "Real. The 'until May 5th' deadline was 2026 and has passed; the 3 free runs still exist per the current doc and are one-time. After that it is $5-25 per run in usage credits, which must be enabled.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji ships solo with no second reviewer; a $5-25 verified-bug pass before merging a risky payment/auth/data-migration change is cheap insurance. Not for every PR.",
+  "how_to_adopt": "On a substantial branch: `/code-review ultra` (or `/code-review ultra <PR#> --post`). Enable usage credits first via `/usage-credits` or the review is blocked after the free runs. Use the 3 free runs on the three scariest branches you have.",
+  "risks": "Uploads your repo state to Anthropic's sandbox (PR mode clones from GitHub instead). Cost scales with diff size. Stopped runs still consume a free run.",
+  "source_video_ids": [
+   "7679592166569692429",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Claude Code /code-review (local, alias /review)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/code-review",
+  "exists": "verified",
+  "evidence": "Official doc: bundled skill; runs as a background forked subagent (v2.1.218+); effort levels low..max; --fix applies findings, --comment posts to GitHub PR/GitLab MR; counts against normal plan usage; reports correctness bugs (plus cleanups at higher effort).",
+  "cost": "free (plan usage)",
+  "maintained": "active",
+  "what_it_does": "Local correctness review of your diff, PR, branch or path, with optional auto-fix.",
+  "claimed_in_videos": "Code Review runs a handful of agents over your changes and flags issues you'd find days later in production.",
+  "reality_check": "The creator conflated the Team/Enterprise GitHub 'Code Review' product with the local command. On a Max plan the local `/code-review` is what Haji gets, and it is good.",
+  "verdict": "USE NOW",
+  "why": "Zero cost, already installed, runs in the background. Make `/code-review high --fix` the default pre-commit step and keep ultra for high-risk merges.",
+  "how_to_adopt": "Run `/code-review high` before every PR. Add a `REVIEW.md`-style section to CLAUDE.md only if you later get the GitHub product; the local skill reads CLAUDE.md but not REVIEW.md.",
+  "risks": "--fix edits bypass /rewind checkpoints when run in background; use git to revert.",
+  "source_video_ids": [
+   "7679592166569692429",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Claude Code /simplify",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/commands",
+  "exists": "verified",
+  "evidence": "Commands reference: bundled skill; four review agents in parallel covering reuse of helpers, simplification, efficiency, and right level of abstraction; applies fixes; does not hunt bugs. Note: before v2.1.147 `/simplify` was the old name of `/code-review`.",
+  "cost": "free (plan usage)",
+  "maintained": "active",
+  "what_it_does": "Cleanup-only review of changed code that applies the fixes.",
+  "claimed_in_videos": "Scans code for redundancy and rewrites tighter; 'one command, cleaner repo'.",
+  "reality_check": "Accurate. It is scoped to the changed code, not the whole repo.",
+  "verdict": "USE NOW",
+  "why": "Directly addresses the AI-slop/bloat problem that ponytail, pstack and thermos try to solve, and it is built in. Try it before installing third-party de-bloat skills.",
+  "how_to_adopt": "After a feature lands: `/simplify` then `/code-review`. Both are cheap and run in the background.",
+  "risks": "Runs four subagents, so it is not free in tokens on huge diffs; scope it with a path argument.",
+  "source_video_ids": [
+   "7679592166569692429",
+   "7694295848921992462"
+  ]
+ },
+ {
+  "name": "Claude Code /effort",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/model-config",
+  "exists": "verified",
+  "evidence": "Commands reference: `/effort [level|auto|status|ultracode [on|off]]`, levels low to xhigh, max (session-only), auto; `status` prints the current level; the `ultracode` setting persists via settings key; changing mid-turn triggers a prompt-cache warning.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Sets how much reasoning Claude spends per request; persists per session (and via settings for the default level/ultracode).",
+  "claimed_in_videos": "An interactive slider from low to 'ultra'.",
+  "reality_check": "Mostly right; it is a level argument (and a picker in /model), not a literal slider; 'max' is session-only, other levels can be set as defaults.",
+  "verdict": "USE NOW",
+  "why": "Thinking tokens bill as output tokens; dropping to low/medium for boilerplate and bumping to xhigh for architecture is the simplest usage-limit lever Haji has on Max.",
+  "how_to_adopt": "`/effort low` for grunt work, `/effort xhigh` for design/debug sessions; set a default in /model or settings. Check `/usage` breakdown weekly.",
+  "risks": "Changing effort mid-session can invalidate the prompt cache (docs warn); change it at natural breakpoints.",
+  "source_video_ids": [
+   "7679592166569692429"
+  ]
+ },
+ {
+  "name": "Claude Code /loop (scheduled tasks)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/scheduled-tasks",
+  "exists": "verified",
+  "evidence": "Official doc: `/loop [interval] [prompt]`, e.g. `/loop 5m check the deploy`; 1-minute minimum; session must stay open (or be backgrounded); self-pacing mode when interval omitted; built-in maintenance prompt or .claude/loop.md; tasks expire after 7 days; jitter delays runs; can chain skills like `/loop 20m /code-review`.",
+  "cost": "free (plan usage; each fire resends full context)",
+  "maintained": "active",
+  "what_it_does": "Re-run a prompt or skill on an interval inside a session, or let Claude self-pace.",
+  "claimed_in_videos": "'Check the deploy every 5 minutes and then done'.",
+  "reality_check": "Exactly as claimed, plus more (loop.md, self-pacing, one-shot reminders). Cost caveat: each iteration resends the full conversation context.",
+  "verdict": "USE NOW",
+  "why": "Replaces Haji babysitting CI/deploys. Pair with a short context (run /clear first) to keep each fire cheap.",
+  "how_to_adopt": "`/loop 10m check CI on this PR and fix failures` from a fresh session; for anything unattended use Routines (cloud, 1h min) or Desktop scheduled tasks instead.",
+  "risks": "Fires only while the session is open and idle; loops in a long bloated session burn plan usage fast (docs explicitly flag this).",
+  "source_video_ids": [
+   "7679592166569692429"
+  ]
+ },
+ {
+  "name": "Claude Code /mcp",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/mcp",
+  "exists": "verified",
+  "evidence": "Commands reference: `/mcp [reconnect|enable|disable [<server>|all]]` manages server connections and OAuth. MCP *prompts* exposed by a server appear as commands of the form `/mcp__<server>__<prompt>`; tool definitions are deferred until used.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Manage MCP server connections and OAuth from inside a session.",
+  "claimed_in_videos": "After connecting Slack/Notion etc., each shows up as its own slash command (/slack, /notion, /calendar).",
+  "reality_check": "Partly wrong. /mcp manages connections; servers do not become `/slack`-style commands. Only MCP prompts become `/mcp__server__prompt` commands. Connected tools are used by Claude when relevant.",
+  "verdict": "USE NOW",
+  "why": "Useful mainly for `/mcp disable` on servers you are not using in a session, which cuts context (docs: prefer CLIs like gh/gcloud over MCP for context efficiency).",
+  "how_to_adopt": "Run `/mcp` and disable idle servers; run `/context` to see what MCP costs you.",
+  "risks": "None beyond the mis-description in the video.",
+  "source_video_ids": [
+   "7679592166569692429"
+  ]
+ },
+ {
+  "name": "Claude Code /remote-control",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/remote-control",
+  "exists": "verified",
+  "evidence": "Official doc fetched: `/remote-control` (alias /rc, v2.1.206+) makes the local session reachable from claude.ai/code or the iOS/Android app; execution stays on your machine; requires a claude.ai subscription; survives sleep/network drops.",
+  "cost": "free with subscription",
+  "maintained": "active",
+  "what_it_does": "Continue a local Claude Code session from phone or browser.",
+  "claimed_in_videos": "Shown running in a terminal in the Nate Herk video ('Spawn the code reviewer subagent').",
+  "reality_check": "Real and as shown.",
+  "verdict": "USE NOW",
+  "why": "Haji is time-poor and mobile; kicking off a long build at the desk and approving/steering from the phone is a real workflow gain.",
+  "how_to_adopt": "Type `/rc` in a session, open claude.ai/code on your phone.",
+  "risks": "Keep permission prompts on; a remote session with auto mode is a remote shell to your machine.",
+  "source_video_ids": [
+   "7675047000156425485"
+  ]
+ },
+ {
+  "name": "Claude Code /skill-doctor",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/skills",
+  "exists": "verified",
+  "evidence": "Skills doc: `/skill-doctor` (v2.1.252+) shows what each installed skill costs in context and how often it is used, flags never-invoked skills, and lists plugins not used recently. Not available over Remote Control.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Context-cost and usage report for installed skills and plugins.",
+  "claimed_in_videos": "Not mentioned in any video; surfaced during verification.",
+  "reality_check": "Directly answers the 'do stacked skills cost too much' questions the videos raise.",
+  "verdict": "USE NOW",
+  "why": "Before installing any of the skill packs below, Haji needs a baseline; after installing, this tells him which to turn off.",
+  "how_to_adopt": "`/skill-doctor` after a week of normal use; disable the zero-use, high-cost ones in `/plugin`.",
+  "risks": "Needs feature-flag fetching on.",
+  "source_video_ids": [
+   "7694295848921992462",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Claude Code Review (GitHub-integrated product)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/code-review",
+  "exists": "verified",
+  "evidence": "Official doc: research preview 'available for Team and Enterprise subscriptions'; enabled by an org Owner at claude.ai/admin-settings/claude-code; $15-25 average per review billed to usage credits; triggers on PR open / every push / manual `@claude review`; tunable via REVIEW.md. Press coverage (The New Stack, InfoQ, heise) dates the launch to March 9 2026.",
+  "cost": "$15-25 per review (Team/Enterprise only)",
+  "maintained": "active",
+  "what_it_does": "Multi-agent automated PR review posted as inline GitHub comments.",
+  "claimed_in_videos": "'Enable Code Review and run it before shipping' as one of five plugins everyone should install.",
+  "reality_check": "Not available on Pro/Max individual plans at all. The creator either has a Team plan or conflated it with `/code-review`.",
+  "verdict": "SKIP",
+  "why": "Haji is on an individual plan; the equivalent for him is `/code-review` locally plus `/code-review ultra` for big merges. Revisit only if he moves to Team ($ per seat) for an org.",
+  "how_to_adopt": "N/A on current plan. Alternative: the open-source Claude Code GitHub Action (code.claude.com/docs/en/github-actions) runs reviews in your own CI on API billing.",
+  "risks": "Per-push mode multiplies cost; $15-25 per review adds up fast for a solo shipper.",
+  "source_video_ids": [
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Claude Cowork",
+  "kind": "product",
+  "official_url": "https://support.claude.com/en/articles/13345190-get-started-with-cowork",
+  "exists": "verified",
+  "evidence": "Support article (via search 2026-10-10): Cowork available on all paid plans (Pro, Max, Team, Enterprise) in the macOS and Windows desktop apps; web version rolling out from Max first (July 2026 changelog); not on Free. Usage is shared with chat and Claude Code.",
+  "cost": "included in Pro/Max",
+  "maintained": "active",
+  "what_it_does": "Desktop agent mode of the Claude app that works in a folder with skills and connectors.",
+  "claimed_in_videos": "Creator built a Karpathy-style wiki in Cowork in 45 minutes.",
+  "reality_check": "Available on Haji's plan. For a markdown wiki, plain Claude Code does the identical job; Cowork is just the GUI route.",
+  "verdict": "WATCH",
+  "why": "No new capability for someone already fluent in Claude Code; same usage pool. Useful only for non-terminal tasks (docs, email, spreadsheets) if Haji wants a GUI.",
+  "how_to_adopt": "Nothing to install; it is a tab in the desktop app.",
+  "risks": "Shares the same 5-hour/weekly limits as Claude Code; heavy Cowork use eats coding budget.",
+  "source_video_ids": [
+   "7651297691732905248",
+   "7689307743835983134"
+  ]
+ },
+ {
+  "name": "claude.ai chat, Claude Code and Cowork share one usage pool (Pro/Max)",
+  "kind": "pattern",
+  "official_url": "https://support.claude.com/en/articles/12429409-extra-usage-for-paid-claude-plans",
+  "exists": "verified",
+  "evidence": "Support article fetched 2026-10-10: 'Your combined usage across both interfaces counts toward your limits' (Claude chat + Claude Code); usage credits billed at API rates once limits are hit; Max/Team monthly API credits do not apply to usage credits. code.claude.com/docs/en/costs confirms seat allowance 'is shared with Claude chat and Cowork' on Team/Enterprise.",
+  "cost": "n/a",
+  "maintained": "n-a",
+  "what_it_does": "Fact about how Anthropic meters subscription usage.",
+  "claimed_in_videos": "Implied by the Codex-hack video: plan in chat, execute in the agent to save the agent's quota.",
+  "reality_check": "The OpenAI trick does NOT transfer: on Claude, chat and Code draw from the same pool, so moving planning to claude.ai saves nothing. The only second 'tank' is usage credits (pay-as-you-go) or an API key.",
+  "verdict": "SKIP",
+  "why": "The quota-arbitrage framing is wrong for Haji. The useful residue is: plan in Plan Mode with low effort / Sonnet, execute with the right model, and clear context between tasks.",
+  "how_to_adopt": "Use `/usage` to see what is eating the limit (skills, subagents, MCP, long context flags).",
+  "risks": "None.",
+  "source_video_ids": [
+   "7694003445564607751"
+  ]
+ },
+ {
+  "name": "addyosmani/agent-skills (/spec /plan /build /test /constraints /review /webperf /code-simplify /ship)",
+  "kind": "plugin",
+  "official_url": "https://github.com/addyosmani/agent-skills",
+  "exists": "verified",
+  "evidence": "GitHub API 2026-10-10: 104,352 stars, 10,892 forks, MIT, pushed 2026-10-10, created 2026-02-15, homepage skills.addy.ie. README: 9 commands, 25 skills; install `/plugin marketplace add addyosmani/agent-skills` then `/plugin install agent-skills@addy-agent-skills`, or `npx skills add addyosmani/agent-skills`.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Process scaffolding: spec -> plan -> build -> test -> review -> ship as Claude Code commands, each loading a matching skill.",
+  "claimed_in_videos": "Ex-Google director put his whole process into nine commands; ~100k stars; nothing built before a spec, nothing shipped before review.",
+  "reality_check": "All true; the three unnamed commands are /constraints, /webperf and /code-simplify. Stars are real (104k, up from the 98.8k on screen). /review and /code-simplify overlap with built-in /code-review and /simplify.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji's biggest failure mode as a solo builder is building before specifying. Installing this just for /spec and /plan (and `/build auto` for approved plans) is high leverage. Treat the review/simplify commands as redundant with built-ins.",
+  "how_to_adopt": "Install via the marketplace commands above; use `/spec` on the next feature. After a week run `/skill-doctor` and disable the skills you never invoke (25 skills is a lot of listing context).",
+  "risks": "25 skills add listing tokens every turn; naming collisions with built-in /review are handled by alias rules but can confuse. Check for conflicts with your CLAUDE.md conventions.",
+  "source_video_ids": [
+   "7692456410860227854"
+  ]
+ },
+ {
+  "name": "obra/superpowers",
+  "kind": "plugin",
+  "official_url": "https://github.com/obra/superpowers",
+  "exists": "verified",
+  "evidence": "GitHub API: 297,113 stars, 26,525 forks, MIT, pushed 2026-10-10, created 2025-10-09; topics include subagent-driven-development, sdlc. Description: 'An agentic skills framework & software development methodology that works.'",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Large opinionated skills library and methodology (brainstorm -> plan -> TDD -> subagent-driven implementation) for Claude Code.",
+  "claimed_in_videos": "Caption said ~94k stars; 'Claude Code skills library'.",
+  "reality_check": "Exists, far bigger than claimed (297k), actively maintained, plugin-compatible. It is a whole methodology, not a grab-bag; overlaps heavily with addyosmani/agent-skills.",
+  "verdict": "WATCH",
+  "why": "Pick ONE process framework. For Haji, Addy's nine commands are lighter and map to how he already works; superpowers is worth a look only if he wants enforced TDD and subagent-driven dev across the board.",
+  "how_to_adopt": "If trying: `/plugin marketplace add obra/superpowers` then install; run on one small project before adopting repo-wide.",
+  "risks": "Heavy context footprint; strongly opinionated workflow that fights ad-hoc vibe-coding sessions.",
+  "source_video_ids": [
+   "7685810271935417613"
+  ]
+ },
+ {
+  "name": "hesreallyhim/awesome-claude-code",
+  "kind": "repo",
+  "official_url": "https://github.com/hesreallyhim/awesome-claude-code",
+  "exists": "verified",
+  "evidence": "GitHub API: 55,355 stars, pushed 2026-10-10, created 2025-04-19. Curated list of skills, agents, status lines, tooling, plugins.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Curated directory of Claude Code resources.",
+  "claimed_in_videos": "~28k stars; the directory of skills/plugins/commands.",
+  "reality_check": "Real; stars are now 55k (caption outdated). It is a list, not a tool.",
+  "verdict": "USE NOW",
+  "why": "Bookmark as the one directory to check before installing anything from TikTok; most of the skills in this theme are listed there with context.",
+  "how_to_adopt": "Open it when a video pitches a skill; search the README first.",
+  "risks": "Listing is not vetting; still review SKILL.md and scripts before installing.",
+  "source_video_ids": [
+   "7685810271935417613"
+  ]
+ },
+ {
+  "name": "anthropics/claude-cookbooks",
+  "kind": "repo",
+  "official_url": "https://github.com/anthropics/claude-cookbooks",
+  "exists": "verified",
+  "evidence": "GitHub API: 53,326 stars, pushed 2026-10-10, created 2023-08-15, not archived.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Official notebooks/recipes for the Claude API: tool use, RAG, vision, agents.",
+  "claimed_in_videos": "~53k stars; real recipes.",
+  "reality_check": "Accurate (53.3k). API-level material, not Claude Code workflow.",
+  "verdict": "WATCH",
+  "why": "Relevant when Haji builds an agent feature inside one of his apps with the Claude API, not for day-to-day Claude Code use.",
+  "how_to_adopt": "Search the repo for the specific pattern (e.g. tool use, PDF, citations) when a product needs it; pair with the local `claude-api` skill.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7685810271935417613"
+  ]
+ },
+ {
+  "name": "anthropics/courses",
+  "kind": "course",
+  "official_url": "https://github.com/anthropics/courses",
+  "exists": "verified",
+  "evidence": "GitHub API: 22,875 stars, archived=true. Repo page: 'This repository was archived by the owner on Sep 15, 2026. It is now read-only.' Courses: API fundamentals, prompt engineering tutorial, real world prompting, prompt evaluations, tool use.",
+  "cost": "free",
+  "maintained": "abandoned",
+  "what_it_does": "Official Anthropic course notebooks (now read-only).",
+  "claimed_in_videos": "Start here for prompt engineering, API, tool use and evals.",
+  "reality_check": "Exists but archived three weeks before the video circulated; content is dated to older models.",
+  "verdict": "SKIP",
+  "why": "Haji is past this level and the material is frozen. If he needs evals guidance, the live docs are better.",
+  "how_to_adopt": "N/A.",
+  "risks": "Stale model references.",
+  "source_video_ids": [
+   "7685810271935417613"
+  ]
+ },
+ {
+  "name": "awesome-claude-skills (ComposioHQ/awesome-claude-skills and clones)",
+  "kind": "repo",
+  "official_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "exists": "verified",
+  "evidence": "GitHub API: ComposioHQ 76,791 stars (Apache-2.0, pushed 2026-10-10); travisvn 15,347; BehiSecc 10,227; karanb192 543. README of the Composio one has a header banner to Composio's dashboard, a 'Give your skills real-world actions' section for Composio's MCP Gateway, Rube MCP app list, and 'Join 20,000+ developers' CTA; the 'click here to upgrade your workflow' banner on screen matches that marketing.",
+  "cost": "free (vendor-marketed)",
+  "maintained": "active",
+  "what_it_does": "Curated list of Claude skills, maintained by Composio as a funnel for its MCP gateway.",
+  "claimed_in_videos": "A curated list of Claude skills.",
+  "reality_check": "Several repos share the name; the one shown (with the upgrade banner) is Composio's. It is a legit list wrapped in vendor marketing.",
+  "verdict": "SKIP",
+  "why": "awesome-claude-code already covers this with less vendor steering. Use only as a secondary search.",
+  "how_to_adopt": "If used, ignore the Composio/Rube sections; check each skill's own license.",
+  "risks": "Vendor funnel; skills in the list have mixed licenses.",
+  "source_video_ids": [
+   "7685810271935417613"
+  ]
+ },
+ {
+  "name": "multica-ai/andrej-karpathy-skills",
+  "kind": "skill",
+  "official_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+  "exists": "verified",
+  "evidence": "GitHub API: 217,937 stars, 21,966 forks, pushed 2026-04-20, created 2026-01-27, no license field reported by API (README says MIT). README: a CLAUDE.md plus skills/karpathy-guidelines, .claude-plugin, .cursor/rules; four principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution); cites x.com/karpathy/status/2015883857489522876; install `/plugin marketplace add forrestchang/andrej-karpathy-skills` then `/plugin install andrej-karpathy-skills@karpathy-skills`, or curl the CLAUDE.md.",
+  "cost": "free",
+  "maintained": "stale (no push since April 2026, but it is a static prompt)",
+  "what_it_does": "A short CLAUDE.md encoding Karpathy's four observed Claude Code failure modes as rules.",
+  "claimed_in_videos": "216,000 stars; solves all four problems; the 'godfather of vibe coding' called out Claude Code.",
+  "reality_check": "Stars are real (218k, not inflated). Not affiliated with Karpathy; it is a community distillation of one of his X posts. Prompt rules only, no hooks or scripts.",
+  "verdict": "USE NOW",
+  "why": "The four rules (state assumptions, minimal code, touch only what's asked, define verifiable success criteria and loop) are exactly the gotchas worth the few lines of CLAUDE.md budget that /doctor leaves you. Copy the lines, do not install a plugin for a 60-line prompt.",
+  "how_to_adopt": "`curl -o /tmp/k.md https://raw.githubusercontent.com/multica-ai/andrej-karpathy-skills/main/CLAUDE.md`, read it, append the 10-15 lines that are not already in your CLAUDE.md.",
+  "risks": "Install commands point at a different repo (forrestchang/...) than the one shown; prefer copying text over installing.",
+  "source_video_ids": [
+   "7691911646532439309"
+  ]
+ },
+ {
+  "name": "Karpathy 'LLM Wiki' knowledge base (gist) and the three-folder CLAUDE.md pattern",
+  "kind": "pattern",
+  "official_url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+  "exists": "verified",
+  "evidence": "Gist fetched 2026-10-10: 'LLM Wiki', created April 4 2026, ~5,000+ stars/forks. Conventions: immutable raw/ sources, an LLM-owned wiki/ of markdown pages with index.md and append-only log.md, schema file 'CLAUDE.md for Claude Code or AGENTS.md for Codex'; operations ingest / query / lint; works 'at moderate scale (~100 sources, ~hundreds of pages)', add a search tool like qmd beyond that. No outputs/ folder in Karpathy's text; that is the TikTok creator's addition. Community skill: Astro-Han/karpathy-llm-wiki (2,457 stars, MIT, `npx add-skill Astro-Han/karpathy-llm-wiki`).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Markdown-only knowledge base where Claude Code ingests raw sources, compiles and cross-links wiki pages, answers queries with citations, and lints for contradictions.",
+  "claimed_in_videos": "Three folders, one file; 105k bookmarks; 45 minutes to build; a 'company asset' by day 100.",
+  "reality_check": "Core idea verified and well-specified by Karpathy himself. Creator's paraphrase is close (raw/wiki/CLAUDE.md are Karpathy's; outputs/ is the creator's). Scale limit (~100 sources) is real and matters.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji already keeps handoffs, strategies and research as markdown across repos; a Claude-maintained wiki with index.md + log.md is the natural upgrade and needs no new tool. The lint pass is the part worth stealing for CodingStrategies.",
+  "how_to_adopt": "Paste the gist into Claude Code in a new `knowledge/` folder and ask it to build the schema as CLAUDE.md; seed raw/ with 10 existing docs; schedule a weekly `/loop`-free Routine for lint. Or `npx add-skill Astro-Han/karpathy-llm-wiki`.",
+  "risks": "Re-index passes cost tokens roughly proportional to the number of pages touched per ingest (Karpathy: 10-15 pages per source). Past ~100-200 sources you need a search tool.",
+  "source_video_ids": [
+   "7651297691732905248"
+  ]
+ },
+ {
+  "name": "CoWork OS / cowork-os-beta template (Systems Made Better)",
+  "kind": "product",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "Only visible as a Finder tree in the video (PDF install guide, AREAS, KNOWLEDGE, Plugin-Marketplace, legacy versions). No public repo found; the CTA sends viewers to the creator's YouTube channel. Could not verify pricing.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "The creator's own folder template for running Cowork as a personal OS.",
+  "claimed_in_videos": "Implied as what he used to build the wiki.",
+  "reality_check": "Nothing to verify; the useful content is Karpathy's gist, which is public.",
+  "verdict": "SKIP",
+  "why": "A packaged folder structure with PDFs is not worth a creator funnel when the primary source is a free gist.",
+  "how_to_adopt": "N/A.",
+  "risks": "Likely a lead magnet for a paid product.",
+  "source_video_ids": [
+   "7651297691732905248"
+  ]
+ },
+ {
+  "name": "vercel-labs/skills (npx skills CLI) and the find-skills meta-skill",
+  "kind": "skill",
+  "official_url": "https://github.com/vercel-labs/skills",
+  "exists": "verified",
+  "evidence": "GitHub API: 33,630 stars, 2,885 forks, MIT, pushed 2026-10-09, created 2026-01-14, homepage skills.sh (skills.sh itself unreachable from this sandbox, so the 3.6M install counter could not be checked). find-skills SKILL.md fetched from raw GitHub: 'If the user wants to proceed, you can install the skill for them' (asks first, then installs with -y); ranks by install count (prefer 1K+, caution <100), source reputation (vercel-labs, anthropics, microsoft), GitHub stars (<100 = skeptical); 'Do not recommend a skill based solely on search results'.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Cross-agent CLI to find and install SKILL.md packages from GitHub, plus a skill that teaches Claude to search and install for you.",
+  "claimed_in_videos": "3.6M installs; 1.5 million skills in the bank; auto-installs whatever you need; 20-second setup.",
+  "reality_check": "The CLI and skill are real and maintained by Vercel Labs. 'Auto-install' is overstated: the skill asks before installing (then skips the CLI confirm). The '1.5M skills' figure is not supported by anything on screen and is almost certainly wrong; the skill's own heuristics warn that most listings have under 100 installs.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Useful as a discovery layer, and `npx skills add <owner/repo>` is now the de-facto install path for half the repos in this theme. The meta-skill is a supply-chain risk: it pulls arbitrary SKILL.md from GitHub on the model's judgment.",
+  "how_to_adopt": "`npx skills add vercel-labs/skills --skill find-skills`; keep the default 'ask first' behaviour; only accept installs from authors you recognise; review any skill with scripts before use.",
+  "risks": "Arbitrary third-party SKILL.md can contain prompt-injection or scripts; install-count ranking is gameable.",
+  "source_video_ids": [
+   "7691580366481542413"
+  ]
+ },
+ {
+  "name": "caveman (JuliusBrussee/caveman)",
+  "kind": "plugin",
+  "official_url": "https://github.com/JuliusBrussee/caveman",
+  "exists": "verified",
+  "evidence": "GitHub API: 110,876 stars, Apache-2.0, pushed 2026-10-10, created 2026-04-04. README: skill (/caveman, /ultracave, /megacave) + optional local proxy that compresses inputs (logs/CSV/JSON) 33.2% fewer input tokens; skill benchmark on 10 dev questions with Opus 5.5: 6,983 output tokens (no instruction) vs 4,334 ('Answer concisely') vs 4,119 (/caveman) vs 2,693 (/ultracave); third-party: JetBrains 8.5% fewer output tokens on 86 tasks with no quality loss, Elastic 63.6% fewer response tokens; skill text costs ~1,160 tokens of context. Install `/plugin marketplace add JuliusBrussee/caveman` then `/plugin install caveman@caveman`.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Makes Claude answer in terse 'caveman' prose; optional proxy shrinks tool outputs before they hit context.",
+  "claimed_in_videos": "Claimed 65% token cut; creator measured ~30% fewer output tokens on two tasks with same quality.",
+  "reality_check": "The TikTok fact-check is directionally right. The author's own numbers show /caveman is only ~5% better than simply saying 'Answer concisely'; the big wins are /ultracave and the input-side proxy. Output tokens are a minority of a typical Claude Code session (cache reads dominate), so a 30% output cut moves total spend by far less.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Cheap A/B for Haji's usage limits, but the honest expectation is single-digit to ~20% total savings on real coding sessions. The proxy (input compression of logs/test output) is the more interesting half for a builder who runs tests constantly.",
+  "how_to_adopt": "Install the plugin, run the same three real tasks with and without, compare `/usage`. Or skip the plugin and put one line in CLAUDE.md: 'Answer tersely; code, paths and commands verbatim.'",
+  "risks": "Terse mode can drop nuance in security warnings and multi-step explanations (README carves these out); proxy is a local MITM of tool output.",
+  "source_video_ids": [
+   "7684295430821235971",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "ponytail (DietrichGebert/ponytail, ponytail.dev)",
+  "kind": "plugin",
+  "official_url": "https://github.com/DietrichGebert/ponytail",
+  "exists": "verified",
+  "evidence": "GitHub API: 160,184 stars, MIT, pushed 2026-10-10, created 2026-06-12. README (fetched): author-run benchmark with Opus 5.5, 39 tasks x 5 runs: Ponytail 5 = 47% of baseline LOC, 55% output tokens, 74% cost, 59% time; commands /ponytail-review, /ponytail-audit, /ponytail-debt; install `/plugin marketplace add DietrichGebert/ponytail` then `/plugin install ponytail@ponytail`. Independent: JetBrains AI blog (July 2026) ran 80 paired tasks and measured -15% code, -10.3% cost, -11% time, no quality difference, concluding savings are 'a quarter to a half of what is advertised'.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "A YAGNI/'laziest senior dev' skill that makes Claude write less code and refactor toward reuse; adds review/audit/debt commands.",
+  "claimed_in_videos": "Cuts Claude usage by 50%+ with no quality loss (Nate Herk); -39% tokens / -27% cost (Duncan Rogoff's README table); 'gigantic de-bloating tool' (youraveragetechbro).",
+  "reality_check": "Real, hugely popular, maintained. The 50% claims are the author's own benchmark; the only independent test found ~10% cost savings and ~15% less code. Savings depend on how much over-building the task invites; greenfield work sees less.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Less code is a maintainability win for a solo founder even if the cost saving is ~10%. Try it mainly for /ponytail-review on PRs, and compare against the built-in /simplify before keeping both.",
+  "how_to_adopt": "Install via marketplace; run `/ponytail-audit` once on an existing app and `/ponytail-review` on the next PR; keep it only if the diffs are visibly leaner than /simplify's.",
+  "risks": "Overlaps with /simplify and pstack's unslop; stacking all three bloats context and can produce contradictory style edits.",
+  "source_video_ids": [
+   "7675047000156425485",
+   "7694295848921992462",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "pstack (cursor/plugins/pstack by poteto / Lauren Tan)",
+  "kind": "plugin",
+  "official_url": "https://github.com/cursor/plugins",
+  "exists": "verified",
+  "evidence": "cursor/plugins: 10,694 stars, MIT, pushed 2026-10-10. pstack README (raw fetch): author 'poteto' (x.com/poteto), bio 'worked with millions of lines of code at Meta, Netflix, and Cursor... on the React core team... React compiler'; 27 skills incl. no-comments, typescript-best-practices, unslop, create-verification-skill, maintain-verification-skill, tdd, blast-radius, swarm; install `/add-plugin pstack` (Cursor). README describes it as a Cursor plugin throughout. Unofficial Claude Code ports exist (mdsmithaustin/pstack, tim-mcdonnell/pstack, qubaldo/pstack-claude) with 0-1 stars each.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Cursor's rigorous-engineering skill pack: poteto-mode playbooks plus per-feature verification skills that teach the agent how to test each part of your app.",
+  "claimed_in_videos": "By a 'SpaceX engineer' named potato; powers 90% of the creator's ~30 PRs/day; auto-invokes no-comments, typescript-best-practices, unslop.",
+  "reality_check": "Author is Lauren Tan (poteto), React core / ex-Meta/Netflix, now at Cursor; 'SpaceX' is the creator's error. It is a Cursor plugin; Claude Code use requires copying SKILL.md files or an unofficial port. The '30 PRs/day' figure is self-reported and unverifiable; the pattern (verification skills) is the valuable part.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Do not install a Cursor plugin or a 0-star port. Read the three skills that matter (create-verification-skill, maintain-verification-skill, unslop) and recreate them as Haji's own .claude/skills; the rest is already covered by /simplify, /code-review and Addy's pack.",
+  "how_to_adopt": "Open github.com/cursor/plugins/tree/main/pstack/skills, read create-verification-skill and unslop SKILL.md, write equivalents under .claude/skills/ in one app, and wire a pre-PR step that updates verification skills.",
+  "risks": "Ports are unmaintained one-person mirrors; Cursor-specific commands (/add-plugin, agents window) will not exist in Claude Code.",
+  "source_video_ids": [
+   "7694295848921992462",
+   "7688347599639710989"
+  ]
+ },
+ {
+  "name": "Per-feature verification skills (pattern: a skills folder that teaches the agent how to test each part of the app)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/skills",
+  "exists": "verified",
+  "evidence": "Pattern is implementable natively: Claude Code bundled `/verify` skill ('build your project's app, run it, and observe the result'), microsoft/playwright-mcp (37,994 stars) for browser driving, and skills with supporting files. Cursor cloud agent / Devin 'recorded browser session' has no exact Claude Code equivalent; Playwright MCP screenshots attached to the PR are the substitute.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "For each app area keep a SKILL.md describing how to navigate, what to click and the expected result; Claude runs it (browser MCP) after each change and attaches screenshots; a pre-PR step keeps the skills current.",
+  "claimed_in_videos": "Creator merges PRs without reading code by reviewing agent-run verification recordings; ships ~30 PRs/day.",
+  "reality_check": "The pattern is sound and the tooling exists in Claude Code today. 'Merge without reading code' is the creator's risk appetite, not evidence; the real metric (post-merge defect rate) is not shown.",
+  "verdict": "USE NOW",
+  "why": "This is the highest-value idea in the theme for a time-poor solo founder: it moves QA from Haji to the agent and compounds per app. It needs no third-party install.",
+  "how_to_adopt": "Add `.claude/skills/verify-<feature>/SKILL.md` for the 3 riskiest flows in one app (signup, payment, core action); install Playwright MCP (`claude mcp add playwright -- npx @playwright/mcp@latest`); require `/verify` plus screenshots before any PR; add a 'maintain verification skills' step to the ship checklist.",
+  "risks": "Screenshots are not assertions; keep real tests for money and auth paths. Browser runs cost tokens; scope them.",
+  "source_video_ids": [
+   "7688347599639710989",
+   "7678155840456592671",
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "thermos / thermo-nuclear-code-quality-review (cursor/plugins/thermos)",
+  "kind": "skill",
+  "official_url": "https://github.com/cursor/plugins",
+  "exists": "verified",
+  "evidence": "thermos README (raw fetch): 'Thermo-nuclear branch review for Cursor agents', MIT; three skills: thermo-nuclear-review (bugs, security, feature-gate leaks), thermo-nuclear-code-quality-review (maintainability: code-judo, 1k-line rule, spaghetti, boundaries), thermos orchestrator running both as parallel subagents on `git diff main...HEAD`. Migration note says the quality skill moved from cursor-team-kit (which matches the 'cursor-team-ai' path on screen).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Strict maintainability + correctness review prompts for a branch diff.",
+  "claimed_in_videos": "'Run an extremely strict maintainability review...'; does roughly what ponytail + pstack do.",
+  "reality_check": "Real, Cursor-packaged, prompt-only; the SKILL.md is portable to Claude Code by copying. It overlaps almost entirely with built-in /code-review high + /simplify.",
+  "verdict": "WATCH",
+  "why": "Only worth copying if Haji wants the specific '1k-line file' and 'spaghetti condition' rubric wording; otherwise the built-ins already do this with less context cost.",
+  "how_to_adopt": "Copy the thermo-nuclear-code-quality-review SKILL.md into .claude/skills/ and invoke it on a big refactor branch to compare with /code-review high.",
+  "risks": "A third overlapping review skill per PR = more tokens, more contradictory nits.",
+  "source_video_ids": [
+   "7694295848921992462"
+  ]
+ },
+ {
+  "name": "claude-mem (thedotmack/claude-mem)",
+  "kind": "plugin",
+  "official_url": "https://github.com/thedotmack/claude-mem",
+  "exists": "verified",
+  "evidence": "GitHub API: 99,128 stars, Apache-2.0, pushed 2026-10-10, created 2025-08-31; v13.35.0; Node 20+. README: install `/plugin marketplace add thedotmack/claude-mem` + `/plugin install claude-mem`; SQLite + Chroma locally with a web viewer on localhost:37777; installer asks you to sign in for a hosted 'claude-mem observer' (30-day trial) and a choice of memory provider (hosted, OpenRouter/Gemini key, or your Anthropic plan); optional Cloud Sync to cmem.ai; sign-in skippable with `--provider` or `CLAUDE_MEM_ONLINE_OPTIN=false`; claims ~10x token savings via layered retrieval.",
+  "cost": "freemium (hosted observer trial, then plan or subscription)",
+  "maintained": "active",
+  "what_it_does": "Captures what Claude does in each session, compresses it, and injects relevant memories into future sessions.",
+  "claimed_in_videos": "Memory across sessions so you stop re-explaining the project; '#1 Repository of the Day'; 'Months later. One query.'",
+  "reality_check": "Real and very popular. Two things the videos omit: (1) the default install now pushes a hosted sign-in and a paid tier after 30 days; (2) by default compression uses your Anthropic plan, i.e. it spends your usage, and session-start injection adds context every session.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji's handoff files and CodingStrategies already do manual memory; claude-mem would automate it but adds a background service, a sign-in, and per-session token overhead. Trial it offline on one project and measure with `/usage` before rolling out.",
+  "how_to_adopt": "`/plugin marketplace add thedotmack/claude-mem` then `/plugin install claude-mem`; when the installer asks, choose the Anthropic-plan provider and decline cloud sync; set `CLAUDE_MEM_ONLINE_OPTIN=false`. Compare against native auto memory (code.claude.com/docs/en/memory) which already stores learnings per repo for free.",
+  "risks": "Everything you do in sessions is observed and stored; hosted mode sends it to a third party; context injection raises per-turn cost; another always-on daemon to maintain.",
+  "source_video_ids": [
+   "7675047000156425485",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Claude Code native auto memory (alternative to claude-mem)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/memory",
+  "exists": "verified",
+  "evidence": "Memory doc fetched 2026-10-10: Claude writes its own learnings to MEMORY.md per repository (first 200 lines / 25KB loaded each session) plus on-demand topic files; CLAUDE.md survives compaction.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Built-in per-repo memory Claude maintains from corrections and preferences.",
+  "claimed_in_videos": "Not mentioned in videos; the memory plugins are pitched as if nothing native exists.",
+  "reality_check": "A free, zero-install baseline that covers much of the 'stop re-explaining setup' need.",
+  "verdict": "USE NOW",
+  "why": "Turn it on / check it is populated before paying attention to third-party memory. Combine with the Karpathy wiki for cross-repo knowledge.",
+  "how_to_adopt": "Read ~/.claude/projects/<repo>/memory/MEMORY.md for each app; correct it; let it accumulate.",
+  "risks": "Only 200 lines load at start; keep it curated.",
+  "source_video_ids": [
+   "7675047000156425485",
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "kepano/obsidian-skills",
+  "kind": "skill",
+  "official_url": "https://github.com/kepano/obsidian-skills",
+  "exists": "verified",
+  "evidence": "GitHub API: 49,358 stars, MIT, pushed 2026-10-10, created 2026-01-02. README: skills obsidian-markdown, obsidian-bases, json-canvas, obsidian-cli, defuddle (clean markdown from web pages), knap (templates); install `/plugin marketplace add kepano/obsidian-skills` + `/plugin install obsidian@obsidian-skills`. 'kepano' is the handle of Obsidian's CEO (not confirmed from the page itself).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Teaches Claude Obsidian's formats and CLI; defuddle is a general web-to-markdown extractor.",
+  "claimed_in_videos": "Turns Claude into a 'second brain' connected to your codebase (Nate Herk).",
+  "reality_check": "Real and from the Obsidian maintainer, but it is about Obsidian file formats, not codebase mapping. Creator's description is wrong.",
+  "verdict": "WATCH",
+  "why": "Irrelevant unless Haji adopts Obsidian as the front-end for the Karpathy wiki. defuddle alone is handy for feeding articles into raw/.",
+  "how_to_adopt": "Only if using Obsidian: install the plugin and point the wiki/ folder at a vault.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7675047000156425485"
+  ]
+ },
+ {
+  "name": "eugeniughelbur/obsidian-second-brain",
+  "kind": "plugin",
+  "official_url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+  "exists": "verified",
+  "evidence": "GitHub API: 4,721 stars, MIT, pushed 2026-10-10, created 2026-03-24; topic 'karpathy-llm-wiki'. README: ~45 commands; core needs no keys; research commands need xAI/Perplexity/Gemini keys (fallback to Wikipedia/HN/arXiv); optional scheduled agents (morning brief, nightly consolidation, weekly review, vault audit) run headless with --dangerously-skip-permissions, opt-in, limited to file tools.",
+  "cost": "free (optional paid API keys)",
+  "maintained": "active",
+  "what_it_does": "Obsidian-vault memory layer for Claude Code with self-rewriting notes, semantic search and scheduled maintenance agents.",
+  "claimed_in_videos": "Maps the codebase so Claude sees how files connect (Duncan Rogoff).",
+  "reality_check": "Real and ambitious, but it is a personal-knowledge system, not a codebase map. Smaller community than the alternatives.",
+  "verdict": "WATCH",
+  "why": "If Haji wants the Karpathy wiki with batteries included and already uses Obsidian, this is the most complete implementation; otherwise the plain gist + CLAUDE.md is less to maintain.",
+  "how_to_adopt": "`/plugin marketplace add eugeniughelbur/obsidian-second-brain`; set OBSIDIAN_VAULT_PATH; run obsidian-init in a test vault first.",
+  "risks": "Background agent with permissions skipped (opt-in); research commands send queries to third parties.",
+  "source_video_ids": [
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "anthropics/claude-plugins-official (official plugin directory)",
+  "kind": "plugin",
+  "official_url": "https://github.com/anthropics/claude-plugins-official",
+  "exists": "verified",
+  "evidence": "GitHub API: 37,612 stars, pushed 2026-10-10, created 2025-11-20. Directory listing (fetched): 40 plugins incl. 12 LSPs (typescript-lsp, pyright-lsp, gopls-lsp, rust-analyzer-lsp, ...) and workflow plugins: code-review, code-simplifier, commit-commands, feature-dev, frontend-design, hookify, claude-md-management, claude-security, security-guidance, pr-review-toolkit, ralph-loop, skill-creator, mcp-server-dev, session-report, plugin-dev, example-plugin. Install `/plugin install <name>@claude-plugins-official` or browse `/plugin` > Discover.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Anthropic-maintained plugin marketplace that ships with Claude Code.",
+  "claimed_in_videos": "Easiest first install because it is built by the Claude Code team.",
+  "reality_check": "True. Most of what the third-party packs offer exists here in smaller, official form (code-simplifier, feature-dev, frontend-design, hookify, security-guidance).",
+  "verdict": "USE NOW",
+  "why": "Official, Apache-2.0, low drama. For Haji: typescript-lsp (type errors after every edit), commit-commands, feature-dev, security-guidance, frontend-design. Skip the rest.",
+  "how_to_adopt": "`/plugin` > Discover > install typescript-lsp, feature-dev, commit-commands, security-guidance, frontend-design. Re-run `/skill-doctor` after a week.",
+  "risks": "Each plugin adds listing context; install five, not twenty.",
+  "source_video_ids": [
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "microsoft/markitdown and markitdown-mcp",
+  "kind": "repo",
+  "official_url": "https://github.com/microsoft/markitdown",
+  "exists": "verified",
+  "evidence": "GitHub API: 189,346 stars, MIT, pushed 2026-10-04, created 2024-11-13 (the '161K' on screen is just older). markitdown-mcp README (raw fetch): `pip install markitdown-mcp`; stdio by default (`markitdown-mcp`), or `--http`; Claude Desktop config via Docker; README does not state whether image description needs an LLM key (the core library's llm_client option is required for image captions).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Converts PDF, DOCX, PPTX, XLSX, images, HTML to markdown; MCP server exposes it to Claude.",
+  "claimed_in_videos": "Cuts token usage by up to 70%; 161k stars; 'saves millions in tokens'.",
+  "reality_check": "Tool is real, bigger than claimed and maintained. '70%' is unsourced; savings depend entirely on the file (a text PDF read natively is already text; a slide deck or spreadsheet is where markdown wins). Claude Code's Read tool already extracts PDF text, so the gain is mainly for Office files and batch pre-processing.",
+  "verdict": "USE NOW",
+  "why": "Haji feeds specs, decks and spreadsheets into Claude Code constantly; a CLI pre-step (`markitdown file.xlsx > file.md`) is 30 seconds and keeps context small. The MCP server is optional and adds tool-listing overhead.",
+  "how_to_adopt": "`pip install 'markitdown[all]'`; convert Office files before dropping them in a repo's docs/; add the MCP only if you convert ad hoc inside sessions.",
+  "risks": "Image OCR/captions need an LLM client and key; MCP via Docker is heavier than the CLI.",
+  "source_video_ids": [
+   "7657394343270944020"
+  ]
+ },
+ {
+  "name": "Gemini API as Claude's image/video sidecar (Nano Banana image models, video understanding)",
+  "kind": "api",
+  "official_url": "https://ai.google.dev/gemini-api/docs/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page unreachable from this sandbox; secondary aggregators (benchlm.ai dated 2026-09-11, pricepertoken) report Nano Banana Pro / Gemini 3 Pro Image at ~$0.134 per image (1K/2K) and $0.24 (4K), Nano Banana 2 (Gemini 3.1 Flash Image) $0.045-0.151 by resolution, original Nano Banana (2.5 Flash Image) $0.039. 16:9 is a supported aspect ratio; batch-of-4 is just four calls. Video understanding limits not verified this session.",
+  "cost": "usage-based (~$0.04-0.24 per image)",
+  "maintained": "active",
+  "what_it_does": "Call Gemini from a Claude Code script/skill for native image generation, long-video understanding and citation checks.",
+  "claimed_in_videos": "Claude cannot make images; Gemini fills the gap; 4 images at once in 16:9; Gemini watches whole videos.",
+  "reality_check": "Pattern is valid and cheap. The caption's key-in-a-txt-file approach is bad practice; the 'dashboard' is a mock.",
+  "verdict": "TRY THIS WEEK",
+  "why": "App hero images, thumbnails and OG images are a recurring need for Haji's apps; a 30-line `gemini-images` skill reading GEMINI_API_KEY from env pays for itself the first launch.",
+  "how_to_adopt": "Create .claude/skills/gemini-images/ with a Python script calling the image model (`gemini-3.1-flash-image` for cheap, `gemini-3-pro-image` for quality), key from env, outputs to assets/; gitignore .env.",
+  "risks": "Never store the key in a tracked txt file; Gemini image pricing changes often, re-check before batch jobs.",
+  "source_video_ids": [
+   "7694419992267345174"
+  ]
+ },
+ {
+  "name": "VoltAgent/awesome-design-md (getdesign.md)",
+  "kind": "repo",
+  "official_url": "https://github.com/VoltAgent/awesome-design-md",
+  "exists": "verified",
+  "evidence": "GitHub API: 120,134 stars, MIT, pushed 2026-10-10, created 2026-03-31. README: 73 DESIGN.md files extracted from public brand sites (Google Stitch's DESIGN.md format); copy one into project root and tell the agent to use it; 'do not claim ownership of any site's visual identity'.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Drop-in DESIGN.md files describing well-known brands' design systems so agents generate matching UI.",
+  "claimed_in_videos": "'Steal' design systems from the world's best brands for free.",
+  "reality_check": "Real. Using a brand's exact look for your product is a trade-dress risk; using one as a starting point for your own DESIGN.md is fine.",
+  "verdict": "TRY THIS WEEK",
+  "why": "A DESIGN.md per app is the cheapest fix for 'looks AI-built'. Pick two references, have Claude synthesise Haji's own DESIGN.md, and keep it in every app repo.",
+  "how_to_adopt": "Copy a DESIGN.md (e.g. a dev-tool brand close to the target feel) into the repo, ask Claude to adapt it into `DESIGN.md` for the product, reference it from CLAUDE.md in one line.",
+  "risks": "Do not ship a clone of a brand's design system; adapt it.",
+  "source_video_ids": [
+   "7678155840456592671"
+  ]
+ },
+ {
+  "name": "Impeccable (pbakaus/impeccable, impeccable.style)",
+  "kind": "plugin",
+  "official_url": "https://github.com/pbakaus/impeccable",
+  "exists": "verified",
+  "evidence": "GitHub API: 79,261 stars, Apache-2.0, pushed 2026-10-10, created 2025-11-16; author Paul Bakaus. README: one skill `/impeccable <command>` with 24 commands (polish, audit, critique, animate, bolder, quieter, ...), 59 deterministic AI-pattern detector rules that need no LLM, `/impeccable init` writes PRODUCT.md; install `/plugin marketplace add pbakaus/impeccable` or `npx impeccable install`.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Design vocabulary + commands + lint rules that make Claude's UI output less generic.",
+  "claimed_in_videos": "Noticeably reduces AI slop; 'the missing design vocabulary for agents'; free; two independent endorsements.",
+  "reality_check": "Real, maintained by a credible author, free, and the deterministic detectors are more than a prompt. No controlled measurement exists; the endorsements are anecdotal.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Of the four design skills pitched, this is the one to install: single skill, scoped commands, lint you can run in CI. Pair with a DESIGN.md; do not stack Taste + Emil + Impeccable at once.",
+  "how_to_adopt": "`/plugin marketplace add pbakaus/impeccable`, install, `/impeccable init`, then `/impeccable audit` on an existing page and `/impeccable polish` on a new one.",
+  "risks": "Opinionated; can fight an existing design system; run audit, not auto-polish, on mature apps.",
+  "source_video_ids": [
+   "7678155840456592671",
+   "7678747152935324942"
+  ]
+ },
+ {
+  "name": "Taste Skill (Leonxlnx/taste-skill, tasteskill.dev)",
+  "kind": "skill",
+  "official_url": "https://github.com/Leonxlnx/taste-skill",
+  "exists": "verified",
+  "evidence": "GitHub API: 94,317 stars, MIT, pushed 2026-10-10, created 2026-02-19. README: default skill `design-taste-frontend` v2 is 'experimental', v1 pinned separately; dials VARIANCE/MOTION/DENSITY; `npx skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-frontend`; README carries sponsor links (API key promos) and promotes TasteCode desktop app; no evidence it fetches live websites for inspiration.",
+  "cost": "free (sponsor-supported)",
+  "maintained": "active",
+  "what_it_does": "Anti-generic frontend prompt rules with tunable dials.",
+  "claimed_in_videos": "Gives your AI good taste; pulls inspiration from real websites.",
+  "reality_check": "Popular and real; the 'real websites' claim is not supported by the README (it is rules informed by research, not live fetching). Experimental v2 churn.",
+  "verdict": "WATCH",
+  "why": "Redundant with Impeccable for Haji; pick one. Revisit if v2 stabilises.",
+  "how_to_adopt": "If trying: pin v1 (`--skill design-taste-frontend-v1`) in a throwaway project.",
+  "risks": "Sponsor-driven README; multiple design skills loaded together give contradictory instructions.",
+  "source_video_ids": [
+   "7678155840456592671"
+  ]
+ },
+ {
+  "name": "Emil Kowalski design/animation skills (emilkowalski/skills)",
+  "kind": "skill",
+  "official_url": "https://github.com/emilkowalski/skills",
+  "exists": "verified",
+  "evidence": "GitHub page fetched: public repo emilkowalski/skills, ~45.0k stars, MIT, 55 commits; README written in first person ('my toast library' linking sonner.emilkowal.ski and emilkowal.ski), experience at Vercel and Linear; main skill `emil-design-eng` plus ~15 others (animate, review-animations, apple-design, mobile-native, ask-sonner); install `npx skills@latest add emilkowalski/skills`.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Animation and interface rules from the author of Sonner/Vaul (durations, easing, when not to animate).",
+  "claimed_in_videos": "'Emil Kawasaki design skill, particularly good at animations' (name garbled).",
+  "reality_check": "Appears to be the real Emil Kowalski's own repo (first-person links to his domains), not a third-party knockoff. Narrow and good.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Narrow enough to coexist with Impeccable: install only `emil-design-eng` and invoke it when building motion-heavy UI. Fixes the most visible AI tells (ease-in enters, 500ms everything).",
+  "how_to_adopt": "`npx skills@latest add emilkowalski/skills --skill emil-design-eng`; invoke on components with transitions.",
+  "risks": "Keep to one or two skills from the pack to limit context.",
+  "source_video_ids": [
+   "7678155840456592671"
+  ]
+ },
+ {
+  "name": "Playwright MCP (microsoft/playwright-mcp) / Playwright CLI",
+  "kind": "plugin",
+  "official_url": "https://github.com/microsoft/playwright-mcp",
+  "exists": "verified",
+  "evidence": "GitHub API: 37,994 stars, Apache-2.0, pushed 2026-10-10, created 2025-03-21; official Microsoft MCP server. Also listed as a third-party integration in cursor/plugins.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Lets Claude drive Chromium/Firefox/WebKit: navigate, click, screenshot, read console errors.",
+  "claimed_in_videos": "Claude takes over your browser to test the site actually works; catches errors before you see them.",
+  "reality_check": "True; this is the official server and the backbone of the verification-skills pattern.",
+  "verdict": "USE NOW",
+  "why": "Prerequisite for agent-run QA on every app Haji ships.",
+  "how_to_adopt": "`claude mcp add playwright -- npx @playwright/mcp@latest`; then `/verify` or a verify-<feature> skill.",
+  "risks": "Snapshots are token-heavy on big pages (caveman's browse mode exists for this reason); disable the server with `/mcp` when not testing.",
+  "source_video_ids": [
+   "7678155840456592671",
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "Supabase MCP (supabase/mcp, hosted at mcp.supabase.com)",
+  "kind": "plugin",
+  "official_url": "https://github.com/supabase/mcp",
+  "exists": "verified",
+  "evidence": "GitHub API: supabase/mcp 2,944 stars, Apache-2.0, pushed 2026-10-10. README: hosted HTTP server `https://mcp.supabase.com/mcp` with OAuth login; URL params `read_only=true`, `project_ref=<ref>`, `features=database,docs` to scope tools.",
+  "cost": "free (Supabase account)",
+  "maintained": "active",
+  "what_it_does": "Official Supabase MCP: query/manage your project (tables, migrations, logs, docs) from Claude.",
+  "claimed_in_videos": "'Supabase plugin builds and manages databases from the terminal'.",
+  "reality_check": "Real; 'plugin' = this MCP server. The videos never mention the safety flags, which matter.",
+  "verdict": "USE NOW",
+  "why": "If any of Haji's apps run on Supabase this is table stakes, but only with read_only and project_ref set per project so an agent cannot migrate production by accident.",
+  "how_to_adopt": "`claude mcp add --transport http supabase 'https://mcp.supabase.com/mcp?project_ref=<ref>&read_only=true'`; drop read_only only in a dev project.",
+  "risks": "Write access from an agent to a production database; prompt injection via data rows is a documented MCP risk.",
+  "source_video_ids": [
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "Context7 (upstash/context7)",
+  "kind": "plugin",
+  "official_url": "https://github.com/upstash/context7",
+  "exists": "verified",
+  "evidence": "GitHub API: 62,855 stars, MIT, pushed 2026-10-10 (video's 61.9k is current). Pricing page unreachable; secondary sources report the free tier was cut in Jan 2026 to a monthly cap (reported 1,000 requests/month with a free ctx7sk key; anonymous access lower).",
+  "cost": "freemium (free key with monthly cap; paid plans)",
+  "maintained": "active",
+  "what_it_does": "MCP that resolves a library and injects current docs into the prompt.",
+  "claimed_in_videos": "Gives the latest version of every library so you never code against an outdated version.",
+  "reality_check": "Real and widely used; free tier is capped now, and each injection costs context tokens.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Useful for Haji when touching fast-moving libs (Next.js, Supabase, Stripe SDKs). Prefer `gh`/official docs fetch for anything else to save context.",
+  "how_to_adopt": "`claude mcp add context7 -- npx -y @upstash/context7-mcp --api-key <ctx7sk...>`; ask for docs only on version-sensitive APIs.",
+  "risks": "Monthly cap; third-party docs service in the loop; injected docs can be large.",
+  "source_video_ids": [
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "Strix (usestrix/strix)",
+  "kind": "repo",
+  "official_url": "https://github.com/usestrix/strix",
+  "exists": "verified",
+  "evidence": "GitHub API: 67,706 stars, Apache-2.0, pushed 2026-10-10, created 2025-08-05. README: needs Docker and an LLM key (`STRIX_LLM`, `LLM_API_KEY`; Anthropic supported, recommended claude-sonnet-4-6), `curl -sSL https://strix.ai/install | bash`, `strix --target ./app-directory`; 'Authorized use only'; paid Strix Cloud (app.strix.ai) with autofix and continuous pentesting.",
+  "cost": "free OSS + your LLM spend; paid cloud",
+  "maintained": "active",
+  "what_it_does": "Agentic penetration testing that attacks your app and proposes fixes.",
+  "claimed_in_videos": "Attacks your vibe-coded app like a real hacker and finds/fixes vulnerabilities.",
+  "reality_check": "Real and serious (Python 3.12, Docker, 4-8GB RAM). Active testing means run it against staging, never production, and it burns API tokens of its own.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Solo founders ship auth and payment code nobody audits; one pre-launch Strix run per app on a staging deploy is worth an evening and ~$10-30 of API tokens.",
+  "how_to_adopt": "Install per README with an Anthropic API key (not the Max plan), run against a staging URL or the local repo, triage findings into GitHub issues.",
+  "risks": "Needs an API key with budget; findings include false positives; never point at prod or at systems you do not own.",
+  "source_video_ids": [
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "SkillUI (amaancoderx/npxskillui, npm skillui)",
+  "kind": "skill",
+  "official_url": "https://github.com/amaancoderx/npxskillui",
+  "exists": "verified",
+  "evidence": "GitHub API: 2,384 stars, MIT, pushed 2026-10-10, created 2026-04-14; npm skillui v1.3.4. README: `npm install -g skillui`, `skillui --url https://notion.so`; pure static analysis, no AI/API keys; `--mode ultra` needs Playwright for screenshots/interaction diffs; outputs a Claude-readable skill folder.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Reverse-engineers a site's design tokens/components into a SKILL.md for Claude.",
+  "claimed_in_videos": "Reverse-engineers a whole design system into a markdown file; 'one-shotted Notion's landing page'.",
+  "reality_check": "Real and does what it says mechanically; output quality is tokens and components, not taste.",
+  "verdict": "WATCH",
+  "why": "Overlaps with awesome-design-md; useful only when the reference site is not in that collection or is Haji's own existing app (to document its real design system).",
+  "how_to_adopt": "`npx -y skillui --dir ./my-app` on an existing app to generate its DESIGN skill.",
+  "risks": "Copying a competitor's design system wholesale is a trade-dress risk.",
+  "source_video_ids": [
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "Unlazy (Leonxlnx/unlazy)",
+  "kind": "skill",
+  "official_url": "https://github.com/Leonxlnx/unlazy",
+  "exists": "verified",
+  "evidence": "GitHub API: 3,888 stars, MIT, pushed 2026-10-10, created 2026-08-09 (same author as taste-skill). README: SKILL.md + references, GATES.md ledger with CHECK/EXPECT commands, gate checker (Node 16+), optional Claude Code Stop hook that can block exit up to six times; `npx skills add Leonxlnx/unlazy`; `/unlazy tree 5 refactor the payment module`; cites laziness/underthinking papers; earlier internal 6-run comparison has no artifacts.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Forces decomposition into a depth tree of subtasks with runnable pass/fail gates before 'done'.",
+  "claimed_in_videos": "Models are 'designed to be lazy'; 20-second install; splits tasks so every leaf gets full effort.",
+  "reality_check": "Repo is real and more than a prompt (gates + hook). The 'designed to be lazy' framing is a hook; the cited papers are about underthinking/premature completion, not intent. By design it multiplies effort, so cost and time go up.",
+  "verdict": "WATCH",
+  "why": "Haji already has a Council gate and handoff discipline; the gates idea (CHECK/EXPECT) is worth stealing into his own ship checklist. The Stop hook that blocks exit is the kind of thing that wastes a usage window.",
+  "how_to_adopt": "Read references/method.md and GATES.md format; add 'CHECK:/EXPECT:' lines to your own plan template instead of installing.",
+  "risks": "Gate commands run with full filesystem/network access; Stop hook can trap sessions; more tokens on simple tasks.",
+  "source_video_ids": [
+   "7688919454599630110"
+  ]
+ },
+ {
+  "name": "Jakeschincariol/linkedin-agent-skill (/li-post, /li-human, ...)",
+  "kind": "plugin",
+  "official_url": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+  "exists": "verified",
+  "evidence": "GitHub API: 1,715 stars, 248 forks, MIT, created 2026-09-07, pushed 2026-09-17, homepage opusjake.ai (unreachable from sandbox). README: 11 skills (/li-post, /li-comment, /li-reply, /li-profile, /li-plan, /li-human, /li-carousel, /li-repurpose, /li-dm, /li-inbox, /li-audit); install by copying skills/li-* into ~/.claude/skills or `/plugin marketplace add Jakeschincariol/linkedin-agent-skill`; no LinkedIn API ('automating LinkedIn would violate its user agreement'); humanizer = two local dependency-free Python scripts (humanize.py with slop.json of 113 phrases, detect.py scoring five local heuristics) and 'does not call GPTZero, Originality, Copyleaks, Winston, or Turnitin'.",
+  "cost": "free",
+  "maintained": "active (young repo, two weeks of commits)",
+  "what_it_does": "Prompt skills that draft LinkedIn posts/comments/plans and a local de-AI-ifier; you paste the output yourself.",
+  "claimed_in_videos": "'Connect Claude to LinkedIn and it runs your entire account'; humanizer runs content through 5 AI detectors.",
+  "reality_check": "Both headline claims are false per the repo's own README: nothing connects to LinkedIn, and the '5 detectors' are five local heuristics, not detector APIs. The skills themselves are substantive (scripts, rubrics, 21 hook formulas).",
+  "verdict": "TRY THIS WEEK",
+  "why": "Only if LinkedIn is part of Haji's distribution plan. /li-repurpose (one transcript -> a week of posts) and /li-human are the useful bits; the rest is generic.",
+  "how_to_adopt": "Clone, read humanize.py and detect.py (short, no deps), copy skills/li-repurpose and skills/li-human into ~/.claude/skills/.",
+  "risks": "Young single-author repo; creator videos oversell it; don't automate posting.",
+  "source_video_ids": [
+   "7690310413342231839",
+   "7693005522370301214"
+  ]
+ },
+ {
+  "name": "Hormozi AI Skill (viclaranja/hormozi-ai-skill)",
+  "kind": "skill",
+  "official_url": "https://github.com/viclaranja/hormozi-ai-skill",
+  "exists": "verified",
+  "evidence": "GitHub API: 11 stars, 0 forks, created 2026-08-05, pushed 2026-10-09. README: `/ask-hormozi` and `/hormozi-report`; installer fetches standalone Python 3.11/3.12 if needed (3.13/3.14 unsupported); ~400MB download / ~300MB disk; MIT for code only, transcript rights stay with source owners (THIRD_PARTY_NOTICES removal process). PRIVACY.md (raw fetch): no telemetry, no hosted API, one download for the local embedding model when semantic search is on; only the selected excerpts plus your business answers go to your model provider; local redaction of obvious secrets.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Local semantic search over 9,330 timestamped passages from 2,039 public Hormozi videos; writes a cited HTML business diagnosis.",
+  "claimed_in_videos": "Free, local, cited to the second; separates evidence from opinion.",
+  "reality_check": "Claims check out on privacy and design. Tiny community (11 stars) means Haji is relying on one author; the corpus is scraped transcripts of someone else's content (removal process exists).",
+  "verdict": "TRY THIS WEEK",
+  "why": "A cheap, cited sparring partner for offer/pricing decisions on Haji's apps; the interview-then-report flow fits his Council process. One run per product is enough.",
+  "how_to_adopt": "`git clone https://github.com/viclaranja/hormozi-ai-skill && cd hormozi-ai-skill && cat install.sh` (read it) `&& ./install.sh`; restart Claude Code; `/hormozi-report`.",
+  "risks": "400MB install and its own Python; corpus rights are grey; output is only as specific as your answers.",
+  "source_video_ids": [
+   "7683102042411355408"
+  ]
+ },
+ {
+  "name": "HyperFrames (heygen-com/hyperframes)",
+  "kind": "repo",
+  "official_url": "https://github.com/heygen-com/hyperframes",
+  "exists": "verified",
+  "evidence": "GitHub API: 60,158 stars, Apache-2.0, pushed 2026-10-10, created 2026-03-10; maintained by HeyGen. README: 'Write HTML. Render video.'; Node 22+ and FFmpeg; Puppeteer drives headless Chrome; install `claude plugin marketplace add heygen-com/hyperframes` + `claude plugin install hyperframes@hyperframes`, invoke `/hyperframes:hyperframes`; a `/media-use` skill can call TTS/music/image models; no specific TTS vendor named.",
+  "cost": "free (TTS/asset APIs extra)",
+  "maintained": "active",
+  "what_it_does": "Agent-first framework that turns HTML/CSS/GSAP compositions into MP4.",
+  "claimed_in_videos": "Install the 'hyperframes' skill, pick Opus 5.5, connect ElevenLabs or Google voice, get an explainer video; demo credited to @deedydas.",
+  "reality_check": "The skill exists and is real (HeyGen). The impressive demo was deedydas's own pipeline, not proof of the one-prompt flow. Rendering needs ffmpeg + Chrome; voice is a separate paid API.",
+  "verdict": "WATCH",
+  "why": "Only when Haji needs product explainer or launch videos. Then it is the best open option, but expect iteration, not one-shot.",
+  "how_to_adopt": "Install the plugin in a scratch repo with ffmpeg; try `website-to-hyperframes` on one landing page.",
+  "risks": "ElevenLabs costs per minute; renders take time; HeyGen-sponsored OSS may push HeyGen services.",
+  "source_video_ids": [
+   "7691478400166399252"
+  ]
+ },
+ {
+  "name": "nateherkai/hyperframes-student-kit",
+  "kind": "repo",
+  "official_url": "https://github.com/nateherkai/hyperframes-student-kit",
+  "exists": "verified",
+  "evidence": "GitHub API: 1,285 stars, pushed 2026-10-10, created 2026-04-18. README: 14-15 video-editing skills (cut-silences, cut-mistakes, short-form-edit, motion-showreel) for Codex/Claude Code; local starter needs no paid API; optional ElevenLabs Scribe / Kie.ai keys; license file not named in README.",
+  "cost": "free (optional paid APIs)",
+  "maintained": "active",
+  "what_it_does": "Nate Herk's public video-editing skill kit on top of HyperFrames.",
+  "claimed_in_videos": "Not pitched directly; relevant because Nate's '5 skills' video DM-gates links.",
+  "reality_check": "His real public work is here; the two media skills in the video (banana-pro-director, cinema-world-builder) are not in it.",
+  "verdict": "WATCH",
+  "why": "Only relevant for content production; shows what to grab instead of DMing 'PONY'.",
+  "how_to_adopt": "Browse the skills folder if making short-form video.",
+  "risks": "Unknown license.",
+  "source_video_ids": [
+   "7675047000156425485"
+  ]
+ },
+ {
+  "name": "banana-pro-director and cinema-world-builder skills",
+  "kind": "skill",
+  "official_url": "",
+  "exists": "does-not-exist",
+  "evidence": "GitHub repository search for both names (name, description, readme) on 2026-10-10 returned no matching public repo; the creator distributes 'links' via DM keyword 'PONY'. Only unrelated 'director' skills (vox-director, tvc-director) exist.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "Private/DM-gated prompt files for image and video generation workflows.",
+  "claimed_in_videos": "Build detailed AI image-generation workflows; turn images into cinematic AI video.",
+  "reality_check": "Not publicly verifiable; likely the creator's own SKILL.md files used as a follow/DM funnel.",
+  "verdict": "SKIP",
+  "why": "Off-topic for app building and gated behind a funnel; public alternatives exist (hyperframes, Gemini image skill).",
+  "how_to_adopt": "N/A.",
+  "risks": "Funnel; unknown content.",
+  "source_video_ids": [
+   "7675047000156425485"
+  ]
+ },
+ {
+  "name": "Higgsfield API + cth9191/higgsfield-api-skill",
+  "kind": "api",
+  "official_url": "https://github.com/cth9191/higgsfield-api-skill",
+  "exists": "verified",
+  "evidence": "GitHub API: 56 stars, 6 forks, created 2026-09-17, pushed 2026-10-07; README targets Codex (`~/.codex/skills/higgsfield-api`), says other SKILL.md agents can use the folder; keys via HF_API_KEY_ID/HF_API_KEY_SECRET env; optional local budget cap; Python helper scripts; no license stated; no affiliate link found in README (the 'discounted API pricing' link is in the TikTok description, not the repo). Higgsfield API pricing page unreachable; on-screen rates (Seedance 2.5 from $0.2057/s, Kling 2.5 from $0.042/s) and secondary sources (~$0.18/s Seedance, ~$0.04-0.11/s Kling) broadly agree it is pay-per-second with no subscription.",
+  "cost": "usage-based (~$0.04-0.21 per video second)",
+  "maintained": "active (one author)",
+  "what_it_does": "Skill wrapper around Higgsfield's pay-as-you-go image/video API with model recommendation and spend caps.",
+  "claimed_in_videos": "Subscription is $200+/mo; API is pay-per-use and 'as low or lower than anyone'; one-line install; 'totally open source'.",
+  "reality_check": "API and skill exist; 'discounted pricing' in the description is a creator link (treat as affiliate). No license in the repo means 'open source' is not strictly true. Codex-first install.",
+  "verdict": "SKIP",
+  "why": "Haji does not generate video for his apps today; fal.ai/Replicate already cover the same models if that changes. Revisit only with a concrete asset need and a budget cap.",
+  "how_to_adopt": "N/A now. If needed later: clone into ~/.claude/skills/, set env keys, always pass a budget cap.",
+  "risks": "Unlicensed code; per-second spend can run away without the cap; creator affiliate link.",
+  "source_video_ids": [
+   "7689275803690929421"
+  ]
+ },
+ {
+  "name": "Jev classifier (TypeSafe AI) via jev-mcp-server",
+  "kind": "model",
+  "official_url": "https://typesafe.ai",
+  "exists": "verified",
+  "evidence": "typesafe.ai unreachable from sandbox. Secondary sources (aiweekly, litellm docs pass-through page, cloudprice, llmreference, Sept 2026 guides): Jev is TypeSafe AI's non-generative classifier/scoring model, model id jev-latest, endpoint api.typesafe.ai/v1/systemone, $0.042 per 1M input tokens with free output, no free tier/trial, early access via waitlist, company reportedly raised $40M. Several community MCP servers exist (burnigtm/jev-mcp 62 stars, blakestone-x/jev-mcp 25, wangkuangkuang/jev-mcp-server 3); the `uvx jev-mcp-server install claude-code` command on screen matches an official-looking quickstart.",
+  "cost": "usage-based ($0.042/M input)",
+  "maintained": "active",
+  "what_it_does": "Fast, cheap yes/no and scoring classifier used here to tag exported chat history as got_it_right/got_it_wrong.",
+  "claimed_in_videos": "Tag every conversation for mistakes and style, then reverse-engineer custom instructions; 'there was never a Jarvis'.",
+  "reality_check": "Jev exists and is cheap; it is not needed for this job (Haiku can tag 1,000 chats for a few dollars) and sending your whole chat history to a third-party classifier is the main cost, not money.",
+  "verdict": "SKIP",
+  "why": "The pattern (mine corrections into a <1,500-char instruction block) is good; the vendor is unnecessary. Do it with Claude Code + Haiku on the local export.",
+  "how_to_adopt": "Export Claude data (Settings > Privacy > Export) and ChatGPT data; run a Claude Code script with `model: haiku` subagents over conversations.json extracting corrections; generate the instruction block; put it in ~/.claude/CLAUDE.md.",
+  "risks": "Privacy of full chat history; Jev early-access terms unknown; Claude export does not include Claude Code sessions (those live in ~/.claude/projects).",
+  "source_video_ids": [
+   "7689525409691553037"
+  ]
+ },
+ {
+  "name": "Mine your own correction history into CLAUDE.md (pattern)",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "verified",
+  "evidence": "Claude Code already writes auto memory from corrections (memory doc); Claude.ai data export exists in Settings; Claude Code transcripts live in ~/.claude/projects/*.jsonl and `/insights` (costs doc) produces an HTML report of friction points across up to 200 local sessions.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Extract repeated corrections and preferences from past sessions into a short instruction block.",
+  "claimed_in_videos": "The custom-instruction file, not hardware, is what makes a 'Jarvis' work.",
+  "reality_check": "Correct insight. Claude Code's `/insights` does most of this natively for local sessions.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji's session-learning skill already does this per session; `/insights` gives the cross-session view for free.",
+  "how_to_adopt": "Run `/insights` in Claude Code, read ~/.claude/usage-data/report.html, fold the recurring friction points into ~/.claude/CLAUDE.md (user-level) in under 20 lines.",
+  "risks": "Keep user-level CLAUDE.md short; it loads in every repo.",
+  "source_video_ids": [
+   "7689525409691553037"
+  ]
+ },
+ {
+  "name": "Context Transfer prompt (/contexttransfer handoff block)",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "verified",
+  "evidence": "Full prompt is on screen in the video. The '39% dumber' figure traces to Laban et al., 'LLMs Get Lost in Multi-Turn Conversation' (arXiv 2505.06120; ICLR 2026 oral): average 39% drop across six tasks in multi-turn vs single-turn (v1 caption said 35%); cause is early assumptions and premature answers. claude.ai supports custom skills; Claude Code has /compact and native handoff via CLAUDE.md surviving compaction.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "A skill/prompt that packages goals, decisions, progress, files/links and next steps into one paste-able block for a fresh chat.",
+  "claimed_in_videos": "Models get up to 39% dumber the longer a conversation goes; Anthropic/OpenAI 'designed' them that way.",
+  "reality_check": "The research number is real; the 'designed to get dumber' framing is wrong (it is an observed failure mode). The prompt is a fine handoff template.",
+  "verdict": "USE NOW",
+  "why": "Haji already runs session-handoff; this five-section structure is a good checklist for it and for claude.ai threads. Zero cost.",
+  "how_to_adopt": "Save the on-screen prompt as a claude.ai skill named 'Context Transfer'; in Claude Code keep using the session-handoff skill and `/compact <focus>`.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7689307743835983134"
+  ]
+ },
+ {
+  "name": "Minto Pyramid Principle writing rule",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "verified",
+  "evidence": "Barbara Minto's 'The Pyramid Principle' (1987 onward) is the primary source; the video shows no exact prompt text.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Conclusion first, then three supporting reasons, then evidence; applied as a CLAUDE.md/skill rule for docs and emails.",
+  "claimed_in_videos": "Every McKinsey consultant learns it; 30-second setup; fixes Claude's fluff-first answers.",
+  "reality_check": "A legitimate, well-known structure. Trivial to encode.",
+  "verdict": "USE NOW",
+  "why": "Investor updates, customer emails and PRDs from Haji's Claude sessions benefit immediately; pairs with his email skill's voice rules.",
+  "how_to_adopt": "Add to the writing/email skill: 'Lead with the recommendation in one sentence; give at most three reasons; put evidence and detail after; no preamble.'",
+  "risks": "Do not apply to code explanations or step-by-step guides.",
+  "source_video_ids": [
+   "7689297926992039199"
+  ]
+ },
+ {
+  "name": "Seven 'mode' prompts (Red Team, Socratic, CEO, Devil's Advocate, Consultant, ...)",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "verified",
+  "evidence": "Six of seven prompt texts are fully visible on screen; the Socratic one is not. No evidence offered that these beat a direct request for critique.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "One-line role framings pasted at the start of a chat.",
+  "claimed_in_videos": "Tell AI how to think, not what to do; completely changes answers.",
+  "reality_check": "Harmless, mildly useful, unmeasured. Haji's Council gate already does multi-voice critique far more systematically.",
+  "verdict": "USE NOW",
+  "why": "Only as named lenses inside the existing Council/review step (e.g. a 'red-team' pass before pricing or launch decisions). Do not DM for the seventh prompt.",
+  "how_to_adopt": "Add 'red team' and 'CEO' as two named voices in the council-gate skill if not already present.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7673504000737545485"
+  ]
+ },
+ {
+  "name": "humanlayer/12-factor-agents",
+  "kind": "repo",
+  "official_url": "https://github.com/humanlayer/12-factor-agents",
+  "exists": "verified",
+  "evidence": "GitHub API: 26,637 stars, pushed 2026-10-10, created 2025-03-30. Page: content CC BY-SA 4.0, code Apache-2.0; 273 commits; no v2; one appendix 'Factor 13: Pre-fetch all the context you might need' under honorable mentions.",
+  "cost": "free",
+  "maintained": "active (content stable since 2025)",
+  "what_it_does": "Twelve engineering principles for reliable LLM apps (own your prompts, own your context window, tools are structured outputs, small focused agents, trigger from anywhere, stateless reducer).",
+  "claimed_in_videos": "Still true a year on; an hour well spent; Creative Commons.",
+  "reality_check": "Accurate. CC BY-SA 4.0 means you can quote it in internal docs with attribution and share-alike.",
+  "verdict": "USE NOW",
+  "why": "Haji builds agent features into apps; factors 2, 3, 4, 8, 10, 11 are the checklist for doing that without a framework. One hour, then fold into the architecture checklist.",
+  "how_to_adopt": "Read github.com/humanlayer/12-factor-agents (short version + factors 2,3,4,8,10,11); add a 12-factor check to the agent-feature spec template.",
+  "risks": "ShareAlike licence if republishing excerpts externally.",
+  "source_video_ids": [
+   "7690993516842994958"
+  ]
+ },
+ {
+  "name": "DeepLearning.AI 'Agentic AI' course (Andrew Ng)",
+  "kind": "course",
+  "official_url": "https://www.deeplearning.ai/courses/agentic-ai/",
+  "exists": "verified",
+  "evidence": "Official course page (via search): free to audit (videos + community); quizzes, labs and certificate need DeepLearning.AI Pro at $25/mo annual or $30/mo monthly; 7-day trial reported.",
+  "cost": "freemium ($25-30/mo for Pro)",
+  "maintained": "active",
+  "what_it_does": "Agentic design patterns: reflection, tool use, planning, multi-agent, evals.",
+  "claimed_in_videos": "Free course for the basics.",
+  "reality_check": "Free only in audit mode. Beginner-to-intermediate conceptual content.",
+  "verdict": "SKIP",
+  "why": "Hours Haji does not have, covering patterns he already applies daily in Claude Code. Watch the evals module only if an app needs an eval harness.",
+  "how_to_adopt": "N/A.",
+  "risks": "Time.",
+  "source_video_ids": [
+   "7687440407512354078"
+  ]
+ },
+ {
+  "name": "microsoft/ai-agents-for-beginners",
+  "kind": "course",
+  "official_url": "https://github.com/microsoft/ai-agents-for-beginners",
+  "exists": "verified",
+  "evidence": "GitHub API: 76,822 stars, pushed 2026-10-10; '18 Lessons to Get Started Building AI Agents'; topics foundry, semantic-kernel, autogen.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Microsoft's 18-lesson agents curriculum, Azure/Foundry-centric.",
+  "claimed_in_videos": "Do the first six conceptual lessons.",
+  "reality_check": "Exists and is free; framework content is Microsoft-stack; concepts transfer, code mostly does not.",
+  "verdict": "SKIP",
+  "why": "Lesson 06 (trustworthy agents) is the only part with marginal value; not worth the detour.",
+  "how_to_adopt": "N/A.",
+  "risks": "Time.",
+  "source_video_ids": [
+   "7687440407512354078"
+  ]
+ },
+ {
+  "name": "Hugging Face AI Agents course",
+  "kind": "course",
+  "official_url": "https://huggingface.co/learn/agents-course",
+  "exists": "verified",
+  "evidence": "github.com/huggingface/agents-course fetched: 33.4k stars; 'Sign up here (it's free)'; units cover smolagents, LlamaIndex, LangGraph, agentic RAG, final project with automated evaluation/leaderboard.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Free hands-on course building agents with open frameworks.",
+  "claimed_in_videos": "Build fuller agents with tools.",
+  "reality_check": "Free and real; framework-specific (not Anthropic tooling).",
+  "verdict": "SKIP",
+  "why": "Same reason as the others: Haji's time is better spent building the verification-skills loop than re-learning agent basics in smolagents.",
+  "how_to_adopt": "N/A.",
+  "risks": "Time.",
+  "source_video_ids": [
+   "7687440407512354078"
+  ]
+ },
+ {
+  "name": "'Building AI Agents for Beginners' (Dr. Ryan Ahmed, ~58 min)",
+  "kind": "course",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "No page with that title found (search budget hit mid-verification). Ryan Ahmed's verified presence: Maven 1-hour live sessions ('Build Your Personal AI Agent With Claude Code in 60 Minutes', 'Build 3 Business AI Agents in 60 Min: Claude Code & Cowork'), YouTube 'Prof. Ryan Ahmed' ~268k subs, Udemy instructor. The 'sign up on a website' flow matches a Maven lead-gen lightning lesson, free but email-gated. No evidence of Ben Gusberg being paid.",
+  "cost": "free (email-gated)",
+  "maintained": "n-a",
+  "what_it_does": "A one-hour beginner session on building/deploying an agent with Claude Code or Codex skills.",
+  "claimed_in_videos": "Build your first agent in 58 minutes, completely free.",
+  "reality_check": "Probably a Maven free lightning lesson funnelling to paid cohorts. Beginner level.",
+  "verdict": "SKIP",
+  "why": "Not for someone already shipping with Claude Code.",
+  "how_to_adopt": "N/A.",
+  "risks": "Email capture; upsell to paid cohort.",
+  "source_video_ids": [
+   "7692294299047709965"
+  ]
+ },
+ {
+  "name": "'Stanford Claude full course' (comment-bait repost of a Stanford LLM lecture)",
+  "kind": "course",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "The video shows a Stanford-watermarked lecture hall and a tweet by @Dipanshu_AI (8/26/26); no course name or URL. It is not an Anthropic or Stanford 'Claude course'; it is almost certainly one of Stanford's free public LLM lectures (e.g. CS229 'Building Large Language Models' or CS25) relabelled. Could not identify the exact lecture within this session's search budget.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "A ~2-hour general LLM lecture.",
+  "claimed_in_videos": "A 'Claude AI full course' that teaches you to build and automate anything.",
+  "reality_check": "Mislabelled; the DM link is a follower funnel for a YouTube video anyone can find.",
+  "verdict": "SKIP",
+  "why": "Fundamentals Haji does not need; nothing Claude-specific.",
+  "how_to_adopt": "N/A.",
+  "risks": "Comment-bait funnel.",
+  "source_video_ids": [
+   "7685489699510635807"
+  ]
+ },
+ {
+  "name": "Claude Code Club ($9/mo Skool community by Duncan Rogoff and David Iya)",
+  "kind": "program",
+  "official_url": "https://www.skool.com",
+  "exists": "verified",
+  "evidence": "Skool promo post and directories (via search): $9/month, cancel any time, 550-650+ lessons, 50+ skills, 25+ MCP servers, 'hit $5K MRR in two weeks', ~8,000 members claimed.",
+  "cost": "$9/mo",
+  "maintained": "active",
+  "what_it_does": "Paid community with Claude Code lessons and skill packs.",
+  "claimed_in_videos": "Almost 8,000 members building and selling real things.",
+  "reality_check": "Real; it is the monetisation behind the 'five plugins' video. All five plugins are free and public, so the club adds nothing Haji needs.",
+  "verdict": "SKIP",
+  "why": "Haji learns faster from the official docs and awesome-claude-code than from a $9 lesson library.",
+  "how_to_adopt": "N/A.",
+  "risks": "Content marketing; member counts self-reported.",
+  "source_video_ids": [
+   "7675060885118848270"
+  ]
+ },
+ {
+  "name": "Trillion agent waitlist and lightbulbmoment.com 1:1 AI training",
+  "kind": "program",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "Only the creator's waitlist page (4,547 signups) and a course URL are shown. No repo exists; 'build starts at 5,000 signups'.",
+  "cost": "unknown (course paid)",
+  "maintained": "n-a",
+  "what_it_does": "Kevin Fremon's personal agent project and coaching offer.",
+  "claimed_in_videos": "Join the waitlist; 1:1 AI Training Sprint.",
+  "reality_check": "Vaporware until a repo ships, exactly as the record flagged.",
+  "verdict": "SKIP",
+  "why": "Nothing to use.",
+  "how_to_adopt": "N/A.",
+  "risks": "Funnel.",
+  "source_video_ids": [
+   "7678747152935324942"
+  ]
+ },
+ {
+  "name": "OpenAI GPT-6 Astra / ChatGPT Work+Codex shared allowance / ChatGPT subagents",
+  "kind": "product",
+  "official_url": "https://help.openai.com/en/articles/20001516-managing-usage-with-gpt-6-astra-in-work-and-codex",
+  "exists": "verified",
+  "evidence": "OpenAI help article (via search 2026-10-10): 'Work and Codex share the usage allowance included with your plan'; Chat message limits are 'separate from the shared Work and Codex allowance'; GPT-6 Pro in Chat is not on Plus. So the two-tank model is real on OpenAI. 'Subagents' with Researcher/Drafter/Reviewer: OpenAI's Responses API has a multi-agent mode (max_concurrent_subagents default 3), but no consumer ChatGPT announcement with that panel was found; treat the UI as unverified.",
+  "cost": "ChatGPT Pro pricing",
+  "maintained": "active",
+  "what_it_does": "OpenAI's quota split between Chat and Work/Codex.",
+  "claimed_in_videos": "Plan in Chat with GPT-6 Pro + subagents so Codex quota is spent only executing.",
+  "reality_check": "Quota mechanics confirmed for OpenAI; subagent panel unconfirmed. Irrelevant to Claude, where chat and Code share one pool.",
+  "verdict": "SKIP",
+  "why": "Haji is Claude-only; the arbitrage does not exist on his plan.",
+  "how_to_adopt": "N/A.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7694003445564607751"
+  ]
+ },
+ {
+  "name": "OpenClaw / 'Mac Mini Jarvis' trend (Steinberger), ElevenLabs phone-call skill",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "Only an article excerpt is shown ('Please don't buy a Mac Mini... deploy this on Amazon's Free Tier'). Not researched further; out of scope for this theme.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "Self-hosted personal agent trend.",
+  "claimed_in_videos": "You do not need a Jarvis; you need better custom instructions.",
+  "reality_check": "The creator's conclusion (instructions > hardware) is sensible.",
+  "verdict": "SKIP",
+  "why": "Distraction from shipping apps.",
+  "how_to_adopt": "N/A.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7689525409691553037"
+  ]
+ },
+ {
+  "name": "Practically AI newsletter (practically.ai)",
+  "kind": "program",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "Landing page shown on screen: free daily 2-minute email, 10,500+ subscribers. Not fetched.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Creator's newsletter (CTA for the Codex-hack and hyperframes videos).",
+  "claimed_in_videos": "Get 1% better at AI every day.",
+  "reality_check": "Just a CTA.",
+  "verdict": "SKIP",
+  "why": "Haji's research pipeline (this one) already filters better than a daily email.",
+  "how_to_adopt": "N/A.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7694003445564607751",
+   "7691478400166399252"
+  ]
+ }
+]
