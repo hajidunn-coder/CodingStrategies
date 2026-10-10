@@ -1,0 +1,74 @@
+{
+ "id": "7689525300979305741",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7689525300979305741",
+ "creator": "angusthenontechnical",
+ "title": "Skip the Mac Mini Jarvis: export your ChatGPT/Claude history, have Jev classify every chat (got_it_right/wrong, usage style) and have your main AI write custom instructions from the analysis",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "ChatGPT data export (conversations.json)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Settings > Data controls > Export; Claude has equivalent export"
+  },
+  {
+   "name": "Jev (TypeSafe)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "small classifier model; quickstart shown: get key at console.typesafe.ai, 'uvx jev-mcp-server install claude-code'; tool jev_classify with model 'jev-latest'"
+  },
+  {
+   "name": "Claude (Cowork/Desktop)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Claude reads only the flagged chats' and writes the custom instructions"
+  },
+  {
+   "name": "Article quoting Steinberger 'Please don't buy a Mac Mini... deploy this on Amazon's Free Tier'",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "press piece on the Mac Mini Jarvis meme; mentions ElevenLabs skill used to call a restaurant via OpenTable"
+  }
+ ],
+ "claims": [
+  "What makes the Jarvis agents work well is 'just a file' -- your exported chat history",
+  "Attach a small model (Jev) to tag each conversation with what it got wrong and how you like to use AI; feed the tags back to the main model to generate custom instructions",
+  "Most people don't need to build a Jarvis; make the AI you already use work well via custom instructions",
+  "On-screen sample: 10 chats classified, got_it_wrong 3, got_it_right 7"
+ ],
+ "how_to_steps": [
+  "Export all your AI data (ChatGPT Settings > Data controls > Export; Claude equivalent) -> conversations.json",
+  "Attach the file to your agent with the prompt: 'This is my whole ChatGPT history. Reverse engineer the custom instructions that turn you into my Jarvis'",
+  "Install Jev MCP (uvx jev-mcp-server install claude-code) and run jev_classify over every chat: too verbose? got it wrong? made me repeat?",
+  "Bring the classifications back to the main model; it returns a new set of custom instructions",
+  "Paste into your custom instructions / CLAUDE.md"
+ ],
+ "on_screen_only": [
+  "'Jarvis was a front' title; 'Export all of your AI'",
+  "ChatGPT settings nav: Personalization / Profile / Settings (circled) -> Data controls -> Export (circled)",
+  "Prompt list: '1. Pull every line I corrected... 2. Keep patterns that show up... 3. Find the version of you that I... 4. Write it as latent space... who it is, who I am to it... 5. Turn each correction into... 6. Paste my own words in as a ve... 7. Add a silent... 8. Under 1,500 characters. A ChatGPT...'",
+  "Jev quickstart: '# 1. Get a key: https://console.typesafe.ai/sett... # 2. Install into your client (config is written... uvx jev-mcp-server install claude-code # or: # 3. Restart the client...'; 'No uv yet? curl -LsSf https://astral.sh/uv/install.sh | sh, or brew install uv, or pip install uv'; Tools table: choice -> 'Pick... near-ties are visible', 'Grade on an ordered 2-8'",
+  "JSON: {\"tool\": \"jev_classify\", \"model\": \"jev-latest\", \"results\": [{\"id\": \"chat_0412\", \"classification\": \"got_it_right\", \"top_probability\": 1}, ... {\"id\": \"chat_0427\", \"classification\": \"got_it_wrong\", \"top_probability\": 1}...], \"summary\": {\"items\": 10, \"auto\": 10, \"by_class\": {\"got_it_wrong\": 3, \"got_it_right\": 7}}}",
+  "Diagram: conversations.json -> Jev 'too verbose? yes/no', 'got it wrong? yes/no', 'made me repeat?' -> Claude 'reads only the flagged chats' -> custom instructions",
+  "Graph visualisation of chat clusters: Finances, Clients, Sales, Communications"
+ ],
+ "cta": "follow for free AI ideas",
+ "relevance": {
+  "score": 3,
+  "why": "Cheap way to mine years of chat history for a personal preferences file; Haji has already liked this exact idea from the same creator"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "One evening: export Claude history, run a classifier (Jev or just Haiku) over chats to flag corrections, have Claude synthesise a <1,500-char preferences block for CLAUDE.md / memory. Jev is optional; a cheap model does the same"
+ },
+ "verify": [
+  "Jev/TypeSafe pricing and whether jev-mcp-server is public on PyPI",
+  "Claude export format and whether Cowork can ingest a multi-MB conversations.json",
+  "Privacy: chat history contains client data; do classification locally or with a trusted vendor"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: 'Skip the Mac Mini Jarvis: export your ChatGPT/Claude history, have Jev tag every chat...' is already in the liked set; this version adds the on-screen Jev install command (uvx jev-mcp-server install claude-code) and the 8-point prompt"
+ }
+}

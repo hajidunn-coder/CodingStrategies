@@ -1,0 +1,65 @@
+{
+ "id": "7690372791836642574",
+ "url": "https://www.tiktok.com/@luispdoesai/video/7690372791836642574",
+ "creator": "luispdoesai",
+ "title": "ACI ('AI Contextualized Infrastructure'): open-source repo you clone into Claude Code/Antigravity/Cursor; a setup system prompt interviews you in phases (archetype, offer, audience, persona) and scaffolds a 'brain' folder plus agent folders with guardrails so any LLM has your business context before using MCP/API tools; comment ACI for the repo",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "ACI (AI Contextualized Infrastructure)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "open source; clone 'git clone https://github.com/your-username/ACI.git && cd ACI' (placeholder shown on screen); files brain/, CLAUDE.md, bootstrap-interview.md"
+  },
+  {
+   "name": "Claude Code / Antigravity / Cursor / Gemini",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "any of these as the host; setup prompt says 'Open you AI assistant in this directory (claude, gemini, cursor, etc.)'"
+  },
+  {
+   "name": "MCP connectors / APIs",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "agents call your existing tools via MCP or API so you stop tab-switching"
+  }
+ ],
+ "claims": [
+  "Gives 'an unfair advantage compared to 90% of this world' purely through the context you feed it",
+  "Business context in the brain folder is 'prompt cached' so the LLM has full context before navigating",
+  "Acts as a central operating system over your existing tools"
+ ],
+ "how_to_steps": [
+  "Clone the ACI repo and read the README",
+  "Open Claude Code/Cursor/Antigravity in the directory and paste the setup system prompt (reads brain/, CLAUDE.md, bootstrap-interview.md)",
+  "Answer the interview in phases: Phase 1 Archetype & Identity (Creator, Busy Operator, Freelancer, Founder, Owner/Utility); Phase 2 Offer, Audience & Traction (business model, target persona, daily headaches, dream outcome); Phase 3 Voice Calibration & Anti-Sludge (paste 1-3 writing samples, list pet peeves and buzzwords to avoid); Phase 4 Workflow Mapping & Engine Selection (select active engines, supply a system example); Phase 5 Auto-Synthesis & Workspace Calibration",
+  "AI auto-populates brain/identity.md, brain/voice-and-tone.md, brain/trip-and-wire(?), and agent folders with instructions and guardrails",
+  "Then just ask: 'create a new email on this topic for this audience'; the LLM routes to the right agent folder, follows its guard rails, and executes through MCP/API connectors"
+ ],
+ "on_screen_only": [
+  "Title overlay 'AI Contextualized Infrastructure'; creator holds a printed one-page file tree of the repo",
+  "Step card '1. Clone the repository — git clone https://github.com/your-username/ACI.git · cd ACI' (placeholder username, real URL not shown)",
+  "Setup prompt (partial): 'Open you AI assistant in this directory (claude, gemini, cursor, etc.) and paste the following prompt: Run the ACI Deep Setup Interview. Read brain/index.md, CLAUDE.md, and bootstrap-interview.md. Follow this protocol: 1. Ask 1-2 focused questions at a time across the 5 phases: Phase 1 Archetype & Identity (Creator, Busy Operator, Freelancer, or Founder, Owner/Utility); Phase 2 Offer, Audience & Traction (business model, target persona, daily headaches, dream outcome); Phase 3 Voice Calibration & Anti-Sludge (Paste 1-3 writing samples, list pet peeves and b...); Phase 4 Workflow Mapping & Engine Selection (Select active engines, supply a system example...); Phase 5 Auto-Synthesis & Workspace Calibration (Populate brain) — including the objection... 2. Accept rough voice-note transcripts, messy bullets, or brief answers. 3. Automatically populate brain/identity.md, brain/voice-and-tone.md, and brain/trip-and-wire... 4. Calibrate the examples/ across active engines so they feature my real offers, audience... 5. If my workflow requires custom modules (e.g. podcast-engine, sponsorships), automo... 6. Conclude with 5 tailored, ready-to-run commands for my specific daily workflow. Begin with Phase 1: Archetype & Background.'",
+  "IDE screenshot with a file explorer and a terminal; a checklist panel with green/red status rows (unreadable)",
+  "End card 'Comment \"ACI\"'"
+ ],
+ "cta": "comment ACI to get the repo link",
+ "relevance": {
+  "score": 2,
+  "why": "The idea (interview-driven brain/ context folder + per-agent folders with guardrails that Claude Code routes into) is sound and matches how Haji already structures CLAUDE.md, skills and memory; the repo is unnamed/gated and aimed at creators/freelancers writing emails and content rather than shipping apps"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Little to adopt beyond the 5-phase bootstrap interview prompt (archetype, offer/audience, voice samples + anti-buzzword list, workflow engines, auto-synthesis + 5 ready commands), which could be folded into an existing onboarding/CLAUDE.md-init skill in an hour"
+ },
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate of liked content (Karpathy-style wiki, Jarvis recipes with business-context interviews, GStack/Paperclip org structures); adds only the specific 5-phase 'Deep Setup Interview' prompt structure and the term ACI"
+ },
+ "verify": [
+  "Actual GitHub URL/owner for ACI (screen shows a placeholder 'your-username'); stars, license, maintenance",
+  "'Prompt cached' claim is loose: markdown in a folder is only cached if the host loads it into context each time",
+  "Does it do anything beyond markdown scaffolding, or is it a template repo?"
+ ]
+}

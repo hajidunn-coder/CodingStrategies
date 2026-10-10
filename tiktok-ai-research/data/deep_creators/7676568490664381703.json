@@ -1,0 +1,62 @@
+{
+ "id": "7676568490664381703",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7676568490664381703",
+ "creator": "robert.triebwasser",
+ "title": "Five named Hermes Agent profiles (Rocky family/Slack, Adrian business with email+calendar send rights, Ray marketing, Phil finance, Atticus legal) each bound to a different messaging channel; sells setup + 'AI operating system' guides",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Hermes Agent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agent harness; install on local computer or a VPS; supports multiple agent profiles each bound to a channel (email, Slack, iMessage)"
+  },
+  {
+   "name": "Slack",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Shared channel with wife where family agent 'Rocky' lives"
+  },
+  {
+   "name": "AI operating system guides",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's downloadable guides on his profile; quotes for done-for-you setup"
+  }
+ ],
+ "claims": [
+  "Runs five agents: Rocky (family: reservations, calendar, reminders, taxes, in a Slack channel with wife), Adrian (business: client projects, only agent allowed to send email and calendar invites), Ray (marketing ops), Phil (finance ops), Atticus (legal entity / 'chief lawyer operations')",
+  "Hermes runs locally (with access to computer files) or on a VPS if you do not want file access",
+  "Each Hermes agent profile can be attached to a different messaging platform (email, Slack, iMessage)"
+ ],
+ "how_to_steps": [
+  "Download Hermes Agent on your computer (or set it up on a VPS if you do not want it touching local files)",
+  "Follow the setup instructions",
+  "Create one agent profile per role (family, business, marketing, finance, legal)",
+  "Bind each profile to its own channel: Slack for the shared family agent, email/iMessage for others",
+  "Restrict send permissions: only the business agent gets email and calendar-invite sending"
+ ],
+ "on_screen_only": [
+  "Only burned-in captions of spoken words (e.g. 'ROCKY, ADRIAN, PHIL,', 'HERMES AGENT', 'CAN HAVE AGENT PROFILES', 'BE COMMUNICATING THROUGH SLACK,')",
+  "No UI, URLs or config shown"
+ ],
+ "cta": "Comment for a guide; go to profile to request a quote or download 'AI operating system' guides; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already liked several Hermes 'Jarvis' recipes. The reusable idea here is role-separated agent profiles with least-privilege send rights (only one agent can email/calendar) and a shared family channel, which maps to a solo founder juggling business and personal admin."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "If Haji goes the Hermes route, this is a sensible profile layout: one agent per domain, one channel each, send permissions only on one. No new tooling, but no concrete config shown; mostly a lead-gen video."
+ },
+ "verify": [
+  "Does Hermes Agent actually support multiple 'agent profiles' each bound to different channels (Slack, iMessage, email) in one install?",
+  "How are per-agent permissions (who can send email/calendar) enforced: in Hermes config or just by which OAuth tokens each profile has?",
+  "Cost/effort of the creator's paid setup vs. the free liked recipes"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Largely duplicate of liked Hermes/Jarvis recipes; marginal addition is the role-split profile pattern and the least-privilege rule (only one agent may send email/calendar)."
+ }
+}

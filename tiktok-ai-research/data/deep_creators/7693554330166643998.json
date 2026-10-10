@@ -1,0 +1,55 @@
+{
+ "id": "7693554330166643998",
+ "url": "https://www.tiktok.com/@alanonai/video/7693554330166643998",
+ "creator": "alanonai",
+ "title": "Engineering for Vibe Coders: Stripe is easy to wire in, but you must design subscription cancellation, webhook idempotency and Stripe-outage behaviour yourself instead of letting the AI guess",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Stripe",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "payments/subscriptions"
+  },
+  {
+   "name": "'Engineering for Vibe Coders' article series",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "creator's article on using Stripe safely; link in comments"
+  }
+ ],
+ "claims": [
+  "Stripe is usually easy for AI to integrate, but the app is not 'off the hook' on payment logic",
+  "Think up front: how subscriptions work, what happens when someone cancels months later",
+  "If Stripe sends the same payment event twice, can your app handle it? (idempotency)",
+  "If the backend cannot reach Stripe and Stripe holds the subscription truth, decide whether to allow some services or block the user"
+ ],
+ "how_to_steps": [
+  "Before prompting the AI for Stripe, write down subscription lifecycle rules (create, renew, cancel, lapse)",
+  "Design webhook handling to be idempotent (dedupe by event id)",
+  "Decide degraded-mode behaviour when Stripe is unreachable; consider caching subscription state locally",
+  "Read his Stripe article (link in comments)"
+ ],
+ "on_screen_only": [
+  "Title card: 'Engineering for AI Vibe Coders -- Stripe'",
+  "Lower-third captions: 'CAN YOUR APP HANDLE THAT?', 'BACKEND FAILS', 'ESPECIALLY IF STRIPE HOLDS THE INFORMATION ABOUT WHO HAS A SUBSCRIPTION'"
+ ],
+ "cta": "link to article in comments; comment if helpful",
+ "relevance": {
+  "score": 4,
+  "why": "Haji ships paid apps; webhook idempotency, cancellation handling and Stripe-down behaviour are exactly the failure modes vibe-coded billing gets wrong"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Turn the three questions into a checklist/skill for any app with Stripe: idempotent webhook handler keyed on event.id, local subscription-status cache with grace period, explicit cancel/lapse states. A few hours per app"
+ },
+ "verify": [
+  "Find the actual article URL (comments) and check it covers Stripe webhook signature verification too",
+  "Confirm Stripe's own guidance on idempotency keys and event retries"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "New warning: Stripe billing robustness (idempotent webhooks, cancellation lifecycle, Stripe-outage fallback). Liked set has his Supabase and Vercel lock-in videos and login-security gaps, but nothing on payments logic"
+ }
+}

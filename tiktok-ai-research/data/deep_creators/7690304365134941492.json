@@ -1,0 +1,68 @@
+{
+ "id": "7690304365134941492",
+ "url": "https://www.tiktok.com/@taki.gpt/video/7690304365134941492",
+ "creator": "taki.gpt",
+ "title": "Pitch for 'Prompt Master' (nidhinjs/prompt-master, ~11-13.7k GitHub stars): a free skill that rewrites messy prompts, asks clarifying questions, routes to a per-tool framework and claims to stop token waste",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Prompt Master",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "GitHub nidhinjs/prompt-master (SKILL.md, README.md, references/); shown as 13.7k stars on screen, '11,000 stars' in speech; installed via Claude > Customize > Skills > Upload a skill (prompt-master-main.zip)"
+  },
+  {
+   "name": "Claude.ai Skills upload",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Customize > Skills toggle 'prompt-master' Installed"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "also installable there per creator"
+  }
+ ],
+ "claims": [
+  "Extracts '9 dimensions of intent', asks targeted clarifying questions, routes to the right framework per tool (Claude Code -> ReAct + Stop Conditions; Cursor -> File-Scope; Midjourney -> Visual Descriptor; ComfyUI -> node workflow)",
+  "Checks against '35 known ways' models waste credits and remembers so it never repeats",
+  "'Without it: 3 wasted calls (Attempt 1-4); with Prompt Master: first try' -- 'zero wasted tokens'",
+  "Setup takes 1 minute; completely free"
+ ],
+ "how_to_steps": [
+  "Download the prompt-master repo zip from GitHub",
+  "Claude.ai > Settings/Customize > Skills > Upload a skill > select zip",
+  "Toggle it on; paste any messy prompt and it reformats it with clarifying questions"
+ ],
+ "on_screen_only": [
+  "'How to never hit your AI token limits again!' title",
+  "GitHub repo nidhinjs / prompt-master, Public, files: references/, README.md, SKILL.md; 'prompt-master-main.zip'; '13.7k stars on GitHub'",
+  "Example: 'Write me a midjourney prompt for a realistic samurai standing in the rain at night' -> 'Prompt Master is formatting...'",
+  "Clarifying question UI: 'Who is this for?' 1/3",
+  "Routing table: Claude Code -> ReAct + Stop Conditions (optimized), Cursor -> File-Scope (optimized), Midjourney -> Visual Descriptor, ComfyUI -> ComfyUI node workflow",
+  "'It remembers, so it never repeats: \"continue where we left off\"'",
+  "Output card: 'Target: Claude Code . Tokens: Medium (~380) . Objective: Build a fully detailed, production-quality static landing page for a business dashboard product. Stack: Single HTML file with embedded CSS and vanilla JS. No frameworks. Done When: All 8 sections render correctly at both breakpoints; Opens in browser with zero console errors'",
+  "'Comment School to get the full guide and course to optimize your AI setup'"
+ ],
+ "cta": "comment 'school' for link + install guide; follow",
+ "relevance": {
+  "score": 2,
+  "why": "A prompt-reformatting skill adds a round-trip to every task; for someone who already writes skills and plans, it is overhead. The 'Done When' / stop-conditions output format is the only interesting bit"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Skip as a default skill. Possibly borrow its 'Objective / Stack / Done When' brief format for ad-hoc Claude Code tasks. The token-savings claim is marketing"
+ },
+ "verify": [
+  "Does nidhinjs/prompt-master really have 11-13.7k stars and is it maintained?",
+  "Does the clarifying-question round trip cost more tokens than it saves?",
+  "'35 known ways models waste credits' -- is that list in the repo?",
+  "Creator funnels to a paid 'school' course"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New repo name: nidhinjs/prompt-master (prompt-rewriter skill). Liked set covers token-saving skills (caveman, ponytail, Unlazy) but not a prompt-rewriting/clarifying skill. Low value though"
+ }
+}

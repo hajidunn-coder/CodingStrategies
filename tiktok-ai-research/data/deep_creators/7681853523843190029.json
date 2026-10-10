@@ -1,0 +1,96 @@
+{
+ "id": "7681853523843190029",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7681853523843190029",
+ "creator": "adam_ha_yes",
+ "title": "Rapid list of 10 GitHub repos/skills to improve Claude's UI design: Anthropic Frontend Design, UI UX Pro Max, Interfaces Design Skills, UX/UI Agent Skills, Meng To's Agent Skills, Claude Code Frontend Design Toolkit, Responsive Craft, Mobile App UI Design, Design Skills, Design with Claude",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Anthropic Frontend Design (skill)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Anthropic's official frontend-design skill (in the official plugin/skills repo)"
+  },
+  {
+   "name": "UI UX Pro Max",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Design-system/style skill repo (name only)"
+  },
+  {
+   "name": "Interfaces Design Skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only"
+  },
+  {
+   "name": "UX/UI Agent Skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only"
+  },
+  {
+   "name": "Meng To's Agent Skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Skills by Meng To (Design+Code)"
+  },
+  {
+   "name": "Claude Code Frontend Design Toolkit",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only"
+  },
+  {
+   "name": "Responsive Craft",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only; responsive layout skill"
+  },
+  {
+   "name": "Mobile App UI Design",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only"
+  },
+  {
+   "name": "Design Skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "name only"
+  },
+  {
+   "name": "Design with Claude",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "10th item, spoken only"
+  }
+ ],
+ "claims": [
+  "These 10 GitHub repos '10x Claude's design skills'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title '10 GitHub Repos to 10x Claude's Design Skills' with numbered list revealed one at a time: 1. Anthropic Frontend Design 2. UI UX Pro Max 3. Interfaces Design Skills 4. UX/UI Agent Skills 5. Meng To's Agent Skills 6. Claude Code Frontend Design Toolkit 7. Responsive Craft 8. Mobile App UI Design 9. Design Skills 10. (spoken: Design with Claude)",
+  "Bottom caption: 'Comment \"design\" for all the Github repos'",
+  "No URLs, owners or demos shown"
+ ],
+ "cta": "Comment 'design' for the repo links",
+ "relevance": {
+  "score": 3,
+  "why": "Haji clearly cares about de-slopping UI (liked Impeccable, awesome-design, Taste, Apple design skill, Emil Kowalski). This adds a few names (UI UX Pro Max, Meng To's skills, Responsive Craft, mobile UI) but no evaluation."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a 20-minute triage: look up UI UX Pro Max and Meng To's agent skills, pick one mobile/responsive skill to try alongside Impeccable. Installing all 10 would create conflicting design instructions."
+ },
+ "verify": [
+  "GitHub owners/URLs for each name (none shown); which are maintained and which are SKILL.md vs. plugins",
+  "Overlap with already-liked skills (awesome-design, Impeccable, Taste); do they conflict when loaded together?"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate of liked design-skill roundups; new names only: UI UX Pro Max, Meng To's Agent Skills, Responsive Craft, Mobile App UI Design, Claude Code Frontend Design Toolkit."
+ }
+}

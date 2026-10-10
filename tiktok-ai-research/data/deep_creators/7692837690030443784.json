@@ -1,0 +1,58 @@
+{
+ "id": "7692837690030443784",
+ "url": "https://www.tiktok.com/@brandnat/video/7692837690030443784",
+ "creator": "brandnat",
+ "title": "Travel hack: on a flight with messaging-only Wi-Fi she used the Instinct agent over WhatsApp to search the web and generate PDFs/docs (a brand identity plan) without full internet",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "personal-assistant agent reachable via WhatsApp/iMessage; chat shown in WhatsApp as 'Instinct: hey! still up? what's on your mind?'"
+  },
+  {
+   "name": "WhatsApp",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "free messaging-only tier on in-flight Wi-Fi"
+  },
+  {
+   "name": "Grok bot, ChatGPT Dots, Meta (Muse)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named as comparable agents she could not reach in the air"
+  }
+ ],
+ "claims": [
+  "In-flight Wi-Fi allowed WhatsApp/iMessage but not browsing; Instinct via WhatsApp could search the internet and send results back",
+  "It created PDFs and documents; they 'worked out a whole brand identity plan'",
+  "Shopping/finding things to buy 'wasn't great'; business side 'quite impressed'"
+ ],
+ "how_to_steps": [
+  "Install/sign up for Instinct and connect it to WhatsApp before the flight",
+  "On messaging-only in-flight Wi-Fi, message Instinct to search, draft, and generate documents"
+ ],
+ "on_screen_only": [
+  "'LOOPHOLE ON PLANE (Use AI FREE)' banner",
+  "WhatsApp chat list: 'Instinct - hey! still up? what's on your mind?' 8:25 am; TikTok 'Hi Brand Nat | AI Automation...' 3:38 am"
+ ],
+ "cta": "comment with Instinct use cases",
+ "relevance": {
+  "score": 2,
+  "why": "Instinct is already covered twice in the liked set; the only addition is the messaging-only-WiFi loophole, which equally applies to any self-hosted agent on a WhatsApp/Telegram channel (Hermes)"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "If Haji builds a Hermes/Claude agent with a WhatsApp or Telegram channel, it automatically gets this benefit; no separate action"
+ },
+ "verify": [
+  "Instinct availability (invite-only per liked set) and whether WhatsApp channel is open to all",
+  "Which airlines' free messaging tiers allow the traffic"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Instinct reviews); adds the trivia that messaging-channel agents work on free in-flight messaging Wi-Fi"
+ }
+}

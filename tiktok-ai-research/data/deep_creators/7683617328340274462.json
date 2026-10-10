@@ -1,0 +1,72 @@
+{
+ "id": "7683617328340274462",
+ "url": "https://www.tiktok.com/@krisd.ai/video/7683617328340274462",
+ "creator": "krisd.ai",
+ "title": "free-claude-code (github.com/Alishahryar1/free-claude-code, ~48k stars): proxy that lets Claude Code / Codex run on 50 free-tier providers for a claimed 1.3B+ free tokens per month",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "free-claude-code",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "https://github.com/Alishahryar1/free-claude-code; badges: MIT license, Python 3.14, uv, pytest, ty type-checking, ruff, loguru; sections Quick Start / Providers / Clients / Integrations / Manage"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "client being redirected to free providers"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "also supported as a client"
+  },
+  {
+   "name": "NixOn @UnTalNixon_exe tweet (8/23/26)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "'CLAUDE CODE FREE (FOR REAL) — There's a repo with nearly 48,000 stars that turns Claude Code into a client you can use with free models. It's called free-claude-code.'"
+  }
+ ],
+ "claims": [
+  "1.3 billion tokens per month for free across many providers",
+  "Same quality as Claude Code or Codex 'completely intact' (creator's claim; README says agent capabilities stay intact, not model quality)",
+  "README: 50 ToS-friendly providers, 1.3B+ free tokens every month; 'FCC follows provider terms and removes integrations if they stop being allowed'",
+  "Repo has nearly 48,000 stars per the tweet"
+ ],
+ "how_to_steps": [
+  "Clone github.com/Alishahryar1/free-claude-code",
+  "Follow Quick Start to run the proxy and pick providers (free, paid, subscription, local models) from a searchable UI",
+  "Point Claude Code (or Codex) at the proxy; route Fable/Opus/Sonnet/Haiku model slots independently to compatible models"
+ ],
+ "on_screen_only": [
+  "Title overlay 'Easiest way to use Claude Code without paying for it'",
+  "README header 'Free Claude Code' with 'Independent open-source project. Not affiliated with or endorsed by Anthropic. Claude and Claude Code are trademarks of Anthropic.'",
+  "'What You Get: 50 ToS-friendly providers. 1.3B+ free tokens every month. Use free, paid, subscription, and local models from one searchable UI without putting your account at risk.'",
+  "'Agent capabilities stay intact. Stream responses, use tools, preserve native interleaved thinking for maximum performance, send images, and route Fable, Opus, Sonnet, and Haiku independently with compatible models.' 'Free-tier availability and limits are controlled by each provider and may change.'",
+  "Screenshot captioned 'Claude Code running with FCC.'",
+  "Link shown: https://github.com/Alishahryar1/free-claude-code"
+ ],
+ "cta": "link on screen; comment 'free' for the link",
+ "relevance": {
+  "score": 2,
+  "why": "Haji pays for Claude Max and builds production apps; swapping Claude Code's model for free open models trades away the model quality that makes the workflow work. Useful only as a cheap overflow/secondary-task backend, same niche as the liked OmniRoute and NVIDIA free endpoints"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "An hour to try as a fallback for low-stakes tasks when Max limits hit; not for main development. Risk: proxying Claude Code to third-party providers may conflict with Claude Code terms, and free tiers change"
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Near-duplicate of liked OmniRoute (free-tier chaining across ~350 models) and NVIDIA free endpoints; adds only the specific repo name free-claude-code and its '50 providers / 1.3B tokens' framing"
+ },
+ "verify": [
+  "Does the repo actually have ~48k stars and is it maintained (Python 3.14 badge suggests very recent)?",
+  "Which 50 providers and what real daily caps; '1.3B tokens/month' is a sum of free tiers, not a usable budget",
+  "Does routing Claude Code through a third-party proxy violate Anthropic's Claude Code terms?",
+  "Quality claim is unsupported: free models are not Opus/Fable-class"
+ ]
+}

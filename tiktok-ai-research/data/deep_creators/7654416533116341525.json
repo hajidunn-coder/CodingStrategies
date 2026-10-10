@@ -1,0 +1,65 @@
+{
+ "id": "7654416533116341525",
+ "url": "https://www.tiktok.com/@brandnat/video/7654416533116341525",
+ "creator": "brandnat",
+ "title": "Sponsored pitch for Framer Agents: an AI agent inside Framer that edits design, CMS, styles and SEO on the live site, plus 'branching' for team edits; argues maintenance (53% of work) beats one-prompt prototypes",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Framer Agents",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AI agent inside Framer editor; 'now live on framer.com' (creator says 'frame.com')"
+  },
+  {
+   "name": "Framer branching",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Team feature: separate branches, compare versions, publish without breaking live site"
+  },
+  {
+   "name": "Framer creator community",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Share work, build reputation, earn money (templates/experts marketplace)"
+  }
+ ],
+ "claims": [
+  "53% of the actual website work is maintenance and constant updates",
+  "Perplexity built its site in Framer without developers; Zapier shipped a full website in one week",
+  "4 million sites published on Framer",
+  "Framer Agents generate ideas, design components, CMS content, styles and SEO settings in real time inside the editor"
+ ],
+ "how_to_steps": [
+  "Open the Agent panel inside the Framer editor (tabs 'Agent' / 'Style', 'New Chat', 'Ask agents...')",
+  "Describe changes; the agent edits components, CMS content, styles or SEO directly on the site",
+  "Use branching for team members to make changes, compare versions and publish",
+  "Publish and keep updating from the same place (no export/hosting step)"
+ ],
+ "on_screen_only": [
+  "Framer agent UI: tabs 'Agent' | 'Style', 'New Chat', input 'Ask agents...'",
+  "Demo site 'HAUS' with nav items MERIDIAN, NORTE, FENIX, VELDT, FORMA (mobile preview)",
+  "A generated landing page: 'YOUR POCKET GUIDE TO SURVIVING PARENTHOOD, ONE ACTIVITY AT A TIME'",
+  "Zapier homepage screenshot: 'The platform and partner that make AI work in the real world'",
+  "Framer Experts/community profile cards (e.g. 'Ulvin', 'Framer Pro Expert', 'Product Designer')"
+ ],
+ "cta": "Try Framer Agents on framer.com (sponsored)",
+ "relevance": {
+  "score": 2,
+  "why": "Haji builds apps with Claude Code, not marketing sites in a no-code tool; Framer lock-in conflicts with the ownership stance in his liked Supabase/Vercel videos. The maintenance point is valid but generic."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only worth it if a marketing/landing site should live outside the codebase for non-dev editing. Otherwise Claude Code + a React landing page already liked (Impeccable, awesome-design) covers it."
+ },
+ "verify": [
+  "Is this a paid Framer partnership (likely; Framer community plug)?",
+  "Framer Agents pricing tier and whether agent edits count against a credit quota",
+  "Source of the '53% of work is maintenance' statistic"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly a sponsored no-code pitch; liked set already has multiple site-builder promos (Readdy, Manus) and better code-owned design skills. Only new nugget: Framer now has an in-editor agent and branching."
+ }
+}

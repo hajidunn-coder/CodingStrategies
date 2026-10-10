@@ -1,0 +1,84 @@
+{
+ "id": "7685471410143186189",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7685471410143186189",
+ "creator": "angusthenontechnical",
+ "title": "Pre-launch demand test: have Claude build 3 target audiences from a contact data source, send 'forwarded' marketing emails for product variants via an email sequencer, filter bot clicks, and see which audience/variant clicks most",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Desktop (Opus 5)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "project 'Portable monitor test - Demo'; searches Apollo and Prospeo for contact data"
+  },
+  {
+   "name": "Apollo / Prospeo",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "contact data sources Claude queried ('Searching Apollo', 'Checking Prospeo')"
+  },
+  {
+   "name": "Smartlead.ai",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "email sequencer shown ('Automate prospecting... Trusted by 100,000+ Businesses')"
+  },
+  {
+   "name": "Google Workspace",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "sign up ~10 sending mailboxes"
+  },
+  {
+   "name": "Tracking page + event collector",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Claude built a landing page logging offer_clicked / page_loaded / show_me_pressed per session"
+  }
+ ],
+ "claims": [
+  "Most Kickstarter campaigns fail because they burn money before learning nobody wants the product (Google AI overview cites ~40-43% success)",
+  "Need: a contact data source + 'this prompt'; AI builds 3 audiences, ~10 Workspace mailboxes, a sequencer, variant emails per audience",
+  "Emails should look like you are forwarding a marketing email; then AI analyses opens/clicks, removes bot clicks, finds which audience likes which variant",
+  "'I did a version of this and it kind of worked'; actually talking to customers on Zoom was 'way more helpful'"
+ ],
+ "how_to_steps": [
+  "Ask Claude to find three work audiences for the product (demo: developers, designers, consultants for a portable monitor) using Apollo/Prospeo",
+  "Create ~10 Google Workspace mailboxes and connect them to an email sequencer (Smartlead)",
+  "Have Claude write marketing emails per audience showcasing different product versions (demo: portrait coding screen, dual-screen extender, color review monitor)",
+  "Build a tracking landing page first; link each offer to its send and log the follow-up button press",
+  "Send as 'forwarded' marketing emails",
+  "Have Claude filter scanner/robot clicks (rapid sweeps, control-link hits, timing/user-agent) and keep uncertain events separate",
+  "Compare qualified visits per audience/variant; retest winners against fresh contacts"
+ ],
+ "on_screen_only": [
+  "'How to hijack any audience' title",
+  "Google search 'why do most kickstarter campaigns fail' with AI Overview: 'Roughly 40% to 43%...'; Reddit r/kickstarter 'Most Kickstarter projects don't fail because of marketing. They fail long...'",
+  "Claude chat: 'Find three work audiences for this portable monitor. Show me a few sample fits.' -> 'Searching Apollo', 'Checking Prospeo' -> '1. Developers ... 2. Designers ... 3. Consultants ... Three demo profiles per audience for review. No outreach.'",
+  "Concept previews: Portrait coding screen (for developers), Dual-screen extender, Color review monitor (for designers), client display",
+  "Claude: 'Build the tracking page before we send anything.' -> 'Building landing page', 'Testing event collector', 'Seed test passed. offer_clicked -> solo, page_loaded -> session_0..., show_me_pressed -> sessio...', 'Events join... A page load alone does not count as a visit.'",
+  "Claude: 'Filter the robot clicks before you compare the audiences.' -> 'Control-link... scanner', 'Rapid... likely scanner', 'Separate... stronger signal', 'Uncertain events stay separate. No single rule catches every bot.'",
+  "'Which audience and version worked best after filtering?' -> 'Strongest candidate: deve... It had the highest observed qu... in this demo. The intervals overlap, so... winner yet. Next: retest B against A on fresh developers.'",
+  "Copyable prompt: 'Separate scanner activity 1. Read raw events joined to sends and assignments... write a classification with evidence: likely scanner, uncertain... 2. Flag control-link... sweeps as likely scanner... 3. Count a later, separate... press as stronger... 4. Deduplicate... the primary qualified-visit count...'",
+  "Smartlead.ai homepage"
+ ],
+ "cta": "follow; he open-sources his AI ideas for free",
+ "relevance": {
+  "score": 2,
+  "why": "Cold-email demand testing is a grey-area tactic (spoofed 'forwarded' marketing emails from 10 burner mailboxes) and the creator himself says Zoom interviews were more useful; limited fit for Haji's apps"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The useful kernel is 'build a tracking landing page and filter bot clicks before trusting email metrics'. The 10-mailbox forwarded-email scheme risks domain reputation and CAN-SPAM issues; not recommended as is"
+ },
+ "verify": [
+  "Legality/deliverability of sending unsolicited 'forwarded' marketing emails from burner Workspace accounts (CAN-SPAM, Google sending limits)",
+  "Apollo/Prospeo data costs and whether Claude connectors for them exist",
+  "Smartlead pricing"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New technique (with caveats): pre-launch audience/variant demand test via sequencer emails plus a bot-click filtering prompt. Liked set covers PostHog archetype funnels and hook testing but not cold-email demand validation"
+ }
+}

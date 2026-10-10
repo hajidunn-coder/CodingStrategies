@@ -1,0 +1,55 @@
+{
+ "id": "7578594437538843959",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7578594437538843959",
+ "creator": "otis.kelley",
+ "title": "Founder Series Day 5 vlog: wiring Stripe Checkout (plans page -> Stripe price ID -> backend creates session with stripe npm package -> redirect to checkout URL), next building success/cancel pages and webhooks",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Stripe",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Checkout Sessions; 'documentation makes the whole process super smooth'"
+  },
+  {
+   "name": "stripe (npm package)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Backend generates a Checkout Session and returns the checkout URL"
+  }
+ ],
+ "claims": [
+  "Stripe documentation makes the integration smooth",
+  "Flow: plans page fetches plans from backend; each plan has a Stripe ID; frontend posts the ID; backend creates a session with the stripe npm package and returns the checkout URL; frontend redirects"
+ ],
+ "how_to_steps": [
+  "Store a Stripe price ID on each plan record in the backend",
+  "Plans page fetches plans from the backend and shows them",
+  "On plan select, frontend sends the Stripe ID to the backend",
+  "Backend creates a Checkout Session via the stripe npm package and returns the checkout URL",
+  "Frontend redirects the user to the Stripe-hosted checkout",
+  "Build success and cancel return pages",
+  "Then implement Stripe webhooks to receive payment events in real time"
+ ],
+ "on_screen_only": [
+  "Dark room, dual monitors with a code editor (unreadable code), captions of spoken words (e.g. 'INTEGRATING STRIPE FOR', 'A CORRESPONDING STRIPE', 'TO THE BACKEND.', 'USER GETS REDIRECTED', 'REAL TIME')",
+  "No repo, framework or product name visible"
+ ],
+ "cta": "none (series vlog)",
+ "relevance": {
+  "score": 2,
+  "why": "Standard Stripe Checkout pattern that Claude Code produces from the docs in one pass; nothing a veteran builder does not know. The webhook step is the only part that matters and is not shown yet."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already the default Stripe approach; the one reminder worth applying is to treat webhooks (not the success page) as the source of truth for entitlement."
+ },
+ "verify": [
+  "Which framework/backend he uses (not shown) and whether later days cover webhook signature verification and idempotency"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Generic Stripe Checkout how-to; no AI angle and no new tool. Not covered in liked set but not a gap worth filling."
+ }
+}

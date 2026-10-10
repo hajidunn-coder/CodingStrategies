@@ -1,0 +1,72 @@
+{
+ "id": "7646912260136357134",
+ "url": "https://www.tiktok.com/@jasoncooperson/video/7646912260136357134",
+ "creator": "jasoncooperson",
+ "title": "Stanford sycophancy study (AI endorses user 49% more than humans) -> creator repackaged Karpathy's LLM Council repo as a '/llm-council' Claude Code skill: 5 advisor agents (contrarian, first-principles, expansionist, outsider, executor) blind-review each other, chairman issues verdict",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "LLM Council (Andrej Karpathy)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Karpathy's GitHub repo 'Your Local Multi-Model Advisory Board'; original design fans a question to multiple providers (GPT, Gemini, Claude, Grok via OpenRouter), blind cross-ranking, chairman synthesis"
+  },
+  {
+   "name": "/llm-council skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Creator's Claude Code skill; triggers on 'llm council', 'convene the council', 'get a multi-model / second opinion', 'stress test this', 'don't just agree with me'; flags '--faithful council' and '--cross-vendor'"
+  },
+  {
+   "name": "Stanford sycophancy study",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Quoted: models endorsed the user 49% more often than humans; endorsed problematic behavior 47% of the time"
+  }
+ ],
+ "claims": [
+  "Stanford study: Claude/AI agrees with you 49% more than a human would; models endorse harmful/problematic behavior 47% of the time",
+  "Karpathy 'recently left to work for Anthropic' (as stated by creator)",
+  "/llm-council spawns 5 advisors: contrarian (what fails), first-principles (rips assumptions), expansionist (upside missed), outsider (knows nothing of your industry), executor (what you do Monday morning)",
+  "Each advisor blind-reviews the others' answers; a chairman agent gives the final call and next steps",
+  "The faithful version spawns different providers (OpenAI, Google, Anthropic, xAI) rather than Claude subagents"
+ ],
+ "how_to_steps": [
+  "Install the creator's skill (comment 'council') or build from Karpathy's repo",
+  "Type /llm-council followed by the decision question",
+  "Five persona advisors answer independently",
+  "Advisors blind-review each other's answers (no author labels)",
+  "Chairman agent synthesizes a verdict + 'Do this next'",
+  "Optionally run the faithful cross-vendor mode via OpenRouter-style providers"
+ ],
+ "on_screen_only": [
+  "Title card 'Stanford just exposed a huge Claude problem'",
+  "Study excerpt: 'Compared to human responses, all of the AIs affirmed the user's position more frequently. In the general advice and Reddit-based prompts, the models on average endorsed the user 49% more often than humans. Even when responding to the harmful prompts, the models endorsed the problematic behavior 47% of the time.'",
+  "OpenAI logo + Karpathy photo; code editor showing the skill (folders 'agents', 'docs', 'projects', 'security and audits', 'insight')",
+  "Claude Code prompt: '/llm-council should I change my gender and chop my...' (joke) with pickers 'Local', 'taskmaster'",
+  "Overlay list '5 ADVISORS: 1. Contrarian 2. First Principles Thinker 3. Expansionist 4. Outsider 5. Executor'",
+  "Illustrated cards: 'The Expansionist - What's the upside?', 'The Executor - What do you do Monday?', 'The Chairman - Here's the final call. VERDICT / Do this next'",
+  "Skill description text: 'Convene a council of independent agents that answer a hard question separately, blind-review and rank each other's answers, then synthesize one vetted answer instead of a sycophantic one... Trigger on llm council, convene the council, run this through the council, get a multi-model / second opinion, stress test this, don't just agree with me... --faithful council / --cross-vendor flag'",
+  "'LLM Council: A 3-stage pipeline (after Karpathy's llm-council) that produces a vetted answer instead of a sycophantic one...'",
+  "Karpathy repo page: 'LLM Council - Your Local Multi-Model Advisory Board' with illustration of a round table of AI logos"
+ ],
+ "cta": "Comment 'council' for the free skill + faithful-workflow breakdown",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already has a council-gate skill and liked three 'board of advisors' / council videos; the persona set (contrarian, first-principles, expansionist, outsider, executor) and blind peer-review stage are a concrete refinement, and the sycophancy stat is a good reason to keep using it."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Compare the five personas and blind-review step against the existing council-gate skill; adopt the blind cross-ranking stage if missing. Cross-vendor mode costs API keys for multiple providers; subagent-only version is free on Max."
+ },
+ "verify": [
+  "Locate the Stanford study and confirm the 49%/47% numbers and which models",
+  "Karpathy's actual llm-council repo (karpathy/llm-council) uses OpenRouter and multiple vendors; confirm the creator's skill is a faithful port vs. Claude-only subagents",
+  "Claim that Karpathy joined Anthropic: unverified"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate of liked council/board-of-advisors content and Haji's own council-gate skill; marginal additions are the specific five-persona lineup, the blind peer-review stage, and the Stanford sycophancy statistic as justification."
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "id": "7691085981948202254",
+ "url": "https://www.tiktok.com/@sirakinb/video/7691085981948202254",
+ "creator": "sirakinb",
+ "title": "AI trading-agent journal weeks 3-4: two weeks of zero trades fixing the NinjaTrader connection, then Thursday it ran unattended on a sim account (11 trades, 9 wins, +$540.30) and Friday (+$45.30); next step is an evaluation (prop-firm) account",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "NinjaTrader",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Futures platform the bot trades through (MNQ); 'getting my code to reliably talk to Ninja Trader was a big headache'; sim account 'SIM101'"
+  },
+  {
+   "name": "Message bridge (custom)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Slide 'REBUILDING THE LINK: Trading Scripts [RULES], Message Bridge [TESTING], NinjaTrader [SIM101]'"
+  }
+ ],
+ "claims": [
+  "Week 3: zero recorded trades (connection problems); week 4 started the same",
+  "Thursday Sep 24: 11 trades, 9 wins, 2 losses, +$540.30 net on sim; lunch long +$226.40 (+2.10R) closed before target; a trend short lost $91.60 (-0.78R), protective stop worked",
+  "Friday Sep 25: 2 trades, +$45.30; two-day sim net $585.60 (transcript says $486 combined)",
+  "'Two green days don't prove consistency'; week 5 goal: finish connection checks, then let the AI trade an evaluation account"
+ ],
+ "how_to_steps": [
+  "Define trading rules as scripts",
+  "Build a message bridge between the agent and NinjaTrader; test connection reliability",
+  "Run on sim account (SIM101) unattended; log every trade including losses",
+  "Review trades that exit early vs. target; verify protective stops",
+  "Only after consistent sim results, move to an evaluation account"
+ ],
+ "on_screen_only": [
+  "Title 'Ai Trading Agent - Weeks 3-4'; slides 'AI x TRADING JOURNAL - WEEKS 03-04'",
+  "'ZERO TRADES. TWO GREEN DAYS.'; 'SEP 14-18 WEEK 03 NO RECORDED TRADES' calendar Mon14-Fri18 all 'NO TRADE', notes 'Connection troubl... One charger i... Mostly build...'",
+  "'SEP 21-23 WEEK 04 REBUILDING THE LINK.' with rows TRADING SCRIPTS [RULES], MESSAGE BRIDGE [TESTING], NINJATRADER [SIM101]",
+  "'THURSDAY SEP 24 SIM101 IT RAN WITHOUT ME. +$540' chart '11 TRADES / ONE SESSION +$540.30', '9 WINS / 2 LOSSES', '1M BARS'",
+  "'TRADE 04/11 OU LUNCH LONG +$226.40 +2.10R REALIZED, 11:50 ET, ENTRY 30,516.5..., 4 MNQ'",
+  "'TRADE 07/11 NOT EVERY TRADE WON. -$91.60 -0.78R, 13:49 ET TREND SHORT, 4 MNQ'",
+  "'FRIDAY SEP 25 SMALLER DAY. STILL GREEN. +$45.30 (2 trades); TWO-DAY SIM101 NET $585.60, 13 TRADES'",
+  "'NEXT WEEK 05 EVALUATION IS THE GOAL. 01 Verify loaded NinjaTrader bridge 02 Clear native acceptance checks 03 Then decide on one eval account'"
+ ],
+ "cta": "none (series)",
+ "relevance": {
+  "score": 1,
+  "why": "Algorithmic futures trading is outside Haji's app/business building focus and carries real financial risk; honest journaling, but no reusable method for his work."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Do not implement. Only transferable habit: log losses and early exits, and gate autonomy on sim results before real accounts."
+ },
+ "verify": [
+  "What model/agent framework drives decisions (never stated)",
+  "Survivorship: sim results over two days are statistically meaningless, as the creator admits"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "Off-topic for the liked set; no tool or technique Haji would adopt."
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "id": "7678310027240754445",
+ "url": "https://www.tiktok.com/@luke.builds.ai/video/7678310027240754445",
+ "creator": "luke.builds.ai",
+ "title": "Lead-gen: three agents credited with $50k/month: email sales agent (finds top prospects, researches, personalized outreach, qualifies, books calls), client-success agent (fed every call, tracks onboarding, flags slippage), nightly 'Optimize' agent that audits all other agents for stale instructions/conflicts/broken permissions and auto-fixes safe issues",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Jarvis (creator's agent system)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's branded agent setup; also the product he sells to prospects; setup shared via comment 'Jarvis'"
+  },
+  {
+   "name": "Optimize agent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Nightly meta-agent that audits other agents' instructions and permissions, fixes safe issues, queues sensitive changes for approval"
+  }
+ ],
+ "claims": [
+  "Three agents helped him make $50k last month",
+  "Email sales agent: searches his email list for highest-value prospects, researches their business, sends personalized email, handles the whole conversation, qualifies, books calls on his calendar while he sleeps",
+  "Client success agents: every client call is fed in; they track what was discussed, onboarding setup, whether agreed items are implemented; flag slippage early",
+  "Optimize agent: every night audits Jarvis and all agents for outdated info, conflicting instructions, broken permissions; fixes safe issues, leaves sensitive changes waiting for approval"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Slide 'STEP 1 Email Sales Agent: Finds prospects - top leads only; Sends outreach - personalized, automatic; Books the call - straight to my calendar. While I'm asleep, it's filling my calendar with qualified sales calls. SELLS WHILE YOU SLEEP'",
+  "Slide 'STEP 2 Client Success Agent: Fed every call - tracks what was discussed; Tracks setup - how the client is being onboarded; Flags slippage - catches issues before they escalate. NEVER DROPS THE BALL'",
+  "Slide 'STEP 3 Optimize Agent: Nightly audit - every agent, checked; Finds issues - outdated, broken, conflicting; Fixes safely - sensitive changes wait for you. Employing AI agents means they don't need you prompting every step. THE NIGHT SHIFT'",
+  "Intro b-roll of a multi-monitor setup with '$50k.' caption"
+ ],
+ "cta": "Comment 'Jarvis' to get the setup",
+ "relevance": {
+  "score": 2,
+  "why": "No tooling or method shown, pure funnel. The one transferable idea is a scheduled meta-agent that audits other agents' instructions/permissions and queues risky changes for approval, which fits Haji's routines and skills-maintenance problem."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could implement a weekly Claude Code routine that lints CLAUDE.md/skills/routines for contradictions and stale facts and opens a PR for approval; cheap. Sales/CS agents require CRM/email wiring and cold-outreach appetite Haji has not signaled."
+ },
+ "verify": [
+  "Any evidence for the $50k claim or what 'Jarvis' is built on (Hermes? custom?)",
+  "How the client-success agent ingests calls (transcription tool?) and where data lives",
+  "Whether the 'Optimize' agent is real or marketing framing"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Lead-gen with no how-to; liked set already has Jarvis recipes, email/CS agents and on-call auditing agents. Only novel framing: a nightly agent that audits other agents' instructions and permissions."
+ }
+}

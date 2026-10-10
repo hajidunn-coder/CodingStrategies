@@ -1,0 +1,49 @@
+{
+ "id": "7690966793829092638",
+ "url": "https://www.tiktok.com/@alanonai/video/7690966793829092638",
+ "creator": "alanonai",
+ "title": "Engineering for Vibe Coders: an emailed 6-digit code is not real MFA (email+password+code are all 'something you know'); true MFA is a lifecycle (lost phone, deleted authenticator, impersonation on support calls, reset flow)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Engineering for Vibe Coders (article series)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Creator's own written series; MFA article link 'in the comments' (URL not shown)"
+  }
+ ],
+ "claims": [
+  "A six-digit code emailed at login is NOT multi-factor authentication: email address, password and emailed code are all 'something you know' (same factor)",
+  "The three factors are something you know, something you have (phone), something you are (biometrics); MFA needs at least two different factors",
+  "MFA is 'an entire system and life cycle', not a checkbox: must design for lost/new phone, deleted authenticator app, callers claiming to be the user, password/MFA reset verification"
+ ],
+ "how_to_steps": [
+  "Audit your login: if the second step is an emailed code, you have one factor, not two",
+  "Pick a second factor from a different category (TOTP authenticator app or passkey = something you have; biometric = something you are)",
+  "Design the recovery lifecycle: lost/new phone, deleted authenticator app, support impersonation, how you verify identity before resetting password or MFA",
+  "Read the creator's MFA article (link in comments) for the full checklist"
+ ],
+ "on_screen_only": [
+  "Only burned-in captions of the spoken words (e.g. 'THE FOCUS IS ON THE WORD FACTOR, NOT THE WORD MULTI', 'IT'S AN ENTIRE SYSTEM AND LIFE CYCLE')",
+  "No URLs, code or UI shown; creator talking outdoors in a 'rage against the machine learning' t-shirt"
+ ],
+ "cta": "Link to the article in the comments; 'let me know if this is helpful'",
+ "relevance": {
+  "score": 4,
+  "why": "Directly fixes a mistake Claude-built auth commonly makes (email OTP marketed as MFA). Veteran-facing apps that handle VA/PII data need correct auth; the recovery-lifecycle framing is the part solo founders skip."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap to act on: ask Claude Code to audit the auth flow against the three-factor rule and add TOTP/passkeys via the auth provider (Supabase/Clerk/Auth.js all support it), then write the recovery flow (backup codes, re-verification before MFA reset). Half a day per app."
+ },
+ "verify": [
+  "Find the actual article URL in the comments and check it covers recovery/backup codes",
+  "Confirm which second factor the app's auth provider supports natively (TOTP, passkeys/WebAuthn) to avoid hand-rolling MFA",
+  "Is email OTP acceptable as a step-up for low-risk apps even if not 'true' MFA? Decide per app risk level"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "The liked set covers login gaps (no email verification, rate limiting, unhashed passwords) and authN vs authZ, but not the 'email OTP is not a second factor' correction or the MFA recovery lifecycle (lost phone, support impersonation). This is a specific correction, from the same creator whose Supabase/Vercel videos Haji liked."
+ }
+}

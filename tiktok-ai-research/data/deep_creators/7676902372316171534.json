@@ -1,0 +1,68 @@
+{
+ "id": "7676902372316171534",
+ "url": "https://www.tiktok.com/@nateherkai/video/7676902372316171534",
+ "creator": "nateherkai",
+ "title": "Lead-gen: 'stop prompting Claude, build skills' -- turn repeat 500-word prompts into reusable /slash skills (e.g. /draft-email); shows a Stitch-via-MCP design import and a reference-file prompt template",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude skills (/draft-email example)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "reusable workflow invoked by slash command instead of re-typing a prompt"
+  },
+  {
+   "name": "Claude Code 'Import and audit Stitch design via MCP'",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "task writing C:\\Users\\shubh\\space\\aeon\\src\\index.css (193 lines) and tokens.ts (34 lines), todos: install Tailwind CSS + Framer Motion, build token system, build shared components"
+  },
+  {
+   "name": "Google Stitch",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "design imported via MCP"
+  },
+  {
+   "name": "Claude Desktop (Fable 5 High / Opus 5 High)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "prompt box 'Build a website f...' and 'www.hrftv.com create a new, original websit'"
+  }
+ ],
+ "claims": [
+  "'Robotics engineers don't prompt Claude' -- they create skills, which is why they get better results",
+  "A skill is a reusable workflow Claude uses whenever it needs to complete a task; type /draft-email instead of a 500-word prompt",
+  "'Stop building better prompts and start building better skills' is the biggest mindset shift"
+ ],
+ "how_to_steps": [
+  "Identify prompts you re-type (e.g. drafting emails)",
+  "Encode them as a skill with a slash command",
+  "Invoke the skill instead of re-prompting"
+ ],
+ "on_screen_only": [
+  "Prompt template card: 'I want to [TASK] so that [SUCCESS CRITERIA]. First, read these files completely before responding: [filename.md] -- [what it contains] x3. Here is a reference to what I want to achieve: [Upload reference file as markdown, or paste it here]. Here's what makes this reference work: [Paste your reverse-engineered blueprint -- the patterns, tone, structure, and rules you extracted from the reference. Format each one as a rule starting with \"Always\" or \"Never.\"] Here's what I need for my version: SUCCESS BRIEF Type of output + length: [Contract, memo, report, proposal, landing page, post?] Recipient's reaction: [What should they think...]'",
+  "Claude Code todo list: 'Import and audit Stitch design via MCP', 'Option B', Write index.css 193 lines, Write tokens.ts 34 lines, Update Todos (Scaffold..., Install Tailwind CSS + Framer Motion + dependencies, Build token system (tokens.ts + tailwind.config), Build shared components (FadeIn, Video...), 'Bypass permissions'",
+  "Terminal: npm run build / 'Let me verify the build compiles' with a green check",
+  "Red X over plain 'Build a website f' prompt vs green check over structured approach",
+  "'AIS' branding on creator's jacket; DM 'SKILLS' on Instagram"
+ ],
+ "cta": "DM 'SKILLS' on Instagram / link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Skills-over-prompts is already core to Haji's workflow; the only new bit is the on-screen reference-file prompt template"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already doing this. The 'Always/Never rules reverse-engineered from a reference' template is a reasonable pattern to drop into a writing skill, 10 minutes"
+ },
+ "verify": [
+  "'Robotics engineers' claim is unsubstantiated hook",
+  "What is being sold via the DM (course? skill pack?)"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (skills vs prompts); minor addition is the on-screen 'reverse-engineered blueprint as Always/Never rules' prompt template"
+ }
+}

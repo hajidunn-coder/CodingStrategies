@@ -1,0 +1,66 @@
+{
+ "id": "7693699658945694994",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7693699658945694994",
+ "creator": "robert.triebwasser",
+ "title": "Argues email-based AI agents beat voice assistants (ChatGPT Dots) for business: cc an agent into any email thread (which already holds people, files, context) and ask it to finish a deck or chase colleagues; demo shows 'Riley (AI Assistant)' cc'd in Outlook",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "ChatGPT Dots",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Voice assistant; creator spent 30 min on a call with it at the airport; 'good personal assistant, not a business assistant'"
+  },
+  {
+   "name": "Email agent 'Riley (AI Assistant)'",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Mock Outlook reply: To Mark Davies, Sarah Mitchell; Cc 'Riley (AI Assistant)'; body 'Riley, can you finish the lau[nch deck]...'; tool behind it not named (creator sells a tutorial)"
+  },
+  {
+   "name": "Outlook / Gmail",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Mock inboxes used for the demo"
+  }
+ ],
+ "claims": [
+  "Email-based agents are '10 times more powerful' than voice models for business",
+  "The average working professional gets 121 emails a day",
+  "Every email thread is a mini project: relevant people, files, attachments and long-running context already present",
+  "Cc an agent into the thread and ask it to pick up tasks (finish a PowerPoint, follow up with staff when work is incomplete); it works in the background like a coworker"
+ ],
+ "how_to_steps": [
+  "Give the agent its own mailbox/address",
+  "Cc it on a thread and address it by name with a task ('Riley, can you finish the launch deck')",
+  "Agent reads thread + attachments, does the work, and follows up with colleagues on incomplete items",
+  "Comment 'email' for the step-by-step tutorial"
+ ],
+ "on_screen_only": [
+  "'Voice agent ON A CALL 29:53' waveform widget over an airport shot; 'ChatGPT Dots' pill",
+  "Outlook inbox mock: Sarah Mitchell 'Q4 budget review', James Carter 'RE: Client proposal', Priya Shah 'Invoice #2043', Mark Davies 'RE: Launch timeline', Olivia Brooks, Daniel Kim 'Contract for review', Team Calendar, Emma Rodriguez, Alex Turner, Nina Patel, Chris Walker, HR Team",
+  "Stat card: 'THE AVERAGE WORKING PROFESSIONAL 121 emails a day - Sent and received, every working day'",
+  "Gmail thread 'Q4 launch plan' (Project label, 6 people, attachments Launch-Deck.pptx, Budget.xlsx, Contract.pdf, Product-shots.zip)",
+  "Outlook compose: To Mark Davies, Sarah Mitchell; Cc Riley (AI Assistant); 'RE: Q4 launch plan - Riley, can you finish the lau...'",
+  "Bottom-right comment prompt: 'COMMENT EMAIL step-by-step tutorial'"
+ ],
+ "cta": "Comment 'email' for a tutorial; join community; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Email-native agent is a practical pattern for a solo founder handling client/vendor threads; Haji liked a Town chief-of-staff app and Gmail-MCP Jarvis, so the idea is familiar, but the 'cc the agent into a thread' interaction is a clean UX for delegating."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Doable with existing pieces: a dedicated mailbox + Gmail MCP/Zapier trigger that wakes a Claude Code routine when the agent address is cc'd, reads the thread and attachments, drafts output for approval. Half a day; keep send rights gated (see spend/send warnings)."
+ },
+ "verify": [
+  "What platform the creator's 'Riley' runs on (Hermes with email channel?) and whether the tutorial is paid",
+  "Source of the '121 emails a day' statistic",
+  "Security: a cc'd agent reading all thread content is a prompt-injection surface; needs allowlists"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has email-reading assistants and Jarvis-with-Gmail, but not the 'cc the agent into existing threads' delegation pattern as the primary interface, nor the voice-vs-email argument for business use."
+ }
+}

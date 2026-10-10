@@ -1,0 +1,69 @@
+{
+ "id": "7686145556871154958",
+ "url": "https://www.tiktok.com/@itsmariahbrunner/video/7686145556871154958",
+ "creator": "itsmariahbrunner",
+ "title": "'Competitor Ad Spy' skill: feeds Meta Ads Library results for named competitors into Claude, finds their longest-running ad concepts, breaks down hook/format/angle/CTA, then generates ad concepts and creative briefs for your brand; comment 'spy' to get it",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Meta Ads Library",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "free; search any advertiser (demo: Vuori) to see active ads, creative, copy, start date"
+  },
+  {
+   "name": "Competitor Ad Spy skill (SKILL.md)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "file titled 'COMPETITOR AD SPY (SKILL.MD)'; gated via IG comment 'spy'"
+  },
+  {
+   "name": "Claude (desktop/Cowork)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Claude side panel shown next to Meta Ads Library"
+  },
+  {
+   "name": "Mariah's AI community / 30-day AI Challenge",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "'Build AI systems that run your work, business and life'; next challenge starts Oct 5; link in bio"
+  }
+ ],
+ "claims": [
+  "An ad running unchanged for months is a strong signal the concept works",
+  "The skill finds longest-running concepts and breaks down hook, format, messaging angle, CTA",
+  "'Thousands of people' have gone through the 30-day challenge"
+ ],
+ "how_to_steps": [
+  "Open Meta Ads Library and search a competitor brand (e.g. Vuori)",
+  "Give the skill your competitor list; it pulls their ads and sorts by run length",
+  "It breaks down each long-running ad: hook, format, messaging angle, CTA",
+  "Give it your brand info; it outputs ad concepts and creative briefs to test"
+ ],
+ "on_screen_only": [
+  "Hook card: 'Steal this AI Skill from me if you run ads'",
+  "Meta Ads Library UI: United States, All ads, search 'Vuori', tabs Ad Library / Ad Library Report / Ad Library API / Branded Content; ad cards 'Started running on Feb 14, 2026'",
+  "SKILL.md excerpt (partial): 'Do NOT add weight for the \"This ad has multiple versions\" label... That usually means Dynamic Creative or placement customization'; 'Lower the weight when: UTM clues or copy suggest a retargeting ad... it is a pure brand ad from a very large company that can afford to leave anything running'; 'Give each ad a signal score from 1 to 5 and rank the ledger by it'; 'Do pass (only if the competitor runs in the EU): ads delivered in the EU show estimated reach plus age, gender and country breakdown'; 'Say these caveats in the report: a start date shows how long... not that it made money; Library shows ad spend, cl... commercial ads; long runners can be small...'",
+  "Community page 'WHAT'S Inside: 01 The latest in AI, made useful; 02 Advanced agents, systems & workflows; 03 A community all winning together'; landing 'BUILD AI SYSTEMS THAT RUN YOUR WORK, BUSINESS, AND LIFE — JOIN THE WAITLIST'; tags NETWORK, LIFETIME, 30 DAYS, LONG-FORM, BUILD-ALONG"
+ ],
+ "cta": "comment 'spy' on IG @Itsmariahbrunner for the skill; AI community and 30-day challenge in bio",
+ "relevance": {
+  "score": 3,
+  "why": "Haji runs/considers Meta ads for his apps; a competitor-ad analysis skill with run-length weighting and signal scoring is useful research tooling. The skill itself is gated, but the on-screen logic (discount dynamic-creative labels, retargeting, big-brand ads; score 1-5; EU reach data) is enough to rebuild"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "A few hours: write a Claude Code skill that takes Ads Library exports (via Ads Library API or Apify scraper) and applies the on-screen scoring rules; pairs with the liked 'Claude Code runs Meta ads' repo"
+ },
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set had Claude running Meta ads and hook scoring, but not competitor-ad research via Meta Ads Library with run-length/signal-score heuristics and EU reach breakdowns"
+ },
+ "verify": [
+  "Meta Ads Library API access requirements (identity verification) vs scraping",
+  "How the skill actually ingests ads: manual paste, API, or browser automation?",
+  "Whether run-length correlates with performance for small advertisers (creator's own SKILL.md caveats say it does not prove profitability)"
+ ]
+}

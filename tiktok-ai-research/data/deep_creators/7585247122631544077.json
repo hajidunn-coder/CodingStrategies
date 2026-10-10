@@ -1,0 +1,45 @@
+{
+ "id": "7585247122631544077",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7585247122631544077",
+ "creator": "otis.kelley",
+ "title": "Founder Series Day 18 vlog: uses Replit's new design agent with a detailed functionality prompt to brainstorm marketing-site UI, refining prompts toward the desired look before coding",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Replit design agent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'Replit's new design agent' used for marketing-site mockups"
+  }
+ ],
+ "claims": [
+  "Starting from a detailed prompt (what the site must do + core app functionality) then refining gets closer to the intended look and feel",
+  "Several more pages to design over the next few days before coding"
+ ],
+ "how_to_steps": [
+  "Write a detailed prompt describing what the marketing site needs to do and the app's core functionality",
+  "Generate UI ideas in Replit's design agent",
+  "Refine prompts iteratively toward the target look and feel",
+  "Design remaining pages, lock designs, then code the marketing site"
+ ],
+ "on_screen_only": [
+  "Desk shots: ultrawide monitor showing a dark Replit-style design-agent panel with small mockup thumbnails, later a white landing-page preview with a hero heading and buttons; subtitles 'REPLITS NEW DESIGN', 'A DETAILED PROMPT'. No readable prompt text, URLs or repo names"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Vlog-level; no transferable technique beyond 'write a detailed prompt and iterate', which Haji already does with Claude Design"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable"
+ },
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Claude Design, Stitch, clone-site/remix-site skills cover this better)"
+ },
+ "verify": [
+  "Replit design agent feature name/date and whether it exports code or only mockups"
+ ]
+}

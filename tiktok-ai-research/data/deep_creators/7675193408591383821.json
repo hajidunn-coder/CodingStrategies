@@ -1,0 +1,55 @@
+{
+ "id": "7675193408591383821",
+ "url": "https://www.tiktok.com/@automatedintelligenceai/video/7675193408591383821",
+ "creator": "automatedintelligenceai",
+ "title": "News explainer: Microsoft 'Project Perception' (public preview in Defender) runs red/blue/green AI agent teams that attack, investigate and auto-fix (open GitHub PRs, push firewall rules) with human sign-off on high-impact actions, on a 137B in-house security model",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Microsoft Project Perception (Microsoft Defender)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "public preview, pay-as-you-go; 'Perception overview' dashboard, 'Agentic coverage', 'Recommended sessions'"
+  },
+  {
+   "name": "Microsoft in-house security model (137B)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "handles ~90% of work, routes hardest 10% to a bigger model"
+  }
+ ],
+ "claims": [
+  "Red agents do recon and pen testing; blue agents triage findings and write detection rules; green agents fix (open GitHub PR, push blocking firewall rule)",
+  "One workflow compresses ~146 hours of specialist time",
+  "Every high-impact action still needs a human to sign off",
+  "137B-parameter compact model handles ~90% of the work",
+  "Microsoft line: 'reactive security is over'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Product video stills: 'Continuous, proactive defense'; 'Perception overview' dashboard with 'Waiting for input', 'Agentic coverage 83%', 'Recommended sessions', 'Agent automation 41%', 'Time saved 224 hours'",
+  "'What do you want to do next?' prompt chips: 'Am I protected from Midnight Blizzard?', 'Protect against a threat', 'Plan for posture remediation', 'Secure identity'",
+  "'Red agents — Uncover attack paths before attackers do'; 'Green agents — Contain risk and validate defense'",
+  "Approval card: 'Authorize scanning the production web app · Recon agent' with steps 'Probe URL endpoints', 'Run injection probes (SQLi, XSS)', 'Test authentication and access control'; 'Threat - Midnight Blizzard' summary",
+  "Workflow panel: Run recon, Pen test, Provide new..., Suggest re...; Inputs (1) Outputs (3); closing card 'Your defense should be too'"
+ ],
+ "cta": "follow for more",
+ "relevance": {
+  "score": 2,
+  "why": "Enterprise Defender feature, not something a solo founder buys; the red/blue/green agent split with human approval gates is a useful mental model for an AI security-review pipeline in Claude Code (attack agent -> triage agent -> fix agent -> human merge), which echoes the liked Strix / on-call engineer content"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not the product; but the pattern (separate attacker, triager and fixer subagents with human sign-off before merge) could be modeled with Claude Code subagents plus the existing security-review skill in a day"
+ },
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "New: Microsoft Project Perception announcement and the red/blue/green autonomous security-agent architecture with human gates. Liked set covered vibe-code security holes and Strix, not Microsoft's agentic SOC"
+ },
+ "verify": [
+  "Is Project Perception the real product name and is it in public preview in Defender? Pricing model?",
+  "'146 hours' and '137B parameter' figures as stated by Microsoft or inferred by the creator?",
+  "Does the green-agent GitHub PR integration require GitHub Advanced Security?"
+ ]
+}

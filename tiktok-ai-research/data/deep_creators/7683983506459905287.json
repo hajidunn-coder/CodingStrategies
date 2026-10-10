@@ -1,0 +1,72 @@
+{
+ "id": "7683983506459905287",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7683983506459905287",
+ "creator": "ai.samaritan",
+ "title": "Map of Anthropic's free Claude Academy courses: start with Claude 101 (1 hr), then AI Fluency: Framework & Foundations (4 hr, 4D framework), then role tracks (students, educators, nonprofits, developers)",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude Academy (Anthropic courses)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "'Welcome to Claude Academy' page with Browse / Get started / All resources; course grid titled 'Anthropic courses'; all free with certificate"
+  },
+  {
+   "name": "Claude 101",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "12 lectures, ~1 hr of video (card on screen)"
+  },
+  {
+   "name": "AI Fluency: Framework & Foundations",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "14 lessons, 1 quiz, 4 hr; 4D framework: Delegation, Description, Discernment, Diligence"
+  },
+  {
+   "name": "Claude Code 101 / Claude Code in Action / Claude Platform 101 / Introduction to Claude Cowork / Introduction to agent skills / Introduction to subagents / Building with the Claude API / AI Fluency for Small Business / AI Capabilities and Limitations / AI Fluency for Educators / AI Fluency for Students",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "course tiles visible in the Anthropic courses grid"
+  }
+ ],
+ "claims": [
+  "Anthropic publishes over a dozen self-paced courses, every one free with a certificate at the end",
+  "AI Fluency is about four hours and is 'the core'",
+  "Course creators charge hundreds for the same AI fundamentals",
+  "The first two courses (Claude 101 + AI Fluency) are 'the whole game for most people'"
+ ],
+ "how_to_steps": [
+  "Go to Claude Academy (Anthropic's free education site)",
+  "If new, take Claude 101 (short, ~1 hr) to get comfortable with the tool",
+  "Take AI Fluency: Framework & Foundations (~4 hr): what to hand off, how to describe what you want, how to judge what comes back",
+  "Pick your lane: students/educators/nonprofits versions, or the developer track (Claude Code 101, Claude Platform 101, subagents, agent skills, Cowork, Claude API) if you write code"
+ ],
+ "on_screen_only": [
+  "Claude Academy header: 'Learn to use AI safely, effectively, and with intention. Free courses, tutorials, and use cases from Anthropic's education team.'",
+  "'Go deeper with Anthropic courses — Structured learning paths with video lessons and assessments to help you master AI collaboration, Claude development, and MCP'",
+  "Course tiles: Claude Platform 101, AI Fluency for Small Business, AI Capabilities and Limitations, Claude Code 101, Introduction to subagents, Introduction to Claude Cowork, Introduction to agent skills, AI Fluency: Framework & Foundations, AI Fluency for Educators, AI Fluency for Students, Building with the Claude API, Claude Code in Action",
+  "AI Fluency 'What you'll learn' list: Explain what AI Fluency means; Apply the 4D framework of Delegation, Description, Discernment, and Diligence; Distinguish Automation, Augmentation, and Agency; Describe how generative AI and LLMs work incl. capabilities and limitations; Make strategic Delegation decisions using Problem/Platform/Task Awareness; Communicate clearly through Product, Process, and Performance Description and foundational prompting; Evaluate outputs via the Description-Discernment loop; Practice Creation, Transparency, and Deployment Diligence",
+  "Claude 101 card: 12 Lectures, 1 hr of video, Claude.ai",
+  "Course lesson screenshot shows 'Delegation-Diligence loop' diagram with video instructor"
+ ],
+ "cta": "none (no comment bait); implicit follow",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already uses Claude Code daily; the general AI Fluency course is below his level, but the free developer track (Claude Code 101, subagents, agent skills, Cowork, Claude API, MCP) is first-party and certificate-backed; useful as a reference to send to collaborators/veteran peers"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Low effort: bookmark Claude Academy and skim the Introduction to subagents / agent skills / Claude Code in Action modules for anything missed; skip Claude 101 and AI Fluency. Not a workflow change"
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "First mention of Anthropic's own free Claude Academy course catalog (Claude 101, AI Fluency 4D framework, Claude Code 101, subagents, agent skills, Cowork, API). Liked set covered third-party learning repos, a Stanford lecture and Andrew Ng / Microsoft / HF agent courses, not Anthropic's first-party certificate courses"
+ },
+ "verify": [
+  "Confirm Claude Academy URL and that certificates are actually issued",
+  "Confirm the developer-track courses listed (Claude Code 101, Introduction to subagents, agent skills, Cowork) exist and are current for Claude 5 / current Claude Code",
+  "Check whether 'over a dozen' is accurate and whether any are gated behind sign-in"
+ ]
+}

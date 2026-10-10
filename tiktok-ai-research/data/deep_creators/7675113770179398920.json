@@ -1,0 +1,53 @@
+{
+ "id": "7675113770179398920",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7675113770179398920",
+ "creator": "robert.triebwasser",
+ "title": "Opinion take: Claude is the 'Apple' of AI (elite, expensive), ChatGPT is 'Samsung' (great desktop app), Google/Gemini is 'Google phones' (Gemini 3.7 Flash underrated, nobody talks about it)",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Fable",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Called 'pretty elite' and 'super expensive'"
+  },
+  {
+   "name": "ChatGPT desktop app",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Praised as 'sick', the Samsung analogue"
+  },
+  {
+   "name": "Gemini 3.7 Flash",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "'probably one of the best models out there, but nobody's talking about it'"
+  }
+ ],
+ "claims": [
+  "Claude models are elite but Fable is super expensive",
+  "Gemini 3.7 Flash is one of the best models out there and under-discussed"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title card: 'Claude = Apple / Chat GPT = ? / Google = ?'",
+  "Single-word captions of speech (CLAUDE, USING, EXPENSIVE., CHAT, SUPER, GOOGLE, GOOD., BEST, JUST)"
+ ],
+ "cta": "'What do you guys think?' (comment engagement)",
+ "relevance": {
+  "score": 1,
+  "why": "Pure opinion, no data, no workflow. Only takeaway is a nudge to consider Gemini Flash for cheap tasks, which the liked set already covers via NVIDIA/OmniRoute/DeepSeek cost videos."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [
+  "Does 'Gemini 3.7 Flash' exist as named and how does it benchmark/price against Claude Sonnet-tier for routine tasks?"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (cheap-model alternatives already covered); analogy only"
+ }
+}

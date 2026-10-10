@@ -1,0 +1,51 @@
+{
+ "id": "7694827035641842974",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7694827035641842974",
+ "creator": "nate.b.jones",
+ "title": "'Barbie box' prompt as a memory test: ask your AI to draw you as a boxed doll with your accessories and see how little it really remembers (recency bias vs memory)",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Mistral 'Le Chaton Fat' model",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Mistral release that day; the AI named his dog after it, showing recency bias"
+  },
+  {
+   "name": "Barbie-box image prompt",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "'make a Barbie box showing you with all your assets, accessories, family, dog'"
+  }
+ ],
+ "claims": [
+  "The model got his dog wrong (not a Corgi) despite that being widely known about him",
+  "It named the dog 'le chaton fat' after a Mistral model released that day: 'That is recency bias. That is not memory. That is not AGI.'",
+  "The Barbie-box prompt is a quick diagnostic of what an assistant remembers about you"
+ ],
+ "how_to_steps": [
+  "Prompt your AI (with memory on): 'make a Barbie box showing me with all my assets and accessories, my family, my dog'",
+  "Inspect what it got right/wrong to see what memory actually holds vs recent-chat bias",
+  "Post the image in the comments"
+ ],
+ "on_screen_only": [
+  "Caption banner: 'AI Hack: Ask AI To Make Your Barbie Box'"
+ ],
+ "cta": "share your Barbie box image in the comments",
+ "relevance": {
+  "score": 1,
+  "why": "Fun memory diagnostic; mildly useful as a reminder that chat memory is shallow and recency-biased, but no founder workflow"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Two-minute novelty; the only takeaway (don't trust assistant memory, keep facts in files) is already covered"
+ },
+ "verify": [
+  "Nothing to verify beyond the existence of the Mistral release he references"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content theme (memory is unreliable); novelty prompt only"
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "id": "7683191203210267934",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7683191203210267934",
+ "creator": "otis.kelley",
+ "title": "Ten copy-paste Claude prompts to harden a vibe-coded app (per-user data access/RLS, trim API responses, rate limiting, secrets in git history, server-side authZ, input validation, 2FA/token storage, dependency scan, HTTPS/headers/CORS, log redaction), shown in Claude Cowork with Sonnet 5",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude (Claude Cowork / Chat, Sonnet 5 Medium)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "each prompt shown in a Claude input box with 'Chat | Cowork' tabs and model picker 'Sonnet 5 · Medium'"
+  }
+ ],
+ "claims": [
+  "10 prompts cover an app's security 'in under 30 seconds' (to enter, not to fix)"
+ ],
+ "how_to_steps": [
+  "1. Confirm each user can only access their own data (check every DB query/endpoint, turn on row-level security)",
+  "2. Trim API responses to only fields the client uses (flag password hashes, tokens, internal flags, other users' data)",
+  "3. Add rate limiting to every endpoint",
+  "4. Scan code and git history for hardcoded secrets/API keys; move to env vars; list keys to rotate",
+  "5. Verify every protected action is authorized on the server, not just hidden in UI",
+  "6. Validate all user input server-side; flag SQL injection / XSS risk",
+  "7. Harden auth: missing 2FA, weak password rules, leaked-password check, session tokens in localStorage instead of http-only cookies",
+  "8. Scan dependencies for known vulnerabilities and outdated packages; flag breaking changes",
+  "9. Enforce HTTPS everywhere, set security headers, lock CORS to own domain",
+  "10. Find anywhere logs/returns leak sensitive data (passwords, tokens, PII, stack traces) and strip it"
+ ],
+ "on_screen_only": [
+  "Exact prompt 1: 'Check every database query and endpoint and confirm each user can only access their own data. Flag anywhere one user could read or edit another user's records, and turn on row-level security.'",
+  "Prompt 2: 'Review all my API responses and remove any field the client doesn't actually use — password hashes, tokens, internal flags, and other users' data.'",
+  "Prompt 4: 'Scan my code and my git history for hardcoded secrets or API keys. Move them to environment variables and tell me exactly which keys to rotate.'",
+  "Prompt 5: 'Verify every protected action is authorized on the server, not just hidden in the UI. Flag anywhere the client is trusted to enforce permissions.'",
+  "Prompt 6: 'Review everywhere I accept user input. Add server-side validation and sanitization, and flag any SQL injection or XSS risk.'",
+  "Prompt 7: 'Harden my auth flow. Check for missing 2FA, weak password rules, no leaked-password check, and session tokens stored in localStorage instead of http-only cookies.'",
+  "Prompt 8: 'Check all my dependencies for known vulnerabilities and outdated packages. List what to update and flag any breaking changes.'",
+  "Prompt 9: 'Enforce HTTPS everywhere, set my security headers, and lock CORS to only my own domain instead of allowing all origins.'",
+  "Prompt 10: 'Find anywhere I log or return sensitive data — passwords, tokens, personal info, or full stack traces in error messages — and strip it out.'",
+  "Note: the on-screen prompt box for #3 (rate limiting) shows the log-redaction prompt text, apparently a mis-paste in the video",
+  "UI: Claude input with 'Chat | Cowork' toggle, 'Sonnet 5 Medium' model selector, Brooklyn NYC cap"
+ ],
+ "cta": "none spoken; desc says 'copy-paste these'",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable security checklist for every app Haji ships; the exact prompt text is on screen and ready to turn into a /security-audit skill or pre-ship hook"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Half a day: bundle the 10 prompts into one Claude Code skill/slash command (or add to existing security-review skill) and run before each release; pair with existing RLS/authN-vs-authZ guidance. Overlaps with the built-in security-review skill but adds concrete items (git-history secrets, CORS lock, localStorage tokens, log redaction)"
+ },
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has 'six login-security gaps' and 'top 5 security holes'; this adds the verbatim 10 prompts covering API response trimming, git-history secret scan with key rotation list, CORS lock-down, dependency scanning and log/stack-trace redaction"
+ },
+ "verify": [
+  "Prompts are generic; check that Claude actually enables RLS correctly for your DB (Supabase vs Postgres vs others)",
+  "Rate-limiting implementation depends on hosting (Vercel edge, Express middleware); verify Claude picks a real store (Redis/Upstash) not in-memory",
+  "Confirm against existing /security-review skill to avoid duplicate work"
+ ]
+}

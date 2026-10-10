@@ -1,0 +1,78 @@
+{
+ "id": "7639867805474540813",
+ "url": "https://www.tiktok.com/@jasoncooperson/video/7639867805474540813",
+ "creator": "jasoncooperson",
+ "title": "Custom Claude Code '/post-content' skill: finds a video in Downloads/Notion, transcribes it, writes a caption in his format, uploads to Buffer and schedules to YouTube Shorts, TikTok and Instagram from one sentence; comment SKILL for the link",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "/post-content skill (custom Claude Code skill in 'content-os' project)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "invoked as '/post-content it should be claude content system in my downloads folder post it to youtube shorts right now!'"
+  },
+  {
+   "name": "Claude Code (Opus 4.7 1M, Extra high effort, Bypass permissions)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "status bar 'Opus 4.7 1M · Extra high', 'Bypass permissions', repo content-os / main / worktree"
+  },
+  {
+   "name": "Buffer",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "scheduling platform; posts to YouTube Shorts, TikTok, Instagram"
+  },
+  {
+   "name": "Notion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "video source; 'Using notion: API-post-search' and 'Notion: skipped — already in Posted state' shown"
+  },
+  {
+   "name": "Litterbox",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "'Litterbox upload in parallel' (temporary file host used to hand the video to Buffer)"
+  }
+ ],
+ "claims": [
+  "Millions of views for himself and clients, never posted manually from the app",
+  "~5 seconds of effort vs ~30 minutes to transcribe, caption and upload manually",
+  "Usage stats on screen: 362 sessions, 61,469 messages, 31.8M total tokens, 27 active days, longest streak 11d"
+ ],
+ "how_to_steps": [
+  "Say '/post-content <video name> in my downloads folder, post it to YouTube Shorts right now'",
+  "Skill lists recent Downloads, finds the .mp4 (178MB), runs pre-flight + 'stale-failure scan' in parallel, verifies required env vars",
+  "Pre-flight checks 1080x1920 vertical, 74s, h264/AAC; kicks off transcription and a Litterbox upload in parallel",
+  "Writes caption in his format (e.g. 'I Built the Ultimate Content System With Claude — Comment SYSTEM and I'll send you the full video breakdown')",
+  "Uploads to Buffer and schedules to YouTube Shorts, TikTok, Instagram; updates Notion post status (skips if already Posted)"
+ ],
+ "on_screen_only": [
+  "Claude Code usage dashboard: Sessions 362, Messages 61,469, Total tokens 31.8M, Active days 27, Current streak 3d, Longest streak 11d, Peak hour 8 PM, Favorite model Opus 4.7, activity heatmap",
+  "Terminal title 'content-os / Post Claude content to YouTube Shorts'",
+  "Log: 'Ran List recent Downloads files -> Found Claude content system.mp4 (178MB). Posting to YouTube Shorts only. Kicking off pre-flight + stale-failure scan in parallel. Running Verify required env vars exist... 24s · 320 tokens'",
+  "'Ran 3 commands -> Pre-flight passed (1080x1920 vertical, 74s, h264/AAC). Kicking off transcription + Litterbox upload in parallel. Using notion: API-post-search · 1m 10s · 1.3k tokens'",
+  "Result: 'YouTube Short — sent (post_id 6a052b9b3208a6926Ba362ae) Title: I Built the Ultimate Content System With Claude; Caption: Comment SYSTEM and I'll send you the full video breakdown; Source: ~/Downloads/Claude content system.mp4 (178MB, 1080x1920, 74s); Notion: skipped — \"I Built the Ultimate Content System With Claude\" already in Posted state from 5/12 IG/TikTok run'",
+  "git: main +105 -14 'Create PR'; Buffer / Instagram / TikTok / YouTube logos"
+ ],
+ "cta": "comment SKILL for the link",
+ "relevance": {
+  "score": 3,
+  "why": "Haji posts content for his apps/brand; a Claude Code skill that goes from local file -> transcript -> caption -> Buffer -> 3 platforms is a real time saver and the log shows a sane design (pre-flight validation, env-var check, parallel transcription/upload, Notion state to prevent double-posting)"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "1-2 days: Buffer API (or Postiz from the liked set) + Whisper/ffprobe pre-flight + caption template + Notion/DB state; skill itself is gated behind a comment funnel so you would rebuild from the log"
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set had Postiz as a scheduler and LinkedIn skills, but not an end-to-end local-video -> transcribe -> caption -> Buffer -> multi-platform Claude Code skill with pre-flight checks and posted-state deduplication"
+ },
+ "verify": [
+  "Buffer API tier needed for scheduling to TikTok/YouTube Shorts/Instagram (Buffer's public API access has been restricted in the past)",
+  "Litterbox is a temporary anonymous file host; check retention/privacy for client footage",
+  "Does the 'skill' link lead to a paid product/community?"
+ ]
+}

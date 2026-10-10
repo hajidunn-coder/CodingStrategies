@@ -1,0 +1,76 @@
+{
+ "id": "7606015595187817742",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7606015595187817742",
+ "creator": "youraveragetechbro",
+ "title": "Design-system workflow: dump a folder of UI-inspo screenshots into Gemini, have it write a design language, paste it into CLAUDE.md and make Claude Code/Cursor reference it",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Gemini",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "gemini.google.com shown in browser; creator says it is 'a step function above any other model' for reading a folder of design screenshots"
+  },
+  {
+   "name": "CLAUDE.md",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "the generated design language / design system is pasted into a claude.md file that every coding assistant is told to reference"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Claude Code panel visible inside the editor alongside a long CLAUDE.md"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as an alternative assistant that also reads the design file"
+  },
+  {
+   "name": "Parallel agents + context-updating skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "teased, not shown; covered in his 20:25 YouTube video 'I Tried Every AI Coding Agent... Here's My 2026 Setup'"
+  }
+ ],
+ "claims": [
+  "Gemini is 'a step function above any other model' at turning a folder of UI screenshots into a design language",
+  "Referencing a design-system file from CLAUDE.md keeps AI-generated UI 'true to the design' across sessions and tools",
+  "He also runs parallel agents on multiple features and a Claude skill that keeps app context up to date (not shown)"
+ ],
+ "how_to_steps": [
+  "Create a local folder of screenshots of apps/websites whose UI you like",
+  "Drag the whole folder into Gemini",
+  "Ask Gemini to write a 'design language' describing the design elements you like, then a design system",
+  "Paste Gemini's output into a CLAUDE.md (or separate design-system file referenced from CLAUDE.md)",
+  "Tell Claude Code / Cursor to reference that file whenever it builds UI"
+ ],
+ "on_screen_only": [
+  "macOS Finder window with a folder of inspo screenshots on a Lake Tahoe wallpaper desktop",
+  "Gemini web UI: 'Hi Thomas - Where should we start?' with Create image / Create music / Help me learn / Create video / Write anything / Boost my day chips",
+  "Editor with Claude Code side panel and a long CLAUDE.md containing '## Project Overview', '## Core Functionality', '## Tech Stack' sections for a 'Turtle Mail' (social-media/jobs-marketing) app",
+  "End card: YouTube video 'I Tried Every AI Coding Agent... Here's My 2026 Setup' 20:25 with 'NEW WORKFLOW' thumbnail"
+ ],
+ "cta": "watch his full 2026 AI coding workflow YouTube video (end card)",
+ "relevance": {
+  "score": 4,
+  "why": "Directly addresses AI-slop UI, which Haji has repeatedly liked content about; cheap, model-agnostic, works with existing CLAUDE.md habit"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "30 minutes: collect 10-20 screenshots, generate a DESIGN.md with Gemini or Claude's own vision, reference it from CLAUDE.md. Overlaps with awesome-design-md / Impeccable already liked, but the 'from your own inspo folder' angle is a nice personalisation step"
+ },
+ "verify": [
+  "Is Gemini actually better than Claude at multi-image design extraction, or is Claude vision good enough so no extra tool is needed?",
+  "How long should the design-language file be before it bloats CLAUDE.md context (Anthropic now says keep CLAUDE.md thin)?",
+  "Does he put the design system in CLAUDE.md directly or in a referenced DESIGN.md? Video is ambiguous"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Technique: generate your own DESIGN.md from a personal folder of UI screenshots via a vision model rather than installing someone else's design skill (awesome-design-md, Impeccable, Taste). Small but personal variation on liked content"
+ }
+}

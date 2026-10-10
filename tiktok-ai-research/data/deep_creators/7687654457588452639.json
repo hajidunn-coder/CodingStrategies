@@ -1,0 +1,50 @@
+{
+ "id": "7687654457588452639",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7687654457588452639",
+ "creator": "ducktate.com",
+ "title": "Pricing retention 'hack': a Pro plan that gets slightly cheaper every month you stay (e.g. $29.99 -> $29.50 -> $29) but resets to full price on cancel, creating loss-aversion friction; creator plans to add it to his app Ducktate",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Ducktate (creator's app)",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "ducktate.com handle; 'Hacks from building an app' episode 2"
+  }
+ ],
+ "claims": [
+  "Every subscription follows the same 3-tier pattern (free, pro, yearly) and has an 'absurd' amount of churn",
+  "Decreasing-price loyalty plan makes users 'almost refuse' to cancel because cancelling resets the price to full",
+  "Attributed to an unnamed founder ('this guy')"
+ ],
+ "how_to_steps": [
+  "Keep the standard free/pro/yearly tiers",
+  "Make the Pro price decay a small amount each consecutive month subscribed (e.g. $29.99, $29.50, $29.00...)",
+  "On cancellation, reset the user's price to the full list price so re-subscribing costs more",
+  "Surface the user's earned discount at cancel time to create friction"
+ ],
+ "on_screen_only": [
+  "Title card 'HACKS FROM BUILDING AN APP — EPISODE 2'",
+  "Word-by-word subtitles only; no app UI, pricing page or billing code shown"
+ ],
+ "cta": "follow for the daily series ('see you tomorrow')",
+ "relevance": {
+  "score": 2,
+  "why": "A pricing/retention tactic relevant to any subscription app Haji ships, but presented without data, source, or implementation details (Stripe/RevenueCat handling); dark-pattern adjacent and needs legal review"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could be implemented with Stripe coupons/subscription schedules (tenure-based discount) in a day, but the loss-aversion-on-cancel mechanic may conflict with FTC click-to-cancel / consumer-protection rules and could hurt trust; test as a loyalty discount first, without the punitive reset"
+ },
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New tactic: tenure-based decaying subscription price with reset-on-cancel as a churn lever. Liked set covered legal/compliance checklists and app UX but not pricing/retention mechanics"
+ },
+ "verify": [
+  "Who actually runs this model and what are their churn numbers?",
+  "Legal: does a price reset on cancel violate FTC Negative Option/click-to-cancel rules or app-store subscription policies (Apple/Google require clear pricing)?",
+  "Does Stripe/RevenueCat support per-tenure price decay natively or does it require custom coupon logic?",
+  "Does the decaying price materially reduce LTV versus the churn it prevents?"
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "7672476306377805064",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7672476306377805064",
+ "creator": "robert.triebwasser",
+ "title": "What is Hermes Agent (Nous Research open-source agent): demo of texting it in Slack to move two invoice PDFs into a 2026 tax folder on his computer; runs locally or on a ~$5/mo VPS 24/7",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Hermes Agent",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "open source from Nous Research; CLI 'hermes' shown; site with 'Every conversation, one place' and 'Streaming chat, live tool calls'"
+  },
+  {
+   "name": "Slack",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "channel used to message the agent with attachments"
+  },
+  {
+   "name": "VPS (~$5/month)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternative to keeping your computer on 24/7"
+  }
+ ],
+ "claims": [
+  "You can text Hermes like a coworker; it works 24/7",
+  "Demo: '@Hermes Please upload these two invoices into my 2026 invoices TAX folder' -> agent reads CONTEXT.md, Open Loops.md, offload-mode.txt, searches files for tax, runs python3/terminal, copies both PDFs to C:\\Users\\Robert\\Documents\\2026 Invoices in ~2 min / 6 iterations",
+  "Can run on a VPS for ~$5/month instead of a Mac Mini; part 2 covers setup"
+ ],
+ "how_to_steps": [
+  "Install Hermes Agent locally or on a cheap VPS",
+  "Connect it to Slack (or another messaging channel)",
+  "Send a message with attachments and an instruction; it reads its context files, uses terminal/python tools, and reports back",
+  "Watch part 2 on his profile for setup"
+ ],
+ "on_screen_only": [
+  "Slack thread: '@Hermes Please upload these two invoices into my 2026 invoices TAX folder and please let me know when complete' with BDCA20260809332... and BDCA20260809330... PDFs",
+  "Hermes AGENT reply: 'Reading CONTEXT.md L1-120, Reading Open Loops.md L1-160, Reading offload-mode.txt L1-10, Searching files for tax, Searching files for 2026, Searching files for tax (x4), terminal, python3 -c <<'PY'...', 'Working - 2 min - iteration 6/150, terminal', 'Complete. Both files copied to C:\\Users\\Robert\\Documents\\2026 Invoices: BDCA20260809332-Robert Triebwasser-Invoice.pdf ... I verified both files copied successfully.'",
+  "Windows Explorer: Documents > 2026 Invoices with Anthropic_invoice_Feb/Jan..., ElevenLabs invoice, credit card receipt, Critical Information Summary.pdf, etc.",
+  "Terminal '~ % hermes' and Hermes Agent web UI 'HERMES AGENT', 'Every conversation, one place', 'Streaming chat, live tool calls'",
+  "Title: 'What is Hermes Agent and why YOUR business needs it'"
+ ],
+ "cta": "follow; watch part 2 on profile",
+ "relevance": {
+  "score": 3,
+  "why": "Hermes is already the harness in two liked 'Jarvis recipe' videos; this is a concrete, mundane demo (file ops via Slack) that shows what it actually does, plus the $5 VPS point"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Weekend project already on the list from liked content; this adds nothing beyond confirming Slack + attachment handling works. Skip unless building the Jarvis"
+ },
+ "verify": [
+  "Hermes Agent repo URL (Nous Research) and model requirements/cost",
+  "Which VPS at ~$5/month, and security of giving a 24/7 agent terminal access to your files",
+  "How attachments from Slack get to the local file system (local agent vs VPS)"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Hermes Agent Jarvis recipes); only adds a Slack file-move demo and the VPS-for-$5 option"
+ }
+}

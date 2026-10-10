@@ -1,0 +1,33 @@
+{
+ "id": "7691401654163246350",
+ "url": "https://www.tiktok.com/@xinoyaps/video/7691401654163246350",
+ "creator": "xinoyaps",
+ "title": "Q&A: day-to-day of an AI security / cybersecurity / GRC engineer who acts as reviewer, trainer and subject-matter expert across IAM, incident response, encryption and AI engagements",
+ "category": "security-legal",
+ "tools": [],
+ "claims": [
+  "In GRC he is the reviewer who validates answers and trains others",
+  "His role spans AI security (teaching people to use and secure AI), platform security (encryption, IAM, incident response) and GRC",
+  "Describes himself as 'sales engineer + solution architect + subject matter expert for everything'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title: 'Day to day as an AI Security Engineer & GRC'",
+  "Replied-to comment: 'What's a day to day like for you in GRC? I'm interested but wanna know more!'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Career Q&A; no tools, techniques or warnings for app security"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content category only; career talk with no security content"
+ }
+}

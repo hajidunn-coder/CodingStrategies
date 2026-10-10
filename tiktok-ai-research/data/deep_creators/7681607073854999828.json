@@ -1,0 +1,69 @@
+{
+ "id": "7681607073854999828",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7681607073854999828",
+ "creator": "adamstewartmarketing",
+ "title": "Creatify MCP server added as a custom connector in Claude: one prompt writes the script, picks an AI avatar from 500+, renders a 30s TikTok-native video ad, makes A/B variations and can push winners to Meta/TikTok",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Creatify MCP server",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "added via Claude Settings > Connectors > 'Add custom connector', URL https://api.creatify.ai/mcp (visible); tools include creative_create_session, creative_get_session, product_create, product_get, product_get_brand_info, upload_file_widget, voice_clone, voice_clone_get"
+  },
+  {
+   "name": "Claude Desktop (Fable 5, High)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "prompt run in a Claude project with the product page as shared context"
+  },
+  {
+   "name": "Creatify avatar library",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'over 500' avatars"
+  }
+ ],
+ "claims": [
+  "Creatify just shipped an MCP server that 'turns Claude into a full ad agency'",
+  "From a product page Claude wrote the script, picked an avatar, rendered the ad; can produce 10 variations for A/B testing and push winners to Meta or TikTok",
+  "'Used to be a two-week turnaround and a freelancer invoice'; setup takes ~2 minutes",
+  "It remembers brand colours and tone so later ads are faster",
+  "On screen: 4 variants render in ~10 min each; 'Credits remaining: 327'"
+ ],
+ "how_to_steps": [
+  "Claude Settings > Connectors > Add custom connector; name 'Creatify', URL https://api.creatify.ai/mcp (OAuth client id/secret optional)",
+  "Create a Claude project and add the product page / product photo as shared context",
+  "Prompt: 'make me a 30 second video ad for this product, female avatar, make it feel native to TikTok'",
+  "Ask for N variations (different hook/product focus/presenter energy) for A/B testing",
+  "Push winning variants to Meta or TikTok"
+ ],
+ "on_screen_only": [
+  "Product: 'FORD NAVY POLO' shirt photo; prompt text '...a 30 second video ad for this product.' in a Claude project with 'Fable 5 / High'",
+  "Connectors list: Slack, Google Calendar, Microsoft 365, Asana, Boehlis, GitHub integration, Gmail, Google Drive, HubSpot, Jamie, Notion, Onnisend",
+  "Add custom connector dialog: Name 'Creatify', URL 'https://api.creatify.ai/mcp', Advanced settings OAuth Client ID / Secret",
+  "Creatify tool list: creative_create_session, creative_get_session, creative_send_turn, product_create, product_get, product_get_brand_info, product_list, upload_file_widget, voice_clone, voice_clone_get",
+  "Claude response: 'Kicking off 4 variations now, each with the same hook/product focus and format but a distinct presenter energy' and '1. High-energy hype 2. Chill/laid-back 3. Dry/deadpan humour 4. Warm/storytelling', 'All 4 are rendering now (~10 min each)', 'Credits remaining: 327'",
+  "Rendered avatar: woman in navy polo in a kitchen"
+ ],
+ "cta": "comment 'MCP' for the setup link",
+ "relevance": {
+  "score": 3,
+  "why": "If any of Haji's apps need paid-social creative, this is a plausible way to get avatar UGC ads from Claude without a freelancer; otherwise marketing-only"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Two-minute connector setup, but Creatify is credit-based and the demo is clearly sponsored/affiliate; try only when an app is ready for paid ads. Pushing to Meta/TikTok is asserted, not shown"
+ },
+ "verify": [
+  "Creatify MCP pricing per rendered video and whether the free tier covers testing",
+  "Is 'push winners straight to Meta or TikTok' actually a tool in the MCP (no tool for it in the visible list)?",
+  "Avatar ad quality/disclosure rules on TikTok for synthetic presenters",
+  "Is the creator a Creatify affiliate?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: Creatify MCP (api.creatify.ai/mcp) for AI-avatar video ads from inside Claude. Liked set covers Higgsfield MCP for cinematic video and Claude-run Meta ads, but not avatar UGC ad generation"
+ }
+}

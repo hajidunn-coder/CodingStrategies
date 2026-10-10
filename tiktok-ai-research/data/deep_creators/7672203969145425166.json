@@ -1,0 +1,56 @@
+{
+ "id": "7672203969145425166",
+ "url": "https://www.tiktok.com/@siroccomask/video/7672203969145425166",
+ "creator": "siroccomask",
+ "title": "6-second silent meme: 'People might think I have never used Claude Code but this was me 12 months ago' over a Claude Code session with custom subagents (codebase-pattern-finder, codebase-analyzer) in bypass-permissions mode; caption says Codex is still his daily driver",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Session reading a multiplayer game codebase; '>> bypass permissions on (shift+tab to cycle)'"
+  },
+  {
+   "name": "codebase-pattern-finder / codebase-analyzer (subagents)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Custom subagent names visible: 'codebase-pattern-finder (Find movement system patterns)', 'codebase-analyzer (Analyze physics and collision system)', 'codebase-analyzer (Analyze network event flow)'; these match the HumanLayer/.claude agents convention"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "'Codex is still my daily driver for now'"
+  }
+ ],
+ "claims": [
+  "Creator used Claude Code 12 months ago; currently prefers Codex (caption)"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'People might think I have never used Claude Code but this was me 12 months ago'",
+  "Terminal path '...olders/4j/jhtlq4jj12x79wtqgv_xyrs00000gn/T/'",
+  "Reads: client/src/scenes/GameScene.js (1654 lines), client/src/entities/Cat.js (244), Mouse.js (207), client/src/networking/SocketManager.js (568), server/index.js (541), server/GameRoom.js (2131)",
+  "Subagent calls: codebase-pattern-finder (Find movement system patterns) +24 more tool uses; codebase-analyzer (Analyze physics and collision system) client/src/movement/MovementComponent.js; codebase-analyzer (Analyze network event flow) Search pattern 'export const EVENTS' path 'shared' found 51 lines",
+  "'>> bypass permissions on (shift+tab to cycle)'; file tree node_modules / src / core",
+  "No speech"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Meme with no content. The only artifact of interest is the named research subagents (codebase-pattern-finder, codebase-analyzer), a pattern from HumanLayer's agents that Haji may already use."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to do; if not already present, read-only 'codebase-analyzer' / 'codebase-pattern-finder' subagents are a known cheap context-saving pattern."
+ },
+ "verify": [
+  "Are those subagent names from HumanLayer's public .claude/agents set? (likely)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate / no content; meme only"
+ }
+}

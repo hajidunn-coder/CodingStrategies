@@ -1,0 +1,77 @@
+{
+ "id": "7652382940139146510",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7652382940139146510",
+ "creator": "adam_ha_yes",
+ "title": "'Good product design is the last moat': models/APIs/cloud are commoditized, so the differentiator is assembling a product that feels right; ends with the creator's 7-link design resource list (21st.dev, getdesign.md, webgpu-dreamhack, impeccable.style, site-recreation repo, awesome-design, Taste skill)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "21st.dev",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "#1 Integrate high-quality assets with 21st.dev — https://21st.dev/home"
+  },
+  {
+   "name": "getdesign.md",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "#2 Steal the style of any famous design system — https://getdesign.md/"
+  },
+  {
+   "name": "webgpu-dreamhack (dgreenheck)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "#3 Create insane animations with web-gpu — https://github.com/dgreenheck/webgpu-dreamhack"
+  },
+  {
+   "name": "impeccable.style",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "#4 Utilize world class design pr... — https://impeccable.style/"
+  },
+  {
+   "name": "amaancoders site-recreation repo",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "#5 Recreate any landing page — https://github.com/amaancoders/..."
+  },
+  {
+   "name": "awesome-design",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "#6 Break down the building ... design — https://github.com/VoltAgent/..."
+  },
+  {
+   "name": "Taste skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "#7 Give Claude taste — https://github.com/..."
+  }
+ ],
+ "claims": [
+  "Every startup has the same models, APIs and cloud infrastructure; tech is commoditized",
+  "Design is not decoration; a company that nails product feel does not worry about copycats"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "App showcase overlays: BLINK 'friends on the map'; breathing app 'Inhale' (nose 4 / mouth 6); pliability 'Daily Session — Upper Body 23 min — Start'; flip-phone focus app '10h 24m total flip time'; Lumy; 'Session 294 Abstract Arts'; a 'Give to charity' feature card; Duolingo-style mascots; sports schedule app; walking app '0 / 300 steps, 4 min 55 sec left, Look around, and enjoy this walk!'",
+  "End card 'Comment \"design\"' followed by the list: #1 Integrate high-quality assets with 21st.dev https://21st.dev/home; #2 Steal the style of any famous design system https://getdesign.md/; #3 Create insane animations with web-gpu https://github.com/dgreenheck/webgpu-dreamhack; #4 Utilize world class design pr... https://impeccable.style/; #5 Recreate any landing page https://github.com/amaancoders/...; #6 Break down the building ... design https://github.com/VoltAgent/...; #7 Give Claude taste https://github.com/... 'Thanks, let me know... shoot me a DM :)'"
+ ],
+ "cta": "comment 'design' for the resource list",
+ "relevance": {
+  "score": 2,
+  "why": "Thesis Haji already agrees with (design as moat); the resource list is identical to the liked 'Seven resources to make a vibe-coded landing page look good' video from the same creator"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "No new action; the 7 tools are already captured in the liked set (impeccable, awesome-design, Taste skill, 21st.dev, getdesign.md)"
+ },
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (same creator's 7-resource list and the design-as-moat framing)"
+ },
+ "verify": [
+  "Full URLs for #5, #6, #7 are truncated on screen; cross-check against the liked video's record"
+ ]
+}

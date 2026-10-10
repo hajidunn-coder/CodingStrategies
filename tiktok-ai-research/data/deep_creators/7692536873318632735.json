@@ -1,0 +1,50 @@
+{
+ "id": "7692536873318632735",
+ "url": "https://www.tiktok.com/@malikontech/video/7692536873318632735",
+ "creator": "malikontech",
+ "title": "News reaction: NYT report that Anthropic's Chris Olah lobbied the Vatican to take model consciousness seriously, Pope Leo XIV rejected it, and Sam Altman tweeted it is 'a real safety issue' to ascribe religious force to AI",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Christopher Hale tweet summarising NYT report",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "x.com @ChristopherHale"
+  },
+  {
+   "name": "Sam Altman tweet",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "x.com @sama, 10:18 AM 10/3/26, 940K views"
+  }
+ ],
+ "claims": [
+  "Anthropic 'thinks AI is alive and is trying to convince the Pope' (creator's exaggeration of the NYT story)",
+  "Pope rejected the idea that machines can be conscious",
+  "Sam Altman: 'I am very uncomfortable about people trying to ascribe religious force to or a surrender of human judgment to AI models, and think it is a real safety issue'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Tweet text: 'NEW: According to a bombshell report in the New York Times, Anthropic co-founder Chris Olah... the pope rejected the idea that machines can be conscious... Olah's team then privately lobbied the pope's advisers \"to take the possibility of model consciousness seriously.\" Pope Leo XIV held firm. For months, Anthropic has wined and dined theologians and religious scholars under nondisclosure agreements, hoping they would bless the idea that Claude has moral standing.'",
+  "Headline overlay: 'OPENAI & CLAUDE ARE BEEFING & NOW RELIGION IS INVOLVED?'",
+  "Reply from @AestherML: 'You made things much worse by decommissioning 4o.'"
+ ],
+ "cta": "comment which side you stand on; follow for AI news",
+ "relevance": {
+  "score": 1,
+  "why": "Culture-war AI news; no bearing on building apps"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [
+  "Does the NYT report exist and does it actually say Anthropic lobbied the Pope, or is the tweet an embellishment?",
+  "Date consistency: tweet dated 10/3/26"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (model/lab news); gossip rather than product news"
+ }
+}

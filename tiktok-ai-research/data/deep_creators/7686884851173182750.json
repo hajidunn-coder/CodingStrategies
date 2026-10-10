@@ -1,0 +1,61 @@
+{
+ "id": "7686884851173182750",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7686884851173182750",
+ "creator": "buildwithneej",
+ "title": "'i-have-adhd' skill/plugin for Claude Code, Cursor and Codex (by Kacper Rutkiewicz, MIT): answers open with a time estimate and numbered next steps, end with the exact next command, and rule 10 strips 'hope this helps' filler",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "i-have-adhd",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "GitHub README shows 'Install the i-have-adhd...' copy/paste for CLI, 'Contributing', 'MIT license'; author credited 'Kacper Rutkiewicz'; install shown as 'claude plugin marketplace add ayghri/i-have-adhd' (handle partly legible)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Target agent; also works in Cursor and Codex"
+  }
+ ],
+ "claims": [
+  "Repo is 'blowing up on GitHub'",
+  "With the skill on, the same 'explain how to set up a cron job on mac' question opened with a '2 minutes' time estimate and 4 steps (open editor, add one line, save, verify) and ended with 'Next: run crontab -e'",
+  "Rule 10 deletes 'I hope this helps' / 'let me know' sign-offs: 'no filler in, no filler out'",
+  "On-screen before/after: 224-word paragraph answer vs. a short step list"
+ ],
+ "how_to_steps": [
+  "Install with one command from the README (plugin marketplace add, then install the i-have-adhd plugin)",
+  "Ask a normal question; the response now starts with a time estimate and numbered steps",
+  "Read line one and the 'Next:' command; execute"
+ ],
+ "on_screen_only": [
+  "Title card 'Claude Code has an ADHD mode'",
+  "GitHub README tabs: README / Contributing / MIT license; sections 'Install', 'What it...', 'What chan...'; text 'A skill for your... stops it from burying the answer. Action first. Steps...' ; credit 'Kacper Rutkiewicz ... has made a good ... of an earlier version'",
+  "Terminal: 'INSTALL - README - 2 COMMANDS': '$ claude plugin marketplace add ayghri/i-have-adhd' then marketplace added",
+  "Prompt tested: 'explain how to set up a cron job on mac'",
+  "Before: '224 WORDS' paragraph block; After: ring '2 MINUTES', steps 1 open editor 2 add one line 3 save 4 verify, green 'Next: run crontab -e', 'enter'",
+  "Struck-through filler: 'Sure! I'd be happy to help...' overlay 'no filler in. no filler out.'",
+  "Token counts panel: claude 4390 / 4240 / 4490 (rough, per session)",
+  "'THE WHOLE POINT: read line one and go. Next: run crontab -e and add one line. Two options, crontab works but macOS prefers laun...'"
+ ],
+ "cta": "Comment 'focus' to get the repo",
+ "relevance": {
+  "score": 3,
+  "why": "Time-poor founder benefits from terse, action-first agent output; it is a cheap output-style skill. Overlaps with caveman/ponytail/Minto-style skills Haji already liked but targets structure (estimate, steps, next command) rather than token count."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Trivial install; or just lift the rules (open with time estimate, numbered steps, end with exact next command, ban sign-off filler) into CLAUDE.md or an output-style without adding a plugin. Check it does not degrade reasoning on hard tasks."
+ },
+ "verify": [
+  "Exact GitHub handle (frames suggest 'ayghri/i-have-adhd'); confirm repo exists and the author (Kacper Rutkiewicz) vs. the plugin publisher",
+  "Does it work as a Claude Code plugin marketplace entry or as a SKILL.md? Cursor/Codex compatibility claims",
+  "Does the terse style suppress caveats or verification steps on complex tasks?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New skill: structured action-first output (time estimate, steps, 'Next:' command, no filler). Liked set has token-cutting (caveman, ponytail) and Minto/pyramid prompting but not this exact format; also a candidate rule-set for CLAUDE.md."
+ }
+}

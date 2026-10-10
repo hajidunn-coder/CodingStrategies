@@ -1,0 +1,68 @@
+{
+ "id": "7676677905350413582",
+ "url": "https://www.tiktok.com/@automatedintelligenceai/video/7676677905350413582",
+ "creator": "automatedintelligenceai",
+ "title": "MiniMax Design: free-to-start Mac/Windows desktop app around the Hailuo H3 video model that runs four agents in parallel (script, visuals, edit, voice-over) on one node canvas, with installable 'skills' marketplace, local files, checkpoint approvals",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "MiniMax Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Desktop app (Mac/Windows), free to start, links in bio; UI shows 'Models' and 'Skills' pickers, 'Auto' mode"
+  },
+  {
+   "name": "MiniMax H3 (Hailuo)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Video model the app is built around"
+  },
+  {
+   "name": "MiniMax skills marketplace",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Ready-made skills: promotional videos, product photography, storyboards, audiobooks, music videos; screen shows 'MG Animation.Skill', 'Silhouette Hero PV.Skill', 'Paper Art Brand Story.Skill'"
+  }
+ ],
+ "claims": [
+  "Four agents run simultaneously (script, visuals, cut, voice-over), not a handoff chain",
+  "A main agent reads intent, splits the job and matches a model to each piece automatically; manual model choice available",
+  "Everything lands on a single node-based canvas (script, storyboard, video, music, editing) with nodes connecting themselves",
+  "Build reusable workflows by chatting, or install proven skills from a marketplace",
+  "Files stay local; agent pauses at key checkpoints for direction",
+  "Free to start on Mac and Windows"
+ ],
+ "how_to_steps": [
+  "Install MiniMax Design desktop app",
+  "Describe what you want or drop in a brief",
+  "Main agent decomposes and assigns models (or choose manually)",
+  "Four agents run in parallel; results appear on the node canvas",
+  "Approve at checkpoints; save the workflow as a skill or install one from the marketplace"
+ ],
+ "on_screen_only": [
+  "Prompt box: 'Y2K female rapper MV -- avant-garde purple rap / cyber-occult / dark zine / tech' with 'Models', 'Skills', 'Auto' controls",
+  "App sidebar 'MiniMax Design' with a storyboard grid of purple-haired character frames; 'Image - 16' character sheet",
+  "Generated clips: 'Lose time change lan...' lyric card, dancer on stage",
+  "Skill cards: 'MG Animation.Skill', 'Silhouette Hero PV.Skill', 'Paper Art Brand Story.Skill' (MINIM)",
+  "Feature tiles: '3D Director Stage', 'Video Editing', 'Color Grading LUTs'"
+ ],
+ "cta": "Links in bio (free to start)",
+ "relevance": {
+  "score": 1,
+  "why": "Video-production tool; Haji's liked set touches AI video only as a side (Higgsfield, Claude Motion). Not aligned with app/business building."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Only relevant if producing marketing videos; the liked Higgsfield skill/MCP already covers Claude-driven video from the terminal."
+ },
+ "verify": [
+  "Pricing after 'free to start'; credit model for H3 generations",
+  "Whether 'four agents in parallel' is marketing or real concurrent generation",
+  "Data/privacy terms despite 'files stay local' (generation is cloud)"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "New product name (MiniMax Design) but outside Haji's liked topics; AI video pipelines already represented."
+ }
+}

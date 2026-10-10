@@ -1,0 +1,54 @@
+{
+ "id": "7689452626026450206",
+ "url": "https://www.tiktok.com/@atlasberry008/video/7689452626026450206",
+ "creator": "atlasberry008",
+ "title": "Commentary on the Ezra Klein x Jensen Huang interview: Jensen admits AI will erase basic skills (long division etc.) and says it is worth it; cites China 26,000-student study and Stanford 22-25 hiring data",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Ezra Klein Show interview with Jensen Huang",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "~2-hour podcast; clips shown on screen"
+  },
+  {
+   "name": "Frontier community",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "creator's community, link in bio"
+  }
+ ],
+ "claims": [
+  "Jensen Huang: kids forgetting long division, multiplication tables, square roots 'doesn't matter'; we lose 'intellectual dexterity' but become better systems thinkers",
+  "Study of 26,000 students (grades 7-12) in China: AI raised homework scores 18% but dropped exam scores 20%",
+  "Stanford data: employment of 22-25 year olds in AI-exposed occupations is 19% below trend",
+  "Jensen says 'wait two years', AI-native grads arrive in 2028 and the junior-developer problem ends"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'A THRILLA IN MANILA' Oct 1 1975 boxing poster meme",
+  "Ezra Klein quote card: 'This a study on A.I. in schooling out of China. It looked at 26,000 students, grades seven to 12, and they had staggered A.I. adoptions.'",
+  "Highlighted text: 'employment of young workers (ages 22-25) in AI-exposed occupations now stands 19% below' over Stanford campus",
+  "Headline card: 'Jensen Huang says the junior developer problem ends in two years. Here's his math.'",
+  "'Post-AI World' futuristic city graphic",
+  "'COMMENT \"SKILLS\" FOR THE WHOLE VIDEO'"
+ ],
+ "cta": "comment 'SKILLS' for the full interview; join Frontier community via link in bio",
+ "relevance": {
+  "score": 1,
+  "why": "Macro commentary on skill loss and junior hiring; no tool, workflow, or business tactic for a solo founder"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [
+  "Does the China study (26k students, +18% homework / -20% exam) exist and is it peer reviewed?",
+  "Stanford 'AI-exposed occupations 19% below trend' figure: source and date?"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (general AI-news commentary); adds nothing actionable"
+ }
+}

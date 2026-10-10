@@ -1,0 +1,114 @@
+{
+ "id": "7678112039667010829",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7678112039667010829",
+ "creator": "chase_ai_",
+ "title": "Lead-gen for a curated list of 148 open-source Claude Code skills (front-end design, CLI, browser automation, skill collections, context/token management)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "'148 Claude Skills That Will 10x Your Next Project' list",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "gated via description link; appears to be a categorised markdown page of GitHub repos"
+  },
+  {
+   "name": "pbakaus/impeccable (impeccable.style)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Frontend & Design section"
+  },
+  {
+   "name": "Leonxlnx/taste-skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'gives the model actual taste; anti-slop'"
+  },
+  {
+   "name": "Nutlope/hallmark",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'same job as the two above, different opinion'"
+  },
+  {
+   "name": "VoltAgent/awesome-design-md",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "DESIGN.md files reverse-engineered from design systems"
+  },
+  {
+   "name": "google-labs-code/design.md",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "'the actual spec for describing a visual identity to a coding agent'"
+  },
+  {
+   "name": "21st.dev",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "component marketplace + MCP"
+  },
+  {
+   "name": "shadcn/ui, shadcn/improve, nexu-io/open-design, facebook/astryx, alchaincyf/huashu-design, nexu-io/html-anything, Tailwind CSS, oil-oil/oil-motion, Jakubantalik/thinking-orbs, Figma",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "rest of the Frontend & Design section"
+  },
+  {
+   "name": "HKUDS/CLI-Anything, jackwener/OpenCLI, googleworkspace/cli, iOfficeAI/OfficeCLI, herdrdev/herdr, cli/cli, anthropics/anthropic-cli, junegunn/fzf, BurntSushi/ripgrep, jesseduffield/lazygit, sharkdp/bat, yt-dlp/yt-dlp",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "CLI & Terminal section"
+  },
+  {
+   "name": "Playwright, microsoft/playwright-cli, browser-use/browser-harness, alibaba/page-agent, JCodesMore/ai-website-cloner-template, ShawnPana/phone-harness",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Browser & Web Automation section"
+  },
+  {
+   "name": "hesreallyhim/awesome-claude-code, anthropics/claude-plugins-official, anthropics/skills, obra/superpowers, addyosmani/agent-skills, garrytan/gstack, affaan-m/ECC, HKUDS/OpenSpace, rohitg00/awesome-claude-code-toolkit, phuryn/pm-skills, coreyhaines31/marketingskills, slavingia/skills, Shubhamsaboo/awesome-llm-apps, anthropics/claude-cookbooks, mattpocock/skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Skill & Plugin Collections section"
+  },
+  {
+   "name": "JuliusBrussee/caveman, DietrichGebert/ponytail",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Context & Token Management section ('65% of tokens', 'laziest senior dev')"
+  }
+ ],
+ "claims": [
+  "148 open-source skills that will '10x your next project'",
+  "Categories: front-end design, productivity, CLI, browser/web automation 'and everything in between'",
+  "caveman: 'why use many token when few token do trick' ~65% of tokens; ponytail: 'makes the agent think like the laziest senior dev'"
+ ],
+ "how_to_steps": [
+  "Check the video description for the link to the list"
+ ],
+ "on_screen_only": [
+  "Page title: '148 Claude Skills That Will 10x Your Next Project'",
+  "Section headers: Frontend & Design ('Stopping your agent from producing generic purple-gradient slop'), CLI & Terminal ('Agents are best at things that have a command line'), Browser & Web Automation ('Letting the agent drive a real browser'), Skill & Plugin Collections ('Don't write a skill before checking whether someone already did'), Context & Token Management ('The single biggest lever on cost and on whether long sessions stay coherent')",
+  "Entries also visible: site-clone ('clone any website and begin turning it into your own creation'), claudex loop ('interviews you until the plan is airtight, then has Codex adversarially attack it'), 'My fork of oso95/scroll-world'",
+  "obra/superpowers: 'the biggest agentic-skills framework going, plus an opinionated methodology'; garrytan/gstack: '23 opinionated skills... as a team'; rohitg00/awesome-claude-code-toolkit: '135 agents, 35 skills, 42 commands'; affaan-m/ECC: 'harness performance system: skills, instincts, memory, sessions'"
+ ],
+ "cta": "link in bio / description to get the full list",
+ "relevance": {
+  "score": 3,
+  "why": "Dense directory of real repos; most high-value ones (Impeccable, Taste, awesome-design-md, gstack, superpowers, ponytail, caveman, agent-skills, marketingskills) Haji has already seen individually, but the on-screen list is a usable index"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Do not chase 148 skills. Worth skimming the on-screen list once for 3-4 unknowns (claudex loop, site-clone, HKUDS/CLI-Anything, OpenCLI, browser-harness, phone-harness) and otherwise ignore the gate"
+ },
+ "verify": [
+  "Is the list page public or gated behind a newsletter/DM?",
+  "Do claudex loop, nexu-io/open-design, alchaincyf/huashu-design and ShawnPana/phone-harness exist and are they maintained?",
+  "caveman 65% token claim already fact-checked in liked set at ~30%"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "A categorised index of ~148 skill repos; new names beyond the liked set include HKUDS/CLI-Anything, jackwener/OpenCLI, browser-use/browser-harness, alibaba/page-agent, ShawnPana/phone-harness, rohitg00/awesome-claude-code-toolkit, affaan-m/ECC, phuryn/pm-skills, mattpocock/skills, a 'claudex loop' plan-attack skill"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "7579298655459626253",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7579298655459626253",
+ "creator": "otis.kelley",
+ "title": "Founder Series Day 7 vlog: uses Replit AI agent to generate dashboard UI designs from a described layout, then plans to hand-code the dashboard over several days",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Replit AI agent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "describe layout/flow, it generates a UI design; tweak via further prompts"
+  }
+ ],
+ "claims": [
+  "Describing the layout to Replit AI agent yields a tweakable UI design",
+  "The dashboard is 'a pretty complex page' and will take a few days to code"
+ ],
+ "how_to_steps": [
+  "After the 9-to-5, open Replit AI agent",
+  "Describe the dashboard layout or flow you want",
+  "Iterate with follow-up prompts to tweak the generated design",
+  "Once the design is good, hand-code it (planned for the following days)"
+ ],
+ "on_screen_only": [
+  "Desk vlog shots: ultrawide monitor with an IDE (code on both sides) and a white app preview in the center; second monitor with a cyberpunk wallpaper; subtitles 'FOUNDER SERIES', 'I UTILIZE REPLIT', 'DESIGN FOR THE DASHBOARD'. No readable code, repo names or URLs"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Build-in-public vlog with no technique detail; Replit design-agent usage is generic and Haji already has Claude Design / Claude Code for UI"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; the design-then-code loop is already standard in his workflow"
+ },
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (design tooling already covered by Claude Design, Stitch, impeccable etc.); only adds that Replit's agent can be used purely as a UI mockup generator"
+ },
+ "verify": [
+  "Is Replit's AI agent design output exportable (Figma/code) or only in-Replit?",
+  "Does Replit's design agent charge credits per generation?"
+ ]
+}

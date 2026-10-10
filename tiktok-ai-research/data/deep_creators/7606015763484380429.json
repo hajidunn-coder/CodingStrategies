@@ -1,0 +1,63 @@
+{
+ "id": "7606015763484380429",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7606015763484380429",
+ "creator": "youraveragetechbro",
+ "title": "One custom skill 'PR Creator with Docs': before opening a PR it diffs the branch and updates the per-feature CLAUDE.md files so documentation stays the source of truth (claims 50 hrs/month saved)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "PR Creator with Docs (custom skill)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "his own Claude Code skill; analyses all branch changes, finds the relevant CLAUDE.md/context files and updates them before creating the PR"
+  },
+  {
+   "name": "Per-feature CLAUDE.md files",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "one CLAUDE.md per major feature, each the source of truth for that feature; many CLAUDE.md files visible in file tree"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "terminal running /agents and the Claude Code side panel"
+  }
+ ],
+ "claims": [
+  "This single skill saves him 'over 50 hours every single month'",
+  "He only uses one custom skill in his whole AI coding workflow",
+  "Each major feature has its own CLAUDE.md as source of truth; the skill finds exactly which one to update"
+ ],
+ "how_to_steps": [
+  "Keep one CLAUDE.md per major feature folder, each describing that feature",
+  "Make a skill that, when asked to create a PR, reads the full diff of the branch",
+  "Have it locate the CLAUDE.md / context files touched by the diff and rewrite them to match the new code",
+  "Then let it write and open the PR"
+ ],
+ "on_screen_only": [
+  "'50 hours every single month' title card",
+  "Terminal showing Claude Code '/agents' listing with multiple project agents (names unreadable)",
+  "Editor file tree with many CLAUDE.md files highlighted across feature folders, Claude Code panel on the right",
+  "End card: YouTube 'I Tried Every AI Coding Agent... Here's My 2026 Setup' 20:25"
+ ],
+ "cta": "watch his full 2026 workflow YouTube video (end card)",
+ "relevance": {
+  "score": 4,
+  "why": "Docs drift is the #1 reason CLAUDE.md goes stale for a solo founder; a pre-PR 'update the docs from the diff' step is cheap and compounding"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "An afternoon: write a /pr-with-docs skill (git diff main..HEAD, find nearest CLAUDE.md per changed dir, update, then gh pr create). Pairs with Anthropic's 'keep CLAUDE.md thin' guidance if the per-feature docs are referenced rather than auto-loaded"
+ },
+ "verify": [
+  "50 hrs/month is self-reported marketing; the mechanism is sound regardless",
+  "Does nesting many CLAUDE.md files blow up context (Claude Code auto-loads CLAUDE.md in subdirectories it touches)?",
+  "Skill itself not shared; must be written from scratch"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Technique: a pre-PR skill that updates per-feature CLAUDE.md files from the branch diff. Liked set has /ship-style commands (Addy Osmani) and CLAUDE.md-thin advice but not an explicit docs-sync-from-diff step"
+ }
+}

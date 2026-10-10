@@ -1,0 +1,39 @@
+{
+ "id": "7608637907049532704",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7608637907049532704",
+ "creator": "bettercreatingofficial",
+ "title": "Podcast clip: a consultant's first agent (built by just talking to it) writes post-client-call summaries with next steps; 30 minutes manual -> 5 minutes, saving 2-3 hours a week",
+ "category": "business-with-ai",
+ "tools": [],
+ "claims": [
+  "She built her first agent by talking to it; 'it just programs itself'",
+  "Clients now receive a summary of what was done and their next steps after each call",
+  "Manual summary took ~30 minutes; now 5 minutes; saves 2-3 hours per week"
+ ],
+ "how_to_steps": [
+  "Feed the client call (transcript/notes) to an agent",
+  "Agent drafts a client-facing summary: what we did + next steps for them",
+  "Review and send"
+ ],
+ "on_screen_only": [
+  "Two-person podcast set (man with glasses, woman in olive shirt), captions of speech only ('It's amazing,', 'receive a', 'steps for them,', 'and now it's 5', '3 hours')",
+  "No tool, platform or UI named anywhere"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "A sensible, small use case (post-call summaries) but no stack, no prompt, no tool. Haji already has Granola-style note taker and client-success agent patterns in the liked set."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "If Haji does client calls, a Claude skill 'call-summary' fed by Granola/transcript with a fixed template (what we did / your next steps / my next steps) is a 30-minute build. Nothing to learn from this clip specifically."
+ },
+ "verify": [
+  "Which agent platform she used (unstated); whether call transcripts come from a meeting recorder"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (meeting-note and client-summary agents already covered); testimonial only"
+ }
+}

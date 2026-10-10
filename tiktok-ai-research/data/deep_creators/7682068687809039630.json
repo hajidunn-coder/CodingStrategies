@@ -1,0 +1,50 @@
+{
+ "id": "7682068687809039630",
+ "url": "https://www.tiktok.com/@itsmariahbrunner/video/7682068687809039630",
+ "creator": "itsmariahbrunner",
+ "title": "'Career Move Interview' AI skill (SKILL.md) that interviews you one question at a time across five areas (what progress means, away/toward, energizing work, five next-chapter hypotheses, trade-offs) and maps next career moves; comment 'next' to get it",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Career Move Interview skill (SKILL.md)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "file titled 'CAREER MOVE INTERVIEW (SKILL.MD)' with name: career-move-interview; distributed via IG DM"
+  }
+ ],
+ "claims": [
+  "The skill interviews you, asks follow-ups, looks for patterns in your answers, and maps out next career moves",
+  "Easy to follow even if you don't know how to use AI"
+ ],
+ "how_to_steps": [
+  "Q1: What does progress really mean to you right now (money, autonomy, stability, flexibility, different work)?",
+  "Q2: What am I moving away from and toward? Be specific (manager, work, hours, growth, control)",
+  "Q3: What work brings out the best in me? Review last month: energy vs avoidance; being good at something is not a reason to build a career on it",
+  "Q4: List five possible versions of the next chapter, treated as hypotheses to explore",
+  "Q5: What am I willing to trade? (money vs flexibility, new thing vs certainty)",
+  "Run the skill: it asks ONE question at a time, pushes back on vague answers, finds patterns, then maps moves"
+ ],
+ "on_screen_only": [
+  "SKILL.md excerpt: 'name: career-move-interview'; description: 'Interviews me about my career one question at a time, pushes back when my answers are vague, finds the patterns I cannot see in my own answers, and maps out the next moves I should actually make. Use when I am rethinking my career, feeling stuck, considering leaving, or trying to decide what to do next.'",
+  "'# Career Move Interview — You are conducting a structured career interview. You are not a cheerleader and you are not a life coach. You are the sharp friend who asks the question everyone else is too polite to ask.'",
+  "'## How to run this — Ask ONE question at a time. Wait for the answer. Never send a list of questions... Push back on vague answers. If I say I hate my job that is not an answer, that is a feeling. Ask what specifically. The manager? The hours? The work itself? No growth?'",
+  "Shaq meme overlay at the start; on-screen numbered titles One..Five matching the transcript"
+ ],
+ "cta": "comment 'next' on IG @Itsmariahbrunner to receive the skill; AI community and 30-day challenge in bio",
+ "relevance": {
+  "score": 1,
+  "why": "Career-pivot coaching skill for job seekers; Haji is a founder, not pivoting careers. The only transferable idea is the interview-skill pattern (one question at a time, push back on vague answers), which his Council/intake skills already do"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth building; the SKILL.md pattern shown is trivially reproducible if ever wanted"
+ },
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content as far as technique (interview-style skills, board-of-advisors prompts); the career-coaching domain itself is outside Haji's interests"
+ },
+ "verify": [
+  "Skill is gated behind IG comment/DM funnel into a paid community; the SKILL.md shown is ~1 page of prompt text"
+ ]
+}

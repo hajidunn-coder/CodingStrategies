@@ -1,0 +1,83 @@
+{
+ "id": "7685471142550818061",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7685471142550818061",
+ "creator": "angusthenontechnical",
+ "title": "Pre-launch demand test: have Claude pick three audiences, source contacts (Apollo/Prospeo), write variant marketing emails, send them as fake 'Fwd:' emails via a sequencer, then have Claude filter bot clicks and compare which audience/version clicked most",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Desktop (macOS) with Opus 5",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "chat titled 'Portable monitor test · Demo'; model selector shows 'Opus 5'"
+  },
+  {
+   "name": "Apollo",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Searching Apollo' tool call for contact data"
+  },
+  {
+   "name": "Prospeo",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Checking Prospeo' tool call for contact data"
+  },
+  {
+   "name": "Google Workspace",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "sign up ~10 mailboxes for sending; trial page shown ($4.90/user/mo starter)"
+  },
+  {
+   "name": "Email sequencer (unnamed, e.g. Instantly/Smartlead-style)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'connect them to an email sequencer like this'"
+  }
+ ],
+ "claims": [
+  "Most Kickstarter campaigns fail because they burn money before learning nobody wants the product (Google AI overview: ~40-43% of campaigns fail)",
+  "Creator did a version of this and 'it kind of worked', but actual Zoom conversations with customers were way more helpful"
+ ],
+ "how_to_steps": [
+  "Get a contact data source (Apollo / Prospeo)",
+  "Prompt Claude: 'Find three work audiences for this [product]. Show me a few sample fits' -> e.g. Developers, Designers, Consultants",
+  "Sign up ~10 sending mailboxes on Google Workspace and connect them to an email sequencer",
+  "Have Claude write marketing emails per audience showing different product concepts (e.g. Portrait coding screen, Dual-screen extender, Portable pen display, Client presentation screen)",
+  "Have Claude 'Build the tracking page before we send anything' (landing page + event collector; events offer_clicked, page_loaded, show_me_pressed)",
+  "Send as a forwarded-looking email ('Fwd: A second screen, anywhere' with Solo setup / Team setup links)",
+  "Ask Claude to 'Filter the robot clicks before you compare the audiences' (scanner/rapid-click/separate-events rules)",
+  "Ask 'Which audience and version worked best after filtering?' -> pick strongest candidate, retest head-to-head on fresh contacts",
+  "Still talk to real customers on Zoom"
+ ],
+ "on_screen_only": [
+  "Google search 'why do most kickstarter campaigns fail' with AI Overview and Reddit r/kickstarter result 'Most Kickstarter projects don't fail because of marketing. They fail long...'",
+  "Claude Desktop chat: 'Find three work audiences for this portable monitor. Show me a few sample fits.' -> tool calls 'Searching Apollo', 'Checking Prospeo'; output 1. Developers, 2. Designers, 3. Consultants; 'Three demo profiles... No outreach'",
+  "Concept preview cards: Portrait coding screen (For developers), Dual-screen extender, Portable pen display (For designers), Client presentation screen (For consultants), each with 'Explore concept'",
+  "Gmail: 'Fwd: A second screen, anywhere' from 'me to Josh': 'hey Josh, found you on LinkedIn and t... might be relevant to you. Begin forwarded message: From: Product team <hello@example...>' with buttons 'Solo setup' / 'Team setup'",
+  "Claude: 'Build the tracking page before we send anything' -> 'Building landing page', 'Testing event collector', 'Seed test passed', events offer_clicked -> solo, page_loaded -> session_, show_me_pressed -> sessi...",
+  "Claude: 'Filter the robot clicks before you compare the audiences' -> rules: control/rapid clicks likely scanner, separate events -> stronger signal, 'No single rule catches every bot'",
+  "Claude: 'Which audience and version worked best after filtering?' -> 'Strongest candidate: de... version B... intervals overlap... Next: retest B against A on fresh developers'",
+  "Google Workspace trial page: 'Try Google Workspace for 14 days', Starter $4.90/user/mo (50% off 3 months)"
+ ],
+ "cta": "follow; 'open sourcing all of my AI ideas for free'",
+ "relevance": {
+  "score": 3,
+  "why": "A concrete, cheap demand-validation loop runnable from Claude Desktop with MCP-connected data sources; relevant before building any new app. The fake 'Fwd:' email is deceptive cold outreach (CAN-SPAM/deliverability risk) and the creator himself admits Zoom calls beat it"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Doable in a weekend (Apollo MCP + landing page + PostHog events + Claude analysis), but the forwarded-email trick is spammy and could burn domain reputation; better to adapt the structure (3 audiences x N concept variants, bot-filtered click analysis) with honest outreach"
+ },
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New: a pre-build demand test using Claude + Apollo/Prospeo + email sequencer + click-event analysis with bot filtering. Liked set had website-listening funnels and hook testing but not pre-launch audience/concept validation"
+ },
+ "verify": [
+  "Apollo/Prospeo pricing and whether their MCP/API free tiers cover contact export",
+  "Deceptive 'Fwd:' cold emails: CAN-SPAM, GDPR and Google Workspace sending limits / domain-reputation risk",
+  "Sample sizes needed for click-rate differences to be meaningful (video shows 'intervals overlap, no winner yet')"
+ ]
+}
