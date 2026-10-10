@@ -1,0 +1,36 @@
+{
+ "id": "7658010509811256607",
+ "url": "https://www.tiktok.com/@haejuicyy/video/7658010509811256607",
+ "creator": "haejuicyy",
+ "title": "Meme skit: 'When a random (my day one) approaches me after I get Claude Max and I try remembering his name' -- dev snaps fingers at his desk, cut to podcast-guy reaction",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Max",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Only referenced in the joke caption"
+  }
+ ],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Caption: 'When a random (my day one) approaches me after I get Claude Max and I try remembering his name'",
+  "Dual-monitor desk with a Claude Code terminal and a browser; reaction clip of a man in a 'PROGRAM TIME' hoodie"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Meme; no information."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (vibe-coding humour), no technique"
+ }
+}

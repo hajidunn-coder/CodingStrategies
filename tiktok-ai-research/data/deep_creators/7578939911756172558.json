@@ -1,0 +1,53 @@
+{
+ "id": "7578939911756172558",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7578939911756172558",
+ "creator": "otis.kelley",
+ "title": "Founder build-log (Day 6): build a Stripe webhook endpoint with duplicate-event (idempotency) handling and test it locally through an ngrok tunnel",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Stripe Webhooks",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Read the webhook docs to enumerate needed events"
+  },
+  {
+   "name": "ngrok",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Public URL tunnelling to the local API so Stripe can send real payloads without deploying"
+  }
+ ],
+ "claims": [
+  "Stripe may send duplicate events, so the endpoint needs logic to avoid taking the same action twice",
+  "ngrok lets Stripe hit a local webhook with real payloads without deploying"
+ ],
+ "how_to_steps": [
+  "Read the Stripe webhook documentation and list the events you need",
+  "Build the webhook endpoint, including de-duplication so duplicate events do not re-trigger actions",
+  "Run ngrok to expose the local API; point Stripe's webhook at the ngrok URL and test with real payloads",
+  "Next: build the dashboard and the backend API powering it"
+ ],
+ "on_screen_only": [
+  "Karaoke captions only ('FOUNDER SERIES', 'MY 9 TO 5', 'WEBHOOK DOCUMENTATION', 'DUPLICATE EVENTS', 'I'M USING NGROK', 'LOCAL API', 'WITH REAL PAYLOAD')",
+  "Dark multi-monitor desk with an editor and the Stripe docs; no readable code"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Payments plumbing is table stakes for Haji's apps; idempotent webhook handling and local tunnel testing are the two things vibe-coders most often skip."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Add to the app-template checklist: store processed Stripe event IDs (idempotency), verify signatures, test via ngrok or 'stripe listen --forward-to'. An hour per app; no new tool to buy."
+ },
+ "verify": [
+  "Stripe CLI's 'stripe listen' can forward events locally without ngrok -- is ngrok still needed?",
+  "Confirm current Stripe guidance on event de-duplication (event.id storage) and signature verification"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": true,
+  "what": "New (minor) technique: idempotent Stripe webhook handling + ngrok local testing. Liked set has no payments-integration content."
+ }
+}

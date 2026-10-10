@@ -1,0 +1,46 @@
+{
+ "id": "7680210538743352590",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7680210538743352590",
+ "creator": "chase.builds.ai",
+ "title": "Garry Tan's 'gstack' Claude Code setup (MIT, ~129-130k stars): 23 company roles (CEO, designer, eng manager, release manager, docs engineer, QA) instead of 23 tools",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "gstack",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub header shows Fork 19.5k, Star 130k; repo link in bio (owner not shown)"
+  }
+ ],
+ "claims": [
+  "129,000 stars since March",
+  "It is 23 different roles, not 23 coding tools: CEO, designer, engineering manager, release manager, doc engineer, QA",
+  "Most teams give Claude one job and then wonder why it acts like an intern",
+  "MIT licensed and free"
+ ],
+ "how_to_steps": [
+  "Install gstack (link in bio) or just steal the idea: define distinct roles for Claude rather than one generic job"
+ ],
+ "on_screen_only": [
+  "GitHub header: Notifications / Fork 19.5k / Star 130k (circled), repo name 'gstack'",
+  "Cards: 'Garry Tan's setup', 'what's inside', 'not 23 tools', 'CEO · designer', 'release manage', 'a company in on', 'worth stealing', 'one job = intern', 'MIT, free · repo in bio'"
+ ],
+ "cta": "Repo link in bio",
+ "relevance": {
+  "score": 3,
+  "why": "Role-based Claude Code setups map well onto a one-person company, but Haji already liked a fuller GStack breakdown."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Same action as the liked GStack video: try the role workflows (CEO plan -> eng -> QA -> ship) in one app. This clip adds no new install detail."
+ },
+ "verify": [
+  "Confirm star count (129k vs 130k shown) and the actual number of roles/commands in the repo",
+  "Liked record described a CEO -> eng manager -> QA -> ship pipeline with bug memory; reconcile with the '23 roles' framing"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content ('GStack: Garry Tan's free open-source Claude Code setup'); only adds the '23 roles not 23 tools' framing"
+ }
+}

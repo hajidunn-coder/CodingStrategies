@@ -1,0 +1,53 @@
+{
+ "id": "7645454425946950925",
+ "url": "https://www.tiktok.com/@opichillc/video/7645454425946950925",
+ "creator": "opichillc",
+ "title": "One CLAUDE.md/AGENTS.md rule to stop stale package versions: 'Never assume package or module versions before adding a dependency. Look up the current version with npm view or check the official documentation.'",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "CLAUDE.md / AGENTS.md",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Instruction file for Claude Code, Cursor, Codex"
+  },
+  {
+   "name": "npm view",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Queries the live npm registry for the current version in ~2 seconds"
+  }
+ ],
+ "claims": [
+  "Every AI coding tool (Claude Code, Cursor, Codex) picks package versions from training data that ended months ago",
+  "The one-line rule turns the model's assumption into a registry lookup; npm view returns today's version in about two seconds",
+  "Peer-dependency warnings shrink on the next install"
+ ],
+ "how_to_steps": [
+  "Open CLAUDE.md / AGENTS.md (or your tool's instruction file)",
+  "Add: 'Never assume package or module versions before adding a dependency. Look up the current version with `npm view` or check the official documentation.'",
+  "Run your next install and watch peer dependency warnings drop"
+ ],
+ "on_screen_only": [
+  "Checkbox card with the exact rule text: 'Never assume package or module versions before adding a dependency. Look up the current version with `npm view` or check the official documentation.'",
+  "Karaoke captions only otherwise"
+ ],
+ "cta": "Save, follow; DM or book a call via link in bio for CLAUDE.md help",
+ "relevance": {
+  "score": 4,
+  "why": "Directly fixes a recurring time sink (stale deps, peer-dep hell) for a solo founder shipping Node/React apps with Claude Code."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "One line in every project's CLAUDE.md, zero cost, immediate. Generalize for Python (pip index versions / pypi) and Swift packages."
+ },
+ "verify": [
+  "Does Claude Code reliably obey the rule, or does it still hard-code versions in package.json edits? Spot-check on a fresh install",
+  "Equivalent commands for other ecosystems (pip index versions, cargo search, swift package)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New technique: an explicit CLAUDE.md rule forcing live version lookup before adding dependencies. Liked set covered thin CLAUDE.md and Karpathy critiques but not dependency-version staleness."
+ }
+}

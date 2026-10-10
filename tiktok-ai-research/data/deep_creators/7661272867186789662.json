@@ -1,0 +1,36 @@
+{
+ "id": "7661272867186789662",
+ "url": "https://www.tiktok.com/@haejuicyy/video/7661272867186789662",
+ "creator": "haejuicyy",
+ "title": "Comedy skit: dev lounges on his phone while Claude asks 'apply all changes to 28367 files? Y/n'; a rubber-chicken bit stands in for hitting Y",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Joke prompt 'Claude: apply all changes to 28367 files? Y/n'"
+  }
+ ],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Caption: 'Claude: apply all changes to 28367 files? Y/n'",
+  "Cut-in of a man in green slamming a rubber chicken on a laptop showing a 00:00 timer"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Meme; no information."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (vibe-coding humour), no technique"
+ }
+}

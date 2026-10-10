@@ -1,0 +1,69 @@
+{
+ "id": "7694489045719584014",
+ "url": "https://www.tiktok.com/@automatedintelligenceai/video/7694489045719584014",
+ "creator": "automatedintelligenceai",
+ "title": "Claude Motion (animates your real words/charts/images into an editable explainer video, no generated footage) and Claude Dashboards (plain-English questions on connected data -> self-updating charts with click-through lineage); Docs, Slides and Design now free on every plan",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Motion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Describe what you want -> animated explainer downloadable as a video file; every word/number stays editable"
+  },
+  {
+   "name": "Claude Dashboards",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Connect data, ask in plain English, get a chart that keeps updating; click a number to see its source"
+  },
+  {
+   "name": "Claude Docs / Slides / Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Out of testing, free on every plan"
+  },
+  {
+   "name": "Data connectors shown",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Icons: AWS, (Google BigQuery-style), (ClickHouse-style), Databricks, Salesforce, Snowflake"
+  }
+ ],
+ "claims": [
+  "Dashboards and Motion both launched 'yesterday'",
+  "Motion animates your actual words, charts and images; nothing is invented, and changing a word or number just updates the video",
+  "Dashboards replaces filing a data request or writing database code; charts self-update and every number is traceable",
+  "Document maker, slide maker and design tool are now free on every plan"
+ ],
+ "how_to_steps": [
+  "Motion: attach/describe the report, let Claude build the animated explainer, edit words/numbers, download as video",
+  "Dashboards: connect a data source, ask a question in plain English, pin the resulting chart; click numbers to trace provenance"
+ ],
+ "on_screen_only": [
+  "Video file 'Claude-Dashboards-Motion-Announcement.mov' playing: 6:55 am city map with routes, presenter 'Nate', '5:50 am' aerial map, 'Tracing every morning ride' bicycle animation",
+  "Connector icons: aws, Databricks, Salesforce, Snowflake plus two warehouse-style icons",
+  "Dashboard screen 'System overview' with KPI tiles and charts; second dashboard with scatter + bar charts",
+  "Comment panel: '@Claude — Send to Claude'; 'All comments: Sam: Can we name the van route here? Ops will ask. / Dev: Love the 4,200. Put it on the all hands title slide too. / Nate: Hold on the empty dock a beat longer so it lands.'",
+  "Export menu with Adobe, Figma/Canva-style, Keynote, Google Slides, Notion, DaVinci-style icons"
+ ],
+ "cta": "Check bio for the full breakdown",
+ "relevance": {
+  "score": 3,
+  "why": "Dashboards could replace hand-built admin metrics pages for Haji's apps if it connects to Supabase/Postgres; Motion is already liked and is marketing-adjacent."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Try Dashboards against one app's database for founder KPIs (MRR, signups, churn) before building a custom admin page. Only worth it if a Postgres/Supabase connector exists; shown connectors are enterprise warehouses."
+ },
+ "verify": [
+  "Which plans include Dashboards and Motion (video says free Docs/Slides/Design, not necessarily these two)",
+  "Supported data connectors for Dashboards (Postgres/Supabase?) and whether data leaves your environment",
+  "Motion export formats and limits (MP4, length, watermark)"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": true,
+  "what": "Adds Claude Dashboards (plain-English BI with lineage) and the 'Docs/Slides/Design free on every plan' news; Motion itself duplicates a liked video."
+ }
+}

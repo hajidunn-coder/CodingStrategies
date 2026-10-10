@@ -1,0 +1,60 @@
+{
+ "id": "7684482106356993293",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7684482106356993293",
+ "creator": "ai.honeycove",
+ "title": "Install an 'Apple design' Claude skill, have Claude audit an existing site against Apple's typography/spacing/hierarchy principles, then apply the fixes",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Apple design skill for Claude",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Repo/URL never named; thumbnail reads 'apple design FOR CLAUDE'; install shown as a stock 'Installing Claude Skill...' progress bar"
+  },
+  {
+   "name": "Claude (chat / Cowork, Opus 5 High)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Prompt box shows 'www.fitpass.com Audit this website's design using Apple's design pr...'"
+  }
+ ],
+ "claims": [
+  "Someone turned Apple's entire design language into a Claude skill",
+  "Claude will audit typography, spacing, hierarchy, layout and interactions and show what feels off",
+  "The point is giving Claude the principles behind why Apple feels polished, not asking it to 'look like Apple'"
+ ],
+ "how_to_steps": [
+  "Install the Apple design skill into Claude",
+  "Give Claude your existing website URL and ask it to audit the design using Apple's principles",
+  "Read the audit (typography, spacing, hierarchy, layout, interactions)",
+  "Ask Claude to apply those improvements to the site"
+ ],
+ "on_screen_only": [
+  "Thumbnail: 'apple design FOR CLAUDE' over iPhone screenshots",
+  "'Installing Claude Skill... Process initiated / Downloading components 40%' (#1)",
+  "Claude prompt box: 'www.fitpass.com' then 'www.fitpass.com Audit this website's design using Apple's design pr...' with Chat/Cowork tabs, model 'Opus 5 High' (#2)",
+  "Audit output list: 'The headline is too vague and doesn't explain the value clearly' / 'The main CTA button is hard to notice and easy to miss' / 'Too many elements compete for attention, making the page feel cluttered' / 'Navigation is unclear, so users may not know where to go next'",
+  "Stock B-roll of an agent Goal block: 'Navigate to http://localhost:3000. Verify the dark mode aesthetic, the search bar, the album gallery, and the player bar... Take a screenshot of the main page... Return a summary of all UI appearance and responsiveness.' with select.dispatchEvent(new Event('change', { bubbles: true })) code",
+  "Stock sites: 'aicm — The Smarter, AI Powered Decentralized Marketplace', 'A global consulting partner dedicated to building smarter and more adaptive' (IPSUM, 100%, 520k+), 'Premium Car Rental in New York' (Unique)",
+  "LinkedIn logo with pirate flag + Mac mini image (unrelated B-roll)"
+ ],
+ "cta": "Follow for more skills like this",
+ "relevance": {
+  "score": 2,
+  "why": "Design polish matters for Haji's apps, but the video is a generic re-tell with stock footage and no repo name; the liked set already covers this exact skill."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The 'audit my site against named design principles, then apply' prompt pattern is cheap to try once, but the skill itself is already in the liked set and this adds nothing actionable (no URL, no install command)."
+ },
+ "verify": [
+  "Which repo is the 'Apple design skill'? (liked set references one installed by pasting a URL; confirm it is the same)",
+  "Does the skill contain real Apple HIG principles or just vibes?",
+  "Is the audit output shown real or mocked (it looks like a generic template)?"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content ('A GitHub repo packages Apple's design language as a Claude skill'); only adds the audit-then-apply prompt framing"
+ }
+}

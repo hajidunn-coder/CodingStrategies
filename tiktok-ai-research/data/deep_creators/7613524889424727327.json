@@ -1,0 +1,38 @@
+{
+ "id": "7613524889424727327",
+ "url": "https://www.tiktok.com/@opichillc/video/7613524889424727327",
+ "creator": "opichillc",
+ "title": "PSA: rotate every API key you have used with AI coding tools -- rotate if supported, otherwise create a new key, deploy it, verify, then delete the old one",
+ "category": "security-legal",
+ "tools": [],
+ "claims": [
+  "With AI coding tools there is a bigger chance than with human developers that keys get exposed somewhere you don't know about",
+  "Takes 5 minutes for a few keys, ~30 minutes for many; prevents someone running up charges on your accounts"
+ ],
+ "how_to_steps": [
+  "Inventory all API keys your projects use",
+  "Go to each provider; rotate the key if a rotate option exists",
+  "If not: create a new key, put it in the app, confirm it works, then disable/delete the old key"
+ ],
+ "on_screen_only": [
+  "Karaoke captions only; no UI"
+ ],
+ "cta": "Like, follow, share with anyone using API keys",
+ "relevance": {
+  "score": 3,
+  "why": "Cheap hygiene that matters more for solo AI-assisted builders who paste keys into chats and agents; no new tool, just a habit."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Do it once now (30 min), then calendar a quarterly rotation; pair with the gitleaks step and keep keys in env/secret managers. Zero cost."
+ },
+ "verify": [
+  "Which of Haji's providers support in-place rotation vs create-then-delete (Stripe, Anthropic, OpenAI, Supabase, Vercel)",
+  "Whether any keys have ever been pasted into Claude/ChatGPT chats or committed (run gitleaks on history first)"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a routine (periodic key rotation with the create -> deploy -> verify -> delete order). Liked set mentioned exposed secrets as a gap but not rotation practice."
+ }
+}

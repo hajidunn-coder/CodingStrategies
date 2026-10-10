@@ -1,0 +1,74 @@
+{
+ "id": "7683590834654039309",
+ "url": "https://www.tiktok.com/@opichillc/video/7683590834654039309",
+ "creator": "opichillc",
+ "title": "After every batch of AI changes, have Claude Code/Codex install and run an open-source secret scanner ('Better Leaks', likely Gitleaks) to catch leaked passwords and API keys",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Better Leaks (as pronounced; most likely 'Gitleaks')",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Open-source secret scanner; no URL or repo shown on screen"
+  },
+  {
+   "name": "Claude Code / Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "The agent that installs and runs the scanner against the cloned repo"
+  },
+  {
+   "name": "Lovable, Replit",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Named as builders that are fast but weak on security unless forced"
+  },
+  {
+   "name": "opichi.com/resources",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Free downloadable security prompt"
+  },
+  {
+   "name": "youtube.com/opichi",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Full tutorial"
+  }
+ ],
+ "claims": [
+  "Creator scanned a vibe-coded app and found admin passwords and API keys leaking in plain text over a public API endpoint",
+  "AI tools are not good at securing things unless you force it on them",
+  "You should run a security scan after every set of changes"
+ ],
+ "how_to_steps": [
+  "Clone your app to your computer via GitHub",
+  "Open it in Claude Code, Codex or similar",
+  "Prompt the agent: install and use the [Gitleaks-style] secret-scanning tool to check the app for leaked secrets and sensitive information",
+  "Repeat after every batch of changes; download the free security prompt at opichi.com/resources"
+ ],
+ "on_screen_only": [
+  "Header caption: 'Are you checking security?'",
+  "Lower-third: 'Full tutorial at YouTube.com/opichi' / 'Prompt download: Opichi.com/resources'",
+  "No terminal, no scanner output, no repo shown"
+ ],
+ "cta": "Like and save; comment what else you do to secure AI-coded apps; tutorial on YouTube, prompt at opichi.com/resources",
+ "relevance": {
+  "score": 4,
+  "why": "Haji ships vibe-coded apps solo; a secret-scanner in the loop is a low-effort guard against the exact failure (leaked keys) described."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Add gitleaks (or trufflehog) as a pre-commit hook / CI step and a one-line CLAUDE.md rule to run it before commits. ~20 minutes, no cost. Don't bother with the creator's prompt download."
+ },
+ "verify": [
+  "Is 'Better Leaks' actually Gitleaks (gitleaks/gitleaks) or a different tool? Confirm name and that it is maintained",
+  "Does a secret scanner catch runtime leaks over a public API endpoint (the story) or only secrets in source/git history? These are different problems",
+  "Is the opichi.com/resources prompt gated behind an email capture?"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a concrete secret-scanning tool step (Gitleaks-type scanner run by the agent after each change set). Liked set covered login gaps and security checklists but not automated secret scanning."
+ }
+}

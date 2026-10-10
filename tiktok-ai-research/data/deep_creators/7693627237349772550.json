@@ -1,0 +1,61 @@
+{
+ "id": "7693627237349772550",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7693627237349772550",
+ "creator": "nocode.joshua",
+ "title": "Three uses for the new Claude Code 'Mods': sessions that message each other (one plans, one builds), a live dashboard pane inside Claude Code (agent status, second brain), and a model-router mod that sends easy tasks to Haiku to protect limits -- all buildable by describing the mod to Claude",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code Mods",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "New feature; mod ideas on screen: usage meter, session chat, model router, agent dashboard, cost tracker, todo pane, git status"
+  },
+  {
+   "name": "Haiku / Opus",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Router sends 'easy' (fix a typo, rename files, tidy notes) to Haiku, 'hard' (plan my launch) to Opus"
+  }
+ ],
+ "claims": [
+  "One Claude Code session can now send a message to another; one plans while the other builds and they pass work between them",
+  "You can ask Claude to change any of its interface, e.g. a dashboard pane showing what agents are doing or a second-brain overview",
+  "A mod can route simple requests to a cheaper model so they stop eating your limits",
+  "You can just describe the mod you want and Claude builds it; no technical knowledge needed"
+ ],
+ "how_to_steps": [
+  "Mod 1: have Session A plan and Session B build; use session-to-session messaging to pass the plan and results",
+  "Mod 2: ask Claude 'Build me a mod that shows what my agents are doing' to get a live dashboard pane (Research/Writer/Editor status)",
+  "Mod 3: build a router mod that classifies requests as easy/hard and sends easy ones to Haiku"
+ ],
+ "on_screen_only": [
+  "'Claude Mods' cube diagram surrounded by mod names: usage meter, session chat, git status, agent-dashboard, cost tracker, todo pane, model router (approx.)",
+  "'3 ways no one is talking about'",
+  "Terminal mock: Session A -> Session B; 'PLANS' / 'BUILDS' handoff with files passed between sessions",
+  "Claude Code window with 'Dashboard · live' side pane: 'Your agents — what they are doing right now: Research (Reading the sources) Running / Writer (Drafting the script) Running / Editor (Waiting on the draft) Waiting'",
+  "'THE EASY STUFF: Fix a typo (easy), Rename these files (easy), Tidy up my notes (easy)'; 'BIGGER MODEL Opus $$$'; 'CHEAPER MODEL Haiku'; requests 'Fix a typo / Rename files / Plan my launch (hard)' -> Mod -> Haiku or Opus",
+  "'Your limits: with the mod [short bar] / without a mod [long bar] — simple tasks stay off them'",
+  "Prompt: 'YOU: Build me a mod that shows what my agents are doing.' with tags mod / agents / doing",
+  "Follow card: nocode.joshua — Claude tips"
+ ],
+ "cta": "Follow for more tips",
+ "relevance": {
+  "score": 4,
+  "why": "Haji runs multiple Claude Code sessions and hits limits; a router mod and a status pane address real daily friction, and mods are buildable by prompt (this session even has a plugin-authoring skill for mods)."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Ask Claude Code to build (1) a usage/cost pane and (2) a simple router that downgrades trivial edits to Haiku. An afternoon; verify the router actually changes the model per request rather than just suggesting it. Session messaging already exists via SendMessage-style tooling."
+ },
+ "verify": [
+  "Exact Mods API: can a mod change the model mid-session, or only intercept/annotate? (the router claim is the one most likely overstated)",
+  "Does cross-session messaging exist natively in Mods or is it the existing session SendMessage/Remote Control feature?",
+  "Are mods per-user config (~/.claude) and safe to share across projects?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "First coverage of Claude Code Mods in this set: session-to-session messaging, custom UI panes, and model routing. Liked set covered slash commands and plugins but not Mods."
+ }
+}

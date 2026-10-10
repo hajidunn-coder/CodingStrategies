@@ -1,0 +1,48 @@
+{
+ "id": "7605628159626726687",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7605628159626726687",
+ "creator": "ethanplusai",
+ "title": "Silent showcase of a fully AI-made sci-fi movie trailer ('The Return'); caption credits Claude Opus 4.6 as creative director/prompt agent and ChatGPT image generation",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Opus 4.6",
+   "kind": "model",
+   "where_seen": "caption",
+   "detail": "Used as 'creative director and prompt agent'"
+  },
+  {
+   "name": "ChatGPT image",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "Image generation; the video model is not named in the truncated caption"
+  }
+ ],
+ "claims": [
+  "This movie trailer was 100% made by AI"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Caption on every frame: 'This movie trailer was 100% made by AI'",
+  "Shots: starfield, astronaut in helmet, Earth through capsule window, capsule landed in wheat field at sunset, man walking in field, man drinking from stream, hand on tree bark, man lying in grass; title card 'THE RETURN'",
+  "No prompts, tools or UI shown; no speech (music only)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Pure showcase, no technique; AI film-making is not Haji's business."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement. The only reusable idea (Claude as 'creative director' writing prompts for an image/video model) is already in the liked set."
+ },
+ "verify": [
+  "Which video model was used (caption truncated)?",
+  "Does ethanplusai share the prompt-agent workflow elsewhere (he is the JARVIS creator in the liked set)?"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Claude-as-director + Higgsfield/image-video pipelines already liked); this is a result reel with no method"
+ }
+}

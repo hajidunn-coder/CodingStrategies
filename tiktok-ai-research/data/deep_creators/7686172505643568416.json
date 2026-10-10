@@ -1,0 +1,78 @@
+{
+ "id": "7686172505643568416",
+ "url": "https://www.tiktok.com/@forcceee_/video/7686172505643568416",
+ "creator": "forcceee_",
+ "title": "'Dahl' (inference.dahl.global, Gonka network) gives new users 100M free inference tokens for DeepSeek/Qwen/MiniMax with no card or email; route it into Codex or Claude Code via a compatible gateway",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Dahl (inference.dahl.global)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Nav: STATUS / DOCS / CHAT / GONKA; 'GET API KEY'; OpenAI-compatible; account created with username + 'fingerprint' instead of email"
+  },
+  {
+   "name": "DeepSeek",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Pitched as the cheap model for heavy tasks; 'DeepSeek Flash' listed on site"
+  },
+  {
+   "name": "Qwen 3.6 Flash, MiniMax M2.7",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Other models listed on Dahl"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Connect Dahl directly"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Route via 'a compatible gateway' (unnamed)"
+  }
+ ],
+ "claims": [
+  "Dahl gives every new user 100 million free inference tokens",
+  "No credit card, subscription or email address needed; setup under a minute",
+  "Site calculator: 10M tokens/day costs $0.30 on Dahl vs '$40 corporate average'"
+ ],
+ "how_to_steps": [
+  "Open Dahl (link in bio) and create an account (username only; site issues a fingerprint to sign in with)",
+  "Open the dashboard and allocate the free tokens to your API key",
+  "Use DeepSeek in Dahl Chat, connect Dahl to Codex, or route it into Claude Code through an OpenAI-compatible gateway"
+ ],
+ "on_screen_only": [
+  "'MAKE YOUR CLAUDE CODE FREE' thumbnail with gold coins",
+  "Claude UI mock with 'sonnet 4.5+' model selector",
+  "'Dahl gives every new user 100 MILLION free inference tokens'; 0:58 countdown ring",
+  "'YOU DON'T NEED' credit card / dollar / envelope icons",
+  "Browser URL 'inference.dahl.global'; dialog 'Create your account — Pick a username — we will issue a fingerprint you will sign in with — Username: crimson_falcon_504 — CREATE ACCOUNT'",
+  "Model chips: Qwen 3.6 Flash, MiniMax M2.7, DeepSeek Flash; 'Create an AI character' chat with MiniMax 2.7, Web search, Stream",
+  "Dahl landing: 'GET API KEY', 'Low prices', 'Open models', 'OpenAI-compatible', 'Calculate how much you save — Daily volume 10M tokens — $0.30 your price / $40 corporate average'"
+ ],
+ "cta": "Follow the link in bio for the full guide and the service",
+ "relevance": {
+  "score": 2,
+  "why": "Cheap offloading of heavy tasks is relevant, but this is an unknown provider (Gonka = decentralized/crypto inference network), fingerprint-login, and the Claude Code routing step is hand-waved. Liked set already has NVIDIA free endpoints and OmniRoute."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth the trust risk for client/app code. If cheap DeepSeek is wanted, use NVIDIA's free endpoints or DeepSeek's own API (both already liked). Skip."
+ },
+ "verify": [
+  "What is Dahl / Gonka? Is it a decentralized GPU network and what happens to prompts sent through it (privacy, retention)?",
+  "Is the 100M free token grant real, time-limited, rate-limited, or per-model?",
+  "Which 'compatible gateway' routes an OpenAI-compatible endpoint into Claude Code (claude-code-router, LiteLLM)?",
+  "Is the creator affiliated/sponsored (link in bio)?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New provider name (Dahl/Gonka) with a 100M-token no-signup grant; the technique (route a cheap open model into Claude Code) duplicates liked NVIDIA/OmniRoute content"
+ }
+}

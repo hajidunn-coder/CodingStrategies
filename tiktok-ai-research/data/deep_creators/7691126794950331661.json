@@ -1,0 +1,63 @@
+{
+ "id": "7691126794950331661",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7691126794950331661",
+ "creator": "duncanrogoff",
+ "title": "Paste one video link into Claude Code, Claude writes per-platform captions (YouTube, IG, X, LinkedIn), Blotato posts them all after approval -- credited for 41.9M views/30 days",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Blotato",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paid social posting app; Claude hands it captions, it publishes everywhere after approve"
+  },
+  {
+   "name": "Claude Code / Claude Cowork",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "UI shows 'What's up next, Duncan?' with Local / socials tabs, Auto, Opus 5.5 Medium"
+  },
+  {
+   "name": "claudecodeclub.ai/free-resources",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Guide: 'LET CLAUDE RUN YOUR SOCIAL MEDIA WITH BLOTATO (SETUP + PROMPTS)'"
+  }
+ ],
+ "claims": [
+  "Sabrina Ramonoff got 41.9 million views in 30 days with just two subscriptions: Claude and Blotato",
+  "She pastes one video link; Claude writes a caption for every platform (YouTube, Instagram, X, LinkedIn); Blotato posts after she hits approve"
+ ],
+ "how_to_steps": [
+  "Paste a single video link into Claude Code (e.g. 'Post this video everywhere: tiktok.com/@you/video/1')",
+  "Claude writes a caption for each platform (4 captions)",
+  "Blotato (connected) schedules/posts to YouTube, Instagram, X, LinkedIn once you approve"
+ ],
+ "on_screen_only": [
+  "'Let Claude run your socials' / '41.9M' / '2' subscriptions",
+  "Claude UI: 'What's up next, Duncan?' tabs 'Local' and 'socials', input 'Post this', footer 'Auto  Opus 5.5 Medium'",
+  "Chat: 'Post this video everywhere: tiktok.com/@you/video/1' -> 'Got the video. Writing a caption for each platform.'",
+  "'4 captions' ring with YouTube/LinkedIn/IG/X icons; Blotato mascot fanning to the four platforms",
+  "Guide page: claudecodeclub.ai/free-resources — 'LET CLAUDE RUN YOUR SOCIAL MEDIA WITH BLOTATO (SETUP + PROMPTS)' / 'WHAT THE CLAUDE AND BLOTATO SETUP DOES'",
+  "'Comment MEGAPHONE for the free guide (IG · FB · YT ONLY)'"
+ ],
+ "cta": "Comment 'megaphone' for the free guide",
+ "relevance": {
+  "score": 3,
+  "why": "Distribution for Haji's apps is a real need and the one-link-to-all-captions loop is time-cheap; but the 41.9M figure is a creator-economy outlier, and Blotato is another subscription."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Worth a small experiment: a Claude Code skill that takes a video link and emits platform captions, piped to Postiz (open-source, already in liked set) or Blotato's API. Half a day to wire; value depends on how much Haji posts."
+ },
+ "verify": [
+  "Blotato pricing and whether it has an API/MCP that Claude Code can call directly, or whether the 'approve' step is manual in Blotato's UI",
+  "Is the 41.9M/30-day claim attributable to this workflow or to Sabrina Ramonoff's existing audience?",
+  "Is the guide an email-capture funnel (claudecodeclub.ai)?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: Blotato (paid multi-platform poster) and a concrete 'one link -> per-platform captions -> approve -> post' loop. Liked set had Postiz (open-source scheduler) but not this specific workflow."
+ }
+}

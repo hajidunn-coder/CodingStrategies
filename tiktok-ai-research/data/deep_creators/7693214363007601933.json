@@ -1,0 +1,72 @@
+{
+ "id": "7693214363007601933",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7693214363007601933",
+ "creator": "duncanrogoff",
+ "title": "Run Claude Code on free third-party models (Gemini, Kimi, GLM) by stacking free API keys behind Manifest (mnfst/llm-gateway) which fails over to the next model when one hits its limit; keys list from mnfst/awesome-free-llm-apis",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "mnfst/awesome-free-llm-apis",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub list of 16 companies giving models away free; 8.4k stars"
+  },
+  {
+   "name": "Manifest (mnfst/llm-gateway)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Free gateway; 7.5k stars; paste free keys, point Claude Code at it, auto-fails over on limit"
+  },
+  {
+   "name": "Gemini, Kimi, GLM (Z.ai)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Example free models"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Pointed at Manifest instead of Anthropic"
+  }
+ ],
+ "claims": [
+  "You can run Claude Code free with almost unlimited usage on non-Claude models",
+  "A GitHub list names 16 companies giving AI models away for free; it has 8,400 stars",
+  "When one model hits its limit Manifest jumps to the next one",
+  "Catch: they are not Claude, so save them for small jobs"
+ ],
+ "how_to_steps": [
+  "Collect free API keys from the providers in mnfst/awesome-free-llm-apis",
+  "Set up Manifest (mnfst/llm-gateway) locally",
+  "Paste the free keys into Manifest",
+  "Point Claude Code at Manifest's endpoint",
+  "Use it for small/quick-fix tasks; Manifest fails over Gemini -> GLM -> Kimi as limits hit"
+ ],
+ "on_screen_only": [
+  "'Keep coding after your Claude limit hits'; Gemini / Z (GLM) / Kimi logos around 'Free models'",
+  "'16 COMPANIES'; GitHub 'awesome-free-llm-apis' Star 8.4k",
+  "Diagram: Manifest -> Gemini key / Kimi key / GLM key / Claude Code",
+  "'YOUR REQUEST -> MANIFEST -> GEMINI (LIMIT HIT) / GLM (NEXT MODEL)'",
+  "'QUICK FIXES'; repo cards 'mnfst / awesome-free-llm-apis 8.4K' and 'mnfst / llm-gateway 7.5K'"
+ ],
+ "cta": "Comment 'Beaver' for the guide with every free key link",
+ "relevance": {
+  "score": 2,
+  "why": "Overflow capacity for trivial tasks is mildly useful, but Haji's value comes from Claude quality; liked set already has OmniRoute doing the same thing."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only if usage limits actually bite: 1-2 hours to stand up the gateway and route a 'cheap' profile. Otherwise skip; the newer Mods model-router (see nocode.joshua) is a cleaner path to the same saving."
+ },
+ "verify": [
+  "Do mnfst/llm-gateway and mnfst/awesome-free-llm-apis exist with those star counts; is Manifest maintained?",
+  "How does Claude Code get pointed at a non-Anthropic gateway (ANTHROPIC_BASE_URL + Anthropic-format proxy?) and does tool-calling survive on Gemini/GLM/Kimi?",
+  "Free-tier terms: do these providers train on your prompts?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New tool names (Manifest/mnfst llm-gateway, awesome-free-llm-apis list); the technique duplicates the liked OmniRoute free-tier-chaining video"
+ }
+}
