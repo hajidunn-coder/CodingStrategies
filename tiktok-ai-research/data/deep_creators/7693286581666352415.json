@@ -1,0 +1,76 @@
+{
+ "id": "7693286581666352415",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7693286581666352415",
+ "creator": "aiwithabhijay",
+ "title": "Three design skills (Emil Kowalski motion skill, Impeccable, Taste) plus Figma and Playwright connections so Claude stops producing generic-looking websites",
+ "category": "design-ui",
+ "topic_match": "design-ui",
+ "tools": [
+  {
+   "name": "emilkowalski/skills",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "github.com/emilkowalski/skills - repo with 'skills' folder, .pl, LICENSE; teaches smooth modern animations (SKILL.md 'Emil Kowalski - Smooth, modern motion')"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "impeccable.style - 'The missing design vocabulary for agents'; improves typography, spacing, colors; 'Works with every agent'"
+  },
+  {
+   "name": "Taste",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "learns from well-designed websites so output stops looking AI-generated"
+  },
+  {
+   "name": "Figma MCP",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "'Figma - Design the UI'"
+  },
+  {
+   "name": "Playwright",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'Playwright - Test everything'"
+  }
+ ],
+ "claims": [
+  "With these three skills Claude 'can build really beautiful websites'",
+  "Pipeline: Figma designs the UI, Claude writes code, Playwright tests automatically; you only describe the site"
+ ],
+ "how_to_steps": [
+  "Install Emil Kowalski's skill",
+  "Install Impeccable",
+  "Install Taste",
+  "Connect Claude to Figma and Playwright",
+  "Prompt e.g. 'Build me a modern portfolio site'"
+ ],
+ "on_screen_only": [
+  "Hook card 'WHY YOUR CLAUDE CODE WEBSITES ALL LOOK THE SAME'",
+  "GitHub page emilkowalski/skills (5 branches, files: skills, .gitattributes, .gitignore, .pl, LICENSE; commit 'Remove course mention')",
+  "Impeccable landing: 'The missing design vocabulary for agents', 'Works with every agent'",
+  "Example sites: 'The elephant queen', 'Meet Our Experts', 'Botanic Architecture'",
+  "Prompt bubble 'Build me a modern portfolio site'; editor 'Claude Code - Card.jsx' with Live preview",
+  "'comment X'"
+ ],
+ "cta": "Comment X for the skills and setup guide",
+ "relevance": {
+  "score": 3,
+  "why": "Relevant to shipping non-generic UI fast, but all three skills are already in the liked set."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to install (three skill repos); Figma MCP + Playwright already standard. Worth doing once, but nothing new here versus liked 'Five Claude skills to stop AI-looking websites'."
+ },
+ "verify": [
+  "Is 'Taste' the same repo as the liked 'Taste Skill'?",
+  "Does emilkowalski/skills require his paid course (commit 'Remove course mention')?"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (awesome-design/Taste/Impeccable/Emil Kowalski/Playwright video)"
+ }
+}

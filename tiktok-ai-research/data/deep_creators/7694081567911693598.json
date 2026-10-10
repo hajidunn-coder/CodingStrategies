@@ -1,0 +1,38 @@
+{
+ "id": "7694081567911693598",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7694081567911693598",
+ "creator": "nate.b.jones",
+ "title": "Fun prompt: ask your most-used AI to estimate your IQ percentile from your interactions and then 'tell me why' - the useful part is its description of how you reason and where you can grow",
+ "category": "other",
+ "topic_match": "none",
+ "tools": [],
+ "claims": [
+  "Prompt: 'Tell me how intelligent I am in terms of percentile. What is my percentile of IQ according to you, the AI, based on the interactions you've had in your training data with others and your observations about me. And tell me why.'",
+  "The percentile is entertainment; the 'why' gives a record of reasoning patterns, abstraction handling, weaknesses, growth areas",
+  "Takes 5 seconds; 757k views"
+ ],
+ "how_to_steps": [
+  "Open the AI you use most (needs memory of your chats)",
+  "Paste the prompt",
+  "Ignore the number; read the 'why'"
+ ],
+ "on_screen_only": [
+  "Title card 'AI Hack: Ask Your AI How Smart You Actually Are'"
+ ],
+ "cta": "Try it and let me know",
+ "relevance": {
+  "score": 1,
+  "why": "Self-reflection novelty; not business-building."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Five-second prompt; harmless but sycophancy makes the output unreliable."
+ },
+ "verify": [
+  "Model sycophancy: does any AI give a non-flattering percentile?"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "Similar to liked 'export your chat history and have a classifier tag your mistakes' but far shallower; effectively duplicate"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "7682892031856741645",
+ "url": "https://www.tiktok.com/@sirakinb/video/7682892031856741645",
+ "creator": "sirakinb",
+ "title": "'Your AI needs hands': three things to give a business AI agent - an always-on cloud workspace with file storage, a memory of business data, and hands (tool logins, schedules, outbound API calls)",
+ "category": "agent-architecture",
+ "topic_match": "agents",
+ "tools": [],
+ "claims": [
+  "Everyone's AI has a mouth, few have hands; the models are fine but they can't touch anything",
+  "Three requirements: (1) a place to work - an always-on cloud computer plus storage for files/images/videos; (2) memory - where customers, numbers, history live so each session doesn't start from scratch; (3) hands - log into tools, run on a schedule without being asked, reach other services (pull leads, generate images, grab data)",
+  "Caption names an 'agent-native stack: api gateway (business tools), data pipes, ce...' (truncated)"
+ ],
+ "how_to_steps": [
+  "Give the agent an always-on cloud machine + file store",
+  "Give it a persistent business-data memory",
+  "Give it tool credentials, a scheduler, and outbound integrations"
+ ],
+ "on_screen_only": [
+  "Title cards: 'YOUR AI NEEDS HANDS'; '01 A PLACE TO WORK - COMPUTER + FILES'; '02 MEMORY - YOUR BUSINESS CONTEXT'; '03 HANDS - TOOLS + ACTIONS'; 'WORKSPACE + MEMORY + HANDS'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Correct but abstract framing; no tools, no stack named on screen. A founder already running Claude Code with MCPs and scheduled cloud sessions has all three."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing concrete to implement; it is a mental model. The Jarvis/Hermes recipes already liked are more specific."
+ },
+ "verify": [
+  "What stack does sirakinb's 'agent-native' platform actually use (caption truncated: api gateway, data pipes, ce...)?"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content - the nine-step Jarvis recipes (host, memory, tools, channels) cover the same three pillars with concrete tools"
+ }
+}

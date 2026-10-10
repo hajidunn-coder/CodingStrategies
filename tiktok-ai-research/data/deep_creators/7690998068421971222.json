@@ -1,0 +1,69 @@
+{
+ "id": "7690998068421971222",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7690998068421971222",
+ "creator": "artificialcorner",
+ "title": "'I tested 100 Claude skills' - a keep-or-uninstall ranking UI showing kept skills (Slide Deck Builder 9.4, Explainer Graphic 9.1, Branded Carousel Generator 8.8, Brand Applicator 8.6) and uninstalled ones (Logo Maker, SEO Writer 4.2, Cold Email, Resume Polish, Market Competitors)",
+ "category": "plugins-skills",
+ "topic_match": "skills-plugins",
+ "tools": [
+  {
+   "name": "Slide Deck Builder (Claude skill)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "kept, score 9.4; caption: 'you give it a rough ...'"
+  },
+  {
+   "name": "Explainer Graphic",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "kept, 9.1"
+  },
+  {
+   "name": "Branded Carousel Generator",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "kept, 8.8"
+  },
+  {
+   "name": "Brand Applicator",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "kept, 8.6"
+  },
+  {
+   "name": "Logo Maker / SEO Writer / Cold Email / Resume Polish / Market Competitors",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "uninstalled (SEO Writer scored 4.2)"
+  }
+ ],
+ "claims": [
+  "Tested 100 Claude skills; 'here are the 10 best' (video only shows the first ~9 sorted, 3 kept / 5 uninstalled at the end of the clip)",
+  "No audio; 7-second clip; caption lists the ranking (truncated in our data)"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay 'I tested 100 Claude skills, so you don't have to' / 'Here are the 10 best skills'",
+  "Dark 'Keep or Uninstall' app: path '~/.claude/skills - final cut - 20 of 100', 'sorting 3/20 ... 9/20', counters 'KEPT 0-3 /10', 'UNINSTALLED 2-5'",
+  "Kept rows with scores: Slide Deck Builder 9.4, Explainer Graphic 9.1, Branded Carousel Generator 8.8, Brand Applicator 8.6; red row 'SEO Writer 4.2'; pending: Logo Maker, Cold Email, Resume Polish, Market Competitors",
+  "Background browser tab 'claude.ai/...' and a chat saying 'Team returns!'"
+ ],
+ "cta": "Caption carries the list (truncated)",
+ "relevance": {
+  "score": 2,
+  "why": "The kept skills are marketing-asset skills (decks, graphics, carousels, brand application) - useful for a solo founder's content, but no sources/repos given and the ranking UI looks staged."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Can't install anything from this; would need to find the skills. Anthropic's official pptx/canvas skills already cover slide decks and graphics."
+ },
+ "verify": [
+  "Where do these 100 skills come from (skills.sh? Anthropic skills repo?)",
+  "Is the 'Keep or Uninstall' tool real or a mock built for the video?",
+  "Full caption text with the 10 names"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "New idea: brand-asset skills (Branded Carousel Generator, Brand Applicator, Explainer Graphic) as a curated set; liked content covered design/code skills, not branded marketing-collateral skills"
+ }
+}

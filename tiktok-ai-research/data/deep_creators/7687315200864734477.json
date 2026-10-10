@@ -1,0 +1,51 @@
+{
+ "id": "7687315200864734477",
+ "url": "https://www.tiktok.com/@sirakinb/video/7687315200864734477",
+ "creator": "sirakinb",
+ "title": "Demo of a custom agent platform for a property manager: voice agent answers inbound calls and, on request, forwards to a human 'Live Queue' call center built inside the same platform",
+ "category": "ai-product-tool",
+ "topic_match": "business-with-ai",
+ "tools": [
+  {
+   "name": "Jackson (custom agent platform)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "sidebar brand 'JACKSON'; agents listed: leasing agent, Voice Agent, Email Agent, Utilities Agent; 'Jackson Rental Homes' workspace; Live Queue call center with 'Incoming caller - Answer call / Decline'"
+  }
+ ],
+ "claims": [
+  "Voice agent answers inbound tenant calls; when caller asks for a person it forwards into a custom-built call center where multiple staff share one workspace and answer in real time",
+  "The call center was built directly inside the same custom agent platform the creator provisioned for the client",
+  "Caption: simply placing a voice AI agent in a business with a large call volume is not enough (human handoff needed)"
+ ],
+ "how_to_steps": [
+  "Voice agent picks up call",
+  "Detects 'speak to a human' intent",
+  "Forwards call into shared Live Queue UI",
+  "Staff click 'Answer call' on incoming-caller card"
+ ],
+ "on_screen_only": [
+  "Agent dashboard with sidebar: 'leasing agent', 'Voice Agent', 'Email Agent', 'Utilities Agent'; sections 'Workspace', 'CRM', 'Integrations', 'Phone numbers'",
+  "Chat pane showing a long agent prompt with headers 'Where we are', 'Prototype & process', numbered items 1-6 ('Production hosting...', 'Twilio/...' partially legible) and 'What do you want next?'",
+  "Right pane 'Jackson Rental Homes' sign-in screen",
+  "'Live Queue' screen: 'You're ready for calls' / 'Incoming caller' modal with 'Answer call' and 'Decline' buttons; counters '0' and '0s'"
+ ],
+ "cta": "none (portfolio piece for agency work)",
+ "relevance": {
+  "score": 3,
+  "why": "Shows the human-handoff piece missing from the liked Bland AI receptionist demo - the warm transfer to a web-based agent queue, which is what makes a voice agent sellable to a real service business."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Human-transfer to a browser softphone (Twilio Client / Vapi transfer) is a weekend of Claude Code work and makes the AI-receptionist offer viable; but this is a bespoke client platform with no code shared."
+ },
+ "verify": [
+  "Which voice stack (Twilio? Vapi? Retell?) handles the transfer?",
+  "Is 'Jackson' a product or just the client name?",
+  "Latency/cost of warm transfer to browser WebRTC agents"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "Adds the human-escalation / live call-queue pattern to the liked 'AI phone receptionist with Bland AI' content"
+ }
+}

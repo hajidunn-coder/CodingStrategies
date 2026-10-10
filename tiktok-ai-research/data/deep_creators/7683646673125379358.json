@@ -1,0 +1,47 @@
+{
+ "id": "7683646673125379358",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7683646673125379358",
+ "creator": "nate.b.jones",
+ "title": "Commentary on Apple's event: new chip for more on-device AI plus Watch health sensors and a ~$119 50-biomarker blood test position Apple as a privacy-first 'health concierge' that flags problems before your doctor",
+ "category": "model-news",
+ "topic_match": "model-news",
+ "tools": [
+  {
+   "name": "Apple blood test",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "~$119, checks ~50 biomarkers (as stated)"
+  },
+  {
+   "name": "Apple foldable 'duo' phone",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "announced same event; not the focus"
+  }
+ ],
+ "claims": [
+  "Apple is laying chip groundwork for local AI processing and leaning into private, local healthcare via Watch and blood tests",
+  "Framing will be 'privacy first, we'll contact your doctor when needed' but amounts to Apple noticing health changes before you or your doctor",
+  "Apple has pushed this thread for years; US population aging makes it a major direction"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Captions only; no slides"
+ ],
+ "cta": "Would you trust Apple with AI-interpreted health data? Let me know",
+ "relevance": {
+  "score": 1,
+  "why": "Industry commentary; no founder action unless building health apps. Tangential to veteran-health niche (VA claims) but not actionable."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to build or install."
+ },
+ "verify": [
+  "Did Apple actually announce a $119 blood test and a foldable phone at this event?"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "Not covered, but outside Haji's liked topics; commentary only"
+ }
+}

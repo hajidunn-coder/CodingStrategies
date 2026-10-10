@@ -1,0 +1,96 @@
+{
+ "id": "7683950908262173982",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7683950908262173982",
+ "creator": "ducktate.com",
+ "title": "'Token Hacking Ep. 3': Claude Code as orchestrator brain, Codex/OpenCode as cheap hands; creator points to his free 7-module 'Orchestrator Course' at ducktate.com",
+ "category": "agent-architecture",
+ "topic_match": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "runs as the orchestrator / 'conductor mode' session"
+  },
+  {
+   "name": "Codex CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the 'hands'; module 3 'Hire the hands: Codex' - install Codex CLI, lane profile as its own toml file, symlink AGENTS.md to CLAUDE.md"
+  },
+  {
+   "name": "OpenCode Go",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "module 4 'More hands: OpenCode Go' - flat rate-limited monthly plan with several models behind one command"
+  },
+  {
+   "name": "The Orchestrator Course (ducktate.com)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "ducktate.com, 7 modules / 59 min, free, no signup; updated 2026-09-10"
+  },
+  {
+   "name": "Talk to Think (ducktate.com)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "second free course, 5 lessons, talk-first process to beat the blank page"
+  },
+  {
+   "name": "Ducktate",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "the creator's Mac app (dictation); the courses are a side product"
+  },
+  {
+   "name": "dispatch.sh / lane pack",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "module 5: 'two to three kilobyte pack that turns a cheap model into a clean run' + runner that refuses main-line branches and runs tests itself; 'skill repo on GitHub' with orchestrate skill and three standing agents"
+  }
+ ],
+ "claims": [
+  "Having Claude control Codex 'has been interesting, but there's a few kinks' (e.g. field note 2026-09-09: Codex in the workspace-write sandbox cannot run XCTest; XPC call refused; compile-only build works)",
+  "Course is free, no email gate, no paywall; 7 modules, 59 min total; updated 2026-09-10",
+  "Model: one brain (Claude Code orchestrator), many cheap hands (Codex, OpenCode Go), red tests, worktrees, and a 'calibration bar' - a model earns a routing-table row only after three closed tickets, one pack, fresh worktree per run, an Opus scorecard",
+  "Each lane returns a strict JSON report; 'a result is only a claim' until verified",
+  "Field note: a cheap-model run respected the scope list in nine of nine runs, one file each, test file never edited"
+ ],
+ "how_to_steps": [
+  "Go to ducktate.com (link in comments) -> Learn -> The Orchestrator Course",
+  "Module 1-2: put Claude Code in conductor mode via the orchestrate skill; set the subagent model policy",
+  "Module 3: install Codex CLI, write a lane profile toml, symlink AGENTS.md -> CLAUDE.md, run one lane with a strict JSON report",
+  "Module 4: add OpenCode Go as extra hands (which models, which on hold, auto flag off by default)",
+  "Module 5: use the lane pack + dispatch.sh runner (refuses main branch, runs tests itself)",
+  "Module 6: daily loop - session start reads, worktrees, dispatch, verify, kick back, merge, ledger that survives compaction",
+  "Module 7: calibrate before you trust (3 closed tickets, fresh worktree per run, Opus scorecard, hold list)"
+ ],
+ "on_screen_only": [
+  "ducktate.com site: 'Learn - Free courses on running a team of AI coding agents and on thinking out loud before you write. No signup, no email, no paywall.' badges '2 courses', 'Updated 2026-09-10', 'Free, no signup'",
+  "'The Orchestrator Course - Run a team of AI coding agents: one brain, many cheap hands, and a bar you can measure. 7 modules - 59 min total'",
+  "'Talk to Think - Replace the blank page with a talk-first process: explain it, dump it fast, then shape it. 5 lessons'",
+  "Module list: 'Claude Code as the orchestrator: the skill set that puts a session in conductor mode, the subagent model policy, and why a result is only a claim'; 'Module 3 Hire the hands: Codex 11 min'; 'Module 4 More hands: OpenCode Go 6 min'; 'Module 5 The lane pack and dispatch.sh 10 min'; 'Module 6 The daily loop 9 min'; 'Module 7 Calibrate before you trust 9 min'",
+  "'LATEST FIELD NOTES: 2026-09-09 Codex in the workspace-write sandbox cannot run XCTest. The XPC call is refused. A compile only build works...'; '2026-09-0x ... respected the scope list in nine of nine runs. One file each, and the test file never edited.'",
+  "'Where the code lives: The skill repo on GitHub, with the orchestrate skill and the three standing agents. The install prompt ... rather have Claude set it up.'",
+  "Comments overlaid: 'how do you do that because I got claude 5x and I already hit my weekly limit this would help'"
+ ],
+ "cta": "Link to the free module in comments; ask him what is confusing; 'see you tomorrow' (daily series)",
+ "relevance": {
+  "score": 4,
+  "why": "Directly about stretching a Claude Max weekly limit by routing cheap execution to Codex/OpenCode while Claude plans and verifies - the exact pain of a solo founder on a subscription. Veteran-detail: the calibration bar and strict JSON lane reports are practical guardrails."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Free, written, no gate; 59 minutes to read. The lane-pack + dispatch.sh + worktree-per-run pattern could be adopted piecemeal (start with one Codex lane for test-writing). Needs a Codex/ChatGPT subscription or OpenCode Go plan."
+ },
+ "verify": [
+  "Does ducktate.com/learn actually host the course and link the GitHub skill repo? repo name?",
+  "Is OpenCode Go a real plan and what does it cost?",
+  "How does Codex sandbox handle non-Xcode projects (field note was Xcode-specific)?",
+  "Does the 'Opus scorecard' calibration burn more Claude tokens than it saves?"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has Claudex Loop / Codex-as-reviewer and 'do planning in ChatGPT to save Codex quota', but not a full written orchestrator course with lane packs, dispatch runner, strict JSON reports and a calibration bar for promoting cheap models into a routing table."
+ }
+}

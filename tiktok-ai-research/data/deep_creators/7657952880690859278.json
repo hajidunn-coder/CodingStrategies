@@ -1,0 +1,71 @@
+{
+ "id": "7657952880690859278",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7657952880690859278",
+ "creator": "adam_ha_yes",
+ "title": "Opinion: stop paying Framer/Webflow/Wix ($150+/mo) for landing pages; have Claude rebuild them as code, deploy on Vercel, and have Claude write daily SEO blog posts",
+ "category": "business-with-ai",
+ "topic_match": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude / Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "recreated all his Framer sites locally"
+  },
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "hosting/deploy"
+  },
+  {
+   "name": "Claude Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as the visual editor alternative"
+  },
+  {
+   "name": "Framer / Webflow / Wix",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the tools he says to drop; was paying Framer $150+/mo, Wix $30/mo"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'using Claude, using Codex, whatever'"
+  }
+ ],
+ "claims": [
+  "Was paying Framer $150+/month to manage all his sites; now runs them all via Claude + Vercel",
+  "Can tell Claude 'write a blog article about X' every single day for SEO",
+  "Drag-and-drop editors 'charge an exorbitant amount and you're stuck with them forever'; Wix charged $30/mo for a site he barely uses"
+ ],
+ "how_to_steps": [
+  "Prompt Claude to recreate the landing page as code on your machine",
+  "Deploy on Vercel",
+  "Add a daily Claude-written blog post for SEO",
+  "Cancel Framer/Webflow/Wix"
+ ],
+ "on_screen_only": [
+  "Caption overlay 'Create a high converting landing page in 2026' - no screen demo"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already builds sites with Claude Code; the only takeaway is the cost framing (drop site builders) and automate SEO posts."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Daily AI blog posts via a scheduled Claude Code task is easy (cloud scheduled sessions already liked), but thin-content SEO spam has real ranking risk; no technique shown."
+ },
+ "verify": [
+  "Does daily AI-generated blog content actually rank in 2026, or get penalized?",
+  "Vercel cost at scale was already flagged in liked content"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content - landing-page-with-Claude and Vercel-cost videos cover this; only new nuance is 'cancel Framer, automate SEO posts'"
+ }
+}

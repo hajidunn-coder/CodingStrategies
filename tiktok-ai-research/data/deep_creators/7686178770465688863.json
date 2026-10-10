@@ -1,0 +1,66 @@
+{
+ "id": "7686178770465688863",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7686178770465688863",
+ "creator": "buildwithneej",
+ "title": "OpenMontage: open-source (AGPL-3.0, ~59k stars) agentic video production system for Claude - describe a video, it researches, scripts, pulls free stock footage and narration, renders, with approval gates at script/footage/final cut",
+ "category": "ai-product-tool",
+ "topic_match": "agents",
+ "tools": [
+  {
+   "name": "OpenMontage",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "openmontage.video; GitHub '#1 Repository of the Day'; 59,493 stars ('13.7K in June -> 59K today'); AGPL-3.0; works with Claude, ChatGPT, ...; sections Paste A Video, Quick Start, Pipelines, How It Works, Sponsors, Providers, Review Guide, Agent Guide"
+  },
+  {
+   "name": "Atlas Cloud",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "repo sponsor: unified API to 300+ models, 'coding plan' promotion"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "terminal 'openmontage - claude code' with brief.md, script.md, scenes/, assets/, edit.json; prompt '> make a 60-second animated explainer about how neural networks learn'"
+  }
+ ],
+ "claims": [
+  "Over 50k stars (59,493 shown); free; zero API keys required; free narration and free stock footage built in",
+  "Pipeline: research -> script -> assets -> render; every stage has an approval gate (script, footage, final cut) and waits for a yes",
+  "Produces videos straight from the terminal"
+ ],
+ "how_to_steps": [
+  "Install OpenMontage repo with Claude Code",
+  "Give one sentence describing the video",
+  "Approve script, then footage, then final cut",
+  "Render final file"
+ ],
+ "on_screen_only": [
+  "README header 'Free Movie Production Studio for Claude' / 'The first open-source, agentic video production system.' / WEBSITE openmontage.video",
+  "'GITHUB TRENDING #1 Repository Of The Day'; 'Follow The Build' X handle '@CALESTHIOAILABS'; GitHub Discussions",
+  "'59,493 STARS ON GITHUB - 13.7K in June -> 59K today - free to clone - open source - AGPL-3.0'",
+  "Sponsor block 'Atlas Cloud ... unified access to 300+ curated models ... coding plan promotion'",
+  "Pipeline chips 'research', 'script', 'assets', 'render'; 'nothing moves until you say yes' with green 'APPROVED' button",
+  "Terminal file tree brief.md, script.md, scenes/, assets/, edit.json; sample output frame 'PRECIOUS - The Latin word for salt sal...'"
+ ],
+ "cta": "Comment 'studio' for the repo",
+ "relevance": {
+  "score": 3,
+  "why": "Could produce explainer/marketing videos for apps and the veteran audience from the terminal at zero cost; competes with the liked Claude Motion / hyperframes approaches."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Clone and try in an hour; AGPL-3.0 matters if embedding in a product (fine for making your own marketing videos). Output quality with free stock footage/TTS is the open question."
+ },
+ "verify": [
+  "Repo owner/URL and whether 59k stars is real (huge jump June->now suggests hype or bot stars)",
+  "Which free TTS and stock-footage sources; licensing of stock footage for commercial use",
+  "AGPL-3.0 implications",
+  "Is 'zero API keys' true when running under Claude Code (Claude is the key)?"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "Adds a full open-source video-production agent with approval gates and free assets; liked set has Claude Motion, hyperframes and Remotion but not an end-to-end stock-footage pipeline"
+ }
+}

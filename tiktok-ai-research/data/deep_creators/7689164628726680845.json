@@ -1,0 +1,36 @@
+{
+ "id": "7689164628726680845",
+ "url": "https://www.tiktok.com/@nicholewischoff/video/7689164628726680845",
+ "creator": "nicholewischoff",
+ "title": "VC (Wischoff Ventures) asks whether to invest in or build a marketplace where credentialed moms (lawyers, CPAs) opt into a few hours a week of specialist gig work without hunting for clients",
+ "category": "business-with-ai",
+ "topic_match": "business-with-ai",
+ "tools": [],
+ "claims": [
+  "She runs a venture firm, travels weekly, has a 2.5-year-old and 8-month-old",
+  "Friends who were 'killers in the workforce' struggle with purpose at home and want to flex professional skills a couple hours a week",
+  "Idea: opt-in marketplace listing credentialed specialists for short gigs; asks 'should I be investing in this? should we do this?'",
+  "48.9k views; 'tradwife thing shouldn't be negative but you should be able to opt in'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title overlay 'To moms who still want to work, but not full-time'"
+ ],
+ "cta": "Asks audience whether the marketplace would work",
+ "relevance": {
+  "score": 2,
+  "why": "Not AI; but a VC publicly describing a demand signal and asking for a builder is a startup-idea lead. An AI-matched, vetted fractional-specialist marketplace is buildable with Claude Code."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Two-sided marketplace is heavy for a solo founder; the liquidity problem (getting clients) is the exact thing she hand-waves. Only act if it fits an existing audience."
+ },
+ "verify": [
+  "Existing players (Upwork, The Mom Project, Catalant, Paro for CPAs) already do this - what is the gap?",
+  "Did she follow up with an investment?"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "A VC-sourced business-idea prompt (fractional credentialed-mom marketplace); nothing in the liked set is an idea lead like this"
+ }
+}

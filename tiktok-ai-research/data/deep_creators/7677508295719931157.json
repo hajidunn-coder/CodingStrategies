@@ -1,0 +1,58 @@
+{
+ "id": "7677508295719931157",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7677508295719931157",
+ "creator": "adamstewartmarketing",
+ "title": "News: an 'abliterated' (refusal-direction-removed) version of Alibaba's open-weight Qwen 3.8 refused 0 of 842 harmful prompts, got 170k+ downloads in a week and runs locally on a Mac - guardrails you can delete in an afternoon aren't guardrails",
+ "category": "security-legal",
+ "topic_match": "model-news",
+ "tools": [
+  {
+   "name": "Qwen 3.8 (Alibaba)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "open-source model said to beat Claude Opus 4.6 on paper; creator runs the official version on his Mac Studio"
+  },
+  {
+   "name": "Abliterated Qwen 3.8 (uncensored)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "by 'the internet's best-known jailbreaker'; model card says it will comply with harmful/unethical/illegal requests; 171,878 downloads"
+  },
+  {
+   "name": "browsercode framework",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "X post: developers integrating the uncensored model with 'the browsercode framework' -> a browsing bot that executes any command"
+  }
+ ],
+ "claims": [
+  "Qwen 3.8 dropped nine days ago; six days later a jailbroken version shipped that refused zero of 842 harmful prompts",
+  "Technique is 'abliteration': refusal lives in one direction inside the weights; delete it and the model keeps its capabilities",
+  "Over 200,000 downloads in a week (on-screen counter 171,878); Alibaba cannot take it back",
+  "Creator is pro local models but says an easily-deletable guardrail is not a guardrail"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Article card 'Weaponizing Qwen 3.8: How Abliteration Removes an Open Model's Security Guardrails' (X Article); caption sticker 'Jailbroken Chinese Model'",
+  "X post 'The Terrifying Qwen 3.8 Uncensored Model Without Any Restrictions or Safety Rails!... integrating it with the browsercode framework... a browsing bot that executes any command'",
+  "Graphics: 'Refusal has a direction.'; model card 'Safety guardrails surgically removed'; '171,878 downloads'; 'The competition is good for everyone'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Security awareness: if Haji ships local/open-weight models or agent browsers, expect uncensored forks and prompt-injection-driven bots; not directly actionable."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; maybe a reason to keep abuse detection server-side rather than relying on model refusals."
+ },
+ "verify": [
+  "Does Qwen 3.8 exist and beat Opus 4.6 on which benchmark?",
+  "Who published the abliterated model; the 842-prompt claim",
+  "Download counts"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "Adds the 'abliteration' concept and the warning that open-weight model refusals are not a security control; the liked set's security content is about app-level holes, not model-level guardrails"
+ }
+}

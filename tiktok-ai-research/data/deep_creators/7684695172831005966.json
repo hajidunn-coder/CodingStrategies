@@ -1,0 +1,78 @@
+{
+ "id": "7684695172831005966",
+ "url": "https://www.tiktok.com/@nateherkai/video/7684695172831005966",
+ "creator": "nateherkai",
+ "title": "Five Claude Code plugins: OmniRoute (200+ free providers, auto-switch on limits), claude-mem (cross-session memory), Headroom (context compression), Claude Code Setup (official Anthropic recommender), Task Observer (meta-skill that improves your other skills)",
+ "category": "plugins-skills",
+ "topic_match": "skills-plugins",
+ "tools": [
+  {
+   "name": "OmniRoute",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'251 AI Providers - 90+ Free'; 'Free Forever - $0, no card'; every major lab through one endpoint; auto-switches models at limits"
+  },
+  {
+   "name": "claude-mem",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "memory across sessions"
+  },
+  {
+   "name": "Headroom",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "compresses context / strips unnecessary tokens (screen shows 'Context tokens 2,133 / 8,192')"
+  },
+  {
+   "name": "Claude Code Setup",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "official Anthropic plugin; scans codebase and recommends skills, hooks, subagents, MCP servers"
+  },
+  {
+   "name": "task-observer",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "README 'task-observer - One Skill to Rule Them All - The meta-skill that builds and improves all your skills'; 'logged and applied over 900 improvements' in six months; CC-BY-4.0; works with OpenClaw too"
+  }
+ ],
+ "claims": [
+  "OmniRoute connects Claude Code to 200+ free AI API providers and switches when you hit limits",
+  "Headroom gets the same work done with fewer tokens",
+  "Claude Code Setup is an official Anthropic plugin",
+  "task-observer watches how you work and improves your other skills in the background; README claims 900+ improvements logged in six months"
+ ],
+ "how_to_steps": [
+  "Install the five plugins (DM 'PLUGINS' on Instagram / link in bio for list)"
+ ],
+ "on_screen_only": [
+  "OmniRoute page: '251 AI Providers - 90+ Free - The most complete catalog of any open-source router: 2xx providers, 90+ with a free tier, 11 free forever' with lab logos; 'Free Forever - $0, no card'",
+  "Usage bar '2,500' hit-limit screen",
+  "'Claude Memory' progress bar graphic",
+  "Chat screenshot with 'Context tokens 2,133 / 8,192' and auth-refactor conversation",
+  "Terminal: '.claude/settings.local.json', 'Playwright traces', 'npm run test -> 26 successes 0 failures', 'Slack integration feature is complete'",
+  "Subagents diagram (Main Agent -> Subagent x3 -> Result)",
+  "task-observer README: 'One Skill to Rule Them All... CC-BY-4.0 license... users have reported successful integrations into the OpenClaw setups'",
+  "DM word 'PLUGINS'"
+ ],
+ "cta": "DM 'PLUGINS' on Instagram; links in bio",
+ "relevance": {
+  "score": 3,
+  "why": "OmniRoute and claude-mem are already in the liked set; Headroom, the official Claude Code Setup plugin and task-observer are new names worth a look for a token-constrained Max user."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Claude Code Setup (if truly official) is a five-minute win; Headroom overlaps with Ponytail/caveman token savers already liked; task-observer's 'self-improving skills' claim needs scrutiny before letting it rewrite skills in the background."
+ },
+ "verify": [
+  "Is 'Claude Code Setup' really an Anthropic-published plugin (name/marketplace)?",
+  "Headroom repo and whether it conflicts with Claude Code's own context management",
+  "task-observer repo owner; does it modify skill files autonomously (safety/drift)?",
+  "OmniRoute free-tier reliability for coding workloads"
+ ],
+ "gap": {
+  "is_new": true,
+  "what": "Adds Headroom, the official 'Claude Code Setup' recommender plugin and task-observer (self-improving meta-skill); OmniRoute and claude-mem are duplicates"
+ }
+}

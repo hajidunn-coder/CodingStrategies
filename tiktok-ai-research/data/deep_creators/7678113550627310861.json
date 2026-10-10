@@ -1,0 +1,70 @@
+{
+ "id": "7678113550627310861",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7678113550627310861",
+ "creator": "chase_ai_",
+ "title": "Claudex Loop skill: four-phase (Recon, Interrogate, Review, Build) workflow where Claude Code plans and OpenAI Codex adversarially reviews the plan and the final diff, so neither model grades its own work",
+ "category": "claude-code-workflow",
+ "topic_match": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claudex Loop",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "GitHub repo (README banner 'CLAUDEX LOOP - two models - one argument - zero echo chamber'), MIT license, badges 'Claude Code skill + plugin' and 'OpenAI Codex adversarial reviewer'; link in creator's bio"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "planner/builder"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "reviews PLAN.md in a read-only sandbox, returns VERDICT: APPROVED or REVISE; optional codex-build"
+  }
+ ],
+ "claims": [
+  "AI systems grade their own work favorably; a second model closes the echo chamber",
+  "Works on greenfield and brownfield projects",
+  "Phase 0 Recon: scouts the codebase/docs or researches the web; Phase 1 Interrogate: 'much deeper version of plan mode', one load-bearing question at a time, veto-by-exception; Phase 2 Review: Codex reviews PLAN.md read-only, rounds continue until APPROVED, Claude arbitrates findings; Phase 3 Build (optional): Claude or Codex builds, then the other model cross-inspects the diff against the plan",
+  "Artifacts per run: PLAN.md (the what) and PLAN-REVIEW-LOG.md (the full round-by-round path)",
+  "Invariant: 'whoever made the thing never checks the thing'; Codex is read-only during review and never touches a file",
+  "README anecdote: first real run of a solo-creator CRM - a rival model found one unbuildable subsystem and six designs that would have corrupted data before any code existed"
+ ],
+ "how_to_steps": [
+  "Install the Claudex Loop skill/plugin in Claude Code (link in bio)",
+  "Tell it what you want -> Recon",
+  "Answer the interrogation questions",
+  "Claude writes PLAN.md; Codex reviews; iterate until both approve",
+  "Build with Claude (or Codex); the other model inspects the diff; findings arbitrated and logged"
+ ],
+ "on_screen_only": [
+  "README banner 'CLAUDEX LOOP - two models - one argument - zero echo chamber'; tagline 'AI models harden your plan before a line of code exists - then swap jobs to build'",
+  "Badges: stars 1.3k(?), license MIT, 'Claude Code skill + plugin', 'OpenAI Codex adversarial reviewer'",
+  "'The four phases' table: 0 RECON, 1 INTERROGATE, 2 REVIEW ('Codex reviews PLAN.md in a read-only sandbox -> VERDICT: APPROVED or REVISE with concrete flaws... resumes the same Codex session'), 3 BUILD (optional) ('You pick the builder. Codex builds (codex-build, full write access)...')",
+  "'Two artifacts every run: PLAN.md (the what) and PLAN-REVIEW-LOG.md (the full round-by-round path)'; 'Receipts - From the first end-to-end greenfield run (a solo-creator CRM)'",
+  "Commit log: 'docs: four-phase framing everywhere - SKILL.md, plugin +...', 'Initial release: grill-me-codex skill family'",
+  "Pipeline diagram with colored boxes"
+ ],
+ "cta": "Link in bio to get the Claudex Loop skill",
+ "relevance": {
+  "score": 4,
+  "why": "A structured, tool-enforced second-model review of plans and diffs is exactly the quality gate a solo founder lacks; uses subscriptions Haji may already have (Claude Max + ChatGPT/Codex)."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install a skill, run on the next feature; the plan-review-before-code loop is cheap and the PLAN-REVIEW-LOG gives an audit trail. Cost is Codex quota and slower kickoff on small tasks - use only for non-trivial features."
+ },
+ "verify": [
+  "Exact repo name/owner (banner only shows 'CLAUDEX LOOP'; commit mentions 'grill-me-codex' skill family)",
+  "Does it require Codex CLI installed with an OpenAI subscription?",
+  "Star count and maintenance",
+  "How much Codex quota a multi-round review burns"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "Liked set already covers Codex-as-reviewer patterns (Codex in planning, 'Codex auto-review'); this adds the named skill with four phases and PLAN-REVIEW-LOG but the core idea is a duplicate"
+ }
+}

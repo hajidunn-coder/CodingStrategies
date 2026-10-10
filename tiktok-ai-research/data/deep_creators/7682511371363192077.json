@@ -1,0 +1,41 @@
+{
+ "id": "7682511371363192077",
+ "url": "https://www.tiktok.com/@sirakinb/video/7682511371363192077",
+ "creator": "sirakinb",
+ "title": "AI-generated ad skit for 'ADZO' (manor.pentridgemedia.com): a property-management AI operator that dispatches a plumber for a leak, schedules an inspection, updates tenants and learns new skills",
+ "category": "ai-product-tool",
+ "topic_match": "agents",
+ "tools": [
+  {
+   "name": "ADZO / manor.pentridgemedia.com",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "end card 'ADZO' with URL manor.pentridgemedia.com"
+  }
+ ],
+ "claims": [
+  "Agent handles: Unit 4B leak -> calls emergency plumbing, confirms 10:15 arrival, updates tenants and calendar; Elm Street inspection before Friday rain -> books crew, sends estimate",
+  "'New skills? Apparently. Turns out I learned fast.' (agent acquires skills)",
+  "Caption: agents are quickly becoming real operators inside your business - support, ..."
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Cinematic AI-generated actress in office; overlays '4B - LEAK', 'New skills apparent...' notification; end card 'ADZO' and 'manor.pentridgemedia.com'"
+ ],
+ "cta": "none (brand video)",
+ "relevance": {
+  "score": 1,
+  "why": "Pure concept ad, no implementation detail."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; at most inspiration for an AI-generated product ad style."
+ },
+ "verify": [
+  "Is ADZO/manor.pentridgemedia.com a real product or a demo site for sirakinb's agency?"
+ ],
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content - Jarvis skits already cover the 'agent as operator' narrative"
+ }
+}
