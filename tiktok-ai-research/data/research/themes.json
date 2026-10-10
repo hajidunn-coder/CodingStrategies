@@ -1,0 +1,2352 @@
+{
+ "claude-code-workflow-and-skills": {
+  "categories": [
+   "claude-code-workflow",
+   "plugins-skills",
+   "learning-resource"
+  ],
+  "n_videos": 32,
+  "video_ids": [
+   "7673504000737545485",
+   "7651297691732905248",
+   "7691580366481542413",
+   "7692294299047709965",
+   "7694003445564607751",
+   "7690310413342231839",
+   "7685810271935417613",
+   "7691911646532439309",
+   "7685489699510635807",
+   "7690993516842994958",
+   "7684295430821235971",
+   "7694419992267345174",
+   "7692456410860227854",
+   "7657394343270944020",
+   "7693005522370301214",
+   "7675047000156425485",
+   "7687440407512354078",
+   "7678155840456592671",
+   "7667277568420203796",
+   "7678747152935324942",
+   "7694295848921992462",
+   "7689307743835983134",
+   "7688347599639710989",
+   "7689525409691553037",
+   "7683102042411355408",
+   "7679592166569692429",
+   "7691478400166399252",
+   "7688919454599630110",
+   "7689275803690929421",
+   "7689297926992039199",
+   "7683314440703397152",
+   "7675060885118848270"
+  ],
+  "tools": [
+   {
+    "name": "Claude Code",
+    "mentions": 7
+   },
+   {
+    "name": "Claude",
+    "mentions": 4
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 3
+   },
+   {
+    "name": "Obsidian",
+    "mentions": 2
+   },
+   {
+    "name": "CLAUDE.md",
+    "mentions": 2
+   },
+   {
+    "name": "OpenAI Codex",
+    "mentions": 2
+   },
+   {
+    "name": "Ponytail",
+    "mentions": 2
+   },
+   {
+    "name": "claude-mem",
+    "mentions": 2
+   },
+   {
+    "name": "Impeccable",
+    "mentions": 2
+   },
+   {
+    "name": "pstack",
+    "mentions": 2
+   },
+   {
+    "name": "Codex",
+    "mentions": 2
+   },
+   {
+    "name": "Claude Cowork",
+    "mentions": 1
+   },
+   {
+    "name": "Andrej Karpathy knowledge-base post (@karpathy)",
+    "mentions": 1
+   },
+   {
+    "name": "CoWork OS / cowork-os-beta (creator's template)",
+    "mentions": 1
+   },
+   {
+    "name": "Systems Made Better (YouTube)",
+    "mentions": 1
+   },
+   {
+    "name": "find-skills (vercel-labs)",
+    "mentions": 1
+   },
+   {
+    "name": "skills.sh / npx skills CLI",
+    "mentions": 1
+   },
+   {
+    "name": "Vercel",
+    "mentions": 1
+   },
+   {
+    "name": "Building AI Agents for Beginners (Dr. Ryan Ahmed)",
+    "mentions": 1
+   },
+   {
+    "name": "Prof. Ryan Ahmed YouTube / Udemy",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT (regular Chat)",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT Work + Codex",
+    "mentions": 1
+   },
+   {
+    "name": "GPT-6 Pro ('runs on Astra')",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT subagents",
+    "mentions": 1
+   },
+   {
+    "name": "Practically AI newsletter",
+    "mentions": 1
+   },
+   {
+    "name": "linkedin-agent-skill (GitHub repo)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude / Claude Code",
+    "mentions": 1
+   },
+   {
+    "name": "Humanizer skill",
+    "mentions": 1
+   },
+   {
+    "name": "Content Planner skill",
+    "mentions": 1
+   },
+   {
+    "name": "LinkedIn",
+    "mentions": 1
+   },
+   {
+    "name": "anthropics/courses",
+    "mentions": 1
+   },
+   {
+    "name": "anthropics/claude-cookbooks",
+    "mentions": 1
+   },
+   {
+    "name": "awesome-claude-code",
+    "mentions": 1
+   },
+   {
+    "name": "superpowers",
+    "mentions": 1
+   },
+   {
+    "name": "awesome-claude-skills",
+    "mentions": 1
+   },
+   {
+    "name": "multica-ai/andrej-karpathy-skills",
+    "mentions": 1
+   },
+   {
+    "name": "Stanford LLM lecture (unnamed)",
+    "mentions": 1
+   },
+   {
+    "name": "X/Twitter post by @Dipanshu_AI",
+    "mentions": 1
+   },
+   {
+    "name": "12-Factor Agents",
+    "mentions": 1
+   },
+   {
+    "name": "HumanLayer",
+    "mentions": 1
+   },
+   {
+    "name": "Instinct",
+    "mentions": 1
+   },
+   {
+    "name": "caveman (skill/plugin)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Opus 5",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (Claude Code / desktop, working in a folder)",
+    "mentions": 1
+   },
+   {
+    "name": "Gemini API",
+    "mentions": 1
+   },
+   {
+    "name": "Nano Banana (Gemini image model)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude + Gemini dashboard (creator's own page)",
+    "mentions": 1
+   },
+   {
+    "name": "addyosmani/agent-skills",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code slash commands /spec /plan /build /test /review /ship",
+    "mentions": 1
+   },
+   {
+    "name": "MarkItDown (microsoft/markitdown)",
+    "mentions": 1
+   },
+   {
+    "name": "MarkItDown MCP server",
+    "mentions": 1
+   },
+   {
+    "name": "Jakeschincariol/linkedin-agent-skill",
+    "mentions": 1
+   },
+   {
+    "name": "/li-post",
+    "mentions": 1
+   },
+   {
+    "name": "/li-comment",
+    "mentions": 1
+   },
+   {
+    "name": "/li-reply",
+    "mentions": 1
+   },
+   {
+    "name": "/li-profile",
+    "mentions": 1
+   },
+   {
+    "name": "/li-plan",
+    "mentions": 1
+   },
+   {
+    "name": "/li-human",
+    "mentions": 1
+   },
+   {
+    "name": "/li-carousel, /li-repurpose, /li-dm, /li-triage, /li-audit",
+    "mentions": 1
+   },
+   {
+    "name": "obsidian-skills",
+    "mentions": 1
+   },
+   {
+    "name": "banana-pro-director",
+    "mentions": 1
+   },
+   {
+    "name": "cinema-world-builder",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /remote-control",
+    "mentions": 1
+   },
+   {
+    "name": "DeepLearning.AI Agentic AI course (Andrew Ng)",
+    "mentions": 1
+   },
+   {
+    "name": "Microsoft AI Agents for Beginners",
+    "mentions": 1
+   },
+   {
+    "name": "Hugging Face AI Agents course",
+    "mentions": 1
+   },
+   {
+    "name": "awesome-design / getdesign.md",
+    "mentions": 1
+   },
+   {
+    "name": "Taste Skill",
+    "mentions": 1
+   },
+   {
+    "name": "Emil Kowasaki design skill",
+    "mentions": 1
+   },
+   {
+    "name": "Playwright",
+    "mentions": 1
+   },
+   {
+    "name": "/doctor (claude doctor)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code skills (progressive disclosure)",
+    "mentions": 1
+   },
+   {
+    "name": "Anthropic article 'Unhobbling Claude' / context-engineering post",
+    "mentions": 1
+   },
+   {
+    "name": "Claude 5 / Fable 5",
+    "mentions": 1
+   },
+   {
+    "name": "SuperSchema.ai",
+    "mentions": 1
+   },
+   {
+    "name": "Trillion",
+    "mentions": 1
+   },
+   {
+    "name": "lightbulbmoment.com/locked-in",
+    "mentions": 1
+   },
+   {
+    "name": "ponytail",
+    "mentions": 1
+   },
+   {
+    "name": "Thermo-Nuclear Code Quality Review",
+    "mentions": 1
+   },
+   {
+    "name": "/simplify (creator's own combined command)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code cloud agents / verification skills",
+    "mentions": 1
+   },
+   {
+    "name": "Context Transfer (custom skill)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (claude.ai / Cowork)",
+    "mentions": 1
+   },
+   {
+    "name": "Cursor (cloud agent)",
+    "mentions": 1
+   },
+   {
+    "name": "Devin",
+    "mentions": 1
+   },
+   {
+    "name": "Yorby",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT data export (conversations.json)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude data export",
+    "mentions": 1
+   },
+   {
+    "name": "Jev (jev-mcp-server)",
+    "mentions": 1
+   },
+   {
+    "name": "uv / uvx (Astral)",
+    "mentions": 1
+   },
+   {
+    "name": "OpenClaw / Mac Mini Jarvis trend (Steinberger)",
+    "mentions": 1
+   },
+   {
+    "name": "ElevenLabs skill",
+    "mentions": 1
+   },
+   {
+    "name": "hormozi-ai-skill",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /ultrareview",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /effort",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /simplify",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /loop",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code /mcp",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (Opus 5.5)",
+    "mentions": 1
+   },
+   {
+    "name": "hyperframes",
+    "mentions": 1
+   },
+   {
+    "name": "ElevenLabs",
+    "mentions": 1
+   },
+   {
+    "name": "Google voice model",
+    "mentions": 1
+   },
+   {
+    "name": "NotebookLM",
+    "mentions": 1
+   },
+   {
+    "name": "Unlazy",
+    "mentions": 1
+   },
+   {
+    "name": "Higgsfield API",
+    "mentions": 1
+   },
+   {
+    "name": "Higgsfield API Skill",
+    "mentions": 1
+   },
+   {
+    "name": "Seedance 2.5",
+    "mentions": 1
+   },
+   {
+    "name": "Seedance 2.0",
+    "mentions": 1
+   },
+   {
+    "name": "Kling 3.0 / 2.6 / 2.5 / O1 (Omni) / O3",
+    "mentions": 1
+   },
+   {
+    "name": "Genjutsu Motion Transfer",
+    "mentions": 1
+   },
+   {
+    "name": "Nano Banana Pro",
+    "mentions": 1
+   },
+   {
+    "name": "Minto Pyramid Principle",
+    "mentions": 1
+   },
+   {
+    "name": "McKinsey & Company",
+    "mentions": 1
+   },
+   {
+    "name": "Playwright CLI",
+    "mentions": 1
+   },
+   {
+    "name": "Supabase plugin",
+    "mentions": 1
+   },
+   {
+    "name": "Strix",
+    "mentions": 1
+   },
+   {
+    "name": "SkillUI (npx skillui)",
+    "mentions": 1
+   },
+   {
+    "name": "Context7 (upstash/context7)",
+    "mentions": 1
+   },
+   {
+    "name": "Anthropic official plugin pack",
+    "mentions": 1
+   },
+   {
+    "name": "obsidian-second-brain",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code Review",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code Club",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "No evidence offered that these outperform just asking for critique directly",
+   "Socratic mode wording is missing — write your own",
+   "Find Karpathy's actual post and read his exact folder/file conventions and CLAUDE.md contents rather than the creator's paraphrase",
+   "Does the creator's 'CoWork OS' template cost money or require his course?",
+   "How does wiki quality hold up at scale (hundreds of raw files) and what does a re-index pass cost in tokens?",
+   "Is Claude Cowork available on the founder's plan, or is plain Claude Code sufficient (it should be)?",
+   "Confirm skills.sh and the vercel-labs/skills repo are real and maintained; check actual install counts vs the 3.6M claim",
+   "Does the skill auto-install without confirmation, or does it just recommend? (security: arbitrary SKILL.md from GitHub)",
+   "Does it work in Claude Code specifically, or mainly via the npx CLI?",
+   "'1.5 million skills' vs the on-screen 'prefer 1K+ installs' heuristic -- what is the real registry size?",
+   "Which site hosts the course (Udemy free coupon? own platform?) and is 'free' time-limited?",
+   "Is Ben Gusberg affiliated/sponsored?",
+   "Does the course actually use Claude Code skills or just chat prompting?",
+   "Does ChatGPT really have two separate allowances (Chat vs Work+Codex) and does GPT-6 Pro count only against Chat?",
+   "Does 'GPT-6 Pro' / 'Astra' exist as named (Oct 2026)?",
+   "Does the ChatGPT subagents feature exist as shown (Researcher/Drafter/Reviewer panel)?",
+   "For our case: do claude.ai chat and Claude Code share the same Max usage pool?",
+   "Does github.com/jakeschincariol/linkedin-agent-skill exist and what is the real star count / last commit?",
+   "Are the 11 skills real SKILL.md files with substance, or thin prompt stubs?",
+   "The 'runs through 5 AI detectors' claim -- does it call real detector APIs (cost? keys?) or just a self-check prompt?",
+   "The creator's 'connect Claude to LinkedIn' framing contradicts the README's 'nothing to connect' -- confirm no LinkedIn API/automation (LinkedIn ToS risk)",
+   "Confirm current owners: obra/superpowers, hesreallyhim/awesome-claude-code, anthropics/claude-cookbooks, anthropics/courses, and which awesome-claude-skills repo (several exist)",
+   "Star counts cited in caption (53k/28k/94k) may be inflated or outdated",
+   "Is superpowers still maintained and compatible with the current Claude Code plugin system?",
+   "Does multica-ai/andrej-karpathy-skills exist and what is the real star count (216k is implausible for a skills repo)?",
+   "Is it actually derived from Karpathy's published guidance, or just branded with his name?",
+   "What does the skill concretely contain -- prompt rules only, or hooks/scripts?",
+   "Which Stanford lecture is this actually (CS229/CS25/Building LLM Applications)? It is almost certainly not an official 'Claude course'",
+   "Is the tweet (@Dipanshu_AI) itself just a repost of a free YouTube lecture?",
+   "Does the creator's DM link go to the lecture or to a funnel?",
+   "Check whether the repo has been updated since (video says 'last year'); any v2 or added factors?",
+   "License terms for reuse in internal docs (Creative Commons variant)",
+   "Exact repo for 'caveman' (owner, stars) and whether it is a skill, plugin or output style",
+   "Does terse output harm Claude's reasoning on complex tasks (the tests were simple)?",
+   "Share of total cost that is output tokens in a typical Claude Code session -- how much does 30% output savings matter?",
+   "Current Gemini image model name ('Nano Banana') and API support for batch of 4 / 16:9 aspect",
+   "Gemini video-understanding limits (file size, duration) and pricing",
+   "Full prompt text from caption (truncated in data)",
+   "Is the dashboard a real tool or just a mock made for the video?",
+   "Confirm addyosmani/agent-skills exists, real star count, and last commit date",
+   "What are the three other commands and what do the skills actually contain?",
+   "Does it install as Claude Code slash commands (.claude/commands) or as skills, and does it conflict with our existing CLAUDE.md?",
+   "Current star count and maintenance status of microsoft/markitdown (161K stars sounds inflated; check)",
+   "Does the markitdown-mcp package work with Claude Code (stdio) and how does it handle images/OCR (needs an LLM for image descriptions?)",
+   "Actual token savings vs Claude's native PDF handling on a few representative files",
+   "Whether Claude Code's own Read tool for PDFs already does equivalent extraction",
+   "Does the repo exist, who is Jake Schincariol, is it maintained?",
+   "Does it actually connect to LinkedIn (API/MCP) or only produce text to paste manually?",
+   "Check the humanizer scripts for anything that executes locally (security review before install)",
+   "Ponytail 50% claim is measured on Haiku 4.5 over 12 tasks — does it hold on Fable/Opus with real codebases?",
+   "Is claude-mem maintained and safe (it stores all session observations locally; check what leaves the machine)?",
+   "Which 'obsidian-skills' repo exactly — several exist",
+   "The creator sells access via DM funnel; the repos are public, so find them directly",
+   "Are all three courses free in full (DeepLearning.AI short courses are free; check the full Agentic AI specialization)?",
+   "Microsoft course is Azure/Foundry-centric; how much transfers to Anthropic tooling?",
+   "Confirm getdesign.md, tasteskill.dev and impeccable.style exist, their GitHub repos, licenses and maintenance",
+   "Is the 'Emil Kowalski design skill' an official release by Emil Kowalski or a third-party skill using his name?",
+   "Do multiple design skills conflict when loaded together in Claude Code?",
+   "Playwright MCP install path: official @playwright/mcp vs community servers",
+   "Read the actual Anthropic post (July 24 context-engineering / 'Unhobbling Claude') for the full guidance and which models it applies to",
+   "Confirm /doctor exists in the installed Claude Code version and what it actually checks",
+   "Which existing CLAUDE.md rules are genuine gotchas vs. legacy NEVERs; test behaviour after trimming on one repo before rolling out",
+   "impeccable.style: who maintains it, license, how it is installed (Claude Code skill vs Cursor rule)",
+   "Does it measurably change output vs a plain design prompt?",
+   "Trillion is vaporware until the repo ships -- do not track",
+   "Does ponytail.dev / the ponytail GitHub repo exist, who maintains it, license?",
+   "Is pstack a real public Claude Code plugin by 'potato' (SpaceX engineer)? Repo URL, stars, last commit?",
+   "Is 'cursor/plugins' with thermo-nuclear-code-quality-review a real Cursor-team repo, and is the skill Claude-Code compatible?",
+   "Are the '30 PRs/day' and '90% of PRs' claims plausible or marketing?",
+   "Does stacking three overlapping review skills cost too many tokens per PR?",
+   "Source of the 'up to 39% dumber' figure (likely the Microsoft/Salesforce 'LLMs Get Lost in Multi-Turn Conversation' paper, which reported ~39% average drop) — confirm before quoting",
+   "Whether claude.ai skills can be invoked with a slash command the way shown",
+   "Locate the pstack repo (author handle unreadable in frame; search GitHub for 'pstack' React Compiler/Cursor engineer) and check license and maintenance",
+   "Is pstack Cursor-specific or usable as a Claude Code plugin?",
+   "The '30 PRs/day' and '600 PRs' figures are self-reported; the real question is defect rate after merging without review",
+   "Does Claude Code have an equivalent recorded-browser-session feature, or does this need Playwright MCP + screenshot capture?",
+   "What is typesafe.ai's Jev: pricing, data handling of uploaded chats, is it independent of the creator?",
+   "Claude export format and whether it includes Claude Code sessions",
+   "Privacy: sending full chat history to a third-party classifier",
+   "Confirm github.com/viclaranja/hormozi-ai-skill exists and read DATA-RIGHTS.md / LICENSE (transcript corpus rights)",
+   "What search engine it bundles and whether it phones home (PRIVACY.md)",
+   "Quality: do the 8-14 corpus searches produce specific advice or generic Hormozi quotes?",
+   "Python 3.11/3.12 requirement conflicts with existing environment",
+   "Is /ultrareview a real Claude Code command and what does it cost after the three free runs?",
+   "Exact /loop syntax and minimum interval in the current Claude Code version",
+   "Whether /effort persists per session or per project",
+   "The 'May 5th' deadline -- which year, and is it still valid",
+   "Does a Claude skill called 'hyperframes' exist publicly (GitHub/skills.sh)? Who maintains it?",
+   "Is the demo output really from this skill or from @deedydas's own pipeline?",
+   "What does rendering to an actual .mp4 require (Remotion? ffmpeg?) and what is the ElevenLabs cost per minute?",
+   "Find the actual Unlazy repo and author; is it maintained and what does the skill file actually contain?",
+   "Does the 'Depth Tree' approach blow up token cost/time on simple tasks?",
+   "Is the 'models designed to be lazy' framing supported by anything, or just the hook?",
+   "Exact repo URL (cth9191/higgsfield-api-skill?) and whether it is maintained; audit the skill code before giving it API keys",
+   "Actual Higgsfield API pricing vs fal.ai/Replicate for the same models",
+   "'Discounted API pricing' in description likely an affiliate link",
+   "Does the skill work in Claude Code or only Codex (README install text targets Codex)?",
+   "Exact prompt text was not shown; write your own",
+   "Minto's book 'The Pyramid Principle' is the primary source if deeper structure (MECE grouping) is wanted",
+   "Strix: maturity, license, whether it needs its own LLM keys, and whether it is safe to run against production",
+   "SkillUI (npx skillui) author and quality of extracted design skills",
+   "Context7 free tier limits / rate limits via MCP",
+   "Official Supabase MCP vs the 'plugin' meant here",
+   "Exact repo for the 'official pack' (anthropics/claude-plugins-official?) and which plugins in it are actually useful vs LSPs",
+   "Is Code Review a paid/limited feature on the founder's plan?",
+   "claude-mem data storage and whether it inflates context (token cost) in practice",
+   "Ponytail benchmark methodology (12 tasks, Haiku) — small sample, author-run"
+  ]
+ },
+ "agent-architectures": {
+  "categories": [
+   "agent-architecture"
+  ],
+  "n_videos": 14,
+  "video_ids": [
+   "7677628906056240415",
+   "7690068510055189774",
+   "7682070844729822495",
+   "7688339317080493330",
+   "7677437944822631694",
+   "7668012508401110285",
+   "7675356243048811790",
+   "7688865381456366862",
+   "7681134258269850897",
+   "7681031247258242318",
+   "7690676444594195743",
+   "7664755185134193950",
+   "7693222410807463182",
+   "7658427816177863943"
+  ],
+  "tools": [
+   {
+    "name": "Claude Code",
+    "mentions": 5
+   },
+   {
+    "name": "Claude Design",
+    "mentions": 2
+   },
+   {
+    "name": "OpenAI Codex",
+    "mentions": 2
+   },
+   {
+    "name": "ElevenLabs API",
+    "mentions": 1
+   },
+   {
+    "name": "Stripe MCP",
+    "mentions": 1
+   },
+   {
+    "name": "Zernio MCP (as heard)",
+    "mentions": 1
+   },
+   {
+    "name": "Meta Ads MCP",
+    "mentions": 1
+   },
+   {
+    "name": "Gmail MCP",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Vision",
+    "mentions": 1
+   },
+   {
+    "name": "Automaton",
+    "mentions": 1
+   },
+   {
+    "name": "Claude / ChatGPT",
+    "mentions": 1
+   },
+   {
+    "name": "ethanplusai/jarvis",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Max subscription",
+    "mentions": 1
+   },
+   {
+    "name": "'background Sonic model'",
+    "mentions": 1
+   },
+   {
+    "name": "Orcha",
+    "mentions": 1
+   },
+   {
+    "name": "Jev",
+    "mentions": 1
+   },
+   {
+    "name": "TypeSafe AI",
+    "mentions": 1
+   },
+   {
+    "name": "Codex (OpenAI)",
+    "mentions": 1
+   },
+   {
+    "name": "jev_decide MCP tool",
+    "mentions": 1
+   },
+   {
+    "name": "GPT-6-Astra",
+    "mentions": 1
+   },
+   {
+    "name": "GPT-5.6-Sol",
+    "mentions": 1
+   },
+   {
+    "name": "GStack",
+    "mentions": 1
+   },
+   {
+    "name": "Y Combinator",
+    "mentions": 1
+   },
+   {
+    "name": "Trillion (creator's orchestrator / Jarvis-style agent)",
+    "mentions": 1
+   },
+   {
+    "name": "React Bits",
+    "mentions": 1
+   },
+   {
+    "name": "Hermes Agent",
+    "mentions": 1
+   },
+   {
+    "name": "Claude / Codex / Gemini",
+    "mentions": 1
+   },
+   {
+    "name": "Hancho AI",
+    "mentions": 1
+   },
+   {
+    "name": "Hermes Voice",
+    "mentions": 1
+   },
+   {
+    "name": "ElevenLabs",
+    "mentions": 1
+   },
+   {
+    "name": "Slack / Telegram / iMessage",
+    "mentions": 1
+   },
+   {
+    "name": "Free email course",
+    "mentions": 1
+   },
+   {
+    "name": "Agentic OS V2 / Astra (Chase AI+)",
+    "mentions": 1
+   },
+   {
+    "name": "Jev (classifier model)",
+    "mentions": 1
+   },
+   {
+    "name": "Obsidian",
+    "mentions": 1
+   },
+   {
+    "name": "Whisper",
+    "mentions": 1
+   },
+   {
+    "name": "Kokoro",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Haiku",
+    "mentions": 1
+   },
+   {
+    "name": "Luna (GPT 6 Sol & Luna)",
+    "mentions": 1
+   },
+   {
+    "name": "Gmail / Google Calendar / Drive / YouTube",
+    "mentions": 1
+   },
+   {
+    "name": "Hermes (agentic harness)",
+    "mentions": 1
+   },
+   {
+    "name": "Virtual private server",
+    "mentions": 1
+   },
+   {
+    "name": "Claude / ChatGPT / open-source models",
+    "mentions": 1
+   },
+   {
+    "name": "AI second brain (Obsidian-style memory)",
+    "mentions": 1
+   },
+   {
+    "name": "Google Workspace",
+    "mentions": 1
+   },
+   {
+    "name": "Telegram / iMessage / WhatsApp",
+    "mentions": 1
+   },
+   {
+    "name": "Hermes agent",
+    "mentions": 1
+   },
+   {
+    "name": "Twilio",
+    "mentions": 1
+   },
+   {
+    "name": "Mac mini",
+    "mentions": 1
+   },
+   {
+    "name": "FaceTime Audio",
+    "mentions": 1
+   },
+   {
+    "name": "J.A.R.V.I.S. UI (by @zubair_trabzada)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Opus 5",
+    "mentions": 1
+   },
+   {
+    "name": "Paperclip",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (Claude Code)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Cowork",
+    "mentions": 1
+   },
+   {
+    "name": "PostHog",
+    "mentions": 1
+   },
+   {
+    "name": "Error fix bot",
+    "mentions": 1
+   },
+   {
+    "name": "Cursor cloud coding agents",
+    "mentions": 1
+   },
+   {
+    "name": "Grok 4.7",
+    "mentions": 1
+   },
+   {
+    "name": "GPT 6.1",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Opus 5.5",
+    "mentions": 1
+   },
+   {
+    "name": "Verification/validation skills",
+    "mentions": 1
+   },
+   {
+    "name": "Yorby",
+    "mentions": 1
+   },
+   {
+    "name": "Claude",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 1
+   },
+   {
+    "name": "Gemini",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "What 'Zernio MCP' actually is (spelling/product) and whether a TikTok/LinkedIn/Instagram metrics MCP exists",
+   "Meta Ads MCP availability and auth",
+   "Is 'Claude Design' a real Anthropic product or the creator's term?",
+   "The revenue figure is inconsistent ($289 spoken vs $4,289 on screen) — numbers are illustrative",
+   "Who is Conway Research; is '13,000 agents in 24 hours' sourced or marketing?",
+   "Wallet/compute model (crypto?) and the legal exposure of an agent 'selling services' autonomously",
+   "Security: 'unrestricted access' agents running on your machine/keys",
+   "Does github.com/ethanplusai/jarvis exist, and how is it licensed/maintained?",
+   "How it authenticates through Claude Max (OAuth of the CLI?) and whether that complies with Anthropic's consumer terms",
+   "Does it depend on macOS-only voice pieces?",
+   "What 'Orcha' is -- part of the repo or a separate tool",
+   "TypeSafe AI / Jev availability, pricing per call, SDK and MCP support",
+   "Does 'in under a second' hold under load, and is the confidence calibrated?",
+   "Compare against a Haiku-class model with structured output before adding a dependency",
+   "Model names GPT-6-Astra / GPT-5.6-Sol are shown in a custom router UI; confirm they are real OpenAI models",
+   "Confirm garrytan/gstack on GitHub, license, stars, and that it is maintained",
+   "How the 'learns from its own bugs' memory works and where it stores data",
+   "Token cost of running the full role chain per feature",
+   "Overlap with Anthropic official plugins / Code Review already in use",
+   "Trillion is not public yet (waitlist); nothing to install",
+   "Pick a sensible confidence threshold and check whether self-reported confidence is actually calibrated",
+   "Compare against Claude Code's existing SubagentHandback pattern to avoid duplicate structure",
+   "Hermes Agent — is this Nous Research's open-source agent framework, and is it production-usable?",
+   "Hancho AI — does it exist, pricing, maintained?",
+   "'Claude Design' — is this an Anthropic product or the creator's name for Claude artifacts/Claude Code frontend?",
+   "Is a 'weekend' realistic or is the course the actual product?",
+   "What is 'Jev' exactly (appears to be a small classifier model from console.typesafe.ai per another video in this batch) and what does it cost?",
+   "Is the Agentic OS a one-time purchase or a community subscription; what is the price?",
+   "Are 'GPT-6', 'Opus 5.5', 'Luna' real shipped models or creator labels on the UI?",
+   "Does the skill library work standalone with Claude Code without the HUD?",
+   "Which 'Hermes' harness is meant (Nous Research Hermes Agent?) and its maturity/security",
+   "Cost of running a 24/7 agent on a VPS with Claude API vs Max subscription",
+   "Security of giving an always-on agent Google Workspace credentials",
+   "What @zubair_trabzada actually used (Hermes? Twilio? Vapi/Retell?) -- the reactor is guessing",
+   "Legal/consent rules for AI agents placing calls to businesses",
+   "Whether 'Hermes agent' refers to Nous Research's Hermes Agent framework",
+   "Find the actual repo (owner/paperclip) and verify the 90k-star claim -- that is enormous and may be inflated",
+   "Which agent runtimes it supports (Claude Code, Codex CLI, others) and how it meters budget",
+   "Token cost of idle heartbeats; security of agents with repo/shell access",
+   "License and maintenance activity",
+   "Does Claude Cowork actually support persistent named agents from one prompt, or is this just a role-play prompt?",
+   "Token/cost overhead of four agents vs one agent with plan/test/review phases",
+   "Whether the 'you don't need to review the code' advice is safe for anything beyond a waitlist page",
+   "Does Cursor's cloud agent accept external webhook triggers, or did the creator build custom glue? What is the equivalent with Claude Code (Routines / GitHub Action)?",
+   "Monthly cost of running three frontier models per bug",
+   "How is 'production data' given to the agent safely (PII exposure)?",
+   "Model names (Grok 4.7, GPT 6.1, Opus 5.5) -- confirm current availability",
+   "Is there any evidence that parallel multi-model councils beat a single strong model plus self-review for coding tasks?",
+   "Cost: three models in parallel plus a ranking pass roughly 4x the tokens per task",
+   "What orchestration tool does the creator actually use (none shown)?"
+  ]
+ },
+ "security-legal-infra": {
+  "categories": [
+   "security-legal",
+   "vibe-coding-infra"
+  ],
+  "n_videos": 10,
+  "video_ids": [
+   "7686250038611250452",
+   "7655545910360952082",
+   "7688055085598838029",
+   "7693201018829491487",
+   "7694701327435205902",
+   "7677751006930668831",
+   "7675347703580200222",
+   "7689683368610417934",
+   "7690416177654385933",
+   "7694691385806572831"
+  ],
+  "tools": [
+   {
+    "name": "Claude",
+    "mentions": 4
+   },
+   {
+    "name": "Supabase",
+    "mentions": 4
+   },
+   {
+    "name": "Claude Code",
+    "mentions": 2
+   },
+   {
+    "name": "PostgreSQL",
+    "mentions": 2
+   },
+   {
+    "name": "Gemini CLI",
+    "mentions": 1
+   },
+   {
+    "name": "Codex (OpenAI CLI)",
+    "mentions": 1
+   },
+   {
+    "name": "AIOS (creator's own web app)",
+    "mentions": 1
+   },
+   {
+    "name": "AppBully.ai",
+    "mentions": 1
+   },
+   {
+    "name": "Codex",
+    "mentions": 1
+   },
+   {
+    "name": "GitHub",
+    "mentions": 1
+   },
+   {
+    "name": "Hello Trillion",
+    "mentions": 1
+   },
+   {
+    "name": "PostHog",
+    "mentions": 1
+   },
+   {
+    "name": "Supabase (Auth / Row Level Security)",
+    "mentions": 1
+   },
+   {
+    "name": "Open-source legal templates repo",
+    "mentions": 1
+   },
+   {
+    "name": "Ducktate learn module / prompt cheat sheet",
+    "mentions": 1
+   },
+   {
+    "name": "OmniRoute",
+    "mentions": 1
+   },
+   {
+    "name": "AWS / Azure / Cloudflare",
+    "mentions": 1
+   },
+   {
+    "name": "Engineering for Vibe Coders (article series)",
+    "mentions": 1
+   },
+   {
+    "name": "Anthropic-Cybersecurity-Skills (GitHub repo)",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 1
+   },
+   {
+    "name": "Vercel",
+    "mentions": 1
+   },
+   {
+    "name": "Next.js",
+    "mentions": 1
+   },
+   {
+    "name": "Creator's vendor lock-in article",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "AI-generated privacy/ToS/refund policies still need a jurisdiction check (GDPR, CCPA, COPPA for kids' data, FTC on fake reviews/unsupported claims)",
+   "Accessibility items should be measured against WCAG 2.x AA, not just 'fixed'",
+   "Cookie consent banner requirements differ by region; may be unnecessary for US-only apps without tracking",
+   "Is the code shared anywhere, or only the promise of future content?",
+   "How is phone access secured off the home network (Tailscale/VPN?) — the shown IP is LAN-only",
+   "How does the chat tab actually drive Claude Code / Codex / Gemini CLI (PTY wrapper? SDK?) and what are the auth/cost implications of running all three",
+   "How do 'skills' here map to Claude Code skills vs. the creator's own scripts",
+   "AppBully.ai pricing, whether scans are static analysis or LLM-generated guesses, and false-positive rate",
+   "Security of giving a third-party app GitHub and Supabase credentials",
+   "The creator is selling the product (not independent); the 'thousands of dollars' story is unverified",
+   "Which Supabase features are actually proprietary (RLS policies, edge functions, auth schema) vs portable Postgres?",
+   "Does Supabase offer compliance (SOC2/HIPAA) tiers that cover the 'business requirements' concern?",
+   "Cost of self-hosting Supabase as a migration path",
+   "Which open-source legal template repo does he mean; are templates jurisdiction-appropriate?",
+   "Fine figures ('$25 per violation', '$5K per violation') - source/law? Likely CCPA/GDPR/CIPA references, check",
+   "PostHog session replay default state and consent API",
+   "Is ducktate.com/learn free or a funnel?",
+   "Does github.com/diegosouzapw/OmniRoute exist with ~54k stars, and is it actively maintained?",
+   "Does the '1.51B free tokens/month' figure assume signing up for dozens of provider free tiers (and does that violate provider ToS)?",
+   "Can it actually sit in front of Claude Code (ANTHROPIC_BASE_URL compatible) or only in front of chat clients?",
+   "Where do prompts/data go when routed through third-party free providers?",
+   "Read the actual article to see which Supabase gotchas he lists",
+   "Is this creator's series substantive or a funnel?",
+   "Claude cannot actually watch a TikTok link; paste the list as text instead",
+   "Check which items your auth provider already handles so Claude does not reimplement them badly",
+   "Encrypting PII at rest: confirm requirements for your jurisdiction/industry rather than the 'you can get sued' claim",
+   "Repo author mukul975 -- who are they; is this official or an unaffiliated repo trading on the Anthropic name?",
+   "Are the 818 skills real, tested SKILL.md content or auto-generated boilerplate? Check a few in depth",
+   "License and last-commit date",
+   "Does the 'install into ChatGPT' path actually work (ChatGPT has no skills folder concept)?",
+   "Current Vercel pricing tiers and known bill-shock cases",
+   "How portable is a Next.js app off Vercel (self-host, OpenNext, Cloudflare)?",
+   "Content of the creator's article (not in data)"
+  ]
+ },
+ "design-ui-and-media": {
+  "categories": [
+   "design-ui"
+  ],
+  "n_videos": 10,
+  "video_ids": [
+   "7691342895621606662",
+   "7659044093556788493",
+   "7669441588178832660",
+   "7677273447218613517",
+   "7688178775456075039",
+   "7692696533338459398",
+   "7677056314572279054",
+   "7678096144718630176",
+   "7676509531425475854",
+   "7689206147579972895"
+  ],
+  "tools": [
+   {
+    "name": "Claude Code",
+    "mentions": 4
+   },
+   {
+    "name": "Higgsfield MCP",
+    "mentions": 3
+   },
+   {
+    "name": "Realtime Colors",
+    "mentions": 2
+   },
+   {
+    "name": "Claude Fable 5",
+    "mentions": 2
+   },
+   {
+    "name": "Componentry",
+    "mentions": 1
+   },
+   {
+    "name": "Manus.im",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Design (Anthropic)",
+    "mentions": 1
+   },
+   {
+    "name": "React Video Editor",
+    "mentions": 1
+   },
+   {
+    "name": "Awesome Claude Design (GitHub collection)",
+    "mentions": 1
+   },
+   {
+    "name": "Higgsfield",
+    "mentions": 1
+   },
+   {
+    "name": "Creator's AI challenge",
+    "mentions": 1
+   },
+   {
+    "name": "Antigravity",
+    "mentions": 1
+   },
+   {
+    "name": "Nano Banana 2",
+    "mentions": 1
+   },
+   {
+    "name": "Cursor",
+    "mentions": 1
+   },
+   {
+    "name": "Seedance 2.0",
+    "mentions": 1
+   },
+   {
+    "name": "Gemini 3 Flash (Antigravity-style IDE)",
+    "mentions": 1
+   },
+   {
+    "name": "Apple design language skill (GitHub repo, name not shown)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 1
+   },
+   {
+    "name": "Motion Primitives",
+    "mentions": 1
+   },
+   {
+    "name": "Manus",
+    "mentions": 1
+   },
+   {
+    "name": "Haikei",
+    "mentions": 1
+   },
+   {
+    "name": "clone-site (SITE CLONE) skill",
+    "mentions": 1
+   },
+   {
+    "name": "remix-site skill",
+    "mentions": 1
+   },
+   {
+    "name": "Seedance 2.5",
+    "mentions": 1
+   },
+   {
+    "name": "Seedream 5",
+    "mentions": 1
+   },
+   {
+    "name": "Nano Banana Pro / GPT Image 2",
+    "mentions": 1
+   },
+   {
+    "name": "Land Book",
+    "mentions": 1
+   },
+   {
+    "name": "Twitter / Pinterest",
+    "mentions": 1
+   },
+   {
+    "name": "Plinth (plinth.ai)",
+    "mentions": 1
+   },
+   {
+    "name": "Finn.com",
+    "mentions": 1
+   },
+   {
+    "name": "impeccable skill",
+    "mentions": 1
+   },
+   {
+    "name": "taste skill",
+    "mentions": 1
+   },
+   {
+    "name": "Chase AI+ / Claude Code Master Class",
+    "mentions": 1
+   },
+   {
+    "name": "CDANCE 2.0",
+    "mentions": 1
+   },
+   {
+    "name": "Mac mini",
+    "mentions": 1
+   },
+   {
+    "name": "21st.dev",
+    "mentions": 1
+   },
+   {
+    "name": "getdesign.md",
+    "mentions": 1
+   },
+   {
+    "name": "WebGPU",
+    "mentions": 1
+   },
+   {
+    "name": "impeccable.style",
+    "mentions": 1
+   },
+   {
+    "name": "Landing-page recreation GitHub repo",
+    "mentions": 1
+   },
+   {
+    "name": "awesome-design (Awesome DESIGN.md)",
+    "mentions": 1
+   },
+   {
+    "name": "Taste Skill",
+    "mentions": 1
+   },
+   {
+    "name": "JPLoft (app development agency)",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "componentry.dev: real site, license (MIT?), React/Tailwind compatibility, maintenance",
+   "realtimecolors.com: free tier limits, export format (CSS vars/Tailwind config)",
+   "Manus.im claims are sponsored (#manuspartner)",
+   "Does the 'Awesome Claude Design' GitHub repo exist and what exactly is in it (real brand design tokens vs. fan-made approximations)? Licensing of copying Apple/Stripe/Spotify styles",
+   "What is Claude Design today (standalone product? part of claude.ai?) and plan requirements",
+   "React Video Editor template license and whether 'free' covers commercial use",
+   "Higgsfield pricing",
+   "Is the site actually generated end-to-end by AI, or hand-polished?",
+   "Which tool did what — Nano Banana 2 for frame generation vs. video?",
+   "Is 'Antigravity' Google's Antigravity IDE and does it add anything over Claude Code here?",
+   "Are the showcased sites actually one-prompt outputs?",
+   "Higgsfield MCP availability, pricing, and whether Seedance 2.0 is exposed",
+   "Token cost of 'max' reasoning on a multi-page site build",
+   "The example sites shown appear to be generic AI demos, not paying client work",
+   "Identify the actual repo (search awesome-claude-skills / GitHub for 'apple design skill' or 'human interface guidelines skill') and its author",
+   "Is it a real SKILL.md with guidelines or just a prompt dump?",
+   "Legal: copying Apple's design language for a product could raise trade-dress concerns",
+   "Motion Primitives licensing and framework (React/Framer Motion?) compatibility with our stack",
+   "Haikei: is the free tier still unlimited for SVG export?",
+   "Manus pricing and whether the 'analytics/SEO tracker' claim is real -- note #manuspartner sponsorship",
+   "Find the GitHub repo for clone-site / remix-site (name sounds like 'cyclone' in audio) and check license, Next.js version, maintenance",
+   "Higgsfield MCP pricing per image/video and whether Seedance 2.5 / Seedream 5 are available through it",
+   "Legal line between 'inspiration' and copying someone's site code; the skill literally pixel-diffs against the original",
+   "Does the tweak panel ship in the built site or is it dev-only?",
+   "Does a Higgsfield MCP server exist officially, and what does it cost per image/video?",
+   "What is 'CDANCE 2.0' -- a skill, a library, or made-up branding?",
+   "Were the shown sites actually produced by one prompt or are they stock Dribbble/Awwwards shots?",
+   "Identify the two unnamed GitHub repos (#5 landing-page recreation, #7 Taste Skill) and check stars/maintenance",
+   "Licensing of components from 21st.dev and of copied brand design systems",
+   "Do impeccable.style and Taste Skill conflict when both loaded in Claude Code?",
+   "None of this is tool-specific; just confirm the patterns fit the stack (e.g. optimistic UI with your data layer)"
+  ]
+ },
+ "products-programs-and-model-news": {
+  "categories": [
+   "ai-product-tool",
+   "model-news"
+  ],
+  "n_videos": 29,
+  "video_ids": [
+   "7689708373868088590",
+   "7657383720315260173",
+   "7689760048159001874",
+   "7694315253550550286",
+   "7690033068521901326",
+   "7691150359506472206",
+   "7690687813305650445",
+   "7691180488416824590",
+   "7694741048744037652",
+   "7689488245217824022",
+   "7677953761909689613",
+   "7687358920972602631",
+   "7687029051692682527",
+   "7694658552052387086",
+   "7692837046657895687",
+   "7693763915380952351",
+   "7688546327009053983",
+   "7659859667060903188",
+   "7688126071052438798",
+   "7673269221077404958",
+   "7675882960125431053",
+   "7674457472270191902",
+   "7690642229844643103",
+   "7665404273257237791",
+   "7691360250565233951",
+   "7693278038083063053",
+   "7691013290583051533",
+   "7692898136137731342",
+   "7693670614984297758"
+  ],
+  "tools": [
+   {
+    "name": "Claude",
+    "mentions": 4
+   },
+   {
+    "name": "Claude Code",
+    "mentions": 3
+   },
+   {
+    "name": "OpenAI Decisions API",
+    "mentions": 3
+   },
+   {
+    "name": "Instinct",
+    "mentions": 2
+   },
+   {
+    "name": "Granola",
+    "mentions": 2
+   },
+   {
+    "name": "Luna (OpenAI model)",
+    "mentions": 2
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 2
+   },
+   {
+    "name": "NVIDIA free model API (build.nvidia.com / NIM endpoints)",
+    "mentions": 1
+   },
+   {
+    "name": "DeepSeek",
+    "mentions": 1
+   },
+   {
+    "name": "GLM-5-3 (Zhipu AI)",
+    "mentions": 1
+   },
+   {
+    "name": "Kimi AI (Moonshot)",
+    "mentions": 1
+   },
+   {
+    "name": "MiniMax",
+    "mentions": 1
+   },
+   {
+    "name": "OpenAI (open-weight models)",
+    "mentions": 1
+   },
+   {
+    "name": "NVIDIA Build (build.nvidia.com)",
+    "mentions": 1
+   },
+   {
+    "name": "nemotron-3-ultra-550b-a55b",
+    "mentions": 1
+   },
+   {
+    "name": "kimi-k2.6",
+    "mentions": 1
+   },
+   {
+    "name": "deepseek-v4-flash / deepseek-v4-pro",
+    "mentions": 1
+   },
+   {
+    "name": "step-3.7-flash",
+    "mentions": 1
+   },
+   {
+    "name": "cosmos3-nano / cosmos3-nano-reasoner",
+    "mentions": 1
+   },
+   {
+    "name": "qwen-image / qwen-image-edit",
+    "mentions": 1
+   },
+   {
+    "name": "chatterbox-multilingual-tts",
+    "mentions": 1
+   },
+   {
+    "name": "NemoClaw",
+    "mentions": 1
+   },
+   {
+    "name": "Cursor",
+    "mentions": 1
+   },
+   {
+    "name": "Manus",
+    "mentions": 1
+   },
+   {
+    "name": "Instagram Insights",
+    "mentions": 1
+   },
+   {
+    "name": "Google Docs",
+    "mentions": 1
+   },
+   {
+    "name": "Veteran AI (C File Analysis)",
+    "mentions": 1
+   },
+   {
+    "name": "38 CFR / M21-1 (VA adjudication manual)",
+    "mentions": 1
+   },
+   {
+    "name": "Department of Veterans Affairs integration (upcoming)",
+    "mentions": 1
+   },
+   {
+    "name": "Postiz",
+    "mentions": 1
+   },
+   {
+    "name": "Claude / ChatGPT / Grok / Cursor",
+    "mentions": 1
+   },
+   {
+    "name": "Instagram, TikTok, YouTube, LinkedIn",
+    "mentions": 1
+   },
+   {
+    "name": "Manus 2.0",
+    "mentions": 1
+   },
+   {
+    "name": "Cue (Manus app, 'Q')",
+    "mentions": 1
+   },
+   {
+    "name": "Manus video editor",
+    "mentions": 1
+   },
+   {
+    "name": "Manus Build Games / Automations",
+    "mentions": 1
+   },
+   {
+    "name": "Checkmate / Open Stock",
+    "mentions": 1
+   },
+   {
+    "name": "Gmail",
+    "mentions": 1
+   },
+   {
+    "name": "Muse",
+    "mentions": 1
+   },
+   {
+    "name": "Rockbot",
+    "mentions": 1
+   },
+   {
+    "name": "United MileagePlus",
+    "mentions": 1
+   },
+   {
+    "name": "Jev (TypeSafe)",
+    "mentions": 1
+   },
+   {
+    "name": "The New Stack article",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Motion",
+    "mentions": 1
+   },
+   {
+    "name": "Descript",
+    "mentions": 1
+   },
+   {
+    "name": "Runway",
+    "mentions": 1
+   },
+   {
+    "name": "MiroFish",
+    "mentions": 1
+   },
+   {
+    "name": "OpenAI API",
+    "mentions": 1
+   },
+   {
+    "name": "Whisper",
+    "mentions": 1
+   },
+   {
+    "name": "GitHub Desktop",
+    "mentions": 1
+   },
+   {
+    "name": "Voicebox",
+    "mentions": 1
+   },
+   {
+    "name": "ElevenLabs",
+    "mentions": 1
+   },
+   {
+    "name": "Wispr Flow",
+    "mentions": 1
+   },
+   {
+    "name": "Google AI Studio",
+    "mentions": 1
+   },
+   {
+    "name": "Google Stitch",
+    "mentions": 1
+   },
+   {
+    "name": "Google Opal",
+    "mentions": 1
+   },
+   {
+    "name": "Google Antigravity",
+    "mentions": 1
+   },
+   {
+    "name": "Google Flow",
+    "mentions": 1
+   },
+   {
+    "name": "GPT-6 Astra",
+    "mentions": 1
+   },
+   {
+    "name": "Apple Wallet",
+    "mentions": 1
+   },
+   {
+    "name": "Muse (Meta)",
+    "mentions": 1
+   },
+   {
+    "name": "Dots (ChatGPT)",
+    "mentions": 1
+   },
+   {
+    "name": "Grok Bot (xAI)",
+    "mentions": 1
+   },
+   {
+    "name": "Avori",
+    "mentions": 1
+   },
+   {
+    "name": "open-slide",
+    "mentions": 1
+   },
+   {
+    "name": "/create-slide skill",
+    "mentions": 1
+   },
+   {
+    "name": "/slide-authoring skill",
+    "mentions": 1
+   },
+   {
+    "name": "/apply-comments",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code / Codex / Cursor",
+    "mentions": 1
+   },
+   {
+    "name": "Little Language Lessons (Google Labs experiment)",
+    "mentions": 1
+   },
+   {
+    "name": "Tiny Lesson",
+    "mentions": 1
+   },
+   {
+    "name": "Slang Hang",
+    "mentions": 1
+   },
+   {
+    "name": "Word Cam",
+    "mentions": 1
+   },
+   {
+    "name": "Duolingo",
+    "mentions": 1
+   },
+   {
+    "name": "Scrapling",
+    "mentions": 1
+   },
+   {
+    "name": "Cloudflare",
+    "mentions": 1
+   },
+   {
+    "name": "Fable 5 (Claude model)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Cowork (mobile)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude scheduled tasks (cloud)",
+    "mentions": 1
+   },
+   {
+    "name": "Jev",
+    "mentions": 1
+   },
+   {
+    "name": "DeepSeek V4 Pro 0813",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Fable 5",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Opus 4.8",
+    "mentions": 1
+   },
+   {
+    "name": "DeepSeek V4-Flash",
+    "mentions": 1
+   },
+   {
+    "name": "DeepSeek V4-Pro Preview",
+    "mentions": 1
+   },
+   {
+    "name": "Cline",
+    "mentions": 1
+   },
+   {
+    "name": "Terminal-Bench 2.1",
+    "mentions": 1
+   },
+   {
+    "name": "Google Meet",
+    "mentions": 1
+   },
+   {
+    "name": "Apple Notes",
+    "mentions": 1
+   },
+   {
+    "name": "Apify",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Connectors (Apify)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (Sonnet 5)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code cloud sessions",
+    "mentions": 1
+   },
+   {
+    "name": "/claim-credit",
+    "mentions": 1
+   },
+   {
+    "name": "GitHub",
+    "mentions": 1
+   },
+   {
+    "name": "@ClaudeDevs (X account)",
+    "mentions": 1
+   },
+   {
+    "name": "Town (AI chief of staff)",
+    "mentions": 1
+   },
+   {
+    "name": "Creator's own Claude-based chief-of-staff system",
+    "mentions": 1
+   },
+   {
+    "name": "Karen's newspaper bot",
+    "mentions": 1
+   },
+   {
+    "name": "Grok bot",
+    "mentions": 1
+   },
+   {
+    "name": "Gmail / calendar integration",
+    "mentions": 1
+   },
+   {
+    "name": "Printer (auto-print)",
+    "mentions": 1
+   },
+   {
+    "name": "Fo (by Wajo)",
+    "mentions": 1
+   },
+   {
+    "name": "OpenAI Marketplace",
+    "mentions": 1
+   },
+   {
+    "name": "CodeRabbit",
+    "mentions": 1
+   },
+   {
+    "name": "Notion",
+    "mentions": 1
+   },
+   {
+    "name": "Vercel",
+    "mentions": 1
+   },
+   {
+    "name": "ElevenLabs, HubSpot, Hyperspell, Factory, Adobe, Zendesk, Lovable (partial logo wall)",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT / Codex auto-review",
+    "mentions": 1
+   },
+   {
+    "name": "OpenAI API (simplified tiers)",
+    "mentions": 1
+   },
+   {
+    "name": "ChatGPT Meetings plugin / meeting notes",
+    "mentions": 1
+   },
+   {
+    "name": "Tibo (@thsottiaux) X roundup",
+    "mentions": 1
+   },
+   {
+    "name": "Gemini / Granola",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "Exact site (build.nvidia.com?) and current free-tier limits (requests/min, credits) and terms for commercial use",
+   "Which 'OpenAI models' are offered (gpt-oss open weights, not GPT-4/5)",
+   "Data retention policy for prompts sent to free endpoints",
+   "Actual rate limits and terms of the free endpoints on build.nvidia.com (requests/min, data retention, commercial use)",
+   "Whether 'OpenAI' models are really served free there or the creator conflated it",
+   "How one would actually route Claude Code to a non-Anthropic endpoint (ANTHROPIC_BASE_URL proxy?) and whether it's worth it",
+   "Which models are 'Free Endpoint' vs 'Downloadable' only; many cards shown are downloadable only",
+   "Manus pricing/credits and whether it can actually access Instagram/TikTok data or is extrapolating",
+   "Sponsored (#manuspartner) — claims about 'millions of views' belong to the original creator, not the stitcher (745 views)",
+   "Veteran AI pricing (annual plan cost) and whether C-file analysis is included",
+   "Privacy/HIPAA posture: 'own servers' claim, data retention",
+   "Accuracy on real 2,000+ page C-files; hallucination rate; is 12-96h real?",
+   "Claimed upcoming direct VA integration: any official source?",
+   "Is this creator affiliated/sponsored?",
+   "Postiz hosted pricing vs self-host requirements (Postgres, Redis, Docker); social platform API approvals needed",
+   "What the 'AI agent' integration actually is (MCP server? API?) and whether it supports Claude Code today",
+   "'Free' only applies to self-hosting",
+   "Is the app really called 'Cue' and is it free; what is the referral code economics for the creator?",
+   "Details of the prompt-injection research (who, what was executed) and Manus's fix",
+   "Who holds the wallet funds and liability if an agent overspends?",
+   "Manus 2.0 pricing / credits",
+   "Confirm Instinct's funding ($1B Series C, $10B) from a primary source; the claim comes from a VC enthusiast",
+   "Is it actually free / invite-only right now, and what data permissions does it take (Gmail full access, stored card)?",
+   "Her conflict of interest: Checkmate is her portfolio company and is featured in the demo",
+   "Decisions API GA date, pricing, and whether it exposes probabilities like Jev",
+   "What TypeSafe/Jev actually offers and whether it survives (pricing, latency, accuracy benchmarks)",
+   "The 150 ms latency figure from The New Stack -- source?",
+   "Does Claude Motion exist (Anthropic announcement), and is '/motion' the real invocation? The mock UI looks creator-made",
+   "Which plans have beta access; rendering limits; MP4 export quality",
+   "Is 'built as code' editable by the user (e.g. exportable source) or only via re-prompting?",
+   "MiroFish GitHub org/repo, license, maintenance status and actual agent count/cost per run",
+   "One correct pick out of five is weak evidence; any benchmark on real prediction accuracy?",
+   "Does the tool send your documents to third-party APIs?",
+   "Exact GitHub owner/repo for 'voicebox' (not shown) and whether it really has 33k stars / 1.5M downloads",
+   "Which STT/TTS models it bundles and hardware needed for near-real-time dictation",
+   "Whether the 'one command' install is a curl|sh script (security review before running)",
+   "Dictation accuracy vs Wispr Flow for technical vocabulary",
+   "Are Stitch, Opal, Antigravity and Flow all currently free with no quota limits (Flow video gen usually requires a paid Google AI plan)?",
+   "Is Antigravity 'agnostic' (model-agnostic) or did the creator mean 'agentic'?",
+   "Does Stitch export production-quality code or just HTML/Figma mockups?",
+   "Does Instinct exist publicly, who makes it, pricing and waitlist status?",
+   "How does it access email/calendar/airline accounts (security of granting an agent airline login)?",
+   "Is the creator compensated or invited as an influencer?",
+   "Do Meta Muse, ChatGPT Dots and Grok Bot exist as described (Oct 2026), and are the plan requirements accurate?",
+   "Avori: the creator is the founder, so claims are self-promotion; pricing and model list?",
+   "Is the comparison guide gated behind an IG DM funnel?",
+   "Confirm github.com/open-slide/open-slide is real, star count, Vercel OSS program affiliation, maintenance",
+   "Export options: PDF/PPTX? or browser-only presentation?",
+   "Does the /create-slide skill work in Claude Code out of the box (skill format) and how heavy is token usage per deck?",
+   "Is Little Language Lessons still live at labs.google/lll and free?",
+   "Is 20+ languages accurate? Is it 'Google Labs experiment' (may be shut down) rather than a product?",
+   "Does the 'killed Duolingo' framing have any substance?",
+   "Check the 800x figure's source (Scrapling's own parser benchmark vs other parsers) and the 83k star count",
+   "Legal/ToS risk of bypassing Cloudflare and captchas on sites you do not own",
+   "Maintenance status and whether the stealth fetcher still works against current Cloudflare",
+   "Confirm the exact Anthropic announcement (date, features) rather than this 'internal news' retelling",
+   "Which plans get mobile Cowork and cloud scheduled tasks",
+   "What 'Fable 5 access until July 12' actually referred to (preview window? promo?)",
+   "Who makes Jev (TypeSafe AI?), API pricing, latency, and whether it is generally available",
+   "Benchmark Jev against Claude Haiku with JSON schema output on the same classification task",
+   "Is 'confidence' calibrated or just a softmax probability?",
+   "Is the Terminal-Bench 2.1 chart from Cline accurate and are the listed prices current?",
+   "Does DeepSeek V4 Pro hold up on real agentic coding tasks (tool use, long context), not just this benchmark?",
+   "Data-residency/privacy implications of sending code to DeepSeek's API",
+   "Hype check: 'Claude is beyond cooked' is engagement bait; 0.1 point difference is noise",
+   "Granola pricing after the free month; Windows support; export formats/API",
+   "Privacy — recording consent requirements for calls with clients",
+   "This is an ad (#GranolaPartner)",
+   "Is the Apify connector available in the Claude desktop/web app for this plan, and is there an MCP for Claude Code?",
+   "Actual per-run costs after the $5 credit; which actors are included",
+   "Legal/ToS exposure of scraping LinkedIn and social platforms",
+   "Was the offer extended past Oct 7, 2026? Run /claim-credit in Claude Code",
+   "Which plans qualify for $100 vs $250?",
+   "Cloud session pricing after credits run out and whether usage counts against the subscription",
+   "Which GitHub permissions the cloud session needs",
+   "What is Town (vendor, URL, pricing tiers, which email/calendar providers it supports)?",
+   "Data access and privacy: it reads full inbox and calendar",
+   "Can it be driven from Claude Code / does it have an API, or is it a closed app?",
+   "Who is the 'four-part series' creator referenced?",
+   "What 'Grok bot' / 'SpaceX AI' platform this actually runs on and whether third parties can build bots there",
+   "Data access scope (email + calendar) and sponsorship disclosure",
+   "Is wajo.ai / Fo real, in which countries does it operate, and what is the actual free-tier limit?",
+   "Privacy/security of handing it a credit card and email access",
+   "Is this a paid/affiliate post (#wajo hashtag)?",
+   "Decisions API availability, pricing, latency (the news article in a sibling video says 150 ms) and whether it returns confidence scores",
+   "What 'Luna' is in OpenAI's lineup (smallest/cheapest model?) and its context/image limits",
+   "Whether the equivalent is achievable with Claude Haiku + tool-use enum outputs at similar cost",
+   "What are the requirements/approval process to list in the OpenAI Marketplace as a small vendor?",
+   "Revenue share / fees for partners?",
+   "Is the marketplace open to non-enterprise apps or only enterprise SaaS?",
+   "Does OpenAI's '28 days of updates' campaign exist and what did Day 2 actually ship?",
+   "Is the Decisions API real, what does it cost, and is it a general-purpose realtime classifier?",
+   "What are the actual new API tiers (Build/Launch/Grow) and limits?",
+   "What is 'JEV' in the creator's caption (garbled transcription)?",
+   "Is Codex auto-review really free with no usage draw, including on free accounts?"
+  ]
+ },
+ "business-with-ai": {
+  "categories": [
+   "business-with-ai",
+   "other"
+  ],
+  "n_videos": 24,
+  "video_ids": [
+   "7694541582166412575",
+   "7694444433470737694",
+   "7683651205804952846",
+   "7668782188350934285",
+   "7691453205208780063",
+   "7689140212282248479",
+   "7694180995347664159",
+   "7694322412619402510",
+   "7690984936815201549",
+   "7686172423149948173",
+   "7681084831396105488",
+   "7691505512252296461",
+   "7679264914711547166",
+   "7690360813269355789",
+   "7670508317428452630",
+   "7693668943784938765",
+   "7689336669148810526",
+   "7657788958415392014",
+   "7668061154270301471",
+   "7666984424667417886",
+   "7688231313035365663",
+   "7688456692043959566",
+   "7690623522225327374",
+   "7691452012348722446"
+  ],
+  "tools": [
+   {
+    "name": "Claude",
+    "mentions": 4
+   },
+   {
+    "name": "Claude Code",
+    "mentions": 3
+   },
+   {
+    "name": "Readdy",
+    "mentions": 2
+   },
+   {
+    "name": "Jev (TypeSafe decision model)",
+    "mentions": 2
+   },
+   {
+    "name": "HubSpot",
+    "mentions": 2
+   },
+   {
+    "name": "Google Maps",
+    "mentions": 2
+   },
+   {
+    "name": "ChatGPT",
+    "mentions": 2
+   },
+   {
+    "name": "Hark / Hark Pro",
+    "mentions": 1
+   },
+   {
+    "name": "Figure (humanoid robotics)",
+    "mentions": 1
+   },
+   {
+    "name": "Meta Muse",
+    "mentions": 1
+   },
+   {
+    "name": "Instinct",
+    "mentions": 1
+   },
+   {
+    "name": "Ghost",
+    "mentions": 1
+   },
+   {
+    "name": "Frontier community",
+    "mentions": 1
+   },
+   {
+    "name": "grokbot",
+    "mentions": 1
+   },
+   {
+    "name": "Hermes (harness)",
+    "mentions": 1
+   },
+   {
+    "name": "RTX 4090 custom PC",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Managed Agents / Codex / Groq",
+    "mentions": 1
+   },
+   {
+    "name": "SAM.gov / bid portals",
+    "mentions": 1
+   },
+   {
+    "name": "Trillion (creator's Jarvis-style agent)",
+    "mentions": 1
+   },
+   {
+    "name": "The Board prompt",
+    "mentions": 1
+   },
+   {
+    "name": "Bland AI",
+    "mentions": 1
+   },
+   {
+    "name": "GitHub template repo",
+    "mentions": 1
+   },
+   {
+    "name": "Notion page 'AI Phone Receptionist (Bland + Claude Code)'",
+    "mentions": 1
+   },
+   {
+    "name": "Loom",
+    "mentions": 1
+   },
+   {
+    "name": "Claude for Startups program",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Team (free 1 year, up to five Premium seats)",
+    "mentions": 1
+   },
+   {
+    "name": "Claude API credits",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Startup Stack partner offers",
+    "mentions": 1
+   },
+   {
+    "name": "Anthropic Applied AI team office hours",
+    "mentions": 1
+   },
+   {
+    "name": "Claude monthly API credits for Max/Team plans",
+    "mentions": 1
+   },
+   {
+    "name": "Ducktate",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Managed Agents / Claude Agent SDK / Playground",
+    "mentions": 1
+   },
+   {
+    "name": "Haiku 5.5",
+    "mentions": 1
+   },
+   {
+    "name": "PostHog",
+    "mentions": 1
+   },
+   {
+    "name": "RB2B",
+    "mentions": 1
+   },
+   {
+    "name": "Vector",
+    "mentions": 1
+   },
+   {
+    "name": "Snitcher",
+    "mentions": 1
+   },
+   {
+    "name": "Dealfront",
+    "mentions": 1
+   },
+   {
+    "name": "Warmly (partially visible)",
+    "mentions": 1
+   },
+   {
+    "name": "IP geolocation / ASN lookup service",
+    "mentions": 1
+   },
+   {
+    "name": "'AI Inbound Autopilot' (agency offer)",
+    "mentions": 1
+   },
+   {
+    "name": "Jarvis (creator's personal AI assistant persona)",
+    "mentions": 1
+   },
+   {
+    "name": "Remotion",
+    "mentions": 1
+   },
+   {
+    "name": "OpenHands",
+    "mentions": 1
+   },
+   {
+    "name": "PersonaLive",
+    "mentions": 1
+   },
+   {
+    "name": "MuMu AI Novel",
+    "mentions": 1
+   },
+   {
+    "name": "marketing-skills (Corey Haines)",
+    "mentions": 1
+   },
+   {
+    "name": "OpenArt",
+    "mentions": 1
+   },
+   {
+    "name": "Instagram",
+    "mentions": 1
+   },
+   {
+    "name": "Meta Ads / Meta Marketing API",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Code Meta-ads skills repo (GitHub)",
+    "mentions": 1
+   },
+   {
+    "name": "Arcads AI Video -- Agent Skill",
+    "mentions": 1
+   },
+   {
+    "name": "Skool community (mr.paidsocial)",
+    "mentions": 1
+   },
+   {
+    "name": "Airtable",
+    "mentions": 1
+   },
+   {
+    "name": "Gemini Omni Flash prompting guide",
+    "mentions": 1
+   },
+   {
+    "name": "Claude for Startups",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Team",
+    "mentions": 1
+   },
+   {
+    "name": "Anthropic API credit",
+    "mentions": 1
+   },
+   {
+    "name": "Startup stack partners: Linear, Lovable, ElevenLabs, Granola, Hex",
+    "mentions": 1
+   },
+   {
+    "name": "Claude marketplace",
+    "mentions": 1
+   },
+   {
+    "name": "Free Automation Hour (creator)",
+    "mentions": 1
+   },
+   {
+    "name": "Synthesis Tutor",
+    "mentions": 1
+   },
+   {
+    "name": "Claude Cowork",
+    "mentions": 1
+   },
+   {
+    "name": "canivibecodeit.com",
+    "mentions": 1
+   },
+   {
+    "name": "Granola",
+    "mentions": 1
+   },
+   {
+    "name": "Jev",
+    "mentions": 1
+   },
+   {
+    "name": "Zoom (Webinar Backstage)",
+    "mentions": 1
+   },
+   {
+    "name": "X post by @ryanvogel",
+    "mentions": 1
+   },
+   {
+    "name": "Claude (Claude Desktop, Opus 5)",
+    "mentions": 1
+   },
+   {
+    "name": "Apify",
+    "mentions": 1
+   },
+   {
+    "name": "hooks.json",
+    "mentions": 1
+   },
+   {
+    "name": "Alex Hormozi content strategy",
+    "mentions": 1
+   },
+   {
+    "name": "Google Search",
+    "mentions": 1
+   }
+  ],
+  "verify": [
+   "Manually open the photo post to see the slides",
+   "Is it a continuation of the OpenAI '28 days' coverage?",
+   "Hark launch date, pricing, 'Handoff' cloud computer, and the 'six browsers' claim",
+   "Did 'Instinct' really raise $10B with no app?",
+   "Reporting that Hark and Figure are kept strictly separate",
+   "What 'grokbot' is (xAI product? third-party?) and its pricing/security model",
+   "Legality of automated submissions on SAM.gov and agency portals (ToS, bot rules)",
+   "Which open-weight models fit a 24 GB 4090 for long-document reading",
+   "Does hellotrillion.ai/p/the-board actually host the prompt and under what license?",
+   "Trillion itself is unreleased (waitlist); the visualization is not reproducible",
+   "Hallucination risk: personas 'citing sources' for what Gary Vee or Seth Godin would say",
+   "Whether using real people's names as personas has any reputational/legal issue in a product",
+   "Is Readdy a real, maintained product and what does hosting/export cost?",
+   "Is the $1,000 in one night claim an ambassador script rather than a real engagement?",
+   "Can Readdy sites be exported/self-hosted or is the client locked in?",
+   "Bland AI per-minute pricing and whether the demo call quality holds under real callers",
+   "Is the GitHub template actually public and what does it contain (pathway JSON? SMS webhook code?)",
+   "Comment-to-DM funnel likely leads to a lead magnet / community; what is the catch?",
+   "Calendar integration: which calendar did the booking actually land in?",
+   "Confirm claude.com/programs/startups terms: is Team free year stackable with/alternative to a Max subscription?",
+   "Does 'new to the Claude Console' exclude existing API users from the $1K credit?",
+   "Which partners are actually in the Claude Startup Stack and what are the real discount values?",
+   "Is a one-person company accepted (any employee/revenue minimum)?",
+   "Read the Claude Help article 'Monthly API credits for Max and Team plans': expiry, rollover, which Console org, allowed uses (commercial app OK?)",
+   "Does it also apply to Pro? (creator says no)",
+   "Is Haiku 5.5 a real current model and its pricing?",
+   "Is the speculation about tightened subscription usage limits grounded in any announcement?",
+   "Does TypeSafe's Jev / api.typesafe.ai exist, what does it cost, and is it better than a Haiku structured-output call for 4-way classification?",
+   "Legal: emailing people identified from IP/visitor-ID tools without opt-in (CAN-SPAM, GDPR, CCPA); the 20% match claim",
+   "Creator is a PostHog channel partner -- commercial bias",
+   "Pricing of RB2B/Vector/Snitcher/Dealfront versus the $30k agency he compares to",
+   "Is 'Jarvis' a real product the creator sells, or just a scripted persona?",
+   "Is the voice output real agent output or scripted TTS?",
+   "Exact GitHub URL for Corey Haines' marketing-skills and its license/maintenance",
+   "PersonaLive and MuMu AI Novel: are they maintained, and what are the content-rights implications?",
+   "OpenHands viability vs just using Claude Code for client work",
+   "Is OpenArt director mode actually free, and what are the credit limits?",
+   "Legal: using business listing photos (often user-uploaded) in a generated video sold back to the business",
+   "Has anyone actually closed a $500 sale this way or is it a comment-bait funnel?",
+   "Can a single static HTML file really deliver 'booking' without a backend? (No -- it would need an embed or server.)",
+   "Conversion rate of unsolicited DMs with a pre-built site; copyright of scraped photos",
+   "Is the $1,000 price realistic for small salons vs Squarespace/Booksy at $20-30/mo?",
+   "Identify the actual repo: is it 'arcads-claude-code' (Arcads video skill) or a separate Meta-ads skills repo? Confirm 1,100 stars and maintenance",
+   "Does the repo really drive the Meta Marketing API (campaign creation, budgets) or only generate creative/copy?",
+   "Is the $2,019 -> $15,235 case a sponsored/affiliate story (creator is selling a Skool course)? Any attribution window caveats?",
+   "Meta Marketing API access requirements: app review, system user tokens, spend limits -- what is the real setup friction?",
+   "Arcads pricing (AI UGC video) if the creative step depends on it",
+   "How does Claude 'notify' them of a stock price — a scheduled task, a third-party app, or exaggeration?",
+   "Are the dashboards Claude artifacts or deployed apps?",
+   "Confirm claude.com/programs/startups is the official page and current terms ($1,000 credit, 5 seats, 1 year)",
+   "Eligibility for a solo founder without an incorporated entity, and for veterans' business status",
+   "Does an existing Claude Pro/Max/Team subscription disqualify the 'new to Team' benefit?",
+   "Partner offer terms (Linear, Lovable, ElevenLabs, Granola, Hex) -- what actually applies",
+   "Models may hallucinate named people/profiles in prompt 2; verify any person cited",
+   "Depends on memory being enabled in ChatGPT/Claude",
+   "Open the photo post manually in a browser to see whether it is a carousel of slides worth transcribing",
+   "Check the creator's other posts (chase_ai_) to see if the topic relates to Claude Code",
+   "Source for '98% of teachers' and the DARPA Digital Tutor 16-vs-36-weeks figures",
+   "Current pricing on synthesis.com/tutor",
+   "Does Cowork persist the four personas across sessions or must they be re-created each time (a saved skill/prompt file would solve this)?",
+   "Any evidence persona debate improves decision quality vs one well-prompted critique?",
+   "Who runs canivibecodeit.com and are the prompts/savings numbers curated or auto-generated?",
+   "Are the verdicts honest about maintenance burden (hosting, auth, syncing)?",
+   "Check the site's monetisation (affiliate links, lead-gen)",
+   "All demos are labelled 'illustrative concept - synthetic data'; nothing is shown working",
+   "Enriching visitors by IP and emailing them raises GDPR/CAN-SPAM issues",
+   "Jev pricing/availability (TypeSafe AI) and whether the 'prompt' the creator mentions exists",
+   "Is 'Jev' (TypeSafe) a real, available decision/classifier model with pricing, and what did the creator actually use ('Jev-adjacent')?",
+   "Apify TikTok scraper cost and ToS; can we get our own view data from TikTok Studio export instead?",
+   "Is the 90% threshold anything but arbitrary; sample size for his 'human beats AI every time' claim?",
+   "'Opus 5' in the Claude Desktop model picker -- confirm the model name shown",
+   "Readdy pricing, ownership/export of generated sites, hosting",
+   "Ambassador/affiliate relationship (#readdyambassador) -- claims of income are unsupported",
+   "Views: 177 -- negligible traction"
+  ]
+ }
+}
