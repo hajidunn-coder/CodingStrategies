@@ -1,0 +1,312 @@
+[
+ {
+  "name": "AppBully.ai",
+  "kind": "product",
+  "official_url": "https://appbully.ai",
+  "exists": "verified",
+  "evidence": "Site live (checked 2026-10-10); operated by Lightbulb Moment Labs, Inc. Pricing page: 'Beta Launch Pass' $29 USD one-time, one app, 30 days, no renewal; free public-website check without connecting anything. Site states the standard code check does NOT send your repo to an AI model (pattern/static checks + OSV for package advisories); AI is used only for optional explanations and design screenshot feedback. Supabase check reads security settings, table/policy info and Supabase's own security warnings (needs read access to Projects, Database, Auth, Storage, REST). Legal check 'is not legal advice'. Its own site runs Google Analytics + FullStory replay behind a consent dialog.",
+  "cost": "$29 one-time per app (30 days); free website check",
+  "maintained": "active",
+  "what_it_does": "Scans a vibe-coded app's GitHub repo, Supabase config, public legal pages and design, grouped Code/Database/Legal/Design, and emits fix prompts or an MCP for Claude Code/Codex.",
+  "claimed_in_videos": "Creator (kevinfremon, the product's founder) says his shipped product had a vulnerability that 'could have cost thousands'; tool finds the top-5 vibe-code holes and re-scans on every push.",
+  "reality_check": "Product exists and is honest about limits ('a clear result isn't a security guarantee'). The code check is static pattern matching plus OSV, not a pentest, and the database check is essentially a wrapper over Supabase's free Security Advisor. The top-5 list is correct and matches OWASP; the origin story is unverifiable and the video is a sales pitch. Giving a third party read access to Supabase Auth/Storage config is a real trust decision; they document redaction but admit they cannot guarantee catching every secret.",
+  "verdict": "TRY THIS WEEK",
+  "why": "The free public-URL check costs nothing and is a quick second opinion on legal pages and exposed secrets. The $29 pass is only worth it if the free check surprises you; everything it does for code and database can be reproduced with /security-review, npm audit, a grep for NEXT_PUBLIC_ secrets, and the Supabase Security Advisor, all free.",
+  "how_to_adopt": "Run the free check at https://appbully.ai with your app's public URL before launch. Do not connect Supabase unless you are willing to grant read access to Auth/Storage config; if it asks for Secrets or write scope, cancel (their own instruction).",
+  "risks": "Third-party gets GitHub + Supabase read tokens; sales-driven video; static checks only; Firebase not supported yet; beta pricing may change.",
+  "source_video_ids": [
+   "7688055085598838029"
+  ]
+ },
+ {
+  "name": "Strix (usestrix/strix)",
+  "kind": "repo",
+  "official_url": "https://github.com/usestrix/strix",
+  "exists": "verified",
+  "evidence": "GitHub ~67.7k stars, Apache-2.0 (checked 2026-10-10); PyPI strix-agent 1.7.0 released 2026-10-05; commits through 2026-10-08. README: requires Docker and your own LLM key (STRIX_LLM + LLM_API_KEY) or a ChatGPT subscription, or Strix Cloud (app.strix.ai). Install: curl -sSL https://strix.ai/install | bash; run: strix --target ./app-directory. README warning: 'Authorized use only... only run it against systems you own'. README says it installs nine agent skills for pentest/fix/CI. Commercial cloud tier exists (strix.ai).",
+  "cost": "free (OSS) + your LLM tokens; Strix Cloud paid",
+  "maintained": "active",
+  "what_it_does": "Autonomous AI pentesting agents that run your code dynamically in a Docker sandbox, try real exploits (IDOR, SSRF, injection, auth flaws) and validate findings with proofs of concept.",
+  "claimed_in_videos": "'Attacks your vibe-coded app like a real hacker and finds/fixes vulnerabilities' (ai_vanta_ai plugin roundup).",
+  "reality_check": "Claim holds: it is a real, actively maintained dynamic tester, which is a different class from static scanners like AppBully or /security-review. Third-party benchmark claims (96% on XBEN) are unverified. It needs Docker, a model key, and will burn tokens; it is an active attacker so it belongs on localhost/staging, never production.",
+  "verdict": "USE NOW",
+  "why": "This is the one tool in the theme that actually exercises auth and authorization at runtime, which is exactly where Claude-generated apps fail (missing owner checks, IDOR). One run per app before launch, pointed at a local or staging build, is cheap insurance.",
+  "how_to_adopt": "Install Docker, then: curl -sSL https://strix.ai/install | bash; export STRIX_LLM=anthropic/claude-sonnet-4-5 LLM_API_KEY=...; strix --target ./ (or strix -n --target http://localhost:3000 with a seeded test user). Read strix_runs/<run>/ and hand findings to Claude Code.",
+  "risks": "curl|bash installer; broad local permissions; token cost per run; running it against prod or a shared Supabase project can delete/modify data; findings still need human triage.",
+  "source_video_ids": [
+   "7683314440703397152"
+  ]
+ },
+ {
+  "name": "mukul975/Anthropic-Cybersecurity-Skills",
+  "kind": "repo",
+  "official_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+  "exists": "verified",
+  "evidence": "GitHub ~34.1k stars, Apache-2.0, 817/818 skills (checked 2026-10-10); README states 'Not affiliated with Anthropic PBC'; author Mahipal Jangra (@mukul975). Last commits 2026-08-24 to 2026-08-31 are contributor-wall/index chores. Install: npx skills add mukul975/Anthropic-Cybersecurity-Skills. Skills tree first page: auditing-aws-s3-bucket-permissions, auditing-entra-id-with-aadinternals, auditing-kubernetes-cluster-rbac, abusing-dpapi-for-credential-access, auditing-mcp-servers-for-tool-poisoning, analyzing-sbom-for-supply-chain-vulnerabilities; nothing named for Supabase, JWT, OWASP web, or secrets hygiene on that page. Could not fetch an individual SKILL.md (path 404), so depth per skill is unverified.",
+  "cost": "free",
+  "maintained": "stale",
+  "what_it_does": "A catalog of ~818 SKILL.md workflows for SOC, forensics, threat hunting, cloud IAM and offensive security, installable into Claude Code via the skills CLI.",
+  "claimed_in_videos": "'Turns Claude or ChatGPT into the world's expert on cyber security'; works with ChatGPT too (bengusberg).",
+  "reality_check": "Not official Anthropic despite the name. The catalog is enterprise SOC/forensics oriented (EVTX, Entra ID, Kubernetes RBAC), not SaaS app hardening. Installing 818 skills bloats skill selection. The ChatGPT claim is misleading: ChatGPT has no skills folder; you could only paste text. Last substantive activity unclear; recent commits are automation chores.",
+  "verdict": "SKIP",
+  "why": "Haji ships web apps on Supabase/Vercel. Zero of the sampled skills target that stack, and the built-in /security-review plus Strix cover the real risk. If anything, cherry-pick auditing-aws-s3-bucket-permissions, auditing-mcp-servers-for-tool-poisoning and analyzing-sbom-for-supply-chain-vulnerabilities after reading them.",
+  "how_to_adopt": "Only if cherry-picking: clone, copy 1-3 skill folders into .claude/skills/, read each SKILL.md first. Do not run npx skills add for the whole repo.",
+  "risks": "Name trades on Anthropic's brand; unaudited dual-use offensive content; context bloat; quality per skill unverified.",
+  "source_video_ids": [
+   "7690416177654385933"
+  ]
+ },
+ {
+  "name": "Supabase Row Level Security + Security Advisor",
+  "kind": "pattern",
+  "official_url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+  "exists": "verified",
+  "evidence": "Supabase docs (checked 2026-10-10): 'A table in an exposed schema without RLS is readable and writable by any role with a grant on it. Enable RLS on every table in an exposed schema.' service_role 'bypasses RLS, so keep it server-side'. 'Views bypass RLS by default' (security definer). 'Adding policies doesn't take those grants back' -> revoke anon/authenticated grants. Docs recommend a supabase/tests/*.test.sql pgTAP file per table asserting allow/deny for anon and authenticated. Going-into-prod checklist: run Security Advisor, RLS on all tables, SSL enforcement, network restrictions, MFA on the Supabase account, enable email confirmations, OTP expiry <= 3600s, custom SMTP. Ducktate (citing Supabase changelog, checked 2026-10-09) reports that from 2026-10-30 new tables need an explicit grant before the Data API can reach them, and that anon/service_role keys are being replaced by sb_publishable_/sb_secret_ keys with anon deprecated by end of 2026 (secondhand; changelog not fetched directly). Supabase MCP blog (Sep 2025): use a dev project and read-only mode; prompt injection 'remains the number one concern'. Feb 2026 Moltbook leak (Wiz): exposed key + no RLS = 1.5M tokens, 35k emails exposed.",
+  "cost": "free (Pro $25/mo for leaked-password protection, PITR add-on)",
+  "maintained": "active",
+  "what_it_does": "Postgres-native per-row authorization that makes it safe to call the database from the browser with the publishable key.",
+  "claimed_in_videos": "Unprotected Supabase databases are the easiest hole to miss (kevinfremon); enable RLS and understand authN vs authZ (ducktate).",
+  "reality_check": "Claims hold and the official docs are even blunter than the creators. Two gotchas creators skip: views bypass RLS, and old grants survive policy creation. RLS is plain Postgres so it is portable, which also undercuts the lock-in argument.",
+  "verdict": "USE NOW",
+  "why": "Every app Haji ships on Supabase is one missing policy away from a Moltbook-style leak. The fix is a migration plus a pgTAP test file Claude can write in minutes.",
+  "how_to_adopt": "Prompt: 'List every table in the public schema from supabase/migrations. For each, write a migration that enables RLS, revokes all from anon and authenticated, grants only what the app uses, and adds separate select/insert/update/delete policies using (select auth.uid()) = user_id. Then write supabase/tests/<table>_rls.test.sql asserting allow/deny for anon and authenticated.' Then run supabase test db and open Dashboard > Advisors > Security.",
+  "risks": "Policies with to anon using (true) expose everything; security-definer functions callable by anon; MCP against prod can leak via prompt injection.",
+  "source_video_ids": [
+   "7688055085598838029",
+   "7694701327435205902",
+   "7675347703580200222"
+  ]
+ },
+ {
+  "name": "Supabase vendor lock-in / abstraction advice (alanonai)",
+  "kind": "pattern",
+  "official_url": "https://supabase.com/docs/guides/self-hosting",
+  "exists": "verified",
+  "evidence": "Supabase security page (checked 2026-10-10): SOC 2 Type 2, ISO 27001, HIPAA via BAA (Team/Enterprise; pricing page: 'HIPAA available as paid add-on' on Team $599/mo), GDPR DPA, EU-region hosting. Self-hosting docs: Docker Compose, 'community-supported', open source. Password hashes are bcrypt+salt in auth.users.encrypted_password (docs), so users are exportable. Edge Functions (Deno), Storage, Realtime and the auth.* schema/helpers are Supabase-specific; tables, RLS policies and SQL migrations are plain Postgres. Creator's article was not located (link only in TikTok comments).",
+  "cost": "free to $25/mo (Pro) / $599/mo (Team)",
+  "maintained": "active",
+  "what_it_does": "Advice to question AI's default Supabase recommendation, ask B2C/B2B, compliance and backend-complexity questions, and keep DB calls plain Postgres with auth behind an interface.",
+  "claimed_in_videos": "Lock-in means migrating DB, auth and functions at once; business customers may have requirements Supabase 'may not naturally handle'; abstract DB and auth to keep migration possible.",
+  "reality_check": "Half right. The compliance worry is overstated: Supabase has SOC2/ISO/HIPAA/DPA, which covers most B2B asks. Data and RLS are portable Postgres; self-hosting is a real escape hatch. The 'abstract all DB calls' advice fights Supabase's main benefit (browser-side queries protected by RLS) and is premature optimization for a solo founder. Wrapping auth behind one module is cheap and sensible.",
+  "verdict": "WATCH",
+  "why": "Haji should keep using Supabase; the hedge that is worth the time is small: one auth module, SQL migrations in git, no Edge Functions unless needed, service-role usage confined to one server file. A full repository layer is a time sink with no near-term payoff.",
+  "how_to_adopt": "Add to CLAUDE.md: 'Keep schema in supabase/migrations as plain SQL. Wrap all auth calls in lib/auth.ts. Only lib/server/admin.ts may import the service-role/secret key. Prefer Postgres functions over Edge Functions. Before proposing new infra, state cost at 1k/10k/100k users and the exit path.'",
+  "risks": "Over-abstraction slows shipping; Edge Functions and Storage are the sticky parts; Team plan jump ($25 -> $599) if a customer demands SOC2 report access.",
+  "source_video_ids": [
+   "7693201018829491487",
+   "7675347703580200222"
+  ]
+ },
+ {
+  "name": "Vercel hosting cost-at-scale and portability",
+  "kind": "product",
+  "official_url": "https://vercel.com/pricing",
+  "exists": "verified",
+  "evidence": "vercel.com/pricing (checked 2026-10-10): Hobby 'is for personal, non-commercial use', 100 GB Fast Data Transfer, hard caps (cannot buy more). Pro $20/seat/mo with $20 usage credit, 1 TB transfer, overage from $0.15/GB, 'pay as you go, uncapped'. Spend Management: all new teams get a default $200 on-demand budget with email/web/SMS alerts and an optional auto-pause hard limit at 100%. Attack Challenge Mode free on all plans; blocked requests not billed (docs). Bill-shock reports: $659 Turbo-build-machine default charge (Vercel community, Apr 2026); $23k DDoS bill write-up (usagebox, Jun 2026, secondhand). Portability: Next.js standalone/Docker self-host; @opennextjs/cloudflare supports Next 14/15/16 (PPR and use cache experimental, Node middleware unsupported per Cloudflare docs); Adapter API stabilised in Next 16.2 (third-party blogs, unverified against release notes).",
+  "cost": "free (non-commercial) / $20 per seat per month + usage",
+  "maintained": "active",
+  "what_it_does": "Managed Next.js hosting with usage-based billing beyond included quotas.",
+  "claimed_in_videos": "AI defaults to Vercel; ask what happens when it is not free and at N users; vendor lock-in costs money later (alanonai).",
+  "reality_check": "Correct but generic. The concrete facts the creator skipped: Hobby is not allowed for a commercial app at all, the real bill-shock vector is uncapped overage without a spend limit, and Vercel now ships a hard-limit pause and free DDoS challenge mode. Next.js is more portable off Vercel than in 2024.",
+  "verdict": "USE NOW",
+  "why": "For Haji the decision is simple: any app that takes money goes on Pro ($20) with a hard spend limit set on day one. Lock-in is manageable; the risk is an unbounded bill, not migration.",
+  "how_to_adopt": "Vercel > Settings > Billing > Spend Management: alert at ~1.5x expected monthly bill, hard limit (pause) at ~3x. Switch build machine to Standard. Add 'output: standalone' to next.config and a Dockerfile in the repo so an exit is a one-day job.",
+  "risks": "Hobby ToS violation for commercial use; uncapped overage; Turbo build machines default on Pro; features like ISR/image optimisation behave differently off-Vercel.",
+  "source_video_ids": [
+   "7694691385806572831"
+  ]
+ },
+ {
+  "name": "20-item legal/compliance checklist (millee.md)",
+  "kind": "pattern",
+  "official_url": "https://github.com/General-Legal/legal-templates",
+  "exists": "verified",
+  "evidence": "Checked against primary/secondary sources (checked 2026-10-10): FTC Consumer Reviews rule (16 CFR 465) civil penalty up to $53,088 per violation; CAN-SPAM up to $53,088 per email, honor opt-out within 10 business days, physical address required; COPPA covers under-13 with parental consent, penalties case-by-case; no federal Title III web standard but WCAG 2.1 AA is the de facto court standard, 3,117 federal website suits in 2025 (Seyfarth via vendor blogs), CA Unruh $4,000 per violation; CCPA penalties $2,663/$7,988 per violation (2025 adjustment) with revenue/volume thresholds; US has no cookie-banner law (opt-out model in 19 states), EU/UK ePrivacy requires consent for non-essential cookies. General-Legal/legal-templates: CC0, 2.7k stars, attorney-drafted privacy-policy-us, privacy-policy-gdpr, terms-of-use, cookie-notice, dpa-us, dpa-global.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "A list of 20 legal hygiene items (policies, consent, dark patterns, accessibility, business details, kids' data, unsubscribe, licensing, deletion) to have Claude add to an app.",
+  "claimed_in_videos": "Doing these 20 things keeps a vibe-coded app out of legal trouble.",
+  "reality_check": "The list is sound and maps to real US law (FTC, CAN-SPAM, COPPA, ADA/Unruh, state privacy acts). It overstates two things: a cookie banner is unnecessary for a US-only app with only essential cookies, and 'fixing' accessibility means measuring against WCAG 2.1 AA, not alt text alone. AI-drafted policies need a jurisdiction pass. Missing from the list: subscription auto-renew/cancellation rules (ROSCA, CA ARL), DMCA agent if users upload content, AI-disclosure rules.",
+  "verdict": "USE NOW",
+  "why": "Cheap, reusable, and the cost of skipping it (demand letters, FTC warning letters, app-store rejections) lands on a solo founder personally. Turn it into a /legal-audit skill once and run it on every app.",
+  "how_to_adopt": "Clone General-Legal/legal-templates, then prompt Claude Code: 'Using templates/privacy-policy-us and terms-of-use, draft /privacy and /terms for this app. Fill every <mark> field from package.json, the Supabase schema and the third-party SDK list you find in the code. List every data category we actually collect.' Then run the accessibility and consent items from the checklist in the .md.",
+  "risks": "Templates are US/GDPR generic; regulated verticals (health, kids, finance) need counsel; accessibility overlays are not a fix.",
+  "source_video_ids": [
+   "7686250038611250452"
+  ]
+ },
+ {
+  "name": "Six login-security gaps (bengusberg) vs Supabase Auth",
+  "kind": "pattern",
+  "official_url": "https://supabase.com/docs/guides/auth/password-security",
+  "exists": "verified",
+  "evidence": "Supabase docs (checked 2026-10-10): passwords hashed with bcrypt + random salt; leaked-password check via HaveIBeenPwned on Pro and above; rate limits: 30 requests per 5 min per IP on signup/recover/magiclink/otp, built-in email provider capped at 2 emails/hour (custom SMTP to raise), CAPTCHA (Turnstile/hCaptcha) integration in Auth settings; going-into-prod checklist says enable email confirmations and set OTP/reset expiry <= 3600s. OWASP Authentication Cheat Sheet: throttle per account not just IP, lockout policy, verify email at signup. Encryption-at-rest of PII: no general US statute mandates field-level encryption; state breach-notification laws commonly exempt encrypted data, which is the practical reason to do it.",
+  "cost": "free (leaked-password protection needs Pro $25/mo)",
+  "maintained": "n-a",
+  "what_it_does": "Checklist: no client-exposed secrets, email verification, login rate limiting, expiring reset links, hashed passwords, encrypted PII.",
+  "claimed_in_videos": "Claude usually leaves these six gaps; paste the video link into Claude to fix them.",
+  "reality_check": "The six gaps are real for hand-rolled auth, but four of six are already handled by Supabase Auth (hashing, reset expiry, rate limits, verification toggle). The danger is Claude re-implementing auth badly or disabling email confirmation during dev. Claude cannot watch a TikTok link; paste the list. 'You can get sued' for unencrypted PII is a stretch; the real driver is breach safe-harbor.",
+  "verdict": "USE NOW",
+  "why": "Haji should never hand-roll auth; the checklist becomes a 10-minute Supabase dashboard review plus one grep for leaked secrets in the client bundle.",
+  "how_to_adopt": "Prompt: 'Audit this repo for the six login gaps. Confirm Supabase Auth is used (no custom password tables). grep the built client bundle for sb_secret_, service_role, SUPABASE_SERVICE. Check email confirmations, OTP expiry, CAPTCHA and rate limits are set in supabase/config.toml or document the dashboard values. Report file:line evidence.' Then enable CAPTCHA and leaked-password protection in Dashboard > Authentication.",
+  "risks": "Built-in email provider is dev-only (2/hour); disabling confirmations for dev and shipping that way; secrets in NEXT_PUBLIC_ vars.",
+  "source_video_ids": [
+   "7689683368610417934"
+  ]
+ },
+ {
+  "name": "PostHog session replay consent gating",
+  "kind": "product",
+  "official_url": "https://posthog.com/docs/libraries/js/config",
+  "exists": "verified",
+  "evidence": "posthog-js config reference (checked 2026-10-10): disable_session_recording default false; opt_out_capturing_by_default default false; cookieless_mode 'always' or 'on_reject'; inputs masked by default, non-input text NOT masked by default (maskTextSelector: '*' to mask all); posthog.startSessionRecording()/stopSessionRecording(); opt-in via posthog.opt_in_capturing(). Replay also needs the project-level toggle. CIPA (Cal. Penal Code 637.2) statutory damages $5,000 per violation; Ninth Circuit revived a session-replay CIPA claim (Bloomingdale's, unpublished); vendor trackers count hundreds of CIPA suits in 2025. Creator's '$25 per violation' for missing policies: no statute found with that figure; unverified.",
+  "cost": "freemium (PostHog: '97% of users pay $0')",
+  "maintained": "active",
+  "what_it_does": "Product analytics plus session replay; replay records DOM, clicks and inputs unless gated.",
+  "claimed_in_videos": "Keep session replay off until consent, 'likely off by default'; violations 'up to $5K per violation' (ducktate).",
+  "reality_check": "The $5K figure matches CIPA statutory damages. 'Off by default' is wrong at the SDK level: once replay is enabled in the project, the JS SDK records unless disable_session_recording: true. Text is not masked by default, so emails and names in the page body get recorded.",
+  "verdict": "USE NOW",
+  "why": "Session replay on a California-visited app without consent is the single most litigated item in this theme, and the fix is four lines of init config.",
+  "how_to_adopt": "posthog.init(key, { opt_out_capturing_by_default: true, disable_session_recording: true, maskAllInputs: true, maskTextSelector: '*', cookieless_mode: 'on_reject' }); on consent: posthog.opt_in_capturing(); posthog.startSessionRecording(). Prompt Claude: 'Find every analytics/replay init; confirm nothing records before consent; add a minimal consent banner that writes the choice and respects navigator.globalPrivacyControl.'",
+  "risks": "Masking everything reduces replay usefulness; third-party embeds (YouTube, reCAPTCHA) set cookies on load; GPC signal must be honored for CA.",
+  "source_video_ids": [
+   "7694701327435205902"
+  ]
+ },
+ {
+  "name": "ducktate.com/learn (Launch Readiness course)",
+  "kind": "course",
+  "official_url": "https://ducktate.com/learn/launch-readiness",
+  "exists": "verified",
+  "evidence": "Fetched checked 2026-10-10: 'Free, no signup, no email gate', 11 stages, 144 checklist items, each with a source link and a copy-paste agent prompt for Claude Code/Codex/Cursor; facts checked 2026-10-09. Stages: lock down data (RLS, keys, the 2026-10-30 Supabase grant change, breach clocks), third parties/DPAs/licenses, paperwork, consent (GPC, CIPA), health/kids data, accessibility (WCAG AA, EAA), AI features (EU AI Act, CA companion-chatbot law), user content (DMCA, TAKE IT DOWN Act), subscriptions (ROSCA, CA ARL), email/SMS (CAN-SPAM, CASL, TCPA), and a CLAUDE.md rules block. Soft funnel: footer promotes the author's Mac dictation app. Stage 1 includes: grep -rE 'sb_secret_|service_role' .next/static dist build.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "A sourced pre-launch legal and security checklist for AI-built apps, delivered as stages with agent audit prompts.",
+  "claimed_in_videos": "Full learning module and prompt cheat sheet on ducktate.com under Learn; creator has 6 years enterprise experience.",
+  "reality_check": "Better than the video suggests: no paywall, every claim linked to a statute or vendor doc, prompts written for Claude Code, and the author published his own app's failed items. The funnel is a footer banner, not a gate.",
+  "verdict": "USE NOW",
+  "why": "This is the most complete, most current and least hype-driven resource in the entire theme and it is written for exactly Haji's workflow (agent audits code, founder reads report).",
+  "how_to_adopt": "Open https://ducktate.com/learn/launch-readiness, do Stage 1 tonight, paste its prompt into Claude Code on the current app, then copy the Stage 11 rules block into CLAUDE.md.",
+  "risks": "Not legal advice; US/EU centric; author is a solo founder, so check linked sources before acting.",
+  "source_video_ids": [
+   "7694701327435205902"
+  ]
+ },
+ {
+  "name": "Scrapling (D4Vinci/Scrapling)",
+  "kind": "repo",
+  "official_url": "https://github.com/D4Vinci/Scrapling",
+  "exists": "verified",
+  "evidence": "GitHub ~86.6k stars, BSD-3-Clause (checked 2026-10-10); PyPI 0.4.15 released 2026-08-23; commits through 2026-10-10 (sponsor docs). README benchmark: text extraction 1.99 ms vs BS4+lxml ~785x slower, so the '800x' figure is a parser micro-benchmark, not end-to-end scraping. README claims StealthyFetcher bypasses Cloudflare Turnstile/Interstitial 'out of the box'. README disclaimer: 'educational and research purposes only', respect ToS and robots.txt.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Python scraping framework with adaptive selectors, stealth browser fetcher and spider framework.",
+  "claimed_in_videos": "~800x faster than your scraper; bypasses captcha/Cloudflare so Claude never gets blocked (bengusberg).",
+  "reality_check": "Stars and maintenance are real. The speed claim is the HTML parser vs BeautifulSoup, not fetching. 'Bypasses Cloudflare' is the maintainers' claim and is exactly the behaviour that turns a ToS breach into a contract/CFAA argument: Meta v. Bright Data (2024) protected logged-off public scraping, but hiQ still lost on contract claims and X v. Bright Data is pending; personal data pulls trigger GDPR/CCPA regardless.",
+  "verdict": "SKIP",
+  "why": "Haji's businesses do not depend on scraping protected sites, and the legal exposure of defeating bot protection on someone else's property is asymmetric for a solo founder. For public, unprotected data a plain fetch or Apify actor is enough.",
+  "how_to_adopt": "Only for sites you own or that have an API/ToS allowing it: pip install scrapling and use the plain Fetcher, never StealthyFetcher against third parties.",
+  "risks": "ToS/contract claims, CFAA if any login or technical barrier is bypassed, GDPR/CCPA on personal data, IP bans, creator's hype framing.",
+  "source_video_ids": [
+   "7688546327009053983"
+  ]
+ },
+ {
+  "name": "Apify (platform + Claude connector)",
+  "kind": "product",
+  "official_url": "https://docs.apify.com/legal/general-terms-and-conditions",
+  "exists": "verified",
+  "evidence": "Pricing page (checked 2026-10-10): free plan with $5/month usage credit, no card; paid tiers listed from $19 to $999/mo. General Terms effective 2026-07-09: 'You are solely responsible for the legality... of all Customer Data' (5.8); 'use the Services to process only the Customer Data that you are authorized to access' (6.2); indemnify Apify, and 'should you use the Services... to extract Customer Data from unauthorized sources, you shall be responsible for compensating any damages' (11.1); multiple accounts prohibited (4.3). Acceptable Use Policy prohibits undue server burden, fake accounts, review abuse, mass messaging. Apify's own LinkedIn guides say LinkedIn's User Agreement restricts automated access and that hiQ 'is not permission for every workflow'.",
+  "cost": "freemium ($5/mo credit, then usage)",
+  "maintained": "active",
+  "what_it_does": "Marketplace of hosted scrapers ('actors') with a Claude connector/MCP.",
+  "claimed_in_videos": "One connector gives Claude thousands of scrapers; $5 free credit; creator scrapes LinkedIn and competitor data (bengusberg); scrape your own TikTok hooks into hooks.json (angusthenontechnical).",
+  "reality_check": "Platform and free credit are real. The ToS pushes all legal risk onto the user and requires indemnification. Scraping your own TikTok account's public stats or public business listings (Google Maps) is low risk; LinkedIn profile scraping is the highest-risk use the creator highlights.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Useful and cheap for Haji's own content analytics and public market research; keep it away from LinkedIn and anything requiring a login or personal data at scale.",
+  "how_to_adopt": "Create a free Apify account, add the Apify MCP to Claude Code (claude mcp add apify -- npx @apify/actors-mcp-server or the hosted MCP URL from Apify docs), then run the TikTok scraper against your own handle to build hooks.json.",
+  "risks": "Indemnification clause; per-actor pricing set by third-party developers; personal-data scraping triggers GDPR/CCPA; account bans on target platforms.",
+  "source_video_ids": [
+   "7674457472270191902",
+   "7690623522225327374"
+  ]
+ },
+ {
+  "name": "OmniRoute (diegosouzapw/OmniRoute)",
+  "kind": "repo",
+  "official_url": "https://github.com/diegosouzapw/OmniRoute",
+  "exists": "verified",
+  "evidence": "GitHub ~74.9k stars, MIT (checked 2026-10-10); Release v3.8.51 on 2026-09-29, commits 2026-09-30. README: 'Works with Claude Code', omniroute run claude, a Claude Code config guide, local endpoint localhost:20128/v1. The '~1.62B free tokens/month' is its own estimate summing 17 provider free-tier pools; 13 providers are tagged tos: avoid and excluded from auto-routing by default; keyless providers 'may reject third-party clients'. Prompts are sent to whichever upstream provider is selected; telemetry off by default.",
+  "cost": "free (BYO provider accounts)",
+  "maintained": "active",
+  "what_it_does": "Local AI gateway that routes requests across hundreds of providers with fallback when a quota is hit.",
+  "claimed_in_videos": "54k people use it; 1.5B free tokens/month; never hit a Claude limit; 30-second setup (bengusberg).",
+  "reality_check": "Repo is real and bigger than shown. The free-token number assumes signing up for dozens of free tiers and is self-reported. Routing Claude Code to a free GLM/Qwen tier when Max runs out silently changes the model doing your work, and your source code goes to those providers. Several providers are flagged by the project itself as ToS-risky.",
+  "verdict": "SKIP",
+  "why": "Haji's leverage is consistent Claude quality on business-critical code. Quietly degrading the model to dodge a rate limit and shipping code to random free providers is the wrong trade for a one-person company.",
+  "how_to_adopt": "Not recommended. If curious for throwaway side tasks only: npm i -g omniroute, keep ANTHROPIC_BASE_URL unset for real work.",
+  "risks": "Code/prompt exfiltration to third-party providers; provider ToS bans; model quality roulette; large local process (needs big heap for coding agents per README).",
+  "source_video_ids": [
+   "7677751006930668831"
+  ]
+ },
+ {
+  "name": "Claude Code /security-review + claude-code-security-review Action",
+  "kind": "skill",
+  "official_url": "https://github.com/anthropics/claude-code-security-review",
+  "exists": "verified",
+  "evidence": "/security-review is a built-in Claude Code skill (present in this session's skill list). GitHub Action anthropics/claude-code-security-review: README fetched checked 2026-10-10; last commit 2026-02-11; requires CLAUDE_API_KEY secret; defaults to claude-opus-4-1; README warns 'not hardened against prompt injection... only be used to review trusted PRs'. Announced 2025-08-06; available on Pro/Max and API accounts.",
+  "cost": "free with Max; API tokens for the Action",
+  "maintained": "active",
+  "what_it_does": "Security-focused review of the pending diff (injection, authZ, secrets, dependency issues) on demand or on every PR.",
+  "claimed_in_videos": "Not mentioned by creators; the gap they fill with paid scanners.",
+  "reality_check": "Does most of what AppBully's code check does, for free, inside the tool Haji already uses. It is diff-scoped, so run it on a full-repo branch once before launch.",
+  "verdict": "USE NOW",
+  "why": "Zero setup, already paid for, and it closes the 'Claude wrote it, nobody reviewed it' gap that every creator in this theme is monetising.",
+  "how_to_adopt": "Before launch: git checkout -b security-audit && git diff main...HEAD is empty, so instead run /security-review after a 'touch all' commit, or prompt: 'Act as /security-review over the whole repo, not just the diff.' Add .github/workflows/security.yml from the README for PRs.",
+  "risks": "Prompt injection via untrusted PRs; false positives; not a dynamic test (pair with Strix).",
+  "source_video_ids": [
+   "7688055085598838029",
+   "7689683368610417934"
+  ]
+ },
+ {
+  "name": "AIOS self-hosted dashboard (robert.triebwasser)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@robert.triebwasser/video/7655545910360952082",
+  "exists": "unverified",
+  "evidence": "No repo or code shared; only a feature tour. Phone access shown at a LAN IP (10.117.245.18:7777), no VPN mentioned. CTA is 'follow along'.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "A local web UI that shells out to Claude Code/Codex/Gemini CLI with daily briefing, notes, skills-as-buttons and project context.",
+  "claimed_in_videos": "Built with nothing but Claude Code; runs at home, lives in your pocket; 100+ one-click workflows.",
+  "reality_check": "Plausible weekend build but nothing is verifiable. The security angle is the point for this theme: exposing a box that can run Claude Code with your credentials to a phone must go through Tailscale/WireGuard, never port-forwarding.",
+  "verdict": "SKIP",
+  "why": "Haji already has a Claude Code + skills workflow; cloning a dashboard is a time sink. Borrow the 'daily top-3' and 'skills as buttons' ideas only.",
+  "how_to_adopt": "If ever built: bind to 127.0.0.1, reach it over Tailscale, and never expose the port publicly.",
+  "risks": "Remote code execution surface if exposed; no code to audit; follow-bait.",
+  "source_video_ids": [
+   "7655545910360952082"
+  ]
+ },
+ {
+  "name": "General-Legal/legal-templates",
+  "kind": "repo",
+  "official_url": "https://github.com/General-Legal/legal-templates",
+  "exists": "verified",
+  "evidence": "GitHub (checked 2026-10-10): CC0-1.0, ~2.7k stars, 286 forks, 63 commits; templates: privacy-policy-us (CCPA/CPRA + state laws), privacy-policy-gdpr, terms-of-use, cookie-notice, dpa-us, dpa-global, business-associate-agreement, NDAs, MSA; attorney-drafted by General Legal (general.legal, YC). Likely the 'open-source legal template repo' ducktate referenced (not confirmed by name).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Attorney-drafted, public-domain startup legal templates in markdown with highlighted fields to fill.",
+  "claimed_in_videos": "An open-source legal template repo exists; link promised in ducktate checklist.",
+  "reality_check": "Exists and is the best-maintained candidate; noclocks/legal (0 stars, stale since Mar 2025) is not worth using.",
+  "verdict": "USE NOW",
+  "why": "Gives Claude Code a lawyer-written base instead of hallucinated policy text; CC0 means no attribution or license risk.",
+  "how_to_adopt": "git clone https://github.com/General-Legal/legal-templates into a sibling folder; point Claude at templates/privacy-policy-us/template.md and terms-of-use/template.md.",
+  "risks": "Still needs jurisdiction/vertical review; templates can lag law changes.",
+  "source_video_ids": [
+   "7694701327435205902",
+   "7686250038611250452"
+  ]
+ }
+]

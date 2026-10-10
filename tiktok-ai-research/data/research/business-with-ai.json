@@ -1,0 +1,671 @@
+[
+ {
+  "name": "Claude for Startups program",
+  "kind": "program",
+  "official_url": "https://claude.com/programs/startups",
+  "exists": "verified",
+  "evidence": "Fetched claude.com/programs/startups on 2026-10-10. FAQ now says the free year of Claude Team and the $1,000 API credit are 'over capacity' and Anthropic is 'reshaping' the program and will re-review all applications; Startup Stack offers (ElevenLabs 12 months free + 33M chars, Granola 3 months Business, Hex 6 months, ClickHouse $5K, Gamma 25% off, Firecrawl 2.5x credits, Augment $100, Emergent 20%, Attention 20%) and bi-weekly Applied AI office hours remain. Eligibility text: 'open to bootstrapped, pre-seed, and venture-backed startups'; third-party coverage of the 2026-10-06 expansion says founded <5 years or funded <2 years. Credits apply only to first-party Claude API via Console, not Bedrock/Vertex.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Anthropic startup program: partner discounts, office hours, events, and (when capacity allows) one year of Claude Team for up to 5 Premium seats plus $1,000 API credit.",
+  "claimed_in_videos": "Free year of Claude Team (5 seats), $1,000 API credit on approval, up to $45K partner offers, only requirement is company founded in last 5 years; '$7,000 of Claude products'.",
+  "reality_check": "Terms were accurate the week the videos posted (Oct 6-7, 2026) but four days later the Team-year and $1K-credit offers are over capacity and all applications are being re-reviewed. Partner offers still open. 'New to Team' and 'new to Console' conditions were on the page the creators screenshotted; the current page no longer states them. Solo/unincorporated eligibility is not stated; a company-domain email is required per the screenshot.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Zero-cost upside for a solo founder with a domain email: partner credits alone (ElevenLabs year, Granola, ClickHouse) are worth real money, and if capacity reopens the $1K credit and Team seats follow. Ten minutes in the Console.",
+  "how_to_adopt": "Sign in at console.anthropic.com, open the Startups application, use a company-domain email, describe the product in two sentences. Expect decision 'within one week'. Do not count on the $1K credit; treat it as a bonus.",
+  "risks": "Capacity gating; partner offers are third-party terms; Team seats are separate from an existing Max subscription and do not add Claude Code usage.",
+  "source_video_ids": [
+   "7694180995347664159",
+   "7693668943784938765"
+  ]
+ },
+ {
+  "name": "Monthly API credits for Max and Team plans",
+  "kind": "program",
+  "official_url": "https://support.claude.com/en/articles/17154008",
+  "exists": "verified",
+  "evidence": "Official help article 17154008 and platform.claude.com/docs/en/about-claude/api-credits-for-subscribers (found 2026-10-10). Launched 2026-10-07. Max 5x $100/mo, Max 20x $200/mo, Team $20 Standard / $100 Premium seat pooled, cap $500. Covers Claude API, Managed Agents, Agent SDK, Playground. Does NOT cover interactive Claude Code or app extra-usage. One Console org linked per plan; no rollover; resets each billing cycle. Rollout staged over several days.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Max/Team subscribers get matched monthly Claude Platform API credits usable in their own apps and harnesses.",
+  "claimed_in_videos": "Max 20x gets $200/month of API credits for your app's AI features; works on any model including Haiku 5.5; not for Pro.",
+  "reality_check": "Claim holds. Caveats the creator skipped: credits expire monthly (no rollover), they do not pay for Claude Code sessions, and only one Console org can be linked.",
+  "verdict": "USE NOW",
+  "why": "Direct cost offset of $100-$200/month for the AI features in every app Haji ships via the Agent SDK or API. Zero build effort.",
+  "how_to_adopt": "Open the Claude Console, accept the 'credits added' dialog, link the Console org whose API key the apps use, then budget features (Haiku 5.5 for cheap classification) to spend the balance before each renewal.",
+  "risks": "Use-it-or-lose-it; if the wrong Console org is linked the credits sit unused. Ducktate (creator's product) is a waitlist app, not evidence.",
+  "source_video_ids": [
+   "7694322412619402510"
+  ]
+ },
+ {
+  "name": "Readdy",
+  "kind": "product",
+  "official_url": "https://readdy.ai/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page fetched 2026-10-10: Free $0 (250 credits/mo, 2 projects, 0 sites); Starter $15/mo annual ($25 monthly): 30,000 credits/yr, 1 site included, $6/mo per extra site, 1 free custom domain, Export Code; Pro $24/mo annual ($40 monthly): 2 sites; Agency $72/mo annual: 6 sites. Affiliate page readdy.ai/affiliate: 20% commission on all payments for 6 months per referral, 'no approval hoops'. No separate 'ambassador' program found; #readdyambassador is this affiliate scheme.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Prompt-to-website builder with hosted backend, AI receptionist widget, lead forms, and paid-tier code export.",
+  "claimed_in_videos": "Built a $1,000 client site in one night; 'ungodly amount of money every month'; full pro site in minutes from pasted reviews.",
+  "reality_check": "Both videos are affiliate content (20% x 6 months commission). No evidence of a real client. The product is real and cheap, but each hosted client site costs $6/mo extra on top of a plan, export is paid-tier only, and a client who stops paying loses the Readdy backend. A founder who already builds with Claude Code gains nothing.",
+  "verdict": "SKIP",
+  "why": "Commodity site builder sold through an affiliate script; Claude Code plus a static host produces a better, exportable site for $0.",
+  "how_to_adopt": "Not recommended. If a quick client mockup is ever needed, the free tier (250 credits) is enough to preview, nothing more.",
+  "risks": "Vendor lock-in for clients, recurring per-site fees, income claims unsupported, video with 177 views.",
+  "source_video_ids": [
+   "7691453205208780063",
+   "7691452012348722446"
+  ]
+ },
+ {
+  "name": "Screenshot-a-business, build a booking site, charge $1,000 (bengusberg play)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@bengusberg/video/7679264914711547166",
+  "exists": "verified",
+  "evidence": "Prompt transcribed from the video. Checked the technical claim: a single static HTML file cannot take real bookings; it needs an embed (Cal.com free tier, Calendly) or a backend. Market check: Booksy, Square Appointments, Squarespace run $0-$30/mo for salons, which caps willingness to pay for a one-off page.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Cold-outreach web design: prospect Instagram 'DM to book' businesses, generate a one-page site with Claude from screenshots, DM it, negotiate ~$1,000.",
+  "claimed_in_videos": "5 minutes after pasting screenshots you have a pro website; 10 minutes of work = $1,000; scale to 1,000 sites; '$10K/month with Claude'.",
+  "reality_check": "Build time is honest; the 'booking system' in one HTML file is not. Real version: Claude Code builds the page, Cal.com embed handles booking, Cloudflare Pages/Netlify hosts free, custom domain $12/yr. Realistic price for a salon is $300-$800 one-off plus optional $20-$50/mo hosting/maintenance, not $1,000 for 10 minutes. Conversion on unsolicited DMs is low (expect 1-3%); using their photos without permission before they buy is a copyright and goodwill risk.",
+  "verdict": "WATCH",
+  "why": "It is time-for-money, but it is the fastest route to a first dollar Haji has in this set, and it doubles as the on-ramp for the AI receptionist offer below. Worth a 2-week test only if he needs cash now.",
+  "how_to_adopt": "Save the on-screen prompt as a Claude Code skill; add Cal.com embed + Cloudflare Pages deploy; pick one local niche (barbers, detailers, mobile mechanics); DM 20 businesses with a live preview URL, price $500 build + $30/mo. Track replies.",
+  "risks": "Low conversion, support burden, scraped-photo copyright, race to the bottom against $20/mo SaaS.",
+  "source_video_ids": [
+   "7679264914711547166"
+  ]
+ },
+ {
+  "name": "Bland AI",
+  "kind": "product",
+  "official_url": "https://www.bland.ai/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page fetched 2026-10-10: Start plan $0.14/min, $0 platform fee, no card, 2 credits + inbound number ($15/mo value), 100 calls/day, 10 concurrent, $0.05/transfer-min; Build $0.12/min + $299/mo, 2,000 calls/day; Enterprise custom. LLM, STT, TTS included; telephony billed separately (own Twilio or Bland pass-through). The compare table shows 'SMS Node (in-call texts)' and 'Appointment Scheduling Node' with dashes in two of three columns, so confirm which tier includes the mid-call SMS and booking node the demo relied on. docs.bland.ai lists 'bland dev', a Claude-powered terminal for building agents.",
+  "cost": "usage-based",
+  "maintained": "active",
+  "what_it_does": "Hosted voice-agent platform with visual Conversational Pathways, in-call SMS, transfers, and a Claude-powered dev terminal.",
+  "claimed_in_videos": "Receptionist for an auto shop built in ~30 min with Claude Code + Bland; books, texts confirmation mid-call, discloses AI, hangs up.",
+  "reality_check": "The build is plausible at the demo level. Cost math: a 4-minute call is ~$0.56 on Start; 200 calls/mo = ~$110 + number. The demo features (SMS node, scheduling node) may sit above the free tier; verify before quoting a client. Demo quality on a scripted call does not predict real callers with noise, accents, and interruptions.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Cheapest way to prototype the receptionist offer: no card, free number, all-in per-minute pricing that is easy to pass through to a client.",
+  "how_to_adopt": "Sign up on Start, run `bland dev` or build a pathway (Greeting -> Availability -> Caller+Vehicle -> Services -> SMS -> Confirm), connect Cal.com or Google Calendar via webhook with Claude Code glue, test with 10 real-style calls.",
+  "risks": "Per-minute pass-through surprises, feature gating by tier, AI-disclosure and call-recording consent laws vary by state, platform dependency.",
+  "source_video_ids": [
+   "7689140212282248479"
+  ]
+ },
+ {
+  "name": "Vapi",
+  "kind": "product",
+  "official_url": "https://vapi.ai/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page fetched 2026-10-10: $0.05/min hosting fee plus pass-through STT (Deepgram ~$0.0095/min), LLM ($0.0077-$0.0452/min), TTS (ElevenLabs $0.0146-$0.0238/min), telephony (Twilio inbound $0.008/min); $5 free credits, 1 included phone number, 4 concurrent calls; Core package $29/mo (5 numbers, 10 concurrent).",
+  "cost": "usage-based",
+  "maintained": "active",
+  "what_it_does": "Bring-your-own-vendor voice agent orchestration with a $0.05/min platform fee.",
+  "claimed_in_videos": "Not in the videos; alternative to Bland.",
+  "reality_check": "All-in cost lands around $0.10-$0.15/min with mid-range models, so slightly cheaper than Bland Start at volume but with five vendors to configure and bill.",
+  "verdict": "WATCH",
+  "why": "Better unit economics once a receptionist client exceeds a few thousand minutes; more setup than Bland for a first prototype.",
+  "how_to_adopt": "Create a free account, use the $5 credit and included number to port the Bland pathway as a Vapi assistant with tool calls to a Claude-built booking endpoint.",
+  "risks": "Multi-vendor billing, latency tuning, HIPAA add-on is $2,000/mo if ever needed.",
+  "source_video_ids": [
+   "7689140212282248479"
+  ]
+ },
+ {
+  "name": "Retell AI",
+  "kind": "product",
+  "official_url": "https://www.retellai.com/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page fetched 2026-10-10: pay-as-you-go $0.07-$0.31/min all-in for voice agents, $10 free credits, 20 free concurrent calls, no commitments; chat agents $0.002+/msg; enterprise custom. Has an AI Receptionist use-case page and a solution-partner program.",
+  "cost": "usage-based",
+  "maintained": "active",
+  "what_it_does": "Pay-as-you-go voice agent platform with appointment booking, call transfer, IVR navigation, and a partner directory.",
+  "claimed_in_videos": "Not in the videos; alternative to Bland.",
+  "reality_check": "Comparable to Bland; $10 free credit and 20 concurrent calls make it the most generous sandbox. Partner program is relevant if Haji wants to be listed as a reseller.",
+  "verdict": "WATCH",
+  "why": "Second prototype target; the 'Solution Partner' directory is a legitimate lead source for an agency offer.",
+  "how_to_adopt": "Sign up, spend the $10 credit replicating the auto-shop receptionist, compare call quality and latency with Bland on the same script.",
+  "risks": "Per-minute range is wide; quality depends on chosen LLM/TTS.",
+  "source_video_ids": [
+   "7689140212282248479"
+  ]
+ },
+ {
+  "name": "AI phone receptionist agency offer ($2k build + $500/mo)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@jasoncooperson/video/7689140212282248479",
+  "exists": "unverified",
+  "evidence": "The promised free GitHub template / Notion page / Loom is comment-gated ('comment AGENT'); no public repo under that name or creator was findable on 2026-10-10. Market check: vendor products (My AI Front Desk, Ringly, etc.) sell AI receptionists to SMBs at $30-$300/mo; agency playbooks quote $1,500-$5,000 setup and $500-$3,000 retainers for bundled chatbot/voice work, but those are promotional. No churn data found.",
+  "cost": "usage-based",
+  "maintained": "n-a",
+  "what_it_does": "Sell a Bland/Retell/Vapi receptionist plus calendar/SMS glue to local service businesses as a build fee plus monthly retainer.",
+  "claimed_in_videos": "Local businesses miss calls all day; sell the build for ~$2,000 + ~$500/month; whole build in 30 minutes.",
+  "reality_check": "The 30-minute build is the easy part. $2,000 + $500/mo is top-of-market; expect $500-$1,500 setup and $150-$400/mo for a single-location shop, with Haji eating $50-$150/mo of minutes. Sales is the job: 20-40 conversations per close. Time to first dollar: 2-6 weeks if he starts calling shops this week. Realistic 90-day outcome: 2-5 clients, $500-$2,000 MRR. The comment-to-DM funnel is a list-building play; the template is likely fine but unverified.",
+  "verdict": "TRY THIS WEEK",
+  "why": "The only play in this set with recurring revenue, a Claude Code edge (custom glue, booking backend, SMS), and a buyer who already understands the pain (missed calls). Best fit with Haji's skills and income need.",
+  "how_to_adopt": "Day 1-2: build the demo on Bland Start with Cal.com booking. Day 3: record a 60-second Loom of a live call. Day 4-14: call or walk into 30 shops in one niche (auto repair, HVAC, med spa) with the demo number; offer $750 setup + $250/mo, 30-day cancel. Use Haji's veteran-owned status in the pitch where it resonates.",
+  "risks": "Churn when calls are weird; after-hours support expectations; TCPA/recording-consent compliance; AI-disclosure rules; dependency on one voice vendor; the creator's numbers are a pitch, not a P&L.",
+  "source_video_ids": [
+   "7689140212282248479"
+  ]
+ },
+ {
+  "name": "krusemediallc/arcads-claude-code (Arcads AI video + Meta ad builder skills)",
+  "kind": "repo",
+  "official_url": "https://github.com/krusemediallc/arcads-claude-code",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 1.6k stars, 383 forks, MIT, 45 commits; latest commit 2026-09-22 'Add Meta Ad Library image import workflow for Airtable (#22)', earliest visible 2026-04-10. README: skills for Arcads video/image generation (Seedance, Sora 2, Veo 3.1, Kling), 37 static Meta image-ad templates, a `meta-ad-builder` skill that uploads ads via the Meta Marketing API and creates every ad PAUSED for manual launch, plus Meta Ad Library -> Airtable research. Requires Arcads API key (paid product), META_ACCESS_TOKEN, META_AD_ACCOUNT_ID, optional Airtable PAT. Video's 'knusemediallc' is a mis-read of krusemediallc; '1,100 stars' was true at recording.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Claude Code/Cursor skill pack that generates ad creatives through Arcads and publishes them as paused Meta ads.",
+  "claimed_in_videos": "'All the skills you need'; Claude controls the ad account, buys ads with your card, 7.5x return for a first-time advertiser selling landline phones.",
+  "reality_check": "The repo creates creatives and uploads paused ads; it does not run campaigns, set budgets, or optimize spend. The autonomous 'Claude bought the ads' story is not what this code does and the $2,019 -> $15,235 case could not be found anywhere outside the video (and the reactor sells a $350/yr Skool course). Arcads itself is a paid UGC-video SaaS.",
+  "verdict": "WATCH",
+  "why": "Useful once Haji has a product with margin and some organic video to recycle; today there is nothing to advertise and ad spend is cash he does not have.",
+  "how_to_adopt": "`npx skills add krusemediallc/arcads-claude-code` into a sandbox project; read skills/meta-ad-builder before giving it any token; create a Meta system-user token scoped to one test ad account with a $10/day account spending limit.",
+  "risks": "Pasting API keys into a stranger's setup script; Meta token scope; Arcads subscription cost; attribution-window inflation in the quoted ROAS.",
+  "source_video_ids": [
+   "7690360813269355789"
+  ]
+ },
+ {
+  "name": "hoodini/ai-agents-skills (meta-ads skill)",
+  "kind": "skill",
+  "official_url": "https://github.com/hoodini/ai-agents-skills",
+  "exists": "verified",
+  "evidence": "Directory listings (claudemarketplaces, agentskill.work) describe a meta-ads skill that reads performance, tests creatives, launches campaigns with explicit confirmation for write ops, and covers system-user vs user tokens. GitHub commits page returned no history on 2026-10-10 and one aggregator marks the repo stale (~7 months since last commit). Stars reported 99-225.",
+  "cost": "free",
+  "maintained": "stale",
+  "what_it_does": "Community Claude Code skill wrapping the Meta Marketing API for campaign management.",
+  "claimed_in_videos": "Not named; closest match to the 'Claude Code Meta ads skills repo' the reactor described.",
+  "reality_check": "Closer to 'Claude runs the ads' than the Arcads repo, but small and apparently unmaintained; Meta's API changes often.",
+  "verdict": "SKIP",
+  "why": "Not worth depending on a stale wrapper; Meta's own Ads CLI/MCP or a hand-rolled Marketing API client via Claude Code is safer when the time comes.",
+  "how_to_adopt": "If revisited: `npx -y skills add hoodini/ai-agents-skills --skill meta-ads --agent claude-code` in a sandbox and audit the SKILL.md before use.",
+  "risks": "Stale code against a moving API; write operations on real spend.",
+  "source_video_ids": [
+   "7690360813269355789"
+  ]
+ },
+ {
+  "name": "Meta Marketing API access (Marketing API Access Tier)",
+  "kind": "api",
+  "official_url": "https://developers.meta.com/blog/updates-to-ads-management-standard-access-feature/",
+  "exists": "verified",
+  "evidence": "Meta developer blog 2026-05-04: 'Ads Management Standard Access' renamed 'Marketing API Access Tier' with Limited Access (own ad accounts) and Full Access (other people's accounts; requires 500 API calls in 15 days with <15% error rate, plus Business Verification). Permissions ads_read / ads_management unchanged. System-user tokens in Business Manager are the standard for unattended automation.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Gate for programmatic ad management; Limited Access is enough to run your own account.",
+  "claimed_in_videos": "'Claude walks you through getting a Meta API key'.",
+  "reality_check": "True for your own account: create an app, add Marketing API, generate a system-user token with ads_management, done in under an hour. Managing clients' accounts needs Full Access + business verification, which is weeks of friction.",
+  "verdict": "WATCH",
+  "why": "Only matters once there is a product to advertise; the setup is not the blocker, cash for spend is.",
+  "how_to_adopt": "When ready: Business Manager -> System Users -> generate token (ads_management, ads_read) -> set account spending limit -> let Claude Code create PAUSED campaigns only.",
+  "risks": "Token leakage equals someone spending your money; Meta's app review cadence; API version deprecations.",
+  "source_video_ids": [
+   "7690360813269355789"
+  ]
+ },
+ {
+  "name": "'Claude Code ran my Meta ads' play",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@mr.paidsocial/video/7690360813269355789",
+  "exists": "unverified",
+  "evidence": "The specific $2,019 spend / $15,235 sales landline-phone case could not be located on the web (searched 2026-10-10). The reactor (mr.paidsocial) sells a Skool community ($350/yr, moving to $150/mo) that bundles 'Claude Code ad build systems', so the video is a funnel. General pattern (Claude + Meta Ads CLI/MCP creating paused campaigns, scheduled audits) is documented by multiple vendors.",
+  "cost": "usage-based",
+  "maintained": "n-a",
+  "what_it_does": "Give an agent your organic videos and a Meta token; it drafts creatives, copy, and campaigns, and manages spend.",
+  "claimed_in_videos": "7.5x return in 7 days for a first-time advertiser; '$30,000+ anniversary sale without clicking Ads Manager'; 'best way to run ads on Meta right now'.",
+  "reality_check": "Agents are good at creative iteration and reporting; the returns quoted are survivorship and sales-funnel content. Haji has no product with proven demand and no spare ad budget, so this is premature. When he does, the sane version is: Claude proposes, human launches, hard daily caps.",
+  "verdict": "WATCH",
+  "why": "High leverage later; negative expected value now.",
+  "how_to_adopt": "Park it. Trigger to revisit: an app with >$1k MRR, >40% margin, and 10+ organic videos that already converted.",
+  "risks": "Burning cash on untested creative, affiliate-distorted expectations, giving an agent card access with no cap.",
+  "source_video_ids": [
+   "7690360813269355789"
+  ]
+ },
+ {
+  "name": "Hormozi hook-testing loop (Apify -> hooks.json -> Claude writes -> small model scores)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@angusthenontechnical/video/7690623522225327374",
+  "exists": "verified",
+  "evidence": "Pipeline fully visible on screen (hooks.json schema with winners/flops and view counts; Claude Desktop 'Hook scoring' chat; Jev scores 91/88/82%). Creator's stated result after months of A/B posting: hand-written hooks beat AI-written hooks every time, so he now uses AI only to score. Apify clockworks TikTok scraper ~$1.70 per 1,000 results (apidojo $0.30/1k); TikTok Studio desktop exports analytics CSV but only 60 days of history.",
+  "cost": "usage-based",
+  "maintained": "n-a",
+  "what_it_does": "Build a winners/flops dataset from your own posts, then rank new hand-written hooks against it with a cheap classifier before posting.",
+  "claimed_in_videos": "Hormozi posts ~29 pieces/day and recycles winning hooks; loop until hooks score >90%; 'don't outsource your creativity to an AI agent'.",
+  "reality_check": "The honest negative result (AI hooks lose) is the valuable part. The 90% bar is arbitrary and the sample is one creator. Jev is optional: a Haiku structured-output call that returns a 0-1 score does the same job for fractions of a cent.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Half a day of work, directly useful for marketing Haji's own apps on TikTok, and it builds the dataset he will need anyway.",
+  "how_to_adopt": "Export TikTok Studio CSV (or run clockworks/tiktok-scraper on his own handle, ~$0.20), write hooks.json split at median views, create a Claude Code skill `score-hooks` that calls Haiku with the file and 10 candidate hooks, returns ranked scores. Post the top 2-3, let real views decide.",
+  "risks": "Apify scraping of TikTok is against TikTok ToS even on your own data (use Studio export where possible); overfitting to past hooks; small sample noise.",
+  "source_video_ids": [
+   "7690623522225327374"
+  ]
+ },
+ {
+  "name": "Apify (TikTok scraper actors)",
+  "kind": "product",
+  "official_url": "https://apify.com/clockworks/tiktok-scraper",
+  "exists": "verified",
+  "evidence": "Store listings found 2026-10-10: clockworks/tiktok-scraper ~$1.70 per 1,000 results pay-per-event with free trial run; apidojo/tiktok-scraper $0.30 per 1,000; comments scraper $0.50/1k; profile scraper $2.50/1k.",
+  "cost": "usage-based",
+  "maintained": "active",
+  "what_it_does": "Hosted scrapers for TikTok profiles, videos, comments, hashtags.",
+  "claimed_in_videos": "Used to pull the creator's own video hooks and view counts.",
+  "reality_check": "Cheap for own-profile pulls (cents). TikTok's ToS prohibits scraping; for own data the Studio CSV export is the compliant route but is limited to 60 days.",
+  "verdict": "WATCH",
+  "why": "Only needed if Studio export is insufficient (older than 60 days or competitor research).",
+  "how_to_adopt": "Free Apify account; run clockworks/tiktok-scraper on one profile URL with results limit 200; download JSON.",
+  "risks": "ToS exposure, account blocks, variable per-actor pricing.",
+  "source_video_ids": [
+   "7690623522225327374"
+  ]
+ },
+ {
+  "name": "Jev (TypeSafe AI System One model)",
+  "kind": "model",
+  "official_url": "https://typesafe.ai",
+  "exists": "verified",
+  "evidence": "typesafe.ai reachable 2026-10-10 (Framer site, 'API console' link; console.typesafe.ai returned 403 to an unauthenticated probe). Coverage: announced 2026-09-15 with waitlist; reports that the waitlist was removed 2026-09-20/21 with $5 free credit, and one report that new signups were paused 2026-09-22 after 32.8 hours. Pricing reported everywhere as $0.042 per million input tokens, output free (returns typed answers: yes/no, choice with probabilities, numeric score). Request/response shape visible in the PostHog video matches (POST api.typesafe.ai/v1/systemone, model jev-latest -> jev-1.13.0). No official pricing page exists (typesafe.ai/pricing 404). Speed/cost multiples (193x, 444x) are vendor claims with no independent replication.",
+  "cost": "usage-based",
+  "maintained": "active",
+  "what_it_does": "Decision/classification model that returns calibrated probabilities instead of text.",
+  "claimed_in_videos": "Classifies visitors into personas with 0.94 confidence; 'business killer'; scores hooks; 'insane at email classification' (one X post).",
+  "reality_check": "Real and cheap, but access status is unclear and every demo in the hype reel is labelled 'illustrative concept - synthetic data'. For a 4-way classification Haiku with a JSON schema is good enough and already paid for by the monthly credits.",
+  "verdict": "WATCH",
+  "why": "Nice-to-have, not needed; depending on a 4-week-old startup's API for core logic is a risk a solo founder should not take yet.",
+  "how_to_adopt": "Try to sign up at console.typesafe.ai; if it opens, run a 50-example comparison vs Haiku on the hook-scoring task. Otherwise ignore.",
+  "risks": "Signup gating, no SLA, pricing not published officially, unverified benchmarks.",
+  "source_video_ids": [
+   "7690984936815201549",
+   "7688456692043959566",
+   "7690623522225327374"
+  ]
+ },
+ {
+  "name": "PostHog visitor-archetype follow-up email funnel ('$30k listening website')",
+  "kind": "pattern",
+  "official_url": "https://posthog.com",
+  "exists": "verified",
+  "evidence": "Pipeline shown on screen: PostHog $pageview/$pageleave -> HubSpot check -> RB2B/Vector/Snitcher/Dealfront de-anonymization (~20% hit rate by creator's own admission) -> Jev persona -> archetype email. Creator discloses he is a PostHog channel partner. RB2B pricing found: free 150 resolutions/mo, $79/$149/$199 tiers, US-only person-level ID, work-email reveal only on Pro+. Emailing de-anonymized visitors without opt-in conflicts with GDPR/ePrivacy and is a CAN-SPAM/CCPA grey zone.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Behaviour-triggered, persona-specific follow-up emails to landing-page visitors.",
+  "claimed_in_videos": "Replace a $30,000/year 'AI inbound autopilot' agency product with PostHog + Jev; cluster visitors into 8 archetypes after 2 weeks of data.",
+  "reality_check": "Half of it is sound: PostHog free tier on every landing page, then Claude clusters opted-in signups and tailors onboarding emails. The other half (IP de-anonymization and cold emailing) is legally exposed, 80% blind, and useless for consumer apps. The $30k comparison is a strawman.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Install PostHog now (free, 1 hour); the behavioural-email layer can be built with Claude Code when there is traffic worth segmenting.",
+  "how_to_adopt": "`npm i posthog-js`, add to every app landing page, enable session replay; in 2 weeks ask Claude Code to cluster paths of signed-up users and draft 3 onboarding emails; send only to opted-in addresses via Resend/Postmark.",
+  "risks": "Privacy law, creator's commercial bias, premature optimization with no traffic.",
+  "source_video_ids": [
+   "7690984936815201549",
+   "7688456692043959566"
+  ]
+ },
+ {
+  "name": "RB2B",
+  "kind": "product",
+  "official_url": "https://www.rb2b.com",
+  "exists": "verified",
+  "evidence": "Third-party pricing pages (2026): free 150 resolutions/mo; Starter $79, Pro $149, Pro+ $199; credits-based; US-only person-level identification; work email only on Pro+. Official page not fetched.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Identifies US website visitors at person level (LinkedIn/name/email) from traffic.",
+  "claimed_in_videos": "One of five tools to find a visitor's email ~20% of the time.",
+  "reality_check": "Works only for US B2B traffic and raises consent issues; irrelevant to consumer apps.",
+  "verdict": "SKIP",
+  "why": "Haji's apps are not B2B-with-traffic; the legal exposure outweighs a 20% match rate.",
+  "how_to_adopt": "None.",
+  "risks": "GDPR/CCPA, deliverability damage from cold emails, creator affiliation.",
+  "source_video_ids": [
+   "7690984936815201549"
+  ]
+ },
+ {
+  "name": "canivibecodeit.com",
+  "kind": "product",
+  "official_url": "https://canivibecodeit.com",
+  "exists": "verified",
+  "evidence": "Fetched 2026-10-10: 1,093 apps listed; verdicts YES / KINDA / NOT REALLY with monthly savings; footer 'built by @robj3d3', MIT, 'Source on GitHub', 'no third-party trackers'; new apps are submitted by users and 'the bot drafts the verdict' (auto-generated); monetized by sponsor slots (a $2,500/30-day sponsor banner was live), a Thursday newsletter, a 'build games' hackathon with a $2,750 pool, and 'Death List' / 'moats' editorial.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Directory rating whether an AI agent can rebuild a given SaaS today, with a copy-paste rebuild prompt and reasons not to.",
+  "claimed_in_videos": "1,000+ apps with exact prompts; yes/kinda/not-really plus savings; only replace apps where cost is high and build time low.",
+  "reality_check": "Claims hold. Verdicts are bot-drafted, so treat savings numbers and maintenance warnings as rough. The 'moats' section is a decent lens on which markets are commoditizing.",
+  "verdict": "WATCH",
+  "why": "Not a money play; a 20-minute market-research browse to avoid building anything on the Death List and to steal prompt structures.",
+  "how_to_adopt": "Open the Death List, note which categories are 'YES' with high prices (those markets are dying), and check any app idea against the directory before building.",
+  "risks": "Auto-generated verdicts; sponsor-influenced placement possible.",
+  "source_video_ids": [
+   "7688231313035365663"
+  ]
+ },
+ {
+  "name": "Four-prompt '$10k/month' sequence / 'Don't ask ChatGPT how to make money' (bengusberg)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@bengusberg/video/7689336669148810526",
+  "exists": "verified",
+  "evidence": "All four prompts transcribed from the video. Nothing to verify online; the pattern is a generic viral prompt chain. The creator's own output ('sell $5k AI courses, copy John and Bethany') illustrates the hallucination risk in prompt 2 (named people and links).",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Ask the model for the fastest $10k/mo path given your profile, find someone doing it, write a 30-day sub-$100 plan, then 'what do I do right now'.",
+  "claimed_in_videos": "'AI is bad at new business ideas, good at research and building'; the fourth prompt forces a first action.",
+  "reality_check": "Prompt 1 produces the same five answers for everyone (agency, courses, freelancing). Prompts 2-3 are a usable 'reverse-engineer a competitor's playbook' research step if every named person is verified. Not a plan.",
+  "verdict": "SKIP",
+  "why": "Haji already knows his skills; the research step is better done with web search on a specific offer (e.g. who sells AI receptionists in his city).",
+  "how_to_adopt": "If used at all: run prompt 2 and 3 against a concrete offer, with web search on, and verify every person cited.",
+  "risks": "Hallucinated people/profiles, generic plans, time sink.",
+  "source_video_ids": [
+   "7689336669148810526"
+  ]
+ },
+ {
+  "name": "OpenArt (Director Mode)",
+  "kind": "product",
+  "official_url": "https://openart.ai/pricing",
+  "exists": "verified",
+  "evidence": "Pricing page fetched 2026-10-10: Starter $14/mo ($13 annual) 4,000 credits, Director access, watermark-free, no commercial-use line; Plus $34/mo ($27 annual) 12,000 credits, commercial use rights; Pro $56; Wonder $240. Video counts are 'excluding Director', i.e. Director burns credits faster. No free Director tier shown; third parties mention a small one-time trial credit.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "AI image/video studio; Director Mode generates multi-shot videos from a prompt and reference images.",
+  "claimed_in_videos": "'$0 AI side hustle': paste a gym's Google listing, get a 5-minute walkthrough, sell for $500.",
+  "reality_check": "Not $0: Director needs a paid plan and selling the output needs Plus ($34/mo). The on-screen prompt actually asks for a sub-1-minute social clip, not a 5-minute walkthrough. Using listing photos (often customer-uploaded) in a video sold back to the gym is a rights grey zone. No evidence anyone closed $500.",
+  "verdict": "SKIP",
+  "why": "Comment-bait hustle unrelated to Haji's skills; low-trust output that a gym can make itself.",
+  "how_to_adopt": "None.",
+  "risks": "Credit burn, photo rights, commercial-use gating, zero proof of sales.",
+  "source_video_ids": [
+   "7691505512252296461"
+  ]
+ },
+ {
+  "name": "Remotion",
+  "kind": "repo",
+  "official_url": "https://github.com/remotion-dev/remotion",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 63.0k stars, 4.9k forks, last commit 2026-10-09; special license. remotion.dev/docs/license/pricing fetched: free license for individuals and companies of up to 3 people with unlimited commercial use; Creators $25/seat/mo; Automators $0.01/render with $100/mo minimum; Enterprise from $500/mo.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "React framework for programmatic video (templates, data-driven renders, agent-driven video creation).",
+  "claimed_in_videos": "Sell programmatic video editing as a service to content creators.",
+  "reality_check": "Free for Haji as a solo founder. Selling it as a service to creators is a real but crowded engineering business; the better use is automating his own product demos, changelog videos, and TikTok b-roll from Claude Code.",
+  "verdict": "WATCH",
+  "why": "Strong fit with Claude Code (it is React) and the license is free at his size; value is in marketing his own apps, not a side business.",
+  "how_to_adopt": "`npx create-video@latest`, have Claude Code build one 20-second product-demo template fed by JSON; render locally.",
+  "risks": "Render time/compute, license upgrade if he ever hires beyond 3, scope creep.",
+  "source_video_ids": [
+   "7681084831396105488"
+  ]
+ },
+ {
+  "name": "OpenHands (Agent Canvas)",
+  "kind": "repo",
+  "official_url": "https://github.com/All-Hands-AI/OpenHands",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 90.5k stars, MIT, last commit 2026-10-10, Docker image 1.26.0; now positioned as 'Agent Canvas', a self-hosted control center that can run its own agent or Claude Code/Codex/Gemini CLI with scheduled and webhook automations; OpenHands Cloud/Enterprise is the paid offering.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Open-source autonomous coding agent and orchestration dashboard.",
+  "claimed_in_videos": "Sell 'automated software developers' to SMBs.",
+  "reality_check": "Haji already has Claude Code; OpenHands adds a self-hosted scheduler/dashboard layer, not a business. SMBs do not buy 'an automated developer', they buy outcomes.",
+  "verdict": "SKIP",
+  "why": "No incremental capability for a Claude Code user; the 'sell AI developers' pitch is listicle filler.",
+  "how_to_adopt": "None now; revisit if he needs a self-hosted cron/webhook harness for agents.",
+  "risks": "Operational overhead, duplicate tooling.",
+  "source_video_ids": [
+   "7681084831396105488"
+  ]
+ },
+ {
+  "name": "PersonaLive (GVCLab)",
+  "kind": "repo",
+  "official_url": "https://github.com/GVCLab/PersonaLive",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: ~4.0k stars, Apache-2.0 license but README disclaimer 'released for academic research only'; CVPR 2026 paper (arXiv 2512.11253); training code 2026-05-15; EditaLive full-body update 2026-08-28; offline inference on 12GB VRAM; TensorRT engine built on H100.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Real-time diffusion-based portrait animation for live streaming (drive a still image with video).",
+  "claimed_in_videos": "AI UGC avatars from an image + video to sell as a service.",
+  "reality_check": "Research code with an academic-only disclaimer, GPU requirements, and obvious deepfake/likeness liability. Commercial avatar SaaS (HeyGen etc.) already does this at $29/mo.",
+  "verdict": "SKIP",
+  "why": "Wrong license posture for client work and no fit with app-building.",
+  "how_to_adopt": "None.",
+  "risks": "Likeness rights, platform policy on synthetic media, GPU cost.",
+  "source_video_ids": [
+   "7681084831396105488"
+  ]
+ },
+ {
+  "name": "MuMuAINovel",
+  "kind": "repo",
+  "official_url": "https://github.com/xiamuceer-j/MuMuAINovel",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 3.2k stars, GPL-3.0, Chinese-language README/UI, v1.5.7, FastAPI + React, supports OpenAI/Gemini/Claude, Docker deploy; MCP plugin support added 2026-05.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Multi-model AI novel-writing assistant (outline, characters, chapters, memory).",
+  "claimed_in_videos": "Generate books/short stories to sell as digital products or on Amazon.",
+  "reality_check": "Chinese UI, GPL license, and a market (KDP) flooded with AI books where Amazon requires AI-content disclosure and limits uploads. No income evidence.",
+  "verdict": "SKIP",
+  "why": "No fit with Haji's skills or audience; race-to-zero market.",
+  "how_to_adopt": "None.",
+  "risks": "KDP policy, GPL obligations if modified and distributed.",
+  "source_video_ids": [
+   "7681084831396105488"
+  ]
+ },
+ {
+  "name": "coreyhaines31/marketingskills",
+  "kind": "repo",
+  "official_url": "https://github.com/coreyhaines31/marketingskills",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 54.0k stars, 8.0k forks, MIT, 1,004 commits, last commit 2026-10-08; 50 skills incl. copywriting, cro, pricing, offers, launch, cold-email, ads, ad-creative, programmatic-seo, aso, paywalls, onboarding, marketing-plan, marketing-council. Install: `npx skills add coreyhaines31/marketingskills` or `/plugin marketplace add coreyhaines31/marketingskills` then `/plugin install marketing-skills`.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Markdown skill pack giving Claude Code structured marketing playbooks (CRO, copy, SEO, pricing, launch, ASO, etc.).",
+  "claimed_in_videos": "Install the skills and offer copywriting/AEO/SEO as a service.",
+  "reality_check": "The repo is excellent and actively maintained; the 'sell it as a service' angle ignores that clients buy results, not skills. Best use: apply pricing/offers/launch/aso/paywalls to Haji's own apps.",
+  "verdict": "USE NOW",
+  "why": "Highest star-to-effort ratio in this set; directly improves landing pages, pricing pages, and store listings for the apps he already has.",
+  "how_to_adopt": "`claude plugin marketplace add coreyhaines31/marketingskills && claude plugin install marketing-skills@marketingskills`, then run the pricing, offers, and launch skills against one existing app this week.",
+  "risks": "Generic output if product-marketing-context is not filled in first; skill sprawl.",
+  "source_video_ids": [
+   "7681084831396105488"
+  ]
+ },
+ {
+  "name": "garrytan/gstack",
+  "kind": "repo",
+  "official_url": "https://github.com/garrytan/gstack",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: ~136k stars, ~20k forks, MIT, 445 commits, README references tested v1.91.13.0; exact last-commit date not captured (commit page truncated). 23 roles + 8 power tools as slash commands: /office-hours, /plan-ceo-review, /plan-eng-review, /plan-design-review, /autoplan, /review, /qa, /ship, /cso security audit, /canary, /retro, /careful, /freeze, /skillify. Requires Bun 1.4.2+. Not a video in this theme; researched at the caller's request.",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Garry Tan's Claude Code setup: CEO/eng/design/QA/release personas and a browser QA harness as slash commands.",
+  "claimed_in_videos": "Not claimed in these videos (gap item).",
+  "reality_check": "Real, huge, MIT. The productivity claims (600k lines in 60 days) are self-reported. No marketing or sales skills; it is a product-dev discipline layer. Overlaps with Haji's existing council-gate; /office-hours and /plan-ceo-review are the useful additions for scoping an offer before building it.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Free structure for the 'should I build this' and 'ship it safely' steps; pairs with marketingskills (gstack builds, marketingskills sells).",
+  "how_to_adopt": "`git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`; run /office-hours on the receptionist offer before writing code.",
+  "risks": "Skill bloat and context cost; opinionated workflows; Bun dependency.",
+  "source_video_ids": []
+ },
+ {
+  "name": "Gov-contracting bid automation with agents (grokbot / Hermes)",
+  "kind": "pattern",
+  "official_url": "https://sam.gov/content/about/terms-of-use",
+  "exists": "unverified",
+  "evidence": "'grokbot' as a product could not be found (2026-10-10); most likely the creator's name for Grok running inside Nous Research's Hermes Agent (xAI announced Grok subscriptions work inside Hermes on 2026-05-15) or a hosted wrapper. Hermes Agent verified: github.com/NousResearch/hermes-agent, 252k stars, MIT, model-agnostic, runs locally/VPS/Docker. SAM.gov Terms of Use prohibit bots and scraping and bar using a SAM login for bot-driven extraction; sanctioned automation is via official APIs/extracts. GovDash and similar vendors do discovery/drafting only; final submission stays manual in the government system.",
+  "cost": "usage-based",
+  "maintained": "n-a",
+  "what_it_does": "Agent with its own computer logs into bid portals, reads solicitations, checks qualification, and submits bids.",
+  "claimed_in_videos": "Worked across several portals; burned all tokens in 1-2 hours; plan to run open-weight models on a 4090 and escalate to Claude/Codex/Groq.",
+  "reality_check": "Candid field report, not a tutorial. The lesson (route document-heavy reading to cheap models, keep Claude for judgment) is sound. Automated login/submission on SAM.gov violates its ToS and risks losing the registration a veteran-owned firm depends on. The real edge for Haji is VOSB/SDVOSB set-asides plus Claude-drafted responses, with him clicking submit.",
+  "verdict": "WATCH",
+  "why": "Highest-ceiling channel for a veteran-owned business, but first dollar is 90-180+ days out and requires SAM registration, VetCert certification, and past-performance narrative first.",
+  "how_to_adopt": "This month: register in SAM.gov, apply for SBA VetCert (SDVOSB/VOSB), pull opportunities via the SAM.gov Opportunities API (free key) into a Claude Code skill that scores fit against a capability statement. Never automate portal logins or submissions.",
+  "risks": "ToS violation, credential exposure to an autonomous agent, token burn on 200-page solicitations, long sales cycles.",
+  "source_video_ids": [
+   "7683651205804952846"
+  ]
+ },
+ {
+  "name": "Hermes Agent (Nous Research)",
+  "kind": "repo",
+  "official_url": "https://github.com/NousResearch/hermes-agent",
+  "exists": "verified",
+  "evidence": "GitHub fetched 2026-10-10: 252.4k stars, MIT; terminal/messaging agent with persistent memory, auto-created skills, scheduled tasks, subagents; providers via Nous Portal, OpenRouter, OpenAI, custom endpoints; `hermes setup --portal` for OAuth; no zero-config hosted service on the page.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Open-source, model-agnostic always-on agent harness that runs on your own machine or VPS.",
+  "claimed_in_videos": "Next step after grokbot; run locally with open-weight models on a 4090.",
+  "reality_check": "Real and popular. For Haji it is a parallel universe to Claude Code; useful only if he wants an always-on agent with local models for cheap bulk reading.",
+  "verdict": "WATCH",
+  "why": "Not needed while Claude Code + monthly API credits cover his workloads.",
+  "how_to_adopt": "If ever: `pip install hermes-agent` per README, point at a local model via OpenRouter/own endpoint for document triage.",
+  "risks": "Credential handling in an autonomous harness; maintenance of a second agent stack.",
+  "source_video_ids": [
+   "7683651205804952846"
+  ]
+ },
+ {
+  "name": "Veteran C-file analysis tool (gap item)",
+  "kind": "pattern",
+  "official_url": "https://www.ecfr.gov/current/title-38/chapter-I/part-14/section-14.636",
+  "exists": "verified",
+  "evidence": "Not in any liked video; researched at the caller's request on 2026-10-10. Market: VBMS Reviewer (AI evidence reports with citations, for appeals practices), Page (pageai.co, document review for veterans' law firms), VetsForever 'The Readout' (standalone C-file analysis service launched 2026-08-06, price not published), VetAid MCP (BVA outcome data for Claude), consumer apps 'VA Claims Made Easy' and 'A-1 VA Ratings'. Law: 38 CFR 14.636 lets only VA-accredited attorneys/agents charge, and only after an initial decision; CRS report 2026-07-13 says there is currently no federal criminal penalty for unaccredited paid assistance but VA issues cease-and-desist letters, and NJ, ME, NY criminalized it in 2023 (Louisiana allows up to $12,500 under a PLUS-style law). GUARD/PLUS Acts still unpassed as of the latest sources. VA itself averages ~1,300 pages per claims folder and has been criticized for AI review missing favorable evidence.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "Ingest a veteran's C-file PDF, index evidence, map conditions to the rating schedule, flag missing nexus/evidence.",
+  "claimed_in_videos": "Not claimed; Haji's own idea space as a veteran.",
+  "reality_check": "Technically very doable with Claude Code (long-context PDF triage, 38 CFR Part 4 lookup, citation gating). Commercially the direct-to-veteran paid version is claim-shark territory unless Haji becomes an accredited claims agent (VA exam) or sells B2B to accredited attorneys/VSOs. A free self-service tool is lawful and could be a trust-building front door; a paid 'we analyze your file' service is not.",
+  "verdict": "WATCH",
+  "why": "Real domain edge and genuine need, but the legal structure must come first; income within 90 days is unlikely unless sold to an existing law firm as tooling.",
+  "how_to_adopt": "Validate with 3 VA-accredited attorneys or a VSO whether they would pay for a C-file indexer; if yes, build a B2B prototype on Claude with citation-only outputs. Alternatively study for VA claims-agent accreditation. Do not charge veterans for initial-claim help.",
+  "risks": "38 CFR 14.636 / state claim-shark laws, PHI handling, liability for missed evidence, VA OIG scrutiny of AI review.",
+  "source_video_ids": []
+ },
+ {
+  "name": "The Board prompt (hellotrillion.ai/p/the-board)",
+  "kind": "pattern",
+  "official_url": "https://hellotrillion.ai/p/the-board",
+  "exists": "verified",
+  "evidence": "Page fetched 2026-10-10 via curl: free prompt dated 2026-07-31 titled 'Give Your AI Agent a Board of Advisors'; paste into Claude Code/Cursor/Aider; it interviews you, researches each named advisor, builds one markdown dossier per seat with numbered citable doctrine, a router for standing, isolated per-seat model calls, a citation gate that strips references a seat could not have seen, abstention as a first-class answer, a unanimity guard, and a monthly review. No license stated. Trillion itself is unreleased ('5,471 builders waiting' for the GitHub repo). Page also sells 'App Bully' (security review).",
+  "cost": "free",
+  "maintained": "active",
+  "what_it_does": "Builds a multi-persona advisory council with research-backed dossiers and anti-fabrication guards inside your coding agent.",
+  "claimed_in_videos": "Named advisors (Gary Vee, Daymond John, Seth Godin, Julie Zhuo) debate with confidence levels and cited sources, then a verdict with concrete actions.",
+  "reality_check": "The prompt exists and is more rigorous than the demo suggests (citation gate, abstention). The pretty orb UI is Trillion-only. Persona fidelity for real people is still a hallucination risk and naming them in a product has publicity-rights optics; using them privately is fine.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji already runs a council-gate skill; this prompt's dossier + citation-gate + abstention machinery is a concrete upgrade for an hour of work.",
+  "how_to_adopt": "curl the page, paste the prompt into Claude Code, name 4-5 advisors whose public writing is well documented (e.g. Hormozi, Patrick McKenzie, April Dunford), let it build the dossiers, wrap as a skill.",
+  "risks": "Fabricated citations if the gate is skipped; unlicensed prompt; waitlist email capture.",
+  "source_video_ids": [
+   "7668782188350934285"
+  ]
+ },
+ {
+  "name": "Cowork board-of-advisors (Operator / Investor / Customer / Skeptic)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@bengusberg/video/7666984424667417886",
+  "exists": "verified",
+  "evidence": "Both prompts transcribed from screen. Cowork sessions do not persist personas by themselves; a saved skill/prompt file does. No evidence that persona debate beats one well-prompted critique, but the Skeptic role is a cheap bias check.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Four persona agents debate a decision and vote; you decide.",
+  "claimed_in_videos": "'Saves me a lot of mental back-and-forth'; you remain CEO.",
+  "reality_check": "Already covered by Haji's council-gate skill (8 voices). Nothing new except the pricing example.",
+  "verdict": "USE NOW",
+  "why": "Zero effort: it is what he already does; keep the Skeptic seat sharp.",
+  "how_to_adopt": "Run the existing council-gate skill on the receptionist pricing question ($750 + $250/mo vs $2,000 + $500/mo).",
+  "risks": "Persona theatre substituting for customer conversations.",
+  "source_video_ids": [
+   "7666984424667417886"
+  ]
+ },
+ {
+  "name": "Hark / Hark Pro (Brett Adcock)",
+  "kind": "product",
+  "official_url": "https://hark.ai",
+  "exists": "verified",
+  "evidence": "Multiple reports: Hark Pro launched 2026-10-06 on web/iOS/Android; tiers free, $20/mo (2x usage), $100/mo (10x); first 100,000 sign-ups get the paid plan free; 'Handoff' spins a cloud computer per request and operates sites with your logins (reports vary between 6 and 36 concurrent browsers); $700M Series A earlier in 2026; hardware in 2027. Benchmark claims (97.7 Online-Mind2Web) are self-reported. Instinct (Noah Shinn) raised $1B Series C at a $10B valuation on 2026-09-28, not '$10B raised'.",
+  "cost": "freemium",
+  "maintained": "active",
+  "what_it_does": "Proactive consumer AI assistant with a cloud computer that logs into sites on your behalf.",
+  "claimed_in_videos": "Category consolidation favours compute/context/ecosystem incumbents; Hark's moat is a future Figure humanoid link.",
+  "reality_check": "Facts mostly hold except the Instinct figure. Takeaway for Haji: do not build a generic personal assistant; pick a vertical.",
+  "verdict": "SKIP",
+  "why": "Market commentary with no build path; the strategic point is already obvious.",
+  "how_to_adopt": "None.",
+  "risks": "None relevant.",
+  "source_video_ids": [
+   "7694444433470737694"
+  ]
+ },
+ {
+  "name": "Synthesis Tutor",
+  "kind": "product",
+  "official_url": "https://www.synthesis.com/tutor",
+  "exists": "verified",
+  "evidence": "Product exists; pricing reports conflict ($29-$45/mo, ~$299/yr; some mention 7- or 30-day trial); official page not fetched. 'DARPA Digital Tutor 16 vs 36 weeks' and '98% of teachers' figures are marketing claims not checked.",
+  "cost": "$29-45/mo (unverified)",
+  "maintained": "active",
+  "what_it_does": "Adaptive AI math tutor for ages 5-11.",
+  "claimed_in_videos": "SpaceX-school origin, $35/month, 98% of teachers see improvement.",
+  "reality_check": "A pricing data point for consumer edtech, nothing more.",
+  "verdict": "SKIP",
+  "why": "Off-theme; no action.",
+  "how_to_adopt": "None.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7668061154270301471"
+  ]
+ },
+ {
+  "name": "mr.paidsocial Skool community",
+  "kind": "course",
+  "official_url": "https://www.tiktok.com/@mr.paidsocial",
+  "exists": "verified",
+  "evidence": "Sales page shown on screen: $350/yr (was $1,164, 'moving to $150/month Aug 1'), Meta Masterclass MC1-MC5, Airtable + Claude Code ad build systems, custom GPTs for copy/compliance, monthly calls.",
+  "cost": "$350/yr",
+  "maintained": "active",
+  "what_it_does": "Paid media-buying community and course.",
+  "claimed_in_videos": "His own $30k anniversary sale was run by Claude without touching Ads Manager.",
+  "reality_check": "The 'reaction' video is the funnel for this product; every number in it should be read as marketing.",
+  "verdict": "SKIP",
+  "why": "Haji has no ad budget and the open-source repo covers the mechanics for free.",
+  "how_to_adopt": "None.",
+  "risks": "Course spending instead of customer conversations.",
+  "source_video_ids": [
+   "7690360813269355789"
+  ]
+ },
+ {
+  "name": "Jarvis invoice-chasing skit (luke.builds.ai) / family Claude uses / unreadable photo posts",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@luke.builds.ai/video/7686172423149948173",
+  "exists": "unverified",
+  "evidence": "Scripted comedy (no stack shown); the family video shows no UI and the 'stock price alert' is not a native Claude feature (needs a scheduled task or third-party alert); two photo posts (malikontech, chase_ai_) returned no content to the extractor.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "Entertainment/lifestyle content; only takeaway is an invoice-reminder agent idea.",
+  "claimed_in_videos": "Agent drafts demand letters and flags a client's domain; Claude 'notifies us' at a stock price.",
+  "reality_check": "Nothing to adopt; an invoice-chaser is a two-hour Claude Code + Stripe/QuickBooks webhook project if ever needed.",
+  "verdict": "SKIP",
+  "why": "No method, no tool, no income path.",
+  "how_to_adopt": "None.",
+  "risks": "None.",
+  "source_video_ids": [
+   "7686172423149948173",
+   "7670508317428452630",
+   "7694541582166412575",
+   "7657788958415392014"
+  ]
+ }
+]
