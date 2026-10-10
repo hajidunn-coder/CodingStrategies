@@ -1,0 +1,87 @@
+{
+ "id": "7679197111639969037",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7679197111639969037",
+ "creator": "chase_ai_",
+ "title": "New /design skill (research preview) puts Claude Design's editable artboard workflow inside Claude Code CLI/Desktop, stackable with Impeccable and Taste skills",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code /design skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "type `/design <prompt>`; generates multi-artboard canvas with properties panel; shown on Claude Code v2.1.251"
+  },
+  {
+   "name": "Claude Design (web app)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "standalone artboard designer that /design now replicates inside Claude Code"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "front-end design skill stacked with /design"
+  },
+  {
+   "name": "Taste skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "front-end design skill stacked with /design"
+  },
+  {
+   "name": "Fable 5",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'Using Fable 5 (from .claude\\settings.json)', medium effort"
+  },
+  {
+   "name": "Chase AI YouTube deep dive",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "creator's full walkthrough on YouTube"
+  }
+ ],
+ "claims": [
+  "/design is Claude Code's biggest design upgrade 'in a long time'",
+  "/design essentially inserts the standalone Claude Design web app into Claude Code itself",
+  "Creates as many variations as asked and places them on an artboard; demo had 3 landing-page variations in 3 styles",
+  "Clicking any component opens a detailed properties panel on the right where 'virtually anything' can be edited",
+  "Removes the old Claude Design -> share -> zip -> point Claude Code at it transfer step",
+  "Because it runs inside Claude Code, other skills (Impeccable, Taste) can be stacked with it"
+ ],
+ "how_to_steps": [
+  "In Claude Code (CLI or Desktop), type /design followed by your prompt",
+  "Optionally tell it to use other front-end skills like Impeccable or the Taste skill",
+  "Claude generates multiple variations on an artboard canvas",
+  "Click components to edit via the properties panel; iterate before committing",
+  "Pick one and have Claude Code implement it"
+ ],
+ "on_screen_only": [
+  "Tweet from @ClaudeDevs: 'Claude Code can design now. The new /design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop, built on artifacts. Run /design to get editable artboards for your UI -- pick one, tweak it, then have Claude implement it.'",
+  "Terminal header: Claude Code v2.1.251, Fable 5 with medium effort, C:\\Users\\Chase; 'Using Fable 5 (from .claude\\settings.json) +1 more /status'; 'bypass permissions on (shift+tab to cycle)'",
+  "Slash command autocomplete: '/design  Create a design canvas... multi-artboard visual...' and a second entry 'Grant or revoke Claude ... access to your Design'",
+  "Artboards named 'A -- The Time Clock', 'B -- The Brocade', 'C -- The Rhythm Section' for a payroll SaaS landing page: 'NOBODY PUNCHES IN FOR PAYROLL ANYMORE.' / 'A thousand small decisions, woven into one correct payday.' / 'Set payday once. It loops forever.'",
+  "Properties panel tabs Edit / Code / Tweaks; fields Content, Font, Size, Weight, Leading, Case, Sizing, Width, Height, Align, Grow, Position, Z-index; 'Commit changes' button",
+  "Long design brief in a side pane describing each variant's typography (Playfair/Newsreader/Space Grotesk) and 'three words' per concept"
+ ],
+ "cta": "Check out the full deep dive on the creator's YouTube",
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The liked set covers Claude Design (web app, /clone-site, handoff) and Impeccable/Taste, but not the new in-CLI /design skill (research preview) with editable artboards and a properties panel, nor stacking it with design skills in one session."
+ },
+ "relevance": {
+  "score": 5,
+  "why": "Direct Claude Code feature that collapses the design-to-code loop for a solo founder shipping app UIs; no new tool to buy."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Zero setup if Claude Code is current: run /design with a landing-page or screen brief, add 'use impeccable', pick a variant, implement. Worth doing on the next UI task."
+ },
+ "verify": [
+  "Is /design available on Haji's Claude Code version/plan (research preview may be gated)?",
+  "Does it require the Desktop app for the side panel or does the terminal open a browser artifact?",
+  "Token cost of generating 3 artboards per prompt on a Max plan"
+ ]
+}

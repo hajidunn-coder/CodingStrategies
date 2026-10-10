@@ -1,0 +1,69 @@
+{
+ "id": "7608452353460571423",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7608452353460571423",
+ "creator": "ethanplusai",
+ "title": "Bedroom tour of five autonomous agents running in parallel (3 Claude Code, 2 Cursor, plus Cowork) building a calendar-sync desktop app, an investor corporate site from 18 repos, a gallery SaaS, a client site and a marketing plan",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "three agents running 20+ minutes autonomously"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "two agents: gallery management SaaS and a client website"
+  },
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "has browser access; doing marketing plan and pricing"
+  },
+  {
+   "name": "Google Calendar / Apple Calendar",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "desktop app to sync all Google calendars into Apple Calendar, no hosting"
+  }
+ ],
+ "claims": [
+  "Five separate agents running simultaneously, each for at least 20 minutes unattended after 'complex planning'",
+  "One agent reads 18 repos and 3 live websites to plan a rebuild of the corporate site for investors with an easy pitch deck",
+  "Claude built a desktop app (no hosting) to sync every Google calendar into Apple Calendar",
+  "Cursor is building a before/after gallery management tool to release to clients",
+  "Cowork is producing marketing plans and pricing structure in real time"
+ ],
+ "how_to_steps": [
+  "Do detailed planning with each agent first",
+  "Launch separate agent sessions per project on separate screens/windows",
+  "Let them run autonomously 20+ minutes; check in across machines",
+  "Use Cowork (browser access) for non-code work like marketing and pricing in parallel"
+ ],
+ "on_screen_only": [
+  "Caption 'Building 5 projects at the same time with Claude' on every frame",
+  "Dark bedroom with several laptops/monitors showing Claude Code terminal diffs and a Cursor chat; a landing page titled 'Before & After Gallery Management'",
+  "Stack of Miller Lite cans and a Gatorade Zero on the desk"
+ ],
+ "cta": "none",
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content -- parallel-agent / multi-session workflows already covered (four-agent Cowork team, GStack, Paperclip); no new tool or technique, just a vibe tour"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Motivational, but no transferable specifics; Haji already runs multi-session Claude Code work."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement beyond 'plan first, then run several sessions', which is already practice."
+ },
+ "verify": [
+  "Whether any of the five projects actually shipped",
+  "Token/plan cost of five concurrent sessions"
+ ]
+}

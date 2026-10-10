@@ -1,0 +1,63 @@
+{
+ "id": "7685851431781272846",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7685851431781272846",
+ "creator": "duncanrogoff",
+ "title": "'base' / basemode (ChristopherKahler/base): Rust binary that replaces a bloated static CLAUDE.md with a live index of rules + project files, injecting only matching rules per prompt and re-indexing as you work",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "base / basemode",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "curl -fsSL https://raw.githubusercontent.com/ChristopherKahler/base/main/install.sh | sh ; installs to ~/.local/bin/base, config ~/.base-gbl/, edits ~/.claude/settings.json; Apache-2.0; version 0.15.1; rust single binary; BASE_VERSION pin; 'Works with Claude Code today · Codex and Antigravity - coming soon'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "target harness; integration via settings.json hooks"
+  }
+ ],
+ "claims": [
+  "Every Claude Code session loads your whole CLAUDE.md: 'frozen, bloated, half outdated'",
+  "base maps rules and projects into a live network and pulls only rules matching the current prompt",
+  "base watches the files you work on and updates itself so nothing goes stale",
+  "'Almost nobody has installed it yet'",
+  "README: 'Your agent is a genius with amnesia... No prompt to paste. No document to maintain. Same agent, briefed.'"
+ ],
+ "how_to_steps": [
+  "Run the install.sh one-liner (downloads release binary for your platform)",
+  "Run the starter/survey command in a workspace; base surveys repo dirs, skills, integrations, docs, recent commits, Makefile targets",
+  "It maps rules (e.g. 'never log or echo auth tokens', 'migrations only through schema.sql', 'colocate tests with the source') to files",
+  "base keeps a background watcher; files in the working set show 're-indexed'; rules show 'linked'"
+ ],
+ "on_screen_only": [
+  "README tabs: README, Contributing, License, Apache-2.0; 'The installer downloads the release binary for your platform to ~/.local/bin/base, writes global config to ~/.base-gbl/, in ~/.claude/settings.json'",
+  "'Pin a version with BASE_VERSION=v0.13.1'; 'Build from source'; 'base checks for a new release once per day in the background'",
+  "basemode. logo - 'THE MEMORY YOUR AGENTS WERE SUPPOSED TO SHIP WITH'; badges: license FSL-1.1-ALv2 (?), version 0.15.1, rust single binary, built for Claude Code",
+  "Example CLAUDE.md sections '2. Directory Layout', '3. Environment and Toolchain' (Node 20.x LTS, pnpm 9.x, Python 3.12, uv, Rust stable, Docker Desktop)",
+  "Claude Code session: 'Building the live network: multiple grounded domains + rules + milestones + decisions. Surveying first so nothing's invented.'",
+  "Working set panel: src/auth/session.ts, src/api/routes.ts, lib/db/schema.sql, components/AuthForm.tsx, tests/auth.spec.ts, CLAUDE.md, docs/conventions.md - all 're-indexed'",
+  "'Check my pinned comments'"
+ ],
+ "cta": "Link in pinned comment",
+ "relevance": {
+  "score": 3,
+  "why": "Addresses a real pain (CLAUDE.md growth, stale rules, token waste every session) for someone running many projects; competes with claude-mem and with Anthropic's own 'thin CLAUDE.md + skills' advice."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "One-line install but it rewrites ~/.claude/settings.json and runs a background daemon from an unknown author; trial it in one sandboxed project first. The cheaper win is the same thing done manually: thin CLAUDE.md, rules split into on-demand skills."
+ },
+ "verify": [
+  "Author/trust: who is ChristopherKahler; is the binary signed; what hooks does it add to settings.json?",
+  "License ambiguity: README says Apache-2.0 but badge looks like FSL-1.1",
+  "Token/latency overhead of the per-prompt injection vs a lean CLAUDE.md",
+  "Daily update check phones home?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "A specific tool for dynamic, per-prompt rule retrieval; liked set covered the 'keep CLAUDE.md thin' principle and claude-mem memory but not a rule-router daemon."
+ }
+}

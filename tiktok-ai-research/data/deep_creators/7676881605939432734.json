@@ -1,0 +1,63 @@
+{
+ "id": "7676881605939432734",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7676881605939432734",
+ "creator": "buildwithneej",
+ "title": "Orca: a desktop manager for many Claude Code sessions, organized by project folders, with one-click git worktrees, a file sidebar, per-session status, automations/tasks panels, and Pokemon pets",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Orca",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Not sponsored; UI shows sidebar Tasks, Automations, Agent Dashboard, Agents, Orca Mobile, Projects (content-hq, AlphaFlowOS, marketing-dept, engineering-dept, finance-dept...), worktree list, file tree; Pokemon sprites (Eevee) in terminal"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Terminal header 'Claude Code v2.1.239 Welcome back Neej!' and 'Fable 5 with xhigh effort'"
+  },
+  {
+   "name": "git worktrees",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "One-click worktree per project inside Orca"
+  }
+ ],
+ "claims": [
+  "Solves having 100 terminal sessions open and constant context switching that leads to distraction",
+  "Organizes projects by folder, shows all open sessions at once, opens a worktree per project in one click, shows each project's files in a sidebar",
+  "Lets you see each session's status so you move to the next task instead of doomscrolling while one runs",
+  "Not a paid sponsorship; supports adding Pokemon pets"
+ ],
+ "how_to_steps": [
+  "Install Orca (link via comment 'claw')",
+  "Add projects as folders; open Claude Code sessions inside",
+  "Create a worktree per task with one click; watch session status in the dashboard; browse files in the side panel"
+ ],
+ "on_screen_only": [
+  "Opening: 'Tired of a 100 Claude Sessions Open??'; multiple terminals showing 'Claude Code v2.1.239 Welcome back Neej!', 'Fable 5 with xhigh effort - Claude Max', 'Cost estimates added', '/release-notes'",
+  "Orca window: neofetch-style system panel (macOS Tahoe 26.3, MacBook Pro M4, Claude Code 2.1.239) with Eevee sprite; project 'content-hq' file tree: .claude, planning, assets, playwright-cli, engine, ideas, pixels, claude-free-8, claude-watermark, hole-reel, human-review-reel, hyperframes-test, last30days-reel, opus-downgrade, orca-reel, reddit-citations, ridgeline-eagle, rotation-story, seedance-25-presale, ten-ten-purchases, trending-github-aug16, trending-github-aug21, research, templates, tools; files CLAUDE.md, EMAIL-PIPELINE.md, MINDMAP-PIPELINE.md, MOSSFIRE.md, LINKEDIN-POST.md",
+  "Orca sidebar: Tasks, Automations, Agent Dashboard, Agents, Orca Mobile, Search; Projects: content-hq (worktrees listed), stoot, alfred, AlphaFlowOS, marketing-dept, engineering-dept, finance-dept, BuildwithNeej, moony, ...",
+  "Terminal shows 'auto mode on (shift+tab to cycle) - for agents'"
+ ],
+ "cta": "Comment 'claw' and he will send the project",
+ "relevance": {
+  "score": 4,
+  "why": "Haji runs several products in parallel with Claude Code; a session/worktree dashboard that keeps status visible is a direct fix for context-switching cost and distraction, and the creator's own layout (one folder per department: marketing/engineering/finance) is a useful pattern."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Try Orca for a week on existing projects (install only, no workflow rewrite). If it is immature, the fallback is Claude Code's built-in worktree support plus a tmux layout. Note the creator's 'content-hq with CLAUDE.md + pipeline .md files per content type' structure as a pattern."
+ },
+ "verify": [
+  "What exactly is Orca (repo/site), macOS-only?, open source or paid, and does it wrap the official Claude Code CLI or a reimplementation?",
+  "Does it work with Claude Max subscription auth without an API key?",
+  "Stability: 'Orca Mobile' and 'Automations' panels suggest an ambitious young project; check maintenance"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has personal dashboards (AIOS) and agent org charts, but no multi-session/worktree manager for Claude Code; Orca is new, as is the glimpse of a per-department project folder structure with pipeline markdown files."
+ }
+}

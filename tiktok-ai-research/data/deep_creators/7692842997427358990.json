@@ -1,0 +1,56 @@
+{
+ "id": "7692842997427358990",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7692842997427358990",
+ "creator": "duncanrogoff",
+ "title": "Anthropic cut over 80% of Claude Code's built-in instructions; run /doctor to find unused skills, a bloated CLAUDE.md and wasted tokens (his 113 skills cost ~10,700 tokens/session, 25 never used); keep CLAUDE.md short and point to skills",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "/doctor (Claude Code)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'> /doctor  I'll run the full health check now.'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "system prompt cut >80%; source credited on screen to 'Thariq, Claude Code team'"
+  }
+ ],
+ "claims": [
+  "Over 80% of Claude Code's built-in instructions were removed and coding scores held",
+  "/doctor scans your setup for unused skills, bloated CLAUDE.md and wasted tokens",
+  "His 113 personal skills ate about 10.7k tokens every session; 25 were never used once",
+  "Don't add more rules; keep CLAUDE.md short and point it to skills",
+  "Anthropic's other new rules (on screen): Give Claude Judgement, Design Interfaces, Use Progressive Disclosure, Simple Tool Descriptions, Auto-memory, Rich References"
+ ],
+ "how_to_steps": [
+  "Type /doctor in Claude Code",
+  "Delete or archive skills it reports as never used",
+  "Trim CLAUDE.md to essentials and reference skills for the rest"
+ ],
+ "on_screen_only": [
+  "'Make Claude Code faster by deleting rules'; '-80% Source: Thariq, Claude Code team'",
+  "Terminal line: 'your 113 personal skills eat about 10.7k tokens of ...'",
+  "Rules card: Give Claude Judgement / Design Interfaces / Use Progressive Disclosure / Simple Tool Descriptions / Auto-memory / Rich References",
+  "YouTube thumbnail 'HOLY SH*T /doctor' - full breakdown"
+ ],
+ "cta": "Comment 'Yeti' for the full breakdown",
+ "relevance": {
+  "score": 4,
+  "why": "Direct token/cost hygiene for a heavy Claude Code user with many skills; Haji's own skill list is long."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Run /doctor today, prune unused skills, thin CLAUDE.md. Already in the liked set, so this is confirmation rather than new work."
+ },
+ "verify": [
+  "Does /doctor report per-skill token cost and usage counts in the current build, or is that the creator's own tally?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked 'Anthropic cut 80%+ of Claude Code's system prompt... run /doctor'; adds only the 113-skills/10.7k-token anecdote."
+ }
+}

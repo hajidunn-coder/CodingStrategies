@@ -1,0 +1,66 @@
+{
+ "id": "7690245663312841998",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7690245663312841998",
+ "creator": "duncanrogoff",
+ "title": "Three free design skills to stop the 'same AI look' (purple gradients, cards in cards): Anthropic's frontend-design skill, taste-skill (3 dials), and Impeccable (24 commands + 61 anti-AI-look rules)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Frontend Design skill (Anthropic)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "github.com/anthropics/skills shown on screen (178K stars badge); instructs Claude to act as design lead at a studio; rule 'spend your boldness in one place'"
+  },
+  {
+   "name": "taste-skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Leonxlnx/taste-skill on screen (89.9K stars); three 1-10 dials: layout, motion, density"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "pbakaus/impeccable (impeccable.style); 24 design commands e.g. /impeccable polish, bolder, quieter; 61 rules that scan a page for the AI look; built on top of the Anthropic frontend-design skill"
+  }
+ ],
+ "claims": [
+  "Without these skills every AI website looks the same: purple gradients, cards inside cards",
+  "taste-skill has ~89,000 GitHub stars (on-screen badge 89.9K); anthropics/skills shows 178K",
+  "Impeccable gives Claude 24 design commands plus 61 rules that scan your page for the AI look",
+  "Impeccable is built on top of Anthropic's frontend-design skill",
+  "All three are free and open source"
+ ],
+ "how_to_steps": [
+  "Install Anthropic's frontend-design skill from anthropics/skills so Claude designs like a studio lead and concentrates boldness in one place",
+  "Install taste-skill and set the three dials (layout, motion, density) from 1 to 10",
+  "Install Impeccable and use its commands (e.g. /impeccable quieter 'turn a loud design down without losing what it meant') and let its 61-rule audit catch the AI look (demo shows a purple 'Build the Future With AI Magic' hero flagged CAUGHT)"
+ ],
+ "on_screen_only": [
+  "Headline 'Why AI websites all look the same'; example hero 'Build the Future With AI Magic' (purple gradient) labeled SAME AI LOOK; dashboard screenshot labeled CARDS IN CARDS",
+  "01 Frontend Design: github.com/anthropics/skills, text 'Approach this as the design lead at ... distinct visual identity that is not mis...'",
+  "02 Taste Skill: taste-skill page, 89.9K stars; dial UI LAYOUT / MOTION / DENSITY each 1-10",
+  "03 Impeccable: impeccable.style tagline 'The missing design vocabulary for agents.'; command card '/impeccable quieter' with tags REFINE, FADER, 'Turn a loud design down without losing what it meant.'; stacked cards 'bolder', 'polish'",
+  "Closing slide 'All free & open source': anthropics/skills 178K, Leonxlnx/taste-skill 89.9K, pbakaus/impeccable (star count obscured, ends in K)"
+ ],
+ "cta": "Comment 'taste' for the three links",
+ "relevance": {
+  "score": 4,
+  "why": "Haji ships app front-ends with Claude Code; a 40-second concrete stack of three free, well-starred skills that fix the generic AI look is directly usable and costs minutes to install."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install anthropics/skills frontend-design + pbakaus/impeccable (and optionally taste-skill) into the Claude Code skills folder; run /impeccable audit on existing app pages. Under 30 minutes; the Impeccable + taste pair is already endorsed in the liked set, this adds the official Anthropic skill as the base layer."
+ },
+ "verify": [
+  "Confirm the anthropics/skills repo actually contains a 'frontend-design' skill and the 178K-star figure (likely the whole repo, not the skill)",
+  "Confirm taste-skill repo is Leonxlnx/taste-skill and star count (~89.9K seems high; could be inflated)",
+  "Check whether Impeccable's '24 commands / 61 rules' matches the current README and that it declares a dependency on the Anthropic frontend-design skill",
+  "Test on one real page whether the three skills conflict (overlapping instructions can dilute each other)"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set already covers Impeccable, taste-skill and awesome-design; new here is Anthropic's own frontend-design skill in anthropics/skills as the base layer Impeccable builds on, plus the specific 'spend your boldness in one place' rule and the 24-command/61-rule breakdown."
+ }
+}

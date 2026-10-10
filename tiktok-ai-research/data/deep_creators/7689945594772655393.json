@@ -1,0 +1,72 @@
+{
+ "id": "7689945594772655393",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7689945594772655393",
+ "creator": "ai_vanta_ai",
+ "title": "Four plugins pitched to end Claude Code token limits: OmniRoute (free-model fallback), Headroom (prompt compression proxy), claude-mem (cross-session memory), 'Claude Code setup' (auto-builds skills from how you work)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "OmniRoute",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'200+ free AI models', auto-switches when one hits its limit"
+  },
+  {
+   "name": "Headroom",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "On-screen: 'The context compression layer for AI agents', '60-95% fewer tokens', 'library - proxy - MCP - 6 algorithms - local-first - reversible', Apache-2.0, links Docs/Install/Proof/Agents/Discord/llms.txt/Enterprise"
+  },
+  {
+   "name": "claude-mem",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Long-term memory across Claude Code sessions"
+  },
+  {
+   "name": "Claude Code setup ('CLAUDE CODE-MY SETUP' logo)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Analyzes codebase, watches how you work, auto-generates skills for repeated tasks, recommends MCPs and sub-agents; on-screen terminal lists custom agents/skills with token counts"
+  }
+ ],
+ "claims": [
+  "OmniRoute gives access to 200+ free AI models and switches automatically at limits ('practically unlimited tokens')",
+  "Headroom compresses prompts before they reach Claude Code; on-screen claims 60-95% fewer tokens, 6 algorithms, reversible, local-first",
+  "claude-mem removes the need to re-explain your codebase each new chat",
+  "'Claude Code setup' analyzes the codebase, watches daily work, and auto-builds skills for repeated tasks plus tells you which MCPs and sub-agents to use"
+ ],
+ "how_to_steps": [
+  "Install OmniRoute as a model fallback",
+  "Put Headroom in front of Claude Code as a compression proxy/MCP",
+  "Install claude-mem for session memory",
+  "Run the Claude Code setup tool to generate skills/agents from your repo and habits"
+ ],
+ "on_screen_only": [
+  "Opening dashboard: 'STILL STOPPED' with rows Claude Code, NeuraCloud, SwiftAI, ByteMind, FlowAI all showing '429 quota_exceeded' and $0.00; 'Error: 429 quota_exceeded - session halted'; banner 'SAVE YOUR TOKENS [With 4 plugins]'",
+  "Logo cards: CLAUDE CODE-MY SETUP, claude-mem, HEADROOM; laptop '89% LIMIT REACHED'",
+  "Headroom site: 'HEADROOM The context compression layer for AI agents', badges '60-95% fewer tokens', 'library - proxy - MCP - 6 algorithms - local-first - reversible', Apache-2.0 license, 'AI agents / LLMs: read llms.txt'",
+  "Terminal listing: mcp__claude_ai_Notion-create-comment / get-comments / get-teams / get-users; 'Custom agents: /agents' with 'code-reviewer: 335 tokens'; 'Skills: /skills' with doc-helper 48, pr-description 37, documentation 34, commit-message 32, debugging 29 tokens",
+  "Agent chat mock: 'How's the beta going? Put together an update and file tickets for the top customer requests' with steps 'Fetching active users and conversions', 'Checking customer calls', 'Filing tickets for top requests', 'Writing beta update'"
+ ],
+ "cta": "Comment 'plugins' for the full setup guide",
+ "relevance": {
+  "score": 3,
+  "why": "Token limits are a real constraint for a solo founder on a Max plan; Headroom (compression proxy) and the auto-skill-builder are new candidates, though the video is a templated listicle with 35 views and no demo."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "claude-mem is already in the liked set; Headroom is worth a 1-hour trial as an MCP/proxy if its 'reversible' compression does not corrupt code context. The 'Claude Code setup' auto-skill tool is attractive for a time-poor founder but needs the repo name first."
+ },
+ "verify": [
+  "Headroom: exact repo/org, whether the 60-95% figure covers code-heavy contexts, and whether compression is lossless for code (reversible claim)",
+  "'Claude Code setup': real repo name (logo reads 'CLAUDE CODE-MY SETUP'); does it 'watch how you work' via hooks/transcripts, and what does it send where?",
+  "OmniRoute '200+' here vs '300+' in forcceee_/honeycove videos: inconsistent, marketing numbers",
+  "Routing production code through free third-party models: data terms and output quality"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set covers OmniRoute and claude-mem; new are Headroom (a context-compression proxy/MCP with claimed 60-95% reduction) and a 'Claude Code setup' tool that auto-generates skills and sub-agent recommendations from your repo and habits."
+ }
+}

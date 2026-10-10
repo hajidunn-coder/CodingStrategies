@@ -1,0 +1,86 @@
+{
+ "id": "7691049404924480782",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7691049404924480782",
+ "creator": "duncanrogoff",
+ "title": "'generate' Claude skill (Blotato skills repo) + a kie.ai key turns Claude into a pay-per-image studio ($0.04/image, credits never expire) with saved style presets",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "generate (Claude skill)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "GitHub breadcrumb 'blotato-skills / blotato / skills / generate' under github.com/Blotato-Inc/...; folders shown: models, presets; labeled FREE SKILL"
+  },
+  {
+   "name": "kie.ai",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "API key pasted into Claude; aggregator that runs the image models; per-image pricing, credits do not expire"
+  },
+  {
+   "name": "Nano Banana 2",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "shown as cheapest pick at $0.04 for '3 product photos of my candle'"
+  },
+  {
+   "name": "GPT Image 2",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "alternative at $0.05"
+  },
+  {
+   "name": "Higgsfield",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the monthly-subscription image/video tool this is pitched as replacing"
+  },
+  {
+   "name": "Claude (Code/desktop)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "host for the skill"
+  }
+ ],
+ "claims": [
+  "The 'generate' skill is free; Higgsfield charges monthly and unused credits expire",
+  "Claude picks the cheapest model for the job automatically",
+  "Images start at $0.04 (kie.ai); credits never expire",
+  "Save a style once as a preset so every image matches without retyping; every image is saved with its exact prompt",
+  "Creator's guide includes setup + three prompts (product photos, brand preset, before/after)"
+ ],
+ "how_to_steps": [
+  "Install the 'generate' skill into Claude (from the Blotato skills GitHub repo)",
+  "Create a kie.ai account, paste its API key into Claude",
+  "Ask for images in plain language (e.g. '3 product photos of my candle'); Claude chooses the model by price",
+  "Define a preset (colors, lighting, mood -> 'brand style') once and reuse it across images",
+  "Prompts are logged alongside each image for reuse"
+ ],
+ "on_screen_only": [
+  "'Your own AI image studio inside Claude'",
+  "GitHub path: blotato-skills / blotato / skills / generate (github.com/Blotato-Inc/blo...), folders 'models', 'presets'",
+  "'NANO BANANA 2 · $0.04' vs 'GPT IMAGE 2 · $0.05' cost comparison card",
+  "'$0.04 PER IMAGE kie.ai NEVER EXPIRE'",
+  "Preset diagram: Colors + Lighting + Mood -> Brand style -> Image 1/2/3",
+  "Guide prompts: PRODUCT PHOTOS, BRAND PRESET, BEFORE / AFTER"
+ ],
+ "cta": "Comment 'Studio' for the guide",
+ "relevance": {
+  "score": 3,
+  "why": "Cheap, scriptable product/marketing images from inside Claude Code is useful for app store assets and landing pages; the preset idea is the transferable part."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Low effort: install one skill + one API key. Worth trying if Haji needs recurring brand imagery; otherwise the existing Gemini/Nano Banana or Higgsfield routes already liked do the same job."
+ },
+ "verify": [
+  "Does Blotato-Inc/blotato-skills 'generate' exist and is it maintained; is Blotato (a social scheduler) using it as lead-gen?",
+  "kie.ai pricing and reliability; is $0.04 real for Nano Banana 2 at usable resolution?",
+  "Does the skill phone home or require a Blotato account?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New tool pair (Blotato 'generate' skill + kie.ai model aggregator) and the 'style preset saved once' pattern; liked set covered Higgsfield API skill and Gemini Nano Banana but not a cheapest-model-picker with presets."
+ }
+}

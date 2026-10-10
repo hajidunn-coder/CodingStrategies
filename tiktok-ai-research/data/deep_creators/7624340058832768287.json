@@ -1,0 +1,57 @@
+{
+ "id": "7624340058832768287",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7624340058832768287",
+ "creator": "ethanplusai",
+ "title": "/visualplanner skill (github.com/ethanplusai/visualplanner): turns a Claude Code markdown plan into an interactive HTML page with per-section thumbs up/down and comments, then a copy button pastes all feedback back into Claude Code",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "visualplanner skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "github.com/ethanplusai/visualplanner (Public, 1 branch); invoked as /visualplanner; generates an HTML breakdown with review widgets and a copy-feedback button"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Terminal shows a background agent 'Generate visual plan HTML' and plan file docs/superpowers/plans/2026-04-02-cosmic-explorer.md; 'bypass permissions on'"
+  }
+ ],
+ "claims": [
+  "Markdown plans are hard to review for visual people; the skill renders the plan as a UI",
+  "Each section gets thumbs up / thumbs down or comments; a copy button exports all feedback to paste back into Claude Code",
+  "Demo output: 'Hero with key stats (120K stars...)', '7 scrollable sections with fade-in', 'Implementation roadmap with all 1x tasks', 'HUD mockup showing the minimal UI', 'Review system on every section', arrow keys navigate sections",
+  "General advice: find friction in your workflow, make a skill for it, install it"
+ ],
+ "how_to_steps": [
+  "Have Claude Code write a detailed plan (demo plan lives under docs/superpowers/plans/)",
+  "Run /visualplanner; a background agent generates an interactive HTML breakdown and opens it in the browser",
+  "Walk the sections (arrow keys), thumbs up/down or comment on each",
+  "Press the copy button and paste the feedback into Claude Code; it now has all review notes",
+  "Download the skill from github.com/ethanplusai/visualplanner"
+ ],
+ "on_screen_only": [
+  "Terminal: 'Task 13 ... Minor feature, can go in polish', 'docs/superpowers/plans/2026-04-02-cosmic-explorer.md', 'Subagent-Driven (recommended) - dispatch a fresh agent per task, review between tasks', 'Inline Execution - Execute tasks in this session, batch execution with checkpoints', 'Let me read the reference files and build the visual breakdown', 'Agent(Generate visual plan HTML)', 'Background agent ... 2 background tasks still running', 'Bash(open /Users/ethanrogers/Desktop/ethanplusai/cosmic-explorer-breakdown.html)', 'The visual breakdown is ready', '/visualplanner', 'bypass permissions on - 1 shell'",
+  "Browser: 'Cosmic Explorer' hero page; sections 'Living Solar System', 'Post-Processing Stack', 'Architecture', 'Visual Design', 'Rendering Pipeline' with comment boxes and thumbs widgets",
+  "GitHub: github.com/ethanplusai/visualplanner, Public, 1 Branch, 0 Tags, commits 'Initial release', 'Remove scre...'; browser bookmarks include Livi, Client, Claude"
+ ],
+ "cta": "Grab the skill from his GitHub",
+ "relevance": {
+  "score": 4,
+  "why": "Plan review is the highest-leverage human step for a solo founder, and reviewing a rendered page with inline comments is faster and more accurate than scrolling markdown; the skill is free and tiny."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install ethanplusai/visualplanner as a Claude Code skill (minutes). Could be combined with the phased-plan gate so each phase page is approved before build. Risk: generating HTML for every plan costs tokens; use on large features only."
+ },
+ "verify": [
+  "Repo exists and skill format matches current Claude Code skills; check whether it depends on the Superpowers plan folder convention (docs/superpowers/plans/) seen on screen",
+  "Does the HTML open locally without a server, and does feedback copy as structured text Claude can act on?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has open-slide's comment-to-edit loop for slides and Claude Motion, but not a skill that renders a coding plan as a reviewable HTML page with per-section votes/comments fed back into Claude Code."
+ }
+}

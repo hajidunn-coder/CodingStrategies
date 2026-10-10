@@ -1,0 +1,58 @@
+{
+ "id": "7672914950075010335",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7672914950075010335",
+ "creator": "buildwithneej",
+ "title": "Impeccable 4.0 'Worlds': 100+ human-rated design systems compete against Claude's own idea for one prompt, and 'Impeccable Live' shows clickable visual previews of each variant in the browser before Claude builds the winner",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Impeccable (4.0, 'Worlds')",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "GitHub repo page on screen: 'The design language that makes your AI harness better at design.', impeccable.style, Apache-2.0, 58.2k stars, 3.6k forks, 24 branches, 37 issues, 13 PRs"
+  },
+  {
+   "name": "Impeccable Live",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Local browser UI at 127.0.0.1:37674 titled 'taketenmin.com - choose the visual world'; shows multiple design 'worlds' with 'Build this' buttons"
+  }
+ ],
+ "claims": [
+  "One prompt yields a handful of completely different designs",
+  "Version 4.0 ('Worlds') ships 100+ design systems, all rated by a human",
+  "Claude's own design idea competes against the library and the winning direction is built",
+  "Impeccable Live gets you out of the terminal to preview and click around each variant, then pick one",
+  "Free, 'over 50,000 stars' (screen shows 58.2k)"
+ ],
+ "how_to_steps": [
+  "Install Impeccable 4.0 from GitHub",
+  "Run it on a site prompt; it proposes several 'worlds' (e.g. Minishomp Room, The Darkroom, Phosphor Terminal, Cloud Quarry) plus Claude's own idea",
+  "Open Impeccable Live in the browser (localhost), preview and click each design, choose one with 'Build this'",
+  "Claude then builds the chosen direction"
+ ],
+ "on_screen_only": [
+  "GitHub header: 'impeccable' repo, Code / Issues 37 / Pull requests 13, Watch 167, Fork 3.6k, 58.2k stars, 24 branches, Apache License 2.0, link impeccable.style, folder .github updated '4 hours ago'",
+  "Browser at 127.0.0.1:37674: 'IMPECCABLE - taketenmin.com - choose the visual world'; subtitle 'The roll assigned The Darkroom. Keep it, take an alternate, or re-roll.'; cards: 'Minishomp Room' ('Your ten minutes as a cozy... pixel room'), 'Take Ten Minutes' (the category standard), 'The Darkroom', 'Phosphor Terminal' ('Ten minutes as a breathing cursor on curved glass'), 'Cloud Quarry'; each with 'Build this'; a status line 'TRUST, OBSERVED.'",
+  "Rendered result pages: 'Take Ten Minutes' timer site and a 'STRATOSAFE - BUILD IN BETTER WEATHER' hero with arctic imagery"
+ ],
+ "cta": "Comment 'design' to get the GitHub link",
+ "relevance": {
+  "score": 4,
+  "why": "Haji builds customer-facing apps; the pick-from-previews flow turns the slowest part of design iteration (describing taste in words) into a 2-minute visual choice, and Impeccable is already endorsed in the liked set."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Update to Impeccable 4.0 and try Impeccable Live on the next landing page or app shell; ~30 minutes. Risk is that 'worlds' bias toward showy marketing sites rather than utility app UIs."
+ },
+ "verify": [
+  "Confirm Impeccable 4.0 / 'Worlds' and 'Impeccable Live' exist in the pbakaus/impeccable repo and how Live is launched (localhost port 37674 in demo)",
+  "Star count: 58.2k on screen vs 'over 50,000' spoken; fine, but check current",
+  "Whether the 100+ design systems are licensed for commercial app use and 'rated by a human' means anything measurable"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Impeccable itself is in the liked set, but the 4.0 'Worlds' competition mechanic (library designs vs Claude's own idea) and the Impeccable Live browser preview/pick loop are new."
+ }
+}

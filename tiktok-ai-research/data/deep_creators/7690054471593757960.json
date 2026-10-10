@@ -1,0 +1,77 @@
+{
+ "id": "7690054471593757960",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7690054471593757960",
+ "creator": "brooke_wrightmode",
+ "title": "Five resource sites for AI coding: skills.sh (skills directory), an official MCP servers marketplace, 21st.dev (12,000+ UI components), LottieFiles (animations) and Mixkit (free video templates)",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "skills.sh",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "directory of ready-made skills for Claude, Codex, any coding agent"
+  },
+  {
+   "name": "MCP marketplace (Official MCP Servers page)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'marketplace full of connectors'; screen shows an 'Official MCP Servers' listing"
+  },
+  {
+   "name": "21st.dev",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "12,000+ UI component templates, themes, shaders, gradients; tagline 'The living library of interfaces'"
+  },
+  {
+   "name": "LottieFiles",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "free animated icons, backgrounds, transitions, motion graphics usable by Claude Code / Codex"
+  },
+  {
+   "name": "Mixkit",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "free video templates for Premiere Pro, After Effects, Final Cut, DaVinci Resolve"
+  }
+ ],
+ "claims": [
+  "21st.dev has more than 12,000 UI component templates, themes, shaders and gradients",
+  "LottieFiles assets can be used by Claude Code and Codex",
+  "Mixkit templates are free"
+ ],
+ "how_to_steps": [
+  "Browse skills.sh for ready-made skills",
+  "Pick connectors from the MCP marketplace",
+  "Pull components from 21st.dev to replace AI-slop UI",
+  "Add Lottie animations",
+  "Use Mixkit templates for video",
+  "Comment 'sites' for the setup guide"
+ ],
+ "on_screen_only": [
+  "skills.sh leaderboard-style list screenshot",
+  "'Official MCP Servers' page with cards (Pinecone, ElevenLabs, Braintrust, Box visible)",
+  "21st.dev hero 'The living library of interfaces'",
+  "LottieFiles animation grid; Mixkit 'New videos' grid with Nature / Lifestyle / Animals / Food categories",
+  "Creator handle wright_mode"
+ ],
+ "cta": "Comment 'sites' to get the full list and setup guide; save and follow",
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content -- skills.sh (via find-skills) and 21st.dev are already liked; LottieFiles and Mixkit are minor additions"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Shallow listicle; only LottieFiles is a small new asset source for app polish."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Bookmark LottieFiles for loading/empty-state animations; rest already known."
+ },
+ "verify": [
+  "Which 'MCP marketplace' she means (modelcontextprotocol.io registry vs a third party)",
+  "LottieFiles free-tier license for commercial apps"
+ ]
+}

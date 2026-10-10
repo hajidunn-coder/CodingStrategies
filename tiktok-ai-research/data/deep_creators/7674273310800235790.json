@@ -1,0 +1,54 @@
+{
+ "id": "7674273310800235790",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7674273310800235790",
+ "creator": "chase.builds.ai",
+ "title": "Explainer: Claude Code subagents have their own context window and return only the answer; fan out 3 agents for a codebase audit; a ~23k-star library of ready-made subagents (code reviewer, security auditor, docs writer)",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude Code subagents",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in feature: main agent delegates, reads back only the result"
+  },
+  {
+   "name": "Awesome Claude Code subagents library (unnamed, ~23k stars)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "ready-made subagents: code reviewer, security auditor, docs writer; link in bio"
+  }
+ ],
+ "claims": [
+  "A subagent is a second Claude with its own context window; main agent hires it, hands it a job, reads back only the answer",
+  "This fixes the biggest Claude Code complaint: running out of context on big repos",
+  "Codebase audit fans out three agents in parallel, each reading a different part",
+  "A library with almost 23,000 stars provides drop-in subagents"
+ ],
+ "how_to_steps": [
+  "Ask Claude Code for a codebase audit and let it fan out parallel subagents",
+  "Drop ready-made subagent definitions from the 23k-star repo into your project",
+  "Delegate specialized tasks instead of one agent doing everything"
+ ],
+ "on_screen_only": [
+  "Caption cards: 'agents commanding agents', 'subagent = own context', 'the context fix', '3 agents in parallel', 'delegate', 'follow for more'",
+  "GitHub repo screenshot with star count circled, labeled '23K-star library' (repo name not legible)"
+ ],
+ "cta": "Repo link in bio; follow for more",
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content -- subagent orchestration (WWWHH handoff, four-agent Cowork team, GStack) already covered; the only addition is an unnamed 23k-star subagent collection"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Basic explainer; Haji already runs subagents."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Possibly skim the subagent library for a security-auditor definition; otherwise nothing new."
+ },
+ "verify": [
+  "Identify the 23k-star repo (likely an 'awesome-claude-code-subagents' collection) and its maintenance",
+  "Quality of drop-in subagent prompts vs writing your own"
+ ]
+}

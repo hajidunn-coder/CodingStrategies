@@ -1,0 +1,51 @@
+{
+ "id": "7693596608574868767",
+ "url": "https://www.tiktok.com/@alanonai/video/7693596608574868767",
+ "creator": "alanonai",
+ "title": "Before letting Claude Code/Codex build a feature, ask 'what decisions should I make before I start working on this?' then record your decisions so the AI follows your plan, not its own",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "works with any coding assistant"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "same"
+  }
+ ],
+ "claims": [
+  "The AI will list decisions it would otherwise have made silently on your behalf",
+  "Making and recording those decisions first yields an app that is yours and that you understand, with fewer end-stage surprises",
+  "Creator has coded for several decades and worked with AI since the 90s"
+ ],
+ "how_to_steps": [
+  "Instead of 'start working on feature X', prompt: 'I want to work on feature X. What decisions should I make first?'",
+  "Review the list, make each decision",
+  "Record the decisions (plan/spec file) and instruct the AI to follow them"
+ ],
+ "on_screen_only": [
+  "Caption overlays only (e.g. 'WHAT DECISIONS SHOULD I MAKE BEFORE I START WORKING ON THIS', 'AND RECORD')"
+ ],
+ "cta": "Let me know if helpful",
+ "relevance": {
+  "score": 4,
+  "why": "Zero-cost prompt that fits plan mode and a veteran operator's instinct to own decisions; directly reduces rework on solo builds."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Trivial: bake the question into a /plan or /spec skill (or CLAUDE.md) so every feature starts with a decisions list written to a DECISIONS.md."
+ },
+ "verify": [
+  "None needed; try on the next feature and judge the decision list quality"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "A concrete pre-build prompt ('what decisions should I make first') that complements the liked /spec /plan /build commands and Karpathy's 'state assumptions' rule."
+ }
+}

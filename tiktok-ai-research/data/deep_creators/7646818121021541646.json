@@ -1,0 +1,54 @@
+{
+ "id": "7646818121021541646",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7646818121021541646",
+ "creator": "youraveragetechbro",
+ "title": "Two home-made skills, /phased-plan and phase-implementation: plans are split into tiny user-testable phases and the AI may not start the next phase until the human reviews and approves, to avoid 10,000-line PRs",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "/phased-plan skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Creator-authored Claude Code / Codex skill; forces every plan phase to be a small chunk testable from both client and backend"
+  },
+  {
+   "name": "phase-implementation skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Tells the AI to implement only one phase, then stop until the human reviews and says go"
+  }
+ ],
+ "claims": [
+  "Writing code is no longer the limiting factor; the reviewer's mental bandwidth is",
+  "Each phase must be user-testable from the client side and the backend side",
+  "Result: far fewer gigantic 10,000-line PRs, smaller PRs, cleaner git history",
+  "Works for both Claude Code and Codex"
+ ],
+ "how_to_steps": [
+  "Create a /phased-plan skill that instructs the model to break a feature plan into very small phases, each independently testable by a user end to end",
+  "Create a phase-implementation skill that restricts the model to one phase at a time and requires explicit human approval before continuing",
+  "Review and approve each phase, producing one small PR per phase"
+ ],
+ "on_screen_only": [
+  "Title text 'my most used Claude Code/Codex Skill'; caption shows the slash command as '/phased-plan'"
+ ],
+ "cta": "Watch the linked video on his other AI coding skills (no comment/DM ask)",
+ "relevance": {
+  "score": 5,
+  "why": "Directly addresses a time-poor solo founder's bottleneck: reviewing what Claude wrote. Two tiny skills enforce vertical slices with a human gate, cutting review load and regressions."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Write two SKILL.md files in ~20 minutes (phase planning rules + 'stop after one phase and wait for approval'); no dependencies. Compose with the existing /plan-/build-style commands already in the liked set."
+ },
+ "verify": [
+  "The skills are not published in the video; a researcher must write their own or find them on the creator's channel",
+  "Check that 'stop and wait for approval' actually holds in Claude Code auto/accept-edits modes (model may continue unless the skill is firm)",
+  "Measure whether phase size reduces total tokens or increases them via repeated context reloads"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has ordered command packs (/spec /plan /build) and verification skills, but not the technique of forcing every plan phase to be a user-testable vertical slice with a hard human approval gate between phases."
+ }
+}

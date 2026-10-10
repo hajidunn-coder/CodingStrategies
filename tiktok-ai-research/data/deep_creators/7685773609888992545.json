@@ -1,0 +1,73 @@
+{
+ "id": "7685773609888992545",
+ "url": "https://www.tiktok.com/@forcceee_/video/7685773609888992545",
+ "creator": "forcceee_",
+ "title": "Four 'must-install' Claude Code plugins for vibe coding: Ponytail (token cut), OmniRoute (free-provider fallback), Graphify (codebase knowledge graph), Agentscribe 24-skill pack",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Ponytail",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "On-screen: /plugin marketplace add DietrichGebert/ponytail then /plugin install ponytail@ponytail; claims >50% token cut with no accuracy loss"
+  },
+  {
+   "name": "OmniRoute",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Router across 300+ free AI providers; auto-switches when usage limit hits; 'up to 1.6B free tokens/month'; on-screen Free-Tier Budget 1.4B / 1.6B with Kiro, Qoder rows"
+  },
+  {
+   "name": "Graphify",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Turns codebase into a knowledge graph so the agent stops rereading files; demoed inside a 'DevSwarm' IDE with 'graphify' command and 'Install graphify and resolve Python interpreter'"
+  },
+  {
+   "name": "Agentscribe / 'Agent Skills' (24 skills)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Pack of 24 skills 'by the former AI engineering director at Google'; dedicated planning/coding/testing/publishing skills auto-activated by stage; on-screen pills Spec / Plan / Build"
+  }
+ ],
+ "claims": [
+  "Ponytail cuts token usage by over 50% without losing any accuracy",
+  "OmniRoute connects to over 300 free AI providers and gives up to 1.6 billion free tokens every month, auto-switching when a limit is hit",
+  "Graphify builds a knowledge graph of the whole codebase so the agent does not waste tokens rereading files",
+  "Agentscribe is 24 skills built by a former Google AI engineering director and activates the right one by coding stage on its own"
+ ],
+ "how_to_steps": [
+  "Add the Ponytail marketplace and install the plugin (/plugin marketplace add DietrichGebert/ponytail; /plugin install ponytail@ponytail)",
+  "Set up OmniRoute as a fallback router so Claude Code switches to free providers when the subscription limit is reached",
+  "Install Graphify and run it on the repo to build the knowledge graph before coding",
+  "Install the 24-skill Agentscribe pack and let it pick planning/coding/testing/publishing skills by stage"
+ ],
+ "on_screen_only": [
+  "Terminal: '/plugin install ponytail@ponytail', '/plugin marketplace add DietrichGebert/ponytail'; status lines 'Opus 4.8 is here! Now defaults to high effort - /effort xhigh for your hardest tasks', 'Please read /Users/poshan/devswarm/repos/.../THIN-9-openai-cost-guardrails-spending-cap-per-user-quota-1/...', '/remote-control is active - Continue here, on your phone, or at https://claude.ai/code/session_...', 'DevSwarm context loaded', 'Brewed for 9s', '/gsd:update | Opus 4.8 (1M context)', 'Auto-update failed - Try /doctor or npm i -g @anthropic-ai/cla...'",
+  "Red terminal with 'usage limit reached' error and 'OUT OF TOKENS - UPGRADE TO CONTINUE' banner",
+  "OmniRoute dashboard: 'Free-Tier Budget 1.4B / 1.6B this month', rows Kiro (50 cr), Qoder; footer 'Pool-deduped and honest - no inflated multi-B claims.'",
+  "Graphify logo card 'THIRD'; DevSwarm IDE running graphify: 'Check for existing graphify graph', 'Bash: Install graphify and resolve Python interpreter'",
+  "'number four Agent Skills' card with pills Spec, Plan, Build; diagram Bash / Agent / Anywhere; a long essay page about 'Agency is trained, not coded' and 'What an Agent is NOT'"
+ ],
+ "cta": "Follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already uses Claude Code on a subscription; Ponytail and Graphify could cut token burn and context waste, but this is a scripted roundup (same script reused by ai.honeycove) with no demo of results. "
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Ponytail install is two slash commands and already endorsed in the liked set; Graphify is the only genuinely new candidate (try on one repo, ~1 hour). OmniRoute fallback to random free providers is a quality/security risk for production app code; the 24-skill pack is unverified."
+ },
+ "verify": [
+  "Ponytail: does DietrichGebert/ponytail exist and is the >50% figure measured or marketing? (liked set's caveman fact-check found ~30% for a similar skill)",
+  "OmniRoute: what are the 300 'free' providers, what are their data-retention terms, and does routing app code through them leak IP?",
+  "Graphify: exact repo, does it support Claude Code hooks, and does graph build time pay for itself on a small app repo?",
+  "Agentscribe: who is the 'former AI engineering director at Google', repo name, and are the 24 skills maintained? The transcript name differs across uploads ('agentscribe' vs 'agent skills')",
+  "This exact script appears verbatim on ai.honeycove (7683640993203113229): likely a paid/templated script, so treat claims as copy, not testing"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set covers Ponytail and OmniRoute; new items are Graphify (codebase knowledge graph to cut rereads) and the 24-skill Agentscribe pack with stage-based auto-activation, plus the exact Ponytail install commands."
+ }
+}

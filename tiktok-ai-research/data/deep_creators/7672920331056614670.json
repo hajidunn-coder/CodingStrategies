@@ -1,0 +1,52 @@
+{
+ "id": "7672920331056614670",
+ "url": "https://www.tiktok.com/@opichillc/video/7672920331056614670",
+ "creator": "opichillc",
+ "title": "Anecdote: same task run in Claude Code terminal burned ~75% of a 5-hour usage limit and bloated the diff, while the VS Code extension used ~3-4% and changed ~15 lines; suspects terminal spawning unneeded sub-agents",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code (terminal)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the expensive run"
+  },
+  {
+   "name": "Claude Code VS Code extension",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "side-panel; the cheap run"
+  }
+ ],
+ "claims": [
+  "Over a few days, context consumption rose with no workflow change",
+  "Same instructions: terminal changed unneeded code and used ~75% of the 5-hour limit; VS Code panel changed ~15 lines and used ~3-4%",
+  "Hypothesis: terminal mode spins up extra sub-agents for simple tasks"
+ ],
+ "how_to_steps": [
+  "Run the identical prompt in the terminal and in the VS Code extension",
+  "Compare lines changed and usage-limit consumption"
+ ],
+ "on_screen_only": [
+  "'Is Claude Code using up all your tokens?' header; captions only"
+ ],
+ "cta": "Comment if you have seen the same",
+ "relevance": {
+  "score": 2,
+  "why": "Token burn matters to a time- and budget-constrained founder, but this is a single uncontrolled comparison with no numbers from /cost; most likely confounded by effort/auto-mode settings or session context size."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a 10-minute self-check (/cost and /doctor on a simple task in each surface) before believing it; no action otherwise."
+ },
+ "verify": [
+  "Were effort level, model, permission mode and loaded skills identical in both surfaces?",
+  "Did the terminal session carry a large prior context?",
+  "Is there any known difference in sub-agent behaviour between CLI and extension?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "A warning (not a technique) that surface choice may change token burn; liked set had /doctor and token-saving skills but no CLI-vs-extension comparison. Weak evidence."
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "7669765035329146120",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7669765035329146120",
+ "creator": "nocode.joshua",
+ "title": "Five escalating 'Claude design skills': Multi-Agent Design Studio, Wireframe + Prototype, Brand System, Anti-AI-slop scanner, and 'Open Design' (259+ skills, 142+ design systems, one prompt to prototype/deck/image set)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Multi-Agent Design Studio skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "parallel design agents judge and refine each other until a winner"
+  },
+  {
+   "name": "Wireframe + Prototype skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "clickable app prototypes from a brief in minutes"
+  },
+  {
+   "name": "Brand System skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "locks colours, fonts, voice and applies across assets"
+  },
+  {
+   "name": "Anti-AI-slop skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "scans for generic gradients, stock emojis, cookie-cutter layouts"
+  },
+  {
+   "name": "Open Design skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "259+ skills and 142+ design systems; one prompt -> prototype, slide deck or image set"
+  }
+ ],
+ "claims": [
+  "Multi-Agent Design Studio runs several design agents in parallel and has them judge each other's work",
+  "Wireframe + Prototype spins up clickable prototypes in minutes",
+  "Open Design gives access to 259+ skills and 142+ design systems and turns one prompt into a full prototype, slide deck or image set"
+ ],
+ "how_to_steps": [
+  "Install the five skills in order of power (no install source given)"
+ ],
+ "on_screen_only": [
+  "Title '10/10 Claude Skills for Design (But they increase in power)'",
+  "Numbered cards with mock illustrations: '1. Multi-Agent Design Studio' (Agent 1-3 concepts, Winner), '2. Wireframe + Prototype skill' (Design brief -> Wireframes -> Clickable prototype), '3. Brand System skill' (brand colours/fonts applied to social post / presentation / landing), '4. Anti-AI-slop skill' (AI slop scan: generic gradient, stock emoji, cookie-cutter layout -> before/after 'Manage your projects easily'), '5. Open Design' (prompt -> prototype, slide deck, image set, video; 259+ skills, 142+ design systems)"
+ ],
+ "cta": "none stated (likely comment/bio in full post)",
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "mostly duplicate of liked content -- anti-slop (Impeccable), design systems (awesome-design, getdesign.md) and multi-agent design are covered; 'Open Design' is the only possibly new aggregator but no repo or URL is given"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "No sources, no install paths; generic names that may be the creator's own packaging."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable without repo names; the equivalents Haji already has (Impeccable, Taste, awesome-design) cover it."
+ },
+ "verify": [
+  "Do these skills exist as public repos or are they the creator's product?",
+  "What is 'Open Design' and is '259+ skills / 142+ design systems' a real catalog?"
+ ]
+}

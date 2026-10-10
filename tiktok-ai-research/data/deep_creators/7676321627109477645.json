@@ -1,0 +1,84 @@
+{
+ "id": "7676321627109477645",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7676321627109477645",
+ "creator": "mr.paidsocial",
+ "title": "How-to: Claude Desktop (Code tab) + Arcads API + Meta Ads MCP + an Airtable library of 2,000 example ads to generate 50 static image ads, after Claude asks 20 clarifying questions, then clone an existing ad's settings by ad ID and upload the creatives",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Desktop (Code tab)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Download Claude Desktop, use the Code tab, paste a GitHub link and ask Claude Code to set it up"
+  },
+  {
+   "name": "Arcads (arcads.ai)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AI ad creative generator ('Create winning ads with AI'); Settings > Public API > copy secret and give to Claude Code; '10 to 50 cents per image ad'"
+  },
+  {
+   "name": "Meta Ads MCP server",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Meta-hosted MCP ('Ads MCP Server ... Meta-hosted Model Context Protocol server that lets you manage Meta ads directly from an AI agent'), remote URL https://mcp.facebook.com/ads; added in Claude Desktop Settings > Add custom connector; OAuth 'Connect ... Claude will receive your name and profile picture'"
+  },
+  {
+   "name": "Airtable ad database",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's Airtable with 2,000+ example ads; URL handed to Claude"
+  },
+  {
+   "name": "GitHub setup repo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'go to this GitHub link' - name not legible; link presumably in bio"
+  }
+ ],
+ "claims": [
+  "Creator generated over $30,000 from AI static image ads with receipts shown (ads manager rows labeled 'SALE | ...' with $350-ish spend values)",
+  "Claude Code built all the ads while he was in bed; each image ad costs 10-50 cents",
+  "99% of people skip the key step: supplying an ad database (his has 2,000+ examples)",
+  "Cloning settings from one manually built ad ID avoids Claude misconfiguring uploads",
+  "Other creators are using the same method; a tweet shows 'Caleb Kruse: ...565 media buyers running an AI OS for Meta ads at $350/year until Aug 1'"
+ ],
+ "how_to_steps": [
+  "Download Claude Desktop, open the Code tab, paste the GitHub setup link and ask Claude Code to set it up",
+  "Sign up at arcads.ai, Settings > Public API, copy the secret and give it to Claude Code",
+  "In Claude Desktop Settings > Connectors > Add custom connector, paste the Meta Ads MCP URL (https://mcp.facebook.com/ads) and connect your Meta ads account",
+  "Hand Claude the URL of an Airtable database of example ads (2,000+)",
+  "Prompt: 'Here is a database full of ads. Pick 50 you think will work best for my offer. Ask me 20 questions to make sure we get this right.' Answer the questions",
+  "Receive ~50 ads; tell Claude Code to upload them to the ad account, giving it the ad ID of one manually built ad to clone all settings and swap only the creative"
+ ],
+ "on_screen_only": [
+  "Persistent banner 'CLAUDE JUST DESTROYED AD AGENCIES'",
+  "Meta Ads Manager campaign list with rows like 'SALE | A2-price-strike', 'SALE | LIB R47 sign meme price c...', 'SALE | AI OS for Meta Ads ($60.30)', 'SALE | Al Animation Tutorial ($60.30)', 'SALE | VoiceRecut-RAW | $350/yr' and spend figures ($232, $235, $240, $103...)",
+  "Arcads homepage 'Create winning ads with AI - Use our library of 1,000+ captivating AI Actors'",
+  "Meta docs page 'Ads MCP Server (Updated Jul 14, 2026)' describing a remote-hosted MCP at https://mcp.facebook.com/ads, 'Who it's for: Advertisers using AI assistants...', 'seven categories' of tools",
+  "Claude connector OAuth dialog 'Claude will receive your name and profile picture ... Not Caleb Kruse? Log into another account' (creator is Caleb Kruse)",
+  "Airtable grid with ad thumbnails; prompt text fragment '...ads for my skool community based off all t... you think will work best with my offer. ...ons to make sure we get this right.'",
+  "Tweet card: 'Caleb Kruse @mrpaidsocial: Nobody needs another ads community. 565 media buyers running an AI OS for Meta ads at $350/year until Aug 1 though? Different story.'"
+ ],
+ "cta": "Save the video; link to GitHub / setup presumably in bio; creator sells a $350/yr 'AI OS for Meta Ads' community",
+ "relevance": {
+  "score": 4,
+  "why": "Haji sells apps and needs paid acquisition without an agency; this is a concrete, reproducible pipeline (Meta's own MCP + a swipe-file database + a clone-by-ad-ID safety trick) rather than hype. Creator is selling a community, so claims are promotional."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Doable in an afternoon: add the Meta Ads MCP connector, build a small Airtable/CSV of winning ads in the niche, use the 20-questions prompt, generate with Arcads or any image model, and upload by cloning a reference ad ID. The hard part is a quality ad library and ad spend budget; start with 5-10 ads not 50."
+ },
+ "verify": [
+  "Confirm Meta's Ads MCP server (mcp.facebook.com/ads) is GA and what permissions it needs; the docs page date 'Jul 14, 2026' suggests recent",
+  "Arcads pricing per image and whether static image ads are its strength (it markets AI actors/video)",
+  "The $30K claim is unverified; shown rows are spend, not revenue",
+  "The GitHub setup repo is never named; find it or write the orchestration prompt yourself",
+  "Overlaps with liked '12-year Meta ads buyer reacts ... GitHub repo of Claude Code ad skills': compare the two repos"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has a reaction video about Claude running Meta ads; this is the actual recipe: Meta's hosted Ads MCP, Arcads API, an Airtable swipe-file of 2,000 ads, the 'ask me 20 questions' step, and cloning a known-good ad ID so uploads inherit correct settings."
+ }
+}

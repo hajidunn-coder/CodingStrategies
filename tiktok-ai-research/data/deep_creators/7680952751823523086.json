@@ -1,0 +1,47 @@
+{
+ "id": "7680952751823523086",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7680952751823523086",
+ "creator": "chase.builds.ai",
+ "title": "Honest take on the 'caveman' Claude Code skill: strips articles/filler/politeness, repo claims 65% fewer tokens, creator has not measured it and says output reads rough but answers are the same",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "caveman",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claude Code skill, 'over 100,000 stars'; strips articles, fillers and politeness from what is sent to the model; link in bio"
+  }
+ ],
+ "claims": [
+  "caveman has over 100,000 GitHub stars",
+  "The repo claims 65% fewer tokens; the creator explicitly has not measured it ('their number, not mine')",
+  "Output reads rough but the answers come back the same",
+  "Worth an afternoon of investigation if you pay per token as a team"
+ ],
+ "how_to_steps": [
+  "Install the caveman skill into Claude Code (link in bio)",
+  "Compare output quality and token counts yourself before trusting the 65% figure"
+ ],
+ "on_screen_only": [
+  "Caption cards: 'cuts your Claude bill', 'talks like a caveman', '100,000 stars', 'they claim 65% fewer', 'I haven't measured it', 'their number, not mine', 'reads rough', 'paying per token?'"
+ ],
+ "cta": "Link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Haji is on a subscription, not per-token API, and the liked set already contains a fact-check measuring caveman at ~30% output-token reduction; this clip adds only an unmeasured caution."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Skip for app-building: terse output hurts readability of plans and reviews, which is where a time-poor founder needs clarity. Only worth testing on API-billed agent pipelines."
+ },
+ "verify": [
+  "Star count (100K+) vs the liked fact-check video's figure; the real measured reduction was ~30% output tokens, not 65%",
+  "Does caveman compress input (the prompt sent to the model) or just the model's output style? Transcript says 'what gets sent to the model' which contradicts how most such skills work",
+  "Does terse output reduce review accuracy on code explanations?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (liked set already has 'Fact-check of the caveman skill: claimed 65%, measured ~30%'); this one is a weaker, unmeasured version."
+ }
+}

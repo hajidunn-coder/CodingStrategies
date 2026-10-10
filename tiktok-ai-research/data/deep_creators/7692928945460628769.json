@@ -1,0 +1,71 @@
+{
+ "id": "7692928945460628769",
+ "url": "https://www.tiktok.com/@forcceee_/video/7692928945460628769",
+ "creator": "forcceee_",
+ "title": "Mobbin MCP gives Claude Code search over 600,000+ real app/web UI references; research patterns (e.g. best profile pages) before building or redesigning a screen",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Mobbin MCP",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "connect Mobbin's MCP to Claude Code; search onboarding flows, dashboards, paywalls, pages; setup sent on comment 'map'"
+  },
+  {
+   "name": "Mobbin",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "UI reference library of 600,000+ real designs"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Fable 5 High shown in prompt box"
+  },
+  {
+   "name": "Google Stitch",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "task list 'Import and audit Stitch design'"
+  }
+ ],
+ "claims": [
+  "Mobbin gives Claude Code access to over 600,000 real design references",
+  "Claude can study dozens of real examples, find common patterns and create a plan before writing code",
+  "You can hand it an ugly existing site and have it research similar products before redesigning"
+ ],
+ "how_to_steps": [
+  "Connect the Mobbin MCP to Claude Code (comment 'map' for setup)",
+  "Before building a screen, tell Claude to research the best examples of that screen type inside Mobbin",
+  "Have it identify shared patterns and write a plan",
+  "Tell Claude to build your version using those principles",
+  "For redesigns, give it your existing site plus 'research similar products' first"
+ ],
+ "on_screen_only": [
+  "Mobbin screenshots: Apple TV+ app, 'Account Setup -- First up, which products do you use the most? Mens / Boys / Girls / Womens', workout app 'Push -- Start Workout', card-fan fintech screen, iPhone weather/San Francisco 53",
+  "Claude task list: 'Import and audit Stitch design' -> Scaffold Vite + React + TS project; Install Tailwind CSS + Framer Motion + dependencies; Build token system (tokens.ts + tailwind.config); Build shared components (FadingVideo, AnimatedSection, WordReveal); Build Nav component",
+  "Example 'ugly' site: 'Empowering Your Success with Digital Expertise' digital marketing template",
+  "Claude prompt box 'www.akel.com mak...' with Fable 5 High",
+  "Logo diagram: ChatGPT and Claude connected to Mobbin"
+ ],
+ "cta": "Comment 'map' for the setup; follow",
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Mobbin as an MCP source of real UI patterns is not in the liked set, which covers design skills (Impeccable, Taste, awesome-design, Apple design skill) and clone-site but not a reference database for research-before-build."
+ },
+ "relevance": {
+  "score": 4,
+  "why": "Directly improves app screen quality (onboarding, paywalls, dashboards) for a founder with no designer; fits the 'research then build' pattern already used."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Mobbin is a paid subscription; if the MCP exists on Haji's tier, adding it is a one-time config and a one-line prompt habit. Confirm cost first."
+ },
+ "verify": [
+  "Does Mobbin ship an official MCP and on which plan (Pro?)",
+  "Licensing: is using Mobbin screenshots as design reference allowed commercially?",
+  "Claude's ability to actually read image references via MCP vs text metadata"
+ ]
+}

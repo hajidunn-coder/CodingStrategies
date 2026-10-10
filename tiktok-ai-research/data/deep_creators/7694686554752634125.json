@@ -1,0 +1,75 @@
+{
+ "id": "7694686554752634125",
+ "url": "https://www.tiktok.com/@sirakinb/video/7694686554752634125",
+ "creator": "sirakinb",
+ "title": "Codex (GPT-6.1) with a customized open-source video editing tool chops long-form YouTube videos into styled short clips, then Post Social (postsocial.xyz) schedules them across platforms",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'GPT-6.1' session; drop six raw videos in and it cuts clips in the set format"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "caption says both Codex and Claude Code are great video editors"
+  },
+  {
+   "name": "Unnamed open-source video editing tool",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "customized to the creator's fonts and cut style; name not given"
+  },
+  {
+   "name": "Post Social",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "postsocial.xyz: 'Social media management for AI-native creators'; tell Claude/ChatGPT/your agent what to post; 'Find social posting MCP tools' visible"
+  },
+  {
+   "name": "CapCut",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "end-card watermark"
+  }
+ ],
+ "claims": [
+  "AI coding agents are now 'extremely good' at editing video",
+  "After one-time customization, the system cuts clips automatically from batches of long videos",
+  "Scheduling can be done from the AI platform itself via Post Social"
+ ],
+ "how_to_steps": [
+  "Take an open-source video editing tool and have the agent customize it to your fonts and cut style",
+  "Drop unedited long-form videos into Codex and ask it to chop them into clips in that format",
+  "Use Post Social to schedule the clips across social channels"
+ ],
+ "on_screen_only": [
+  "Title 'Automate social media editing + mgmt with agents'",
+  "Agent task 'Find social posting MCP tools'",
+  "Clip preview '3. Valid Doesn't Mean Correct -- 28 seconds' with on-video text 'A clearer signal. Still needs context. MEASURE -> CHECK'",
+  "Uploaded files: TV MCP.mp4, DEEEPSEEEEK.mp4, GROKKK.mp4; buttons 'Work with ChatGPT', 'Approve for me'",
+  "postsocial.xyz hero: 'POST SOCIAL -- Social media management for AI-native creators and ... Tell Claude, ChatGPT or your own agent what to post ... every channel, on time' with TikTok/Instagram/Facebook/Threads/YouTube icons"
+ ],
+ "cta": "none",
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Adds agent-driven clip editing (open-source editor driven by Codex/Claude Code) and Post Social as an agent-native scheduler; liked set has Postiz and Remotion but not the long-to-short clipping workflow."
+ },
+ "relevance": {
+  "score": 3,
+  "why": "Relevant if Haji produces content for his apps/veteran audience; cuts editing time, but tool names are missing."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Needs research to pick the editor (e.g. an ffmpeg/Remotion-based repo) and a scheduler; Postiz (already liked) likely covers scheduling. Medium effort, unclear payoff unless content is a priority."
+ },
+ "verify": [
+  "Which open-source video editor was used",
+  "Post Social pricing and whether it has an MCP",
+  "Quality of auto-captions/cuts versus CapCut"
+ ]
+}

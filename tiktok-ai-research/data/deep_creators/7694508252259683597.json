@@ -1,0 +1,68 @@
+{
+ "id": "7694508252259683597",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7694508252259683597",
+ "creator": "ai.honeycove",
+ "title": "Claude Code 'mods' (TypeScript, shipped inside plugins, installed via the desktop app) let you change behaviour/UI; demo of a cache-warmth + rewrite-cost HUD and a goal/progress meter across chats",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude Code mods",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "@ClaudeDevs post: 'You can now mod Claude Code: Change how it behaves, Customize the UI, Swap in your own features. Write one with a few lines of TypeScript, or have Claude write one. Mods ship inside plugins, so you install them with the desktop app.' (x.com/ClaudeDevs/status/2105721434807083061)"
+  },
+  {
+   "name": "Cache/cost HUD mod",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "band: 'cache warm 60m | ctx 446k | rewrite = $3.57 | 5h 3% · week 62% | session $8.20'"
+  },
+  {
+   "name": "Goal meter mod",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "'Goal: Make me a short film... 8 of 10 tasks · 84% · 49m elapsed · about 9m left'; commands '/goals hide|show (the band) · /goals strict on · /goals clear'; 'Other chats (0)'"
+  },
+  {
+   "name": "Claude desktop app",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "where mods were built by asking in natural language; session shows 'Opus 5.5'"
+  }
+ ],
+ "claims": [
+  "Mods can change how Claude Code behaves, customize the UI and swap in features; a few lines of TypeScript or have Claude write it",
+  "Cache mod shows cache warmth, context window size, cost to rewrite the cache and what the session would cost on API billing; 'if your cache goes cold you pay for Claude to read it all again' - already saving money",
+  "Goal mod shows progress, tasks and ETA for goals across up to 10 concurrent chats",
+  "Both mods were built just by asking in natural language"
+ ],
+ "how_to_steps": [
+  "Ask Claude (desktop) to write a mod for the behaviour/UI change you want",
+  "Package it in a plugin and install via the desktop app",
+  "Use slash commands the mod defines (e.g. /goals show|hide|strict|clear)"
+ ],
+ "on_screen_only": [
+  "Session header 'Herk-2.0  claude/ai-human-coexistence-film-3e45d8'; task list with S/M/L markers: 'Survey tools: HyperFrames, kie.ai, voice, music 4m', 'Ground the forecast in today's tech and geop... 7m', 'Write the 2056 prediction, film treatment, a... 7m', 'Set up project folder and HyperFrames scaffold 11m', 'Generate stills and video shots (kie.ai) 22m', 'Voiceover, music bed, and SFX 6m', 'Build the HyperFrames composition (titles, HUD, timeline) 6m', 'Render and verify frames, sync, loudness, under 60s 5m', 'Fix pass from review running 0m', 'Deliver film plus short write-up of the prediction'",
+  "Unrelated Claude UI demos: 'Adobe retouch portraits - Auto-straighten', 'Make an Instagram story for my boutique sale from the Adobe design library' (Sonnet 4.6), StoreDesk admin dashboard admin.storedesk.io/ModernGoodsCo",
+  "'Running a command · 225 tools · 48m 16s'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 4,
+  "why": "Haji runs many long Claude Code sessions; a cache-warmth/cost band and a cross-chat goal meter address cost blind spots directly. This environment already carries a plugin-authoring skill for mods."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Ask Claude to build the cache/cost HUD mod via the plugin-authoring skill; one session of work, immediate cost visibility. Goal meter is a nice-to-have."
+ },
+ "verify": [
+  "Is the mods API stable/public and which Claude Code version/desktop build is required?",
+  "Does the HUD read real cache TTL and pricing or estimate?",
+  "Is the @ClaudeDevs account official?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The mods feature itself plus two concrete mod ideas (cache-warmth/rewrite-cost HUD, multi-chat goal meter); liked set covered skills/plugins/slash commands but not UI/behaviour mods."
+ }
+}

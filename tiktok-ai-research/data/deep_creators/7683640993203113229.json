@@ -1,0 +1,71 @@
+{
+ "id": "7683640993203113229",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7683640993203113229",
+ "creator": "ai.honeycove",
+ "title": "Same four-plugin script as forcceee_ (Ponytail, OmniRoute, Graphify, 24-skill 'Agent Skills' pack), 443K views, with extra on-screen detail: OmniRoute '353 providers / 154 free' page and the skills table (using-agent-skills, interview-me, idea-refine, spec-driven-development, incremental-implementation, test-driven-development, context-engineering)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Ponytail",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Token optimizer; on-screen bar chart 'Every metric vs the no-skill baseline (Claude Code, Haiku 4.5, 12 tasks)' under a '50%' headline"
+  },
+  {
+   "name": "OmniRoute",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "On-screen: '353 AI Providers - 154 Catalog-Marked Free', '268 providers / 2,566 distinct provider-model pairs / 1,312 raw model IDs', 'Every major lab through one endpoint' (OpenAI, Anthropic, Gemini, xAI Grok, DeepSeek, Qwen, Meta Llama, Groq, NVIDIA, MiniMax); Free-Tier Budget 1.4B/1.68B with Kiro, Qoder, LongCat, Cerebras, NVIDIA, Pollinations"
+  },
+  {
+   "name": "Graphify",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Terminal 'graphify ...' with a node graph; a card 'Graphify - Task: Fix the login bug - Scanning 18 skills...' over a grid of skill categories (Writing, Design, SEO, Email, Research, Data, Translate, Voice, Video, Legal, Finance, Marketing, Security, DevOps, Analytics, Coding)"
+  },
+  {
+   "name": "Agent Skills (24-skill pack)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "On-screen table: Meta: using-agent-skills; Define: interview-me ('one-question-at-a-time interview... until ~95% confidence'), idea-refine, spec-driven-development (PRD with objectives, commands, structure, code style, testing, boundaries); incremental-implementation (thin vertical slices, feature flags, safe defaults, rollback-friendly), test-driven-development (Red-Green-Refactor, test pyramid 80/15/5, DAMP over DRY, Beyonce Rule), context-engineering (rules files, context packing, MCP integrations); pills Spec, Plan, Build, Test"
+  }
+ ],
+ "claims": [
+  "Ponytail cuts token usage by over 50% without losing any accuracy (chart: Claude Code, Haiku 4.5, 12 tasks baseline)",
+  "OmniRoute: 300+ free providers, 1.6 billion free tokens/month, auto model switching (screen: 353 providers, 154 marked free, Free-Tier Budget 1.4B/1.68B)",
+  "Graphify turns the codebase into a knowledge graph to stop rereading files",
+  "The 24-skill pack was built by the former AI engineering director at Google and auto-activates per stage"
+ ],
+ "how_to_steps": [
+  "Install Ponytail",
+  "Connect OmniRoute as the fallback router",
+  "Run Graphify over the repo",
+  "Install the 24-skill agent skills pack and let it route to planning/coding/testing/publishing skills"
+ ],
+ "on_screen_only": [
+  "Title 'don't vibe CODE YET'; Ponytail task board (Needs input: dark-mode, release-notes, load-test; Working: pr-review, perf-audit, payment-migration, onboarding-copy; Completed: test-coverage) and '50%' bar chart 'Every metric vs the no-skill baseline (Claude Code, Haiku 4.5, 12 tasks)'",
+  "OmniRoute page: '353 AI Providers - 154 Catalog-Marked Free ... 268 providers / 2,566 distinct provider-model pairs / 1,312 raw model IDs; free-budget catalog has 455 per-model rows, 40 recurring pools and 56 recurring/keyless free-forever providers'; 'CLAUDE CODE - SWITCH MODEL Switching model... GLM-5.0 / Kimi / Claude Code'",
+  "Free-Tier Budget panel rows: Kiro 50 cr, Qoder, LongCat 50M/day, Cerebras 1M/day, NVIDIA 40 rpm, Pollinations no key; 'Pool-deduped and honest - no inflated multi-B claims.'",
+  "Skills table (see tools) and a skills category grid under 'Graphify / Task: Fix the login bug / Scanning 18 skills'"
+ ],
+ "cta": "Follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Same recycled script as forcceee_, but the frames expose the actual skill names in the 24-pack (interview-me, spec-driven-development, incremental-implementation, TDD, context-engineering), which are close to how Haji already works and worth stealing as a checklist."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Rather than install an unverified 24-skill pack, borrow the pattern: an interview-me skill (ask until ~95% confident) and incremental-implementation (thin vertical slices) are each a 10-minute SKILL.md. Ponytail already liked; skip OmniRoute for production code."
+ },
+ "verify": [
+  "Identify the 24-skill repo (ex-Google 'AI engineering director'): name, stars, maintenance; the skill table looks like it could be from a real README",
+  "Ponytail '50%' chart: Haiku 4.5 on 12 tasks is a tiny benchmark; check against the liked caveman fact-check methodology",
+  "OmniRoute's '154 catalog-marked free' providers: data handling and rate limits (NVIDIA 40 rpm, Cerebras 1M/day shown)",
+  "Script is verbatim identical to forcceee_ 7685773609888992545: sponsored/templated content"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Beyond the liked Ponytail/OmniRoute coverage, the frames reveal the named skills in the 24-pack (interview-me, idea-refine, spec-driven-development, incremental-implementation, test-driven-development, context-engineering) and OmniRoute's real catalog numbers (353 providers, 154 free)."
+ }
+}

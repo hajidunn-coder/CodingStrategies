@@ -1,0 +1,65 @@
+{
+ "id": "7694496660604325128",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7694496660604325128",
+ "creator": "adamstewartmarketing",
+ "title": "Zapier 'Next Gen Zaps' (early access): import an existing Zap by link, see/edit the code behind it, tell an agent (Claude Code) to change it - e.g. rejoin split paths, which classic Zaps cannot do",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Zapier Next Gen Zaps",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "help-center page 'Get started with Next Gen Zaps': works with any MCP-capable AI client; plans Free/Professional/Team/Enterprise; early access via Zapier support > Early Access Products > Next Gen Zap Workflows"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the agent that edits the imported Zap"
+  },
+  {
+   "name": "Google Sheets / Slack",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "demo Zap: New Spreadsheet Row -> Paths (Deal Value >= $10,000 -> #leads-enterprise, else #leads-nurture)"
+  }
+ ],
+ "claims": [
+  "Existing Zaps can be imported by link into Next Gen Zaps with the same workflow, now with inspectable code (Inputs -> Control flow -> Slack steps)",
+  "You can edit the diagram, edit the code, or instruct the agent in plain language",
+  "Classic Zaps cannot rejoin a split path, forcing duplicated steps; the agent merged both routes into one shared 'save lead to tracker' step",
+  "Review the change, test both routes, then publish"
+ ],
+ "how_to_steps": [
+  "Copy the link of an existing Zap",
+  "Open Next Gen Zaps and import it",
+  "Open the generated code / control-flow diagram",
+  "Tell the agent the change (e.g. 'after every Slack message, bring both paths together and save the lead to my tracker')",
+  "Review diff, test each route, publish"
+ ],
+ "on_screen_only": [
+  "'Upgrade Your Zaps with Claude Code'",
+  "Classic Zap diagram: 1. New Spreadsheet Row, 2. Split into paths, Path A Deal Value >= $10,000 -> Send to #leads-enterprise, Path B < $10,000 -> Send to #leads-nurture",
+  "Next Gen view: Inputs > Control flow > Slack 'Send To Leads Enterprise' > Control flow > Slack 'Send To Leads Nurture'; code pane with slack message JSON",
+  "Help center: 'Next Gen Zaps is in early access. Contact Zapier support and select Early Access Products > Next Gen Zap Workflows... in active development.'"
+ ],
+ "cta": "Link in bio",
+ "relevance": {
+  "score": 3,
+  "why": "If Haji runs any Zaps, turning them into agent-editable code is a cheap upgrade path and sidesteps classic Zap limits; otherwise informational."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Request early access and import one Zap; low effort. Compare with just rewriting the automation as a Zapier SDK script (see the creator's other video)."
+ },
+ "verify": [
+  "Pricing/limits of Next Gen Zaps once out of early access",
+  "Does it require the Zapier MCP or desktop app pairing?",
+  "Can imported Zaps be exported back or are you locked into the new runtime?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New product (Next Gen Zaps) and the import-then-edit-by-agent pattern; liked set had no Zapier content."
+ }
+}

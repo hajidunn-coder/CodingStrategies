@@ -1,0 +1,78 @@
+{
+ "id": "7681500101147184398",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7681500101147184398",
+ "creator": "ai.honeycove",
+ "title": "Five front-end plugins for Claude Code: taste-skill, Vercel web design guidelines skill (audits code against Vercel's rules), Awesome DESIGN.md, image-to-code, and Playwright CLI for self-screenshotting",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "taste-skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Pulls design taste from premium references"
+  },
+  {
+   "name": "Vercel web design guidelines skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Audits code against Vercel's latest design rules; on-screen excerpt: 'Keyboard works everywhere... Clear focus (focus-visible)... Match visual & hit targets (min 24px, 44px mobile)... Mobile input size 16px to prevent iOS auto-zoom... Respect zoom... Hydration-safe inputs... Don't block paste... Loading buttons... Minimum loading-state duration (150-300ms delay, 300-500ms visible)... URL as state'"
+  },
+  {
+   "name": "Awesome DESIGN.md",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Curated collection of DESIGN.md analysis by developer focused websites'; DESIGN.md is a Google Stitch concept: plain-text design system file read by agents; table AGENTS.md (how to build) vs DESIGN.md (look and feel)"
+  },
+  {
+   "name": "image-to-code",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Turns a design reference image into usable code"
+  },
+  {
+   "name": "Playwright CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Lets Claude open a browser, screenshot what it built and catch errors"
+  }
+ ],
+ "claims": [
+  "taste-skill stops UI looking 'crappy and vibe coded'",
+  "The Vercel guideline skill flags weak points before you ship",
+  "Awesome DESIGN.md hands the AI a full design system (colors, typography, spacing, buttons) pulled from top websites",
+  "image-to-code converts any reference to code without losing details",
+  "Playwright CLI lets Claude screenshot its own output and catch bad outputs/errors before you see them"
+ ],
+ "how_to_steps": [
+  "Install taste-skill",
+  "Install Vercel's web design guidelines skill and run its audit before shipping",
+  "Copy a DESIGN.md from Awesome DESIGN.md into the project root and tell the agent to build to it",
+  "Use image-to-code with a reference screenshot",
+  "Install Playwright CLI so Claude can open, screenshot and verify pages"
+ ],
+ "on_screen_only": [
+  "Title '5 claude code PLUGINS TO INSTALL'",
+  "Vercel web design rules list: 'Interfaces succeed because of hundreds of choices... framework-agnostic, some specific to React/Next.js'; items: Keyboard works everywhere (WAI-ARIA Authoring Patterns), Clear focus (prefer :focus-visible), Manage focus (focus traps, move & return focus), Match visual & hit targets (<24px visual -> expand hit area to 24px; 44px on mobile), Mobile input size (16px font to prevent iOS Safari zoom; viewport meta maximum-scale=1), Respect zoom (never disable browser zoom), Hydration-safe inputs, Don't block paste, Loading buttons (show indicator, keep original label), Minimum loading-state duration (150-300ms show-delay, 300-500ms min visible; Suspense in React does this), URL as state",
+  "Awesome DESIGN.md README: 'Copy a DESIGN.md into your project, tell your AI agent build me a page that looks like this'; 'DESIGN.md is a new concept introduced by Google Stitch'; table File / Who reads it / What it defines: AGENTS.md - Coding agents - How to build the project; DESIGN.md - Design agents - look and feel",
+  "Design reference panels: Colors, Typography (Heading/Subheading), Spacing bars, Buttons (Get Started / Learn more); a 'CHECKOUT' page in a Playwright terminal with a warning about 'priority' prop on a non-LCP image"
+ ],
+ "cta": "None (install now)",
+ "relevance": {
+  "score": 3,
+  "why": "Three of five (taste-skill, awesome-design, Playwright) are already in the liked set; the Vercel web-design-guidelines audit skill is a concrete accessibility/UX checklist (hit targets, iOS zoom, loading states) that matters for Haji's shipped apps."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Add the Vercel web design guidelines skill and run it as a pre-ship audit on existing apps (~30 min); the rules shown (44px mobile targets, 16px inputs, focus-visible, loading-state minimums) are worth adopting even without the skill."
+ },
+ "verify": [
+  "Vercel web design guidelines skill: exact repo (likely under vercel-labs) and whether it is a skill or just a doc",
+  "image-to-code: which repo; many exist",
+  "Awesome DESIGN.md: repo name and whether its DESIGN.md files are extracted from sites with usable licenses"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Adds Vercel's web-design-guidelines audit skill (with specific rules: 24/44px hit targets, 16px mobile inputs, focus-visible, 150-300ms loading delay, URL as state) and an image-to-code skill; the other three are duplicates of liked content."
+ }
+}

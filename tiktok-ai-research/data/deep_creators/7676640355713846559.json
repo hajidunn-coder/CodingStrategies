@@ -1,0 +1,46 @@
+{
+ "id": "7676640355713846559",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7676640355713846559",
+ "creator": "nate.b.jones",
+ "title": "One paste-in prompt that forces the AI into question-asking mode: ask me one question at a time until 95% confident, summarize why, state the plan in two lines, then wait for my signal (works on Codex, Claude, GLM, DeepSeek)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude / Codex / GLM 5.2-5.3 / DeepSeek",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Prompt is model-agnostic"
+  }
+ ],
+ "claims": [
+  "AI defaults to 'be helpful and do stuff' mode and does not normally ask questions",
+  "Sequential one-at-a-time questions surface the model's hidden assumptions into the context window so you can correct them one by one",
+  "Helps most on complicated tasks; works on Codex, Claude, GLM 5.2/5.3, DeepSeek"
+ ],
+ "how_to_steps": [
+  "Paste before the task: 'Before you answer or do any work, ask me questions. Ask one at a time, strategically and sequentially, until you reach 95% confidence that you understand exactly what I am asking. Then summarize what made you that confident, write in two lines what you are going to do, and wait for my signal before doing anything.'",
+  "Answer each question; the clarified assumptions accumulate in context",
+  "Give the go signal once the two-line plan matches your intent"
+ ],
+ "on_screen_only": [
+  "Persistent title card 'AI Hack: Make Claude Ask Questions First'"
+ ],
+ "cta": "Let me know in the comments (none otherwise)",
+ "relevance": {
+  "score": 4,
+  "why": "Cheap, immediate, and fits a time-poor founder: a few questions up front cost less than a wrong build. Maps onto the 'interview-me' skill seen in the honeycove video and the 'ask me 20 questions' step in the ads video."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Turn this into a CLAUDE.md rule for non-trivial tasks or a /interview skill; 5 minutes. Pair with the phased-plan gate from youraveragetechbro."
+ },
+ "verify": [
+  "'95% confidence' is theater; the real value is the one-at-a-time constraint. Check whether Claude Code's plan mode already covers this for Haji's use",
+  "Watch for over-questioning on small tasks; scope the rule to complex features"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has mode prompts, Unlazy and Context Transfer, but not a pre-work interview prompt with sequential single questions, a confidence threshold, a two-line plan and an explicit wait-for-signal gate."
+ }
+}

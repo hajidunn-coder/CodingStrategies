@@ -1,0 +1,109 @@
+{
+ "id": "7684024903036718349",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7684024903036718349",
+ "creator": "mr.paidsocial",
+ "title": "35-min tutorial: Claude Code as a full video editor - OpenArt MCP (Seedance 2.5) generates talking-head/B-roll, HyperFrames renders graphics, ElevenLabs makes SFX/music, here.now is the comment-on-timeline review loop; also announces Meta's official Meta Ads MCP",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "OpenArt (sponsor) + OpenArt MCP",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "openart.ai/mcp URL added as a Connector in Claude desktop (Customize > Connectors); hosts Seedance 2.5; video editing (hat swap, Spanish dub) only in the web UI, not via MCP"
+  },
+  {
+   "name": "Seedance 2.5 (ByteDance)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "30s generation, up to 50 multimodal references, region-level editing, native audio sync"
+  },
+  {
+   "name": "HyperFrames",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub repo pasted into Claude Code: 'get this set up'; enables Claude to render motion graphics/edits"
+  },
+  {
+   "name": "here.now",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "frame.io-style review canvas with timeline comments and beat map; 'Connect Agent' button gives a prompt to paste into Claude Code; free plan"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Developers > API keys; key pasted into Claude Code for SFX, background music, voice"
+  },
+  {
+   "name": "Meta Ads MCP (official)",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "set up in Meta developer dashboard; build campaigns, ad sets, audiences, catalogs, pull spend reports; 'went live July 16'"
+  },
+  {
+   "name": "Claude Code (Fable 5, Ultra Code / max effort)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Max plan; ran 6 parallel agents for style analysis"
+  },
+  {
+   "name": "Skool community (mr.paidsocial)",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "680+ members; link in description"
+  },
+  {
+   "name": "Arc Ads / Kie API",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as his ad-creative tools"
+  }
+ ],
+ "claims": [
+  "A 30s AI talking-head of the creator rendered in ~10 minutes and was near-flawless (one vocal-fry artifact)",
+  "V2 of the edit ran ~8 minutes and used only ~53,000 tokens because the model orchestrates tools rather than writing code",
+  "Took 4 versions (V1-V4) of feedback via here.now comments to reach 'no notes'",
+  "Seedance 2.5 mispronounces names in long scripts; fix by instructing Claude to write scripts phonetically",
+  "For a clean clone, give the reference video and change only one thing (the dialogue); long prompts changed the whole scene",
+  "Meta released an official MCP server for Meta Ads (live July 16)"
+ ],
+ "how_to_steps": [
+  "Add OpenArt MCP: copy URL from openart.ai/mcp, Claude desktop > Customize > Connectors > add, log in",
+  "Generate test clips at 480p / 4s first, then scale to 30s / higher quality",
+  "Give Claude a file path to your reference talking-head video; ask for a script, approve it, then generate the 30s video",
+  "Ask Claude to propose 3-5 motion-graphic overlays and generate them",
+  "Install HyperFrames (paste GitHub URL), connect here.now via its Connect Agent prompt, paste ElevenLabs API key",
+  "Give Claude an Instagram reel URL as the editing style reference; ask it to analyze frame-by-frame, generate visuals for every line, add SFX + music via ElevenLabs, and publish V1 to a here.now canvas",
+  "Leave timestamped comments on the canvas; tell Claude 'apply those edits and give me V2'; repeat; demand a QA pass comparing notes",
+  "Keep an 'internal automations' folder with one folder per video project (captions, QA screenshots, assets, audio, scripts, music variations, SFX)",
+  "Once it works, save the workflow as a skill and rerun on a cheaper model (Opus 5, no Ultra Code)"
+ ],
+ "on_screen_only": [
+  "'#2 Claude+MCP Video generation via MCP' section card",
+  "OpenArt MCP landing page: 'Learn How to Connect OpenArt MCP and Get Started in Minutes'",
+  "'The Result:' panel showing 'Prospecting - Broad $4,218' motion graphic and 'Find assets' thumbnails",
+  "'comment MCP' overlay",
+  "YouTube sidebar ads for 'Free AI Course' (unrelated)"
+ ],
+ "cta": "Comment 'MCP' for the Meta Ads MCP setup; OpenArt referral code and Skool link in description; subscribe",
+ "relevance": {
+  "score": 3,
+  "why": "If Haji does founder-led video marketing, this is the most complete agentic editing pipeline seen; the review-canvas feedback loop and project-folder discipline are reusable. Heavy time investment though."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Several accounts/keys (OpenArt credits, ElevenLabs, here.now) and a long first setup; worth a half-day trial only if short-form video is a growth channel. The Meta Ads MCP is worth checking separately if running paid ads."
+ },
+ "verify": [
+  "Is the official Meta Ads MCP real and what permissions/app review does it need?",
+  "HyperFrames repo name/owner and whether it is the same 'hyperframes' skill in the liked set",
+  "here.now free-tier limits; OpenArt credit burn rate at 30s/1080p",
+  "Sponsored by OpenArt - discount the Seedance 2.5 superlatives"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the OpenArt MCP, here.now comment-to-revision loop, ElevenLabs-in-Claude-Code, the phonetic-script and 480p-first tricks, and news of an official Meta Ads MCP; liked set only had the hyperframes explainer-video clip and Claude Motion."
+ }
+}

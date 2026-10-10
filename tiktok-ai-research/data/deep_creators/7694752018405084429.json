@@ -1,0 +1,72 @@
+{
+ "id": "7694752018405084429",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7694752018405084429",
+ "creator": "ai.honeycove",
+ "title": "Sponsored MixRoute ad wrapped in 'Fable 5.1 + Higgsfield MCP builds $10k cinematic 3D websites in one prompt'; MixRoute = 250+ models behind one OpenAI-compatible key with zero markup and smart routing",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "MixRoute",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "250+ models, one API key, one balance, zero markup, smart routing; OpenAI SDK compatible via base URL; link in bio (sponsor)"
+  },
+  {
+   "name": "Fable 5.1",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "'switch Claude Code to Fable 5.1'"
+  },
+  {
+   "name": "Higgsfield MCP",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "generates image and video assets for the site"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "builds the entire site from one prompt"
+  }
+ ],
+ "claims": [
+  "Fable 5.1 can build websites people charge $10,000 for: cinematic 3D parallax sites like Apple's",
+  "One prompt produces something that 'looks award winning'",
+  "Workflows use different models for coding, reasoning, images and content, so you need a router",
+  "MixRoute: 250+ models, one key, one balance, zero markup, switch models without rebuilding, smart routing to the most cost-effective authorized model"
+ ],
+ "how_to_steps": [
+  "Switch Claude Code to Fable 5.1",
+  "Connect the Higgsfield MCP so Claude can generate images/video",
+  "Describe the website (luxury watch brand, portfolio, imaginary business) in one prompt",
+  "(Sponsor) Sign up for MixRoute, get API key, update base URL in an OpenAI-SDK integration"
+ ],
+ "on_screen_only": [
+  "Hook card 'ai websites JUST LEVELED UP'",
+  "Claude model picker: Fable 5 (with usage-credit note), Opus 4.8, Sonnet 5, Haiku 4.5, Effort: High, More models",
+  "Hublot watch render used as 'luxury brand' example",
+  "MixRoute landing: 'Connect to every top model in under a minute. Update your base URL. Fully compatible with the OpenAI SDK. Get API Key. Pay as you go. No credit card required'",
+  "Notification mock: 'Google Gemini 2.5 Pro: $1.25 / 1M input tokens, $10 / 1M output tokens' vs '$30 / 1M output tokens'",
+  "MixRoute log-in screen with michaelcaine@gmail"
+ ],
+ "cta": "Follow link in bio to use MixRoute (sponsored)",
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content -- 'one-prompt cinematic 3D websites with Fable 5 + Higgsfield MCP' is already liked twice, and OmniRoute covers the multi-model router idea; MixRoute is just a competing sponsor"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Hype plus a sponsor; Haji already has the Higgsfield/Fable site-building idea and uses Claude Code on a subscription, not pay-per-token routing."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "No reason to add a router unless building multi-model app features; even then OpenRouter-class options exist. Nothing concrete shown."
+ },
+ "verify": [
+  "Does MixRoute really have zero markup and which 250 models?",
+  "Is 'Fable 5.1' a real model tier at time of posting?",
+  "Any real site built by the creator with this flow?"
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "id": "7689039440286666004",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7689039440286666004",
+ "creator": "brooke_wrightmode",
+ "title": "Four Claude Code plugins before you vibe code: Superpowers (plan/test/debug/review workflow), Graphify (queryable codebase graph), Impeccable (design), and a skills CLI that finds and installs a matching skill",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Superpowers",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "README on screen lists skills: verification-before-completion, brainstorming, writing-plans, executing-plans, dispatching-parallel-agents, requesting-code-review, receiving-code-review, using-git-worktrees, finishing-a-development-branch; MIT license"
+  },
+  {
+   "name": "Graphify",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Maps codebase into a graph you can query before Claude edits; screen shows a node graph with a COMMUNITIES panel (APIRouter, SecurityBase, FastAPI, HTTPException, models, utils, ModelField, PathLike...)"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "README table on screen: /impeccable document (Generate root DESIGN.md from existing project code), extract (pull reusable components and tokens), shape (plan UX/UI before writing code), critique (UX review: hierarchy, clarity, emotional resonance), audit (technical checks a11y, performance, responsive); Apache-2.0"
+  },
+  {
+   "name": "skills CLI ('skill cli')",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Search for a skill matching the job and install it (likely skills.sh / Vercel find-skills)"
+  }
+ ],
+ "claims": [
+  "Superpowers gives Claude planning, testing, debugging and reviewing workflows",
+  "Graphify maps a codebase into a graph you can query before Claude starts editing",
+  "Impeccable takes a website from 'AI slop with purple gradients' to something that looks good",
+  "The skills CLI searches for a skill matching your task and installs it"
+ ],
+ "how_to_steps": [
+  "Install Superpowers plugin for the workflow skills",
+  "Run Graphify to build a queryable graph of the codebase before edits",
+  "Install Impeccable for design",
+  "Use the skills CLI to search and install task-specific skills"
+ ],
+ "on_screen_only": [
+  "Pixel-art title '4 Claude Code Plugins for vibecoding'",
+  "PLAN / Superpowers README excerpt: 'verification-before-completion - Ensure it's actually fixed'; Collaboration: brainstorming - Socratic design refinement; writing-plans - Detailed implementation plans; executing-plans - Batch execution with checkpoints; dispatching-parallel-agents - Concurrent subagent workflows; requesting-code-review - Pre-review checklist; receiving-code-review - Responding to feedback; using-git-worktrees - Parallel development branches; finishing-a-development-branch - Merge/PR; MIT license",
+  "GRAPHIFY / Codebase graph: colored cluster graph with COMMUNITIES list (APIRouter, SecurityBase, v1, FastAPIDeprecationWarning, FastAPI, BaseModelWithConfig, Scope, HTTPException, models, lenient_issubclass, get_typed_signature, utils, ModelField, DefaultPlaceholder, PathLike)",
+  "DESIGN / Impeccable README command table (document, extract, shape, critique, audit) plus 'init ... recommend next steps'",
+  "Closing: 'COMMENT VIBE for the PLUGIN LIST'"
+ ],
+ "cta": "Comment 'vibe' for the links; save and follow",
+ "relevance": {
+  "score": 3,
+  "why": "Superpowers' skill list (verification-before-completion, git worktrees, code-review loops) maps well onto a solo founder's workflow, and Impeccable's per-command table is useful; the rest overlaps liked content."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Try Superpowers (one plugin install) and specifically its verification-before-completion and executing-plans skills; ~30 minutes to evaluate. Graphify is a second-tier trial. Skills CLI is already covered by the liked find-skills video."
+ },
+ "verify": [
+  "Superpowers: exact repo (likely obra/superpowers) and whether it conflicts with existing CLAUDE.md/plan workflows",
+  "Graphify: repo name and whether the graph is consulted automatically by Claude Code or must be queried manually",
+  "Whether 'skill cli' is skills.sh / Vercel's find-skills (already liked) or something else"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Impeccable and a skills finder are already liked; new are Superpowers (a workflow plugin with named skills such as verification-before-completion, using-git-worktrees, executing-plans) and Graphify, plus Impeccable's command table (document/extract/shape/critique/audit)."
+ }
+}

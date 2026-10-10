@@ -1,0 +1,79 @@
+{
+ "id": "7680878906425150740",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7680878906425150740",
+ "creator": "adamstewartmarketing",
+ "title": "Zapier SDK: npm install + one login gives a coding agent authenticated access to 9,000 apps; loop in code and call the model only for judgement calls (HubSpot quiet-deals -> Slack script)",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Zapier SDK (@zapier/zapier-sdk)",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "npm install @zapier/zapier-sdk ; npx zapier-sdk login ; docs page 'Zapier SDK quickstart: TypeScript setup for Node.js 20+' with 'Open in Claude Code / Codex / Cursor / VS Code Copilot / ChatGPT / Claude / Perplexity' buttons"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the coding agent that writes and runs the script"
+  },
+  {
+   "name": "HubSpot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "source of deals; script pulls deals quiet for 14+ days"
+  },
+  {
+   "name": "Slack",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "summary destination"
+  },
+  {
+   "name": "tsx",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "npx tsx src/quiet-deals.ts"
+  }
+ ],
+ "claims": [
+  "Previously each deal was a full model round trip (read, think, write email) x200 and every round trip was billed",
+  "With the SDK the loop runs in code; the model is only called for the judgement part (what the message should say)",
+  "'Your agent has authenticated access to 9,000 apps' after one login command; never opened an API doc",
+  "SDK is free while in open beta",
+  "Terminal output: 'Scanned 3 deals in code - 3 quiet for 14+ days ... Model calls: 1 (one per quiet deal, zero for the loop). Tokens: 2%'"
+ ],
+ "how_to_steps": [
+  "npm install @zapier/zapier-sdk",
+  "npx zapier-sdk login (OAuth; authenticates all connected Zapier apps)",
+  "Ask Claude Code to write one script (src/quiet-deals.ts) that pulls HubSpot deals with no activity for 14 days",
+  "Loop over deals in code; call the LLM only to draft the follow-up message per deal",
+  "Post the summary (with HubSpot record links) to Slack; run with npx tsx"
+ ],
+ "on_screen_only": [
+  "'Stop paying AI to repeat itself'",
+  "Zapier docs nav: Integrations, Powered by Zapier, White Label, MCP, SDK, Connectors; 'Install @zapier/zapier-sdk via npm, authenticate with OAuth or client credentials, and execute actions across 9,000+ apps'",
+  "Mock dashboard 'Pipeline Ops - Deal queue' with Read / Think / Write x200 'round trips'",
+  "npm warning: 'install scripts blocked ... postinstall: node install.js ... run `npm install-scripts ls` to review'",
+  "Script output listing Acme Corp / Globex / Initech quiet 32/30/30 days with app-na2.hubspot.com record URLs and suggested next action"
+ ],
+ "cta": "Comment 'SDK' for the exact setup",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable: Haji already has a Zapier MCP wired up; the SDK pattern (deterministic loop in code, model only for judgement) cuts token spend on any recurring business automation."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Two commands to set up; the architectural lesson is free and reusable (scripts for loops, LLM for decisions). Try on one recurring task such as lead follow-ups or weekly stats."
+ },
+ "verify": [
+  "Is @zapier/zapier-sdk GA or still beta, and what will it cost per task once billed?",
+  "npm flagged blocked install scripts - inspect before allowing",
+  "How does the SDK differ from Zapier MCP already connected (MCP = tool calls per step; SDK = code-level calls)?"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Zapier SDK as an agent-authenticated code library and the explicit cost principle 'looping is free, you only pay for thinking'; liked set covered Apify connector and MCPs but not code-level Zapier access."
+ }
+}

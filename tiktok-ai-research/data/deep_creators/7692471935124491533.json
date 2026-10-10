@@ -1,0 +1,63 @@
+{
+ "id": "7692471935124491533",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7692471935124491533",
+ "creator": "duncanrogoff",
+ "title": "samuelgursky/davinci-resolve-mcp: free MCP server that lets Claude Code drive DaVinci Resolve (cut dead air, match color, queue export) after flipping one Resolve setting",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "davinci-resolve-mcp",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/samuelgursky/davinci-resolve-mcp - 'MCP server integration for DaVinci Resolve Studio'; folders agents, claude, codex, contextrules, cursor/rules, github"
+  },
+  {
+   "name": "DaVinci Resolve",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "must be open; one setting must be flipped first (not named - likely external scripting access)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "chat UI shows model 'Opus 5.5 · Medium'"
+  }
+ ],
+ "claims": [
+  "Over 3,000 people have already started with the repo",
+  "Claude finds dead air, matches color, and queues the export from one prompt",
+  "You do not need to learn Resolve first",
+  "One setting must be flipped in Resolve or the MCP will not connect"
+ ],
+ "how_to_steps": [
+  "Paste the repo link into Claude Code and have it set up the MCP",
+  "Flip the required setting in DaVinci Resolve (external scripting), open Resolve",
+  "Prompt e.g. 'Cut the dead air, match the color, and export it.'; Claude plans before touching the timeline"
+ ],
+ "on_screen_only": [
+  "'Edit videos without learning Resolve'",
+  "GitHub: samuelgursky / davinci-resolve-mcp - FREE; README says 'for DaVinci Resolve Studio'",
+  "Claude chat: 'What's up next, Duncan?' / 'On it. Here's the plan before I touch the timeline.'",
+  "'STEP 02/03 ONE PROMPT: Dead air -> Color -> Export'; 'FLIP IT FIRST - One setting'"
+ ],
+ "cta": "Comment 'Sprout' for the repo link",
+ "relevance": {
+  "score": 2,
+  "why": "Only matters if Haji edits in Resolve; for occasional founder videos the ffmpeg/HyperFrames route elsewhere in this batch needs no NLE."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Cheap to try if Resolve is already installed, otherwise skip. Note README says Resolve Studio (paid) may be required."
+ },
+ "verify": [
+  "Does the free Resolve version expose the scripting API the MCP needs, or is Studio required?",
+  "What is the 'one setting' (Preferences > System > General > External scripting using = Local)?",
+  "Repo maintenance status; '3,000 started' is stars or clones?"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": true,
+  "what": "New tool (Resolve MCP) in a domain (NLE control) the liked set did not cover; low priority."
+ }
+}

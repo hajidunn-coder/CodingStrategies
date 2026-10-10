@@ -1,0 +1,52 @@
+{
+ "id": "7692008118074477825",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7692008118074477825",
+ "creator": "brooke_wrightmode",
+ "title": "Make a 'prompt-builder' skill in Claude (Customize > Skills) whose instruction makes Claude ask three clarifying questions (output contents, reader, what would make it wrong) before writing a structured prompt",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude (claude.ai) Customize > Skills",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "create a skill named prompt builder; invoke with 'use prompt-builder' in any new chat"
+  }
+ ],
+ "claims": [
+  "A skill is a set of instructions you say once and Claude knows how to do that task repeatedly",
+  "Claude will ask three questions then build a structured prompt, cutting back-and-forth guessing"
+ ],
+ "how_to_steps": [
+  "Open Claude, click Customize, then Skills",
+  "Create a skill with Claude and name it 'prompt builder'",
+  "Paste instruction: 'When I describe a task, ask me what the output needs to contain, who reads it, and what would make it wrong. Then write me a good prompt.'",
+  "Save; type your task in plain words",
+  "Claude asks three questions and returns a structured prompt",
+  "In any new chat say 'use prompt builder' to load it",
+  "Comment 'build out' for the guide"
+ ],
+ "on_screen_only": [
+  "Sticker 'WORK SMARTER NOT HARDER'; cards 'INSTRUCTIONS' / 'SAVED ONCE'",
+  "Step chips: '1 Customize > Skills', '4 Save + type task', '5 Any'",
+  "Chat boxes: 'When I describe a task, ask...', 'Then write me a good prompt.', 'use prompt-builder'",
+  "Card 'Back and forth Claude guessing'",
+  "Creator shirt 'Run Co.'"
+ ],
+ "cta": "Comment 'build out' for the guide; save and follow",
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Small but new technique: a clarifying-questions meta-skill (output, audience, failure mode) before generation. Liked set has 'Unlazy' and 'Context Transfer' prompts but not this intake pattern."
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Consumer-level; Haji already writes briefs for Claude Code, though the three questions are a decent intake checklist for subagent prompts."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could fold the three questions into an existing brief/handoff skill in five minutes; not worth a standalone skill."
+ },
+ "verify": [
+  "Whether claude.ai 'Customize > Skills' matches the current UI naming"
+ ]
+}

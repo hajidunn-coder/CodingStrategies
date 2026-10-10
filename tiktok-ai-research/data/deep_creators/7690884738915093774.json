@@ -1,0 +1,92 @@
+{
+ "id": "7690884738915093774",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7690884738915093774",
+ "creator": "mr.paidsocial",
+ "title": "Grok Bot setup for existing Claude Code/Codex users: make Grok Bot the execution layer that delegates to Claude Code on your own subscription, link machines with Tailscale, and build a 'librarian' bot that catalogs every past project/skill folder on a Mac mini",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Grok Bot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "xAI agent platform with a 'team' of named bots (Opi, Libby, Chatty Cathy, Carol, Ditto, Genny, Marge, Velcro)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "logged in inside Grok Bot's own browser/terminal; does the actual work on the existing Anthropic plan"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternative executor using OpenAI plan"
+  },
+  {
+   "name": "Tailscale",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mesh VPN: Mac mini, MacBook Pro, iPhone and the Grok Bot agent each get a Tailscale IP"
+  },
+  {
+   "name": "ManyChat",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Instagram DM automation flow built by Claude via Grok Bot"
+  },
+  {
+   "name": "LeadShark",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'LeadShark for LinkedIn' listed in bot chat"
+  },
+  {
+   "name": "Mac mini",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "holds the 'AI Projects' folder of every Claude Code / Codex project"
+  }
+ ],
+ "claims": [
+  "Grok Bot can be configured so its built-in LLM is only the execution layer while Claude Code or Codex does the work, cutting Grok Bot usage and leveraging plans already paid for",
+  "One bot (Opi, operations manager) was told to share the setup with every other bot on the team",
+  "Grok Bot summarizes what Claude Code is doing under the hood",
+  "With Tailscale every machine plus the Grok Bot agent are on one network; the agent can control the Mac mini",
+  "Libby the 'database librarian' scraped the entire AI Projects folder (every markdown and skill) into a library catalog other bots query"
+ ],
+ "how_to_steps": [
+  "In Grok Bot, log into Claude in the bot's own browser and authenticate Claude Code in its own terminal",
+  "Tell the bot: 'I want to use Claude Code to run all my tasks within Grok Bot. The built-in LLM will only be the execution layer. Your job is to make sure this happens.' Then tell it to share this setup with all other bots",
+  "Have the ops bot set up Tailscale on Mac mini, MacBook Pro, iPhone and the Grok Bot agent",
+  "Create a 'librarian' bot with access to the Mac mini's projects folder; have it scrape every markdown/skill into a catalog",
+  "Point other bots at the librarian when they need a tool or file location",
+  "Example task: ask the DM bot to build a new ManyChat flow; Claude maps it, Grok Bot reports"
+ ],
+ "on_screen_only": [
+  "Caption 'THE ONLY WAY TO USE GROK BOT'",
+  "Bot roster: Carol - Carousel Builder; Ditto - Content Manager; Genny - AI Content Creator; Opi - Operations Manager; Libby - Database Librarian; Marge - Head of Margin; Velcro - Community Manager; Chatty Cathy - DM Automation Manager",
+  "Chat lines: 'What's the main thing you want me handling?' / 'Got it. ManyChat for Instagram DMs, LeadShark for LinkedIn. Checking in with Libby now so I start on the right stack.' / 'Claude's mapping the ManyChat and LeadShark setup'",
+  "Scheduled task 'Reconnect Tailscale -- Weekdays at 8:15 AM'; prompt 'ok what do we need to make tailscale always work'",
+  "Mac mini with an external Samsung SSD; neon 'MR. PAID S...' sign"
+ ],
+ "cta": "Bookmark the video",
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has grokbot (gov-contracting founder) and Karen Cheng's Grok bot, but not the 'orchestrator delegates to Claude Code on your existing plan' pattern, Tailscale mesh for agent-to-machine access, or a librarian agent that indexes all past project folders/skills."
+ },
+ "relevance": {
+  "score": 3,
+  "why": "The librarian-indexing-your-skills idea and Tailscale remote access are transferable to Haji's own Claude Code/Cowork setup even without Grok Bot; Grok Bot itself is another subscription."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Skip Grok Bot. Worth doing: a Claude Code skill or Cowork task that catalogs all project folders/skills into a searchable index (Karpathy-wiki style), and Tailscale if remote Mac access is needed."
+ },
+ "verify": [
+  "Is routing Grok Bot through a Claude Code login allowed under Anthropic's consumer terms?",
+  "Grok Bot pricing/usage caps",
+  "Security of giving a hosted agent Tailscale access to a Mac mini with all projects"
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": "7677690782165323038",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7677690782165323038",
+ "creator": "noevarner.ai",
+ "title": "/analyze-content Claude Code skill: paste any video URL, it downloads the video, extracts frames, transcribes audio and writes a shot-by-shot breakdown, hook analysis and 8-factor virality scorecard to recreate competitor reels",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "/analyze-content (skill)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "typed as '/analyze-content https://www.instagram.com/reel/DW4NudCk9ji/?utm_source=...'; repo not named (comment 'repo')"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "runs the skill; output saved as markdown to Google Drive ('Vidrush reel viral breakdown - MD')"
+  }
+ ],
+ "claims": [
+  "Pipeline: download video -> pull every frame -> transcribe audio -> hand everything to Claude -> full analysis",
+  "Output gives the hook, a text-hook idea and 'exactly why it went viral' so you can recreate it",
+  "Example competitor reel had 496,608 views",
+  "'This is exactly how people are going mega viral on social media using AI'"
+ ],
+ "how_to_steps": [
+  "Install the skill into Claude Code",
+  "Run /analyze-content <video URL>",
+  "Read the generated report: timestamped table (Time, Visual, Spoken/Caption words, On-screen text style, Edit/Transition), '2. THE HOOK' (verbal, text, visual, curiosity, emotional), '3. VIRALITY ANALYSIS' scores"
+ ],
+ "on_screen_only": [
+  "Report table rows e.g. '0-1s Split screen: illustrated hand pressing a big red button... Bold white caption, dark pill background... Hard cut'",
+  "Hook section: Verbal hook 'You can now make full documentaries with one AI tool'; Text hook; Visual hook (hand-drawn finger on glowing red button); Curiosity hook; Emotional hook",
+  "Virality scores /10: Scroll-stopping power 7, Hook strength 8, Curiosity 8, Retention potential 7, Relatability 6, Emotional response 5, Novelty 7, Shareability 4 ('All scores are structural/predictive... I have no view/like/comment data')",
+  "Skill picker showing 'insights - Generate a report analyzing your Claude...' and '/anal' autocomplete; file saved to Google Drive",
+  "'COMMENT REPO'; whiteboard with content-system diagrams; 496,608 views badge"
+ ],
+ "cta": "Comment 'repo' for the repo and skill",
+ "relevance": {
+  "score": 4,
+  "why": "This is essentially the tiktok-ai-research pipeline Haji already runs (download, frames, transcript, structured extraction) packaged as a reusable skill with a hook/virality rubric; useful for marketing his own apps."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Haji already has the extraction pipeline; adding a /analyze-content skill wrapper with the hook + 8-factor rubric is an afternoon's work and reuses existing code. Repo itself is comment-gated, so build rather than fetch."
+ },
+ "verify": [
+  "Which downloader/transcriber the skill uses (yt-dlp, whisper?) and whether Instagram/TikTok downloads keep working",
+  "Scores are LLM guesses with no engagement data - treat as a checklist, not a predictor"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "A packaged video-analysis skill with an explicit hook taxonomy and virality rubric; liked set had Apify hook scraping and Manus content-strategist prompts but not frame+transcript analysis inside Claude Code."
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "id": "7679187008433966349",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7679187008433966349",
+ "creator": "chase_ai_",
+ "title": "11-minute walkthrough of the Claude Code /design skill plus a 3-step workflow: feed screenshot inspiration (Pinterest/Land-book/Dribbble), stack Impeccable + Higgsfield MCP, then iterate with a requested Tweaks panel",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code /design skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "`/design <prompt>`; Desktop shows artboard in side panel, terminal opens a browser artifact at claude.ai/code/artifact/..."
+  },
+  {
+   "name": "Claude Design (web app)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "standalone app being replaced for Claude Code users"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "open-source free front-end skill that detects and removes AI slop; `/impeccable` command visible on screen"
+  },
+  {
+   "name": "Taste skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "mentioned as stackable"
+  },
+  {
+   "name": "Higgsfield MCP",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "used by Claude to generate outside image assets for posters"
+  },
+  {
+   "name": "fal.ai",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "named as an alternative image generator"
+  },
+  {
+   "name": "Pinterest",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "search 'instagram infographic' for inspiration"
+  },
+  {
+   "name": "Land-book",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "web design / hero section inspiration"
+  },
+  {
+   "name": "Dribbble",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "design inspiration"
+  },
+  {
+   "name": "Chase AI+ Claude Code Masterclass",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "creator's paid course, link in pinned comment; self-sponsored"
+  }
+ ],
+ "claims": [
+  "/design takes the best of the Claude Design web app and inserts it into Claude Code; no more bouncing between apps or zip transfers",
+  "Inside Claude Design web app you cannot invoke Impeccable or Taste; inside Claude Code you can",
+  "Desktop app renders the artboard in a side panel; terminal opens it as a browser artifact",
+  "A 'Tweaks' panel starts empty; you prompt Claude to add tweakable controls (color, text size, weight, leading)",
+  "Visual iteration is much faster than prompt -> wait -> check -> prompt loops",
+  "Creator updates the masterclass every week"
+ ],
+ "how_to_steps": [
+  "Run /design with a prompt (demo: Instagram post explaining /design, 3 very different styles, invoke Impeccable)",
+  "Step 1 Inspiration: screenshot 3 designs you like from Pinterest / Land-book / Dribbble and build a reusable reference library",
+  "Step 2 Skills: drop the screenshots into the prompt, ask for one generation per screenshot, tell it to use Impeccable and to use Higgsfield MCP (or fal.ai) if it needs outside assets",
+  "Step 3 Iterate: ask Claude to 'add aggressive tweakable controls' so the Tweaks panel exposes paper color, type size, weight, leading etc.",
+  "Narrow to one variant ('ignore the other two, focus on the metal one'), ask for content changes, have it web-search to get facts right",
+  "Keep iterating until satisfied, then use/implement the result"
+ ],
+ "on_screen_only": [
+  "Terminal: Claude Code v2.1.251 'Updated to latest. Got 14 features, 109 bugfixes, and 29 other changes.' Fable 5 with medium effort, Claude Max",
+  "Terminal output: 'Updated at the same link: https://claude.ai/code/artifact/...' and 'recap: Three Instagram post mockups for the Claude Code /design skill (zine, airport wayfinding, black-and-white data field)'; screenshots dropped from C:\\Users\\Chase\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-08-28 14xxxx.png",
+  "Terminal shows an Impeccable hook firing: '/impeccable hooks ignore-site-rule' and a note that the hook's 'flat type hierarchy' flag was a false positive; artifact named design-skill-launch-post",
+  "Yellow poster mockup: '/design -> Describe it in the terminal (A landing page, a poster, a phone flow, a deck) / Every screen lands on one canvas (Artboards, pages, sticky notes. Pan, zoom, pick one) / Click, drag, retype'",
+  "Red-brush '/design' posters with '08.28 BRIEF' and 'Life Cycle' infographic variants",
+  "Chase AI+ site: Community / Classroom / Calendar tabs, 'Claude Code Masterclass' with Start Here, Modules, Skill Packs, Archive",
+  "Pinterest search 'instagram infographic'"
+ ],
+ "cta": "Buy Claude Code Masterclass at Chase AI+ (link in pinned comment); comment thoughts",
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Extends the short version with the concrete workflow: screenshot-inspiration library, Higgsfield/fal.ai asset generation inside /design, and prompting for a Tweaks panel. Liked set has Claude Design uses and Higgsfield MCP but not the /design in-CLI loop."
+ },
+ "relevance": {
+  "score": 5,
+  "why": "Practical, reproducible UI/marketing-asset workflow inside the tool Haji already pays for; also applies to app screens and landing pages."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Build a /designs-inspiration folder of screenshots once, then use /design + Impeccable per screen. Higgsfield MCP optional. The course pitch is skippable."
+ },
+ "verify": [
+  "Confirm /design is available outside research preview on Haji's account",
+  "Impeccable hook false positives may add noise; check current Impeccable version",
+  "Higgsfield MCP pricing per image"
+ ]
+}

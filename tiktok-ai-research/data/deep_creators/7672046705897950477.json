@@ -1,0 +1,50 @@
+{
+ "id": "7672046705897950477",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7672046705897950477",
+ "creator": "chase.builds.ai",
+ "title": "Pitch for Anthropic's official 'skills' GitHub repo (165-167k stars): a skill is a folder of instructions loaded on demand; creator uses skills for outreach, writing, video editing and content pipeline",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "anthropics/skills (GitHub)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Anthropic's official agent skills library; screen shows Star 167k, Fork 19.9k; link in bio"
+  }
+ ],
+ "claims": [
+  "Repo has over 160,000 / 165,000 stars (167k on screen) and most developers have never opened it",
+  "Free, official, not a community fork; ships from Anthropic directly",
+  "A skill is a folder of instructions the agent loads only when needed, not a prompt pasted every time",
+  "Creator runs skills for outreach, writing, video editing and his entire content pipeline",
+  "'Your team is paying for tools that do less than what Anthropic gives away for free'"
+ ],
+ "how_to_steps": [
+  "Open the anthropics skills repo (link in bio)",
+  "Install skills as folders your agent loads on demand",
+  "Apply to non-code workflows: outreach, writing, video, content"
+ ],
+ "on_screen_only": [
+  "'165,000 STARS' chrome title card",
+  "GitHub header crop: Notifications / Fork 19.9k / Star 167k with the star count circled; labels 'Skills - official', 'Anthropic's own library', 'ships from Anthropic'",
+  "Caption cards: 'a folder of instructions', 'loads only when needed', 'outreach writing', 'my whole pipeline', 'follow for more'"
+ ],
+ "cta": "Repo link in bio; follow for more",
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content -- Anthropic's official plugin/skill pack already appears in liked videos; this adds only the star count"
+ },
+ "relevance": {
+  "score": 2,
+  "why": "Haji already uses skills heavily; no new technique."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a one-time skim of the official repo for docx/pptx/xlsx/pdf style skills if not already installed; nothing else."
+ },
+ "verify": [
+  "Current star count and which skills the repo actually contains",
+  "Whether the creator's 'outreach/video' skills are his own, not from this repo"
+ ]
+}

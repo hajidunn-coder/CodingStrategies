@@ -1,0 +1,66 @@
+{
+ "id": "7679406386945494286",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7679406386945494286",
+ "creator": "colton.deannn",
+ "title": "Claude Design tip: generate a high-fidelity site from a long structured prompt, then Share > 'Hand off to Claude Code' > Copy command to continue in Claude Code without spending Claude Design usage",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude Design (claude.ai > Design)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "New prototype > High fidelity > Create; Share > Hand off to Claude Code"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "receives the handoff command: 'Fetch this design file, read its readme, and implement the relevant aspects of the design. https://api.anthropic.com/v1/design/...'"
+  },
+  {
+   "name": "Google Docs prompt",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "long sectioned website prompt (Section 7 Contact/CTA, Footer, Global Interactions & Polish)"
+  }
+ ],
+ "claims": [
+  "Pasting the creator's prompt into Claude Design high-fidelity mode yields a site with animations, interactive sliders, sideways scrolling and CTAs",
+  "Hand off to Claude Code lets you keep working on the site without worrying about Claude Design usage limits"
+ ],
+ "how_to_steps": [
+  "Go to claude.ai > Design > New prototype, click High fidelity, Create",
+  "Paste the long structured website prompt and send",
+  "Review the generated animated site",
+  "Click Share > Hand off to Claude Code > Copy command",
+  "Paste the command into Claude Code and continue building there",
+  "Comment 'prompt' to receive the prompt"
+ ],
+ "on_screen_only": [
+  "Claude Design 'Start with context: Design System / Add screenshot / Drag in a Figma file'",
+  "Google Doc prompt headings: 'SECTION 7 -- CONTACT / CTA', 'FOOTER', 'GLOBAL INTERACTIONS & POLISH' with bullet rules (cursor states, scroll reveals, hover, mobile)",
+  "Generated fitness site 'APEX/00': nav Programs / Method / Results / Coach / Contact; 'THREE PROGRAMS. ZERO COMPROMISE.'; tiers 'BASE PROTOCOL / APEX PERFORMANCE / BLACK OPS'; 'CALIBRATED BY DATA, DRIVEN BY DISCIPLINE'; 'READY TO START?' email form; 'PAIN IS TEMPORARY DISCIPLINE IS FOREVER'; 'EST. 2014'",
+  "Share dialog tabs 'Send to local coding agent' | 'Send to Claude Code Web'; command text: 'Fetch this design file, read its readme, and implement the relevant aspects of the design. https://api.anthropic.com/v1/design/kjdFXqpFKy... Implement: Apex Fitness.html' with 'Copy command' and 'Download zip instead'",
+  "Claude Code terminal: 'TODO: Everything. Let's start.'",
+  "End card: Comment \"Prompt\""
+ ],
+ "cta": "Comment 'prompt' to get the website prompt",
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set covers Claude Design uses and /clone-site, but not the built-in Share > 'Hand off to Claude Code' command (api.anthropic.com/v1/design/... fetch) as a way to offload iteration from Claude Design quota to Claude Code."
+ },
+ "relevance": {
+  "score": 3,
+  "why": "Useful quota tactic and a clean design-to-code handoff for landing pages; partially superseded by the /design skill in Claude Code."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Minutes to try on the next marketing page: generate in Claude Design, hand off, iterate in Claude Code. The creator's prompt is comment-gated, so write your own sectioned brief."
+ },
+ "verify": [
+  "Does the handoff URL expire or need auth?",
+  "Whether /design in Claude Code makes this flow redundant",
+  "Claude Design usage limits on Haji's plan"
+ ]
+}

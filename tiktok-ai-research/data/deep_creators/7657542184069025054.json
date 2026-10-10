@@ -1,0 +1,47 @@
+{
+ "id": "7657542184069025054",
+ "url": "https://www.tiktok.com/@loganinthefuture/video/7657542184069025054",
+ "creator": "loganinthefuture",
+ "title": "Day 1 of a 30-day 'AI situationship summer': non-technical creator with a Claude Code chief-of-staff system commits to exploring open-source and local models (Ollama) for cost and data sovereignty",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "used daily since November for a 'chief of staff system'; called expensive and token heavy"
+  },
+  {
+   "name": "Ollama",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as something she has played with"
+  }
+ ],
+ "claims": [
+  "Claude Code is robust but expensive and very token heavy",
+  "Goal: 30 days (from July 1) exploring open-source/local models; will document findings",
+  "Motivation: not being tied to one tool; data sovereignty"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'Day 1 of my AI situationship summer' caption on every frame"
+ ],
+ "cta": "Comment where to start / what to avoid",
+ "relevance": {
+  "score": 1,
+  "why": "Announcement only; no technique or tool. The liked set already has the local-Hermes-on-4090 and OmniRoute angles."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; possibly follow the series if later episodes report real local-model results."
+ },
+ "verify": [
+  "Did the series produce any concrete local-model workflow write-ups?"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate theme (leaving/offsetting Claude Code cost with local models) with no new content."
+ }
+}

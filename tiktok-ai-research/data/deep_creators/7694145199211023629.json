@@ -1,0 +1,57 @@
+{
+ "id": "7694145199211023629",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7694145199211023629",
+ "creator": "ai.honeycove",
+ "title": "SkillOpt, described as a Microsoft open-source 'training manager' that reviews your Claude Code sessions for repeated corrections and proposes edits to your skill files overnight",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "SkillOpt",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Microsoft / open source'; no URL or repo path shown; UI text 'Review. Improve. Validate. Proposals ready for your review.'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "sessions are the input"
+  }
+ ],
+ "claims": [
+  "SkillOpt reviews your Claude Code sessions, spots recurring corrections (e.g. 'add the next steps' every report) and proposes improvements to the skill's instructions",
+  "Run it overnight, review suggested improvements in the morning",
+  "Pitched as 'Claude learns while you sleep' / 'you wanted an assistant, not another employee to train'"
+ ],
+ "how_to_steps": [
+  "Point SkillOpt at your Claude Code session history",
+  "It diffs your corrections against the skill instructions that produced the output",
+  "It proposes an instruction change (e.g. 'Always include next steps, owners and deadlines')",
+  "You review/accept proposals next morning"
+ ],
+ "on_screen_only": [
+  "'MICROSOFT / OPEN SOURCE  SkillOpt.  A training manager for your AI.'",
+  "Diagram: Claude Code sessions (Report drafting, Your correction, The recurring pattern) -> Report-writing skill (Instructions Claude follows -> 'Improve the rule behind the output')",
+  "Example before/after: 'Write a clear weekly report.' -> 'Always include next steps, owners and deadlines.' / 'Choose an owner. Set a deadline.'",
+  "Timeline 'Overnight -> Morning review'; 'SUGGESTED IMPROVEMENT Report-writing skill'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Automating the loop Haji already does manually with his session-learning skill (mine sessions -> propose skill updates) would save real time, if the tool is real."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "If it exists and reads Claude Code transcripts locally, it is a drop-in complement to session-learning; otherwise the idea can be replicated with a nightly Routine that runs the existing session-learning skill over the day's transcripts."
+ },
+ "verify": [
+  "Does a Microsoft 'SkillOpt' repo exist? No URL shown; name/attribution may be wrong or hype",
+  "Does it work with Claude Code transcripts or only with its own agent framework?",
+  "Does it send session content to a cloud service?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "A tool for automated skill-instruction optimization from correction history; liked set had Karpathy skills and manual code-quality skills but nothing that rewrites skills from session feedback."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "7681323881113668877",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7681323881113668877",
+ "creator": "mr.paidsocial",
+ "title": "Reaction: Claude Code on Fable 5.1 (max effort, no Ultra Code) added motion graphics/B-roll to a talking-head video in ~20 min for ~5% of weekly usage; idea to split top ads into hook/body/CTA for recombination",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code (Fable 5.1, Effort Max)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "effort slider 'Faster <-> Smarter' at Max; 'Fable 5.1 Max'"
+  },
+  {
+   "name": "HyperFrames",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "'HTML to render' in stack card"
+  },
+  {
+   "name": "ffmpeg",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'cuts, crops, loudness'"
+  },
+  {
+   "name": "Whisper",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'word timestamps'"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "'the SFX kit'"
+  },
+  {
+   "name": "here.now",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'the review canvas' - shows beat map, 'Comment at this frame', takeovers, caption plan"
+  },
+  {
+   "name": "Skool community",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "where he teaches the technique"
+  }
+ ],
+ "claims": [
+  "The edit took about 20 minutes and roughly 5% of his weekly Fable allowance, on Fable 5.1 max effort without Ultra Code",
+  "Prompt was minimal: 'edit the video, add some cool graphics at the back half'",
+  "Review page stats: 100.7s · 1080x1920 · 30fps, 33 pause cuts (106.8s -> 100.7s), 5 takeovers",
+  "Next level: have Claude download your top 90-day ad videos, split each into hook/body/CTA, and recombine elements for more creatives to test"
+ ],
+ "how_to_steps": [
+  "Give Claude Code the video path and a short brief (leave finger-pointing sections alone; conceptualize the talking parts visually)",
+  "Claude reads prior session logs for editing style, transcribes with word timestamps, cuts pauses, builds HyperFrames overlays, renders with ffmpeg",
+  "Claude publishes V1 to a here.now review URL with editor's notes and beat map",
+  "Optionally: pull top ads from the ad account, split hook/body/CTA, ask Claude to match every element of winners"
+ ],
+ "on_screen_only": [
+  "'WAIT TILL YOU SEE THIS VIDEO EDIT FROM CLAUDE' / 'CLAUDE CODE EDITED THIS ON FABLE 5.1'",
+  "Prompt excerpt: 'I want you to edit this video smb://... /Caleb Personal/AI Projects/internal-automations/Organic Content Queue/claude ad variations.MP4 ... leave any of the pointing my finger at the screen sections alone ... review the session logs to see how we've been editing videos'",
+  "Review page: 'Editor's notes: What I changed, what I left alone... Pointing sections left alone... Full-screen takeovers... Caption plan... Beat map'; 'Takeover 0 - Analyze + split', 'Takeover 4 - Mix and match', '#512'",
+  "'MY AI EDIT STACK' card listing Claude Code, Fable 5.1, HyperFrames, ffmpeg, Whisper, ElevenLabs, here.now",
+  "Profile: Caleb Kruse mr.paidsocial, 566 posts, 192.8K followers"
+ ],
+ "cta": "Comment 'Claude Edit' for the full AI stack; follow",
+ "relevance": {
+  "score": 2,
+  "why": "Same pipeline as the creator's long tutorial in this batch, compressed; useful mainly as a cost datapoint (5%/week, 20 min) and the hook/body/CTA recombination idea for ads."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to do beyond what the full tutorial record already covers; the ad-splitting idea is worth noting if Haji runs paid video ads."
+ },
+ "verify": [
+  "'5% of weekly usage' is self-reported on Max plan; measure on own plan",
+  "Is HyperFrames the same repo as the liked 'hyperframes' skill?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Largely duplicate of 7684024903036718349 (same stack) and the liked hyperframes explainer; only new nugget is splitting winning ads into hook/body/CTA for recombination."
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": "7662135066323078414",
+ "url": "https://www.tiktok.com/@leadwithzoe/video/7662135066323078414",
+ "creator": "leadwithzoe",
+ "title": "Non-technical pitch for Claude Fable 5 (claims it was 'taken off the market' by the US government for 72 hours): best at end-to-end tasks, synthesizing messy document piles, and one-shot creation; use cheaper models for simple work",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Fable 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "shown building agents, a website, presentations; screenshots of Claude app chats"
+  }
+ ],
+ "claims": [
+  "'The US government took it off the market within 72 hours of release' and it is now back",
+  "Most powerful on every front; handles messy multi-document synthesis where previous models lost the thread",
+  "Creates presentations etc. from scratch with far less back-and-forth, making nuanced design assumptions",
+  "Only use Fable 5 for complex projects because it is the more expensive model"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'claude just got even smarter'",
+  "Fable 5 logo card",
+  "Phone screenshots of Claude chats captioned 'fable 5 building me a website rn'"
+ ],
+ "cta": "Comment what you're using",
+ "relevance": {
+  "score": 1,
+  "why": "No actionable content; Haji already uses Fable 5 daily. The government-removal claim is the only notable (and dubious) item."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [
+  "Was Fable 5 access actually withdrawn for 72 hours and by whom? Liked set mentions only an access extension to July 12."
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked Fable 5 news; adds only an unverified 'government pulled it' claim."
+ }
+}

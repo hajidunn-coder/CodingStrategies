@@ -1,0 +1,67 @@
+{
+ "id": "7683156581248240926",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7683156581248240926",
+ "creator": "ducktate.com",
+ "title": "Solo founder worried about Claude Code dependency and weekly limits tries OpenCode ($10) with the new GLM open-source model, burns the 5-hour window in an hour, plans token-saving skills (orchestrate skill)",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "OpenCode",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "open-source coding agent; creator paid $10; claims ~$3 per five-hour window on their plans"
+  },
+  {
+   "name": "GLM (new open-source model)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "larger open model used inside OpenCode"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "weekly limit being hit consistently"
+  },
+  {
+   "name": "orchestrate skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "creator's own token-saving workflow skill"
+  }
+ ],
+ "claims": [
+  "Most solo founders burn through the Claude Code weekly limit in a few days",
+  "OpenCode trial cost $10; burned the five-hour window within the first hour",
+  "OpenCode plans are 'like $3 for a five-hour window'",
+  "Token-consumption skills (orchestrate etc.) need to be implemented first"
+ ],
+ "how_to_steps": [
+  "Sign up for OpenCode (~$10) and select a large open model like GLM",
+  "Implement token-saving workflows/skills before judging usage",
+  "Compare usage across the next five-hour window; follow for results"
+ ],
+ "on_screen_only": [
+  "Title card 'Relying too much on Claude code'",
+  "Captions: 'IT WAS $10', '$3 FOR A FIVE HOUR', 'I DID BURN THROUGH THAT FIVE HOUR WINDOW'"
+ ],
+ "cta": "Follow along to find out results",
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "OpenCode + GLM as a cheap fallback harness is not in the liked set (which has OmniRoute, NVIDIA free endpoints, Ponytail/caveman token savers). It is an inconclusive first impression, not a recommendation."
+ },
+ "relevance": {
+  "score": 3,
+  "why": "Weekly-limit pain is real for a solo founder; a secondary harness with open models is a hedge, but this video gives no result yet."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not yet: the creator's own test failed. Revisit only if limits block shipping; NVIDIA free endpoints (already liked) are a cheaper experiment."
+ },
+ "verify": [
+  "OpenCode's actual plan pricing and five-hour window structure",
+  "Which GLM version and its coding quality vs Claude",
+  "Whether token burn was the model's verbosity or the creator's workflow"
+ ]
+}
