@@ -1,0 +1,74 @@
+{
+ "id": "7657606445843746080",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7657606445843746080",
+ "creator": "bettercreatingofficial",
+ "title": "Generative engine optimization (GEO): creator used the free open-source 'Claude SEO' skill/plugin for Claude Code to restructure his site for AI search in one afternoon; full guide on YouTube",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude SEO (SEO skill for Claude Code)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Open-source SEO analysis plugin for Claude Code; README says it runs 25 sub-skills and 18 specialist agents across technical SEO, content quality (E-E-A-T), schema.org markup, AI search optimization (GEO), local SEO, e-commerce and international SEO; public repo under 'AgriChemsInc/claude-seo' (partially legible) plus a community private mirror 'AI-Marketing-Hub/claude-seo' requiring membership"
+  },
+  {
+   "name": "Google Search Console",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Where he measured increased appearances"
+  },
+  {
+   "name": "Claude app (Sonnet 4.6, web search)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Used to test 'best creator to follow in the productivity niche in the UK' query"
+  },
+  {
+   "name": "ChatGPT / Google AI Mode",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Shown as the AI search surfaces that cite ~3 sites per query"
+  }
+ ],
+ "claims": [
+  "Ask ChatGPT or Claude to recommend a business in your niche and it names about 3 sites; if you are not one you don't exist",
+  "Barely anyone, including huge companies, is optimizing for GEO yet; big brands' sites are bloated and slow to change",
+  "On-screen stat: ~93% of AI searches end without a click (source Semrush, 2026)",
+  "He optimized his whole site in one afternoon with a free Claude plugin and saw a big increase in Google Search Console appearances"
+ ],
+ "how_to_steps": [
+  "Test your niche query in ChatGPT/Claude/Google AI Mode and see which ~3 sites get cited",
+  "Install the Claude SEO skill in Claude Code (public open-source version)",
+  "Run its audit; it produces a prioritized action plan with falsifiable recommendations grounded in Google guidance",
+  "Apply the structural/schema/content fixes across the site in one session",
+  "Watch Google Search Console for increased AI-search appearances; full step-by-step on his YouTube"
+ ],
+ "on_screen_only": [
+  "Claude chat: 'What's the best creator or set of creators to follow in the productivity and tech niche for getting intentional with your tech choices in the UK?' -> answer names 'Intentional Tech' YouTube channel (Chris Cowley, Liverpool); model selector shows Sonnet 4.6 Medium",
+  "Article screenshot defining Generative Engine Optimization (GEO) and 'What Are Generative Engines?'",
+  "Slide: 'WHY IT'S OPEN -- The big brands are slow. Their sites are bloated, and not built for how an AI actually reads a page -- yet. ~93% of AI searches end without a click -- so being the answer is everything. Source -- Semrush, 2026'",
+  "Phone: Google AI Mode result citing 'Simon Pittman Systems' and 'Simon Pittman - Better Creating | LinkedIn' with 2 sources; text mentions Better Creating, 240,000-person community",
+  "Claude SEO README: 'claude seo' logo, 'Two versions of this skill: Public open-source -> AgriChemsInc/claude-seo: MIT, public releases, no membership. Community private mirror -> AI-Marketing-Hub/claude-seo: early access to upcoming features and direct collaboration with the AI Marketing Hub Pro community. Requires membership.' Badges: Claude Code, Skill, Agents, SEO, GEO, AI Marketing Hub, Pro community. 'Why Claude SEO: AI-search first. Aligned with Google's AI Optimization Guide. Question-based citability scoring, primary-source...'",
+  "Phone search result: 'Claude CoWork OS -- A Personal AI System Built for Non-Technical People' on bettercreating.com, 'Get started with Claude Cowork' support.claude.com"
+ ],
+ "cta": "Watch the full guide on YouTube",
+ "relevance": {
+  "score": 4,
+  "why": "Directly relevant to a founder shipping apps and landing pages: being the site an LLM recommends is cheap distribution right now. A packaged Claude Code SEO/GEO skill with schema and citability scoring is exactly the kind of leverage a time-poor solo founder can run in an afternoon across all his sites."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install the public claude-seo skill, run the audit on each app's marketing site, apply schema.org/FAQ/citability fixes, track in Search Console. A few hours per site. Need to verify the repo name and that the 'public' version is not a crippled funnel for the paid community."
+ },
+ "verify": [
+  "Exact GitHub repo for the public Claude SEO skill (AgriChemsInc/claude-seo as read from the frame?) and its license/maintenance",
+  "How much of the 25-skill/18-agent harness is in the free version vs the paid AI Marketing Hub mirror",
+  "Any evidence beyond Search Console 'appearances' that GEO changes drive LLM citations",
+  "Token cost of running an 18-agent audit on a large site"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New tool and topic: a Claude Code skill for SEO/GEO (schema, E-E-A-T, AI-citability scoring). The liked set covers design, security, legal and marketing skills but nothing on getting sites cited by AI search."
+ }
+}

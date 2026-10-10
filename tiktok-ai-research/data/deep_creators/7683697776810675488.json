@@ -1,0 +1,84 @@
+{
+ "id": "7683697776810675488",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7683697776810675488",
+ "creator": "ai_vanta_ai",
+ "title": "Hype recap: 'AI agent turned $50 into $5,000 in 48 hours' trading Polymarket with Grok Bot (own cloud computer, X sentiment, Kelly sizing, 6% cap); on-screen dashboard shows paper mode and ~$62-92 balance",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Grok Bot (xAI)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'GROK BOT / SURVIVAL MODE / ALIVE' dashboard and boot log; Grok Bot logo closing frame"
+  },
+  {
+   "name": "Polymarket",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Prediction-market venue the agent trades on; ~2,000 markets scanned every 10 minutes"
+  },
+  {
+   "name": "X (Twitter) sentiment",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Agent reads live X posts ('it's grok, it sees every post on this app')"
+  },
+  {
+   "name": "Claude computer / browser / terminal",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Transcript says the agent 'had its own Claud computer browser and terminal'"
+  },
+  {
+   "name": "Kelly criterion",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "Position sizing; cap 6% of bankroll per bet"
+  },
+  {
+   "name": "BloFin / pump.fun / helius",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Crypto exchange UI (SOL/USDT perp) and Solana infra names in boot log"
+  }
+ ],
+ "claims": [
+  "An agent given $50 and the instruction 'earn enough to pay for yourself or shut down' was reportedly at ~$5,000 after 48 hours",
+  "Every 10 minutes it scanned up to 2,000 (screen: 500-1000) Polymarket markets, monitored X sentiment, hunted for >8% mispricing",
+  "Used Kelly criterion sizing with a max 6% of capital per bet; 'pays its own $200 subscription from profits'",
+  "Creator hedges: 'reportedly', 'results are never guaranteed'"
+ ],
+ "how_to_steps": [
+  "Give an agent its own cloud computer with browser and terminal",
+  "Loop every 10 minutes: scan prediction markets, read X sentiment, estimate fair value, flag mispricing above 8%",
+  "Size positions with Kelly, cap at 6% of bankroll, execute in the agent's browser"
+ ],
+ "on_screen_only": [
+  "Dashboard: 'GROK BOT / SURVIVAL MODE / ALIVE', current balance $62.15, total P&L +$12.15, subscription $0.00, 'BALANCE HISTORY (LOG SCALE)' chart with annotation 'PIVOT -> WEATHER / NOAA' and 'RUNWAY 1 DAY'; later $92.30, 'SURVIVAL 4 days', 'DAILY COST -$6.58', 'TRADES 114', 'SCANNED 104.6K', 'AVG BET $1.29'",
+  "Boot log: 'booting engine ok / event bus helius + pump.fun up / loading agents 6/6 / session key scoped + capped signed / risk gate unknown = veto armed / mode paper live = 0'",
+  "Tweet by @simplifyin...: 'autonomous trading agent on polymarket. zero code this time. the bot has its own computer in the cloud, its own browser, its own terminal. it trades with my laptop shut. every 10 minutes it: scans 500-1000 markets; reads live X sentiment (it's grok, it sees every post on this app); builds fair value, flags mispricing > 8%; calculates position size (kelly criterion, max 6% bankroll); executes in its own browser; pays its own $200 subscription from profits'",
+  "Wallet screenshot $5,049.16 (Ethereum 2.021 ETH, Solana/Bitcoin/TRON $0.00) with 'Record NVIDIA earnings' news card",
+  "Polymarket trending page (Fed Decision in September?, BTC Up or Down 5m, UEFA Champions League 2027 Champion)",
+  "Unrelated B-roll: an agent chat log about Okta SSO / Salesforce login, a phone notes list of SF contacts, BloFin SOL/USDT chart",
+  "Red banner: 'AI TURNS $50 INTO $5000'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Hype recap of a viral tweet; the on-screen dashboard contradicts the $5,000 claim (balance $62-92, P&L +$12, 'mode paper live=0' i.e. paper trading). Nothing a founder should act on."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Do not implement; gambling with an agent on prediction markets is not a business. Only reusable idea is the risk-gate pattern (hard caps, veto on unknown) for any autonomous agent that spends money."
+ },
+ "verify": [
+  "Is the source tweet (@simplifyin...) verifiable, and does the dashboard show paper trading ('mode paper, live = 0')?",
+  "The $5,049 wallet screenshot is an Ethereum wallet, not Polymarket; is it even the same experiment?",
+  "Polymarket ToS and US legal status for automated trading"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked hype items (Automaton self-funding agent, Grok Bot); adds no tool or technique, and the screen evidence undercuts the claim. Identical re-upload of 7684806400467471648 (same transcript and frames)."
+ }
+}

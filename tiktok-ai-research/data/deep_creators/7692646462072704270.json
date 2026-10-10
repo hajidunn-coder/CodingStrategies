@@ -1,0 +1,57 @@
+{
+ "id": "7692646462072704270",
+ "url": "https://www.tiktok.com/@bengusberg/video/7692646462072704270",
+ "creator": "bengusberg",
+ "title": "Founder testimonial for OpenAI's proactive 'dots' agent: it unprompted texted him not to chase an invoice already scheduled for payment, and surfaced a creator's reply that went to spam",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "OpenAI dots (ChatGPT 'dot' agent)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Open ChatGPT, update to latest version, click your dot in the upper-left corner; runs 24/7 with its own computer and Chrome browser"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Host app for the dot"
+  }
+ ],
+ "claims": [
+  "dots is a new kind of OpenAI agent that works 24/7 on its own computer and Chrome browser and proactively acts without being asked",
+  "Twice in two days it stopped the creator from a mistake: (1) flagged that a company he was about to dun had already emailed saying payment arrives October 2nd; (2) flagged an unread creator reply with availability that had gone to spam a week earlier",
+  "Creator never told the dot about either situation; it inferred from his email",
+  "Creator says he is not paid by OpenAI; he is a Stanford founder of an AI startup that raised $4M"
+ ],
+ "how_to_steps": [
+  "Open ChatGPT and update to the latest version",
+  "Click your dot in the upper-left corner to set it up",
+  "Let it run; it reads your email/calendar context and texts you proactively"
+ ],
+ "on_screen_only": [
+  "Title card 'My experience using dots'",
+  "'Introducing dots' launch graphic with a blue blob mascot",
+  "Screenshot of an iMessage-style thread: dot says the payment email came from a Ramp email 'September 26' and 'October 2 was my estimate', creator replies 'awesome! thanks for making me not sound like an idiot'; dot replies 'Haha glad we caught it before you hit send'",
+  "Screenshot of a ChatGPT desktop chat window with blurred message bubbles"
+ ],
+ "cta": "Try it out and let me know what you build; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Haji has repeatedly liked proactive personal-agent content (Instinct, Jarvis, Town, Grok bot, Meta Muse / ChatGPT Dots comparison). This is a concrete inbox-watching use case (missed replies, don't-dun-the-client) that maps directly onto his time-poor founder life, but it is an OpenAI consumer product, not a Claude Code technique."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to build; it is a feature toggle inside ChatGPT. The reusable idea is a 'pre-send sanity check' agent over Gmail: before sending a chase email, search the thread for an existing answer. That could be a small Claude Code + Gmail MCP skill, but Haji already has Town/Instinct-style tools on his radar."
+ },
+ "verify": [
+  "Does the ChatGPT 'dots' feature exist and is it available on Haji's ChatGPT plan/region?",
+  "What email/calendar access does it require and what are the privacy terms?",
+  "Is the creator's second example (spam detection) real behavior or a one-off?"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked content: the liked set already has an agent comparison covering 'ChatGPT Dots' plus several proactive-assistant reviews (Instinct, Town). Only new detail is the specific 'already-paid invoice' catch."
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "7613050647474162966",
+ "url": "https://www.tiktok.com/@itstundealao/video/7613050647474162966",
+ "creator": "itstundealao",
+ "title": "Cursor Agent test: GPT-5.3 Codex vs Claude Opus 4.6 building a Duolingo React Native (Expo) front-end clone; Codex failed, Opus 4.6 succeeded but cost >$3 (4x Codex) (#cursorpartner sponsored)",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Cursor Agent",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'I'm using Cursor Agent btw'; agent mode with model picker and usage/cost export"
+  },
+  {
+   "name": "GPT-5.3 Codex",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "First attempt; result broke (red X)"
+  },
+  {
+   "name": "Claude Opus 4.6 (high thinking)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Second attempt; usage table rows 'claude-4.6-opus-high-thinking' 2M tokens $2.13 etc."
+  },
+  {
+   "name": "React Native Expo",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Prompt asks for a Duolingo clone in RN Expo with mocked backend data"
+  }
+ ],
+ "claims": [
+  "Opus 4.6 implementation cost more than $3, about four times GPT-5.3 Codex",
+  "Opus 4.6 output 'actually really good': all tabs work, lessons work, online check works; Codex version 'went wrong somewhere'"
+ ],
+ "how_to_steps": [
+  "Prompt (screen): 'Make a clone of the duolingo app using react native expo. Mock the data from the backend to start. But I want all tabs implemented, and I also want a design for the lessons too. Match the same style, color and font of duolingo.'",
+  "Run with GPT-5.3 Codex in Cursor Agent; inspect result",
+  "Paste the same prompt, switch model to Opus 4.6; compare cost in Cursor usage table and test tabs/lessons"
+ ],
+ "on_screen_only": [
+  "Overlay: 'GPT-5.3 Codex vs Claude Building Duolingo Front-end'; scoreboard 'GPT 5.3 CODEX' (red X) vs 'CLAUDE 4.6' (smiley)",
+  "Cursor usage table (Export CSV) with rows: claude-4.6-opus-high-thinking 552.1K $0.36; 845.7K $0.61; auto $0.00 included; claude-4.6-opus-high-thinking 2.1M $2.13; gpt-5.3-codex 547.8K $0.35; gpt-5.3-codex 625.5K $0.46; claude-4.6-opus-high-thinking 147.9K $0.11",
+  "Phone mockups: Duolingo-style green lesson path, 'Translate this sentence: Se conecto a Internet?' word-bank screen, 'Bronze League' leaderboard, 'Online: Just above eobaloe' toast"
+ ],
+ "cta": "Claude or GPT? (comment) #cursorpartner",
+ "relevance": {
+  "score": 2,
+  "why": "Dated model comparison (Opus 4.6 / GPT-5.3 era, both superseded) on a toy frontend task; the only durable takeaway is that Opus-class output cost ~4x but worked first time."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; Haji already runs Claude Code. Cost-per-task tracking per model is the only habit worth copying."
+ },
+ "verify": [
+  "Sponsored by Cursor (#cursorpartner); one-shot comparison, no repeat runs",
+  "Models shown are superseded; do not generalize to current Codex/Claude versions"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate-class content: liked set already has model head-to-heads (DeepSeek vs Fable 5, Codex quota hacks); no new tool or technique."
+ }
+}

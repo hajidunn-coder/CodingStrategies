@@ -1,0 +1,57 @@
+{
+ "id": "7668811047872023828",
+ "url": "https://www.tiktok.com/@millee.md/video/7668811047872023828",
+ "creator": "millee.md",
+ "title": "Securitymaxxing pt.3: three more vibe-coded app holes with the Claude Code prompt for each -- XSS (escape/sanitize user content), unchecked file uploads (check type/size, store non-executable), and unverified Stripe webhooks (verify signature)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Terminal 'Welcome to Claude Code! cwd: ~/my-app' with the three fix prompts typed in"
+  },
+  {
+   "name": "Stripe webhooks",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Verify webhook signature so only real Stripe events are accepted"
+  }
+ ],
+ "claims": [
+  "XSS: a comment or username containing script can run in every other user's browser and steal logins",
+  "Unchecked uploads: an uploaded file can execute on the server and take it over",
+  "Fake payment webhooks: without signature verification anyone can send 'payment_succeeded' and get the product free"
+ ],
+ "how_to_steps": [
+  "Prompt 1: 'escape and sanitize anything a user submits before it ever gets shown on the page'",
+  "Prompt 2: 'check the file type and size on every upload and store files somewhere they can never be executed'",
+  "Prompt 3: 'verify the webhook signature so only real events from Stripe get through'",
+  "Patch all three tonight"
+ ],
+ "on_screen_only": [
+  "Header 'Securitymaxxing your vibecoded app pt.3'",
+  "Mock app.com/comments showing comment 'nice app! <script>steal(logins)</script>' replicated across posts",
+  "Mock uploads.app.com: 'invoice.pdf.sh' executing, 'spawning shell... reading secrets...' with srv-01/02/03 online",
+  "Mock api.app.com/webhooks incoming events: 'payment_succeeded $29.00 from: stripe.com signature verified' vs 'payment_succeeded $29.00 from: totally-stripe.biz NO SIGNATURE' accepted with a green check, 'your app: looks good to me'",
+  "Claude Code suggestion placeholder: 'try \"audit my auth flow\"'"
+ ],
+ "cta": "Follow me for more AI content",
+ "relevance": {
+  "score": 4,
+  "why": "All three apply to Haji's paid apps; the Stripe webhook signature check in particular is a revenue leak if missed."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Three one-line prompts to run in Claude Code per app, plus add to the prelaunch checklist. Minutes each; Stripe signature check should be verified with 'stripe listen' test events."
+ },
+ "verify": [
+  "Confirm each app verifies Stripe-Signature with the endpoint secret and rejects replayed events (idempotency)",
+  "Upload storage: use object storage (S3/Supabase Storage) with content-type checks rather than the app server"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set covers login/auth holes and RLS; webhook signature verification and non-executable upload storage are new specifics (XSS was already in the top-5 holes video)."
+ }
+}

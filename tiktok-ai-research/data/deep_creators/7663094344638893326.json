@@ -1,0 +1,50 @@
+{
+ "id": "7663094344638893326",
+ "url": "https://www.tiktok.com/@leadwithzoe/video/7663094344638893326",
+ "creator": "leadwithzoe",
+ "title": "Five things to do with Claude Design in the Claude app: prototypes shipped to code, slide decks, custom PDF documents (invites/agendas), wireframes, and animations for videos or ads",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Inside the Claude app; start screen 'What will you design today?' with template chips Prototype / Slides / Document / Wireframe / Animation; model picker shows Claude Opus 4.6"
+  }
+ ],
+ "claims": [
+  "Claude Design is one of the most impressive AI design tools and is now in the Claude app",
+  "Five uses: 1 prototypes (design an app/site, port to code, launch), 2 slides, 3 custom documents/anything that fits a PDF, 4 wireframes for net-new ideas, 5 animations usable in videos or paid ads"
+ ],
+ "how_to_steps": [
+  "Update the Claude app",
+  "Open Claude Design and pick a template (Prototype, Slides, Document, Wireframe, Animation) or describe what you want",
+  "Export prototypes to code, slides, PDFs, wireframes, or animations"
+ ],
+ "on_screen_only": [
+  "Claude Design logo card",
+  "Claude Design start screen: 'What will you design today?', 'Describe an app idea', 'Design System: None', model 'Claude Opus 4.6', 'Start with a template...' chips Prototype / Slides / Document / Wireframe / Animation",
+  "Design-system color palette panel",
+  "Sample outputs: 'Eleanor Whitmore' event program and 'Fiftieth birthday of Eleanor Whitmore' invitation; mobile app wireframe screens; 'Introducing Apple Power' animated product ad with red bottles",
+  "Handwritten overlay list: 1. prototypes 2. slide 3. custom documents 4. wireframes 5. animations",
+  "Series tag 'Claude runs my life'"
+ ],
+ "cta": "Save this, update Claude, go try Claude Design",
+ "relevance": {
+  "score": 2,
+  "why": "Haji has liked at least three Claude Design videos (uses, Motion, Jarvis UI). This is a feature overview with no technique beyond listing the five templates."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing new to implement; Haji already knows the tool. At most, remember Document/Wireframe templates exist for quick one-pagers."
+ },
+ "verify": [
+  "Is animation export from Claude Design the same as the /motion feature covered elsewhere?",
+  "Export formats for documents (PDF) and prototypes (React code?)"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked Claude Design content; adds nothing beyond the template list."
+ }
+}

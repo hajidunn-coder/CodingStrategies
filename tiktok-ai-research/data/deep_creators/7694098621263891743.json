@@ -1,0 +1,50 @@
+{
+ "id": "7694098621263891743",
+ "url": "https://www.tiktok.com/@lord.luke5/video/7694098621263891743",
+ "creator": "lord.luke5",
+ "title": "Claude for Startups testimonial: applied in ~5 minutes, accepted almost immediately, got 12 months of Claude Team, $1,000 API credits, Anthropic Applied AI office hours and startup perks; DM 'STARTUP' for the link",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude for Startups program",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Welcome email 'Welcome to Claude Startups' addressed to 'PartnershipIntel' (creator's company); link offered via DM/comment keyword STARTUP"
+  }
+ ],
+ "claims": [
+  "Application took ~5 minutes and was accepted almost immediately",
+  "Benefits: 12 months Claude Team, $1,000 API credits, Anthropic Applied AI office hours, startup perks",
+  "Caption on screen mentions '$3,000' value (garbled audio: 'you get a $3,000')",
+  "'If you're building an AI startup: just apply. It's easy, fast, and literally takes minutes'"
+ ],
+ "how_to_steps": [
+  "Get the application link (DM/comment 'STARTUP')",
+  "Fill out the ~5 minute application",
+  "Receive the 'Welcome to Claude Startups' email with Claude Team, API credits, office hours"
+ ],
+ "on_screen_only": [
+  "Email screenshot: 'Welcome to Claude Startups -- We're glad to welcome PartnershipIntel to our program. As a member, you can start building with Claude from day one... year of Claude Team, API credits, offers on tools... and time with our team to ask questions.'",
+  "Post text: '1k in Claude API credits -- just applied to Claude Startups and got accepted almost immediately. The application took ~5 minutes. Got: -> 12 months Claude Team -> $1,000 API credits -> Anthropic Applied AI office hours -> Startup perks. If you're building an AI startup: just apply. It's easy, fast, and literally takes minutes'",
+  "Overlay 'comment the word startup and I'll give you a link'"
+ ],
+ "cta": "DM/comment STARTUP for the link",
+ "relevance": {
+  "score": 3,
+  "why": "Haji is a founder building apps with Claude; a free year of Claude Team and $1K credits is real money. However, the liked set already has two videos covering the program with the application URL (claude.com/programs/startups)."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "If not yet applied: 5-minute application at claude.com/programs/startups (per liked content). Check eligibility (company <5 years old) and whether it conflicts with his existing Max subscription."
+ },
+ "verify": [
+  "Current eligibility rules and whether existing Max/Team subscribers can convert",
+  "Is the 'office hours' benefit real for all accepted startups or a select tier?",
+  "What is the '$3,000' figure in the garbled audio referring to?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of two liked Claude for Startups videos; adds only a datapoint that acceptance was near-instant and the Applied AI office hours perk."
+ }
+}

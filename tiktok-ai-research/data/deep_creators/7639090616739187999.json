@@ -1,0 +1,42 @@
+{
+ "id": "7639090616739187999",
+ "url": "https://www.tiktok.com/@luke.builds.ai/video/7639090616739187999",
+ "creator": "luke.builds.ai",
+ "title": "Skit: voice 'Jarvis' reports app stats ($15,444 MRR, 3,960 downloads, 1.4 ROAS, 86k organic views, zero refunds), raises goal to $30k and recommends doubling the street-interview ad budget",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "'Jarvis' voice assistant",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Unnamed; blue circular HUD dashboard on a monitor showing $15,000 / $30,000 goal; no stack named"
+  }
+ ],
+ "claims": [
+  "Revenue $15,444 MRR; 3,960 new downloads this week; ads at 1.4 ROAS; posts 3 organic videos/day totalling 86,000 views; refunds dropped to zero after last week's bug fix",
+  "Jarvis recommends doubling the budget on the street-interview ad and recording 3 more videos"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Multi-monitor desk: top screen a sci-fi blue HUD with '$15,000' then '$30,000' goal readouts and timestamp; left monitor cycling through an analytics dashboard, a spreadsheet, and a calendar/ads grid; side monitors with 'AZARIS' neon wallpaper",
+  "Caption text: 'Building a $30k MRR app with Jarvis'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Aspirational skit with no stack, no setup, no prompts; Haji already liked several Jarvis how-tos and skits."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement beyond the idea of a daily stats briefing agent, which the liked Jarvis/Stripe-MCP videos already describe concretely."
+ },
+ "verify": [
+  "Are the MRR/ROAS numbers real or scripted? No app named",
+  "Is the HUD a real dashboard or a video overlay?"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked Jarvis skits (voice Jarvis reading Stripe/analytics/ads via MCPs); adds nothing."
+ }
+}

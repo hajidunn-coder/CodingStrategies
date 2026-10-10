@@ -1,0 +1,69 @@
+{
+ "id": "7694807917526076680",
+ "url": "https://www.tiktok.com/@github.signals/video/7694807917526076680",
+ "creator": "github.signals",
+ "title": "'Animate' (github.com/cth9191/animate): a Claude Code skill that makes short, story-driven animated videos entirely in code (canvas -> headless browser + ffmpeg -> MP4) in eight built-in styles or a custom look matched to your brand",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Animate -- procedural animation in any style, for Claude Code",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/cth9191/animate, MIT license, README 'Animate 0.4.0'; draws frames on <canvas>, scored procedurally, deterministic frame-by-frame, rendered to MP4 via headless browser and ffmpeg"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Host for the skill"
+  },
+  {
+   "name": "ffmpeg",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Used for MP4 render"
+  }
+ ],
+ "claims": [
+  "Turns text prompts into polished story-driven videos with no timeline editing",
+  "Lives inside Claude Code; builds clips entirely in code",
+  "Give it a screenshot or mood board and it creates a custom look matching your brand, with music that hits on the beat",
+  "Handles script to final export and checks every frame so it looks good on a phone",
+  "README: eight styles -- cut paper, crosshatch ink, riso print, sketchbook, math, pixel, isometric, plus 'your look' from references; use cases: explainers, histories, little stories"
+ ],
+ "how_to_steps": [
+  "Install the animate skill in Claude Code from cth9191/animate",
+  "0. Intake: answer a handful of questions (subject, formats, voice, the look, hero, your music, your product) and the style gallery",
+  "1. Story check: approve or change the beat table (format + numbered beats)",
+  "2. Look check: thumbs up/down 2-4 full-size style frames (side-by-side comparisons for a new look)",
+  "3. Storyboard: thumbs up/down per panel (every beat as a key frame with sound and transition)",
+  "4. Build: it animates approved panels, renders, reviews",
+  "5. Delivery: it measures checks (cuts on the beat grid, story arc, loudness, anchoring, loudest moment after silence, narration pace) and you request a revision run"
+ ],
+ "on_screen_only": [
+  "GitHub README title 'Animate -- procedural animation in any style, for Claude Code'; 'README.md -- Animate 0.4.0: voice-overs timed to ... 3 days ago'",
+  "Description: 'A Claude Code skill that makes short animated videos entirely in code: one <canvas>, drawn and scored procedurally, deterministic frame by frame, rendered to MP4 with a headless browser and ffmpeg. Explainers, histories, little stories -- in one of the built-in styles, or in a new look matched from your own references.'",
+  "Style grid: 1 cut paper, 2 crosshatch ink, 3 riso, 4 sketchbook, 5 math, 6 pixel, 7 isometric, 8 custom ('your look')",
+  "'How it works' table with steps 0 Intake, 1 Story check, 2 Look check, 3 Storyboard, 4 Build, 5 Delivery and columns 'what you see' / 'you decide'",
+  "@GithubSignals watermark; outro 'Follow for more open-source projects'"
+ ],
+ "cta": "Follow for more open-source projects",
+ "relevance": {
+  "score": 3,
+  "why": "Haji liked Claude Motion, hyperframes explainer videos, Remotion and open-slide. Animate is the same category (code-generated video) but open source, style-driven and with a human-approval loop at each stage, useful for app explainers and ads without a video editor."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Install the skill, run the intake for one product explainer, approve beats/look/storyboard, export MP4. A couple of hours for the first video. Requires Node/headless browser + ffmpeg locally; quality unknown vs Claude Motion."
+ },
+ "verify": [
+  "Repo cth9191/animate: maintained, MIT, works on current Claude Code? (version 0.4.0, updated 3 days before recording)",
+  "Does the 'music on the beat' claim mean generated/procedural audio or user-supplied tracks?",
+  "Output quality vs Claude Motion / Remotion; render time per clip"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New open-source tool: an MIT Claude Code skill for procedural canvas-to-MP4 animation with eight styles and a staged approval workflow. Liked set had Claude Motion (closed) and hyperframes/Remotion but not this."
+ }
+}

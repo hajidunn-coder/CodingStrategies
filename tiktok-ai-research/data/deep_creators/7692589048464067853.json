@@ -1,0 +1,52 @@
+{
+ "id": "7692589048464067853",
+ "url": "https://www.tiktok.com/@bengusberg/video/7692589048464067853",
+ "creator": "bengusberg",
+ "title": "Fix LLM sycophancy with 'LLM Council', a free Claude Code skill (aiwithremy/claude-skills-llm-council) that runs a question through five advisor personas plus a chairman verdict",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "LLM Council (claude-skills-llm-council)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "GitHub aiwithremy/claude-skills-llm-council (Public); 'a Claude Code skill that runs your decisions through 5 AI advisors with peer review'; install by pasting the repo URL into Claude/ChatGPT and asking it to install"
+  }
+ ],
+ "claims": [
+  "Anthropic and OpenAI models are designed to agree with you so you keep using them (creator's framing)",
+  "Stanford researchers found models agree with users 49% more often than a real human would; on-screen excerpt adds models endorsed problematic behavior 47% of the time",
+  "The council has five roles: attacker, 'what problem are you actually solving', supporter/expander, outsider catching what others missed, chairman who weighs and gives a verdict",
+  "Setup takes 20 seconds"
+ ],
+ "how_to_steps": [
+  "Copy the GitHub URL for aiwithremy/claude-skills-llm-council",
+  "Paste it into Claude (or ChatGPT) and tell it to help you install the skill",
+  "Run your decisions/ideas through the council to get an attacker, problem-finder, supporter, outsider and chairman verdict"
+ ],
+ "on_screen_only": [
+  "Title card 'Claude agrees too much. Here's the fix.'",
+  "Paper excerpt: 'Compared to human responses, all of the AIs affirmed the user's position more frequently. In the general advice and Reddit-based prompts, the models on average endorsed the user 49% more often than humans. Even when responding to the harmful prompts, the models endorsed the problematic behavior 47% of the time.'",
+  "Card: 'LLM Council -- a Claude Code skill that runs your decisions through 5 AI advisors with peer review'",
+  "Pixel-art 'person at desk' icons for the advisors",
+  "GitHub header 'aiwithremy / claude-skills-llm-council  Public'"
+ ],
+ "cta": "Try it out and let me know what you build; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already runs a mandatory 8-voice council-gate skill and has liked multiple 'board of advisors' variants (Trillion board, four-persona Cowork board, multi-model council). This is the same pattern as a drop-in Claude Code skill with a peer-review twist."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Haji's own council-gate already exceeds this. Worth a 10-minute skim of the repo to steal the peer-review/chairman structure or role prompts if they are sharper, nothing more."
+ },
+ "verify": [
+  "Does aiwithremy/claude-skills-llm-council exist and does it actually run separate agents or one prompt with five sections?",
+  "Which Stanford paper is the 49% figure from and is the framing ('designed to lie') fair?",
+  "Token cost per council run"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of the advisor-board pattern (Trillion board, Cowork four-persona board, multi-model council, Haji's own council-gate). Only new item is the specific repo name and the 49% sycophancy stat."
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "7693232513610779935",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7693232513610779935",
+ "creator": "ducktate.com",
+ "title": "Ran Cloudflare's 'security-audit-skill' for Claude Code on his Ducktate app: 6-phase harness spun up ~130 agents (43 hunters, 37 validators, 40 verifiers), found a few low/medium vulns, used ~10% of a weekly 20x Max quota",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "security-audit-skill (Cloudflare)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claude Code skill; six phases: Reconnaissance (architecture.md, coverage-ledger.json), Coverage-led hunting, Candidate validation, Structured output (findings.json validated against report-schema.json), Independent record verification, Target-neutral reporting (REPORT.md, FINDINGS-DETAIL..., NEEDS-VALIDATION.md)"
+  },
+  {
+   "name": "Ducktate",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Creator's own app (desktop, iOS, web + MCP server); 'Connect AI' panel exposes an MCP server 'ducktate-cloud' via npx mcp-remote with an Authorization header and API key"
+  },
+  {
+   "name": "Claude Max 20x plan",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Audit consumed ~10% of weekly quota"
+  }
+ ],
+ "claims": [
+  "Cloudflare released a Claude skill that performs a full security audit; it is a full harness, not a single prompt",
+  "For each agent that finds a gap, another agent is spun up to try to disprove it; fresh agents then do a final pass",
+  "On his multi-module app it spun up ~130 agents: 43 to hunt vulnerabilities, 37 to validate findings, 40 to verify everything",
+  "On-screen workflow stats: 1h 04m 49s, 134 agents, 9.2M tokens; phases Resume 3/3, Hunt 43/43, Validate 37/37, Probe 8/8, Verify 40/40, Report 2/3; report agents ran on Sonnet 5.5 at ~156k-199k tokens each",
+  "Found a few low and medium vulnerabilities; easy patches",
+  "Disclaimer: uses a ton of tokens, about 10% of his weekly 20x Max plan",
+  "Recommendation: run this audit every time you touch code or before every release"
+ ],
+ "how_to_steps": [
+  "Install Cloudflare's security-audit-skill in Claude Code",
+  "Run it against the repo; phase 1 maps architecture and trust boundaries into architecture.md and coverage-ledger.json",
+  "Let hunters, validators (disprovers) and verifiers run; parent runs validate-ledger after each phase",
+  "Read REPORT.md / FINDINGS-DETAIL / NEEDS-VALIDATION.md and patch confirmed findings",
+  "Repeat before each release"
+ ],
+ "on_screen_only": [
+  "X post by 'leo' @leoj94: 'guys, i'm under attack. ever since I started to share how I built my SaaS using Cursor random thing is happening, maxed out usage on api keys, people bypassing the subscription, creating random shit on db. as you know, I'm not technical so this is taking me longer than usual to figure out. for now, I will stop sharing what I do publicly on X' with overlay 'THINK ABOUT SECURITY WHEN VIBE CODING'",
+  "security-audit-skill README: 'The skill runs a structured audit in six phases: 1. Reconnaissance -- map architecture, trust boundaries, input surfaces, prior evidence, and deterministic coverage in architecture.md and coverage-ledger.json. 2. Coverage-led hunting -- assign isolated hunters from ledger units, record their checks, and use coverage critics to find gaps. 3. Candidate validation -- give every unique candidate to a fresh verifier that tries to disprove it. 4. Structured output -- write confirmed, needs_validation, and rejected records to findings.json and validate them against report-schema.json. 5. Independent record verification -- fresh agents verify final source claims... 6. Target-neutral reporting -- REPORT.md, FINDINGS-DETAIL..., NEEDS-VALIDATION.md from records and coverage ledger. The parent runs validate-... after creating the ledger and... update. It runs validate-... again after every Phase...'",
+  "Ducktate 'Connect AI' settings: 'Let Claude, ChatGPT, Cursor or any MCP client read and write your notes. Copy one block and paste it into your client.' Tabs Claude Desktop / Claude Code / ChatGPT / Cursor / Other MCP; JSON: mcpServers.ducktate-cloud command npx, args -y mcp-remote https://ducktate-api-ilixkk47wa-uc.a.run.app..., --header 'Authorization:${AUTH_HEADER}', env AUTH_HEADER 'Authorization: Bearer <API_KEY>'; 'Create an API key', 'Restart the client'",
+  "Workflow dashboard: 'Workflow 1h 04m 49s, 134 agents, 9.2M tokens. Continue the 3 security-audit runs: hunt deferred units, verify open candidates, WSL sandbox probes for api, rewrite reports.' Phase rows and an agent table with ios:report / api:report / desktop:report on Sonnet 5.5 (156.2k / 172.9k / 199.3k tokens, 4m 56s / 5m 01s / 6m 30s)",
+  "Series title 'software engineering for vibe coders'"
+ ],
+ "cta": "Series is free; keep building, see you tomorrow",
+ "relevance": {
+  "score": 5,
+  "why": "Security is Haji's most-liked non-build topic (login gaps, AppBully, Strix, legal checklist). A free, vendor-backed, multi-agent audit skill that self-disproves findings is a strong fit for a solo founder with no security team. The cost warning (~9M tokens, ~10% of a 20x weekly quota) is critical practical data."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install the skill, run it once per app on a release branch (budget ~1 hour and a chunk of weekly quota; run overnight or in a cloud session), patch confirmed findings, then schedule it pre-release. Pair with Strix/AppBully results. Main cost is tokens, not Haji's time."
+ },
+ "verify": [
+  "Exact repo/name of Cloudflare's security-audit-skill and that it is from Cloudflare, not a third party",
+  "Token cost on a single-module app (creator's app had 4 modules); can phases be scoped to one module?",
+  "False-positive/negative rate vs Strix or a human pentest",
+  "Is the 134-agent dashboard the skill's own output or the creator's custom tooling"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: Cloudflare's multi-agent security-audit-skill with hunter/validator/verifier phases and ledger-driven coverage, plus a real token-cost datapoint. Liked set had AppBully, Strix and checklists but no agentic audit harness."
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "7673301891551448341",
+ "url": "https://www.tiktok.com/@millee.md/video/7673301891551448341",
+ "creator": "millee.md",
+ "title": "20-item security checklist to have Claude do before launching a vibe-coded app (hide API keys, purge git secrets, public DB key, RLS, encrypt data, server-side auth, record access, field tampering, session cookies, hash passwords, rate limit login, bot protection, parameterized queries, validate input, escape content, restrict uploads, trim API responses, security headers, force HTTPS, scan deps)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'20 things to have Claude do before launching your app' -- each item is a prompt to give Claude"
+  }
+ ],
+ "claims": [
+  "Twenty security tasks can be read out in under 25 seconds; all are things to delegate to Claude before launch"
+ ],
+ "how_to_steps": [
+  "1 Hide API keys",
+  "2 Purge Git secrets",
+  "3 Use public DB key (anon key, not service/master key)",
+  "4 Enable row-level security",
+  "5 Encrypt sensitive data",
+  "6 Enforce server-side auth",
+  "7 Lock record access",
+  "8 Block field tampering",
+  "9 Secure session cookies",
+  "10 Hash passwords",
+  "11 Rate limit login",
+  "12 Add bot protection",
+  "13 Parameterize queries",
+  "14 Validate all input",
+  "15 Escape user content",
+  "16 Restrict file uploads",
+  "17 Trim API responses",
+  "18 Add security headers",
+  "19 Force HTTPS",
+  "20 Scan dependencies"
+ ],
+ "on_screen_only": [
+  "Header: '20 things to have Claude do before launching your app (in under 25 seconds)' with a running timer (00:01.03 ... 00:23.80)",
+  "Numbered two-column list filled in progressively; exact wording listed in how_to_steps (transcript garbles several: 'perch get secret' = purge git secrets, 'enable R OS' = enable row-level security, 'sidethought oath' = server-side auth)"
+ ],
+ "cta": "Did I miss anything? (comment)",
+ "relevance": {
+  "score": 4,
+  "why": "Compact pre-launch security list that maps directly onto Supabase/Next-style vibe-coded apps Haji ships; most items are one Claude Code prompt each."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Turn the 20 items into a /prelaunch-security skill or CLAUDE.md checklist and run it on every app before launch. One evening to build, reusable forever. Overlaps with the security-review skill already available."
+ },
+ "verify": [
+  "'Trim API responses' and 'block field tampering' are vague -- define them (over-fetching/over-posting, mass assignment)",
+  "Does Haji's existing security-review skill already cover these 20? Diff them",
+  "Row-level security applies only to Postgres/Supabase stacks"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Consolidates and extends the liked security content (six login gaps, top-5 holes, three must-dos) into one 20-item list; new items: security headers, dependency scanning, trimming API responses, field-tampering/mass-assignment, purging git history."
+ }
+}

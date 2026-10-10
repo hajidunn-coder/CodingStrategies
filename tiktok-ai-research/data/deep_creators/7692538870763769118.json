@@ -1,0 +1,81 @@
+{
+ "id": "7692538870763769118",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7692538870763769118",
+ "creator": "aiwithabhijay",
+ "title": "Three Claude design skills (Emil Kowalski motion skill, Impeccable, Taste) plus Figma and Playwright connections so Claude designs, codes and tests websites that don't look AI-generated",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Emil Kowalski skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/emilkowalski/skills (Public); folders 'skills', '.gitattributes', '.gitignore', '.pi', LICENSE; commit notes 'Remove course mention', 'Add /mobile-native skill'; teaches smooth modern animations"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "'The missing design vocabulary for agents'; improves typography, spacing, colors; site shows 'Works with every agent'"
+  },
+  {
+   "name": "Taste",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Learns from well-designed websites instead of guessing"
+  },
+  {
+   "name": "Figma",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Connect so Claude designs the UI"
+  },
+  {
+   "name": "Playwright",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Connect so Claude tests everything automatically"
+  }
+ ],
+ "claims": [
+  "Claude builds boring generic websites unless given design skills",
+  "Emil Kowalski's skill teaches smooth modern animations instead of stiff AI designs",
+  "Impeccable auto-improves typography, spacing and colors",
+  "Taste learns from well-designed websites so projects stop looking AI-generated",
+  "With Figma + Playwright connected, you only describe the site and Claude designs, codes and tests"
+ ],
+ "how_to_steps": [
+  "Install emilkowalski/skills (motion/animation skill)",
+  "Install Impeccable",
+  "Install Taste",
+  "Connect Claude to Figma (design) and Playwright (testing)",
+  "Describe the website you want, e.g. 'Build me a modern portfolio site'"
+ ],
+ "on_screen_only": [
+  "GitHub page emilkowalski/skills with 5 branches, folders and commit messages",
+  "SKILL.md card 'Emil Kowalski -- Smooth, modern motion' with a bezier curve graphic",
+  "Impeccable site: 'The missing design vocabulary for agents', 'Works with every agent', commands row",
+  "Example sites: 'The elephant queen', 'Meet Our Experts', 'Botanic Architecture'",
+  "Diagram: Figma (Design the UI) + Playwright (Test everything) -> Claude",
+  "'Claude Code -- Card.jsx' editor with a React Card component and live preview",
+  "Prompt bubble 'Build me a modern portfolio site'",
+  "'comment \"X\"' overlay"
+ ],
+ "cta": "Comment X for every skill and the complete setup guide",
+ "relevance": {
+  "score": 2,
+  "why": "Haji has liked at least three videos listing exactly these skills (Impeccable, Taste, Emil Kowalski, Playwright, awesome-design). No new tool."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already on the list; if not yet installed, Impeccable + Emil's motion skill are a 10-minute install. Figma connection is optional for a solo coder."
+ },
+ "verify": [
+  "Does emilkowalski/skills include the /mobile-native skill mentioned in the commit log, and is it free (commit says 'Remove course mention')?",
+  "Current install commands for Impeccable and Taste"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked 'five Claude skills to stop AI-looking websites' content; only the mention of a /mobile-native skill in Emil Kowalski's repo is new on screen."
+ }
+}

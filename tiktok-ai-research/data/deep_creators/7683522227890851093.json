@@ -1,0 +1,62 @@
+{
+ "id": "7683522227890851093",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7683522227890851093",
+ "creator": "adamstewartmarketing",
+ "title": "Build a 'boring business' booking app in Emergent with one prompt (jet-ski hire with calendar, Stripe deposit and slot-locking) and run the numbers to $10k/month in Australia; comment 'emergent' for five prompts",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Emergent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "app.emergent.sh; agentic app builder that writes frontend, backend, database and Stripe checkout and deploys; UI shows 'Delegated to Design Agent', 'Builder Fest: Participate & win up to $100K'"
+  },
+  {
+   "name": "Stripe Checkout",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Deposits in test mode, then flip to live"
+  }
+ ],
+ "claims": [
+  "To make $10k/month from zero in Australia he would start a boring business, not an AI startup",
+  "Five boring businesses: jet-ski hire (two skis + trailer), beach bootcamp selling 10-packs, takeaway shop that stops paying 30% to delivery apps, made-to-order merch brand (run three at once), gutter cleaner quoting from address with no callback",
+  "Prompt for jet-ski hire: customers pick an available date on a calendar and pay a deposit via Stripe to lock it; booked dates show unavailable to everyone else immediately so two people cannot pay for the same slot; include a simple admin view for the ramp employee",
+  "Emergent agents write frontend, backend, database and Stripe checkout and put it live",
+  "Test from two phones: the date should go grey on the other phone if the lock holds; then flip Stripe from test to live",
+  "Numbers: two skis at $150/hour, 7 days a week ~= $2,100/week, four weekends ~= $8,400; add a third ski to clear $10,000; one employee runs the ramp, the app runs the diary"
+ ],
+ "how_to_steps": [
+  "Go to Emergent (app.emergent.sh)",
+  "Pick a boring business from the five",
+  "Paste the one-line booking prompt (calendar, Stripe deposit, immediate slot lock, admin view)",
+  "Let Emergent agents build frontend, backend, DB, Stripe checkout and deploy",
+  "Test the double-booking lock from two phones, then switch Stripe from test to live"
+ ],
+ "on_screen_only": [
+  "Emergent builder UI with 'Explore Custom Agents' and 'What will you build today?'",
+  "Full prompt text: 'Build a jet ski booking web app for Australia. Customers pick an available date on a calendar and pay a deposit via Stripe to lock it. Booked dates show as unavailable to everyone else immediately so two people cannot pay for the same slot. Include a simple admin view for the ramp employee.'",
+  "Emergent chat at app.emergent.sh/chat (project 'jetski-booking-3'): 'Agent asked a question -- Answered', 'Use Stripe Checkout for deposits in test mode.', 'Delegated to Design Agent', 'Design Agent is running...', Pause agent button",
+  "Illustrative cards: 'Jet ski hire -- Two skis and a trailer' with booking calendar; 'Takeaway shop -- Stop paying 30% to delivery apps'; 'Gutter cleaner -- No callback. Enter address -> Instant quote -> Quote ready'",
+  "Built app 'Aussie WaveRider': confirmation 'You're on the water' with booking ID, date 2026-09-07, slot 08:00-12:00, deposit paid $100 AUD; landing 'Pick a date. Pick a slot. Lock it with your deposit.' with availability grid; 'Weekend numbers' dashboard showing $8,379 projected ('$2,100 x 4 weekends = $8,400')"
+ ],
+ "cta": "Comment 'emergent' for all five business prompts",
+ "relevance": {
+  "score": 2,
+  "why": "Side-hustle content (like the Readdy/local-business pitches Haji has liked) aimed at Australians. The reusable bit is the booking-with-deposit prompt spec and the two-phone race-condition test, which any of Haji's booking-type apps should include. Emergent is a Claude Code competitor, not his stack."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth switching tools. Worth copying the prompt's requirement list (immediate slot lock, deposit, admin view, two-device test) into Haji's own spec template for any scheduling feature built in Claude Code."
+ },
+ "verify": [
+  "Does Emergent really deploy Stripe live checkout and a database with one prompt, and what does it cost?",
+  "Is the double-booking lock actually transactional or just UI state?",
+  "Is the creator affiliated with Emergent (Builder Fest banner, comment-for-prompts funnel)?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Variation of the liked 'build a site for a local business' side-hustle genre; only new elements are the Emergent builder and the explicit slot-lock/deposit spec plus two-phone race test."
+ }
+}

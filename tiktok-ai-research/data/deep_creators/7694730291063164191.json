@@ -1,0 +1,82 @@
+{
+ "id": "7694730291063164191",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7694730291063164191",
+ "creator": "aiwithabhijay",
+ "title": "Four job-search workflows in Claude: optimize LinkedIn profile from the PDF export, rank fresh jobs from an Apify scrape, tailor resume to a JD for ATS, and rank networking contacts from your LinkedIn data export (comment-bait for an n8n automation)",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude (claude.ai, Sonnet 5.5)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Chat UI with Chat / Cowork / vidIQ tabs, Sonnet 5.5 Medium model picker"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used to query the LinkedIn data export (CSV files)"
+  },
+  {
+   "name": "Apify",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Scrapes most recent LinkedIn job listings; output JSON 'Apify-job-res...Claude.json' attached to Claude"
+  },
+  {
+   "name": "LinkedIn data export",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Settings -> Data Privacy -> download your data (Connections.csv, messages, etc.)"
+  },
+  {
+   "name": "n8n",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'secret n8n automation' workflow canvas shown, promised via comment"
+  },
+  {
+   "name": "Excel (Claude works directly in Excel)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Banner 'Claude works directly in Excel' with connections-subset.csv attached"
+  }
+ ],
+ "claims": [
+  "'Claude just killed any startup that was helping you get a job'",
+  "Apify can fetch the most recent job openings so you can be first to apply",
+  "A LinkedIn data export contains your connections, conversation history and who has responded to you"
+ ],
+ "how_to_steps": [
+  "LinkedIn profile -> Resources -> 'Save to PDF'; upload to Claude with a prompt to optimize headline and experience for inbound",
+  "Run an Apify LinkedIn jobs scrape, attach the JSON to Claude: 'Rank the 3 best matches in my attached Apify results. My background: ... Give company, role, one short fit reason and one gap. Link each source. Use only the returned listings; do not claim verified availability.'",
+  "Attach resume + job description: 'Tailor my attached resume to the attached job description. Return 3 matching ATS keywords, a sharper summary and one rewritten experience bullet. Flag missing requirements. Use only evidence from my resume; invent no experience or scores. Under 100 words.'",
+  "LinkedIn Settings -> Data Privacy -> download your data; give the CSVs to Claude Code and ask: 'Rank 3 contacts from my attached LinkedIn export for consumer-AI Product Manager roles. Use only company, title and connection date. Give each name.'"
+ ],
+ "on_screen_only": [
+  "Title card: '4 job-search tools. One Claude workflow.' tabs Profile / Jobs / Resume / Network",
+  "LinkedIn profile: 'Abhijay Vuyyuru - Product Manager @ YouTube (Google) | Consumer AI & Growth | MS CS/AI + Harvard MBA | Creator (1M+ across platforms) & Speaker; 87,201 followers'",
+  "Claude output 'Optimizing LinkedIn profile for AI Product Mana...': 'YouTube bullet: Drive growth for YouTube's TV users as an AI PM...' and a note that the PDF contains no YouTube metrics so none are added",
+  "Claude output 'Ranking LinkedIn contacts for AI product mana...': Danielle Darby - YouTube - Generative AI creation; Aarush Selvan - OpenAI - Consumer-AI company PM; Devansh Tandon - Meta - Senior consumer-AI company; caveat about professional relevance only",
+  "Finder listing of LinkedIn export folder 'linkedin_data_updated': Ad_Targeting.csv, Articles, Causes You Care About.csv, Certifications.csv, Company Follows.csv, Connections.csv, Education.csv, Email Addresses.csv, Endorsement_Given_Info.csv, Endorsement_Received_Info.csv, Events.csv, guide_messages.csv, Honors.csv, Invitations.csv, Job Applicant Saved...Question Responses.csv, Jobs, Languages.csv",
+  "n8n workflow canvas (nodes unreadable)"
+ ],
+ "cta": "Comment 'guide' (desc says comment 'Claude') to get the prompts and the n8n automation",
+ "relevance": {
+  "score": 2,
+  "why": "Haji is not job hunting; the only transferable bits are the Apify-scrape-then-rank pattern and the LinkedIn-export-into-Claude-Code idea for networking/outreach, both already covered by liked content."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could reuse the pattern for lead sourcing (Apify scrape -> Claude ranks prospects -> tailored outreach) rather than jobs; prompts are explicit and short. Not a priority."
+ },
+ "verify": [
+  "Which Apify actor is used for LinkedIn jobs and does it violate LinkedIn ToS / get blocked?",
+  "Is the n8n automation ever delivered or just a comment-bait funnel?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate: liked set already has Apify-in-Claude scraping and LinkedIn skills; the job-search framing is irrelevant to a founder."
+ }
+}

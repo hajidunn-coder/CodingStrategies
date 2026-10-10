@@ -1,0 +1,30 @@
+{
+ "id": "7686344721609805070",
+ "url": "https://www.tiktok.com/@james_creates_/video/7686344721609805070",
+ "creator": "james_creates_",
+ "title": "8-second meme: creator at laptop with caption 'closer to spending $200 on AI video credit than $20 on flowers' (no speech, no content)",
+ "category": "other",
+ "tools": [],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Static caption across all 8 frames: 'closer to spending $200 on AI video credit that I am spending $20 on flowers'",
+  "Creator typing on a MacBook; no screen content visible",
+  "Caption text: 'bury me in clause tokens pls' #claude #ai #video"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Joke about AI video credit spend; nothing to learn."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "No content; meme only."
+ }
+}

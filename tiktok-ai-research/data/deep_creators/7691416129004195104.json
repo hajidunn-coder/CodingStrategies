@@ -1,0 +1,69 @@
+{
+ "id": "7691416129004195104",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7691416129004195104",
+ "creator": "ai_vanta_ai",
+ "title": "Claim: give Claude 'infinite memory' by writing each session into Google NotebookLM via a 'wrap-up skill', then letting Claude pull context back with semantic search (plus NotebookLM infographics/video/deep research)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Google NotebookLM",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "notebooklm.google; used as external memory store, also generates infographics, videos, deep research"
+  },
+  {
+   "name": "'wrap-up skill'",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Unnamed skill that saves the entire conversation into NotebookLM after each session; no repo or URL given"
+  },
+  {
+   "name": "Claude Design (api.anthropic.com/v1/design)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "B-roll of 'Send to local coding agent' dialog with command 'Fetch this design file, read its readme, and implement the relevant aspects of the design. https://api.anthropic.com/v1/design/...?open_file=Interactive+globe.html'"
+  },
+  {
+   "name": "NVIDIA build (build.nvidia.com)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "B-roll of an NVIDIA model playground with 'Enable Reasoning' toggle and a German climate-sensitivity prompt"
+  }
+ ],
+ "claims": [
+  "'99% of Claude users don't know this exists'",
+  "Setup gives Claude persistent memory across sessions at 'basically zero tokens' and much lower token cost",
+  "NotebookLM gives semantic search over saved sessions plus free infographics, cinematic videos and deep research"
+ ],
+ "how_to_steps": [
+  "Create a NotebookLM notebook as the memory store",
+  "Install/write a 'wrap-up' skill that, at session end, saves the whole conversation into NotebookLM as a source",
+  "In new sessions, have Claude query NotebookLM (semantic search) for only the context it needs instead of reloading everything"
+ ],
+ "on_screen_only": [
+  "Red banner: 'MEMORY FOR CLAUDE [stop wasting tokens on same prompts]'",
+  "Claude Design UI 'Evening, Kayvon Jafarzadeh' with Code/Learn/Write/Draft Email buttons; project 'Interactive landing...' with Tweaks / Comment / Edit tabs",
+  "Dialog 'Send to local coding agent' / 'Send to Claude Code Web' with 'Copy command' button and optional 'Give the agent more detail on what to implement'",
+  "Google NotebookLM logo; stock footage of a purple 'FINANCE STATUS DASHBOARD' and a NotebookLM-style notes panel on 'Adopt a unified data and AI strategy'",
+  "Generic terminal windows and a 'Tweaking...' / 'Soldering...' Claude loading screen"
+ ],
+ "cta": "none explicit (hook framing only)",
+ "relevance": {
+  "score": 2,
+  "why": "Cross-session memory is a real pain for Haji, but this is a vague pitch with no named skill, no MCP, and no evidence NotebookLM is queryable from Claude without manual copy-paste; B-roll is unrelated stock."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not actionable as shown: no repo, no connector. Liked set already has claude-mem, Obsidian second-brain and the Karpathy wiki pattern, which are file-based and work natively with Claude Code. Skip unless a real NotebookLM MCP is found."
+ },
+ "verify": [
+  "Is there an official or community NotebookLM MCP/connector that Claude can read from and write to? Otherwise the 'wrap-up skill' needs a browser automation step",
+  "Does NotebookLM have an API for adding sources programmatically at the time of checking?",
+  "Token cost of pulling NotebookLM search results back into context is not zero; what is the real saving?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Memory topic is already covered (claude-mem, Obsidian skill, Karpathy wiki, Context Transfer); this adds only the unverified idea of using NotebookLM as the store."
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "id": "7690400655147617549",
+ "url": "https://www.tiktok.com/@bengusberg/video/7690400655147617549",
+ "creator": "bengusberg",
+ "title": "'Reverse into a prompt': a free site that takes any website URL or GitHub repo and returns a rebuild prompt for Claude/ChatGPT; tip: turn the prompt into a PRD before building",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Reverse into a prompt",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Tagline 'Reverse engineer any codebase or website into a prompt'; URL not legible in frames, creator says 'go to this URL' (link presumably in bio/comments)"
+  },
+  {
+   "name": "Claude / ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Where you paste the generated prompt"
+  }
+ ],
+ "claims": [
+  "'SaaS is officially dead' because anyone can paste a site or repo and get a rebuild prompt for free",
+  "Setup takes 20 seconds: paste URL or GitHub repo, click Get Prompt, copy into Claude or ChatGPT",
+  "Pro tip: ask Claude/ChatGPT to turn the prompt into a full PRD before building so you don't waste tokens building the wrong thing"
+ ],
+ "how_to_steps": [
+  "Go to the 'Reverse into a prompt' site",
+  "Paste any website URL or GitHub repo URL and click Get Prompt",
+  "Copy the prompt into Claude or ChatGPT",
+  "First ask the model to expand the prompt into a full product requirements document, then build"
+ ],
+ "on_screen_only": [
+  "Site header 'Reverse into a prompt -- Reverse engineer any codebase or website into a prompt'",
+  "Site UI: input box, red 'Get Prompt' button, example chips under the input, generated prompt shown as a long text block with a copy button",
+  "Karaoke captions: 'DEAD SOMEONE JUST', 'REPO OR PRODUCT', 'PASTE IN ANY', 'BEFORE BUILDING ANYTHING', 'TOKENS'"
+ ],
+ "cta": "Try it out and let me know what you build; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Haji liked canivibecodeit.com (SaaS directory with rebuild prompts) and clone-site skills. This is the same 'clone a product into a prompt' pattern, generalized to any URL/repo. Useful for scoping a competitor clone or an internal tool quickly."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Trivial to try (paste a URL). But Claude Code with a /clone-site skill or just 'read this repo and write a PRD' already does this, and the site's URL is not shown. The PRD-first advice is good practice Haji already follows."
+ },
+ "verify": [
+  "What is the actual URL of the 'Reverse into a prompt' site and who runs it?",
+  "Does it scrape the site/repo or just template a generic prompt from the homepage text?",
+  "Is it free without signup, and does it retain pasted repo contents?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Near-duplicate of canivibecodeit.com and /clone-site content already liked; adds only the URL-or-repo-to-prompt generalization and the PRD-first tip."
+ }
+}

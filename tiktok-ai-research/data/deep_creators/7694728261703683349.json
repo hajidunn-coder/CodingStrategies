@@ -1,0 +1,44 @@
+{
+ "id": "7694728261703683349",
+ "url": "https://www.tiktok.com/@millee.md/video/7694728261703683349",
+ "creator": "millee.md",
+ "title": "List of 20 animation/visual styles to name when prompting Claude for motion (particles, liquid morph, holographic, neon glow, wireframe 3D, glassmorphism, kinetic type, isometric, clay 3D, ASCII art, gradient mesh, comic book, split-flap, retro VHS, halftone, Bauhaus, pixel art, blueprint, art deco, neo-brutalism)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'Give this list to Claude to have it make insane motion animations'"
+  }
+ ],
+ "claims": [
+  "Naming one of these 20 styles in a prompt gets Claude to produce distinctive motion animations instead of generic ones"
+ ],
+ "how_to_steps": [
+  "Pick a style from the list and include it by name in the animation/landing-page prompt",
+  "Styles: 1 Particles, 2 Liquid morph, 3 Holographic, 4 Neon glow, 5 Wireframe 3D, 6 Glassmorphism, 7 Kinetic type, 8 Isometric, 9 Clay 3D, 10 ASCII art, 11 Gradient mesh, 12 Comic book, 13 Split-flap, 14 Retro VHS, 15 Halftone, 16 Bauhaus, 17 Pixel art, 18 Blueprint, 19 Art deco, 20 Neo-brutalism"
+ ],
+ "on_screen_only": [
+  "Header '20 insane Claude animation styles (In under 28 seconds)' with timer",
+  "Example thumbnails per style: sparkle particle burst, rainbow liquid torus, wireframe corridor, isometric city block, green ASCII dot field, gradient mesh blob, departures split-flap board spelling 'MAKE IT MOVE', retro VHS sunset with 'PLAY', Bauhaus primary shapes, blueprint gears, neo-brutalist card 'CLICK ME / 98% FASTER / SHIP IT'",
+  "Transcript mishears: '3d askew art' = ASCII art, 'bow house' = Bauhaus, 'neo realism' = neo-brutalism"
+ ],
+ "cta": "none (desc: give this list to Claude)",
+ "relevance": {
+  "score": 3,
+  "why": "Cheap vocabulary for making Haji's landing pages and demo videos look less AI-generic; pairs with Claude Motion/Design skills he already liked."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Drop the 20 names into a design-prompt snippet or the DESIGN.md/impeccable workflow; zero setup, just better prompts."
+ },
+ "verify": [
+  "Which styles render well in CSS/Framer Motion vs need WebGL/Three.js (particles, liquid morph, holographic)?"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has design skills (impeccable, awesome-design, Claude Motion) but no style vocabulary list for animation prompts."
+ }
+}

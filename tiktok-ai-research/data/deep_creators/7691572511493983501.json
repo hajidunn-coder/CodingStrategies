@@ -1,0 +1,77 @@
+{
+ "id": "7691572511493983501",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691572511493983501",
+ "creator": "bengusberg",
+ "title": "Anthropic merged Claude Chat and Claude Cowork into one interface (only 'Claude' or 'Code' remain, new output-type dropdown with design systems); five-step setup: local 'Claude' folder with 'About Me' subfolder, a Project with instructions + folder, connectors (Gmail/Calendar/Notion), and scheduled tasks (8am industry briefing)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude desktop app (merged Chat + Cowork)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Sidebar: New / Projects / Artifacts / Scheduled / Design / Customize; options now only 'Claude' or 'Code'"
+  },
+  {
+   "name": "Claude Projects",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Create a project' dialog: What are you working on? / What are you trying to achieve? / Context (Add context)"
+  },
+  {
+   "name": "Claude connectors",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Settings -> Connectors: Gmail, Calendar, Notion, etc."
+  },
+  {
+   "name": "Claude scheduled tasks",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'Create scheduled task' dialog inside a project; example daily 8am industry news briefing"
+  },
+  {
+   "name": "Output dropdown / design system",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Choose output file type and set up a design system in the new UI"
+  }
+ ],
+ "claims": [
+  "Cowork is 'officially dead': Anthropic merged Claude Chat and Cowork; the only modes now are Claude or Code",
+  "New output dropdown lets you pick the file type Claude makes and set up a design system",
+  "Creator: Stanford founder, AI startup raised $4M; runs a scheduled 8am daily industry-news briefing"
+ ],
+ "how_to_steps": [
+  "Step 1: create a folder on your laptop called 'Claude' as the shared workspace",
+  "Step 2: inside it create 'About Me' with files on your background, business, writing samples, past projects",
+  "Step 3: create a new Project in Claude, write project instructions, connect the Claude folder as context",
+  "Step 4: Settings -> Connectors, connect Gmail, Calendar, Notion etc. so Claude can send emails/draft docs",
+  "Step 5: inside the project create scheduled tasks (e.g. 8am daily briefing)"
+ ],
+ "on_screen_only": [
+  "Pink banner 'CLAUDE COWORK IS DEAD'",
+  "Claude sidebar screenshot with New, Projects, Artifacts, Scheduled, Design, Customize",
+  "Prompt box 'Let's noodle' with recent chats (Nerf Arcade weekly questions, Memory History, Make Me Sound Smart)",
+  "Finder window 'CLAUDE' containing folder 'ABOUT ME'",
+  "'Create a project' dialog; Settings > Connectors grid; 'Create scheduled task' dialog"
+ ],
+ "cta": "Try it out and let me know what you build; follow for AI founder life and leadership",
+ "relevance": {
+  "score": 3,
+  "why": "Haji uses Cowork/Claude daily; the merge and the project+folder+connectors+scheduled-task layout is exactly his operating setup, so knowing the UI changed matters even if the steps are basic."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Low effort: verify the merged UI, keep an 'About Me' context folder per project, confirm existing scheduled tasks and connectors survived the merge. Steps 1-5 are already largely in place for Haji."
+ },
+ "verify": [
+  "Confirm the Chat/Cowork merge is real and current (video dated ~Oct 2026); what happened to Cowork-specific features like local file access and session handoff?",
+  "Is the 'output dropdown / design system' the Artifact types feature?",
+  "Does the merge change how scheduled tasks and connectors are configured?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Product-change news not in the liked set (which has Cowork mobile/scheduled tasks but not the Chat+Cowork merge and the new output-type dropdown)."
+ }
+}

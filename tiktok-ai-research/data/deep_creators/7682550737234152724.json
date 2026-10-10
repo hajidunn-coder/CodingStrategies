@@ -1,0 +1,63 @@
+{
+ "id": "7682550737234152724",
+ "url": "https://www.tiktok.com/@millee.md/video/7682550737234152724",
+ "creator": "millee.md",
+ "title": "20-item pre-launch website checklist to have Claude do (privacy/ToS pages, secrets off frontend, HTTPS, cookie banner, meta tags, OG image, favicon, sitemap/robots, alt text, image compression, page speed, contrast, mobile, 404, broken links, form validation, spam protection, analytics, one clear CTA)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'20 things to have Claude do before launching your website'"
+  }
+ ],
+ "claims": [
+  "These 20 items are what a website needs before launch; read in under 28 seconds"
+ ],
+ "how_to_steps": [
+  "1 Privacy policy page",
+  "2 Terms & conditions page",
+  "3 Secrets off the frontend",
+  "4 Force HTTPS",
+  "5 Cookie consent banner",
+  "6 Meta titles + descriptions",
+  "7 Social preview image",
+  "8 Add a favicon",
+  "9 Sitemap + robots.txt",
+  "10 Alt text on images",
+  "11 Compress your images",
+  "12 Check page load speed",
+  "13 Fix color contrast",
+  "14 Make it mobile friendly",
+  "15 Custom 404 page",
+  "16 Fix broken links",
+  "17 Form validation",
+  "18 Spam protection",
+  "19 Set up analytics",
+  "20 One clear call to action"
+ ],
+ "on_screen_only": [
+  "Header: '20 things to have Claude do before launching your website (in under 28 seconds)' with running timer",
+  "Watermark '@millee.md'",
+  "Numbered list exactly as in how_to_steps"
+ ],
+ "cta": "Did I miss anything else on this list? (comment) / follow me for more",
+ "relevance": {
+  "score": 3,
+  "why": "Useful launch hygiene for every landing page Haji ships (Veteran AI, side apps); SEO/OG/favicon/404 items are the ones AI builds routinely skip."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Fold into a /prelaunch-site checklist alongside the 20 security items; Claude Code can do all 20 in one pass per site. Under an hour to set up."
+ },
+ "verify": [
+  "Cookie banner only needed where consent law applies (EU/UK, some US states); check per audience",
+  "Pair with the liked 20-item legal checklist to avoid duplicating privacy/ToS work"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has legal checklist and design-quality skills but no launch/SEO hygiene list (meta tags, OG image, sitemap/robots, 404, broken links, contrast, CTA)."
+ }
+}

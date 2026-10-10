@@ -1,0 +1,56 @@
+{
+ "id": "7691556445334162718",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691556445334162718",
+ "creator": "bengusberg",
+ "title": "Claim $100/$250 free Claude Code credits for the new cloud sessions feature by typing /claim-credit in Claude Code before October 7",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code cloud sessions",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Run Claude Code in Anthropic-hosted cloud so you can close your laptop; out of research preview per @ClaudeDevs tweet"
+  },
+  {
+   "name": "/claim-credit",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Claude Code slash command shown in the promo panel; creator says 'slash claim credit'"
+  }
+ ],
+ "claims": [
+  "Anthropic is giving $100 or $250 (by plan) in Claude Code credits; deadline October 7",
+  "Credits are to encourage trying cloud sessions but you do not need to use cloud sessions to claim",
+  "Claiming takes about 10 seconds: open Claude Code and type /claim-credit"
+ ],
+ "how_to_steps": [
+  "Open Claude Code",
+  "Type /claim-credit",
+  "Follow the panel: claim credit (must be claimed by October 7 per on-screen text), connect GitHub and choose a repository, start a cloud session; the credit applies automatically"
+ ],
+ "on_screen_only": [
+  "'FREE CLAUDE CODE CREDIT -- INSTANT CREDIT -- Max $250' banner graphic",
+  "Panel titled 'Claim $250 in credits for cloud sessions': 1. Claim your credit. Must be claimed by 2:00 AM EDT, October 8. 2. Connect GitHub and choose a repository. 3. Start a cloud session. The credit applies automatically. Buttons 'Not now' / 'Claim $250 credit'",
+  "@ClaudeDevs tweet: 'Cloud sessions are officially available and out of research preview! They let you keep Claude Code working, even when your laptop is closed.'",
+  "Claude Code promo panel 'Keep going in the cloud' showing '/claim-credit' and tiers $100 / $250 with steps 'Start a cloud session', 'Close your laptop', 'The session keeps going'"
+ ],
+ "cta": "Go claim them right now; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Free money on the plan Haji already uses, and cloud sessions suit a time-poor founder (kick off, close laptop). But the deadline (Oct 7) has already passed as of today (Oct 10), so this is now reference-only."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Expired promo. The only action is to check whether the credit was claimed before the deadline and, if so, spend it on cloud sessions."
+ },
+ "verify": [
+  "Was the credit claimed on Haji's account before 2:00 AM EDT Oct 8?",
+  "Which plans got $100 vs $250?",
+  "Any restriction on spending the credit (cloud sessions only vs any Claude Code usage)?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate: the liked set already has 'Anthropic promo: claim $100/$250 free Claude Code credits (by Oct 7)'. Adds the exact on-screen cutoff time (2:00 AM EDT Oct 8) and the /claim-credit command."
+ }
+}

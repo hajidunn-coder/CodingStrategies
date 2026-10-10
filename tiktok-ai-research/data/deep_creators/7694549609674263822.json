@@ -1,0 +1,50 @@
+{
+ "id": "7694549609674263822",
+ "url": "https://www.tiktok.com/@bengusberg/video/7694549609674263822",
+ "creator": "bengusberg",
+ "title": "NVIDIA's SkillSpector: a free scanner Claude runs before installing any skill, checking 71 vulnerability patterns across 17 categories and returning a risk score (claim: 1 in 20 downloaded Claude skills are malicious)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "SkillSpector (NVIDIA)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Shown as 'NVIDIA / SkillSpector' (GitHub-style path); paste the URL into Claude and ask it to set it up; 71 patterns, 17 categories, risk score"
+  }
+ ],
+ "claims": [
+  "1 in 20 Claude skills you download are designed to hack your computer (attributed to 'rumors'/NVIDIA researchers)",
+  "Hackers hide instructions in skill files that exfiltrate personal data",
+  "SkillSpector checks 71 risk patterns and shows a risk score before install; setup takes 20 seconds"
+ ],
+ "how_to_steps": [
+  "Go to the SkillSpector repo page (NVIDIA / SkillSpector)",
+  "Copy the URL into Claude and tell it to help you set up SkillSpector",
+  "Afterwards, whenever you download a new skill, Claude runs the security check and shows a risk score before installing"
+ ],
+ "on_screen_only": [
+  "Banner '1/20 Claude skills are designed to hack your computer'",
+  "Overlay 'SkillSpector'; 'NVIDIA / SkillSpector'",
+  "Bullet: '71 vulnerability patterns across 17 categories: prompt injection, data exfiltration, privilege escalation, supply chain, excessive agency, output handling, system prompt leakage, memory poisoning, tool misuse, rogue agent, anti-refusal, trigger abuse, dangerous code (AST), taint tracking, YARA signatures, MCP least privilege, and MCP tool poisoning'",
+  "'Risk Scoring / Score Calculation: CRITICAL issues +50 points; HIGH +25; MEDIUM +10; LOW +5; Executable scripts: 1.3x multiplier'"
+ ],
+ "cta": "Try it out and let me know what you build; follow for AI founder life and leadership",
+ "relevance": {
+  "score": 4,
+  "why": "Haji installs third-party skills and plugins constantly (liked ~20 skill repos); a pre-install scanner from a credible source is a direct risk reducer."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "If the repo is real: install once, add a hook or CLAUDE.md rule to run SkillSpector on any new skill/plugin directory before enabling it. Under an hour. Also run it retroactively on already-installed skills."
+ },
+ "verify": [
+  "Does github.com/NVIDIA/SkillSpector exist, is it maintained, and is it actually from NVIDIA (not a lookalike)?",
+  "Source for the '1 in 20 skills are malicious' statistic -- is it from the NVIDIA paper or invented?",
+  "Does it scan SKILL.md plus bundled scripts, and does it cover Claude Code plugins/MCP configs or only skills?"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: a skill-supply-chain scanner. Liked set warns about prompt injection (Manus) and has cybersecurity skills, but nothing that vets skills before install."
+ }
+}

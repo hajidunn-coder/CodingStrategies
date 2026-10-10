@@ -1,0 +1,59 @@
+{
+ "id": "7692547433271692575",
+ "url": "https://www.tiktok.com/@lord.luke5/video/7692547433271692575",
+ "creator": "lord.luke5",
+ "title": "Google Antigravity adds Claude Opus 5.5 and Sonnet 5.5, but only for paid Google AI Pro/Ultra tiers; free and Plus users also lose Gemini Pro access",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Google Antigravity",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Google's agentic IDE; model picker now lists Claude Sonnet 5.5 and Claude Opus 5.5"
+  },
+  {
+   "name": "Claude Opus 5.5 / Claude Sonnet 5.5 (Thinking)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Listed in Antigravity's 'Current official availability' table"
+  },
+  {
+   "name": "Gemini 3.x Flash / Flash-Lite / Pro",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Tier-gated per the plan table"
+  }
+ ],
+ "claims": [
+  "Antigravity added Claude Opus 5.5 and Sonnet 5.5",
+  "Free and Plus users cannot use Gemini Pro in Antigravity anymore",
+  "On-screen availability table: Claude Sonnet 5.5 (Thinking) and Claude Opus 5.5 (Thinking) are X for Free and Google AI Plus, available on AI Pro (with asterisk) and AI Ultra, X for Enterprise; Claude Sonnet 4.6 and Opus 4.6 remain available on lower tiers; GPT-OSS-120B available on most tiers",
+  "Gemini plan table: Free gets Flash-Lite only; AI Plus gets Flash-Lite + Flash; AI Pro and AI Ultra get Flash-Lite, Flash and Pro"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Headline 'Opus & Sonnet 5.5 in Anti Gravity'",
+  "Antigravity model dropdown: Gemini 3.8 Flash Medium Fast, Gemini 3.7 Flash Medium, Gemini 3.8 Flash Medium Fast, Gemini 3.1 Pro Low, Claude Sonnet 5.5 Medium (New), Claude Opus 5.5 Medium (New), GPT-OSS 120B (Medium), View Usage",
+  "'Current official availability' table with columns Free / Google AI Plus / Google AI Pro / Google AI Ultra / Enterprise and rows Claude Sonnet 5.5 (Thinking), Claude Opus 5.5 (Thinking), Claude Sonnet 4.6, Claude Opus 4.6, GPT-OSS-120B",
+  "Plan table: Free (Flash-Lite only), AI Plus (Flash-Lite, Flash), AI Pro (all three), AI Ultra (all three)"
+ ],
+ "cta": "Asks what viewers think about the changes to Antigravity and Google",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already pays for Claude; Antigravity is interesting only as a second IDE with free-tier access, and that free tier is now shrinking. Model-availability trivia, not a workflow change."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to do unless Haji wants Antigravity as a Claude 5.5 backup, which requires a Google AI Pro subscription on top of his Anthropic plan."
+ },
+ "verify": [
+  "Confirm the exact tier gating of Claude 5.5 models in Antigravity and what the Pro asterisk means (rate limits?)",
+  "Is Gemini Pro truly removed for Free/Plus or just rate-limited?",
+  "Is this a 21-second stitch of a longer video; the transcript only captures the ending"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": true,
+  "what": "New warning: Antigravity's free tier is being tightened (Gemini Pro removed for Free/Plus; Claude 5.5 only on Pro/Ultra). The liked set covered Antigravity as a 'free Google tool' without this gating."
+ }
+}

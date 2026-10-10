@@ -1,0 +1,56 @@
+{
+ "id": "7691191125649968398",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691191125649968398",
+ "creator": "bengusberg",
+ "title": "A GitHub repo of leaked system prompts now includes Claude Fable 5.1's full system prompt; creator suggests dropping it into ChatGPT and asking questions",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "system_prompts_leaks (GitHub)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Path shown: system_prompts_leaks / Anthropic / claude-fable-5.1.md"
+  },
+  {
+   "name": "Claude Fable 5.1",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "On-screen text: 'Claude Fable 5.1 is the newest model in Anthropic's Claude 5 family and part of the Mythos-class model tier that sits above Claude Opus in capability. Claude Fable 5.1 and Claude Mythos 5.1 share the same underlying model... Claude Mythos 5.1 is available without those measures to only approved organizations.'"
+  }
+ ],
+ "claims": [
+  "Someone leaked Anthropic's full system prompt for Fable 5.1 (framed as 'source code leak' on screen)",
+  "It contains tone rules (words to avoid such as 'genuinely', 'honestly', 'straightforward'), a reminder that Claude is not a licensed psychiatrist, and preference-handling logic (e.g. only incorporate stated preferences when they materially improve the answer)",
+  "Creator suggests pasting it into ChatGPT rather than Claude 'for obvious reasons' and asking questions"
+ ],
+ "how_to_steps": [
+  "Go to the system_prompts_leaks repo, open Anthropic/claude-fable-5.1.md",
+  "Paste the long prompt into ChatGPT and ask it questions about how the model is instructed"
+ ],
+ "on_screen_only": [
+  "Headline 'ANTHROPIC SOURCE CODE LEAK UNLEASHES MASSIVE CHAOS'",
+  "Prompt excerpt about preferences: 'PREFERENCE: I love space exploration. QUERY: How do I bake cookies? APPLY PREFERENCE? No. WHY: The interest in space exploration is unrelated to baking instructions...' and 'If the human provides instructions during the conversation that differ from their <userPreferences>, Claude should follow the human's latest instructions'",
+  "Excerpt: 'Claude avoids saying \"genuinely\", \"honestly\", or \"straightforward\". Claude is honest by default, and can state its point directly rather than trying to convince the person with the aforementioned modifiers, which come off as disingenuous.'",
+  "Excerpt describing Claude Fable 5.1 vs Claude Mythos 5.1 (same underlying model; Fable includes additional safety measures for dual-use capabilities; Mythos available to approved orgs)",
+  "GitHub breadcrumb 'system_prompts_leaks / Anthropic / claude-fable-5.1.md'"
+ ],
+ "cta": "Try it out and let me know what you learn; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Haji liked 'Anthropic cut 80%+ of Claude Code's system prompt' content, so prompt-engineering insight from Anthropic's own prompts is on-topic. Reading how Anthropic phrases judgment-over-rules and tone constraints is directly reusable in CLAUDE.md and app system prompts. Framing ('leak', 'chaos') is clickbait; Anthropic publishes consumer system prompts in its release notes anyway."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "30 minutes: skim the file, lift patterns (word-avoid lists, preference-application test, judgment framing) into CLAUDE.md and product prompts. No tooling."
+ },
+ "verify": [
+  "Is the repo file the published Anthropic release-notes system prompt or a genuine extraction, and is it accurate for Fable 5.1?",
+  "Is the Fable/Mythos tier description on screen from Anthropic or invented?",
+  "Any terms-of-service issue with reusing Anthropic prompt text in your own product prompts"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": true,
+  "what": "New resource: the public system_prompts_leaks repo as a source of Anthropic's production prompt patterns (including the Fable/Mythos distinction). The liked set covered Anthropic shrinking the Claude Code prompt but not where to read the actual consumer prompt."
+ }
+}

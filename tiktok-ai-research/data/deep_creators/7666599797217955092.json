@@ -1,0 +1,66 @@
+{
+ "id": "7666599797217955092",
+ "url": "https://www.tiktok.com/@millee.md/video/7666599797217955092",
+ "creator": "millee.md",
+ "title": "10-point 'is your vibe-coded app secure' self-test: HTTPS, hashed passwords, bot protection on forms, expiring sessions, CSRF protection, one-time expiring reset links, limited (not master) DB key, no secrets in logs, billing alerts, automated backups",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "scrypt",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Diagram 'scrypt algorithm' (HMAC, PBKDF2, SMIX) for password hashing"
+  },
+  {
+   "name": "PubNub billing alerts",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Screenshot of a 'Billing alerts' settings page used as the example"
+  },
+  {
+   "name": "Clever Cloud",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Reverse-proxy HTTPS diagram labelled 'Clever Cloud network'"
+  }
+ ],
+ "claims": [
+  "If your app scores under 7 of 10 you 'need to lock in tonight'",
+  "A stolen session token should not work forever; sessions must expire",
+  "The app's DB key should be a limited key, not the master key"
+ ],
+ "how_to_steps": [
+  "1 Force HTTPS",
+  "2 Store passwords hashed, not plain text",
+  "3 Bot protection on signup and public forms",
+  "4 Login sessions expire",
+  "5 CSRF protection",
+  "6 Password reset links expire and work once",
+  "7 DB key is limited, not master",
+  "8 Logs contain no passwords/tokens/card numbers",
+  "9 Billing alerts on so you are notified of an attack",
+  "10 Automated backups"
+ ],
+ "on_screen_only": [
+  "Header 'Securitymaxxing knowledge (vibecode edition) pt.3'",
+  "Diagrams: public internet -> reverse proxy -> app VM (HTTPS); scrypt hashing flow; wedding-newsletter signup form with captcha; session/cookie flow; CSRF attack flow (perpetrator -> website visitor -> website); 'Expired reset password link' page; key-types graphic (Super Key, Candidate Key, Primary Key, Unique Key, Alternate Key, Foreign Key, Composite Key, Surrogate Key, Temporal Key); log console; 'Automated backup in action'"
+ ],
+ "cta": "Comment how many your app got",
+ "relevance": {
+  "score": 3,
+  "why": "Good audit list; billing alerts and backups are operational items vibe coders forget and that cost real money when a bot hammers an endpoint."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Merge into the same prelaunch security skill; the new work is turning on billing alerts (Supabase/Vercel/Anthropic) and verifying backups/restores for each app."
+ },
+ "verify": [
+  "Supabase anon vs service_role key usage in each app; session expiry defaults in the auth library",
+  "Are backups actually restorable (test a restore), not just enabled?"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Adds operational items missing from liked security videos: billing/usage alerts, automated backups, CSRF, secret-free logs, limited DB key."
+ }
+}
