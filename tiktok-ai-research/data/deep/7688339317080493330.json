@@ -1,0 +1,83 @@
+{
+ "id": "7688339317080493330",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7688339317080493330",
+ "creator": "adamstewartmarketing",
+ "title": "Wiring TypeSafe's Jev decision model in front of Codex as an MCP tool so incoming tasks are classified (type, urgency, model tier) in under a second before the big model works",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Jev",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "TypeSafe AI decision model; version string 'jev-1.13.0' on screen; primitives Choice / Score / Nous"
+  },
+  {
+   "name": "TypeSafe AI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Vendor; docs page 'TypeSafe primitives' and blog 'We Took The Opposite Research Direction' shown"
+  },
+  {
+   "name": "Codex (OpenAI)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agent that was given the Jev API key + docs and built the integration; UI shows model picker 'GPT-6 Astra Extra High'"
+  },
+  {
+   "name": "jev_decide MCP tool",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "Project MCP server (Python) Codex set up, supporting choice, yes/no and score; key read from .env"
+  },
+  {
+   "name": "GPT-6-Astra",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "In 'Your model pool' as 'Deep thinking'"
+  },
+  {
+   "name": "GPT-5.6-Sol",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "In model pool as 'Writing & everyday work'; shown as 'JEV'S PICK' for a task"
+  }
+ ],
+ "claims": [
+  "Jev does not write text or code; it only makes decisions (yes/no, pick one, score 1-10) in a fraction of a second at a fraction of the cost",
+  "The slow part of an agent is often the big model deciding what you want, not the task itself",
+  "Codex connected Jev 'in one go' from the API key and docs",
+  "Each incoming message is first classified by Jev: task type, urgency, which model should handle it, in under a second",
+  "On screen: round-trip time 768.87 ms; routing decision in 0.70s with 100% task confidence"
+ ],
+ "how_to_steps": [
+  "Get a Jev API key from TypeSafe and put it in .env",
+  "Give Codex the key and the Jev docs and say 'connect this'",
+  "Codex creates a local Python MCP server exposing jev_decide (choice, yes/no, score) and registers it as a project MCP tool; restart Codex to load it",
+  "On each incoming message, call Jev with three questions: task type (spreadsheet/writing/research/code/other), urgent? (yes/no), model tier (fast/standard/heavy)",
+  "Route the message to the model/agent based on the answers; Codex then does the reasoning, writing and actions"
+ ],
+ "on_screen_only": [
+  "Title overlay 'Jev + Codex'",
+  "TypeSafe blog: 'We Took The Opposite Research Direction'",
+  "TypeSafe docs 'TypeSafe primitives': Choice (choose an option from a list -> choice, probabilities, confidence), Score (score the state on a rubric -> score, probabilities, confidence), Nous (is this statement true? -> nous [0-1]); 'All three question types can be mixed in a single API call. Every question is evaluated in parallel and in isolation against the same state in one go. Adding questions barely changes the response time. Each question is evaluated independently, so adding more questions does not create context-rot.' Heading 'Atomic questions, composed in code'",
+  "Codex UI: 'What should we work on in Sales Report?', model 'GPT-6 Astra Extra High'; task output 'Fixed seven formulas and set Ben's target to AUD 90,000 in Q3_Sales_Report_Promotional_Centre.xlsx', 'Verified results: Sales AUD 1,012,550; Commission AUD 81,004; Target attainment 98.8%', files edited repair.mjs, preserve_and_verify.py, native-verify.applescript; spreadsheet 'Q3 2026 Sales' with reps Sarah Chen, Marcus Reid, Priya Nair, Tom Walsh, Elena Rossi, Jake Morrison, Aisha Khan, Ben Okafor",
+  "Codex task 'Set up Jev-decision tool': 'Set up and verified jev_decide as a project MCP tool supporting choice, yes/no, and score; key is read only from .env; the original .env file was renamed'; 'Live result from jev-1.13.0: Task type: spreadsheet (spreadsheet 100%; writing, research, code, other 0%); Urgent?: yes (yes 95%; no 5%); Model tier: standard (standard 100%; fast 0%; heavy 0%); Round-trip time: 768.87 ms'; 'Restart Codex to load the new tool'; 'Edited 6 files: .gitignore, README.md, example_request.json...'",
+  "Router UI: 'JEV'S PICK GPT-5.6-Sol - JEV classified this as writing & everyday work. 100% task confidence, 0.70s to route. Compare task scores: Writing & everyday work 100%, Coding & debugging 0%, Strategy & deep analysis 0%, Simple facts 0%'; 'Your model pool: GPT-6-Astra Deep thinking, GPT-5.6-Sol Writing & everyday work'",
+  "Terminal demo: prompt 'Compare three growth strategies for a small marketing agency. Evaluate their risks, costs and trade-offs' routed to GPT-6-Astra; code snippet 'const email = {...}' feeding Jev"
+ ],
+ "cta": "Comment 'Jev' to be shown exactly how it was connected",
+ "relevance": {
+  "score": 3,
+  "why": "A fast pre-classifier that routes tasks to cheap vs heavy models is a sound pattern for any agent product a founder ships (cost and latency), and the MCP-tool wiring maps directly onto Claude Code."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "A half-day experiment: build the same jev_decide-style MCP tool (or do it with Claude Haiku + JSON schema) and use it to triage inbound tasks/emails before Opus/Sonnet. Only adopt Jev itself if it beats Haiku on cost/latency."
+ },
+ "verify": [
+  "TypeSafe AI / Jev availability, pricing per call, SDK and MCP support",
+  "Does 'in under a second' hold under load, and is the confidence calibrated?",
+  "Compare against a Haiku-class model with structured output before adding a dependency",
+  "Model names GPT-6-Astra / GPT-5.6-Sol are shown in a custom router UI; confirm they are real OpenAI models"
+ ]
+}

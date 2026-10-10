@@ -1,0 +1,76 @@
+{
+ "id": "7694003445564607751",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7694003445564607751",
+ "creator": "ai.samaritan",
+ "title": "Codex limit hack: do heavy planning in ChatGPT chat (GPT-6 Pro + subagents) so Codex quota is spent only on execution",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "ChatGPT (regular Chat)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Separate 'Chat limit' allowance"
+  },
+  {
+   "name": "ChatGPT Work + Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Shared 'Work + Codex limit' allowance"
+  },
+  {
+   "name": "GPT-6 Pro ('runs on Astra')",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Model picker shows 'GPT-6 Astra' with extra-high effort"
+  },
+  {
+   "name": "ChatGPT subagents",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Subagents panel: Researcher / Drafter / Reviewer; 'Sent message to parent'"
+  },
+  {
+   "name": "Practically AI newsletter",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "practically.ai (spoken 'practically dot a I'); 'Get 1% Better at AI Every Single Day', 10,500+ subscribers"
+  }
+ ],
+ "claims": [
+  "ChatGPT runs two separate allowances: one for regular Chat, one shared between Work and Codex",
+  "Every heavy task pushed through Codex drains the Work+Codex tank",
+  "Routing thinking to Chat (GPT-6 Pro) means it counts against Chat limits, not Codex",
+  "Spinning up subagents (research/draft/review) in Chat runs the parallel work on the chat side",
+  "Bring only the finished plan into Codex so Codex spends limit executing, not 'thinking out loud'",
+  "Difference between 'hitting your limit on Wednesday and getting through the whole week'"
+ ],
+ "how_to_steps": [
+  "Open regular Chat (not Work) and pick GPT-6 Pro",
+  "Give it the big job and tell it to spin up three subagents: Researcher, Drafter, Reviewer; run them in parallel and coordinate",
+  "Copy only the finished plan into Codex and have Codex execute inside the project"
+ ],
+ "on_screen_only": [
+  "Overlay title 'Codex limit hack'",
+  "Diagram: 'Regular Chat — Chat limit' tank (full) vs 'Work + Codex — Work + Codex limit' tank (draining) with note 'Every heavy task you run in Codex drains this limit'",
+  "Project 'GT Compras AI', prompt 'What should we build in GT Compras AI?'",
+  "Full prompt: 'Create a simple, one-page comparison of Trello, Asana, and Todoist for a five-person team looking for a free task management tool. Spin up three subagents: 1. Researcher: Check official sources for each tool's free features and limits. 2. Drafter: Prepare the comparison structure, then incorporate the research into a clear draft. 3. Reviewer: Define the evaluation criteria, then check the completed draft for accuracy, missing details, and clarity. Run independent work in parallel and share findings as they become available. Coordinate the agents, fix any issues, and deliver a comparison table, a short recommendation, and source links. Keep it beginner-friendly.'",
+  "Model selector 'GPT-6 Astra Extra-high'; 'Full access' toggle",
+  "Subagents panel: 'Reviewer — Working for 12s — Sent message to parent — Thinking'",
+  "Newsletter landing: 'PracticalyAI — Get 1% Better at AI Every Single Day — One 2-minute email, daily... Join 10,500+ professionals & entrepreneurs. 100% free' and '37.78x better at AI after 365 days of reading'"
+ ],
+ "cta": "Subscribe to free daily newsletter practically.ai",
+ "relevance": {
+  "score": 3,
+  "why": "OpenAI-specific quota mechanics, but the underlying pattern (plan in a cheap/separate budget, execute in the expensive agent) maps directly onto Claude: plan in claude.ai chat or Plan Mode, execute in Claude Code; and the new Anthropic monthly API credits give a second 'tank'."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to adopt the pattern: write the plan/spec in claude.ai (Pro/Max web chat) or with a subagent-based research prompt, then paste a finished plan into Claude Code so tokens go to execution. Verify whether Claude web and Claude Code actually share one limit before assuming savings."
+ },
+ "verify": [
+  "Does ChatGPT really have two separate allowances (Chat vs Work+Codex) and does GPT-6 Pro count only against Chat?",
+  "Does 'GPT-6 Pro' / 'Astra' exist as named (Oct 2026)?",
+  "Does the ChatGPT subagents feature exist as shown (Researcher/Drafter/Reviewer panel)?",
+  "For our case: do claude.ai chat and Claude Code share the same Max usage pool?"
+ ]
+}

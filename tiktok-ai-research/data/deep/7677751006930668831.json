@@ -1,0 +1,56 @@
+{
+ "id": "7677751006930668831",
+ "url": "https://www.tiktok.com/@bengusberg/video/7677751006930668831",
+ "creator": "bengusberg",
+ "title": "OmniRoute: open-source router that chains free tiers of ~350 AI models so Claude-style usage never hits a hard limit",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "OmniRoute",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub diegosouzapw/OmniRoute (public); site omniroute.online; shown 54.4k stars, 315 watching, 7.4k forks; v3.8.50 lists 350 providers / 1312 unique chat model IDs"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the thing being routed/extended; also used to self-install OmniRoute from the pasted link"
+  }
+ ],
+ "claims": [
+  "54,000 people already using it (screen: 54.4k GitHub stars)",
+  "Connects to 350 AI models and sequences usage across them; auto-routes to the next best model when a limit is hit",
+  "Over 1.5 billion free tokens per month if used to the max (screen: ~1.51B free tokens/month steady, up to ~2.13B in first month with signup credits)",
+  "Free and open source; setup in 30 seconds or less",
+  "Creator intro: Stanford founder, AI startup raised $4M"
+ ],
+ "how_to_steps": [
+  "Go to omniroute.online",
+  "Copy the link and paste it into Claude",
+  "Tell Claude: 'help me set up omniroute'",
+  "Let Claude walk through installation"
+ ],
+ "on_screen_only": [
+  "Tagline: 'Never stop coding. Every AI tool -> 350 providers -- 90+ free -- through one endpoint.'",
+  "GitHub repo card: diegosouzapw / OmniRoute (Public), 54.4k stars, 315 watching, 7.4k forks",
+  "Version comparison table: v3.8.49 = 290 providers / 1185 model IDs; v3.8.50 = 350 providers / 1312 model IDs; v3.8.51+ 'more queued'; features Modality Bridge (vision+audio+video), Radar free catalog (opt-in), Quota-aware scheduling (Quota-Share), Quota telemetry (live)",
+  "'~1.51B FREE TOKENS / MONTH - STEADY; up to ~2.13B in your first month -- signup credits'",
+  "URL overlay: omniroute.online"
+ ],
+ "cta": "Try it and comment how it goes; follow for AI/founder/leadership content",
+ "relevance": {
+  "score": 3,
+  "why": "Token limits on Claude Max are a real constraint for a solo builder; a free multi-provider router is relevant, but routing coding work off Claude to random free-tier models degrades quality and adds a new dependency."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Cheap to try (one install), but stitching 90+ free tiers together is fragile, introduces data-handling and ToS risk, and for Claude Code the value of consistent model quality outweighs 'free tokens'. Possibly useful for non-critical batch/side tasks only."
+ },
+ "verify": [
+  "Does github.com/diegosouzapw/OmniRoute exist with ~54k stars, and is it actively maintained?",
+  "Does the '1.51B free tokens/month' figure assume signing up for dozens of provider free tiers (and does that violate provider ToS)?",
+  "Can it actually sit in front of Claude Code (ANTHROPIC_BASE_URL compatible) or only in front of chat clients?",
+  "Where do prompts/data go when routed through third-party free providers?"
+ ]
+}

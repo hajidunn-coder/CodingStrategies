@@ -1,0 +1,71 @@
+{
+ "id": "7678155840456592671",
+ "url": "https://www.tiktok.com/@bengusberg/video/7678155840456592671",
+ "creator": "bengusberg",
+ "title": "Five Claude skills/tools to stop AI-looking websites: awesome-design (DESIGN.md), Taste skill, Impeccable, Emil Kowalski design skill, Playwright",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "awesome-design / getdesign.md",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.' -- getdesign.md/"
+  },
+  {
+   "name": "Taste Skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "tasteskill.dev -- 'gives your AI good taste. stops the AI from generating boring, generic slop'; pulls inspiration from real websites"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "teaches Claude clean visual design (impeccable.style per other videos)"
+  },
+  {
+   "name": "Emil Kowasaki design skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "named 'Emil Kawasaki' in captions; described as particularly good at animations (likely Emil Kowalski, animation/design educator)"
+  },
+  {
+   "name": "Playwright",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "playwright.dev -- 'framework for Web Testing and Automation... Chromium, Firefox and WebKit with a single API'; connect to Claude so it drives the browser to test designs"
+  }
+ ],
+ "claims": [
+  "AI website tells: beige background, 'the AI font', italicized word for emphasis",
+  "awesome-design lets you 'steal' design systems from the world's best brands for free",
+  "Playwright lets Claude take over your browser to test the site actually works",
+  "Creator: Stanford founder, raised $4M"
+ ],
+ "how_to_steps": [
+  "Drop a DESIGN.md from the awesome-design collection (getdesign.md) into your project",
+  "Install the Taste skill so Claude references real sites for inspiration",
+  "Install the Impeccable skill for clean visual design",
+  "Install the Emil Kowalski design skill for animations",
+  "Connect Claude to Playwright (MCP) so it can open the browser and verify the design"
+ ],
+ "on_screen_only": [
+  "Hook card: 'AI BUILT YOUR WEBSITE IN 10 MINUTES. SO DID YOUR COMPETITOR'S.'",
+  "GitHub 'About' panels: getdesign.md/ ; tasteskill.dev ; playwright.dev with their descriptions"
+ ],
+ "cta": "Follow for more on AI, founder life, and leadership",
+ "relevance": {
+  "score": 4,
+  "why": "Directly addresses the 'looks AI-built' problem for a founder shipping apps with Claude Code; the skills are drop-in and the Playwright loop is a workflow upgrade, not just aesthetics."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Low effort: add a DESIGN.md, install one or two design skills (Impeccable/Taste) and the Playwright MCP. Pick one design skill to avoid conflicting instructions; measure whether output actually improves."
+ },
+ "verify": [
+  "Confirm getdesign.md, tasteskill.dev and impeccable.style exist, their GitHub repos, licenses and maintenance",
+  "Is the 'Emil Kowalski design skill' an official release by Emil Kowalski or a third-party skill using his name?",
+  "Do multiple design skills conflict when loaded together in Claude Code?",
+  "Playwright MCP install path: official @playwright/mcp vs community servers"
+ ]
+}

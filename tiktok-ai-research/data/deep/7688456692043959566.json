@@ -1,0 +1,70 @@
+{
+ "id": "7688456692043959566",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7688456692043959566",
+ "creator": "angusthenontechnical",
+ "title": "Hype reel of Jev business use cases: competitor ad analysis, email classification, visitor-to-follow-up-email matching, live Zoom sales coaching, CRM lead-to-message matching",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Jev",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Decision/classification model; creator says 'Jeb/Jeff' in places, hashtag #jev"
+  },
+  {
+   "name": "HubSpot",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Mentioned in a sample follow-up email ('hubspot import docs'); CRM contact card shown"
+  },
+  {
+   "name": "Zoom (Webinar Backstage)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Live Zoom coaching concept: 'Transcript -> Jev'"
+  },
+  {
+   "name": "X post by @ryanvogel",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "'this model is actually insane at email classification; i tested it on 1500 of my own emails... blown away'"
+  }
+ ],
+ "claims": [
+  "People are using Jev to analyze all of their competitors' ads (grid shows '724 live ads, 37 brands')",
+  "Someone tested Jev on 1,500 of their own emails for classification and was 'blown away'",
+  "Concept: when a visitor hits the landing page, feed clicks, IP-derived company info and CRM match to Jev 'in a second' and pick which follow-up email template to send",
+  "Concept: live Zoom coaching of sales reps from the call transcript",
+  "Concept: cold-outreach system; new CRM lead matched to the best candidate message"
+ ],
+ "how_to_steps": [
+  "Collect per-visitor signals: pages/docs/signup steps visited, referrer/campaign, company behind the IP, what the CRM already knows",
+  "Send all four to Jev in one request and have it choose the best follow-up template with confidence",
+  "Send the chosen email (examples shown are short, casual, first-name notes from 'Angus')"
+ ],
+ "on_screen_only": [
+  "Post screenshot 'Jev is a business killer'; grid 'steal the whole category' (724 live ads, 37 brands, every hook/offer/angle)",
+  "@ryanvogel tweet about email classification on 1500 emails",
+  "Diagram: 'Someone you don't know visits (session starts, ip logged) -> What they did on the site -> How they got here -> Company behind the IP -> What the CRM already knows -> all four at once -> Jev sends it, when'",
+  "Web analytics dashboard: Visitors 762, Page views 1.12K, Sessions 815, devices and geography map",
+  "CRM contact: Dana Reyes, Head of Operations at Demo Co, dana@democo.example, +1 555 0147, created 09/22/2026 8:51 AM CDT",
+  "Sample email 1: 'hey Dana, you have been back on the pricing page a few times this week, so i thought i would just ask. worth 15 minutes to see if this is actually a fit for how your team works? here is my calendar - Angus'",
+  "Sample email 2 subject 'getting hubspot connected': 'hey Dana, saw you got most of the way through signup and then went looking for the hubspot import docs. that page is out of date. here is the two minute version... want me to just do it with you tomorrow? Angus'",
+  "Zoom Webinar Backstage mock with 'Transcript -> Jev' and lines 'Prospect: We have leads in three tools. Prospect: Our reps spend hours moving data. SDR: Is the priority follow-up or reporting? Prospect: Follow-up. Good leads are getting missed.' labelled 'illustrative concept - synthetic data'",
+  "Diagram: 'A new lead hits the CRM -> What they wrote in the form -> What they read before they asked -> What the company looks like -> Your candidate messages -> Jev matches lead to message (best message, fit, confidence)'"
+ ],
+ "cta": "Follow for more Jev ideas; 'you can set all that up with this prompt' (prompt not shown)",
+ "relevance": {
+  "score": 3,
+  "why": "The behavioural-trigger follow-up email idea is a real growth tactic for a founder's SaaS; the rest is hype and concept mockups (explicitly labelled synthetic)."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The visitor-signal-to-email-template router is doable with any small model plus analytics webhooks; Jev is not required. Worth a note in the growth backlog, not a build now."
+ },
+ "verify": [
+  "All demos are labelled 'illustrative concept - synthetic data'; nothing is shown working",
+  "Enriching visitors by IP and emailing them raises GDPR/CAN-SPAM issues",
+  "Jev pricing/availability (TypeSafe AI) and whether the 'prompt' the creator mentions exists"
+ ]
+}

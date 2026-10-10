@@ -1,0 +1,68 @@
+{
+ "id": "7693763915380952351",
+ "url": "https://www.tiktok.com/@bengusberg/video/7693763915380952351",
+ "creator": "bengusberg",
+ "title": "Google Labs 'Little Language Lessons' free AI language-learning experiments (Tiny Lesson, Slang Hang, Word Cam)",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Little Language Lessons (Google Labs experiment)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "labs.google/lll/en"
+  },
+  {
+   "name": "Tiny Lesson",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Vocab and grammar 'like a traditional tutor'"
+  },
+  {
+   "name": "Slang Hang",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Teaches slang/regional expressions 'so you sound like a native'"
+  },
+  {
+   "name": "Word Cam",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Snap a photo, learn to talk about what is in it"
+  },
+  {
+   "name": "Duolingo",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Clickbait comparison ('killed Duolingo')"
+  }
+ ],
+ "claims": [
+  "Google launched a free AI platform teaching 20+ languages (Japanese, Chinese, French, Spanish named)",
+  "Three free learning paths: Tiny Lesson, Slang Hang, Word Cam",
+  "Uses AI throughout to personalize to goals",
+  "Creator: 'Stanford founder of an AI startup, raised $4 million'"
+ ],
+ "how_to_steps": [
+  "Go to labs.google/lll/en and sign up for free",
+  "Pick one of the three experiments (Tiny Lesson / Slang Hang / Word Cam) and 'Try it'"
+ ],
+ "on_screen_only": [
+  "Browser URL bar: labs.google/lll/en with 'Google Labs EXPERIMENT' header",
+  "Cards: 'Tiny Lesson — Find relevant vocabulary, phrases, and grammar tips for any situation', 'Slang Hang — Learn expressions, idioms, and regional slang from a generated conversation between natives', 'Word Cam — Snap a photo to learn how to speak about your surroundings', each with 'Try it' button",
+  "Dead-Duolingo-owl meme image at top"
+ ],
+ "cta": "Try it and let me know what you learn; follow for AI, founder life, leadership",
+ "relevance": {
+  "score": 1,
+  "why": "Consumer language-learning demo, not a dev or business tool. Only tangentially a reference for how Google packages small Gemini-powered apps."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to adopt. If ever building a learning-app product, Word Cam (photo-to-lesson) is a cheap pattern to copy with a vision model."
+ },
+ "verify": [
+  "Is Little Language Lessons still live at labs.google/lll and free?",
+  "Is 20+ languages accurate? Is it 'Google Labs experiment' (may be shut down) rather than a product?",
+  "Does the 'killed Duolingo' framing have any substance?"
+ ]
+}

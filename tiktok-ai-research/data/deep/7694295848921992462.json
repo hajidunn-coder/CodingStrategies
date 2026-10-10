@@ -1,0 +1,76 @@
+{
+ "id": "7694295848921992462",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7694295848921992462",
+ "creator": "youraveragetechbro",
+ "title": "Code-quality skills for AI-written PRs: ponytail (de-bloat), pstack plugin (no-comments, TS best practices, unslop), Thermo-Nuclear Code Quality Review, combined in one /simplify command",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "ponytail",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "ponytail.dev; GitHub repo (owner looks like 'DietrichSebast...' on screen); 'He says nothing. He writes one line. It works.' De-bloating/simplification/refactor-to-reusable-modules skill"
+  },
+  {
+   "name": "pstack",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Claude Code plugin by SpaceX engineer 'potato' on X; a 'software factory' engineering system; includes skills no-comments, typescript-best-practices, unslop (plus agents, commands, hooks dirs on screen)"
+  },
+  {
+   "name": "Thermo-Nuclear Code Quality Review",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "SKILL.md in cursor/plugins repo (cursor/space-x-ai team); 'Run an extremely strict maintainability review focused on abstraction quality, giant files, and spaghetti-condition growth...'"
+  },
+  {
+   "name": "/simplify (creator's own combined command)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Single command that calls ponytail + pstack simplification skills + Thermo-Nuclear review on every PR"
+  },
+  {
+   "name": "Claude Code cloud agents / verification skills",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "Videos 1-4 of series: cloud agents as 24/7 on-call engineer with verification skills"
+  }
+ ],
+ "claims": [
+  "Creator ships ~30 PRs a day while keeping code quality high",
+  "pstack powers ~90% of the PRs he writes daily",
+  "pstack automatically invokes no-comments, typescript-best-practices and unslop skills every time",
+  "ponytail is a 'gigantic de-bloating tool' that calls out bad design paradigms, simplifies, refactors into reusable modules",
+  "Thermo-Nuclear review does roughly the same as ponytail + pstack sub-skills",
+  "Video 5 of 7 in 'how to become a 10x AI-native developer'; next video is on effective prompts so agents need no supervision"
+ ],
+ "how_to_steps": [
+  "Install ponytail skill from ponytail.dev (GitHub repo) into Claude Code",
+  "Install the pstack plugin (GitHub 'pstack' repo with agents/, commands/, hooks/, skills/ incl. no-comments, typescript-best-practices, unslop)",
+  "Add the Thermo-Nuclear Code Quality Review SKILL.md from the cursor/plugins repo",
+  "Create one /simplify command that runs all three on every PR before merge"
+ ],
+ "on_screen_only": [
+  "ponytail.dev landing: terminal-style page 'ponytail — He says nothing. He writes one line. It works.' with buttons like 'npx ... ' / 'Something's wrong. Be the first to know.'",
+  "GitHub repo listing for ponytail with folders: agents, claude-plugin, commands, hooks, skills, ... README.md, LICENSE; 'About' panel text",
+  "GitHub 'pstack' repo tree: agents, commands, hooks, skills, ... with skill folders including no-comments, typescript-best-practices, unslop, README.md, LICENSE, .claude-plugin; README excerpt: 'I'm not a president or ceo, but I've worked with millions of lines of code at Meta, Netflix, and Cursor...'",
+  "GitHub path 'plugins / cursor-team-ai / skills / thermo-nuclear-code-quality-review / SKILL.md' (repo shown as 'cursor / plugins'); frontmatter name 'thermo-nuclear-code-quality-review', description 'Run an extremely strict maintainability review focused on abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review...'; heading 'Thermo-Nuclear Code Quality Review' and 'Core Prompt'",
+  "Title card 'How to Become ...' series intro"
+ ],
+ "cta": "Follow the 7-part series; next video on prompt writing",
+ "relevance": {
+  "score": 5,
+  "why": "Exactly our workflow: Claude Code skills/plugins that keep AI-generated code lean. A solo founder merging lots of AI code needs an automated 'simplify/de-bloat' gate more than a team does."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Low effort: clone ponytail and pstack, copy the Thermo-Nuclear SKILL.md, wire a /simplify slash command or PostToolUse/pre-PR hook. Need to vet repos (maintained? license? prompt quality) and avoid overlapping/contradicting skills bloating context."
+ },
+ "verify": [
+  "Does ponytail.dev / the ponytail GitHub repo exist, who maintains it, license?",
+  "Is pstack a real public Claude Code plugin by 'potato' (SpaceX engineer)? Repo URL, stars, last commit?",
+  "Is 'cursor/plugins' with thermo-nuclear-code-quality-review a real Cursor-team repo, and is the skill Claude-Code compatible?",
+  "Are the '30 PRs/day' and '90% of PRs' claims plausible or marketing?",
+  "Does stacking three overlapping review skills cost too many tokens per PR?"
+ ]
+}

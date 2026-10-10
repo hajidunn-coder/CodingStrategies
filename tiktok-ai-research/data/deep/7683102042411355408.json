@@ -1,0 +1,71 @@
+{
+ "id": "7683102042411355408",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7683102042411355408",
+ "creator": "brooke_wrightmode",
+ "title": "Hormozi AI Skill: local Claude Code / Codex skill that searches 9,330 timestamped passages from 2,039 public Hormozi videos and writes a cited business diagnosis",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "hormozi-ai-skill",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "git clone https://github.com/viclaranja/hormozi-ai-skill.git ; cd hormozi-ai-skill ; ./install.ps1 (Windows) or ./install.sh (macOS/Linux); installs skills /ask-hormozi and /hormozi-report into Claude Code and Codex"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "host agent"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "also supported"
+  },
+  {
+   "name": "Obsidian",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "README: can point hormozi-report at an Obsidian vault or notes folder instead of answering interview questions"
+  }
+ ],
+ "claims": [
+  "Free, runs entirely locally; 'the corpus never leaves it'",
+  "Searches 9,330 timestamped passages from 2,039 public MoreMozi YouTube videos; every claim linked to the exact second of the source video",
+  "Install is one command, takes a few minutes, ~400 MB download and 350 MB on disk; no Python needed up front (installer fetches 3.11/3.12; 3.13/3.14 don't work)",
+  "/hormozi-report asks one question at a time, runs 8-14 searches across the corpus (constraint, offer, acquisition, sales, delivery, team), then writes an HTML report to Documents/Hormozi Reports/ that works offline",
+  "Separates evidence from opinion; conflicts between passages are shown, not smoothed over"
+ ],
+ "how_to_steps": [
+  "git clone https://github.com/viclaranja/hormozi-ai-skill.git",
+  "cd hormozi-ai-skill",
+  "Run ./install.sh (macOS/Linux) or ./install.ps1 (Windows PowerShell)",
+  "Restart Claude Code / Codex",
+  "Type /ask-hormozi for a quick sourced answer, or /hormozi-report for the full interview-then-report flow",
+  "Open the HTML report in Documents/Hormozi Reports/ and click citations to jump to the video timestamp"
+ ],
+ "on_screen_only": [
+  "Title card 'Steal Hormozi's playbook for Claude'; clip of Alex Hormozi",
+  "README header: 'Hormozi AI Skill -- A free, local business-diagnosis tool for Claude Code and Codex'",
+  "Repo files: CONTRIBUTING.md, DATA-RIGHTS.md, LICENSE, PRIVACY.md, README.md, RELEASE-CHECKS.md, SECURITY.md, THIRD_PARTY_NOTICES.md, install.ps1, install.sh, pyproject.toml, requirements.lock (3 weeks ago)",
+  "Skills table: ask-hormozi -- 'Ask a question, get sourced answers with timestamped links. Quick lookups.'; hormozi-report -- 'The full thing. Interviews you about your business, then writes a complete diagnosis as a browser dashboard.'",
+  "'Git, to clone this repo. Downloading the ZIP works too, but cloning is more reliable'",
+  "'Guide in bio'"
+ ],
+ "cta": "Save, follow; link in bio for the free repo and install guide",
+ "relevance": {
+  "score": 4,
+  "why": "A sourced, local business-advisor skill is directly useful for a solo founder pressure-testing offers and pricing for his apps; the evidence/opinion separation addresses hallucination worries."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "One clone + install script, ~400 MB. Run /hormozi-report once per product to get a cited diagnosis; cheap experiment with real upside. Review install.sh before running."
+ },
+ "verify": [
+  "Confirm github.com/viclaranja/hormozi-ai-skill exists and read DATA-RIGHTS.md / LICENSE (transcript corpus rights)",
+  "What search engine it bundles and whether it phones home (PRIVACY.md)",
+  "Quality: do the 8-14 corpus searches produce specific advice or generic Hormozi quotes?",
+  "Python 3.11/3.12 requirement conflicts with existing environment"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "7686172423149948173",
+ "url": "https://www.tiktok.com/@luke.builds.ai/video/7686172423149948173",
+ "creator": "luke.builds.ai",
+ "title": "Comedy skit: a voice 'Jarvis' agent in the car over-escalates a late client invoice into a lawsuit before being talked down to a reminder email",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Jarvis (creator's personal AI assistant persona)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Voice agent speaking through car audio; no underlying stack named"
+  }
+ ],
+ "claims": [
+  "Client 'Meridian' is 63 days late on invoice 114",
+  "Contract includes two rounds of revisions; client requested six",
+  "Agent claims to have drafted a demand letter, calculated every late fee, and found three attorneys specialising in commercial disputes",
+  "Agent sends a payment reminder and flags every future email from the client's domain for immediate review"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'POV: Jarvis wants to sue a client'",
+  "Shot from the back seat of a car (Mustang-style dash); car infotainment screen shows a phone-call UI, no agent UI visible"
+ ],
+ "cta": "None",
+ "relevance": {
+  "score": 2,
+  "why": "Entertainment, not a tutorial. The only takeaway is the concept of an agent that monitors invoices, drafts follow-ups and flags inbox senders, which is a plausible back-office agent idea but nothing is shown."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; the invoice-chasing idea could be built with Claude Code plus email/accounting APIs but the video gives zero method."
+ },
+ "verify": [
+  "Is 'Jarvis' a real product the creator sells, or just a scripted persona?",
+  "Is the voice output real agent output or scripted TTS?"
+ ]
+}

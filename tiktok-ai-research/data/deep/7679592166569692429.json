@@ -1,0 +1,73 @@
+{
+ "id": "7679592166569692429",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7679592166569692429",
+ "creator": "colton.deannn",
+ "title": "Five Claude Code slash commands: /ultrareview, /effort, /simplify, /loop, /mcp",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code /ultrareview",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "spins up a fleet of cloud agents to hunt bugs in your branch; Pro/Max users get three free until May 5th; screen shows agent-01..agent-05 cards"
+  },
+  {
+   "name": "Claude Code /effort",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "interactive slider from low to 'ultra' showing how hard Claude will work"
+  },
+  {
+   "name": "Claude Code /simplify",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "scans code for redundancy and rewrites tighter (screen: src/handler.ts 89 LOC)"
+  },
+  {
+   "name": "Claude Code /loop",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "run any task on a recurring interval, e.g. check the deploy every 5 minutes (screen: T+05m/T+10m/T+15m deploy passed, '~ git deploy')"
+  },
+  {
+   "name": "Claude Code /mcp",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "after connecting Slack/Notion etc., each shows up as its own slash command (/slack message your team, /notion search your docs, /calendar book a meeting, /drive find a file)"
+  }
+ ],
+ "claims": [
+  "/ultrareview: Pro and Max users get three free runs until May 5th",
+  "/simplify: 'one command, cleaner repo'",
+  "/loop: 'check the deploy every 5 minutes and then done'",
+  "Connected MCP tools appear as their own slash commands"
+ ],
+ "how_to_steps": [
+  "Type /ultrareview on a branch to launch parallel bug-hunting agents",
+  "Type /effort and move the slider to set reasoning effort",
+  "Type /simplify to refactor redundant code",
+  "Type /loop <interval> <task> for recurring checks",
+  "Type /mcp after connecting external tools; then use /slack, /notion, /calendar, /drive"
+ ],
+ "on_screen_only": [
+  "Title card: '5 claude commands to maximize your sessions'",
+  "Mock terminal '~/project -- claude-code' with /ultrareview, /effort slider (low ... ultra), /simplify src/handler.ts 89 LOC, /loop timeline, /mcp menu listing /slack, /notion, /calendar, /drive",
+  "'PRO + MAX: 3 FREE UNTIL MAY 5' badge",
+  "'STACK' arrow pointing to comments"
+ ],
+ "cta": "Comment 'stack' to get a doc to give Claude to make it 10x better",
+ "relevance": {
+  "score": 4,
+  "why": "Directly about Claude Code features a solo founder uses daily; /loop and /simplify and /effort map onto real time-saving workflows (this environment confirms /loop, /simplify and code-review skills exist)."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Zero setup: try /effort, /simplify and /loop today; /ultrareview worth a test on a real branch while the free runs last. Skip the comment-gated 'doc'."
+ },
+ "verify": [
+  "Is /ultrareview a real Claude Code command and what does it cost after the three free runs?",
+  "Exact /loop syntax and minimum interval in the current Claude Code version",
+  "Whether /effort persists per session or per project",
+  "The 'May 5th' deadline -- which year, and is it still valid"
+ ]
+}

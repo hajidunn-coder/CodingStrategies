@@ -1,0 +1,79 @@
+{
+ "id": "7681134258269850897",
+ "url": "https://www.tiktok.com/@taki.gpt/video/7681134258269850897",
+ "creator": "taki.gpt",
+ "title": "Nine-step recipe for a personal 'Jarvis' agent: VPS host, Hermes harness, model, interview, memory, skills, tools, messaging channel, dashboard",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Hermes (agentic harness)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "recommended harness: 'plans the work, uses tools and takes action, checks its own results' (Plan/Act/Check)"
+  },
+  {
+   "name": "Virtual private server",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "recommended home for the agent (24/7, secure); Mac mini or old PC as alternatives"
+  },
+  {
+   "name": "Claude / ChatGPT / open-source models",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "brain options; caption also names Codex"
+  },
+  {
+   "name": "AI second brain (Obsidian-style memory)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'give Jarvis memories' -- build an AI second brain"
+  },
+  {
+   "name": "Google Workspace",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "calendar, email, tasks connected as tools"
+  },
+  {
+   "name": "Telegram / iMessage / WhatsApp",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "communication channel options"
+  }
+ ],
+ "claims": [
+  "You don't need to build a model, just connect the right pieces (home, harness, model, memory, tools, interface)",
+  "VPS beats a home machine because it stays on 24/7 and is secure",
+  "Skills teach the agent to execute repeatable jobs per business role"
+ ],
+ "how_to_steps": [
+  "1. Give it a home: VPS (or old computer / Mac mini)",
+  "2. Install an agentic harness (Hermes)",
+  "3. Install/choose an AI model (Claude, ChatGPT, or open source)",
+  "4. Have Jarvis interview you about your business, life and goals",
+  "5. Give it persistent memory (AI second brain)",
+  "6. Create skills for each job role",
+  "7. Connect tools (Google Workspace, creative tools)",
+  "8. Connect communication channels (Telegram, iMessage, WhatsApp)",
+  "9. Build an AI dashboard / command centre"
+ ],
+ "on_screen_only": [
+  "'BUILD JARVIS STEP 01/09 ... 09/09' slide series with bullets: 'Always on. Always connected'; 'Plans the work / Uses tools and takes action / Checks its own results'; 'Reasoning and judgment / Code-heavy workflows / Long-context + multimodal -- SWAP THE BRAIN'; 'Your role, goals and priorities / Your business and workflows / Your rules and standards'; 'Remembers key decisions / Builds on past conversations / Gets smarter with use'; 'Teach one repeatable job / Package the workflow once / Stack skills into capability'; 'Email and calendar / Files and documents / Browser and business apps'; 'Chat from anywhere / Voice in real time / Alerts when work is done'; 'See goals and active tasks / Approve important actions / Review output and performance'",
+  "'Comment Jarvis for the full step by step guide'"
+ ],
+ "cta": "Comment 'Jarvis' to get the course/community link in bio",
+ "relevance": {
+  "score": 3,
+  "why": "A sane high-level architecture that matches what the founder already does with Claude Code (skills, memory, MCP tools), but it is a funnel video with no concrete commands or repos beyond 'Hermes'."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The checklist is useful to audit an existing Claude Code setup (memory, skills, channels, dashboard); building a separate always-on Jarvis on a VPS is a distraction unless there is a specific recurring job for it."
+ },
+ "verify": [
+  "Which 'Hermes' harness is meant (Nous Research Hermes Agent?) and its maturity/security",
+  "Cost of running a 24/7 agent on a VPS with Claude API vs Max subscription",
+  "Security of giving an always-on agent Google Workspace credentials"
+ ]
+}

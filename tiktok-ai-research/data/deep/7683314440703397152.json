@@ -1,0 +1,80 @@
+{
+ "id": "7683314440703397152",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7683314440703397152",
+ "creator": "ai_vanta_ai",
+ "title": "Five plugins for Claude Code / Codex vibe coding: Playwright CLI, Supabase plugin, Strix security agent, SkillUI design-system extractor, Context7 docs",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Playwright CLI",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "lets the AI open browsers, screenshot what it built, catch errors (screen: 'agent-browser' terminal '$ playwright... browser')"
+  },
+  {
+   "name": "Supabase plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "builds and manages databases from the terminal"
+  },
+  {
+   "name": "Strix",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Open-source AI hackers for your apps' -- strix.ai, v1.0.4 banner 'Starting Strix Agent'; attacks the app and fixes vulnerabilities"
+  },
+  {
+   "name": "SkillUI (npx skillui)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "'Reverse-engineer any design system into a Claude-ready skill. Pure static analysis. No AI. No API keys.' v1.3.3, 2.5k/month downloads, MIT; 'One-shotted Notion's landing page in minutes with a single line prompt'"
+  },
+  {
+   "name": "Context7 (upstash/context7)",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "up-to-date library docs injected into prompts via MCP; screen shows 61.9K stars on GitHub and library list (vercel/next.js, reactjs/react.dev, microsoft/playwright, supabase/supabase, etc.)"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "also applicable"
+  }
+ ],
+ "claims": [
+  "Playwright catches messy outputs and errors before you see them",
+  "Strix attacks your vibe-coded app like a real hacker and finds/fixes vulnerabilities",
+  "SkillUI reverse-engineers a whole design system into a markdown file",
+  "Context7 gives the latest version of every library so you never code against an outdated version"
+ ],
+ "how_to_steps": [
+  "Install the Playwright CLI/MCP for browser verification",
+  "Add the Supabase plugin for DB creation/management",
+  "Run Strix against your app before launch",
+  "Run npx skillui against a reference site to produce a design-system skill file",
+  "Add the Context7 MCP so docs are fetched by library ID at prompt time"
+ ],
+ "on_screen_only": [
+  "'5 CLAUDE CODE PLUGINS' banner with Codex logo",
+  "Frontend framework logos React / Vue / Svelte; fast_build_app Supabase-style table UI with categories/dates on 127.0.0.1:8000",
+  "STRIX banner: 'Welcome to Strix! v1.0.4 Open-source AI hackers for your apps -- Starting Strix Agent -- strix.ai'; 'api gateway.svc online' and 'exposing endpoints' graphics",
+  "SKILLUI README badges: skillui v1.3.3, downloads 2.5k/month, node >=18, license MIT, source npxskillui",
+  "Context7 'AI DOCS INJECTION VISUALIZED' diagram: Problem (outdated docs, fake methods, old packages) -> Context7 Hub; Workflow: User Prompt -> Resolve ID -> Query Docs -> Inject Context, MCP Tool; 'It resolves library IDs and queries docs'; '61.9K stars on GitHub'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 4,
+  "why": "All five are practical Claude Code add-ons for someone shipping Supabase-backed apps solo; Strix (security) and Context7 (fresh docs) address real failure modes of AI-generated code."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Playwright MCP and Context7 are minutes to install and broadly useful; Supabase MCP if on Supabase; Strix worth a one-off pre-launch run; SkillUI worth trying on a reference site. Watch token cost of Context7 injections."
+ },
+ "verify": [
+  "Strix: maturity, license, whether it needs its own LLM keys, and whether it is safe to run against production",
+  "SkillUI (npx skillui) author and quality of extracted design skills",
+  "Context7 free tier limits / rate limits via MCP",
+  "Official Supabase MCP vs the 'plugin' meant here"
+ ]
+}

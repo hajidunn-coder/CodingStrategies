@@ -1,0 +1,55 @@
+{
+ "id": "7685489699510635807",
+ "url": "https://www.tiktok.com/@krisd.ai/video/7685489699510635807",
+ "creator": "krisd.ai",
+ "title": "Comment-bait repost of a tweet pointing to a ~2-hour Stanford lecture on LLMs, framed as a 'Claude course'",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator says 'CLAW' (captions mis-transcribe Claude); the course is framed as teaching Claude automation"
+  },
+  {
+   "name": "Stanford LLM lecture (unnamed)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "Background shows a lecture-hall video with 'Stanford' logo; no URL or course title shown"
+  },
+  {
+   "name": "X/Twitter post by @Dipanshu_AI",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Tweet dated 9:14 AM 8/26/26, 68 comments, 14K bookmarks; reply by 'Swati Gupta'"
+  }
+ ],
+ "claims": [
+  "A 'full two hour course from Stanford' covers everything you need to understand about LLMs to build and automate anything",
+  "People who watch it tonight will 'wake up with new skills tomorrow'",
+  "Most people would rather watch Netflix than this two-hour course"
+ ],
+ "how_to_steps": [
+  "Comment 'CLAW' (Claude) to receive a link to the course"
+ ],
+ "on_screen_only": [
+  "Tweet text: 'INSTEAD OF WATCHING NETFLIX TONIGHT. Spend 2 hour with this. Claude AI FULL COURSE that teaches you how to BUILD and AUTOMATE anything... bookmark it'",
+  "Caption overlay: 'Best way to learn how to automate your life using AI'",
+  "Tweet handle @Dipanshu_AI, 9:14 AM 8/26/26, 68 comments, 14K saves, 'View quotes', 'Relevant' tab",
+  "Background video: man presenting in a lecture hall with a 'Stanford' watermark"
+ ],
+ "cta": "Comment 'CLAW' for the link",
+ "relevance": {
+  "score": 2,
+  "why": "A generic LLM fundamentals lecture is not what a founder already shipping with Claude Code needs; no concrete tool, repo, or technique is shown."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable; the course is unnamed and two hours of fundamentals is a poor use of time for someone already building."
+ },
+ "verify": [
+  "Which Stanford lecture is this actually (CS229/CS25/Building LLM Applications)? It is almost certainly not an official 'Claude course'",
+  "Is the tweet (@Dipanshu_AI) itself just a repost of a free YouTube lecture?",
+  "Does the creator's DM link go to the lecture or to a funnel?"
+ ]
+}

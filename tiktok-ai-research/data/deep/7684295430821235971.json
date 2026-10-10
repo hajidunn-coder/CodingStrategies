@@ -1,0 +1,59 @@
+{
+ "id": "7684295430821235971",
+ "url": "https://www.tiktok.com/@itstundealao/video/7684295430821235971",
+ "creator": "itstundealao",
+ "title": "Fact-check of the 'caveman' Claude Code skill: claimed 65% token cut, measured ~30% fewer output tokens on two tasks",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "caveman (skill/plugin)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "free plugin/skill that makes Claude respond tersely to cut output tokens; source repo shown only as a thumbnail with 13,515 (stars?)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "usage panel shows 5-hour limit and weekly limits, 'This session' cost/API time/active time/cache hit, breakdown Opus 5 input/output/cache tokens"
+  },
+  {
+   "name": "Claude Opus 5",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Usage breakdown lists 'Opus 5' and 'Opus 100% / Haiku 0%'"
+  }
+ ],
+ "claims": [
+  "Claim under test: caveman cuts tokens Claude spends by ~65%",
+  "Test 1 (explain an algorithm): 4,000 output tokens without caveman vs 2,800 with = ~30% decrease",
+  "Test 2 (implement an FAQ page): 4,900 vs 2,400 output tokens = ~30% decrease (closer to 50% by the numbers quoted)",
+  "Output quality 'pretty much the same', structure tighter with less waffle",
+  "Verdict: FACT (works, but not 65%)"
+ ],
+ "how_to_steps": [
+  "Install the caveman skill in Claude Code",
+  "Run the same prompt with and without the skill",
+  "Compare output tokens in the Claude Code usage panel (/usage or /cost)"
+ ],
+ "on_screen_only": [
+  "'Fact or Hype?' card; FACT / HYPE checkboxes",
+  "Thumbnail of a GitHub-style repo page with an orange pixel-creature logo and '13,515' count",
+  "Claude Code usage panel: '5-hour limit Resets in 1 hr 40 min 8% / Weekly all models Resets Wed 8:00 AM 19%'; 'This session: Cost $3.66, API 14s, Active 14s, Opus 100%, Haiku 0%, Cache hit 72%'; later '5-hour limit 37%, weekly 22%, Cost $6.75, API 19s, Active 41s'; Breakdown Opus 5 Input/Output/Cache read/Cache write; 'What's using your limits? Last 24h ... 21% ... (or while 4+ sessions in parallel)'; 'Nothing over 10% in this period'",
+  "Chat prompt 'What's up next, Tunde?' with a calendar-grid widget (likely the Claude Code usage dashboard)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Token limits on Max are a daily constraint; an empirically tested ~30% output reduction with no quality loss is a cheap win, and the test method (same prompt, compare usage) is itself a good habit."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Install caveman (or an equivalent terse-output instruction in CLAUDE.md) and A/B it on real tasks. Note the saving is on output tokens only, which are a minority of most sessions' spend; input/cache dominates."
+ },
+ "verify": [
+  "Exact repo for 'caveman' (owner, stars) and whether it is a skill, plugin or output style",
+  "Does terse output harm Claude's reasoning on complex tasks (the tests were simple)?",
+  "Share of total cost that is output tokens in a typical Claude Code session -- how much does 30% output savings matter?"
+ ]
+}

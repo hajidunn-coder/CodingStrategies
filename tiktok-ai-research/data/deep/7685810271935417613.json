@@ -1,0 +1,70 @@
+{
+ "id": "7685810271935417613",
+ "url": "https://www.tiktok.com/@otis.kelley/video/7685810271935417613",
+ "creator": "otis.kelley",
+ "title": "Five free GitHub repos a 9-year engineer would use to learn Claude and Claude Code from scratch",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "anthropics/courses",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Official Anthropic courses repo: prompt engineering, API, tool use, evals (README shown on tablet)"
+  },
+  {
+   "name": "anthropics/claude-cookbooks",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Caption says ~53k stars; recipes for tool use, RAG, vision, agents"
+  },
+  {
+   "name": "awesome-claude-code",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Caption says ~28k stars; directory of Claude Code skills, plugins, commands (red 'AWESOME CLAUDE CODE' banner shown)"
+  },
+  {
+   "name": "superpowers",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Caption says ~94k stars; Claude Code skills library (README 'Superpowers' shown on tablet)"
+  },
+  {
+   "name": "awesome-claude-skills",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Curated list of Claude skills; page header 'awesome Claude Skills' with 'CLICK HERE TO UPGRADE YOUR WORKFLOW WITH Claude' shown"
+  }
+ ],
+ "claims": [
+  "Creator has been an engineer for over 9 years",
+  "Claude Cookbooks has ~53k stars, awesome-claude-code ~28k, superpowers ~94k (from caption)",
+  "All five resources are free and 'super popular'"
+ ],
+ "how_to_steps": [
+  "Start with anthropics/courses for prompt engineering, API, tool use and evals",
+  "Work through claude-cookbooks for real recipes (tool use, RAG, vision, agents)",
+  "Browse awesome-claude-code as the directory of Claude Code skills and plugins",
+  "Install the superpowers skills library",
+  "Browse awesome-claude-skills for more skills"
+ ],
+ "on_screen_only": [
+  "Numbered overlays: '1. Anthropic Courses', '2. Claude Cookbooks', '3. awesome-claude-code', '4. superpowers repo', '5. awesome-claude-skills'",
+  "Tablet screenshots of each GitHub README: 'Anthropic courses' table of contents, 'Claude Cookbooks' README with 'Explore Further' section, red 'AWESOME CLAUDE CODE' logo, 'Superpowers' README TOC, 'Awesome Claude Skills' page with 'Claude Skills' calligraphy banner and 'CLICK HERE TO UPGRADE YOUR WORKFLOW WITH Claude'",
+  "No GitHub owner handles shown for repos 3-5"
+ ],
+ "cta": "None (follow implied)",
+ "relevance": {
+  "score": 4,
+  "why": "superpowers and awesome-claude-code are directly about Claude Code skills/plugins, which is exactly the toolchain a Claude Code founder uses; the rest is official Anthropic material."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Low effort: install superpowers as a Claude Code plugin and skim awesome-claude-code for skills worth adopting; skip the courses unless a specific gap (evals, tool use) shows up."
+ },
+ "verify": [
+  "Confirm current owners: obra/superpowers, hesreallyhim/awesome-claude-code, anthropics/claude-cookbooks, anthropics/courses, and which awesome-claude-skills repo (several exist)",
+  "Star counts cited in caption (53k/28k/94k) may be inflated or outdated",
+  "Is superpowers still maintained and compatible with the current Claude Code plugin system?"
+ ]
+}

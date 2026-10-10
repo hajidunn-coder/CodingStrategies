@@ -1,0 +1,82 @@
+{
+ "id": "7693670614984297758",
+ "url": "https://www.tiktok.com/@malikontech/video/7693670614984297758",
+ "creator": "malikontech",
+ "title": "OpenAI '28 days of updates' Day 2 recap: free Codex auto-review, simplified API tiers, ChatGPT meeting notes, Decisions API",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "ChatGPT / Codex auto-review",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Auto-review now free for all ChatGPT-signed-in users; enable in settings > permissions > auto-review; does not draw from plan usage"
+  },
+  {
+   "name": "OpenAI API (simplified tiers)",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "@OpenAIDevs post: 'Five paid tiers become three: Build, Launch, Grow' with per-model rate-limit table"
+  },
+  {
+   "name": "ChatGPT Meetings plugin / meeting notes",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Built-in AI note-taker; 'saves a personalized recap and next steps'; positioned vs Gemini and Granola"
+  },
+  {
+   "name": "OpenAI Decisions API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "'Realtime general classifier'; 'Let your app choose the right action in near real-time'; available to all developers in preview. Creator calls it a 'JEV clone' (garbled)"
+  },
+  {
+   "name": "Tibo (@thsottiaux) X roundup",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "X.com post 'Roundup of Day 2/' with items 2.1-2.4 and a poll"
+  },
+  {
+   "name": "Gemini / Granola",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Mentioned as incumbent AI note-takers"
+  }
+ ],
+ "claims": [
+  "Day 2 of OpenAI's 28 consecutive days of updates has four changes",
+  "Auto-review in ChatGPT/Codex is now free for everyone, no paid plan needed, and does not consume plan usage",
+  "Auto-review 'improves the default sandbox setting that requires approve everything' by letting a second agent review the primary agent's high-risk actions against original user intent",
+  "OpenAI paid API tiers reduced from five to three (Build, Launch, Grow)",
+  "ChatGPT now has built-in meeting notes (Meetings plugin)",
+  "Decisions API is live for all builders as a realtime general classifier",
+  "Tibo's poll: 76% of ~15,236 voters said 'needs a reset' vs 24%/25% 'good day'; creator says 'good chance we might get a reset'"
+ ],
+ "how_to_steps": [
+  "Enable auto-review: ChatGPT settings > permissions > auto-review (per Tibo's post shown on screen)"
+ ],
+ "on_screen_only": [
+  "X post by Tibo @thsottiaux: 'Roundup of Day 2/ 2.1/ Approve... auto-review now included... 2.2/ Simplified... 2.3/ Meeting notes integrated. 2.4/ Decisions API live for builders. Will use in the app to improve the experience.' 3:56 PM 10/6/26, 188 replies, 71 reposts, 31 saves",
+  "Day 2.1 full text: 'We have made Auto-review free for all users signed in through a ChatGPT account. You can enable it in settings > permissions > auto-review... This Auto-review feature is now free and does not draw usage from your plan.'",
+  "Day 2.2: 'OK this one is smaller, but we removed some friction for when building on the API. Happy building.' quoting @OpenAIDevs: 'We're ... easier to qualify for higher OpenAI ... limits. Five paid tiers become three: Build, Launch, Grow' with rate-limit table (e.g. Luna 5,000/1,000,000 ... 30,000/100,000,000)",
+  "Day 2.3: 'Never worry about remembering what you were saying with that colleague. Just talk your heart out and build up the context to load up into codex to get it all done.' quoting ChatGPT: 'Your next meeting... note-taker... The Meetings plugin ... saves a personalized recap and next steps in...'",
+  "Day 2.4: 'Decisions API is live. We will use this ourselves to improve the experience for everyone in many fun ways. Realtime general classifier does open some great possibilities.' quoting @OpenAIDevs 'Let your app choose the right action in near real-time... now available to all developers in preview' with 'Introducing the Decisions API' video thumbnail",
+  "Poll: '(good day) 25% / (needs a reset) 75%, 15,236 votes, 3 hours...' 3:58 PM 10/6/26; reply from Token Gremlin @TokenGre...: 'Good day, needs a reset.'",
+  "Caption overlay: 'DAY 2: CHATGPT UPDATES FOR MEETING NOTES, JEV & FREE AUTO APPROVE!'"
+ ],
+ "cta": "Save this post and follow for more AI news / 28-day coverage",
+ "relevance": {
+  "score": 2,
+  "why": "OpenAI/Codex news; we build on Claude Code. Only the Decisions API (realtime classifier) and free auto-review are marginally interesting as competitor features. 'Reset' hype is noise."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement in a Claude-based workflow. At most, note that Codex auto-review (second agent reviews high-risk actions) is a pattern we already approximate with Claude Code hooks/permissions."
+ },
+ "verify": [
+  "Does OpenAI's '28 days of updates' campaign exist and what did Day 2 actually ship?",
+  "Is the Decisions API real, what does it cost, and is it a general-purpose realtime classifier?",
+  "What are the actual new API tiers (Build/Launch/Grow) and limits?",
+  "What is 'JEV' in the creator's caption (garbled transcription)?",
+  "Is Codex auto-review really free with no usage draw, including on free accounts?"
+ ]
+}

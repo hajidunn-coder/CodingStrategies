@@ -1,0 +1,58 @@
+{
+ "id": "7687440407512354078",
+ "url": "https://www.tiktok.com/@bengusberg/video/7687440407512354078",
+ "creator": "bengusberg",
+ "title": "Four free resources to learn to build AI agents in 2026: Andrew Ng's Agentic AI course, Microsoft AI Agents for Beginners, Hugging Face Agents course, then build one for a personal pain point",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "DeepLearning.AI Agentic AI course (Andrew Ng)",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "deeplearning.ai/courses/agentic-ai shown in browser bar"
+  },
+  {
+   "name": "Microsoft AI Agents for Beginners",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "GitHub repo; card reads '18 Lessons - Build AI Agents with Microsoft Foundry - Now with Deploying Scalable & Local AI Agents'"
+  },
+  {
+   "name": "Hugging Face AI Agents course",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Hugging Face logo shown; no URL"
+  }
+ ],
+ "claims": [
+  "Creator is Ben Gusberg, Stanford founder of an AI startup that has raised $4 million",
+  "Ng's course teaches what agents are, how they plan and use tools",
+  "Focus on the first six lessons of the Microsoft course before the more involved setup",
+  "Hugging Face course has you build more complete agents and give them tools"
+ ],
+ "how_to_steps": [
+  "Take Andrew Ng's Agentic AI course on deeplearning.ai for the basics",
+  "Do the first six lessons (explanations and videos) of Microsoft's AI Agents for Beginners before the setup-heavy lessons",
+  "Take Hugging Face's AI Agents course to build fuller agents with tools",
+  "Pick one recurring pain point in your life and build an agent that solves it"
+ ],
+ "on_screen_only": [
+  "Title card: 'How to Build an AI Agent'",
+  "Browser bar: deeplearning.ai/courses/agentic-ai with banner 'New: The DeepLearning.AI mobile app is now available'",
+  "'What you'll learn' panel: 'Build agentic design patterns: reflection, tool use, planning, and multi-agent workflows'; 'Integrate AI with external tools: databases, APIs, web search, and code execution'; 'Evaluate and optimize AI systems: performance metrics, error analysis, and production deployment'",
+  "Microsoft repo folder list: 01-intro-to-ai-agents, 02-explore-agentic-frameworks, 03-agentic-design-patterns, 04-tool-use, 05-agentic-rag, 06-building-trustworthy-agents"
+ ],
+ "cta": "Try it out and let me know what you build; follow for AI founder life and leadership",
+ "relevance": {
+  "score": 2,
+  "why": "Beginner curriculum; a founder already shipping with Claude Code has passed this stage. Only the 'solve one recurring pain point' framing is useful."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth the hours for a time-poor builder; maybe skim the Microsoft lesson 06 (trustworthy agents) or Ng's evals module if a specific gap exists."
+ },
+ "verify": [
+  "Are all three courses free in full (DeepLearning.AI short courses are free; check the full Agentic AI specialization)?",
+  "Microsoft course is Azure/Foundry-centric; how much transfers to Anthropic tooling?"
+ ]
+}

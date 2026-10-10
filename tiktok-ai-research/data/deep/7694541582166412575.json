@@ -1,0 +1,24 @@
+{
+ "id": "7694541582166412575",
+ "url": "https://www.tiktok.com/@malikontech/photo/7694541582166412575",
+ "creator": "malikontech",
+ "title": "(no readable content)",
+ "category": "other",
+ "tools": [],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [],
+ "cta": "unknown",
+ "relevance": {
+  "score": 1,
+  "why": "TikTok photo/carousel post; extractor returned 'Unsupported URL', no transcript, no frames, no caption or hashtags. Creator (malikontech) posts AI/OpenAI news, so likely a news slide carousel."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing extractable. Needs manual look at the carousel if it matters."
+ },
+ "verify": [
+  "Manually open the photo post to see the slides",
+  "Is it a continuation of the OpenAI '28 days' coverage?"
+ ]
+}

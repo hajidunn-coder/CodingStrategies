@@ -1,0 +1,57 @@
+{
+ "id": "7688178775456075039",
+ "url": "https://www.tiktok.com/@bengusberg/video/7688178775456075039",
+ "creator": "bengusberg",
+ "title": "A GitHub repo packages Apple's design language (typography, motion, spring animations, gestures) as a Claude skill you install by pasting the URL",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Apple design language skill (GitHub repo, name not shown)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Creator says 'go to this GitHub repo' but no URL/owner appears on screen"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paste repo URL into Claude and ask it to install"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Alternative target for the same paste-and-install step"
+  }
+ ],
+ "claims": [
+  "The skill encodes Apple's design rules: motion, transitions, typography, spring animations, swipe interactions",
+  "Set-up takes 30 seconds or less and is free",
+  "Resulting sites/apps look 'like a world class brand, not AI slop'",
+  "Creator is a Stanford founder who has raised $4 million"
+ ],
+ "how_to_steps": [
+  "Open the GitHub repo for the Apple design skill",
+  "Copy the repo URL and paste it into Claude (or ChatGPT)",
+  "Ask it to help you install the skill",
+  "Build your next website or app and it follows Apple's design rules"
+ ],
+ "on_screen_only": [
+  "Title card: 'Apple's Design Language Now a Skill.'",
+  "Talking head only; the repo URL is never shown"
+ ],
+ "cta": "Drop screenshots of your site in the comments; follow",
+ "relevance": {
+  "score": 4,
+  "why": "Design quality is the usual weak spot of Claude Code-built apps; a design-system skill is exactly the kind of reusable asset a solo founder should keep in the skills folder."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to try once the repo is identified (likely an Apple HIG / Liquid Glass skill in awesome-claude-skills); install as a Claude Code skill and A/B a landing page. Risk of looking like an Apple clone and of trademark issues on the dress."
+ },
+ "verify": [
+  "Identify the actual repo (search awesome-claude-skills / GitHub for 'apple design skill' or 'human interface guidelines skill') and its author",
+  "Is it a real SKILL.md with guidelines or just a prompt dump?",
+  "Legal: copying Apple's design language for a product could raise trade-dress concerns"
+ ]
+}

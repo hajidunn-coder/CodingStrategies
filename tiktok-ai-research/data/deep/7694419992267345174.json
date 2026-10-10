@@ -1,0 +1,66 @@
+{
+ "id": "7694419992267345174",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7694419992267345174",
+ "creator": "artificialcorner",
+ "title": "Connecting Claude to Gemini (Nano Banana image gen via API key file) for images, citations, and video analysis; caption carries the prompt",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude (Claude Code / desktop, working in a folder)",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "Reads gemini-key.txt in a folder; writes report/app/prompt"
+  },
+  {
+   "name": "Gemini API",
+   "kind": "api",
+   "where_seen": "caption",
+   "detail": "Key stored in gemini-key.txt; asked for 4 images at once in 16:9"
+  },
+  {
+   "name": "Nano Banana (Gemini image model)",
+   "kind": "model",
+   "where_seen": "caption",
+   "detail": "Claude writes the image prompt, Nano Banana draws it"
+  },
+  {
+   "name": "Claude + Gemini dashboard (creator's own page)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Page 'Claude + Gemini' at path like /claude-gemini, 'gemini-key.txt hidden, connected once', 'made together 36/37/38'"
+  }
+ ],
+ "claims": [
+  "Claude does most of the creator's work but cannot make images; Gemini's Nano Banana fills the gap",
+  "Claude connected to Nano Banana produces 4 images at once in the creator's style",
+  "Pairings shown: Claude writes the report / Gemini cites every claim; Claude builds a small app / Gemini makes the artwork; Claude writes the image prompt / Nano Banana draws it; Claude sends every video in the folder / Gemini watches the whole video",
+  "Transcript is only a countdown ('3 2 1 3'); video is 6 seconds, all content is on-screen/caption"
+ ],
+ "how_to_steps": [
+  "Put your Gemini API key in gemini-key.txt inside the project folder",
+  "Prompt Claude: 'In this folder, read my Gemini API key from gemini-key.txt and never show it on screen. Ask the Gemini model for 4 images at once, in 16:9, from this ...' (caption truncated)",
+  "Reuse the same connection for citations (Gemini checks claims), video understanding (Gemini watches full videos), and app artwork"
+ ],
+ "on_screen_only": [
+  "Overlay: 'Connecting Claude to Gemini changed how I use Claude' / 'Here are 3 amazing things they can do together'",
+  "Dashboard header 'Claude + Gemini' with subline '/claude-gemini · gemini-key.txt · hidden · connected once' and counter 'made together 36' (increments to 37, 38)",
+  "Pair cards: CLAUDE 'Writes the report' / GEMINI 'Cites every claim'; CLAUDE 'Builds a small app' / GEMINI 'Makes the artwork'; CLAUDE 'Writes the image prompt' / GEMINI 'Nano Banana draws it'; CLAUDE 'Sends every video in the folder' / GEMINI 'Watches the whole video'",
+  "Result tiles: 'A report with nothing made up (from your own sources)', 'A dashboard from your notebooks (every number cited)', '4 thumbnails in your style (16:9 output)', 'A how-to guide from one video (steps at their timestamps)', 'A fix list with timestamps (one list per video)', 'An app with its own images (no stock photos)'",
+  "Orange pixel-robot figure on top of monitor"
+ ],
+ "cta": "None in transcript; caption implies follow for prompts",
+ "relevance": {
+  "score": 4,
+  "why": "Practical multi-model pattern for a Claude Code user: keep Claude as the orchestrator, call Gemini for what Claude lacks (native image generation, long-video understanding). Useful for app assets, marketing thumbnails, and content pipelines."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Small script/skill: Claude Code reads a key file (better: env var), calls Gemini image API for N 16:9 images, saves to assets/. Could be packaged as a reusable skill ('gemini-images', 'gemini-video-notes'). Cost is Gemini API usage only. Avoid key-in-txt-file; use .env and gitignore."
+ },
+ "verify": [
+  "Current Gemini image model name ('Nano Banana') and API support for batch of 4 / 16:9 aspect",
+  "Gemini video-understanding limits (file size, duration) and pricing",
+  "Full prompt text from caption (truncated in data)",
+  "Is the dashboard a real tool or just a mock made for the video?"
+ ]
+}

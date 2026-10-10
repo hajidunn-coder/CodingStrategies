@@ -1,0 +1,61 @@
+{
+ "id": "7694691385806572831",
+ "url": "https://www.tiktok.com/@alanonai/video/7694691385806572831",
+ "creator": "alanonai",
+ "title": "Should you host your AI-built app on Vercel? Understand costs at scale and vendor lock-in before accepting the AI's default recommendation",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Hosting platform by the Next.js creators; cheap/free to start; easy integrations"
+  },
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Also commonly AI-recommended; same caution applies"
+  },
+  {
+   "name": "Next.js",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AI tends to build on it unless pushed elsewhere"
+  },
+  {
+   "name": "Creator's vendor lock-in article",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Link in comments (not shown)"
+  }
+ ],
+ "claims": [
+  "AI tools recommend Vercel and Supabase very often; that does not mean they are right for you",
+  "Vercel is built by the Next.js team; starts inexpensive/free, easy to configure and connect services",
+  "Risk: what happens when it is no longer free, when you hit N users or app size, when services must connect to other things",
+  "Vendor lock-in can cost money and services down the road"
+ ],
+ "how_to_steps": [
+  "Before accepting Vercel, learn what it does and does not do",
+  "Ask your AI: what happens when it's not free? What will it cost at X users / app size? How will connected services work later?",
+  "Have that conversation before choosing any hosting vendor"
+ ],
+ "on_screen_only": [
+  "Only caption subtitles of the spoken words (e.g. 'VENDOR LOCK IN IS', 'SO I WROTE AN ARTICLE'); no UI shown"
+ ],
+ "cta": "Read the vendor lock-in article linked in comments; let me know if helpful",
+ "relevance": {
+  "score": 3,
+  "why": "Generic but real concern for a solo founder shipping Next.js apps: Vercel/Supabase bills at scale and portability. Nothing new for someone who already picks infra deliberately."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Cheap habit: add a 'cost at 1K/10K/100K users and exit plan' question to the Claude Code project kickoff / CLAUDE.md infra checklist. No tooling needed."
+ },
+ "verify": [
+  "Current Vercel pricing tiers and known bill-shock cases",
+  "How portable is a Next.js app off Vercel (self-host, OpenNext, Cloudflare)?",
+  "Content of the creator's article (not in data)"
+ ]
+}

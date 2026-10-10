@@ -1,0 +1,66 @@
+{
+ "id": "7688231313035365663",
+ "url": "https://www.tiktok.com/@bengusberg/video/7688231313035365663",
+ "creator": "bengusberg",
+ "title": "canivibecodeit.com: directory of 1,000+ SaaS apps rating whether you can rebuild each with AI, savings, and a copy-paste rebuild prompt",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "canivibecodeit.com",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "URL shown in browser bar; 'Can I vibecode ___?' directory with 'The Death List'"
+  },
+  {
+   "name": "Granola",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's AI meeting notetaker used as the search example"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paste the site's prompt into Claude"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Alternative"
+  }
+ ],
+ "claims": [
+  "Over 1,000 apps listed with exact prompts to rebuild them",
+  "Each app is rated 'yes', 'kinda' or 'not really' (evening project / weekend project / not worth it)",
+  "Site shows how much money you would save per app and why you might not want to rebuild it",
+  "Creator's advice: only replace apps where cost is high and build time is low"
+ ],
+ "how_to_steps": [
+  "Go to canivibecodeit.com and search for an app you pay for (e.g. Granola)",
+  "Or scroll to trending apps / 'The Death List'",
+  "Read the yes/kinda/not-really verdict and estimated savings",
+  "Click the app to get the exact rebuild prompt and the reasons not to build it",
+  "Paste the prompt into Claude or ChatGPT"
+ ],
+ "on_screen_only": [
+  "Hero: 'Can I vibecode ___?' with subtitle '1,000 apps, one question each: can AI build you a replacement today, or is it still worth paying for?'",
+  "Browser bar: canivibecodeit.com; logo 'canivibecodeit'",
+  "'The Death List' table with app names (Granola, Notion and others), monthly price column, green/red verdict badges",
+  "Detail page 'Can I vibecode Granola?' with a green 'YES' badge and savings per month, a long prompt block and a 'why you might not' section with red arrow"
+ ],
+ "cta": "Try it and comment which app you replace; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Useful two ways for a founder: cutting SaaS spend, and as a cheap market-research list of which apps are now trivially cloneable (i.e. which markets are commoditising)."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Rebuilding tools you pay for usually costs more founder time than the subscription; skim the Death List for ideas and for the prompt structures, but do not spend evenings cloning Granola."
+ },
+ "verify": [
+  "Who runs canivibecodeit.com and are the prompts/savings numbers curated or auto-generated?",
+  "Are the verdicts honest about maintenance burden (hosting, auth, syncing)?",
+  "Check the site's monetisation (affiliate links, lead-gen)"
+ ]
+}

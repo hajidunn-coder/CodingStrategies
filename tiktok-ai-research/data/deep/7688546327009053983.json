@@ -1,0 +1,63 @@
+{
+ "id": "7688546327009053983",
+ "url": "https://www.tiktok.com/@bengusberg/video/7688546327009053983",
+ "creator": "bengusberg",
+ "title": "Scrapling: open-source adaptive web-scraping framework (D4Vinci/Scrapling, ~83k stars) pitched as ~800x faster and able to bypass Cloudflare/captcha for AI agents",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Scrapling",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub D4Vinci/Scrapling (Public), 83.0k stars; docs scrapling.readthedocs.io/en/latest/; Discord https://discord.gg/EMgGbDceNQ; X https://x.com/Scrapling_dev"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paste the repo URL into Claude and ask it to install"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Alternative"
+  },
+  {
+   "name": "Cloudflare",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Bot protection Scrapling claims to bypass"
+  }
+ ],
+ "claims": [
+  "Almost 800x faster than the scraper you are probably using",
+  "Bypasses bot detection like captcha and Cloudflare so Claude/ChatGPT never gets blocked",
+  "Over 80,000 GitHub stars (badge shows 83.0k)",
+  "Handles anything from a single request to a full-scale crawl"
+ ],
+ "how_to_steps": [
+  "Go to the Scrapling GitHub repo",
+  "Copy the URL into Claude or ChatGPT and ask it to help you install it",
+  "Use it for scraping/crawling tasks"
+ ],
+ "on_screen_only": [
+  "Banner: 'Scrapling - Effortless Web Scraping for the Modern Web'",
+  "GitHub header 'D4Vinci / Scrapling  Public', star badge '83.0k stars'",
+  "About text: 'An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev', link scrapling.readthedocs.io/en/latest/"
+ ],
+ "cta": "Try it and let me know what you build; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Useful if an app or research workflow needs scraping (competitor monitoring, lead data); Python library, easy to drive from Claude Code. Not core."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "pip install and try it the next time a scraping task hits Cloudflare; the '800x' claim is marketing (it is a parsing-speed benchmark vs BeautifulSoup, not end-to-end)."
+ },
+ "verify": [
+  "Check the 800x figure's source (Scrapling's own parser benchmark vs other parsers) and the 83k star count",
+  "Legal/ToS risk of bypassing Cloudflare and captchas on sites you do not own",
+  "Maintenance status and whether the stealth fetcher still works against current Cloudflare"
+ ]
+}

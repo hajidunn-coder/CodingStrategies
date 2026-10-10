@@ -1,0 +1,72 @@
+{
+ "id": "7682070844729822495",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7682070844729822495",
+ "creator": "ethanplusai",
+ "title": "JARVIS 2.0 (ethanplusai/jarvis): voice assistant that now runs on Claude Code / Claude Max instead of the API, with persistent markdown memory and a web dashboard",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "ethanplusai/jarvis",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "public GitHub repo 'Ethan plus AI slash Jarvis'; clone and follow README setup; link in bio"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Jarvis orchestrates Claude Code sessions ('claude code plans'), can message existing sessions, dashboard lists every Claude Code conversation on the machine"
+  },
+  {
+   "name": "Claude Max subscription",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "replaces the Anthropic API key; usage tab tracks 5-hour and weekly limits"
+  },
+  {
+   "name": "'background Sonic model'",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Jarvis says it runs on a background 'Sonic' model (likely Sonnet) via Max"
+  },
+  {
+   "name": "Orcha",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'ORCHA' app/terminal visible on the lower monitor with a long yellow session log"
+  }
+ ],
+ "claims": [
+  "Anthropic API key is gone entirely; runs through Claude Max subscription",
+  "Faster responses, real persistent memory (markdown files), can brainstorm a build before launching Claude in the background",
+  "Can send messages into existing Claude Code sessions, not just ones it started",
+  "Dashboard tabs: Runs, Sessions (incl. which are waiting on you), Projects, Specs (review/approve planned builds), Memory, Usage (5-hour and weekly limits)"
+ ],
+ "how_to_steps": [
+  "Clone github.com/ethanplusai/jarvis",
+  "Follow the README setup (uses a Claude Max login rather than an API key)",
+  "Talk to Jarvis to plan a build, approve the spec in the dashboard, let it run Claude Code in the background",
+  "Edit memory markdown files directly if needed; watch usage tab against subscription limits"
+ ],
+ "on_screen_only": [
+  "'POV: YOU JUST DOWNLOADED JARVIS 2.0'",
+  "Animated green particle-sphere 'Jarvis' visualizer on top monitor",
+  "Dashboard with tabs RUNS / SPECS / PROJECTS / USAGE, usage bars '22% 7-DAY WEEK resets Sep 11 4:00am', counters '3028 CONVERSATIONS', '241 PROJECTS', '2.4B CACHE READ', '2.4B CACHE WRITTEN', note 'there is no separate per-model window -- no Fable limit...'",
+  "ORCHA terminal/log pane on second monitor"
+ ],
+ "cta": "Repo in bio",
+ "relevance": {
+  "score": 4,
+  "why": "Very close to the founder's own setup: a Claude-Code-orchestrating assistant with memory, specs approval and usage tracking on a Max plan. The 'specs approve then background build' and usage dashboard patterns are directly reusable."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Worth cloning to study the Claude Code session orchestration and usage-tracking code, then lifting ideas (spec approval gate, memory as markdown, usage meter) rather than adopting a hobby voice stack wholesale. Check that driving Claude Code via a Max login is within Anthropic terms."
+ },
+ "verify": [
+  "Does github.com/ethanplusai/jarvis exist, and how is it licensed/maintained?",
+  "How it authenticates through Claude Max (OAuth of the CLI?) and whether that complies with Anthropic's consumer terms",
+  "Does it depend on macOS-only voice pieces?",
+  "What 'Orcha' is -- part of the repo or a separate tool"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "7679264914711547166",
+ "url": "https://www.tiktok.com/@bengusberg/video/7679264914711547166",
+ "creator": "bengusberg",
+ "title": "Side-hustle playbook: screenshot local service businesses from Instagram, have Claude build a booking website, DM it to them and charge ~$1,000",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "builds one-page booking site from screenshots; screen shows Claude app with 'Sonnet 5 - High' model selector and Chat/Cowork tabs"
+  },
+  {
+   "name": "Instagram",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "prospecting source: businesses with 'DM to book' in bio"
+  }
+ ],
+ "claims": [
+  "AI is bad at new business ideas, good at research and building products",
+  "Five minutes after pasting screenshots you have a professional website",
+  "Pro web developers charge up to $10,000 for such sites; charge $1,000 'and that would be a steal'",
+  "10 minutes of work = $1,000 profit; scale to 1,000 websites with AI",
+  "Hook card: 'How to Make $10K/Month With Claude'"
+ ],
+ "how_to_steps": [
+  "Search Instagram for local service businesses (barbers, nail salons, stylists) whose bio says 'DM to book'",
+  "Screenshot their profile and any tagged posts with reviews",
+  "Paste into Claude with the prompt: build a professional website for this business with a modern appointment booking system (full prompt on screen)",
+  "DM the finished site to the business: 'you're losing money without a website and booking system, I built this for you'",
+  "Negotiate a price (~$1,000), then repeat at scale"
+ ],
+ "on_screen_only": [
+  "Full prompt text: 'Build a professional website for this business with a modern appointment booking system. Use everything in the screenshots: name, services, photos, bio, and tagged reviews. - One-page site, mobile-first, fast - Sections: hero, services + prices, reviews, book now, contact - Booking: pick a service, date, time, then confirm - no login needed - Big \"Book Now\" button at the top, replaces DM to Book - Colors + tone that match their Instagram - Output one HTML file I can send them today. Do not invent any facts. [paste screenshots here]'",
+  "Example output: hair-salon page 'Blondes, Brunettes & Everything In Between' with Blonde/Brunette gallery and 'Book Now' / 'Follow Us' buttons",
+  "Model selector: Sonnet 5 - High; Chat / Cowork tabs"
+ ],
+ "cta": "Follow for more on AI, founder life, and leadership",
+ "relevance": {
+  "score": 2,
+  "why": "A cold-outreach web-design hustle, not a product business; the booking system in 'one HTML file' is not a real booking system. Useful only as a quick-cash or prospecting idea."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The prompt is a decent template for client landing pages, but a working booking flow needs a backend (Cal.com/Calendly embed at minimum), hosting, and support. Not a fit for a time-poor founder focused on his own apps."
+ },
+ "verify": [
+  "Can a single static HTML file really deliver 'booking' without a backend? (No -- it would need an embed or server.)",
+  "Conversion rate of unsolicited DMs with a pre-built site; copyright of scraped photos",
+  "Is the $1,000 price realistic for small salons vs Squarespace/Booksy at $20-30/mo?"
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "id": "7683651205804952846",
+ "url": "https://www.tiktok.com/@xinoyaps/video/7683651205804952846",
+ "creator": "xinoyaps",
+ "title": "Gov-contracting founder automated bid submissions with 'grokbot' (Hermes without configuration) but burned all tokens in 1-2 hours; plans a local open-weight Hermes setup on an RTX 4090",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "grokbot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "described as 'Hermes without the configuration'; up in 5-10 minutes; each agent gets its own computer; you log in to portals and hand over credentials"
+  },
+  {
+   "name": "Hermes (harness)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "planned next step: run Hermes locally"
+  },
+  {
+   "name": "RTX 4090 custom PC",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "to run open-weight models locally and avoid token costs"
+  },
+  {
+   "name": "Claude Managed Agents / Codex / Groq",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "fallbacks for heavier lifts; 'Groq is amazing'"
+  },
+  {
+   "name": "SAM.gov / bid portals",
+   "kind": "site",
+   "where_seen": "caption",
+   "detail": "#samgov #sba; portals not named"
+  }
+ ],
+ "claims": [
+  "Automated bid submission worked across several online portals",
+  "Burned through all tokens in about 1-2 hours because bidding is document-intensive",
+  "Giving the agent its own computer means handing over the keys to all your access -- do at your own risk",
+  "Next plan: Hermes harness + open-weight models on a 4090, escalate to Claude/Codex/Groq only for heavy lifts"
+ ],
+ "how_to_steps": [
+  "Install grokbot (Hermes-style agent with no configuration)",
+  "Log in to each bid portal inside the agent's own computer",
+  "Let the agent read solicitation documents, check qualification, and submit bids",
+  "Monitor token usage; move document-heavy reading to a local open-weight model"
+ ],
+ "on_screen_only": [
+  "Overlay text: 'Automating the bid process' / 'Government contracting' (talking-head only, no screens shown)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "As a veteran-owned founder, government contracting is a plausible channel; this is a candid field report on cost (token burn) and security trade-offs of agentic bid automation rather than a tutorial."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Lesson is reusable: route document-heavy reading to cheap/local models and keep Claude for judgment; but the specific 'grokbot' tool and handing portal credentials to an autonomous agent are not advisable without vetting."
+ },
+ "verify": [
+  "What 'grokbot' is (xAI product? third-party?) and its pricing/security model",
+  "Legality of automated submissions on SAM.gov and agency portals (ToS, bot rules)",
+  "Which open-weight models fit a 24 GB 4090 for long-document reading"
+ ]
+}

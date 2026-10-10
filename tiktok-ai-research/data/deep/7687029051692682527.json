@@ -1,0 +1,46 @@
+{
+ "id": "7687029051692682527",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7687029051692682527",
+ "creator": "nate.b.jones",
+ "title": "Review of Instinct, an invite-only proactive iMessage agent that checked the creator into a flight and added the boarding pass to Apple Wallet unprompted",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Invite-only proactive agent, entirely over iMessage; no URL shown"
+  },
+  {
+   "name": "Apple Wallet",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agent sent a link that added the boarding pass to Wallet"
+  }
+ ],
+ "claims": [
+  "Instinct is 'the buzziest AI agent in the valley right now'",
+  "It proactively texted the creator before a flight offering to check him in",
+  "Five minutes later it returned a Wallet link; one click added a legitimate boarding pass, with zero navigating of airline sites or apps",
+  "Creator does not think the single use case justifies an agent, but sees it as a sign of proactive agents to come"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title card: 'AI Review: I Tried Instinct And My Jaw Hit The Floor'",
+  "Talking-head only; no product UI shown"
+ ],
+ "cta": "Comment what surprised you if you use Instinct, or what would surprise you if you do not",
+ "relevance": {
+  "score": 2,
+  "why": "Consumer-life agent, invite-only, not a building tool; mildly relevant as a signal that proactive, trigger-based agents are the next product pattern."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to adopt; at most a product-design note that proactive triggers (calendar/email events) beat chat prompts for user delight."
+ },
+ "verify": [
+  "Does Instinct exist publicly, who makes it, pricing and waitlist status?",
+  "How does it access email/calendar/airline accounts (security of granting an agent airline login)?",
+  "Is the creator compensated or invited as an influencer?"
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "7694444433470737694",
+ "url": "https://www.tiktok.com/@atlasberry008/video/7694444433470737694",
+ "creator": "atlasberry008",
+ "title": "Commentary: Brett Adcock's Hark personal-AI-assistant launch and why its Figure humanoid link could be the moat in a consolidating category",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Hark / Hark Pro",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Proactive assistant scanning calendar/email; cloud computer 'Handoff'; runs ~6 browsers logging into sites with your credentials; hardware (hubs, pocket devices) next year"
+  },
+  {
+   "name": "Figure (humanoid robotics)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Adcock's other company; kept strictly separate from Hark per reporting"
+  },
+  {
+   "name": "Meta Muse",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Meta's personal assistant"
+  },
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Raised $10B without an app (as stated)"
+  },
+  {
+   "name": "Ghost",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Sells a living-room box"
+  },
+  {
+   "name": "Frontier community",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Creator's community, link in bio"
+  }
+ ],
+ "claims": [
+  "Personal AI assistant category did not exist six months ago; now Meta Muse, Instinct ($10B raised, no app), Ghost, and Hark compete",
+  "Hark launched 'yesterday' (early Oct 2026) by Brett Adcock, founder of Figure; started March while running Figure",
+  "Hark Pro acts before you ask, e.g. refills a kid's low lunch-card balance",
+  "Under the hood it runs ~6 browsers simultaneously logging in with your credentials",
+  "Category will consolidate like customer-service agents: winner has most compute, most context, biggest ecosystem (favors Meta/Google)",
+  "Hark's unique moat is a potential future merge with Figure humanoids: same context layer that books a car also knows you're out of detergent"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Hark Pro UI: 'Make me a list of bouquets from Mills Florist' with priced results (Blushing Hydrangea $140, French Meadow $145, Peaches and Cream $125, Prolific Protea, Garden Romance)",
+  "Target.com Tide Pods product page (assistant shopping)",
+  "'Card transactions' table screen",
+  "Article headline 'How Hark designed an AI assistant that's actually helpful'; calendar/Gmail context panel 'Sep 17 · 3 Events Left ... 1:15 PM Now ... Nakamura ... Portland team'",
+  "Figure logo and humanoid robot in kitchen; 'FIGURE' robot at coffee machine",
+  "Floating 'Sign in to Doordash / Resy / United Airlines / Uber' credential tiles",
+  "Overlays: 'MOST COMPUTE / MOST CONTEXT / BIGGEST ECOSYSTEM'"
+ ],
+ "cta": "Join the Frontier community, link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Market commentary on consumer assistants; not actionable for building. Mild signal on the 'proactive agent + credential-holding browsers' pattern and consolidation risk for startups in that lane."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement. Strategic takeaway only: avoid building a generic personal-assistant product where compute/context/distribution incumbents win; find a vertical moat."
+ },
+ "verify": [
+  "Hark launch date, pricing, 'Handoff' cloud computer, and the 'six browsers' claim",
+  "Did 'Instinct' really raise $10B with no app?",
+  "Reporting that Hark and Figure are kept strictly separate"
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "7694322412619402510",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7694322412619402510",
+ "creator": "ducktate.com",
+ "title": "Anthropic now gives Max/Team subscribers monthly Claude API credits ($100 for 5x, $200 for 20x, up to $500 Team) usable for your app's AI features",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude monthly API credits for Max/Team plans",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "@ClaudeDevs post: 'Max 5x: $100, Max 20x: $200, Team: up to $500, pooled. Works on any model, including Haiku 5.5, in your code or third-party harnesses'; help article 'Monthly API credits for Max and Team plans | Claude Help'"
+  },
+  {
+   "name": "Ducktate",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "ducktate.com; creator's app: 'one workspace for your dictation, meeting notes, and action items' formatted for AI agents (Claude Code, Cursor, Gemini CLI, Grok Bot, Muse)"
+  },
+  {
+   "name": "Claude Managed Agents / Claude Agent SDK / Playground",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "Credits cover 'the Claude API, Claude Managed Agents, the Claude Agent SDK, and the Playground'"
+  },
+  {
+   "name": "Haiku 5.5",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Named as covered model"
+  }
+ ],
+ "claims": [
+  "Anyone on a plan above Pro (Max 5x, Max 20x, Team) gets their subscription matched in API credits every month",
+  "Creator on Max 20x gets $200/month in API credits, used for AI features in Ducktate (note cleanup, action items, semantic search) for free",
+  "Credits are added each renewal while the plan is active",
+  "Creator speculates this softens the blow of upcoming reductions in subscription usage limits",
+  "'Hacks Building an App' Episode 5"
+ ],
+ "how_to_steps": [
+  "Be on Max 5x/20x or Team plan",
+  "Credits are auto-added to your Claude Console/API account on each renewal (screen: '$200 in API credits added to ...' with Continue button)",
+  "Point your app's AI features at the Claude API using that account to spend the credits"
+ ],
+ "on_screen_only": [
+  "X post @ClaudeDevs (19h): 'We're rolling out monthly Claude Platform API credits for Max and Team plans: Max 5x: $100 / Max 20x: $200 / Team: up to $500, pooled. Works on any model, including Haiku 5.5, in your code or third-party harnesses. How it works and full terms:' link card 'Monthly API credits for Max and Team plans | Claude Help...'; 2.1M views",
+  "Console dialog: piggy-bank icon, '$200 in API credits added to C... Your Max plan adds $200 on each renewal while it's active. Credits cover the Claude API, Claude Managed Agents, the Claude Agent SDK, and the Playground.' Continue",
+  "ducktate.com landing: 'What if Cursor already knew everything you said, heard, and typed? Ducktate is one workspace for your dictation, meeting notes, and action items. It formats that context so any AI agent knows exactly what is going on.' Reserve my seat / See what your agent can do",
+  "Ducktate app screenshot: action items (send invoice, draft security one-pager, book follow-up demo, write onboarding flow), 'Meetings/Acme Discovery Call.md' flowing to Claude Code, Cursor, Gemini CLI, Grok Bot, Muse, 'Your next agent'; 'Made for agents. Owned by you.'",
+  "Overlay 'FREE API TOKENS FROM CLAUDE??' and 'HACKS BUILDING AN APP EPISODE 5'"
+ ],
+ "cta": "Go take advantage of it; keep building; see you tomorrow",
+ "relevance": {
+  "score": 5,
+  "why": "Directly affects our cost base: a Max 20x subscriber gets $200/month of Claude API to power app features (Managed Agents, Agent SDK) at no extra cost. This is money on the table for every app we ship."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Zero build effort: confirm credits appear in Console, route production/dev AI features through that Console org key, and budget features (e.g. Haiku 5.5 for cheap tasks) against the $200/mo. Check terms: expiry, which org key, pooled with existing prepaid credits."
+ },
+ "verify": [
+  "Read the Claude Help article 'Monthly API credits for Max and Team plans': expiry, rollover, which Console org, allowed uses (commercial app OK?)",
+  "Does it also apply to Pro? (creator says no)",
+  "Is Haiku 5.5 a real current model and its pricing?",
+  "Is the speculation about tightened subscription usage limits grounded in any announcement?"
+ ]
+}

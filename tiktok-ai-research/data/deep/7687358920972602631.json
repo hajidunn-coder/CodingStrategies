@@ -1,0 +1,83 @@
+{
+ "id": "7687358920972602631",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7687358920972602631",
+ "creator": "nocode.joshua",
+ "title": "Five free Google AI tools: AI Studio, Stitch, Opal, Antigravity and Flow",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Google AI Studio",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Prompt-to-app/website builder; screen shows 'Build your ideas with Gemini' prompt box"
+  },
+  {
+   "name": "Google Stitch",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Generates full UI designs for apps/websites, exportable to code"
+  },
+  {
+   "name": "Google Opal",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Described as Google's free Zapier alternative; describe a workflow and an agent builds the automation (node canvas shown)"
+  },
+  {
+   "name": "Google Antigravity",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Described as Google's 'agnostic' (agentic) coding IDE that works across all projects"
+  },
+  {
+   "name": "Google Flow",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Studio for AI video, image and music generation"
+  },
+  {
+   "name": "GPT-6 Astra",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Mentioned as the hyped competitor; logo shown in diagram"
+  },
+  {
+   "name": "Claude",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Mentioned as hyped competitor"
+  }
+ ],
+ "claims": [
+  "Google 'silently released' five AI tools and all are completely free",
+  "AI Studio lets you create a shareable app or website within minutes from a prompt",
+  "Stitch exports UI designs straight into code",
+  "Opal is a free Zapier alternative where an agent builds the whole automation",
+  "Antigravity works across all your projects",
+  "Flow is powered by Google's best models"
+ ],
+ "how_to_steps": [
+  "Comment 'Google' to get the full list"
+ ],
+ "on_screen_only": [
+  "Infographic 'Google AI Ecosystem' with cards labelled Stitch, Opal, Antigravity, Google AI Studio, Google Flow; first frame shows a GPT 6 Astra logo instead",
+  "Cards labelled 'TOOL 04 GOOGLE AI STUDIO: Bring an idea to life with a prompt and create a shareable app or website in minutes', 'TOOL 01 STITCH: Build full UI designs for apps or websites, then export them into code', 'TOOL 05 GOOGLE FLOW: A complete studio for AI video, image and music generation'",
+  "Gemini screen: 'Build your ideas with Gemini' with example prompt 'Build me a web app for tracking personal fitness goals with real-time analytics and data visualization' and chips 'Google Keep', 'Google Meet'",
+  "Stitch output: landing page 'Studio Alpha - Organic handcrafted' with headline 'Crafting Atmospheres for the Modern Brand' and 'Featured Works'",
+  "Opal: node-based workflow canvas; Antigravity: 'AI Coding Agent' diagram with API/mobile/web nodes; Flow: video editor timeline with 'Add to Prompt' button"
+ ],
+ "cta": "Comment 'Google' for the full list",
+ "relevance": {
+  "score": 3,
+  "why": "Stitch (UI design to code) and Antigravity (agentic IDE) overlap with a Claude Code founder's workflow; AI Studio/Opal/Flow are adjacent. Free tier is attractive but the video is a listicle with no depth."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Maybe try Stitch for quick UI mockups to feed Claude Code; Antigravity is a competitor IDE not worth switching to. Opal could replace Zapier for simple automations if it is truly free."
+ },
+ "verify": [
+  "Are Stitch, Opal, Antigravity and Flow all currently free with no quota limits (Flow video gen usually requires a paid Google AI plan)?",
+  "Is Antigravity 'agnostic' (model-agnostic) or did the creator mean 'agentic'?",
+  "Does Stitch export production-quality code or just HTML/Figma mockups?"
+ ]
+}

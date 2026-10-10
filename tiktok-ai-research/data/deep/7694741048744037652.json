@@ -1,0 +1,66 @@
+{
+ "id": "7694741048744037652",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7694741048744037652",
+ "creator": "nocode.joshua",
+ "title": "Claude Motion (beta): /motion turns an attached file into a code-built animated explainer video, editable per word/number/timing, exportable to MP4",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Claude Motion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "/motion slash command in Claude; beta, limited access; builds animation as code from text, charts, images; export MP4"
+  },
+  {
+   "name": "Descript",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Named as editing tool to open the export in"
+  },
+  {
+   "name": "Runway",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Named as editing tool to open the export in"
+  }
+ ],
+ "claims": [
+  "Type /motion, attach a file, describe the output (e.g. 'turn this quarterly report into a 30 second explainer for our team meeting')",
+  "Claude builds the animation from your text, charts and images; plays like a real video",
+  "Not an AI video model: no fake footage, no AI-generated people; built as code so changing one word, number, or timing leaves everything else unchanged",
+  "Export as MP4 or open in editing tools (Descript, Runway)",
+  "Feature is in beta; not everyone has access"
+ ],
+ "how_to_steps": [
+  "In Claude, type /motion",
+  "Attach the source file (e.g. Q3-report.pdf, 12 pages)",
+  "Prompt: 'Turn this quarterly report into a 30-second explainer for our team meeting.'",
+  "Review the generated scenes; edit a word/number/timing (e.g. 'Revenue' -> 'Growth', 15% -> 18%, 2.0s -> 1.2s) and re-render",
+  "Export MP4 or hand off to Descript/Runway"
+ ],
+ "on_screen_only": [
+  "Video player 'claude-motion.mov': 'Introducing Claude Motion — Now in beta'",
+  "Composer: 'MESSAGE CLAUDE' with '/motion' chip and attached 'Q3-report.pdf PDF · 12 pages'",
+  "'YOUR PROMPT: Turn this quarterly report into a 30-second explainer for our team meeting.'",
+  "Output 'Q3-explainer.mp4' showing 'Q3 revenue +18%' bar chart animation",
+  "'AI VIDEO MODEL — NOT THIS' crossed-out card",
+  "Code panel 'animation.code': scene(\"intro\", 0s -> 4s) title(\"Q3 revenue\") number(\"+18%\") bars([42, 58, 50, 86]) ease(\"spring\", 0.6s) scene(\"growth\", 4s -> 9s)",
+  "Edit cards: ONE WORD Revenue -> Growth; ONE NUMBER 15% -> 18%; THE TIMING 2.0s -> 1.2s",
+  "'Keep editing anywhere' MP4 -> two 'EDITING TOOL' boxes; 'Motion BETA' with locked user icons (limited access)",
+  "Follow card 'nocode.joshua — More Claude tips'"
+ ],
+ "cta": "Follow for more Claude tips",
+ "relevance": {
+  "score": 3,
+  "why": "If real, a fast way for a time-poor founder to make product explainers, pitch/update videos and marketing clips from existing docs without video tooling. Beta-gated, so not usable immediately."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Try /motion when it appears in our Claude account; use for app demo/explainer and investor/customer update videos. Until then, nothing to build; a Remotion/Motion-Canvas + Claude Code pipeline is the DIY equivalent."
+ },
+ "verify": [
+  "Does Claude Motion exist (Anthropic announcement), and is '/motion' the real invocation? The mock UI looks creator-made",
+  "Which plans have beta access; rendering limits; MP4 export quality",
+  "Is 'built as code' editable by the user (e.g. exportable source) or only via re-prompting?"
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "7694658552052387086",
+ "url": "https://www.tiktok.com/@itsmariahbrunner/video/7694658552052387086",
+ "creator": "itsmariahbrunner",
+ "title": "Comparison of four consumer AI agents (Meta Muse, ChatGPT Dots, Grok Bot, Avori) and when to use each; creator built Avori",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Muse (Meta)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Free; US/Canada only; good for Instagram/Meta ads users; e.g. review Instagram insights"
+  },
+  {
+   "name": "Dots (ChatGPT)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agent mode inside ChatGPT, builds on existing chat context; requires Pro plan; creator found it slow/buggy; connects Google Calendar, Google Drive, GitHub, Charts"
+  },
+  {
+   "name": "Grok Bot (xAI)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Multiple agents, each with jobs; demonstrate a process and save it as a skill; SuperGrok $30/month includes Grok Bot access, Grok 4.6 model; watch usage costs"
+  },
+  {
+   "name": "Avori",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's own product: team of proactive agents shared with teammates; any model (Claude, ChatGPT, Gemini); model picker shows Claude Fable 5, Claude Opus 5, Claude Sonnet 5, Claude Opus 4.6, Claude Haiku 4.5, Claude Sonnet 4.5"
+  }
+ ],
+ "claims": [
+  "Muse: start here if brand new to agents; free; US and Canada only",
+  "Dots: use if ChatGPT is where you already work; Pro plan required; slow and buggy workflows in creator's experience",
+  "Grok Bot: multiple agents doing different jobs; can record a process as a skill; costs add up fast; included in SuperGrok $30/month",
+  "Avori: build a shareable team of proactive agents, any model; 'making AI a multiplayer game'; creator built it for her own business problems"
+ ],
+ "how_to_steps": [
+  "New to agents: try Muse free and give it a first job like reviewing Instagram insights",
+  "ChatGPT Pro users: enable Dots and build on existing context",
+  "Multi-agent needs: Grok Bot, demonstrate a process to save it as a skill, monitor usage",
+  "Teams: Avori, build agents and share them with teammates"
+ ],
+ "on_screen_only": [
+  "Title card 'Dots vs. Muse vs. Grok Bot vs. Avori: Which Should You Try?'",
+  "Muse widget: 'Muse is checking weather'; 'personal AI agent' Instagram overlay",
+  "Dots connectors list: Google Calendar, Google Drive, GitHub, Charts",
+  "Grok Bot 'Give each Bot a job' page and pricing card 'SuperGrok $30/month billed monthly: Grok Bot access, Grok 4.6 model, higher rate limits, Expert, image and video generation, connectors'",
+  "Avori UI 'What should we tackle today?' with model dropdown listing OpenAI, Anthropic (Claude Fable 5, Claude Opus 5, Claude Sonnet 5 selected, Claude Opus 4.6, Claude Haiku 4.5, Claude Sonnet 4.5), Google, Meta",
+  "Guide page 'DOTS: IF YOU LIVE IN CHATGPT' (the comparison guide offered via comment)"
+ ],
+ "cta": "Comment 'compare' (on IG @Itsmariahbrunner) to get the full comparison guide",
+ "relevance": {
+  "score": 2,
+  "why": "Consumer/marketing-oriented agent products, and the strongest pitch is for the creator's own Avori. Minor value as a competitor scan and as a note that consumer agent apps now expose Claude models (Fable 5, Opus 5, Sonnet 5) in pickers."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth adopting; our agent work runs in Claude Code/Agent SDK. Possibly glance at Grok Bot's 'demonstrate a process, save as skill' UX as a product-design reference."
+ },
+ "verify": [
+  "Do Meta Muse, ChatGPT Dots and Grok Bot exist as described (Oct 2026), and are the plan requirements accurate?",
+  "Avori: the creator is the founder, so claims are self-promotion; pricing and model list?",
+  "Is the comparison guide gated behind an IG DM funnel?"
+ ]
+}

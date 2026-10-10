@@ -1,0 +1,76 @@
+{
+ "id": "7681031247258242318",
+ "url": "https://www.tiktok.com/@luke.builds.ai/video/7681031247258242318",
+ "creator": "luke.builds.ai",
+ "title": "Reaction/breakdown of a Jarvis agent making a real restaurant phone call: speculated stack is an agentic harness (Hermes) on a Mac mini plus Twilio for the phone number",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Hermes agent",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "guessed as the agentic harness running the Jarvis"
+  },
+  {
+   "name": "Twilio",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "guessed as the phone-number/voice provider so the agent can place real calls"
+  },
+  {
+   "name": "Mac mini",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "guessed host for the always-on agent"
+  },
+  {
+   "name": "FaceTime Audio",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as alternative calling path on a Mac"
+  },
+  {
+   "name": "J.A.R.V.I.S. UI (by @zubair_trabzada)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "custom dashboard: J.A.R.V.I.S. ring with LISTENING/SPEAKING state, 'say \"Jarvis\"' wake word, model badge 'OPUS-5', memory node graph, 'ON THE CALL -- the restaurant (510) 709-6913 -- On the call now -- I'll report back, sir.'"
+  },
+  {
+   "name": "Claude Opus 5",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'OPUS-5' badge on the Jarvis UI"
+  }
+ ],
+ "claims": [
+  "The agent placed a real voice call, negotiated 7pm vs 8pm, said it would check with its boss, hung up and reported back",
+  "This is what an agent is: goes out, handles it, reports back",
+  "Original video by @zubair_trabzada (caption)"
+ ],
+ "how_to_steps": [
+  "Run an agentic harness (e.g. Hermes) on an always-on machine (Mac mini)",
+  "Give the agent its own phone number via Twilio (or FaceTime Audio)",
+  "Wire a voice-to-voice loop so it can speak with the callee",
+  "Have it store the result in memory and report back via voice/UI; re-prompt it to call back and confirm"
+ ],
+ "on_screen_only": [
+  "Jarvis dashboard: J.A.R.V.I.S. circular HUD, status LISTENING / SPEAKING, 'say \"Jarvis\"', 'OPUS-5' pill",
+  "Memory graph nodes labeled youtube, channel, NOTES, Sheets, platform-playbook, social-media-automation",
+  "Call card: 'ON THE CALL -- the restaurant -- (510) 709-6913 -- On the call now -- I'll report back, sir.'",
+  "Transcript snippet: '...booked, sir, but they can seat three ... under your name -- I told them I'd call ... shall I take the eight, or shall we count a...'"
+ ],
+ "cta": "'What's the first thing you'd have yours go do?' (comment)",
+ "relevance": {
+  "score": 2,
+  "why": "Inspirational demo of agentic phone tasks, but it is a reaction video guessing at the stack; no repo or instructions. Phone-calling agents are not core to building apps."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing concrete to implement; would require Twilio voice + realtime STT/TTS + harness integration -- a multi-day project with little payoff for a solo app founder."
+ },
+ "verify": [
+  "What @zubair_trabzada actually used (Hermes? Twilio? Vapi/Retell?) -- the reactor is guessing",
+  "Legal/consent rules for AI agents placing calls to businesses",
+  "Whether 'Hermes agent' refers to Nous Research's Hermes Agent framework"
+ ]
+}

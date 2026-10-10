@@ -1,0 +1,75 @@
+{
+ "id": "7694180995347664159",
+ "url": "https://www.tiktok.com/@bengusberg/video/7694180995347664159",
+ "creator": "bengusberg",
+ "title": "Anthropic 'Claude for Startups' program: free year of Claude Team, $1K API credits, up to $45K partner discounts for companies <5 years old",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude for Startups program",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "claude.com/programs/startups"
+  },
+  {
+   "name": "Claude Team (free 1 year, up to five Premium seats)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'One year of Claude Team free for up to five Premium seats if you're new to Team'"
+  },
+  {
+   "name": "Claude API credits",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "$1,000 in Claude API credits 'if you're new to the Claude Console'"
+  },
+  {
+   "name": "Claude Startup Stack partner offers",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Up to $45K in offers from Gamma, Granola, Linear and others"
+  },
+  {
+   "name": "Anthropic Applied AI team office hours",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Regular office hours; access to Claude Startup events (Founder House, hackathons, meetups)"
+  }
+ ],
+ "claims": [
+  "Anthropic gives a free year of Claude if you started a business in the last five years; no VC funding required",
+  "$1,000 in free API credits",
+  "$45,000 of discounts from Gamma, Granola, Linear 'and many more'",
+  "Announced at SF Tech Week this week (early Oct 2026)",
+  "Eligible: any company founded in the last 5 years (bootstrapped, pre-seed, VC-funded)",
+  "Office hours with Anthropic's Applied AI team",
+  "Creator: Stanford founder, raised $4M"
+ ],
+ "how_to_steps": [
+  "Go to claude.com/programs/startups",
+  "Apply with a Claude Console account, a company email matching your website's domain, and a short description of what you're building",
+  "Anthropic reviews every application; must comply with supportability policies"
+ ],
+ "on_screen_only": [
+  "Page header: '1 year of Claude Team | $1K in Claude API credits | Up to $45K in offers from partners'",
+  "Hero text: 'Start up and stand out'",
+  "FAQ 'What do members get?': 'One year of Claude Team free for up to five Premium seats if you're new to Team, $1,000 in Claude API credits if you're new to the Claude Console, up to $45K in offers through the Claude Startup Stack, office hours with Anthropic's Applied AI team, and access to Claude Startup events like Founder House, hackathons, and meetups.'",
+  "FAQ 'Who can apply?': 'Startups founded in the last 5 years or funded in the last 2. You'll need a Claude Console account, a company email that matches your website's domain, and a short description of what you're building. We review every application. Applicants must comply with Anthropic's supportability policies.'",
+  "URL bar: claude.com/programs/startups"
+ ],
+ "cta": "Go to the site, apply, follow for more",
+ "relevance": {
+  "score": 5,
+  "why": "Directly applicable: a solo founder with a company <5 years old and a domain email can get a free year of Claude Team (5 seats), $1K API credits for app AI features, and partner discounts (Linear, Granola, Gamma). High-value, low-effort."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Apply today: needs Claude Console account, company-domain email, short product description. Check interaction with existing Max plan (Team is a different plan) and whether 'new to Console' excludes an existing API account."
+ },
+ "verify": [
+  "Confirm claude.com/programs/startups terms: is Team free year stackable with/alternative to a Max subscription?",
+  "Does 'new to the Claude Console' exclude existing API users from the $1K credit?",
+  "Which partners are actually in the Claude Startup Stack and what are the real discount values?",
+  "Is a one-person company accepted (any employee/revenue minimum)?"
+ ]
+}

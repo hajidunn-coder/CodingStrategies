@@ -1,0 +1,68 @@
+{
+ "id": "7688347599639710989",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7688347599639710989",
+ "creator": "youraveragetechbro",
+ "title": "Verification skills: keep a skills folder teaching agents how to test each part of your app so the model, not you, validates changes before merge (pstack plugin, Cursor/Devin recordings)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "pstack",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Coding-skill plugin bundling many skills; creator uses 'create verification skill' and 'maintain verification skill'; README by an engineer who worked at Meta, Netflix and Cursor and is on the React core team (React Compiler)"
+  },
+  {
+   "name": "Cursor (cloud agent)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Records the model using the browser to test the app and returns screenshots/recordings"
+  },
+  {
+   "name": "Devin",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Same recording feature"
+  },
+  {
+   "name": "Yorby",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's startup: AI-native social media marketing tool with an 'AI Content Studio' feature"
+  }
+ ],
+ "claims": [
+  "Creator merges PRs without manually reviewing code, relying on agent-run verification",
+  "Creator: former big-tech engineer, startup with 50,000+ users and $100k+ ARR, ships ~30 PRs/day and 600+ PRs in 2026 so far (transcript garbled: '30, 600')",
+  "Browser-use/computer-use models are good enough to test the app instead of the human",
+  "Verification skills live in a 'gigantic skills folder' and teach models how to use each part of the app",
+  "Run pstack's create-verification-skill and maintain-verification-skill before every PR to keep testing instructions current",
+  "This is video 1 of 7; next video covers agents writing, reviewing, validating and merging code with no human"
+ ],
+ "how_to_steps": [
+  "For each area of your app, write a detailed verification skill (how to navigate, what to click, expected results) in a skills folder",
+  "When asking the model to change a part of the app, have it read the matching verification skill, run the test (browser/computer use) and confirm the change works",
+  "Before opening a PR, run pstack's 'create verification skill' to add instructions for new features and 'maintain verification skill' to update existing ones",
+  "Use Cursor cloud agent or Devin so the test run is recorded; review the screenshots/recording instead of the code",
+  "Merge when the recording/screenshots show the feature working"
+ ],
+ "on_screen_only": [
+  "pstack README excerpt: 'I'm not a president or ceo, but I've worked with millions of lines of code at Meta, Netflix, and Cursor. I'm also on the react core team where I help build and maintain react compiler.' 'there's a growing sense that ai writes too much slop code... i don't want to ship like a team of twenty slop artists' 'pstack is my answer: these are the same skills i use everyday to ship high quality code at Cursor... pstack helps you write less, but higher quality code.' 'pstack gives you fearless parallelism... start multiple agents up with pstack-mode and trust that they'll apply rigorous engineering principles' 'cursor gives you the best of all worlds... use any model with pstack' 'fork it, improve it, make it yours. PRs are welcome'",
+  "Cursor cloud-agent PR view: 'Content Studio Saved Prompts is icon-only now (bookmark, no label). Hook + Demo still has the labeled button.' with screenshot of the Yorby app; label 'icon-only saved prompts - draft, not merged'",
+  "Title overlay: 'I'm able to merge code'"
+ ],
+ "cta": "Comment 'pstack' to get the plugin link",
+ "relevance": {
+  "score": 5,
+  "why": "This is the exact leverage a solo, time-poor founder needs: move testing from the human to the agent via per-feature verification skills in the repo. Applies directly to Claude Code skills and to Claude Code's browser/computer-use tooling."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Start now: add a /skills/verify-<feature>.md per app area, have Claude Code run it (Playwright/browser MCP) after each change and attach screenshots to the PR; add a pre-PR step that updates the skills. pstack itself is optional, the pattern is the value."
+ },
+ "verify": [
+  "Locate the pstack repo (author handle unreadable in frame; search GitHub for 'pstack' React Compiler/Cursor engineer) and check license and maintenance",
+  "Is pstack Cursor-specific or usable as a Claude Code plugin?",
+  "The '30 PRs/day' and '600 PRs' figures are self-reported; the real question is defect rate after merging without review",
+  "Does Claude Code have an equivalent recorded-browser-session feature, or does this need Playwright MCP + screenshot capture?"
+ ]
+}

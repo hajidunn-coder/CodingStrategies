@@ -1,0 +1,67 @@
+{
+ "id": "7694701327435205902",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7694701327435205902",
+ "creator": "ducktate.com",
+ "title": "Three legal/security must-dos before shipping a vibe-coded app: legal docs (ToS, privacy, cookie), analytics consent (PostHog session replay), database protection (RLS, authN vs authZ)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "PostHog",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Analytics + session replay; posthog.com shows 'Install with AI', '97% of users pay us $0', own cookie banner 'Legally-required...' uses single in-house cookie"
+  },
+  {
+   "name": "Supabase (Auth / Row Level Security)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Supabase features page: Authentication 'securing your data with Row Level Security', Edge Functions, Storage, Realtime, Vector, Data APIs"
+  },
+  {
+   "name": "Open-source legal templates repo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Unnamed; creator says it will be in the checklist on ducktate.com/learn"
+  },
+  {
+   "name": "Ducktate learn module / prompt cheat sheet",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "ducktate.com > Learn and Prompts menu items; 'Software Engineering for Vibe Coders' series"
+  }
+ ],
+ "claims": [
+  "You can get sued before making your first dollar with a vibe-coded app",
+  "1. Paperwork: terms of service, privacy policy, cookie notice; creator did these before writing a line of Ducktate code; missing docs 'can cost up to $25 per violation' (as stated)",
+  "2. Consent: if using PostHog analytics/session replay, keep session replay off until consent is obtained (likely off by default); violations 'up to $5K per violation'",
+  "3. Database: row-level security, understand authorization vs authentication; a data leak can shut down the business",
+  "Creator has 6 years building enterprise software; full learning module and prompts on ducktate.com under Learn"
+ ],
+ "how_to_steps": [
+  "Draft ToS, privacy policy, and cookie notice before launch (use an open-source legal template repo)",
+  "Configure analytics (PostHog) so session replay only runs after user consent",
+  "Enable row-level security on the database (Supabase) and separate authentication from authorization logic",
+  "Use the prompt cheat sheet at ducktate.com/learn before the production push"
+ ],
+ "on_screen_only": [
+  "Overlays: 'YOU CAN GET SUED FROM VIBE CODING??', 'TOP 3', 'SOFTWARE ENGINEERING FOR VIBE CODERS', '2. GET TRACKING CONSENT'",
+  "posthog.com hero: 'PostHog ingests and stores your analytics, errors, replays, and business data so you and your agents can query and act on it. Join 500,000+ teams... Set up for free: 97% of users pay us $0, No credit card required, Setup wizard installs PostHog for you. Get started / Install with AI'; tabs 'Ask PostHog anything / Give agents product context / Ship with PostHog'; cookie banner 'Legally-required... PostHog.com doesn't use third-party cookies, only a single in-house cookie. No data is sent to a third party. (Ursula von der Leyen would be so proud.)'",
+  "Supabase feature list: Postgres database, Authentication (Row Level Security), Edge Functions, Storage, Realtime, Vector, Data APIs",
+  "ducktate.com menu: Why this exists, What is possible, Pricing, Learn, Prompts; 'Reserve my seat'"
+ ],
+ "cta": "Visit ducktate.com > Learn for the full module and prompts; comment if you want an authN vs authZ video",
+ "relevance": {
+  "score": 4,
+  "why": "Solid pre-launch checklist for a solo founder shipping apps fast: legal docs, consent-gated analytics, RLS. Fines quoted are vague, but the three items are real exposure areas for every app we ship."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Turn into a reusable Claude Code 'pre-production' skill/checklist: generate ToS/privacy/cookie from templates, verify PostHog replay is consent-gated, audit Supabase RLS policies and auth checks. Half a day to build once, reuse per app."
+ },
+ "verify": [
+  "Which open-source legal template repo does he mean; are templates jurisdiction-appropriate?",
+  "Fine figures ('$25 per violation', '$5K per violation') - source/law? Likely CCPA/GDPR/CIPA references, check",
+  "PostHog session replay default state and consent API",
+  "Is ducktate.com/learn free or a funnel?"
+ ]
+}

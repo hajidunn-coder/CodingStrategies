@@ -1,0 +1,60 @@
+{
+ "id": "7686250038611250452",
+ "url": "https://www.tiktok.com/@millee.md/video/7686250038611250452",
+ "creator": "millee.md",
+ "title": "20-item legal/compliance checklist to have Claude add to your app so it does not get sued",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Title card: '20 things to have Claude do so your app doesn't get sued'"
+  }
+ ],
+ "claims": [
+  "Doing these 20 things keeps a vibe-coded app out of legal trouble",
+  "Whole list delivered in under 26 seconds"
+ ],
+ "how_to_steps": [
+  "1. Add a privacy policy",
+  "2. Add terms of service",
+  "3. Add a refund policy",
+  "4. Add a cookie policy",
+  "5. Add a cookie consent banner",
+  "6. Check your form consents",
+  "7. Do not collect unnecessary data",
+  "8. Audit your third-party SDKs",
+  "9. Remove dark patterns",
+  "10. Remove hidden fees",
+  "11. Remove fake reviews",
+  "12. Remove unsupported claims",
+  "13. Add accessibility alt text",
+  "14. Fix color contrast ratio",
+  "15. Add keyboard navigation",
+  "16. Add your business details",
+  "17. Get age consent if you collect kids' data",
+  "18. Add an unsubscribe link to your emails",
+  "19. License any fonts and images you use",
+  "20. Add a data deletion request option"
+ ],
+ "on_screen_only": [
+  "Title card: '20 things to have Claude do so your app doesn't get sued (In under 26 seconds)'",
+  "Numbered two-column list fills in progressively with a running timer (00:01.06 ... 00:24.93)",
+  "Item 8 reads 'Audit third-party SDKs' (transcript garbles it as 'SC cases')"
+ ],
+ "cta": "None (save implied)",
+ "relevance": {
+  "score": 4,
+  "why": "Every item is a real pre-launch obligation for a founder shipping consumer apps; most are cheap to do and ignoring them is a real liability."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Turn the 20 items into a Claude Code skill/slash command (/legal-audit) that checks the repo and generates missing pages, alt text, contrast fixes, unsubscribe links and a deletion flow; a few hours once, reusable on every app."
+ },
+ "verify": [
+  "AI-generated privacy/ToS/refund policies still need a jurisdiction check (GDPR, CCPA, COPPA for kids' data, FTC on fake reviews/unsupported claims)",
+  "Accessibility items should be measured against WCAG 2.x AA, not just 'fixed'",
+  "Cookie consent banner requirements differ by region; may be unnecessary for US-only apps without tracking"
+ ]
+}

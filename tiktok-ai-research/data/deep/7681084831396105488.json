@@ -1,0 +1,69 @@
+{
+ "id": "7681084831396105488",
+ "url": "https://www.tiktok.com/@taki.gpt/video/7681084831396105488",
+ "creator": "taki.gpt",
+ "title": "Five GitHub repos pitched as side-business tools: Remotion, OpenHands, PersonaLive, MuMu AI Novel, Corey Haines' marketing-skills",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Remotion",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "github.com/remotion-dev/remotion -- programmatic video editing/templating; pitched as a service to content creators"
+  },
+  {
+   "name": "OpenHands",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "open-source autonomous software-dev agent; pitched as selling 'automated software developers' to SMBs (caption truncated at 'OpenHa')"
+  },
+  {
+   "name": "PersonaLive",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Expressive Portrait Image Animation for Live Streaming' -- AI UGC avatars from an image + video"
+  },
+  {
+   "name": "MuMu AI Novel",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "generates books, articles, short stories to sell as digital products / on Amazon (on-screen label '4. MuMuAINove')"
+  },
+  {
+   "name": "marketing-skills (Corey Haines)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "collection of agent skills: copywriting, AEO/SEO etc.; README shows 'How Skills Work Together' diagram and skills table"
+  }
+ ],
+ "claims": [
+  "These five repos 'can actually make you money' as service businesses",
+  "Real money is in mastering agentic AI / AI agent employees for your business",
+  "Community has 115+ entrepreneurs (caption)"
+ ],
+ "how_to_steps": [
+  "Pick a repo, learn it, then package it as a service for a niche (creators, SMBs, brands, authors)",
+  "For marketing-skills: install the skills in Claude Code/Codex and offer copywriting / AEO / SEO as a service"
+ ],
+ "on_screen_only": [
+  "Title card: '5 GitHub Repos that will make you money with AI'",
+  "Remotion docs page (Video Creation / Video Automation / Get started sections)",
+  "OpenHands GitHub repo file list; PersonaLive README with face animation grid; MuMuAINovel repo; marketing-skills README with 'Project Preview / TODO list / Features completed' and 'How Skills Work Together' tree",
+  "'Comment Community to build AI employees to run your busines'",
+  "Profile: 'taki.gpt -- Taki Wong | AI For Business'"
+ ],
+ "cta": "Comment 'community' for the link to the paid community / full guide",
+ "relevance": {
+  "score": 3,
+  "why": "Remotion (programmatic marketing videos) and Corey Haines' marketing-skills are directly usable by a founder marketing his own apps; the rest are generic side-hustle listicle fodder."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Install the marketing-skills repo into Claude Code for landing-page copy and SEO (minutes). Remotion is worth a look for automated product demo/ad videos but is a real engineering lift."
+ },
+ "verify": [
+  "Exact GitHub URL for Corey Haines' marketing-skills and its license/maintenance",
+  "PersonaLive and MuMu AI Novel: are they maintained, and what are the content-rights implications?",
+  "OpenHands viability vs just using Claude Code for client work"
+ ]
+}

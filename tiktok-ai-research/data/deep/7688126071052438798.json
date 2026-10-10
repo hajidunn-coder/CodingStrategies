@@ -1,0 +1,57 @@
+{
+ "id": "7688126071052438798",
+ "url": "https://www.tiktok.com/@opichillc/video/7688126071052438798",
+ "creator": "opichillc",
+ "title": "Plain-English explainer of Jev, a non-chat decision model that returns structured choice/score answers with confidence for use in code",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Jev",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "New model type: you pass a question plus allowed answers; returns a pick/score plus confidence. Vendor not named in this video (TypeSafe AI per other videos)"
+  },
+  {
+   "name": "Claude",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Contrasted as non-deterministic chat LLM"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Contrasted as non-deterministic chat LLM"
+  }
+ ],
+ "claims": [
+  "Jev cannot chat; it only answers when given a question and a fixed set of allowed answers",
+  "Three answer modes: likelihood (true/false-like), pick one from a list, score on a scale",
+  "Example: classify a customer reply as calm/frustrated/angry (1-3) and get back a score like 2.05",
+  "Every answer comes with a confidence score (e.g. 'angry' at 20% confidence can be routed to human triage)",
+  "Classification is 'almost real time fast' and the output is always consistently shaped for if/then code",
+  "Use cases: real-time lead-survey routing on free-text, chat routing, monitoring/alerting on messy input"
+ ],
+ "how_to_steps": [
+  "Send Jev the question plus the precise allowed answers (true/false, list, or numeric scale)",
+  "Receive a structured answer plus confidence",
+  "Branch in code on the answer and confidence (e.g. low confidence -> route to a human)"
+ ],
+ "on_screen_only": [
+  "Talking head only; no UI, URLs or docs shown"
+ ],
+ "cta": "Like and follow; comment whether this is hype or whether machine-to-machine models have potential",
+ "relevance": {
+  "score": 3,
+  "why": "A cheap, fast, deterministic classifier with confidence is useful inside apps (routing, triage, gating agent actions), but this video is conceptual and vendor-agnostic."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth an experiment only if a real routing/classification bottleneck exists; the same pattern can be done today with Claude Haiku + structured output, so test cost/latency before adding a vendor."
+ },
+ "verify": [
+  "Who makes Jev (TypeSafe AI?), API pricing, latency, and whether it is generally available",
+  "Benchmark Jev against Claude Haiku with JSON schema output on the same classification task",
+  "Is 'confidence' calibrated or just a softmax probability?"
+ ]
+}

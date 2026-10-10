@@ -1,0 +1,67 @@
+{
+ "id": "7694315253550550286",
+ "url": "https://www.tiktok.com/@vup334582/video/7694315253550550286",
+ "creator": "vup334582",
+ "title": "Veteran AI's new C-file analysis feature: upload your VA C-file, AI lists claimable conditions with page-cited source evidence and service-connection theory",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Veteran AI (C File Analysis)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Available on annual plan; upload C-file, get suggested claims + 'View Source Documents' page citations; 'Create Disabilities' flow"
+  },
+  {
+   "name": "38 CFR / M21-1 (VA adjudication manual)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Rules the tool claims to follow"
+  },
+  {
+   "name": "Department of Veterans Affairs integration (upcoming)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator says Veteran AI will integrate directly with VA 'very soon'"
+  }
+ ],
+ "claims": [
+  "Tool reads the entire C-file and suggests which VA disability claims to file and what the evidence is",
+  "Demo: uploaded 38 pages of a redacted C-file (entrance + exit exam w/ handwritten notes); tool found right shoulder injury, plantar fasciitis, nearsightedness, hearing loss, glaucoma",
+  "'View source documents' links each finding to the page (e.g. plantar fasciitis on page 38; pre-existing note on pages 39-41)",
+  "Tool distinguishes direct vs aggravation (pre-existing plantar fasciitis made worse in service) vs secondary service connection",
+  "Processing takes 12 to 96 hours because Veteran AI runs its own servers for privacy and the analysis is expensive (2,000-4,000 page files)",
+  "Follows 38 CFR and M21-1",
+  "After analysis you can select a condition and 'Create Disabilities' to start gathering evidence"
+ ],
+ "how_to_steps": [
+  "Log in to Veteran AI (annual plan required) and open C File Analysis",
+  "Upload your C-file (creator uploaded a 38-page redacted sample)",
+  "Wait 12-96 hours for processing",
+  "Review conditions found in service treatment records; click 'View Source Documents' to jump to the cited page",
+  "Note the service-connection theory per condition (direct / aggravation / secondary)",
+  "Select the condition and click 'Create Disabilities' to start the claim/evidence workflow"
+ ],
+ "on_screen_only": [
+  "Template graphic: 'How This New Tool Analyzes Your C File for VA Disability Claims'",
+  "Veteran AI UI cards: Right Shoulder Injury, Plantar Fasciitis, Near Sighted, Glaucoma (Early Indicators), Hearing Loss, each with 'View Source Documents'; summary row showing '~7 months' and '$3,5xx+' (estimated timeline / monthly benefit)",
+  "Static sidebar '100% Disabled Veterans': 1 Property Taxes Exemption (state specific), 2 Ch. 35 DEA (Dependents Education Assistance, up to 36 months), 3 CHAMPVA for dependents, 4 Federal Student Loan Forgiveness (100% P&T or TDIU), 5 Special Adapted Housing (SAH) grant up to $117K",
+  "'VA Disability Claim Timeline' strip: Claim is received > Initial review > Gathering of evidence > Preparation for the decision > Pending decision approval > Preparation for notification > Claim complete",
+  "Creator wears 'Tinnitus' hoodie; watermark '...Solutions' site header"
+ ],
+ "cta": "None explicit (asks if viewers want a video on the Create Disabilities flow)",
+ "relevance": {
+  "score": 3,
+  "why": "Personally relevant as a veteran with VA claims (C-file review, aggravation theory). As a builder it is a reference competitor/example of a document-analysis RAG product with page-level citations and a long async processing queue."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not a workflow tool. Personal action: consider trying it on own C-file if cost is reasonable. Product idea: the 'cite the exact page' + 'service-connection theory' pattern is replicable with Claude and PDF chunking for any evidence-heavy domain."
+ },
+ "verify": [
+  "Veteran AI pricing (annual plan cost) and whether C-file analysis is included",
+  "Privacy/HIPAA posture: 'own servers' claim, data retention",
+  "Accuracy on real 2,000+ page C-files; hallucination rate; is 12-96h real?",
+  "Claimed upcoming direct VA integration: any official source?",
+  "Is this creator affiliated/sponsored?"
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "7677953761909689613",
+ "url": "https://www.tiktok.com/@nateherkai/video/7677953761909689613",
+ "creator": "nateherkai",
+ "title": "Voicebox: open-source local voice studio (voice cloning + system-wide dictation hotkey) pitched as a free ElevenLabs + Wispr Flow replacement",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Voicebox",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub repo 'voicebox' -- 'The open-source AI voice studio. Clone any voice. Generate speech. Dictate into any app. Talk to agents in voices you own. The full voice I/O stack, running locally on your machine.' 33k stars, 229 watching, 6.0k forks, MIT license, GitHub Trending #1 Repository Of The Day, 1.5M downloads badge"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "paid voice-cloning/TTS product this claims to replace"
+  },
+  {
+   "name": "Wispr Flow",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "paid dictation app ('Whisper Flow' in captions) this claims to replace; Flow logo shown on screen"
+  }
+ ],
+ "claims": [
+  "Runs entirely on your own machine: no API keys, no monthly subscriptions, no usage limits",
+  "Clones voices from a few seconds of audio",
+  "System-wide dictation hotkey that types into any app",
+  "Over 33,000 GitHub stars (screen confirms 33k)",
+  "Setup takes less than a minute: paste one command into terminal"
+ ],
+ "how_to_steps": [
+  "Paste the one-line install command into the terminal",
+  "Open Voicebox, record a few seconds of audio to clone a voice",
+  "Use the push-to-talk / hold-key dictation to type into any app"
+ ],
+ "on_screen_only": [
+  "'Monthly Subscription $0 spent this month' graphic",
+  "README tabs: README, Contributing, MIT license, Security; badges: downloads 1.5M, release v0.5.0, stars 33k, license MIT, 'Ask DeepWiki'",
+  "'Clone voice' dialog with waveform, Name / Description / Reference Text / Language fields and 'Create Profile' button",
+  "'PUSH TO TALK -- hold the key and just |' dictation overlay",
+  "Flow / Free / ElevenLabs logo cards",
+  "Creator wears 'AIS' branded shirt; DM word 'VOICEBOX'"
+ ],
+ "cta": "DM 'VOICEBOX' on Instagram for the link; link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Local dictation could save a time-poor founder typing time in Claude Code, but voice cloning is not core to building apps; quality of local models vs Wispr Flow is unverified."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Low effort to try if the repo is real and runs on a Mac, but local TTS/STT needs GPU/CPU headroom and probably a Python/ML stack; marginal over built-in macOS dictation unless accuracy is high."
+ },
+ "verify": [
+  "Exact GitHub owner/repo for 'voicebox' (not shown) and whether it really has 33k stars / 1.5M downloads",
+  "Which STT/TTS models it bundles and hardware needed for near-real-time dictation",
+  "Whether the 'one command' install is a curl|sh script (security review before running)",
+  "Dictation accuracy vs Wispr Flow for technical vocabulary"
+ ]
+}

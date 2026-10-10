@@ -1,0 +1,81 @@
+{
+ "id": "7688055085598838029",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7688055085598838029",
+ "creator": "kevinfremon",
+ "title": "Top 5 security holes in vibe-coded apps, plus a demo of the creator's AppBully.ai scanner that finds them and emits fix prompts/MCP",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "AppBully.ai",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's product; connects GitHub + Supabase, scans code/database/legal/design, gives fix prompts, built-in MCP, monitors repo on push; link in bio"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Named as a generator of vulnerable code and as a target for AppBully's MCP; 'Claude Code' / 'MCP' toggle on landing page"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Same as above"
+  },
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Unprotected databases called out as easy to miss on Supabase; AppBully connects to it"
+  },
+  {
+   "name": "GitHub",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AppBully connects to GitHub accounts and monitors pushes"
+  },
+  {
+   "name": "Hello Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's own app used as the demo repo in the dashboard"
+  }
+ ],
+ "claims": [
+  "Creator's shipped, paying-customer product had a massive vulnerability that could have cost thousands of dollars",
+  "Top 5 vibe-coded vulnerabilities: 1 vulnerable third-party packages, 2 unsafe user inputs (forms), 3 missing permission checks (user impersonation / data access), 4 unprotected databases (esp. Supabase), 5 exposed API keys",
+  "Missing permission checks is 'the scariest'; exposed API keys is 'the biggest no-no yet the most common'",
+  "AppBully gives a 'how cooked' report, copyable fix prompt or MCP, and monitors the repo on every push",
+  "AppBully covers code, database, legal ('we are not a lawyer') and design"
+ ],
+ "how_to_steps": [
+  "Go to appbully.ai and choose a mode (Baby Gloves / Bully Mode / Savage AF)",
+  "Connect your GitHub repo (and Supabase)",
+  "AppBully scans and reports findings grouped by Code, Database, Legal, Design",
+  "For each finding, copy the fix prompt into Claude Code/Codex, or use the built-in MCP directly",
+  "Leave it connected so new pushes are re-scanned"
+ ],
+ "on_screen_only": [
+  "Overlay 'TOP 5 ISSUES: 1. VULNERABLE PACKAGES 2. UNSAFE USER INPUTS 3. MISSING PERMISSION CHECKS 4. UNPROTECTED DATABASE 5. EXPOSED API KEYS'",
+  "appbully.ai landing: 'You built it. Now fix the \"oh shit.\"', 'Your agent shipped the features. Now check the code, database, legal basics, and design it left behind', 'Your app's public URL' input, 'Bully my damn website' button, mode toggle Baby Gloves / Bully Mode / Savage AF, footer 'You bring the ambition. We check the homework. You get the comeback.', toggle 'Claude Code' / 'MCP'",
+  "Dashboard: 'Make us take the fucking L', app 'Hello Trillion' (hellotrillion.ai?), '14 items to review', columns Code / Database / Legal / Design with Fix-first badges, 'Add app', 'Review findings'",
+  "Findings page: 'How cooked?' meter, '3 recommended fixes', 'Unfuck this first', findings 'A project update may skip the owner check', 'A secret key may reach the browser', 'A package has a published warning', each with 'Copy the demo fix prompt'",
+  "Finding detail: 'Server action permissions: 8 actions in app/actions/roadmap.ts', 'Review each of the 8 receipts', 'Check who can use this action', 'Already protected or intentional?' with 'Reviewed, intentional' button",
+  "Findings tabs: Code (2), Database, Legal, Design; 'Loading database checks...'; URL appbully.ai/dashboard?app=..."
+ ],
+ "cta": "Link in bio for appbully.ai",
+ "relevance": {
+  "score": 4,
+  "why": "The five vulnerability classes are exactly what a solo founder shipping Claude Code apps on Supabase gets wrong; the product pitch is secondary but the checklist is real."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Immediately: make a Claude Code security-audit skill that checks the five items (npm audit/Dependabot, input validation, per-route auth and RLS on Supabase, secrets in client bundles). Trying AppBully is optional; its MCP approach is worth a look if pricing is sane."
+ },
+ "verify": [
+  "AppBully.ai pricing, whether scans are static analysis or LLM-generated guesses, and false-positive rate",
+  "Security of giving a third-party app GitHub and Supabase credentials",
+  "The creator is selling the product (not independent); the 'thousands of dollars' story is unverified"
+ ]
+}
