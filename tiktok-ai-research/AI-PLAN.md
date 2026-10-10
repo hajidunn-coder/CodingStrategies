@@ -1,6 +1,6 @@
 # AI Coding Intel: The Plan
 
-Built 2026-10-10 from 375 liked TikToks (119 AI-related, read in full), the last 50 posts of all 66 AI creators (1,663 scanned by title, 270 read in full), and 207 tools, repos and playbooks verified on the web the same day. Verdict rows, per-video records and the six theme guides are in the dashboard tabs.
+Built 2026-10-10 from 375 liked TikToks (119 AI-related, read in full), the last 50 posts of all 66 AI creators (1,663 scanned by title, 260 read in full: 140 added something new, 120 duplicated what you already liked), and 207 tools, repos and playbooks verified on the web the same day. Verdict rows, per-video records and the six theme guides are in the dashboard tabs.
 
 ## BLUF
 
@@ -104,9 +104,19 @@ Jev and the OpenAI Decisions API (uncalibrated confidence, Haiku does it), Manag
 9. **Agents only where there is a check:** WWWHH handoffs, confidence gates, humans contacted through tool calls (12-factor), draft PRs before auto-merge, Routines with stripped connectors, Managed Agents with budgets for anything customer-facing.
 10. **Own a workflow or data, never a wrapper.** Every feature answers "what dies if the next keynote ships this as an API?"
 
-## Gaps: what the creators cover that you had not liked yet (worth a look)
+## Gaps: what the creators cover that you had not liked yet (46 new items scored 4 or 5, grouped)
 
-Claude Code `/design` inside the CLI (two creator walkthroughs), Routines' API and GitHub triggers (the native on-call loop), Claude Code Projects, `/context` pruning, cross-session messaging and Mods, Auto Mode statistics (97% of prompts approved; verify the source), Cloudflare's security-audit-skill, Gitleaks after every AI change set, key rotation PSA, the Google developer-docs style skill to cure "Claudish" prose, the 20 Laws of UX as one markdown file, Impeccable 4.0 Worlds and Live, hormozi-skills plugin (distinct from the transcript-search one you liked), Zapier SDK for agents, the Meta Ads MCP recipe, HyperFrames for product video, Claude Dashboards, the Startup Stack partners beyond the headline (Firecrawl replaces most scraping needs), Anthropic's own cheap tiers (Sonnet 5.5 $2/$10, Haiku 5.5 $0.10/$0.50) that every "cheap model" video ignored, ducktate's launch-readiness stages 7 to 10 (AI-feature disclosure, DMCA agent, click-to-cancel, TCPA).
+**Claude Code itself (none of your liked videos covered these):** `/design` inside the CLI (artboards, stack with Impeccable), Mods (TypeScript plugins that intercept events and add panes; a cost and goal HUD is a two-hour build), cross-session messaging (one session plans, another builds), `/context` pruning to stop hitting limits, Routines' API and GitHub triggers, Projects, Auto Mode by default since Aug 14 (verify the 97% figure), effort data (max effort costs about 15x extra-high for about 1% accuracy; use extra-high), the openai/codex-plugin-cc plugin for a second-model reviewer, a "PR creator with docs" skill that updates per-feature CLAUDE.md before every PR.
+
+**Prompts and habits worth saving as skills:** the question-first prompt, "what decisions before I start", phased plans with approval gates, the `npm view` package-version rule, the Google developer-docs style skill to cure "Claudish" prose, `/visualplanner` (plan as an HTML page with per-section thumbs), the i-have-adhd output skill (numbered steps, no preamble, exact next command), "cc the agent into the email thread" delegation.
+
+**Security (the biggest gap cluster, 14 items):** Cloudflare's security-audit-skill (one creator ran it: about 130 agents, 9.2M tokens, 10% of a weekly 20x limit, found low and medium issues; verify the repo is Cloudflare-official), NVIDIA SkillSpector (scan a skill before installing it; verify it exists), Gitleaks after every AI change set, rotate every key ever pasted into an AI tool, the Vercel breach lesson (non-sensitive env vars are readable; flag sensitive, audit logs), email OTP is not real MFA, Stripe webhook idempotency and outage behavior, agent spend controls (own wallet with a cap, ask-first for send or spend, kill switch outside the chat), and three overlapping 10 to 20 item checklists with verbatim Claude prompts that fold straight into the `/prelaunch` skill.
+
+**Design:** the 20 Laws of UX as one markdown file, Impeccable 4.0 Worlds and Live, Anthropic's own frontend-design skill, a DESIGN.md generated from a folder of inspiration screenshots, Mobbin MCP for 600k real UI references before building a screen, the 20-item pre-launch website checklist (meta, OG, sitemap, contrast, 404, forms).
+
+**Business:** hormozi-skills plugin (orchestrator plus 17 skills: offer audit, pricing, landing copy), a "Claude SEO" GEO skill (verify repo), `/analyze-content` (this project's own pipeline as a skill), Zapier SDK for agents, Meta Ads Library ad-spy scoring, a Gmail triage Routine at 4am with drafts only, the subscription-price-decay retention hack, pre-launch demand tests with concept emails.
+
+**Models and programs:** Haiku 5.5 pricing and benchmarks (agentic coding 39%, computer use 72%, $0.10/$0.50, 5x price above 100k context), Claude Dashboards, the Startup Stack partners beyond the headline, Anthropic's cheap tiers that every "cheap model" video ignored, ducktate's launch-readiness stages 7 to 10 (AI-feature disclosure, DMCA agent, click-to-cancel, TCPA).
 
 ## Where the Council split
 
