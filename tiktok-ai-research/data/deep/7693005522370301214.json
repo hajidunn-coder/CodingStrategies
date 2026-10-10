@@ -1,0 +1,88 @@
+{
+ "id": "7693005522370301214",
+ "url": "https://www.tiktok.com/@bengusberg/video/7693005522370301214",
+ "creator": "bengusberg",
+ "title": "'linkedin-agent-skill': 12 Claude sub-skills (/li-post, /li-comment, /li-profile, /li-human ...) for running a LinkedIn presence",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Jakeschincariol/linkedin-agent-skill",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub Public repo; free"
+  },
+  {
+   "name": "/li-post",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "One idea into a post. Three hook options from 21 formulas, one full draft, humanized before you see it"
+  },
+  {
+   "name": "/li-comment",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Comments on other people's posts; nine types picked by what the post actually is; never 'Great post!'"
+  },
+  {
+   "name": "/li-reply",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Sorts every comment on your post into lead/substance/peer/support/noise, then writes in that order"
+  },
+  {
+   "name": "/li-profile",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Scores your profile against a 12-part rubric out of 100, then rewrites in fix-first order"
+  },
+  {
+   "name": "/li-plan",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "The week: what to post, when, and the 10 people to engage with; writes ~/.claude/linkedin/plan.md"
+  },
+  {
+   "name": "/li-human",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "The humanizer: two scripts that actually run (removes AI tells like em-dashes)"
+  },
+  {
+   "name": "/li-carousel, /li-repurpose, /li-dm, /li-triage, /li-audit",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "document/carousel posts; repurpose video/newsletter/transcript into a week of posts; 200-char invite note + follow-ups; triage inbox; post-mortem on published posts by engagement"
+  }
+ ],
+ "claims": [
+  "Connect Claude to LinkedIn and it'll 'run your entire account for you' (hyperbole; it's prompt skills, not an API connection)",
+  "12 mini skills, each with a different job",
+  "Posts drafted from 21 viral hook formats",
+  "Humanizer skill removes Claude's 'watermark' and AI tells like em-dashes",
+  "Completely free; setup in 20 seconds"
+ ],
+ "how_to_steps": [
+  "Go to the GitHub repo Jakeschincariol/linkedin-agent-skill",
+  "Copy the URL into Claude and ask it to help you install",
+  "Use /li-profile to score and rewrite your profile, /li-plan for the week, /li-post to draft, /li-human to de-AI the text"
+ ],
+ "on_screen_only": [
+  "Title card: 'How to use Claude for LinkedIn'",
+  "Command table listing /li-post, /li-comment, /li-reply, /li-profile, /li-plan, /li-human, /li-carousel, /li-repurpose, /li-dm, /li-triage, /li-audit with descriptions (above)",
+  "GitHub header: 'Jakeschincariol / linkedin-agent-skill  Public'"
+ ],
+ "cta": "Try it out and let me know what you build; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Founder marketing on LinkedIn is a real need and this is a ready-made Claude skill set; but it is content generation, not app building, and 'runs your account' is overstated -- no posting automation."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Worth a 20-minute install if LinkedIn is part of the distribution plan; /li-repurpose (turn one transcript into a week of posts) and /li-human are the high-value pieces. Low cost, moderate payoff."
+ },
+ "verify": [
+  "Does the repo exist, who is Jake Schincariol, is it maintained?",
+  "Does it actually connect to LinkedIn (API/MCP) or only produce text to paste manually?",
+  "Check the humanizer scripts for anything that executes locally (security review before install)"
+ ]
+}

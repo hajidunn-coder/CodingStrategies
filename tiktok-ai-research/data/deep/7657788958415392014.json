@@ -1,0 +1,24 @@
+{
+ "id": "7657788958415392014",
+ "url": "https://www.tiktok.com/@chase_ai_/photo/7657788958415392014",
+ "creator": "chase_ai_",
+ "title": "(no readable content)",
+ "category": "other",
+ "tools": [],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [],
+ "cta": "unknown",
+ "relevance": {
+  "score": 1,
+  "why": "TikTok photo post; extractor failed ('Unsupported URL'), no description, no hashtags, no frames. Nothing to assess."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; the post content is unknown."
+ },
+ "verify": [
+  "Open the photo post manually in a browser to see whether it is a carousel of slides worth transcribing",
+  "Check the creator's other posts (chase_ai_) to see if the topic relates to Claude Code"
+ ]
+}

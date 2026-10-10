@@ -1,0 +1,52 @@
+{
+ "id": "7659859667060903188",
+ "url": "https://www.tiktok.com/@sourcetms/video/7659859667060903188",
+ "creator": "sourcetms",
+ "title": "Anthropic news: Fable 5 access extended to July 12; Claude Cowork moves to mobile with session handoff and cloud scheduled tasks that ping your phone",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Fable 5 (Claude model)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Access extended 'five more days, up until July 12th'"
+  },
+  {
+   "name": "Claude Cowork (mobile)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Start a session on phone, pick up on computer or vice versa"
+  },
+  {
+   "name": "Claude scheduled tasks (cloud)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Run in the cloud by default; phone ping when Claude needs a decision"
+  }
+ ],
+ "claims": [
+  "Five more days of Fable 5 access, until July 12",
+  "Cowork is moving from desktop/laptop to mobile devices with cross-device session handoff",
+  "Scheduled tasks will by default run in the cloud, so you no longer need to leave a laptop half-open",
+  "When Claude hits a decision point it pings your phone",
+  "No new OpenAI model yet; creator 'hopeful for Thursday'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Caption 'Anthropic's got new goodies' (talking head only, no UI shown)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Cloud-run scheduled tasks plus phone approval pings directly address a time-poor founder's workflow (kick off work, approve from phone), but it is dated news with no how-to."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to build; just confirm the mobile Cowork/cloud scheduled-task features exist on the current plan and start using them for routine jobs."
+ },
+ "verify": [
+  "Confirm the exact Anthropic announcement (date, features) rather than this 'internal news' retelling",
+  "Which plans get mobile Cowork and cloud scheduled tasks",
+  "What 'Fable 5 access until July 12' actually referred to (preview window? promo?)"
+ ]
+}

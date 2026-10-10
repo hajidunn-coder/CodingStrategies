@@ -1,0 +1,50 @@
+{
+ "id": "7693201018829491487",
+ "url": "https://www.tiktok.com/@alanonai/video/7693201018829491487",
+ "creator": "alanonai",
+ "title": "Should you use Supabase when AI recommends it? Vendor lock-in considerations and how to abstract DB/auth to keep migration possible",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Postgres DB + auth + backend/edge functions bundle that AI tools default to recommending"
+  },
+  {
+   "name": "PostgreSQL",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "keep DB calls as plain Postgres so they port off Supabase"
+  }
+ ],
+ "claims": [
+  "AI recommends Supabase because it bundles DB, auth (one of the hardest parts), backend functions, and is easy to configure -- AI optimises for easy",
+  "Once locked into a vendor, migrating means changing DB, auth and backend functions at once; harder as the app and customer base grow",
+  "Three questions before locking in: consumers vs businesses (business requirements Supabase may not naturally handle), compliance requirements, very complex backend logic",
+  "Answer is 'it depends'; Supabase is still a good service"
+ ],
+ "how_to_steps": [
+  "When AI suggests Supabase, have a conversation with the AI about lock-in before accepting",
+  "Ask: B2C or B2B? compliance needs? complex backend logic?",
+  "If adopting, abstract database calls so they are plain Postgres SQL",
+  "Abstract the authentication layer behind an interface so a different auth provider can be swapped in later"
+ ],
+ "on_screen_only": [
+  "Only burned-in captions of the spoken words; no UI or URLs shown"
+ ],
+ "cta": "Let me know if this is helpful",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable: Claude Code defaults to Supabase for new apps. The abstraction advice (plain Postgres, auth behind an interface) is a cheap hedge against lock-in that a solo founder should bake into CLAUDE.md."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Add two rules to project CLAUDE.md: keep DB access as standard Postgres via a repository layer, and wrap auth behind a single module. Minimal cost now, large savings if a B2B/compliance customer forces a migration."
+ },
+ "verify": [
+  "Which Supabase features are actually proprietary (RLS policies, edge functions, auth schema) vs portable Postgres?",
+  "Does Supabase offer compliance (SOC2/HIPAA) tiers that cover the 'business requirements' concern?",
+  "Cost of self-hosting Supabase as a migration path"
+ ]
+}

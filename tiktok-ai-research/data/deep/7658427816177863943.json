@@ -1,0 +1,60 @@
+{
+ "id": "7658427816177863943",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7658427816177863943",
+ "creator": "nocode.joshua",
+ "title": "Three levels of multi-model use: routing by task, chaining in sequence, and a parallel 'council' that cross-ranks outputs",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Routed for coding; final step in the chain"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Routed for brainstorming; creates brand kit image in the chain"
+  },
+  {
+   "name": "Gemini",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Routed for everyday research; first step in the chain"
+  }
+ ],
+ "claims": [
+  "Creator has been a software developer for five years",
+  "Level 1 'model routing': Claude for code, ChatGPT for brainstorming, Gemini for research",
+  "Level 2 'model chaining': run models in sequence, e.g. Gemini researches branding -> ChatGPT makes a brand-kit image -> Claude builds the site; 'puts you ahead of 90% of people'",
+  "Level 3 'multi-model council': run several models in parallel on the same task, then have them review and rank each other to produce a final output; 'how the top 1% use AI'",
+  "Promises setup 'in less than 60 seconds' but shows only diagrams"
+ ],
+ "how_to_steps": [
+  "Level 1: pick the model per task type (code -> Claude, brainstorm -> ChatGPT, research -> Gemini)",
+  "Level 2: chain outputs — Gemini research -> ChatGPT brand kit (image) -> Claude code -> final site",
+  "Level 3: send the same prompt to Gemini, ChatGPT and Claude in parallel -> 'Council Review' step where they rank each other -> final output"
+ ],
+ "on_screen_only": [
+  "Title card 'Why Claude IS NOT Better than ChatGPT' (Claude vs ChatGPT logos)",
+  "Slides styled 'Claude Editorial Spark': 'Multi Model Chaining — One system. Three levels. Better outputs.' with a 'Multi Model Orchestrator' (Route/Chain/Council) node",
+  "Level 1 slide 'Model Routing — Pick the best model for the task' (Code->Claude, Brainstorm->ChatGPT, Research->Gemini, 'Beginner mode')",
+  "Level 2 slide 'Model Chaining — Run models in sequence' ('Ahead of 90%'); flow: Task/Prompt -> 1 Gemini Research branding -> 2 ChatGPT Create brand kit -> 3 Claude Build site -> Final Site",
+  "Level 3 slide 'Multi Model Council — Run models in parallel, then review the best answer' ('Top 1%'): Gemini, ChatGPT, Claude -> Council Review -> Final Output"
+ ],
+ "cta": "Follow for more breakdowns",
+ "relevance": {
+  "score": 2,
+  "why": "Conceptual only; the council idea maps to things already available (Claude Code subagents, LLM-as-judge) but the video gives no tooling, prompts or evidence."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "A 'council' is cheap to prototype with Claude Code subagents or a few API calls plus a judge prompt, but this video adds nothing beyond the name; only do it for high-stakes decisions where a second opinion is worth the token cost."
+ },
+ "verify": [
+  "Is there any evidence that parallel multi-model councils beat a single strong model plus self-review for coding tasks?",
+  "Cost: three models in parallel plus a ranking pass roughly 4x the tokens per task",
+  "What orchestration tool does the creator actually use (none shown)?"
+ ]
+}

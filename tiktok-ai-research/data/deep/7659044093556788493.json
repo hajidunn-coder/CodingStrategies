@@ -1,0 +1,73 @@
+{
+ "id": "7659044093556788493",
+ "url": "https://www.tiktok.com/@itsmariahbrunner/video/7659044093556788493",
+ "creator": "itsmariahbrunner",
+ "title": "Three Claude Design uses: customize React Video Editor motion-graphic templates, build in a brand's design system from 'Awesome Claude Design', clone any website from its URL",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude Design (Anthropic)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Anthropic product shown with 'Bring your ideas to life' landing page"
+  },
+  {
+   "name": "React Video Editor",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Source of free motion-graphics templates (charts, lower thirds, 'Thanks for Watching', 'Your Story Begins' etc.) that Claude customizes"
+  },
+  {
+   "name": "Awesome Claude Design (GitHub collection)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Said to hold design systems for brands like Apple, Stripe, Spotify; no URL shown"
+  },
+  {
+   "name": "Higgsfield",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Pronounced 'haigfield'; creator connects it to generate images/videos for the cloned site"
+  },
+  {
+   "name": "Creator's AI challenge",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Link in bio"
+  }
+ ],
+ "claims": [
+  "Claude Design is 'the most underrated thing Anthropic has ever made'",
+  "Grab free templates from React Video Editor and have Claude customize them to your brand",
+  "Drop a brand design system (Apple/Stripe/Spotify) from the Awesome Claude Design collection and Claude builds in that style 'in two minutes'",
+  "Paste any website URL and Claude rebuilds it; connect Higgsfield for images/video"
+ ],
+ "how_to_steps": [
+  "Motion graphics: download a free template from React Video Editor, give it to Claude Design, ask it to restyle to your brand (example shown: animated 'MARIAH' lettering)",
+  "Brand style: pull a design-system file from the 'Awesome Claude Design' GitHub collection (e.g. Spotify), drop it into Claude Design, ask for a component/page (example: Spotify-style 'ATX Austin, Texas' card and 'The food actually slaps' card)",
+  "Website clone: paste the URL of a site you like into Claude Design and ask it to rebuild it (example: a soda brand landing page 'Find your flavor' with Strawberry Lemon / Cherry Limeade / Watermelon cans); connect Higgsfield for generated imagery"
+ ],
+ "on_screen_only": [
+  "'Claude Design Is Criminally Underrated' title; Anthropic / Claude Design landing page 'Bring your ideas to life'",
+  "On-screen list '3 CLAUDE DESIGN TRICKS: 1. MOTION GRAPHICS 2. PREMIUM GITHUB DESIGNS 3. FULL WEBSITES'",
+  "React Video Editor template grid (bar/line/pie charts, progress bars, 'Thanks for Watching', 'Your Story Begins', lower thirds)",
+  "Spotify-green cards: 'ATX Austin, Texas', 'The food actually slaps'",
+  "Soda landing page 'Find your flavor' with product cards 'Strawberry Lemon', 'Cherry Limeade', 'Watermelon', 'Starting at $30'; Higgsfield logo",
+  "'comment AWESOME' overlay"
+ ],
+ "cta": "Comment 'awesome' for the setup; comment 'challenge' or check bio for the AI challenge",
+ "relevance": {
+  "score": 3,
+  "why": "Design systems as context for Claude is directly useful for a founder shipping app UIs; the 'clone any website' and motion-graphics angles are nice-to-have for marketing."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Low effort: find the Awesome Claude Design collection, keep a chosen design-system markdown in the repo for Claude Code to reference. Claude Design itself needs checking for availability on the founder's plan."
+ },
+ "verify": [
+  "Does the 'Awesome Claude Design' GitHub repo exist and what exactly is in it (real brand design tokens vs. fan-made approximations)? Licensing of copying Apple/Stripe/Spotify styles",
+  "What is Claude Design today (standalone product? part of claude.ai?) and plan requirements",
+  "React Video Editor template license and whether 'free' covers commercial use",
+  "Higgsfield pricing"
+ ]
+}

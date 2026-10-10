@@ -1,0 +1,78 @@
+{
+ "id": "7693668943784938765",
+ "url": "https://www.tiktok.com/@sirakinb/video/7693668943784938765",
+ "creator": "sirakinb",
+ "title": "Claude for Startups program: free year of Claude Team (5 seats), $1,000 API credit, ~$45k partner stack, office hours; apply at claude.com/programs/startups",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude for Startups",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "claude.com/programs/startups -- apply in Console; founded in last 5 years; ~5-10 min application"
+  },
+  {
+   "name": "Claude Team",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "1 year free, up to 5 premium seats, for companies new to Team"
+  },
+  {
+   "name": "Anthropic API credit",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "$1,000 on approval"
+  },
+  {
+   "name": "Startup stack partners: Linear, Lovable, ElevenLabs, Granola, Hex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "discounts/credits up to $45,000 total, each with own terms"
+  },
+  {
+   "name": "Claude marketplace",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "help building and submitting a listing"
+  },
+  {
+   "name": "Free Automation Hour (creator)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "Thursdays 7pm EST; register via link in bio"
+  }
+ ],
+ "claims": [
+  "Free year of Claude Team, up to 5 premium seats if new to Teams",
+  "$1,000 API credit the moment you're approved",
+  "Anthropic says that adds up to $7,000 in Claude products and credits",
+  "Startup stack discounts/credits up to $45,000 (Linear, Lovable, ElevenLabs, Granola, Hex); each offer has own terms",
+  "Office hours with Anthropic's applied AI team; help getting listed in the Claude marketplace",
+  "Only requirement: startup founded in the last 5 years; no funding or accelerator needed",
+  "Application takes ~5 minutes (caption says 10)"
+ ],
+ "how_to_steps": [
+  "Go to claude.com/programs/startups and review the details",
+  "Apply in the Anthropic Console (company founded within last 5 years)",
+  "On approval: claim Claude Team seats, $1,000 API credit, partner offers; book applied-AI office hours; submit a marketplace listing"
+ ],
+ "on_screen_only": [
+  "Slide cards: 'ANTHROPIC / FOUNDER UPDATE -- Claude for Startups', '1 YEAR FREE CLAUDE TEAM', 'UP TO 5 PREMIUM SEATS FOR COMPANIES NEW TO TEAM', 'CLAUDE TEAM + API PRODUCTS AND CREDITS', 'DISCOUNTS + CREDITS TOOLS YOUR STARTUP RUNS ON', 'UP TO $45,000 PARTNER OFFER VALUE', 'APPLIED AI TEAM VIRTUAL OFFICE HOURS', 'CLAUDE MARKETPLACE HELP BUILDING + SUBMITTING A LISTING', 'Check the program. Apply in Console. claude.com/programs/startups APPLY NOW'",
+  "End card: 'Free Automation Hour, Thursday @ 7pm EST. Bring any questions you have on AI, systems, automation or apps. Register with the link in my bio.'"
+ ],
+ "cta": "Apply on Anthropic's site; register for creator's Free Automation Hour via link in bio",
+ "relevance": {
+  "score": 5,
+  "why": "Direct money: a solo founder building on Claude qualifies (founded <5 yrs, no funding needed). $1k API credit plus free Team seats and Linear/ElevenLabs credits offset real costs."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Ten-minute action item: apply at claude.com/programs/startups via Console today. Check whether existing Team/Pro subscription affects 'new to Team' eligibility."
+ },
+ "verify": [
+  "Confirm claude.com/programs/startups is the official page and current terms ($1,000 credit, 5 seats, 1 year)",
+  "Eligibility for a solo founder without an incorporated entity, and for veterans' business status",
+  "Does an existing Claude Pro/Max/Team subscription disqualify the 'new to Team' benefit?",
+  "Partner offer terms (Linear, Lovable, ElevenLabs, Granola, Hex) -- what actually applies"
+ ]
+}

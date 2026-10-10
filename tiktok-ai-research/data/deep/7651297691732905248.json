@@ -1,0 +1,83 @@
+{
+ "id": "7651297691732905248",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7651297691732905248",
+ "creator": "bettercreatingofficial",
+ "title": "Karpathy-style LLM-maintained personal wiki (raw/ wiki/ outputs/ + CLAUDE.md) built in Claude Cowork in 45 minutes",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator built the second brain in Claude Cowork; Chat/Cowork/Code tabs visible"
+  },
+  {
+   "name": "Andrej Karpathy knowledge-base post (@karpathy)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "X post: 'How I keep my own personal knowledge base — three folders, one file, and an LLM that does the librarian work for me. No vector DB, no fancy tools. Just markdown.' 105K bookmarks, 20.1M views"
+  },
+  {
+   "name": "Obsidian",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Cited as the second-brain tool that 'becomes a graveyard in a few weeks'"
+  },
+  {
+   "name": "CLAUDE.md",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Used as 'the schema' file that tells Claude how to maintain the wiki"
+  },
+  {
+   "name": "CoWork OS / cowork-os-beta (creator's template)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Folder 'CoWork-Templated-OS' with cowork-os-beta, Plugin-Marketplace, Skills Source-Dev, template-cowork-os_legacy version"
+  },
+  {
+   "name": "Systems Made Better (YouTube)",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's YouTube channel with the full build walkthrough"
+  }
+ ],
+ "claims": [
+  "Karpathy's post about his personal knowledge base got 105,000 bookmarks (screen shows 105K bookmarks, 20.1M views, 12K reposts)",
+  "The system is 'three folders, one file': raw/, wiki/, outputs/ plus CLAUDE.md as the schema",
+  "You never organise anything yourself; the AI reads, links and summarises raw dumps into a wiki",
+  "Creator built his version in 45 minutes on a Saturday morning in Claude Cowork",
+  "Day 1 it is 'a handful of articles, a few saved answers'; by Day 100 it is 'a company asset nobody else has' (cross-referenced, your sources, your judgement)"
+ ],
+ "how_to_steps": [
+  "Create three folders: raw/ (junk drawer: articles, notes, transcripts; do not organise), wiki/ (where Claude writes the organised version; you never edit by hand), outputs/ (answers, briefings, reports generated on request)",
+  "Write a CLAUDE.md that acts as the schema telling Claude how to process raw/ into wiki/",
+  "Dump information into raw/ without organising",
+  "Have Claude (in Cowork) run a build pass: select the strongest entries, pull content for each, save entries to raw as markdown, write a wiki INDEX, then write foundational articles (batch 1), method/framework articles (batch 2), and further topic articles (batch 3)",
+  "Ask questions and request briefings; answers land in outputs/ and the wiki compounds over time"
+ ],
+ "on_screen_only": [
+  "Karpathy X post text and stats: 2.4K replies, 12K reposts, 105K bookmarks, 20.1M views",
+  "Folder cards: raw/ 'Your junk drawer. Articles, notes, transcripts. Don't organise it.'; wiki/ 'Where Claude writes the organised version. You never edit by hand.'; outputs/ 'Answers, briefings, reports. Generated when you ask.'; CLAUDE.md '— the schema'",
+  "Cowork task checklist: 'Select 10-20 strongest entries', 'Pull content for each selected entry', 'Save entries to RAW as markdown', '5 Writing Wiki INDEX', '6 Write foundational articles (batch 1)', '7 Write method/framework articles (batch 2)', '8 Write ... articles (batch 3)' with 'Claude CoWork' label",
+  "Day 01 / Day 100 comparison cards",
+  "Claude app tabs: Chat | Cowork | Code",
+  "Finder tree 'CoWork-Templated-OS': CoWork OS - First Install Guide.pdf, cowork-os-beta/ (00_START HERE CoWork OS Getting Started.pdf, ABOUT ME, AREAS/_work-areas-guide.md, Admin-PA, Business, Finance, Marketing, Personal, CLAUDE.md, KNOWLEDGE, RESOURCES), Plugin-Marketplace, Skills Source-Dev, template-cowork-os_legacy version, Versions_Archive_Zips",
+  "Obsidian marketing page ('Your thoughts are yours', 'thousands of plugins')"
+ ],
+ "cta": "Watch the full build on the creator's 'Systems Made Better' YouTube channel",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable: a markdown-only, Claude-maintained knowledge base with a CLAUDE.md schema is exactly the kind of low-maintenance context store a solo founder running Claude Code/Cowork benefits from; no new paid tools."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap to try: three folders + a CLAUDE.md + a Cowork/Claude Code 'ingest and wiki-ify' routine. Under an hour to set up; main cost is remembering to dump material in. Could run as a scheduled Claude Code task."
+ },
+ "verify": [
+  "Find Karpathy's actual post and read his exact folder/file conventions and CLAUDE.md contents rather than the creator's paraphrase",
+  "Does the creator's 'CoWork OS' template cost money or require his course?",
+  "How does wiki quality hold up at scale (hundreds of raw files) and what does a re-index pass cost in tokens?",
+  "Is Claude Cowork available on the founder's plan, or is plain Claude Code sufficient (it should be)?"
+ ]
+}

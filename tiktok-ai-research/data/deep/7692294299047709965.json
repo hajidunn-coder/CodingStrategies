@@ -1,0 +1,63 @@
+{
+ "id": "7692294299047709965",
+ "url": "https://www.tiktok.com/@bengusberg/video/7692294299047709965",
+ "creator": "bengusberg",
+ "title": "Free 58-minute 'Building AI Agents for Beginners' course by Dr. Ryan Ahmed covering Claude Code / Codex agent build and deploy",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Building AI Agents for Beginners (Dr. Ryan Ahmed)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "~58-min video; 'Build & Deploy a Production-Ready AI Agent (Not Just a Demo)'; sign up free on a website (URL not shown)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "course covers setting up Claude Code or Codex"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternative covered"
+  },
+  {
+   "name": "Prof. Ryan Ahmed YouTube / Udemy",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "@professor-ryanahmed, 268K subscribers, 314 videos; udemy.com/user/ryan-ahmed"
+  }
+ ],
+ "claims": [
+  "You can build your first AI agent in about 58 minutes, not six months",
+  "Course is completely free",
+  "Dr. Ryan Ahmed: founder, PhD, 260,000+ YouTube subscribers (screen: 268K)",
+  "Covers setup of Claude or Codex, agent design, production-ready build, deployment"
+ ],
+ "how_to_steps": [
+  "Go to the website (not named) and sign up for free",
+  "Watch the 58-minute video and build the agent alongside"
+ ],
+ "on_screen_only": [
+  "Course title card: 'Building AI Agents FOR BEGINNERS'",
+  "'What you'll learn': 'Build & Deploy a Production-Ready AI Agent (Not Just a Demo) -- Design, build, and deploy an AI agent with tools, memory, guardrails taking it from demo to a production workflow'; 'Automate AI Agents Workflow Creation with Claude Code/Codex -- Discover how Claude Code & Codex can generate, refine, and orchestrate agent workflows with Skills add-ons'; 'Agentic AI Engineer Learning Path & Skills in 2026'",
+  "LinkedIn profile: 'Dr. Ryan Ahmed, Ph.D., MBA -- Professor helping 1 Million+ students master AI', 'McMaster University', 'Alumni/clients: PwC, Deloitte, Samsung'",
+  "Screenshot of a code editor/terminal session with a webcam overlay"
+ ],
+ "cta": "Sign up for free on this website; let me know what you build; follow",
+ "relevance": {
+  "score": 2,
+  "why": "Beginner-level agent course; the founder already ships with Claude Code. Possibly useful only as a refresher on deploying an agent for others to use."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth an hour; our own workflow is past beginner level. Skip unless the deploy section covers something specific we lack."
+ },
+ "verify": [
+  "Which site hosts the course (Udemy free coupon? own platform?) and is 'free' time-limited?",
+  "Is Ben Gusberg affiliated/sponsored?",
+  "Does the course actually use Claude Code skills or just chat prompting?"
+ ]
+}

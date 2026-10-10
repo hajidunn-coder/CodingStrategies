@@ -1,0 +1,67 @@
+{
+ "id": "7692696533338459398",
+ "url": "https://www.tiktok.com/@kaithevibecoder/video/7692696533338459398",
+ "creator": "kaithevibecoder",
+ "title": "Four design/vibe-coding websites: Motion Primitives, Manus (sponsored), Haikei, Realtime Colors",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Motion Primitives",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "motionprimitives.com -- copy-paste animation components"
+  },
+  {
+   "name": "Manus",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "manus.im -- AI app/website builder, one-click publish, built-in analytics and SEO tracker (#manuspartner = sponsored)"
+  },
+  {
+   "name": "Haikei",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "haikei.app -- generates unique SVG backgrounds (blobs, gradients, waves); free, no signup"
+  },
+  {
+   "name": "Realtime Colors",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "realtimecolors.com -- test colour palettes and fonts on a real UI before building"
+  }
+ ],
+ "claims": [
+  "Motion Primitives: beautiful animation code, just copy and paste, no animation code needed",
+  "Manus is 'hands down the best tool' for apps/websites without coding; publish to web in one click with built-in analytics and SEO tracker",
+  "Haikei is free to start and needs no sign-up",
+  "Realtime Colors lets you preview palettes/fonts on a real UI"
+ ],
+ "how_to_steps": [
+  "Grab animation components from motionprimitives.com and paste into your project",
+  "Use Manus to build/publish a no-code app (sponsored)",
+  "Generate SVG backgrounds at haikei.app",
+  "Validate palette + fonts at realtimecolors.com before building"
+ ],
+ "on_screen_only": [
+  "URLs: motionprimitives.com, manus.im, haikei.app, realtimecolors.com",
+  "Overlay: 'niches sites for learning design -- Vibecode design edition'",
+  "Manus demo screenshots: an e-commerce page with clothing products, prompt text about 'minimal, elegant typography', 'soft shadows'",
+  "Haikei UI: 'Make unique SVG design assets'",
+  "Realtime Colors UI: 'Visualize Your Colors On a Real Site'",
+  "Overlay: 'Comment \"Design\"' and 'MAKE SURE TO SAVE'"
+ ],
+ "cta": "Comment 'design' for the links; save the video",
+ "relevance": {
+  "score": 3,
+  "why": "Motion Primitives, Haikei and Realtime Colors are genuinely useful free helpers for making Claude Code-built UIs look polished fast. Manus segment is a sponsored no-code pitch and irrelevant."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Bookmark the three free sites; point Claude Code at motionprimitives.com components when building landing pages. Zero setup cost. Skip Manus."
+ },
+ "verify": [
+  "Motion Primitives licensing and framework (React/Framer Motion?) compatibility with our stack",
+  "Haikei: is the free tier still unlimited for SVG export?",
+  "Manus pricing and whether the 'analytics/SEO tracker' claim is real -- note #manuspartner sponsorship"
+ ]
+}

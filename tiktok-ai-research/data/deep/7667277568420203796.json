@@ -1,0 +1,80 @@
+{
+ "id": "7667277568420203796",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7667277568420203796",
+ "creator": "ai.samaritan",
+ "title": "Anthropic cut 80%+ of Claude Code's system prompt for Claude 5: replace NEVER rules with judgment, keep CLAUDE.md thin with skills on demand, run /doctor",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Subject of the Anthropic context-engineering article"
+  },
+  {
+   "name": "/doctor (claude doctor)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "New command to 'right-size your skills and CLAUDE.md files for the new models'; article says best practices are built into 'claude doctor'"
+  },
+  {
+   "name": "CLAUDE.md",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Keep lightweight: what the repo is for + gotchas"
+  },
+  {
+   "name": "Claude Code skills (progressive disclosure)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Move detailed practices into skills that load only when needed"
+  },
+  {
+   "name": "Anthropic article 'Unhobbling Claude' / context-engineering post",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Dated 'Anthropic, July 24'; quote 'We removed over 80% of Claude Code's system prompt'"
+  },
+  {
+   "name": "Claude 5 / Fable 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "The cut was made for Claude 5 models; coding evals did not move"
+  }
+ ],
+ "claims": [
+  "Anthropic removed over 80% of Claude Code's system prompt and coding evaluations did not drop ('Claude got 0% worse')",
+  "Anthropic found its own instructions conflicted (e.g. 'never write comments' vs 'document appropriately') and Claude burned effort resolving the conflict",
+  "They replaced walls of 'never do this' with one line: 'match the style of the surrounding code'",
+  "New guidance: keep CLAUDE.md short (what the repo is, gotchas Claude can't see from the code), move the rest into skills loaded on demand",
+  "A new command /doctor flags bloat in skills and CLAUDE.md",
+  "Analogy: onboard a senior engineer with 'the two weird things about your codebase', not a 40-page rulebook"
+ ],
+ "how_to_steps": [
+  "Open your CLAUDE.md and delete strict NEVER/ALWAYS rules written for older models; replace with judgment lines like 'match the style of the surrounding code'",
+  "Cut CLAUDE.md to repo purpose plus non-obvious gotchas; move detailed practices into separate skills",
+  "Run /doctor in Claude Code and act on the bloat it flags"
+ ],
+ "on_screen_only": [
+  "Article header '/context-engineering — Most of it gone, no measurable loss. Anthropic says the cut was made for Claude 5 models, and its coding evaluations did not move.' Quote block: 'We removed over 80% of Claude Code's system prompt. — Anthropic, July 24'",
+  "Terminal mock: 'never write comments,' / 'never do this.'",
+  "Diagram 'the assembled context' with conflicting lines highlighted: system prompt 'leave documentation as appropriate', skills 'do not add comments', your request 'just make it work like the old one' -> Delete",
+  "Article excerpt: 'CLAUDE.md — Keep your CLAUDE.md lightweight and briefly describe what your repo is for, but spend most of the tokens on gotchas inside of the codebase. For example, you may organize your code to keep types in one monolithic file and nowhere else. Avoid stating the obvious things Claude should know by looking at your file system or your repo.'",
+  "Article excerpt: 'Here's what we've learned about prompting this new class of models, and how you can utilize it to update your context engineering. We've put these best practices in claude doctor, use the command /doctor in Claude Code to rightsize your skills, and CLAUDE.md files.' Section 'Unhobbling Claude: Overall, we found that we were over-constraining Claude Code, both through our system prompt and in our CLAUDE.md files and skills.'",
+  "Dwight Schrute (The Office) reaction clip"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 5,
+  "why": "Straight from Anthropic's own guidance and applies to every repo the founder runs with Claude Code; a bloated CLAUDE.md is a common silent drag on results and token use."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Run /doctor on each repo and trim CLAUDE.md to purpose + gotchas, moving the rest into skills. An hour across all projects, zero cost, likely immediate improvement."
+ },
+ "verify": [
+  "Read the actual Anthropic post (July 24 context-engineering / 'Unhobbling Claude') for the full guidance and which models it applies to",
+  "Confirm /doctor exists in the installed Claude Code version and what it actually checks",
+  "Which existing CLAUDE.md rules are genuine gotchas vs. legacy NEVERs; test behaviour after trimming on one repo before rolling out"
+ ]
+}

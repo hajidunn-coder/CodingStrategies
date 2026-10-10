@@ -1,0 +1,69 @@
+{
+ "id": "7655545910360952082",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7655545910360952082",
+ "creator": "robert.triebwasser",
+ "title": "Tour of a self-hosted 'AIOS' personal dashboard built with Claude Code: daily briefing, multi-CLI chat, social metrics, notes, skills, projects, phone access",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Built the whole dashboard with it; also one of three CLIs operated from the chat tab"
+  },
+  {
+   "name": "Gemini CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "One of the three 'specialists' reachable from the chat tab"
+  },
+  {
+   "name": "Codex (OpenAI CLI)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Third CLI operated from the dashboard"
+  },
+  {
+   "name": "AIOS (creator's own web app)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Runs at localhost:7777 on a home computer; phone reaches it at 10.117.245.18:7777 (LAN)"
+  }
+ ],
+ "claims": [
+  "Dashboard runs off a home computer that 'basically never turns off' and is accessible from his phone",
+  "Built 'using nothing but Claude Code'",
+  "Homepage gives the top three things to focus on every day",
+  "Chat tab operates Claude Code, Codex or Gemini CLI directly on his computer ('three specialists: one to write, one to research, one to build')",
+  "Social media dashboard pulls every comment and metric from all three social channels",
+  "Notes auto-clear when the task is done; on-screen: 'quick captures with a 14-day half-life'",
+  "Skills tab holds '100+ one-click AI workflows'",
+  "Projects tab shows each project with notes and full context history"
+ ],
+ "how_to_steps": [
+  "No build steps shown; this is a feature tour. Implied architecture: local web server (port 7777) with tabs Daily Briefing, Chat (routes to Claude Code / Gemini CLI / Codex), Social, Notes, Skills, Projects; exposed to phone over the home network"
+ ],
+ "on_screen_only": [
+  "Title card: 'My AI Operating System THAT RUNS my LIFE'",
+  "App header 'AIOS' with sections: Daily Briefing, Your AI Team, Notes, Skills, Projects, Anywhere",
+  "Browser URL localhost:7777; phone browser shows 10.117.245.18:7777 (local network IP, not a public URL)",
+  "Overlay captions: 'The top 3 things to focus on — every morning', 'Claude · Gemini · Codex — one tap each', 'Capture an idea — clears itself when it's done', '100+ one-click AI workflows', 'Every project + its full context history', 'Runs at home. Lives in your pocket.'",
+  "Notes page text: 'Quick captures with a 14-day half-life. Different from Open Loops (committed work) and Chat (transcripts). ⌘+K opens the global capture from any page.' Example note: 'post the new video tomorrow #reminder'",
+  "End card: 'AIOS · BUILT WITH AI — Want to build your own? Follow along'"
+ ],
+ "cta": "Follow for step-by-step build content",
+ "relevance": {
+  "score": 3,
+  "why": "Good picture of what a solo founder's command center could look like (daily top-3, skills as one-click buttons, project context history), but no implementation detail; phone access is LAN-only as shown."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "The pattern (local Node/Python web UI that shells out to Claude Code and stores notes/projects in markdown) is a weekend Claude Code build. Worth borrowing the daily-briefing + skills-as-buttons ideas; full clone is a time sink."
+ },
+ "verify": [
+  "Is the code shared anywhere, or only the promise of future content?",
+  "How is phone access secured off the home network (Tailscale/VPN?) — the shown IP is LAN-only",
+  "How does the chat tab actually drive Claude Code / Codex / Gemini CLI (PTY wrapper? SDK?) and what are the auth/cost implications of running all three",
+  "How do 'skills' here map to Claude Code skills vs. the creator's own scripts"
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "id": "7691580366481542413",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691580366481542413",
+ "creator": "bengusberg",
+ "title": "Vercel's 'find-skills' skill: a meta-skill that searches skills.sh and auto-installs relevant agent skills",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "find-skills (vercel-labs)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "skills.sh/vercel-labs/skills/find-skills ; installs to ~/.claude/skills/find-skills/"
+  },
+  {
+   "name": "skills.sh / npx skills CLI",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "'The CLI for the open agent skills ecosystem. Supports OpenCode, Claude Code, Codex, Cursor, and 75 more'; commands 'npx skills find <query>' and 'npx skills add <package>'"
+  },
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "created the skill"
+  }
+ ],
+ "claims": [
+  "Install once; afterwards Claude automatically searches the web and installs whatever skills you need",
+  "3.6 million installs (on-screen 'INSTALLS 3.6M')",
+  "Built-in bank of almost 1.5 million skills (transcript claim; not shown on screen)",
+  "Works for Claude, ChatGPT 'or wherever'",
+  "Setup in 20 seconds; free"
+ ],
+ "how_to_steps": [
+  "Go to skills.sh/vercel-labs/skills/find-skills",
+  "Copy the URL and paste it into Claude (or ChatGPT) and ask it to help you install",
+  "Afterwards, when you ask 'how do I X' Claude runs 'npx skills find <query>' and 'npx skills add <package>' to install matching skills"
+ ],
+ "on_screen_only": [
+  "Terminal header: '05/05  ~/.claude/skills/find-skills/  Find Skills. Installs new skills for you.'",
+  "Skill description text: 'Helps identify relevant skills by domain and task when users ask how do I X or find a skill for X. Provides npx skills find [query] command to search interactively and npx skills add <package> to install from GitHub or other sources. Recommends skills based on install count (prefer 1K+), source reputation (official sources like Vercel, Anthropic), and GitHub stars to ensure quality. Checks the default leaderboard first for battle-tested, popular options before running CLI searches.'",
+  "URL bar: skills.sh/vercel-labs/skills/find-skills"
+ ],
+ "cta": "Try it out and let me know what you build; follow for more on AI founder life",
+ "relevance": {
+  "score": 4,
+  "why": "Directly relevant to a Claude Code power user: a discovery layer over the skills ecosystem reduces time spent hunting for skills. Vercel-backed and tied to the skills.sh registry."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap to try: one 'npx skills add vercel-labs/skills/find-skills' command. Caveat: auto-installing third-party skills is a supply-chain risk; review before trusting install-count rankings. The '1.5M skills' figure is almost certainly inflated."
+ },
+ "verify": [
+  "Confirm skills.sh and the vercel-labs/skills repo are real and maintained; check actual install counts vs the 3.6M claim",
+  "Does the skill auto-install without confirmation, or does it just recommend? (security: arbitrary SKILL.md from GitHub)",
+  "Does it work in Claude Code specifically, or mainly via the npx CLI?",
+  "'1.5 million skills' vs the on-screen 'prefer 1K+ installs' heuristic -- what is the real registry size?"
+ ]
+}

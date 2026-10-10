@@ -1,0 +1,95 @@
+{
+ "id": "7693222410807463182",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7693222410807463182",
+ "creator": "youraveragetechbro",
+ "title": "24/7 AI on-call engineer: PostHog error -> bot -> Cursor cloud agent reproduces, fixes, verifies with skills, multi-model review, auto-merge by risk",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "PostHog",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "error tracking; sends captured errors to the error-fix bot (not sponsored)"
+  },
+  {
+   "name": "Error fix bot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's own bot receiving PostHog errors and kicking off a cloud agent"
+  },
+  {
+   "name": "Cursor cloud coding agents",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "runs in its own cloud environment; implements the fix"
+  },
+  {
+   "name": "Grok 4.7",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "does the implementation"
+  },
+  {
+   "name": "GPT 6.1",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "reviewer"
+  },
+  {
+   "name": "Claude Opus 5.5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "reviewer"
+  },
+  {
+   "name": "Verification/validation skills",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "creator's skills (episode 1 of series) teaching the model how to use and test the app"
+  },
+  {
+   "name": "Yorby",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's AI social media marketing startup"
+  }
+ ],
+ "claims": [
+  "Episode 4 of 7 in 'how to become a 10X AI native developer' series",
+  "Agent fixes errors and bugs while the creator sleeps; focus shifts to product work",
+  "Agent must reproduce the error in its own cloud environment before attempting a fix",
+  "Fix is verified against the actual production data used to reproduce the bug, plus the verification skills",
+  "Risk gate: small one-off fix merges automatically; larger architectural change requests human review",
+  "Code written by Grok 4.7 is reviewed by both GPT 6.1 and Opus 5.5; merges only when all three agree it's safe",
+  "Paying for three AI subscriptions is 'not cheap' but cheaper than hiring an engineer",
+  "Yorby makes 'a decent chunk of revenue'; not perfect, makes occasional mistakes"
+ ],
+ "how_to_steps": [
+  "Set up an error-capture service in the app (creator uses PostHog)",
+  "Route each captured error to a bot that triggers a cloud coding agent (Cursor)",
+  "Agent step 1: reproduce the original error in its own environment; only proceed if reproducible",
+  "Agent step 2: create a fix; verify with the same production data and with the app-specific verification skills",
+  "Agent step 3: classify merge risk -- small fix merges alone; large architectural change requests review from the founder",
+  "Agent step 4: independent review by two other models (GPT 6.1 + Opus 5.5); merge only on unanimous approval",
+  "Next episode: keeping AI-written code quality high and un-bloated"
+ ],
+ "on_screen_only": [
+  "Screenshot of a chat-style bot UI (dark theme) with an 'Error handling' thread: messages about 'Pushing error handling issue to fix in YA Labs UsrTwHp (default branch main)...', 'Starting a cloud worker for PostHog...', 'STAGE ... Fixed PostHog ... (Modified React error ... hydration mismatch ...)', mentions 'Content-Type ... MDX hydration mismatch' and 'Script Writer ... unchanged'",
+  "Caption: 'I use grok 47'"
+ ],
+ "cta": "none (series; next video teased)",
+ "relevance": {
+  "score": 5,
+  "why": "This is the exact pattern a time-poor solo founder wants: autonomous bug-fix loop with reproduce-first, skill-based verification, risk-tiered merging and cross-model review. Transferable to Claude Code cloud sessions + GitHub Actions instead of Cursor."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Doable in stages: (1) PostHog/Sentry webhook -> create GitHub issue; (2) Claude Code remote session or Action picks up issue, must reproduce via a test before fixing; (3) require verification skill pass + a second-model review; (4) auto-merge only for small diffs. Needs real investment (a day or two) and ongoing API cost; start with review-required, not auto-merge."
+ },
+ "verify": [
+  "Does Cursor's cloud agent accept external webhook triggers, or did the creator build custom glue? What is the equivalent with Claude Code (Routines / GitHub Action)?",
+  "Monthly cost of running three frontier models per bug",
+  "How is 'production data' given to the agent safely (PII exposure)?",
+  "Model names (Grok 4.7, GPT 6.1, Opus 5.5) -- confirm current availability"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "7668061154270301471",
+ "url": "https://www.tiktok.com/@raisingbeyondscho/video/7668061154270301471",
+ "creator": "raisingbeyondscho",
+ "title": "Synthesis Tutor: adaptive AI math tutor for ages 5-11, $35/month, inspired by the SpaceX school and DARPA Digital Tutor",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Synthesis Tutor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "synthesis.com/tutor — 'Multisensory math learning for kids', 'Less than $1/day | Free trial available'; games: Dot Destruction (subtraction), Blast Into Multiplication, Dot Division, Fraction Smash, Factor Extractor, Flashcard Frenzy"
+  }
+ ],
+ "claims": [
+  "AI math tutor for kids ages 5 to 11",
+  "Origin: experimental school inside SpaceX where Elon Musk asked educator Josh Dahn to rethink education",
+  "Inspired by DARPA Digital Tutor research where learners mastered material in 16 weeks instead of 36",
+  "98% of teachers using Synthesis report improved math skills in students",
+  "Costs $35 a month; parents see exactly what the child has mastered",
+  "Adapts to each child, keeps teaching until it clicks"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "synthesis.com/tutor banner 'Imagine your child learning math in 1/2 the time...and enjoying it'",
+  "Tutor dialogue samples: 'Excellent. Theo, we are going to learn math like you've never learned it before.'; 'I noticed it's been about 3 weeks since we worked on multiplication flashcards.'; 'Or, if you're feeling adventurous, we could jump into Factor Extractor, which you just unlocked.'; 'Absolutely! You crushed those division problems. I think you're ready for something new!'",
+  "Grid-based multiplication UI (3 x 3 = 9, 6 x 7 = 36, 24 ÷ 8), 'Watch what happens when she gets the answer wrong.'",
+  "'Start your free trial synthesis.com/tutor'; 'Less than $1/day | Free trial available'"
+ ],
+ "cta": "Follow for a year of research on alternative schooling; question 'Would you use a tool like this for your child?'",
+ "relevance": {
+  "score": 1,
+  "why": "Homeschool/edtech product review; not about building with Claude Code. Only tangentially a reference for how an adaptive-tutor product is positioned and priced."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement for the founder's app/business workflow; at most a competitor/pricing data point ($35/mo, free trial) if an education product were ever considered."
+ },
+ "verify": [
+  "Source for '98% of teachers' and the DARPA Digital Tutor 16-vs-36-weeks figures",
+  "Current pricing on synthesis.com/tutor"
+ ]
+}

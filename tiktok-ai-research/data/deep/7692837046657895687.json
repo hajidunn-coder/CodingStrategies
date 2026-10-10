@@ -1,0 +1,73 @@
+{
+ "id": "7692837046657895687",
+ "url": "https://www.tiktok.com/@github.signals/video/7692837046657895687",
+ "creator": "github.signals",
+ "title": "open-slide (Vercel OSS): React slide framework built for coding agents, with /create-slide skill and in-browser comment-to-edit loop",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "open-slide",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/open-slide/open-slide ; 'VERCEL INC. // 2026 OPEN SOURCE SOFTWARE PROGRAM'; 9.8K stars, 621 forks, MIT; init with 'npx @open-slide/cli init my-slide'"
+  },
+  {
+   "name": "/create-slide skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "ships with the scaffold; drafts a deck end-to-end, asks four scoping questions (topic & aesthetic, page count, text density, motion vs static)"
+  },
+  {
+   "name": "/slide-authoring skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "technical reference for the 1920x1080 canvas, type scale, palette, layout rules; agent reads before writing"
+  },
+  {
+   "name": "/apply-comments",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "agent reads in-browser comment markers (.slide-comment) and applies pending edits"
+  },
+  {
+   "name": "Claude Code / Codex / Cursor",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Works with any coding agent (Claude Code, Codex, Cursor, ...)'"
+  }
+ ],
+ "claims": [
+  "Describe your deck in plain English; the agent writes React code handling layout and animation",
+  "Click any element in the browser, leave a comment like 'make this red', agent applies it without you touching code",
+  "Handles runtime: scaling, navigation, hot reload, present mode",
+  "Professional presentable deck from a one-line prompt",
+  "Every slide renders on a fixed 1920x1080 canvas; pages are arbitrary React components, not a constrained DSL"
+ ],
+ "how_to_steps": [
+  "Run 'npx @open-slide/cli init my-slide'",
+  "In your coding agent run /create-slide and answer the four scoping questions",
+  "Open the dev server, click elements and attach comments ('make this red', 'shrink the headline'); comments persist as .slide-comment markers",
+  "Run /apply-comments so the agent applies pending edits and clears markers",
+  "Loop: present -> click to comment -> /apply-comments -> repeat"
+ ],
+ "on_screen_only": [
+  "GitHub README for open-slide: 'The slide framework built for agents. Describe your deck in natural language -- your coding agent writes the React. open-slide handles the canvas, scaling, navigation, hot reload, and present mode so the agent can focus on content.'",
+  "Highlights: 'Agent-native authoring', 'In-browser inspector', 'Assets manager + svgl logo search' ('Manage images, videos, and fonts per deck through an assets panel. Search and drop in any brand logo via svgl')",
+  "Stars 9.8K, Forks 621, License MIT; badge 'VERCEL INC. // 2026 OPEN SOURCE SOFTWARE PROGRAM'",
+  "Watermark @GithubSignals; end card 'Follow for more open-source projects'"
+ ],
+ "cta": "Follow @GithubSignals for more open-source projects",
+ "relevance": {
+  "score": 4,
+  "why": "Pitch decks, investor updates and client proposals are recurring founder chores; a Claude Code-native deck generator with a visual comment loop fits the existing workflow and is Vercel-backed OSS."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "One npx command to try. Compare against the Slides artifact type already available in Claude; adopt if export to PDF/PPTX is solid. ~1 hour trial."
+ },
+ "verify": [
+  "Confirm github.com/open-slide/open-slide is real, star count, Vercel OSS program affiliation, maintenance",
+  "Export options: PDF/PPTX? or browser-only presentation?",
+  "Does the /create-slide skill work in Claude Code out of the box (skill format) and how heavy is token usage per deck?"
+ ]
+}

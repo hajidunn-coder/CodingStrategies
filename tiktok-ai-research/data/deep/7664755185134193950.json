@@ -1,0 +1,45 @@
+{
+ "id": "7664755185134193950",
+ "url": "https://www.tiktok.com/@bengusberg/video/7664755185134193950",
+ "creator": "bengusberg",
+ "title": "Four-agent dev team in Claude Cowork (Architect, Coder, Tester, Manager); give them one small product and review like a CEO",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Prompt typed in Cowork tab: 'Create 4 agents wi...'; UI shows Chat | Cowork toggle, 'Project or folder', 'Manual' mode"
+  }
+ ],
+ "claims": [
+  "Creator is a Stanford founder of an AI startup that has raised $4 million",
+  "Uses four Claude agents as his personal dev team",
+  "Agents 'tend to argue with each other, but that's the point'",
+  "You don't need to review the code, only know your customer and whether the output is right"
+ ],
+ "how_to_steps": [
+  "Step 1: open Claude Cowork and prompt 'create four agents with these specific job descriptions': Agent 1 Architect (turns ideas into a build plan, asks key questions first); Agent 2 Coder (writes code from the plan); Agent 3 Tester (only job is breaking what the coder builds); Agent 4 Manager (reviews the others' work and flags key issues to you)",
+  "Step 2: give the team one small product (a waitlist page or an internal tool), not a big idea",
+  "Step 3: review the output like a CEO — say what is wrong, let them fix it, iterate"
+ ],
+ "on_screen_only": [
+  "Pixel-art cards labeled Architect, Coder, Tester, Manager",
+  "Cowork input box with partially typed 'ate 4 agents wi' and suggestions 'Send me a daily briefing', 'Organize my inbox'",
+  "Captions: 'WE'VE RAISED $4 MILLION', 'CREATE FOUR AGENTS', 'WAIT LIST PAGE'"
+ ],
+ "cta": "Try it and tell him what your team ships; follow for AI founder content",
+ "relevance": {
+  "score": 3,
+  "why": "Simple framing of role-split subagents that a solo founder can map onto Claude Code subagents (planner / implementer / tester / reviewer); the 'review as CEO, not as a code reviewer' advice fits a time-poor builder."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Trivial to define as four Claude Code subagents or Cowork agents in 15 minutes; the real value is the tester/reviewer roles. Scored 3 not higher because the video offers no evidence it beats a single agent plus a review pass."
+ },
+ "verify": [
+  "Does Claude Cowork actually support persistent named agents from one prompt, or is this just a role-play prompt?",
+  "Token/cost overhead of four agents vs one agent with plan/test/review phases",
+  "Whether the 'you don't need to review the code' advice is safe for anything beyond a waitlist page"
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "id": "7657394343270944020",
+ "url": "https://www.tiktok.com/@brandnat/video/7657394343270944020",
+ "creator": "brandnat",
+ "title": "Microsoft MarkItDown converts PDF/PPTX/DOCX/XLSX/images to markdown to cut token use, with an MCP server for Claude",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "MarkItDown (microsoft/markitdown)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/microsoft/markitdown — Public, 374 issues, 447 PRs, 10 branches, 21 tags, latest commit 'Bump version to 0.1.6 (#1914)' by afourney; has packages/ dir, .devcontainer, Dockerfile"
+  },
+  {
+   "name": "MarkItDown MCP server",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Mentioned as 'comes with an MCP integration so you can have this in Claude automatically'"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Claude desktop 'Describe a task or ask a question' box briefly visible"
+  }
+ ],
+ "claims": [
+  "Cuts token usage 'by up to 70%' (title card says 'saves millions in tokens')",
+  "Uploading PDFs/PowerPoint/Word/Excel/images eats context; markdown is far easier for LLMs to ingest",
+  "MarkItDown has 161,000 GitHub stars",
+  "The MCP integration converts files to markdown before Claude processes them"
+ ],
+ "how_to_steps": [
+  "Install Microsoft MarkItDown from github.com/microsoft/markitdown",
+  "Convert PDF/PPTX/DOCX/XLSX/images to .md before feeding them to the LLM",
+  "Optionally add the MarkItDown MCP server to Claude so conversion happens automatically"
+ ],
+ "on_screen_only": [
+  "Title card: 'FREE MICROSOFT TOOL SAVES MILLIONS IN TOKENS'",
+  "GitHub repo page microsoft/markitdown: files .devcontainer, .github, packages, .dockerignore, .gitattributes, .pre-commit-config.yaml, CODE_OF_CONDUCT.md, Dockerfile, LICENSE, README.md",
+  "Claude desktop app window: 'Local · Brand_Nat' folder, 'Describe a task or ask a question', 'Auto' mode; dock shows Notion, Slack, Acrobat"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 4,
+  "why": "A solo founder constantly feeds PDFs/decks/spreadsheets to Claude Code; pre-converting to markdown is a real token and quality win and the tool is free, from Microsoft, and has an MCP server."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "pip install markitdown and either a CLI pre-step or the markitdown-mcp server in Claude Code's MCP config. Under 30 minutes. Only caveat: verify the '70%' figure yourself on real files."
+ },
+ "verify": [
+  "Current star count and maintenance status of microsoft/markitdown (161K stars sounds inflated; check)",
+  "Does the markitdown-mcp package work with Claude Code (stdio) and how does it handle images/OCR (needs an LLM for image descriptions?)",
+  "Actual token savings vs Claude's native PDF handling on a few representative files",
+  "Whether Claude Code's own Read tool for PDFs already does equivalent extraction"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "7691453205208780063",
+ "url": "https://www.tiktok.com/@shaet._08/video/7691453205208780063",
+ "creator": "shaet._08",
+ "title": "Readdy ambassador pitch: build a $1,000 client website overnight with the Readdy AI site builder",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Readdy",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AI website builder; describe the business/vibe, it generates design, copy, layout, animated sections; edit in plain language. Hashtag #readdyambassador = affiliate"
+  }
+ ],
+ "claims": [
+  "Built a full client website using only AI for $1,000 in one night",
+  "Readdy builds a full professional responsive site in minutes from a description",
+  "No plugins, no scraping other sites' code, no piecing together five tools",
+  "Includes animated sections/effects 'you normally need a real designer for'",
+  "Customisation done in plain language; no code, no drag-and-drop"
+ ],
+ "how_to_steps": [
+  "Go to Readdy and describe the client's business, what they do, and the vibe",
+  "Let Readdy generate the full site (design, copy, layout, animations)",
+  "Customise in plain language: swap images, tighten copy, match client brand",
+  "Fine-tune a few things afterward; deliver to client"
+ ],
+ "on_screen_only": [
+  "Overlay title: 'i built a website for my client in one day and it made me $1000'",
+  "Laptop showing a nail-salon landing page with hero headline 'Your nails, sky-high beautiful' (the demo site)"
+ ],
+ "cta": "none explicit (ambassador/affiliate content per #readdyambassador)",
+ "relevance": {
+  "score": 1,
+  "why": "Affiliate pitch for a no-code site builder; founder already builds with Claude Code and has no need for a locked-in hosted builder."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement. If anything, confirms that AI-built client sites are a commoditised $1k service; not a differentiator."
+ },
+ "verify": [
+  "Is Readdy a real, maintained product and what does hosting/export cost?",
+  "Is the $1,000 in one night claim an ambassador script rather than a real engagement?",
+  "Can Readdy sites be exported/self-hosted or is the client locked in?"
+ ]
+}

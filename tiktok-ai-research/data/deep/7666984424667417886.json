@@ -1,0 +1,44 @@
+{
+ "id": "7666984424667417886",
+ "url": "https://www.tiktok.com/@bengusberg/video/7666984424667417886",
+ "creator": "bengusberg",
+ "title": "Four-persona 'board of advisors' in Claude Cowork (Operator, Investor, Customer, Skeptic) that debates a decision and votes",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Prompts typed into Cowork tab; model selector shows 'Sonnet 5 · High'"
+  }
+ ],
+ "claims": [
+  "Creator is a Stanford founder of an AI startup that has raised $4 million",
+  "Uses four Claude agents as a board of advisors; 'saves me a lot of mental back-and-forth'",
+  "You remain CEO and can take or ignore the board's advice"
+ ],
+ "how_to_steps": [
+  "Open Claude Cowork and prompt: 'Create a board of advisors with 4 agents. Each with specific personas' — Agent 1 Elite Operator (practical, says what breaks); Agent 2 Investor (strategy, does it make money); Agent 3 Customer (does anyone want this); Agent 4 Skeptic (only job is to say no and explain why)",
+  "Bring a business decision and prompt: 'Should I double my prices? Ask my board of advisors. Have them debate in front of me and cast a vote.'",
+  "Decide yourself whether to follow the vote"
+ ],
+ "on_screen_only": [
+  "Cowork prompt box text: 'Create a board of advisors with 4 agents. Each with specific personas'",
+  "Second prompt: 'Should I double my prices? Ask my board of advisors. Have them debate in front of me and cast a vote.'",
+  "UI chrome: Chat | Cowork, 'Project or folder', 'Manual', model 'Sonnet 5 · High', '2+ more usage until August 5'",
+  "Four colored robot icons (yellow, purple, green, blue) for the four personas"
+ ],
+ "cta": "Follow for AI founder content",
+ "relevance": {
+  "score": 3,
+  "why": "A structured devil's-advocate pass on pricing/product decisions is useful for a solo founder with no cofounder, and the exact prompts are shown; overlaps with a council-style review already in use."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Ten minutes to save the two prompts as a Claude Code skill or Cowork preset; the Skeptic persona is the valuable part. Cheap enough to just do."
+ },
+ "verify": [
+  "Does Cowork persist the four personas across sessions or must they be re-created each time (a saved skill/prompt file would solve this)?",
+  "Any evidence persona debate improves decision quality vs one well-prompted critique?"
+ ]
+}

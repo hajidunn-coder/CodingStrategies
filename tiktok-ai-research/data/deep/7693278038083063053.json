@@ -1,0 +1,50 @@
+{
+ "id": "7693278038083063053",
+ "url": "https://www.tiktok.com/@leadwithzoe/video/7693278038083063053",
+ "creator": "leadwithzoe",
+ "title": "Fo by Wajo (wajo.ai): AI phone/email agent that makes calls, sits on hold, books reservations, researches venues, with human backup assistants",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Fo (by Wajo)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "wajo.ai; AI agent with its own phone number and email; message via app/phone/email; can be given a budget and credit card; human backup assistants join calls if callee refuses AI"
+  }
+ ],
+ "claims": [
+  "Free right now; creator expects it to get expensive once popular",
+  "Agent has its own phone number and email; can hold a budget and a credit card",
+  "Human backup assistants jump into the call if the other party won't talk to AI",
+  "Use 1: sat on hold over an hour for a refund, redialled after drops, navigated to a human",
+  "Use 2: called a restaurant to move a reservation to a slot not available online",
+  "Use 3: calling hotels/Airbnbs for a bachelorette party, collecting base prices into a spreadsheet, following up via email and text"
+ ],
+ "how_to_steps": [
+  "Sign up for Fo (Fo Mini free tier / 'OG Fo' invite only)",
+  "Message Fo a task from the app, or email it / CC it on a thread",
+  "Optionally set a budget and attach a card",
+  "Fo calls, texts, emails and reports back (e.g. asks to confirm a proposed alternative time)"
+ ],
+ "on_screen_only": [
+  "App text: 'Ask Fo to make calls for you -- from a dedicated number.' and 'Email Fo a task or CC it on any thread'",
+  "Pricing card: 'Fo Mini -- Free -- A little help, every day. Includes 1000 tasks per day(?), Your limit resets every day' and 'OG Fo -- Free, Invite only -- Everyday help, without the daily limit. Includes Unlimited tasks, Unlimited call time, Group chats with Fo'; handwritten note 'mini: daily limit / OG: invite only'",
+  "Call timer '0:19'; Fo message: 'He declined Tuesday and offered a partner call in three weeks. Thursday at 8:40 a.m. is open if you'll take breakfast near his office. Should I confirm?'",
+  "Spreadsheet of properties with highlighted rows; email thread screenshot",
+  "List overlay: 1. refunds 2. reservations 3. research & outreach"
+ ],
+ "cta": "Send this to your friend who is constantly on hold (caption)",
+ "relevance": {
+  "score": 2,
+  "why": "Consumer admin-offloading tool, not a dev tool. Mildly useful for a time-poor founder's personal/VA tasks (vendor calls, appointments), and an interesting reference for voice-agent product design with human fallback."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Try the free tier for a week of admin calls if it is available; no build work. Product-design takeaway: human-in-the-loop fallback is a strong trust feature for any agent product."
+ },
+ "verify": [
+  "Is wajo.ai / Fo real, in which countries does it operate, and what is the actual free-tier limit?",
+  "Privacy/security of handing it a credit card and email access",
+  "Is this a paid/affiliate post (#wajo hashtag)?"
+ ]
+}

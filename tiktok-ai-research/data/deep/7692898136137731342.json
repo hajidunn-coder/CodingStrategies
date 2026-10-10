@@ -1,0 +1,65 @@
+{
+ "id": "7692898136137731342",
+ "url": "https://www.tiktok.com/@mikelikes_it/video/7692898136137731342",
+ "creator": "mikelikes_it",
+ "title": "OpenAI Dev Day (Sept 29 2026) keynote clip: OpenAI Marketplace lets enterprise customers spend existing OpenAI commitments on partner products",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "OpenAI Marketplace",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launched at OpenAI Dev Day 2026; 30+ launch partners"
+  },
+  {
+   "name": "CodeRabbit",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launch partner"
+  },
+  {
+   "name": "Notion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launch partner"
+  },
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launch partner"
+  },
+  {
+   "name": "ElevenLabs, HubSpot, Hyperspell, Factory, Adobe, Zendesk, Lovable (partial logo wall)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "visible on marketplace partner logo slide"
+  }
+ ],
+ "claims": [
+  "OpenAI Marketplace launched with 30+ launch partners including CodeRabbit, Notion, Vercel",
+  "Enterprise customers can use part of their existing OpenAI commitment to buy partner products",
+  "If you have an OpenAI commitment yourself you can spend it in the marketplace too",
+  "Caption: 'A budget already exists' -- gives vendors a route to enterprise buyers already spending with OpenAI"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay format: 'ON POINT TECH SOLUTIONS -- A new way to sell your AI software.' with a diagram OPENAI -> YOUR APP -> CUSTOMER and 'Existing enterprise commitments can buy partner products.'",
+  "'SAM ALTMAN | OPENAI DEV DAY', 'SOURCE: OPENAI / SEPTEMBER 29, 2026 Keynote excerpt. Claims are OpenAI's.'",
+  "Stage slide 'OpenAI Marketplace' with partner logo wall"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "A potential distribution channel for a B2B app: enterprise buyers can pay from pre-committed OpenAI spend. Only matters if we build on/sell into OpenAI-ecosystem enterprises; parallels the Claude marketplace mentioned in the Claude for Startups video."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to build today; add 'list in OpenAI Marketplace / Claude marketplace' to the go-to-market checklist for any B2B product and watch for listing requirements."
+ },
+ "verify": [
+  "What are the requirements/approval process to list in the OpenAI Marketplace as a small vendor?",
+  "Revenue share / fees for partners?",
+  "Is the marketplace open to non-enterprise apps or only enterprise SaaS?"
+ ]
+}

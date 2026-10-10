@@ -1,0 +1,47 @@
+{
+ "id": "7665404273257237791",
+ "url": "https://www.tiktok.com/@loganinthefuture/video/7665404273257237791",
+ "creator": "loganinthefuture",
+ "title": "Review of 'Town' AI chief-of-staff app (~$20/mo): drafts email replies in your voice and escalates calendar decisions with one-tap approvals",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Town (AI chief of staff)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Free to paid tier 'about $20 a month'; drafts email replies, proposes calendar invites with yes/no notification"
+  },
+  {
+   "name": "Creator's own Claude-based chief-of-staff system",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Hand-built over months; 'fixing my Claude system for the 17th time this week'"
+  }
+ ],
+ "claims": [
+  "Not sponsored; creator paid for the upgrade, roughly $20/month",
+  "Town 'nails your voice' in email draft replies better than expected",
+  "Escalates well: when someone proposed a 1:30 meeting, Town sent a notification 'I'm gonna send the invite if you're okay with that'; one tap and it handled the rest",
+  "Creator still has not calibrated it much",
+  "Was influenced by a creator on ChatGPT who did a four-part series on it"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Persistent caption 'I'm always skeptical ... But this tool gets an A' (talking head only)"
+ ],
+ "cta": "none (recommends following the other creator who did the series)",
+ "relevance": {
+  "score": 3,
+  "why": "Email triage and calendar escalation are the exact admin load a solo founder wants off their plate; a cheap off-the-shelf tool may beat maintaining a home-built Claude chief-of-staff, which the creator admits is fragile."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Low effort to trial at ~$20/mo, but it would duplicate an existing Claude-based email/calendar workflow; only worth it if that workflow is costing more than $20/mo of maintenance time."
+ },
+ "verify": [
+  "What is Town (vendor, URL, pricing tiers, which email/calendar providers it supports)?",
+  "Data access and privacy: it reads full inbox and calendar",
+  "Can it be driven from Claude Code / does it have an API, or is it a closed app?",
+  "Who is the 'four-part series' creator referenced?"
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "7692456410860227854",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7692456410860227854",
+ "creator": "chase.builds.ai",
+ "title": "Addy Osmani's agent-skills repo: nine Claude Code commands (/spec /plan /build /test /review /ship +3) enforcing an order of operations",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "addyosmani/agent-skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub; 98.8k stars, 10.4k forks shown; MIT licensed; link in bio"
+  },
+  {
+   "name": "Claude Code slash commands /spec /plan /build /test /review /ship",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "each command auto-loads the matching skill; three more commands not named"
+  }
+ ],
+ "claims": [
+  "A former Google director (Addy Osmani) put his whole engineering process into nine Claude Code commands",
+  "Each command pulls in the right skill on its own so Claude follows a process instead of guessing",
+  "Nothing gets built before there's a spec; nothing ships before a review",
+  "Close to 100,000 stars (screen: 98.8k)",
+  "Creator runs the same loop with his own spec and pipeline commands; review step is the one he never skips",
+  "MIT licensed and free"
+ ],
+ "how_to_steps": [
+  "Install the agent-skills repo (link in bio)",
+  "Run /spec to write the spec before any code",
+  "Run /plan, then /build, then /test",
+  "Run /review (never skip), then /ship"
+ ],
+ "on_screen_only": [
+  "GitHub header: addyosmani/agent-skills with Fork 10.4k and Star 98.8k circled; caption '~100K stars'",
+  "Caption cards: 'ex-Google director', '9 Claude Code commands', 'spec, plan, build...', 'auto-loads the right skill', 'no spec, no build', 'I run the same loop', 'never skip review', 'MIT, free'"
+ ],
+ "cta": "Repo link in my bio",
+ "relevance": {
+  "score": 5,
+  "why": "Exactly the kind of process scaffolding a solo founder needs in Claude Code: enforced spec -> plan -> build -> test -> review -> ship with reusable slash commands. Addy Osmani is a credible author."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "High value, low effort: clone the repo, copy the commands/skills into .claude/, adapt to our stack. Even if we keep only /spec and /review, it cuts rework. Check the three unnamed commands."
+ },
+ "verify": [
+  "Confirm addyosmani/agent-skills exists, real star count, and last commit date",
+  "What are the three other commands and what do the skills actually contain?",
+  "Does it install as Claude Code slash commands (.claude/commands) or as skills, and does it conflict with our existing CLAUDE.md?"
+ ]
+}

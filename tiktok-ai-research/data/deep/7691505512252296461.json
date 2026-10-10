@@ -1,0 +1,54 @@
+{
+ "id": "7691505512252296461",
+ "url": "https://www.tiktok.com/@james_creates_/video/7691505512252296461",
+ "creator": "james_creates_",
+ "title": "'$0 AI side hustle': generate gym walkthrough videos from a Google Maps listing with OpenArt director mode and sell for $500",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "OpenArt",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "openart.ai/try, use 'Director Mode'; AI video generator ('Vibe Direct Your Next Video')"
+  },
+  {
+   "name": "Google Maps",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "source of gym listings and photos"
+  }
+ ],
+ "claims": [
+  "You can start an AI side hustle with $0, a laptop and 'the right website'",
+  "OpenArt director mode makes an entire walkthrough video up to 5 minutes long from a listing link",
+  "Sell the video to the gym for $500"
+ ],
+ "how_to_steps": [
+  "Search Google Maps for a local gym without good walkthrough videos; copy the listing link",
+  "Go to openart.ai/try and switch to Director Mode",
+  "Paste the creator's prompt plus the listing URL and press enter",
+  "Wait for the generated walkthrough video (up to 5 min)",
+  "Call the gym and sell the video for $500"
+ ],
+ "on_screen_only": [
+  "Google search 'gyms in louisville' with Maps business results (The Factory Gym, Baptist Health/Milestone etc., 4.7 rating)",
+  "OpenArt sidebar: Home, Chat Mode, Director Mode, Video, Image, World, Character, Audio, MCP; model selector 'GPT 5.6 Luna'",
+  "Prompt text visible: 'please take this gym listing and make a realistic walk through video of the gym so customers know what to expect when they show up. use just the photos in the google business listing to reference for the video, it should be fit for social media, no longer than 1 min: https://share.google/...'",
+  "OpenArt project cards: 'Trinidad Golf Course Flyover', 'Premium Gym Walkthrough'",
+  "Overlay: 'How I'd start an AI side hustle from $0'"
+ ],
+ "cta": "Comment below and I'll send you the link",
+ "relevance": {
+  "score": 1,
+  "why": "Local-services side hustle with AI video; not related to building apps with Claude Code. Output quality and sellability unproven."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth doing. The idea (AI promo video from listing photos) is generic; OpenArt is not free beyond trial credits."
+ },
+ "verify": [
+  "Is OpenArt director mode actually free, and what are the credit limits?",
+  "Legal: using business listing photos (often user-uploaded) in a generated video sold back to the business",
+  "Has anyone actually closed a $500 sale this way or is it a comment-bait funnel?"
+ ]
+}

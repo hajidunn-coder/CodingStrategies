@@ -1,0 +1,51 @@
+{
+ "id": "7691911646532439309",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691911646532439309",
+ "creator": "bengusberg",
+ "title": "'andrej-karpathy-skills' repo: Claude skills that encode Karpathy's four critiques of Claude Code (assumptions, overcomplication, orthogonal edits, loops not tasks)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "multica-ai/andrej-karpathy-skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub repo (Public) shown on screen; transcript claims 216,000 stars"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the tool whose failure modes are being addressed"
+  }
+ ],
+ "claims": [
+  "The 'godfather of vibe coding' (Andrej Karpathy, photo shown) called out the problems of Claude Code",
+  "Repo has 216,000 stars (transcript; not visible on screen)",
+  "Four problems: (1) Claude makes assumptions without asking and hides confusion; (2) overcomplicates and leaves dead code, '1,000 extra lines of spaghetti'; (3) change one thing, breaks three unrelated things; (4) power users create loops instead of tasks -- give Claude a goal and let it loop until reached",
+  "Free; solves all four"
+ ],
+ "how_to_steps": [
+  "Go to the GitHub repo multica-ai/andrej-karpathy-skills",
+  "Copy the URL into Claude and ask it to help you install",
+  "Use the resulting skills to make Claude ask before assuming, keep edits minimal/orthogonal, and work in verifiable loops"
+ ],
+ "on_screen_only": [
+  "Photo of Andrej Karpathy (unnamed in transcript)",
+  "Caption cards: 'Wrong assumptions, hidden confusion, missing tradeoffs' / 'Overcomplication, bloated abstractions' / 'Orthogonal edits, touching code you shouldn't' / 'Leverage through tests-first, verifiable success criteria'",
+  "GitHub header: 'multica-ai / andrej-karpathy-skills  Public'"
+ ],
+ "cta": "Try it out and let me know what you build; follow for more",
+ "relevance": {
+  "score": 4,
+  "why": "The four failure modes are exactly what a solo founder hits daily in Claude Code; a CLAUDE.md/skill that enforces 'ask before assuming, minimal diff, tests-first, loop to verifiable criteria' is high leverage."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Low effort: read the repo's SKILL.md, pull the useful rules into our own CLAUDE.md or a skill rather than installing blindly. The underlying principles are sound regardless of star count."
+ },
+ "verify": [
+  "Does multica-ai/andrej-karpathy-skills exist and what is the real star count (216k is implausible for a skills repo)?",
+  "Is it actually derived from Karpathy's published guidance, or just branded with his name?",
+  "What does the skill concretely contain -- prompt rules only, or hooks/scripts?"
+ ]
+}

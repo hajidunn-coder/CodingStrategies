@@ -1,0 +1,108 @@
+{
+ "id": "7657383720315260173",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7657383720315260173",
+ "creator": "ai.honeycove",
+ "title": "NVIDIA build.nvidia.com offers free API endpoints for 80+ hosted models (Kimi, DeepSeek, GLM, MiniMax, Nemotron) with OpenAI-compatible keys",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "NVIDIA Build (build.nvidia.com)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'Start Building Your AI Here.' catalog with Free Endpoint badge and 'Create API key' button; base_url https://integrate.api.nvidia.com/v1"
+  },
+  {
+   "name": "nemotron-3-ultra-550b-a55b",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "NVIDIA; 'hybrid Mamba-Transformer MoE with 1M context'; 8M downloads"
+  },
+  {
+   "name": "kimi-k2.6",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Moonshot AI; '1T multimodal MoE for long-horizon coding, agentic tool use'"
+  },
+  {
+   "name": "deepseek-v4-flash / deepseek-v4-pro",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "DeepSeek; v4-flash '284B MoE, 1M-token context, fast coding and agents'; code sample uses model deepseek-ai/deepseek-v4-pro"
+  },
+  {
+   "name": "step-3.7-flash",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "StepFun; sparse MoE reasoning model"
+  },
+  {
+   "name": "cosmos3-nano / cosmos3-nano-reasoner",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "NVIDIA video/vision models"
+  },
+  {
+   "name": "qwen-image / qwen-image-edit",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Qwen image models"
+  },
+  {
+   "name": "chatterbox-multilingual-tts",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Resemble.AI TTS, 23 languages"
+  },
+  {
+   "name": "NemoClaw",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Introducing NemoClaw — Safe agent execution. Control access. Protect data.' banner on build.nvidia.com"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Claimed you can plug the key into Claude Code or Cursor; a Claude Code session is shown on screen"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Named as a target for the key"
+  }
+ ],
+ "claims": [
+  "NVIDIA gives free access to over 80 top AI models including Kimi, MiniMax, GLM, DeepSeek, 'OpenAI and more' in one place",
+  "You 'don't need to pay for AI API keys anymore'",
+  "Pick any model, click generate, get an API key instantly, plug into Claude Code, Cursor or any project"
+ ],
+ "how_to_steps": [
+  "Go to build.nvidia.com",
+  "Pick a model marked 'Free Endpoint' (e.g. deepseek-ai/deepseek-v4-pro)",
+  "On the model page, click 'Generate API Key' / 'Create API key'",
+  "Use the OpenAI-compatible snippet: from openai import OpenAI; client = OpenAI(base_url='https://integrate.api.nvidia.com/v1', api_key='nvapi-...'); client.chat.completions.create(model='deepseek-ai/deepseek-v4-pro', ...)"
+ ],
+ "on_screen_only": [
+  "Python sample with base_url 'https://integrate.api.nvidia.com/v1', api_key beginning 'nvapi-' (partially visible), extra_body={'chat_template_kwargs': {'thinking': False}}, max_tokens, top_p, temperature, stream=False",
+  "Model page tabs: Build | Playground | Model Card; language tabs Python / LangChain / Node / Shell; 'Prototype — Start building with a free API endpoint.'",
+  "build.nvidia.com homepage: 'Use Inference Endpoints' and 'Use Agentic Skills — Pre-built capabilities your agent can call' (AI and Machine Learning 143 skills, Accelerated Computing 24 skills, Physical AI 10 skills, Developer Tools 9 skills); 'More Models', 'View Skills'",
+  "A Claude Code session with '.claude/settings.local.json', 'Playwright traces', todos: Update task model, Create webhook handles, Add UI components, Build and test; Search pattern 'http|request|handler|server', Read apiserver.ts (600 lines)",
+  "Disclaimer at bottom of model pages: 'AI models generate responses and outputs based on complex algorithms...'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Free OpenAI-compatible endpoints for open-weight frontier models are useful for cheap subagents, evals or batch jobs, but Claude Code's core loop needs Anthropic models; 'plug into Claude Code' is at best via a proxy."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a 10-minute signup to have a free fallback key for non-critical tasks; not worth re-architecting anything. Free tier almost certainly rate-limited and not for production."
+ },
+ "verify": [
+  "Actual rate limits and terms of the free endpoints on build.nvidia.com (requests/min, data retention, commercial use)",
+  "Whether 'OpenAI' models are really served free there or the creator conflated it",
+  "How one would actually route Claude Code to a non-Anthropic endpoint (ANTHROPIC_BASE_URL proxy?) and whether it's worth it",
+  "Which models are 'Free Endpoint' vs 'Downloadable' only; many cards shown are downloadable only"
+ ]
+}

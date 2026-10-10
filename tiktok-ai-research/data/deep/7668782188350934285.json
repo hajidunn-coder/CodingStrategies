@@ -1,0 +1,63 @@
+{
+ "id": "7668782188350934285",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7668782188350934285",
+ "creator": "kevinfremon",
+ "title": "Demo of a 'board of directors' feature in the Trillion agent: named advisor personas (Gary Vee, Daymond John, Seth Godin, Julie Zhuo) debate a marketing question and return a verdict; prompt at hellotrillion.ai/p/the-board",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Trillion (creator's Jarvis-style agent)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Local web UI at localhost:7777; voice-triggered 'Hey Trillion, let's have a board meeting'; GitHub repo waitlist 3,500+"
+  },
+  {
+   "name": "The Board prompt",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "HELLOTRILLION.AI/P/THE-BOARD — the shared prompt to build your own board"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "#ClaudeCode #Claude hashtags; system presumably Claude-based"
+  }
+ ],
+ "claims": [
+  "Over 3,500 members on the GitHub repo waitlist",
+  "Board personas programmed in: Gary Vaynerchuk, Daymond John, Julie Zhuo, Seth Godin (and others); each gives its own opinion with a confidence level and cited sources, then a final verdict",
+  "Idea credited to a friend named Eric",
+  "Example verdict on 'how to market Trillion given 3,500 waitlist members': don't market the raw number; find who is behind it; hunt the obsessive minority who evangelize; put money behind organic posts that already converted; turn 5-6 named power users into co-sign stories; one sentence/one person/one problem before writing copy; time-box to a week, pull GitHub activity, interview 5-8 loudest users, then return to revenue"
+ ],
+ "how_to_steps": [
+  "Define a set of advisor personas (real public figures' known philosophies) inside your agent",
+  "Trigger a 'board meeting' with a business question (voice or text)",
+  "Each persona produces an opinion with a confidence rating and sources; the system synthesizes a final verdict with concrete next actions",
+  "Copy the prompt from hellotrillion.ai/p/the-board to build your own"
+ ],
+ "on_screen_only": [
+  "Trillion web UI at localhost:7777 with a glowing network-graph board visualization",
+  "Persona card: 'Julie Zhuo — Design Craft & Product Judgment — MEDIUM CONFIDENCE — 2 sources cited'",
+  "Board members visible: Gary Vaynerchuk, Seth Godin, Daymond John, Julie Zhuo (plus more avatars)",
+  "Board question text: 'We now have over 3,500 members on the Hello Trillion GitHub repo (the OSS release of Trillion). How should we best market Trillion now, given this milestone?'",
+  "Verdict panel: 'Board unanimously says don't market the number, find out who's behind it first...'",
+  "Bottom bar showing spend counters (e.g. '$45,492', '$36.13', '513 TH/s') — unclear meaning",
+  "URL card: HELLOTRILLION.AI/P/THE-BOARD"
+ ],
+ "cta": "Steal the prompt at hellotrillion.ai/p/the-board; join the GitHub waitlist; 'Who's on your board?'",
+ "relevance": {
+  "score": 3,
+  "why": "Same 'advisor council' idea as bengusberg's video but with named-expert personas, confidence levels and citations; the verdict format (time-boxed, concrete actions) is a useful template for a solo founder's decision-making."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Fetch the shared prompt and wrap it as a Claude Code skill; an hour at most. Skip the fancy UI. Value depends on whether persona fidelity adds anything over a generic skeptic/operator council."
+ },
+ "verify": [
+  "Does hellotrillion.ai/p/the-board actually host the prompt and under what license?",
+  "Trillion itself is unreleased (waitlist); the visualization is not reproducible",
+  "Hallucination risk: personas 'citing sources' for what Gary Vee or Seth Godin would say",
+  "Whether using real people's names as personas has any reputational/legal issue in a product"
+ ]
+}

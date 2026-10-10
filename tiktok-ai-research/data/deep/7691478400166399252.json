@@ -1,0 +1,69 @@
+{
+ "id": "7691478400166399252",
+ "url": "https://www.tiktok.com/@practicalyai/video/7691478400166399252",
+ "creator": "practicalyai",
+ "title": "Claude + 'hyperframes' skill + a TTS voice turns any topic/paper into an explainer video (NotebookLM comparison)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude (Opus 5.5)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "creator says use the Opus 5.5 model in Claude"
+  },
+  {
+   "name": "hyperframes",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claude skill named 'hyperframes' that generates animated explainer video frames; no URL shown"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "voice/TTS model option"
+  },
+  {
+   "name": "Google voice model",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternative TTS; not named specifically"
+  },
+  {
+   "name": "NotebookLM",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "compared against; 'only presentations, not real explainer videos'"
+  }
+ ],
+ "claims": [
+  "Claude can turn any topic, paper or article into a real explainer video, which NotebookLM cannot",
+  "'The best I've seen AI do at the moment' for explainer videos",
+  "Series: 'Things you didn't know you can do with AI' part 258"
+ ],
+ "how_to_steps": [
+  "Open Claude and select the Opus 5.5 model",
+  "Install the skill called 'hyperframes'",
+  "Install/connect a voice model (Google or ElevenLabs)",
+  "Give Claude a topic, paper or article and ask for an explainer video"
+ ],
+ "on_screen_only": [
+  "Example video frames credited 'credits: @deedydas on X' -- slides titled 'The frontier' (a jagged frontier line that grows a branching tree: 'But get close, and it's full of gaps' / 'Pry one open, and sometimes there's a whole new field inside'), 'What keeps you going?' (curiosity / delight / ambition bubbles: 'When all three point at the same thing, that's the strongest fuel there is'), 'Goals you can describe' vs 'Goals you can't' ('Plans only work for goals you can describe in advance')",
+  "Overlay: 'Claude did what notebookLM could not'",
+  "Overlay: 'THINGS YOU DIDN'T KNOW YOU CAN DO WITH AI (part 258)'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Explainer videos from a paper or doc could be useful for product marketing / onboarding content, and it is a Claude skill so it fits the existing workflow; but the demo is borrowed from @deedydas and no install path is shown."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a 30-minute test if the 'hyperframes' skill is findable; needs an ElevenLabs/Google TTS key. Low priority unless making marketing video content."
+ },
+ "verify": [
+  "Does a Claude skill called 'hyperframes' exist publicly (GitHub/skills.sh)? Who maintains it?",
+  "Is the demo output really from this skill or from @deedydas's own pipeline?",
+  "What does rendering to an actual .mp4 require (Remotion? ffmpeg?) and what is the ElevenLabs cost per minute?"
+ ]
+}

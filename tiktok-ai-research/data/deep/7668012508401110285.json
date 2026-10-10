@@ -1,0 +1,60 @@
+{
+ "id": "7668012508401110285",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7668012508401110285",
+ "creator": "kevinfremon",
+ "title": "WWWHH sub-agent handoff note (Why, What to do, Where the files are, Heads up, How sure) for cleaner orchestrator handoffs in 'Trillion'",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion (creator's orchestrator / Jarvis-style agent)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Custom-built orchestrator with sub-agents; GitHub repo waitlist at 3,510 signups, open-source drop promised at 5,000 (screen says 10,000)"
+  },
+  {
+   "name": "React Bits",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Example 'heads up' dependency: 'this project needs React Bits installed'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "#ClaudeCode hashtag; pattern applies to Claude Code subagents"
+  }
+ ],
+ "claims": [
+  "Sub-agent handoffs 'got way better' after adding this framework at the tail end of handoff logic from a sub-agent to the orchestrator to the next sub-agent",
+  "3,510 people on the GitHub repo waitlist; at 5,000 he shifts focus to getting the Trillion repo ready",
+  "Sharing file locations instead of file contents keeps orchestrator context from bloating",
+  "A confidence threshold lets the orchestrator send work back instead of passing it on"
+ ],
+ "how_to_steps": [
+  "When a sub-agent finishes, have it return a short 'sticky note' with five fields:",
+  "W — Why this is ready to move on (e.g. 'The design is finished and ready to be turned into real code')",
+  "W — What to do next (e.g. 'Build the pricing page into the actual app')",
+  "W — Where the stuff is: list of file locations edited/added, not the file contents",
+  "H — Heads up for the next sub-agent (e.g. 'The project needs React Bits installed')",
+  "H — How sure am I (percentage, e.g. 92%); orchestrator enforces a threshold and bounces work back below it"
+ ],
+ "on_screen_only": [
+  "Waitlist dashboard: 'LIVE COUNT 3,510 signed up so far — 1,490 to go until focused work on a deploy-ready Trillion'; progress bar 2.5K -> 5K; header mentions open-source repo drops on GitHub at 10,000",
+  "WWWHH card with the filled example: WHY: 'The design is finished and ready to be turned into real code.' WHAT TO DO: 'Build the pricing page into the actual app.' WHERE THE STUFF IS: 'A list of the file locations. Not the actual files but where they are.' HEADS UP: 'The project needs ReactBit installed.' HOW SURE AM I: '92%.'",
+  "Trillion 'T' logo on a starfield"
+ ],
+ "cta": "Share your own sub-agent tips in comments; join the GitHub repo waitlist",
+ "relevance": {
+  "score": 4,
+  "why": "Directly transferable to Claude Code subagent definitions: a fixed handoff schema with file paths and a confidence score is a practical fix for context bloat and half-finished handoffs."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Add a 'final report must contain Why / What next / Where (paths) / Heads up / Confidence %' instruction to subagent prompts and have the orchestrator gate on confidence. Fifteen minutes, no tooling."
+ },
+ "verify": [
+  "Trillion is not public yet (waitlist); nothing to install",
+  "Pick a sensible confidence threshold and check whether self-reported confidence is actually calibrated",
+  "Compare against Claude Code's existing SubagentHandback pattern to avoid duplicate structure"
+ ]
+}
