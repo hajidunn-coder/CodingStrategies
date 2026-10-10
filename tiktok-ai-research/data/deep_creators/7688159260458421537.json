@@ -1,0 +1,61 @@
+{
+ "id": "7688159260458421537",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7688159260458421537",
+ "creator": "ai_vanta_ai",
+ "title": "'Free LLM API' / Awesome Free LLM APIs: a GitHub router that chains 600+ free-tier models (Gemini, GLM, Kimi, Grok, Mistral, Qwen) behind Claude Code and auto-switches with a handoff note when your Claude limit hits",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Free LLM API (GitHub)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Claims 7B free tokens/month across 600+ models; link in description; repo name not shown"
+  },
+  {
+   "name": "Awesome Free LLM APIs",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "Shown on screen as the name; likely an awesome-list of free-tier endpoints (Gemini free tier table with base URL generativelanguage.googleapis.com/v1beta)"
+  },
+  {
+   "name": "Google Gemini free tier",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "Table: Gemini Flash models 1M context, 65K max output, 15 RPM / 1,500 RPD; 'Free tier, no credit card. Free-tier prompts may be used by Google to improve products.'"
+  }
+ ],
+ "claims": [
+  "Over 7 billion free AI tokens per month",
+  "Links Claude Code to 600+ free models through one setup",
+  "When the Claude limit runs out it automatically switches to the next best model and leaves a context note for the new model"
+ ],
+ "how_to_steps": [
+  "Comment 'Claude' and find the link in the description; no setup shown"
+ ],
+ "on_screen_only": [
+  "Title card 'CLAUDE FOR FREE [with 7 billion tokens]'",
+  "'Awesome Free LLM APIs' logo with pixel sunglasses; '7 BILLION free AI'; '600+ AI MODELS'",
+  "Gemini free-tier rate-limit table (Gemini 3.7 Flash / 3.6 Flash / 3.5 Flash: 1M context, 65K output, 15 RPM, 1,500 RPD)",
+  "Mock UI: 'LIMIT REACHED 70%', 'CLAUDE CODE - SWITCH MODEL: Switching model... Claude Code -> Gemini -> GLM-5.0', 'OUT OF CONTEXT' sticky note 'Layout, copy, Stripe checkout / Fix the mobile nav', 'CAUGHT UP'"
+ ],
+ "cta": "Comment 'Claude'; link in description",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already liked OmniRoute (chains ~350 free tiers) and NVIDIA free endpoints; this is the same idea with a bigger number. Free-tier data may be used for training (Gemini note on screen), a risk for client/app code."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Do not route production code through random free tiers; the 'handoff note on model switch' idea is the only transferable technique and Haji's context-transfer skill already covers it."
+ },
+ "verify": [
+  "Actual repo name/URL (Free LLM API vs Awesome Free LLM APIs); maintained or hype",
+  "How the Claude Code integration works (ANTHROPIC_BASE_URL proxy?) and whether it violates Anthropic ToS",
+  "Free-tier privacy terms per provider (Gemini free tier trains on prompts)",
+  "7B tokens figure is a sum of theoretical rate limits, not a real allowance"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked OmniRoute / NVIDIA free-endpoint content; adds only the auto-switch-with-handoff-note gimmick and a privacy warning worth remembering."
+ }
+}

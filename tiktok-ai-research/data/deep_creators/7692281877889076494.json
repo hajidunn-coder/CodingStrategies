@@ -1,0 +1,80 @@
+{
+ "id": "7692281877889076494",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7692281877889076494",
+ "creator": "chase_ai_",
+ "title": "Claude Code 'mods' (shipped Oct 1 2026, ex 'function hooks'): TypeScript plugins that intercept any event before/instead/after/wrap, add UI panes; demo of a Next Steps pane, a cache-clock + compact button, and an 'audit my last 30 sessions and suggest 5 mods' prompt",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code mods",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Anthropic blog 'Customize Claude Code with mods -- Change how Claude Code behaves and looks with a few lines of TypeScript', Product announcements, October 1, 2026; installed via the plugin system (/plugins)"
+  },
+  {
+   "name": "Next Steps mod",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "Custom pane 'What's up next, Chase?' offering 3 clickable next prompts after each task"
+  },
+  {
+   "name": "Cache clock / compact mod",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Status element showing minutes until the prompt cache goes cold (1 hour) plus a one-click compact button"
+  },
+  {
+   "name": "Multiplayer Doom mod",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "Tweet by Jarrod Watts: spins up a Doom server while waiting on Claude"
+  },
+  {
+   "name": "Chase AI+ Claude Code Master Class / AI OS",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's paid community"
+  }
+ ],
+ "claims": [
+  "Mods are the release of 'function hooks' Boris Cherny teased early September; now a live feature",
+  "A mod can change what happens BEFORE an event, replace the event (INSTEAD), run AFTER, or WRAP both (e.g. for 'delete build folder': pause and list 41 files; move to Recycle Bin instead; show a receipt; back up first for undo)",
+  "Mods work in both the desktop app and the terminal",
+  "Prompt cache gives ~95% discount but goes cold after 1 hour; the cache-clock mod shows remaining time",
+  "Claude already knows how to generate and install mods; it creates a plugin, installs it, asks you to reload plugins; it then runs automatically like a hook"
+ ],
+ "how_to_steps": [
+  "Run /plugins to see installed mods",
+  "Audit prompt: 'Audit how I use Claude Code. Read my last 30 sessions, see what I ask for over and over, then suggest 5 Claude Code mods that would fix these issues'",
+  "Pick one ('I like mod number one, implement that'); Claude writes the TypeScript plugin, installs it, asks to reload plugins",
+  "Turn off with natural language ('turn that mod off / remove it')"
+ ],
+ "on_screen_only": [
+  "Anthropic blog header 'Customize Claude Code with mods' (Product announcements, Claude Code, October 1, 2026)",
+  "Diagram 'One event, up close: Claude deletes files' with columns 1 BEFORE (pause, list the 41 files, ask), 2 INSTEAD (move to Recycle Bin), 3 AFTER (receipt 'Deleted 41 files (2 MB) from build/'), 4 WRAP (back up first, Undo button); code snippets like 'const files = await listFiles(path)', 'await moveToTrash(path)'",
+  "Claude Code v2.1.287 terminal: 'Fable 5.1 with high effort - Claude Max', 'Get to finished work sooner with Opus 5.5. Switch anytime with /model', status line 'Chase | Fable 5.1 | ctx: --', 'auto mode on (shift+tab to cycle)'",
+  "Next Steps pane: 'What's up next, Chase?' with Overview and three option cards (commit it / polish the design / ...) after building a habit tracker",
+  "Audit result list: Rehearsal mod (demos), Project tracker, Mod doctor, Cache clock, Undo module, dictation-fix; honorable mention",
+  "Tweet (Jarrod Watts): 'I made one that connects to a multiplayer Doom server while Claude is busy...'"
+ ],
+ "cta": "Join Chase AI+ (pinned comment link)",
+ "relevance": {
+  "score": 5,
+  "why": "This is the biggest Claude Code platform change in the batch and Haji's core topic: mods let a solo founder bake his own guardrails (trash-instead-of-delete, backup-then-undo, cache clock, next-step pane) into the harness itself. The 'audit my last 30 sessions' prompt is a cheap way to find what to build."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Do this week: run the audit prompt, ship 2-3 mods (safe-delete wrap, cache/compact clock, next-steps pane) as a personal plugin. Also fits the liked Claude-Code plugin collections; replace brittle shell hooks with typed mods."
+ },
+ "verify": [
+  "Confirm the Anthropic mods announcement and the API surface (events list, UI pane API, TypeScript SDK) in current docs",
+  "Do mods run in cloud/Cowork sessions or only local desktop/terminal",
+  "Reading 'last 30 sessions' requires transcript access; check what the audit prompt actually reads (~/.claude/projects jsonl)",
+  "Cache TTL is 5 min by default on API; 1-hour cache for Max subscription needs checking"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New platform feature: Claude Code mods (TypeScript event interception + custom UI panes) with concrete example mods and an audit prompt. Liked set covers plugins/skills/hooks but nothing on mods."
+ }
+}

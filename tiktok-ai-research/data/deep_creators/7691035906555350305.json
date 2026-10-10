@@ -1,0 +1,62 @@
+{
+ "id": "7691035906555350305",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7691035906555350305",
+ "creator": "ai_vanta_ai",
+ "title": "'Everything Claude Code' (github.com/affaan-m/ECC) by Anthropic hackathon winner Affaan Mustafa: 181 skills, 47 sub-agents, 79 commands, security/memory/continuous-learning skills, works across Claude Code, Cursor, Codex, Gemini",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "affaan-m/ECC (Everything Claude Code)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/affaan-m/ECC; README tagline 'The operating system for AI agent harnesses' v2.0 'the system, not the config'; MIT license; sections Security, Contributing"
+  },
+  {
+   "name": "Encode AI hackathon",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Author won $15,000 in API credits; built a startup in 8 hours"
+  },
+  {
+   "name": "Claude Code, Cursor, Codex, OpenCode, Gemini, Zed, Copilot",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Listed as supported harnesses on README header"
+  }
+ ],
+ "claims": [
+  "181 skills, 47 sub-agents, 79 ready-made commands (README sidebar shows 'SKILLS 261')",
+  "Author spent 10 months refining it on real product work",
+  "One skill scans for security issues, one optimizes memory, one learns from past sessions",
+  "Author used it to build a startup in 8 hours and won the hackathon grand prize / $15,000 in API credits"
+ ],
+ "how_to_steps": [
+  "Go to github.com/affaan-m/ECC and follow 'Install ECC' (README shows a one-line install, recommended setup, and per-harness notes)"
+ ],
+ "on_screen_only": [
+  "README header: 'The operating system for AI agent harnesses. Skills, instincts, memory, security scanning, and research-first development -- a complete system, not a config pack.'; harness badges Claude Code, Codex, Cursor, OpenCode, Gemini, Zed, Copilot; sidebar skills list: agent-harness-constr..., context-budget, continuous-agent-loop, agentic-os, autonomous-loops, mcp-server-patterns, ai-regression-testing, agent-eval, content-hash-cache-g..., sub-runtime",
+  "GitHub profile: affaan-m 'Affaan Mustafa', 'The Agentic Exchange for Compute @Ito-Markets ... OSS meta-harness for AI agents @ECC-Tools', PRO, NYC, 'Answered 18 discussions', repo banner 'everything is tokens'",
+  "'What You'll Learn' table: Token Optimization (model selection, system prompt slimming, background process...), Memory Persistence (hooks that save/load context across sessions automatically), Continuous Learning (auto-extract patterns from sessions into reusable skills), Verification Loops (checkpoint vs continuous evals, grader types, pass@k metrics), Parallelization (git worktrees, cascade method, when to scale instances), Subagent Orchestration (the context problem, iterative retrieval pattern); 'The Security Guide: Attack vectors, sandboxing, sanitization, CVEs, AgentShield'; 'The Shorthand Guide to Everything Agentic Security'",
+  "'YOUR COMMIT HISTORY ... pattern spotted' graphic; Encode AI logo; '$15,000 IN API CREDITS'; sponsor logos Atlas Cloud, KIMI, Ito"
+ ],
+ "cta": "none (desc truncated)",
+ "relevance": {
+  "score": 4,
+  "why": "A single, actively maintained mega-repo that packages many of the things Haji has been collecting piecemeal (memory hooks, continuous learning into skills, verification loops, security scanning, worktree parallelism). Risk: 181 skills bloats context, the opposite of the liked 'keep CLAUDE.md thin' advice."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Worth 30 minutes: clone, read the 'What You'll Learn' guides, and cherry-pick 3-5 skills (memory persistence hooks, continuous-learning, security scan, verification loop) into Haji's own plugin rather than installing everything. Also compare with GStack and Addy Osmani agent-skills already liked."
+ },
+ "verify": [
+  "Repo exists at github.com/affaan-m/ECC, star count, last commit, MIT license",
+  "Install footprint: does it rewrite ~/.claude or CLAUDE.md globally; can skills be installed selectively",
+  "Token cost of the installed skill index per session",
+  "Which hackathon (Encode AI x Anthropic?) and whether the '8 hours' claim is documented"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New repo: affaan-m/ECC, a complete harness 'OS' with memory, continuous learning, verification and security guides; the liked set has GStack, Osmani agent-skills and Karpathy skills but not this one."
+ }
+}

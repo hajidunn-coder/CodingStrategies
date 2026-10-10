@@ -1,0 +1,60 @@
+{
+ "id": "7666262537184464148",
+ "url": "https://www.tiktok.com/@millee.md/video/7666262537184464148",
+ "creator": "millee.md",
+ "title": "'Securitymaxxing pt.2': 10-point security checklist for vibe-coded apps (IDOR/access control, API key origin restriction, package updates, upload type/size checks, parameterized queries, tokens in secure cookies not localStorage, Stripe webhook verification, security headers, no over-fetching other users' data, 2FA on hosting/DB/domain)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Stripe webhooks",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "verify webhook signatures"
+  },
+  {
+   "name": "Stigg",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "diagram shows Stigg <-> Stripe (incidental stock image)"
+  }
+ ],
+ "claims": [
+  "Proper access control so changing an ID in the URL cannot expose others' records",
+  "API key must not accept requests from websites other than your own",
+  "Packages actually updated",
+  "File uploads checked for type and size",
+  "Database queries parameterized",
+  "Login tokens in secure cookies, not localStorage",
+  "Stripe webhooks verified",
+  "Basic security headers enabled",
+  "API responses do not leak other users' data",
+  "2FA on hosting, database and domain accounts",
+  "Next video promises prompts to fix each"
+ ],
+ "how_to_steps": [
+  "Walk your app through the 10 checks above and count how many pass",
+  "Follow for the fix prompts"
+ ],
+ "on_screen_only": [
+  "Overlay 'Securitymaxxing knowledge (vibecoded edition) pt.2'",
+  "Stock diagrams: 'ACCESS CONTROLS' (physical vs logical), 'Copy your API key' dialog, package tooling diagram, file upload UI, C# SqlCommand parameterized query code ('SELECT TOP 1000 * FROM Users WHERE DisplayName = @DisplayName'), OAuth client/auth-server/resource-server diagram, Stigg/Stripe diagram, perpetrator-server-victim XSS diagram, 2FA login flow"
+ ],
+ "cta": "Comment how many your app checked off; follow for fix prompts",
+ "relevance": {
+  "score": 3,
+  "why": "Concrete checklist that applies to every app Haji ships (Supabase/Stripe stacks). Veteran-facing apps hold PII, so IDOR, over-fetching and 2FA on infra accounts matter."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Turn the 10 items into a /security-review checklist prompt or CLAUDE.md pre-ship gate and run it on each app; most fixes are small (cookie flags, webhook verification, headers, RLS). Hours, not days."
+ },
+ "verify": [
+  "'API key doesn't accept requests from other websites' conflates CORS/referrer restrictions with real auth; public keys still need server-side checks",
+  "Follow-up fix-prompt video exists?"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Overlaps the liked 'six login-security gaps' and 'top 5 security holes' videos but adds items not covered there: upload validation, Stripe webhook signature verification, secure-cookie vs localStorage tokens, security headers, response over-fetching, and 2FA on hosting/DB/domain."
+ }
+}

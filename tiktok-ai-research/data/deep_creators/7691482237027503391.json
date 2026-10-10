@@ -1,0 +1,51 @@
+{
+ "id": "7691482237027503391",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7691482237027503391",
+ "creator": "nate.b.jones",
+ "title": "Plain-English explainer of credential vaulting for agents: a partitioned vault plus a guard agent hands out placeholder tokens that are swapped for the real password/card at the last second, so the chat agent never sees secrets",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Muse (Meta)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named as an agent that uses this vault pattern"
+  },
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named as an agent that uses this vault pattern"
+  }
+ ],
+ "claims": [
+  "The agent you talk to never sees or touches the password or credit card number",
+  "Secrets live in a separate, encrypted, partitioned vault (possibly a separate VM)",
+  "A second 'security agent' guards the vault and approves or denies token requests",
+  "The agent is given a placeholder token ('IOU') and the security layer swaps in the real secret just before the request leaves the machine",
+  "This is how it works on Muse, Instinct and 'anywhere'; claims that agents read your passwords are misinformation"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Title card: 'AI Explained: How Agents Use Your Password Without Seeing It'",
+  "Talking head only; no UI, URLs or repos"
+ ],
+ "cta": "Let me know if you have more questions",
+ "relevance": {
+  "score": 2,
+  "why": "Good architecture vocabulary (vault + policy agent + placeholder token substitution) if Haji ever builds an agent that handles user payment/credentials; otherwise explainer content."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Pattern is worth copying if building an agent that pays or logs in on a user's behalf: keep secrets in a separate service, give the LLM only opaque placeholders, substitute at the egress proxy. Doable with an existing secrets manager; not needed for current apps."
+ },
+ "verify": [
+  "The 'it works this way everywhere' claim is overstated: many hobby agent setups put API keys straight in the LLM's environment",
+  "Which products actually implement a guard agent + egress substitution vs. a plain secrets store?"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the egress-time secret substitution / placeholder-token design pattern for agents that handle credentials; liked set only covered app auth hygiene and prompt-injection warnings."
+ }
+}

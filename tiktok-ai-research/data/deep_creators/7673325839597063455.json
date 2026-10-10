@@ -1,0 +1,60 @@
+{
+ "id": "7673325839597063455",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7673325839597063455",
+ "creator": "buildwithneej",
+ "title": "Creator switches Claude Code back from Opus 5 to Opus 4.6 for instruction-following and less over-engineering; the command is '/model claude-opus-4-6[1m]'",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Opus 4.6 (1M context)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "/model claude-opus-4-6[1m]"
+  },
+  {
+   "name": "Claude Opus 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Described as highest benchmark scores but worse at staying on task"
+  },
+  {
+   "name": "Claude Code /model command",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Switch models mid-session"
+  }
+ ],
+ "claims": [
+  "Opus 5 benchmarks higher on 'literally everything' but over-engineers (three-line function into a design pattern), corrects you, is verbose",
+  "After a week side by side, Opus 4.6 'just does what you tell it to do'",
+  "One command switches back inside a Claude Code session"
+ ],
+ "how_to_steps": [
+  "In a Claude Code session type: /model claude-opus-4-6[1m]",
+  "Comment 'switch' to get the prompts"
+ ],
+ "on_screen_only": [
+  "Title card 'The newest Claude model is worse'",
+  "Green code chip: /model claude-opus-4-6[1m]",
+  "Handle @BUILDWITHNEEJ (Instagram)"
+ ],
+ "cta": "Comment 'switch' for the prompts",
+ "relevance": {
+  "score": 3,
+  "why": "Directly affects Haji's daily Claude Code use: if a newer Opus over-engineers, pinning an older model for routine execution tasks is a cheap lever. Anecdotal, one creator, one week."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Zero cost to try: /model claude-opus-4-6[1m] for execution-heavy sessions, keep the newer model for planning. Pair with the liked 'Anthropic cut 80% of system prompt / replace NEVER rules' guidance and effort levels before downgrading."
+ },
+ "verify": [
+  "Is claude-opus-4-6[1m] still available on Haji's plan and is the 1M context a different price tier",
+  "Does over-engineering persist with lower effort level or a thin CLAUDE.md rather than a model change",
+  "Creator's 'prompts' are gated behind a comment; nothing shown beyond the /model line"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a contrarian warning: newest Opus may over-engineer and ignore instructions; the exact /model fallback command. Liked set had model-release news but not a 'downgrade for obedience' take."
+ }
+}

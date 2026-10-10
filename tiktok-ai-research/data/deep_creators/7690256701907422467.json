@@ -1,0 +1,54 @@
+{
+ "id": "7690256701907422467",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7690256701907422467",
+ "creator": "artificialcorner",
+ "title": "Silent 6-second clip: creator says he used Claude connected to NotebookLM to build a 'Job Interview Prep Kit' (briefing docs, quizzes, FAQs from 38 sources) and got the offer; prompts promised in caption",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "'connect Claude to NotebookLM' (caption)"
+  },
+  {
+   "name": "NotebookLM",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Studio view 'Job Interview Prep Kit', 'sorting 38 sources', path /interviews/brightline/artifacts/"
+  }
+ ],
+ "claims": [
+  "Caption: 'First, connect Claude to NotebookLM, then run these 3 prompts: 1. Res...' (truncated; prompts not visible)",
+  "On-screen: 'I used Claude & NotebookLM to prepare for a job interview. 3 days later, I got the offer'",
+  "Prep kit auto-generated cards: BRIEFING DOC (16-17), QUIZ (16), FAQ (15-16) items"
+ ],
+ "how_to_steps": [
+  "Connect Claude to NotebookLM (mechanism not shown; caption truncated)",
+  "Load sources (press, Q2 earnings call, LinkedIn, Glassdoor, podcast, reviews) into a notebook",
+  "Run three prompts (first begins 'Res...' - likely 'Research the company') to produce briefing docs, quizzes and FAQs"
+ ],
+ "on_screen_only": [
+  "'Job Interview Prep Kit' UI with columns BRIEFING DOC / QUIZ / FAQ and cards like 'New CMO since March. Ask what changed' (press), 'Crunchwise cut prices 10%. Do we match?' (quiz), 'Gap on your CV? One line, then move on' (FAQ), 'Salary band tops at $135k. Ask for 130' (Glassdoor), 'Margin fell 2 pts. Expect cost questions' (Q2 call), 'Hiring manager came from Crunchwise' (LinkedIn), 'Final round is pricing case study', 'Grow pipeline 30% on flat spend. How?'",
+  "'sorting 38 sources', 'Q2 earnings call, uploaded twice. Duplicate'",
+  "Browser tab claude.ai; orange pixel robot mascot; 'Here are the prompts I used' pointing down (to caption)"
+ ],
+ "cta": "Prompts in caption (truncated); implicit follow",
+ "relevance": {
+  "score": 1,
+  "why": "Job-interview prep is irrelevant to a founder; the Claude-NotebookLM connection is the only interesting bit and it is not shown"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing concrete to implement; the UI looks like a Claude artifact rather than NotebookLM, so the 'connection' may just be exported source material"
+ },
+ "verify": [
+  "Is there an actual Claude-to-NotebookLM connector/MCP, or did the creator just paste NotebookLM output into Claude?",
+  "Full caption with the three prompts"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "Not relevant; no new tool shown beyond NotebookLM as a source store"
+ }
+}

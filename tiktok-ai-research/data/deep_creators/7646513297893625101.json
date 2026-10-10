@@ -1,0 +1,81 @@
+{
+ "id": "7646513297893625101",
+ "url": "https://www.tiktok.com/@jasoncooperson/video/7646513297893625101",
+ "creator": "jasoncooperson",
+ "title": "Set up a Claude Desktop Routine (Gmail + Google Calendar connectors) that runs daily at 4am, labels/triages the inbox, drafts replies and produces a daily briefing",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Desktop app",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Customize > Connectors; Routines section with 'Draft routine' button"
+  },
+  {
+   "name": "Claude Routines",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "trigger 'Runs daily at 4:00 AM CDT'; Once/Hourly/Daily/Weekly/Custom; 'Run now' to test"
+  },
+  {
+   "name": "Gmail connector",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "used for list labels, search threads, label, draft"
+  },
+  {
+   "name": "Google Calendar connector",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "today's events in the briefing"
+  },
+  {
+   "name": "Google Drive, Notion, GitHub Integration, Claude in Chrome",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "other connectors visible in the Connectors panel"
+  }
+ ],
+ "claims": [
+  "Every morning at 8am (later shown as 4:00 AM CDT) Claude automatically labels and categorizes all emails and drafts the responses",
+  "Setup takes 'literally 30 seconds': connect Gmail + Calendar, paste the prompt into Routines, hit Draft routine, pick schedule, Create",
+  "Routine output shown: calendar for today, 'Needs your attention' items, 'Partnership pipeline - awaiting brand reply' list of brand deals with quoted amounts",
+  "Routine run shows 'Used 2 tools' steps: check Gmail for messages newer than 2 days, calendar for today/tomorrow"
+ ],
+ "how_to_steps": [
+  "Open Claude Desktop app > Customize > Connectors; connect Gmail and Google Calendar",
+  "Go to Routines, paste the 'Daily inbox triage' prompt, click 'Draft routine'",
+  "Set trigger: Runs daily at 4:00 AM CDT (times are staggered to spread server load); confirm connectors Gmail, Google Calendar, Google Drive, Notion are available to the run",
+  "Click Create, then 'Run now' to test; open the run to see tool calls and the resulting Daily Briefing",
+  "Prompt structure (on screen): CONFIG block (name/sign-off, timezone, email accounts, voice, inbox window 'newer_than:2d', label IDs); one-time setup step 'use Gmail list labels tool to get real label IDs, fill CONFIG'; HARD RULE 'DRAFTS ONLY - never send'; steps: 1 CALENDAR list today's events, 2 INBOX search threads newer_than:2d and summarize by category (urgent/flagged/key contacts), 3 LABEL each thread with exactly one category, then compile a 5-10 minute readable briefing and a one-line summary"
+ ],
+ "on_screen_only": [
+  "Routine name 'Daily inbox triage' / 'Email and calendar assistant'",
+  "Prompt text: 'You are {{YOUR_NAME}}'s personal email + calendar assistant. Timezone {{TIMEZONE}}. Run this routine top to bottom... you are running in the cloud with no filesystem'",
+  "'=== CONFIG - fill in once ===' with {{ACCOUNTS}}, {{VOICE}}, inbox window newer_than:2d, Label IDs 'use your Gmail connector's list labels tool ONCE to get the real IDs (they look like Label_7, NOT the label names)'",
+  "'HARD RULE: DRAFTS ONLY - never send a reply'",
+  "'Runs are staggered by a few minutes to spread server load'",
+  "Warning: 'Claude can use all tools from these connectors - including write. Remove any you don't want the agent to access'",
+  "Daily Briefing - Monday, June 1, 2026 output with Slack UGC bot workflow error, LinkedIn security alert, brand quotes ($3k, $6k, $1,600)",
+  "Email from sahil.patel@okara.ai visible in inbox screenshot"
+ ],
+ "cta": "Comment 'inbox' to get the prompt free",
+ "relevance": {
+  "score": 4,
+  "why": "Haji already has Gmail/Calendar connectors and routines; a drafts-only daily triage + briefing routine is directly reusable and the on-screen prompt skeleton (CONFIG block, label IDs, hard rules) is a concrete pattern"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "~30 min to adapt: write the CONFIG prompt, resolve Gmail label IDs once, keep DRAFTS ONLY rule, schedule at 4am. The haji-email skill already enforces an approval gate so the routine should stop at drafts + briefing"
+ },
+ "verify": [
+  "Does Claude Desktop Routines expose Gmail 'list labels' and label-write tools in the cloud runner as shown?",
+  "Cost/quotas of daily routine runs on Haji's plan",
+  "Write access risk: the connector grants all tools including write; confirm the drafts-only rule is enforced by prompt only (no hard permission)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Concrete prompt architecture for a scheduled Gmail triage routine: CONFIG header, one-time label-ID lookup, DRAFTS ONLY hard rule, 2-day inbox window, categorical labels, briefing format. Liked set covered chief-of-staff apps (Town, Jarvis) but not a copy-able Claude Routine prompt"
+ }
+}

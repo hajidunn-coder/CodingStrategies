@@ -1,0 +1,106 @@
+{
+ "id": "7693602525081111821",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7693602525081111821",
+ "creator": "chase_ai_",
+ "title": "14-min tutorial: Claude Code makes motion-graphics/explainer videos with pure JavaScript (frame(t) canvas -> Playwright headless renders frames -> FFmpeg stitches MP4, Claude reviews a contact sheet and fixes), plus the creator's open-source skill with 7 styles",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Creator's JS-video Claude Code skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Install as plugin or hand the GitHub URL to Claude Code; intake -> story -> look -> storyboard -> delivery; 7 styles (cut paper, crosshatch, riso, sketchbook, math, pixel, isometric) + custom; PRs welcome"
+  },
+  {
+   "name": "Playwright",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Headless browser renders each frame; Claude inspects frames"
+  },
+  {
+   "name": "FFmpeg",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Stitches frames to MP4, pulls contact sheets for self-review"
+  },
+  {
+   "name": "faster-whisper",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Word timestamps so visuals land on narration words"
+  },
+  {
+   "name": "ElevenLabs (+ MCP connector)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Narration; ~$5/mo; optional connector in the skill"
+  },
+  {
+   "name": "skillery.dev",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'Browse 475 Opus 5.5 videos' gallery for inspiration (paid, free tier)"
+  },
+  {
+   "name": "Claude Opus 5.5 / Fable 5.1",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Effort test: low ~20 min, high ~30 min, ultracode 8 hours"
+  },
+  {
+   "name": "Remotion / After Effects",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Said to be unnecessary"
+  },
+  {
+   "name": "Chase AI+ (Claude Code & Codex Master Class, AI OS)",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's paid community, link in pinned comment"
+  }
+ ],
+ "claims": [
+  "Video = function of time: frame(t) returns one picture, 60/sec, headless browser draws, FFmpeg stitches, sound is also a function of t",
+  "Claude can't watch video but can inspect frames/contact sheets and fix the function",
+  "Same prompt at low/high/ultracode effort: 20 min / 30 min / 8 hours; low and high 'did just fine', so quality is a prompt problem not an effort problem",
+  "Ask for a storyboard first to avoid hour-long regenerate loops",
+  "Reference video (made with Remotion) was recreated in JS with matching composition but different content",
+  "Entire pipeline is free beyond Claude usage; no AI video/image generator"
+ ],
+ "how_to_steps": [
+  "Level 1 prompt: state length, type (e.g. 30-second animated explainer), aspect ratio, 'in JavaScript on a canvas', soundtrack generated in code or supplied; ask for a storyboard of key frames before coding",
+  "Level 2 loop: 'Render it to an MP4 with Playwright and FFmpeg'; if you have narration: 'Here's my voice-over: voice.mp3. Time the visuals to it: get word timestamps with Whisper and land each change on the words'; end with 'Before you call it done, use FFmpeg to pull a contact sheet, look at it, fix what's wrong, re-render, and repeat'",
+  "Level 3 references: attach images to insert or copy aesthetic, or a video to copy composition; browse skillery.dev AI videos or 'Kevin' on Twitter for inspiration",
+  "Level 4 codify: install the creator's skill (plugin or URL); it runs intake (subject, format, audio/voice, hero character), story, look (2-4 style frames), storyboard (every beat), delivery (video + checks: cuts on the beat, loudest moment after the silence, narration pace); installs Playwright, FFmpeg, faster-whisper and offers the ElevenLabs connector"
+ ],
+ "on_screen_only": [
+  "Prompt text on screen: 'Make a 30-second animated explainer of how [TOPIC] works, 16:9. Build it in JavaScript on a canvas, with a soundtrack generated in code, and render it to an MP4 with Playwright and FFmpeg. Here's my voice-over: voice.mp3. Time the visuals to it: get word timestamps with Whisper and land each change on the words. Before you call it done, use FFmpeg to pull a contact sheet, look at it, fix what's wrong, re-render, and repeat.' with annotations 'Claude figures out the rest: renderFrame(t), the score, frame-by-frame rendering, encoding'",
+  "Test prompt: 'Make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, like it's a show reel for a resume. Go all out. Don't use any skills.'",
+  "Pipeline diagram: function frame(t) -> headless browser -> frames = 240 -> FFmpeg -> play; sound(t)",
+  "Skill README table 'How it works': step / what you see / you decide: 0 Intake, 1 Story (numbered beat table), 2 Look (2-4 full-size style frames), 3 Storyboard (every beat as a key frame with sound and transition), 4 Delivery (video plus checks: cuts on the beat, story arc, loudest moment after the silence, narration pace); Styles grid: 1 cut paper, 2 crosshatch, 3 riso, 4 sketchbook, 5 math, 6 pixel, 7 isometric, ? your look; Languages JavaScript ~86%; contributors 'claude', 'cb3f0f Chase'",
+  "skillery.dev: 'Browse 475 Opus 5.5 videos'",
+  "3Blue1Brown-style sin(theta) animation, 'frame(t) t=4.74', '900' stat card dashboard",
+  "Repo URL not legible in frames"
+ ],
+ "cta": "Check out Chase AI+ (link in pinned comment); open PRs on the skill",
+ "relevance": {
+  "score": 4,
+  "why": "Haji liked Claude Motion and the hyperframes explainer-video skill; this is the open, cost-free version with the exact prompt structure, the self-check loop (Playwright + FFmpeg contact sheet) and effort-level data. Useful for app demo videos and marketing without Remotion."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install Playwright + FFmpeg (already common), paste the on-screen prompt for a 30-second product demo, require a storyboard first. Half a day for a first video; the contact-sheet self-review pattern also transfers to any visual QA Claude does."
+ },
+ "verify": [
+  "Exact GitHub URL of the skill (not legible); compare with hyperframes and Anthropic's Claude Motion",
+  "Render time at 60fps for 30-60s videos and Claude usage cost per video",
+  "faster-whisper word-timestamp accuracy for narration sync",
+  "skillery.dev pricing"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the full open recipe (frame(t) + Playwright + FFmpeg + contact-sheet self-review, storyboard-first, effort-level timings) and a specific open-source skill; liked set had Claude Motion and hyperframes but not the DIY JS pipeline."
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "id": "7659962667548888334",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7659962667548888334",
+ "creator": "adam_ha_yes",
+ "title": "6-second skit: 'me preparing for the documentary if my Claude sessions ever get leaked' - creator poses with a Mac Mini for the camera; caption 'Center the div'",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Mac Mini",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "held as a prop (nod to the Mac-Mini-Jarvis trend)"
+  }
+ ],
+ "claims": [],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'Me preparing for the documentary if my Claude sessions ever get leaked'; cinema camera on tripod; 'DROPS' poster"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Meme only"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "comedy; nothing added"
+ }
+}

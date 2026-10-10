@@ -1,0 +1,51 @@
+{
+ "id": "7693933826417954050",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7693933826417954050",
+ "creator": "artificialcorner",
+ "title": "'Head Hunter' Claude skill: feed it a resume plus 161 job posts, it scores each job and auto-closes tabs below 75, shortlists the rest (silent 6-second demo)",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Head Hunter (Claude skill)",
+   "kind": "skill",
+   "where_seen": "caption",
+   "detail": "Scores every job out of 100 per desc; link not shown"
+  },
+  {
+   "name": "Claude in Chrome (browser tab control)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Funnel UI reads 'Job Tab Triage ... Chrome - 4 job sites - keep >= 75'; tabs auto-closed"
+  }
+ ],
+ "claims": [
+  "Gave Claude a resume and 161 job posts; got an interview call 2 days later",
+  "Score >= 75 stays open; lower-scored tabs are closed (counters: TABS CLOSED 22->24, SHORTLIST 14->16)"
+ ],
+ "how_to_steps": [
+  "Give Claude your resume and open job tabs across job sites",
+  "The skill scores each job (e.g. Sr Data Analyst 84, Product Analyst 77, Data Scientist 88, BI Developer 80, Analytics Lead 79, Head of Data ~82), closes tabs below 75 and builds a shortlist"
+ ],
+ "on_screen_only": [
+  "Overlay: 'I gave Claude my resume and 161 job posts. 2 days later, I got an interview call.' / 'Here's the Claude skill I used'",
+  "Pink funnel UI titled 'Job Tab Triage' with path '/claude-mini-course-2 - Chrome - 4 job sites - keep >= 75', 'SCORE >= 75 STAYS OPEN', 'CLOSED 10/11/12', cards: Sr Data Analyst, Product Analyst, Data Scientist, BI Developer, Analytics Lead, Head of Data, 'Unpaid Trial Gig' (red, closed), counters TABS CLOSED 22/23/24 and SHORTLIST 14/15/16",
+  "No audio content; whisper transcript empty"
+ ],
+ "cta": "Implied: link to skill in caption/comments",
+ "relevance": {
+  "score": 1,
+  "why": "Job-hunting use case; Haji is a founder, not a job seeker. The reusable idea is Claude-in-Chrome tab triage with a numeric threshold."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Pattern (score-and-close browser tabs) could be repurposed for lead or vendor triage but not worth time now."
+ },
+ "verify": [
+  "Skill name/link not shown; '161 job posts' and the interview are self-reported"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Off-topic use case; the only novel bit is a Claude-in-Chrome scoring-and-tab-closing UI."
+ }
+}

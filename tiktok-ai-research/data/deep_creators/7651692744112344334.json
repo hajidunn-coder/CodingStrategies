@@ -1,0 +1,54 @@
+{
+ "id": "7651692744112344334",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7651692744112344334",
+ "creator": "kevinfremon",
+ "title": "Confession: his 'Trillion' sub-agent team re-sent every agent's full system prompt on every loop/routine for a month; fix is Anthropic prompt caching for sub-agents (prompt promised, not shown)",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion (creator's agent/sub-agent team)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Runs loops and routines; voice persona explains caching on camera"
+  },
+  {
+   "name": "Anthropic prompt caching",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Cache the static system prompt/skills per sub-agent so loops do not resend it"
+  }
+ ],
+ "claims": [
+  "Got an email from Anthropic (usage/billing) that revealed the waste",
+  "Every sub-agent call re-sent the full system prompt, skills and details from scratch each run/day -- 'reading the employee handbook out loud before every task'",
+  "Caching the prompt cuts cost; one agent ('Prism') is the exception"
+ ],
+ "how_to_steps": [
+  "Identify sub-agents that run on loops/routines with large static system prompts",
+  "Add prompt caching (cache_control on the static prefix) so each run reuses the cached handbook",
+  "Prompt itself is said to be shared but is not visible in the video"
+ ],
+ "on_screen_only": [
+  "Overlay 'DON'T MAKE MY MISTAKE WITH YOUR AI AGENTS'; captions 'BUILD IN INTELLIGENT CACHING', 'PROMPT FROM SCRATCH LIKE READING'",
+  "Laptop with Trillion UI (dark, orb/galaxy visual); no prompt text legible"
+ ],
+ "cta": "Share your own mistakes in comments",
+ "relevance": {
+  "score": 3,
+  "why": "Haji is already following Trillion videos (WWWHH handoff, board of directors). Prompt caching for routine-driven sub-agents is a real cost lever for any scheduled agent Haji builds on the API; the video itself gives no code."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Check any API-based routines/agents Haji runs: put the static system prompt + tool defs first and mark with cache_control ephemeral; verify cache_read tokens in usage. One hour. Claude Code / Agent SDK already cache automatically."
+ },
+ "verify": [
+  "The 'prompt' was never shown; nothing to copy",
+  "Anthropic cache TTL (5 min default, 1 h extended) -- daily routines will not hit cache unless runs are close together, so the saving may be smaller than implied",
+  "Whether Trillion uses the API directly or an SDK that already caches"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a cost warning: looping/scheduled sub-agents must use prompt caching for their static system prompts. Liked set has Trillion handoff/board content but not this billing lesson."
+ }
+}

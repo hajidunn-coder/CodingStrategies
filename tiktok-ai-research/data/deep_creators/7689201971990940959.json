@@ -1,0 +1,65 @@
+{
+ "id": "7689201971990940959",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7689201971990940959",
+ "creator": "aiwithabhijay",
+ "title": "Re-upload of the same 'five Claude Code plugins' pitch (OmniRoute, claude-mem, headroom, claude-code-setup, task-observer) with a different hook line",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "OmniRoute",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "200+ providers, auto-switch on limits"
+  },
+  {
+   "name": "claude-mem",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "thedotmack/claude-mem"
+  },
+  {
+   "name": "headroom",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "context compression; Savings Breakdown $25.55 compression + $18.52 prefix cache"
+  },
+  {
+   "name": "claude-code-setup",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github user 'rse' personal setup repo; /quorum command"
+  },
+  {
+   "name": "task-observer",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "meta-skill README, CC-BY-4.0, 1,500+ observations"
+  }
+ ],
+ "claims": [
+  "Identical to 7689200894797253918: OmniRoute free token pool; claude-mem cross-session memory; headroom fewer tokens same results; claude-code-setup recommends skills/hooks/subagents/MCPs; task-observer learns your workflow and improves it"
+ ],
+ "how_to_steps": [
+  "Comment 'Claude' for links and setup guide"
+ ],
+ "on_screen_only": [
+  "Same frame content as the sibling video: 'Don't Use Claude Code Without These Five Plugins' card, OmniRoute providers dashboard, claude-mem repo + star history, headroom repo + savings panel, claude-code-setup repo (rse, 'add one more lint step'), task-observer README and observation log"
+ ],
+ "cta": "Comment 'Claude' for links and setup guide",
+ "relevance": {
+  "score": 2,
+  "why": "Same content as the higher-view sibling; see 7689200894797253918 for the analysis."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "No additional action; evaluate headroom and task-observer once via the sibling record."
+ },
+ "verify": [
+  "See sibling 7689200894797253918"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of 7689200894797253918 (same batch) and of liked claude-mem/OmniRoute content"
+ }
+}

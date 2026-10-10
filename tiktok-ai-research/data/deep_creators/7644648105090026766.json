@@ -1,0 +1,76 @@
+{
+ "id": "7644648105090026766",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7644648105090026766",
+ "creator": "kevinfremon",
+ "title": "'Forge': a sub-agent inside Trillion that researches and spawns new specialist sub-agents (e.g. 'Pulse' social-media analyst) with their own skills/plugins, gated by an approval card; prompt offered via link",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's local voice-first orchestrator"
+  },
+  {
+   "name": "Forge (sub-agent)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "agent-that-builds-agents; researches skills/plugins for the new agent and pops an approval card"
+  },
+  {
+   "name": "Pulse (sub-agent)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "social media analyst / content strategist / 'data nerd' spawned on demand"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "suggested target to adapt the prompt"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternate target"
+  }
+ ],
+ "claims": [
+  "Voice command 'create a sub-agent for social media' makes Forge build 'Pulse' and present an approval card when ready",
+  "Goal is full autonomy: Trillion spins up specialized sub-agents itself when a task needs one",
+  "This is a first pass (manual command) before wiring it into Trillion's own control loop",
+  "Never run downloaded prompts blindly; have Claude Code/Codex adapt them to your system first",
+  "Waitlist counter shows 582 signed up, goal 5,000"
+ ],
+ "how_to_steps": [
+  "Ask the orchestrator (voice) to create a new sub-agent for a domain, describing what it should analyze",
+  "Forge researches required skills/plugins and drafts the agent",
+  "An approval card appears; approve to add the agent to the roster",
+  "Grab the prompt from the link, paste into Codex or Claude Code, ask it to improve for your system before running"
+ ],
+ "on_screen_only": [
+  "Banner 'AI AGENT SPAWNING OTHER AGENTS!'",
+  "Trillion UI with glowing orb and agent nodes",
+  "Waitlist page: 'The road to the repo' - LIVE COUNT 582 signed up so far, 4,418 to go until focused work on a deploy-ready build sprint; milestones 2.5K / 5K; 'The open-source repo drops on GitHub...'"
+ ],
+ "cta": "Link to prompt in bio; sign up for GitHub repo waitlist",
+ "relevance": {
+  "score": 3,
+  "why": "Meta-agent pattern (agent writes new subagent definitions + picks skills, human approves) maps directly onto Claude Code's .claude/agents and skills folders. Haji could have Claude Code generate new subagent .md files on demand."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Low effort in Claude Code: a 'forge' skill that drafts a new subagent file (role, tools, skills) and asks for approval before saving to .claude/agents. The Trillion-specific prompt is not public yet; the idea is enough."
+ },
+ "verify": [
+  "Is the Forge prompt actually published (link in bio) or waitlist-gated?",
+  "Trillion repo unreleased; no code to inspect",
+  "Approval-card gating is the important safety piece; make sure any copy keeps it"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the agent-that-spawns-agents (meta-agent with approval gate) pattern; liked Trillion videos covered handoff notes and advisor boards, not self-extension."
+ }
+}

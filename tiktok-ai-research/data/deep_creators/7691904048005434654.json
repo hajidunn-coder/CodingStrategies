@@ -1,0 +1,65 @@
+{
+ "id": "7691904048005434654",
+ "url": "https://www.tiktok.com/@bengusberg/video/7691904048005434654",
+ "creator": "bengusberg",
+ "title": "Pitch for skills.sh, a free directory of ~1.5M agent skills (Claude/ChatGPT/Cursor etc.) installed with 'npx skills add <owner/repo>'",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "skills.sh",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "URL bar shows skills.sh; 'All Time (1,536,509)' install counter; 'AVAILABLE FOR THESE AGENTS' row of agent icons"
+  },
+  {
+   "name": "skills CLI",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "TRY IT NOW box: `$ npx skills add <owner/repo>`"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "drop skill into Claude or ChatGPT and ask it to install"
+  }
+ ],
+ "claims": [
+  "The site is free and has 'almost 1.5 million skills' (screen counter reads 1,536,509 all-time, which is more likely installs/leaderboard count than distinct skills)",
+  "Skills work in Claude, ChatGPT 'or wherever you AI'",
+  "Categories named: video generation, social media manager, sales and cold email outreach",
+  "Creator says he is a Stanford founder of an AI startup that raised $4M"
+ ],
+ "how_to_steps": [
+  "Go to skills.sh",
+  "Click the skill you want (e.g. a 'social media manager' skill from the leaderboard list)",
+  "Drop it into Claude or ChatGPT and ask the model to help you install it (or run `npx skills add <owner/repo>` as shown on screen)",
+  "Try it and share what you build"
+ ],
+ "on_screen_only": [
+  "`$ npx skills add <owner/repo>` under a 'TRY IT NOW' header",
+  "'All Time (1,536,509)' counter",
+  "'AVAILABLE FOR THESE AGENTS' with ~6 agent logos (Claude, OpenAI/Codex, Cursor and others)",
+  "Leaderboard-style list of 'social media manager' skills with install counts",
+  "Browser bar: skills.sh / Skills breadcrumb"
+ ],
+ "cta": "Follow for more on AI founder life and leadership; 'let me know what you build'",
+ "relevance": {
+  "score": 3,
+  "why": "skills.sh is the same registry Haji already saw via Vercel's find-skills and the skills CLI; useful as a reminder of the npx install syntax but nothing new for someone already running Claude Code skills"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already covered: Haji's workflow can use `npx skills add` today. The '1.5M skills' figure is inflated and most entries are low quality; the only action is to search skills.sh when a specific need arises rather than browse"
+ },
+ "verify": [
+  "Is 1,536,509 the count of distinct skills or of installs? The screen label 'All Time' suggests installs/leaderboard",
+  "Quality/safety of random community skills from skills.sh (prompt-injection risk when installing unvetted SKILL.md files)",
+  "Creator's $4M-raised claim and the startup name are not shown"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Vercel find-skills / skills.sh already covered); only adds the explicit `npx skills add <owner/repo>` command"
+ }
+}

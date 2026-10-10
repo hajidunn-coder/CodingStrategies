@@ -1,0 +1,83 @@
+{
+ "id": "7679561237000195335",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7679561237000195335",
+ "creator": "nocode.joshua",
+ "title": "Re-shoot of the same seven Claude marketing skills listicle (Head of Content, AI SEO, Brand Guidelines, Anthropic Marketing plugin, Marketing Council, Lessie, Campaign Launcher OSS)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Head of Content skill (by Brad Automates)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Tracks top creators and turns their patterns into a content plan"
+  },
+  {
+   "name": "AI SEO skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Rewrites content to rank in AI engines (ChatGPT/Claude/Perplexity)"
+  },
+  {
+   "name": "Brand Guidelines skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Applies colours, fonts, voice across the business"
+  },
+  {
+   "name": "Anthropic Marketing plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Six commands, integrations with HubSpot, Slack, Canva, Klaviyo"
+  },
+  {
+   "name": "Marketing Council skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Simulated board: Brand Strategist, Growth Marketer, Data Analyst, Content Lead, Customer Advocate, Creative Director"
+  },
+  {
+   "name": "Lessie skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Finds creators and B2B leads across ~100 live sources and verifies emails"
+  },
+  {
+   "name": "Campaign Launcher OSS skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Plans and launches a multi-channel ad campaign"
+  }
+ ],
+ "claims": [
+  "Identical claims to 7663973344026397960: Anthropic Marketing plugin wired into HubSpot, Slack, Canva, Klaviyo; Lessie verifies emails across 100 sources; Campaign Launcher OSS launches multi-channel campaigns"
+ ],
+ "how_to_steps": [
+  "Listicle only; no install steps shown"
+ ],
+ "on_screen_only": [
+  "Title card '10/10 Claude Skills for Marketing (But they increase in power)' with Claude logo",
+  "Skill cards: 'SKILL 01 Head of Content - Brad Automates', 'SKILL 02 AI SEO - Makes content rank in AI search' (ChatGPT, Claude, Perplexity icons), brand-system board (colour swatches, 'Aa' type), 'SKILL 04 Anthropic Marketing Plugin - One install connects six commands to HubSpot, Slack, Canva, and Klaviyo', Marketing Council board with six persona cards and 'Get a balanced recommendation from every angle', 'SKILL 06 Lessie - Finds creators and B2B leads, then verifies emails' (100+ sources, 'verified' badge), 'SKILL 07 Campaign Launcher OSS - Plans and launches a multi-channel ad campaign' (Social, Email, Ads, Analytics, Landing Page)",
+  "No URLs or repo names shown for any skill",
+  "Same skill cards reused; different set/outfit (couch, night window)"
+ ],
+ "cta": "Follow for more Claude tips",
+ "relevance": {
+  "score": 2,
+  "why": "Same content as the earlier upload; no added detail."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Same as 7663973344026397960; nothing extra."
+ },
+ "verify": [
+  "Only 7 of the promised 10 skills are named",
+  "Where each skill lives (GitHub repo? paid?) -- no URLs shown; 'Brad Automates', 'Lessie', 'Campaign Launcher OSS' need locating",
+  "Anthropic Marketing plugin: is it the official marketplace plugin and what do its 6 commands actually do",
+  "Lessie's '100 live sources' lead-finding likely requires paid data APIs"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of the creator's own earlier video (7663973344026397960) in this batch."
+ }
+}

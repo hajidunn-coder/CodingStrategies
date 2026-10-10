@@ -1,0 +1,61 @@
+{
+ "id": "7630985923911634189",
+ "url": "https://www.tiktok.com/@opichillc/video/7630985923911634189",
+ "creator": "opichillc",
+ "title": "Vercel breach alert: attackers entered via a compromised third-party AI tool ('Context AI') on an employee's Google Workspace; non-'sensitive' env vars were readable, so rotate keys, flag all secrets sensitive, audit logs",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "environment variables, 'sensitive' flag encrypts values"
+  },
+  {
+   "name": "Context AI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "third-party AI tool an employee connected to a work Google account; the compromise vector"
+  },
+  {
+   "name": "Stripe / OpenAI / Supabase / AWS",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "providers where you must regenerate keys"
+  }
+ ],
+ "claims": [
+  "Vercel 'confirmed today' they were breached",
+  "Vector: employee connected Context AI to their work Google account; attackers compromised Context AI, hijacked the Google Workspace, got into Vercel's internal systems and environment variables",
+  "Env vars not marked 'sensitive' were stored in a readable way; many users never toggled it",
+  "Transcript mis-transcribes Vercel as 'Verizon'/'Versace'"
+ ],
+ "how_to_steps": [
+  "Log into Vercel and check environment variables across every project",
+  "Any API keys, DB credentials or tokens not marked sensitive: rotate them immediately at the source (Stripe, OpenAI, Supabase, AWS)",
+  "Turn on the 'sensitive' flag for every secret going forward",
+  "Check provider activity logs and recent deployments for unrecognized activity"
+ ],
+ "on_screen_only": [
+  "Caption-only talking head; no UI shown"
+ ],
+ "cta": "Comment 'done'; link in bio to book a setup check",
+ "relevance": {
+  "score": 4,
+  "why": "Haji's apps are vibe-coded and likely on Vercel; the liked set has 'should you host on Vercel' and vibe-coded security holes but not this incident or the sensitive-env-var flag"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Half-hour action: audit every Vercel project's env vars, flip sensitive on all secrets, rotate anything that was plain, review deployment/activity logs. Also a general lesson: third-party AI tools connected to Google Workspace are an attack surface"
+ },
+ "verify": [
+  "Confirm the actual Vercel security incident, date, and scope (which env vars were exposed, which customers)",
+  "Exact name of the third-party tool (transcript says 'Context AI')",
+  "Whether Vercel now defaults new env vars to sensitive"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "A specific incident warning and the Vercel 'sensitive' env-var flag / key-rotation checklist; liked set covered general vibe-code security but not supply-chain breach via an AI SaaS connected to Workspace"
+ }
+}

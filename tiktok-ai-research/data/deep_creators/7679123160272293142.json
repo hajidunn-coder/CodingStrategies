@@ -1,0 +1,34 @@
+{
+ "id": "7679123160272293142",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7679123160272293142",
+ "creator": "artificialcorner",
+ "title": "6-second teaser: stop typing 300-word briefs into Claude, use AI dictation tools instead (list only in caption/comments, not shown)",
+ "category": "ai-product-tool",
+ "tools": [],
+ "claims": [
+  "You are typing 300 words into Claude when you could talk to it"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Text: 'Not to be dramatic but you're typing 300 words into Claude when you could just talk to it'",
+  "Text: 'Here are the best AI dictation tools' with a down arrow (list not in video)",
+  "Man at an iMac with a long Claude chat on screen; audio is just the 'Can't touch this' sound"
+ ],
+ "cta": "Implied: see caption/comments for the dictation tool list",
+ "relevance": {
+  "score": 1,
+  "why": "No content; the tool list is off-video. Haji already liked Voicebox (local dictation hotkey) which covers this."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable here."
+ },
+ "verify": [
+  "The actual tool list lives in the caption; not captured"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked dictation content (Voicebox / Wispr Flow replacement); no new tools named."
+ }
+}

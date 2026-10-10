@@ -1,0 +1,65 @@
+{
+ "id": "7662542622799498517",
+ "url": "https://www.tiktok.com/@millee.md/video/7662542622799498517",
+ "creator": "millee.md",
+ "title": "blader/humanizer: 28k-star GitHub Claude skill that strips 33 AI-writing patterns (based on Wikipedia's 'Signs of AI writing'); creator's script scored 0% AI on Quillbot",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "humanizer",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/blader/humanizer (MIT, .claude-plugin folder, AGENTS.md, SKILL.md); said as 'Blader Humanizer'"
+  },
+  {
+   "name": "Quillbot AI Detector v7.1.0",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "used to score output: 0% AI-generated, 100% human-written"
+  },
+  {
+   "name": "Wikipedia 'Signs of AI writing' guide (WikiProject AI Cleanup)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "source of the 33 patterns"
+  }
+ ],
+ "claims": [
+  "Repo has over 28,000 stars and is 'the most underrated' for humanizing text",
+  "Detects all 33 AI writing patterns (em dashes, 'it's not X, it's Y', significance inflation, notability name-dropping, persuasive authority tropes, signposting)",
+  "After running the skill on the video script, detector returned 0% AI / 100% human",
+  "Skill includes a final 'obviously AI generated' audit pass and a second rewrite"
+ ],
+ "how_to_steps": [
+  "Install the blader/humanizer skill/plugin into Claude (Claude Code .claude-plugin)",
+  "Give it your draft (email, post, script)",
+  "It rewrites, preserving your word choices and quirks, then runs an audit pass",
+  "Optionally check with an AI detector"
+ ],
+ "on_screen_only": [
+  "Overlay 'How to humanize your writing in Claude'",
+  "GitHub: blader / humanizer, Public, main, files .claude-plugin, AGENTS.md, LICENSE, README.md (updated 2 weeks ago), 61 issues",
+  "README sections: 'Key Insight from Wikipedia' quote about LLMs guessing statistically likely output; '33 Patterns Detected (with Before/After Examples)'; 'Content Patterns' table rows: Significance inflation, Notability name-dropping; 'Persuasive authority tropes' / 'Signposting announcements' examples",
+  "Quillbot result card: 0% of text is likely AI; AI-generated 0%, Human-written & AI-refined 0%, Human-written 100%",
+  "Meme 'Made with love and AI'"
+ ],
+ "cta": "Comment 'human' for the setup guide",
+ "relevance": {
+  "score": 3,
+  "why": "Haji writes emails, VA-related content and marketing copy with Claude; a well-sourced de-slop skill is directly usable. Veteran audience is sensitive to obvious AI prose."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install takes a minute (add the plugin / copy SKILL.md into ~/.claude/skills). Use it as the final pass on any outbound writing. Verify it does not flatten voice."
+ },
+ "verify": [
+  "Confirm github.com/blader/humanizer exists with ~28k stars (plausible, liked set mentions a humanizer twice)",
+  "Detector scores are not reliable evidence; test on your own writing",
+  "Check the plugin is maintained (README says updated 2 weeks ago)"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate: liked set already includes a humanizer inside the LinkedIn agent skill (/li-human) and 'no AI slop' skills. New detail is the specific blader/humanizer repo name and its Wikipedia 33-pattern basis."
+ }
+}

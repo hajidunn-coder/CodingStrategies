@@ -1,0 +1,42 @@
+{
+ "id": "7675031511472688415",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7675031511472688415",
+ "creator": "noevarner.ai",
+ "title": "Comedy stitch mocking Boris Cherny's 'I have a Claude that prompts my Claudes' quote (100% of Claude Code written by Claude Code) with escalating agent-of-agents absurdity",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Boris Cherny says 100% of Claude Code is written by Claude Code' overlay on a podcast clip (@founderden)"
+  }
+ ],
+ "claims": [
+  "Quoted: Boris Cherny has a Claude that prompts other Claudes so he does not talk to Claude directly",
+  "Joke escalation: one Claude prompting 10 Claudes prompting ChatGPT, Perplexity, every model, plus 50 agents, then 10x that"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'Boris Cherny says 100% of Claude Code is written by Claude Code' banner",
+  "'Stitch incoming...'",
+  "Podcast watermark @founderden"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Pure comedy; only signal is the Boris Cherny quote about orchestrator Claudes, which Haji already knows from agent-architecture content"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [
+  "Original podcast (Founder Den) clip of Boris Cherny's quote"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (orchestrator/sub-agent pattern already covered); comedy only"
+ }
+}

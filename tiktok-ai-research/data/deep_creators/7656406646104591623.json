@@ -1,0 +1,59 @@
+{
+ "id": "7656406646104591623",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7656406646104591623",
+ "creator": "nocode.joshua",
+ "title": "Cheat sheet of 8 prompt frameworks (RTF, SOLVE, TAG, RACE, DREAM, PACT, CARE, RISE) plus the trick of uploading it to a Claude/ChatGPT Project that writes your starting prompts",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude Projects / ChatGPT Projects",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "upload the one-page cheat sheet as project knowledge"
+  },
+  {
+   "name": "8 Prompt Frameworks cheat sheet",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "one-page landscape PDF 'A one-page cheat sheet for Claude + ChatGPT'"
+  }
+ ],
+ "claims": [
+  "RTF = Role, Task, Format (who to be, what to do, how to output)",
+  "SOLVE = Situation, Objective, Limitations, Vision, Execution (business problem step by step)",
+  "TAG = Task, Action, Goal (clear outcome without overcomplicating)",
+  "RACE = Role, Action, Context, Expectation (enough context for a sharper answer)",
+  "DREAM = Define, Research, Execute, Analyse, Measure (strategy, launches, campaigns)",
+  "PACT = Problem, Approach, Compromise, Test (think through trade-offs)",
+  "CARE = Context, Action, Result, Example (copy a style/format/example)",
+  "RISE = Role, Input, Steps, Expectation (messy info into a clear process)",
+  "Hack: upload the sheet to a Project and ask the project to draft a starting prompt each time"
+ ],
+ "how_to_steps": [
+  "Pick the framework that matches the job (see list)",
+  "Save the one-page cheat sheet",
+  "Upload it to a Claude or ChatGPT Project",
+  "When starting a task, ask the project to generate the prompt using the right framework"
+ ],
+ "on_screen_only": [
+  "Framework cards with acronym expansions (listed in claims), e.g. 'FRAMEWORK 02 SOLVE: S=Situation O=Objective L=Limitations V=Vision E=Execution - Best for solving a business problem step-by-step'",
+  "ChatGPT 'Prompt Project' screen at the end"
+ ],
+ "cta": "none explicit (save the cheat sheet)",
+ "relevance": {
+  "score": 2,
+  "why": "Beginner prompting content; Haji already uses skills and structured prompts in Claude Code. The 'project that writes your prompts' meta-trick is marginally useful"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth doing; existing skills (Minto, mode prompts) and Claude Code's own planning cover this"
+ },
+ "verify": [
+  "Where the cheat sheet PDF is distributed (not shown)"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (prompting 'modes' and Minto pyramid prompts already liked); generic acronym frameworks"
+ }
+}

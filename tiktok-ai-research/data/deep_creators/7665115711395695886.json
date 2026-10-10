@@ -1,0 +1,58 @@
+{
+ "id": "7665115711395695886",
+ "url": "https://www.tiktok.com/@opichillc/video/7665115711395695886",
+ "creator": "opichillc",
+ "title": "Process for debugging a Lovable/Supabase login failure with first users: post a notice, capture browser console errors, have the agent check server logs and Supabase auth logs, then follow up with users",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Lovable",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Lovable agent + Lovable Cloud"
+  },
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Auth logs if not on Lovable Cloud"
+  },
+  {
+   "name": "Browser DevTools (Inspect / console)",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "right-click > Inspect, reproduce error, copy console logs"
+  }
+ ],
+ "claims": [
+  "First 10 users' experience is key; done right they become ambassadors",
+  "Process generalizes to any user-facing bug: communicate with customers, capture logs, give the AI agent all details before proceeding"
+ ],
+ "how_to_steps": [
+  "Post a notice on the login page acknowledging the issue and giving a path to ask questions",
+  "Right-click > Inspect, reproduce the error, copy console errors",
+  "Paste errors to the Lovable agent and ask it to check the terminal for server-side errors",
+  "If not on Lovable Cloud, pull Supabase Auth logs (agent can walk you through it)",
+  "Let the agent diagnose and fix; then remove the support notice and answer every user question promptly"
+ ],
+ "on_screen_only": [
+  "Header 'Debugging a Lovable App?'; talking head only"
+ ],
+ "cta": "Follow/like; comment if this happened to you",
+ "relevance": {
+  "score": 2,
+  "why": "Haji uses Claude Code, not Lovable, and the debugging loop (console + server logs + auth logs to the agent) is basic for a veteran. Customer-communication step is sensible but obvious"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to build; at most a checklist reminder to add a status banner and gather console/Supabase auth logs before prompting Claude"
+ },
+ "verify": [
+  "None needed; generic process"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Supabase/auth debugging basics already covered by login-security and Supabase videos)"
+ }
+}

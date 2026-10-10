@@ -1,0 +1,79 @@
+{
+ "id": "7687005556694912270",
+ "url": "https://www.tiktok.com/@ai.honeycove/video/7687005556694912270",
+ "creator": "ai.honeycove",
+ "title": "Five free design tools for Claude: Taste Skill, Impeccable (design system + live browser editor), Playwright CLI (multi-browser screenshots/tests), Awesome DESIGN.md, and img2threejs (image to procedural Three.js model)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Taste Skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "README 'Taste Skill', official website tasteskill.dev, 7.2k stars, 'Agent Skills Compatible', Cursor/Claude"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "own design system + live editor in the browser (demo on a hotel site 'AURELIA')"
+  },
+  {
+   "name": "Playwright CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Claude spins up multiple browsers, tests, screenshots"
+  },
+  {
+   "name": "Awesome DESIGN.md",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Curated collection of DESIGN.md analysis from developer focused websites', MIT license; design references: colors, typography, spacing, buttons"
+  },
+  {
+   "name": "img2threejs",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Rebuild the object in a reference image as a code-only, procedural Three.js model... animation-ready, deliberately token-efficient - reconstruction-by-code, not photogrammetry'; Apache-2.0, Python 3.10+, Sponsored by Atlas Cloud"
+  }
+ ],
+ "claims": [
+  "Taste gives Claude actual design rules so you stop getting generic AI-looking websites",
+  "Impeccable improves front-end with its own design system and a live editor in the browser",
+  "Playwright CLI lets Claude open multiple browsers, test and screenshot automatically",
+  "Awesome DESIGN.md provides design systems inspired by real websites (typography, spacing, buttons, layouts)",
+  "img2threejs: give an image of a bike, Claude recreates it as an interactive 3D model entirely in code",
+  "All five are free"
+ ],
+ "how_to_steps": [
+  "Install Taste Skill (tasteskill.dev) as an agent skill",
+  "Install Impeccable (`npx impeccable install`, then /impeccable init)",
+  "Add Playwright CLI for Claude to verify visually",
+  "Pull a DESIGN.md from Awesome DESIGN.md for a reference design system",
+  "Use img2threejs when you need a 3D object from a reference image"
+ ],
+ "on_screen_only": [
+  "Opening 'NOT YET' poster art",
+  "Taste Skill README badges: OFFICIAL WEBSITE tasteskill.dev, stars 7.2k, AI Supported Cursor | Claude",
+  "'Before' slop example: purple gradient, generic placeholder, cards on cards, Inter font",
+  "Hacker News open in multiple Playwright browser windows",
+  "img2threejs README: 'Rebuild the object in a reference image as a code-only, procedural Three.js model... mesh extraction, or downloaded art packs'; red Ducati motorcycle demo"
+ ],
+ "cta": "none (implicit follow)",
+ "relevance": {
+  "score": 3,
+  "why": "Four of the five (Taste, Impeccable, Playwright, awesome-design) are already in Haji's liked set; img2threejs is the only new tool and is niche"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already covered; img2threejs could add a 3D hero object to a landing page in an afternoon but is a nice-to-have"
+ },
+ "verify": [
+  "img2threejs repo owner, maintenance, and what the Atlas Cloud sponsorship implies (paid API?)",
+  "Taste Skill 7.2k stars figure at time of posting"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate of liked design-skill roundups; only addition is img2threejs (image -> procedural Three.js model)"
+ }
+}

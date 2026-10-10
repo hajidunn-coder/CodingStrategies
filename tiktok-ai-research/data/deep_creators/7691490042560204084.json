@@ -1,0 +1,75 @@
+{
+ "id": "7691490042560204084",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7691490042560204084",
+ "creator": "ai.samaritan",
+ "title": "Three under-used Grok Bot plugins beyond Gmail/Calendar: AgentMail (agent's own inbox), Stripe official plugin (invoices/overdue, keep restricted), Posterly (social scheduling)",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Grok Bot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "transcript mis-hears as 'crockpot'; screen shows Gmail -> Grok -> Google Calendar diagram"
+  },
+  {
+   "name": "AgentMail",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "page 'Give Grok Bot its own inbox' (GROK BOT + AGENTMAIL), 'START FOR FREE' / 'DOCS'; one command install"
+  },
+  {
+   "name": "Stripe official plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "pull who has paid, draft invoices, flag overdue; keep on restricted permissions"
+  },
+  {
+   "name": "Posterly",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "social posting plugin to schedule content across platforms"
+  },
+  {
+   "name": "practicallyai newsletter",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "practically.ai 'Get 1% Better at AI Every Single Day', 10,500+ subscribers"
+  }
+ ],
+ "claims": [
+  "Most people stop at Gmail + calendar ('chief of staff') but Grok Bot's plugin catalog goes much deeper",
+  "AgentMail gives the agent its own email address so it can sign up for tools, receive confirmation codes, and handle correspondence without touching your personal mail",
+  "Stripe plugin can move real money, so keep it on restricted permissions until trusted",
+  "Combined result: a teammate with its own email, a view of your books, and your publishing calendar"
+ ],
+ "how_to_steps": [
+  "Install AgentMail plugin to give the agent a dedicated inbox",
+  "Install Stripe's official plugin; set restricted permissions first",
+  "Install a social posting plugin (Posterly) so the agent that writes content can also schedule it"
+ ],
+ "on_screen_only": [
+  "AgentMail landing page: 'Give Grok Bot its own inbox - AgentMail is the best way to give Grok Bot its own inbox. Send email, receive replies, and manage full conversation threads from a dedicated inbox.' buttons START FOR FREE / DOCS, 'One command'",
+  "Stripe homepage: 'Financial infrastructure to grow your revenue', 'Global GDP running on Stripe'",
+  "Posterly orange icon",
+  "practicallyai newsletter signup with '37.78x better at AI after 365 days' graphic"
+ ],
+ "cta": "Subscribe to the practically.ai daily newsletter",
+ "relevance": {
+  "score": 3,
+  "why": "Haji runs Claude, not Grok Bot, but the pattern transfers: give an agent its own inbox (AgentMail has an API/MCP usable from Claude) and connect Stripe with restricted scope. Haji's liked set includes Jarvis-style agents reading Stripe"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "AgentMail for the agent's own email is the useful piece (sign-ups, OTP codes, outreach from a separate identity) and takes under an hour via its API/MCP in Claude Code. Stripe read-only MCP is already available for Claude; Posterly is interchangeable with Postiz which Haji already saw"
+ },
+ "verify": [
+  "Does AgentMail offer an MCP/API usable from Claude Code, pricing of the free tier",
+  "Stripe 'official plugin' permission model in Grok Bot vs Stripe's MCP for Claude (restricted keys)",
+  "Posterly maintenance/pricing vs open-source Postiz"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "AgentMail - a dedicated email identity for the agent (sign-ups, confirmation codes) - was not in the liked set; also the explicit 'restricted permissions on the Stripe plugin' warning"
+ }
+}

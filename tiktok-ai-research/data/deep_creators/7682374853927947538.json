@@ -1,0 +1,78 @@
+{
+ "id": "7682374853927947538",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7682374853927947538",
+ "creator": "nocode.joshua",
+ "title": "Listicle: 20 Claude/Claude Code topics to learn on a free weekend (CLAUDE.md, worktrees, Claude SDK, subagents, RAG, custom/remote MCPs, orchestration, slash commands, structured outputs, memory, knowledge graphs, evaluator agents, HITL, context optimization)",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "CLAUDE.md",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "item 1"
+  },
+  {
+   "name": "Claude Code worktrees",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "item 2 ('CC Work Trees' on screen)"
+  },
+  {
+   "name": "Claude SDK (Agent SDK)",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "item 3"
+  },
+  {
+   "name": "MCP servers (custom and remote)",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "items 6 and 9"
+  }
+ ],
+ "claims": [
+  "Twenty topics are what to learn in Claude in a free weekend (no evidence or depth given)"
+ ],
+ "how_to_steps": [
+  "1 CLAUDE.md files",
+  "2 Claude Code worktrees",
+  "3 Claude SDK",
+  "4 Sub agents",
+  "5 RAG systems",
+  "6 Custom MCPs",
+  "7 Agent orchestration",
+  "8 Multi-agent systems",
+  "9 Remote MCPs",
+  "10 Slash commands",
+  "11 Tool-use pipelines",
+  "12 Structured outputs",
+  "13 Parallel agents",
+  "14 Hybrid search",
+  "15 Context engineering",
+  "16 Memory architectures",
+  "17 Knowledge graphs",
+  "18 Evaluator agents",
+  "19 Human-in-the-loop agents",
+  "20 Context window optimization"
+ ],
+ "on_screen_only": [
+  "Claude logo card titled '20 Things to Learn' with the numbered list filling in; the on-screen list is the full 20 (the spoken transcript skips 'slash commands' numbering but is the same set)"
+ ],
+ "cta": "Follow along for more",
+ "relevance": {
+  "score": 2,
+  "why": "A table of contents with zero instruction. Haji already uses most of these (CLAUDE.md, subagents, slash commands, MCP). Only value is as a checklist of gaps (worktrees, evaluator agents, hybrid search)."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing concrete to implement; at most pick 2-3 unfamiliar items (git worktrees for parallel Claude Code sessions, evaluator agents) and read the official docs."
+ },
+ "verify": [
+  "None; no tools or claims to verify"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: liked set already has 'Five free GitHub repos to learn Claude Code', 'Four free resources to learn to build AI agents', and Osmani/Karpathy skill repos that go deeper"
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "id": "7693985922051738910",
+ "url": "https://www.tiktok.com/@malikontech/video/7693985922051738910",
+ "creator": "malikontech",
+ "title": "News reaction: OpenAI appears to be merging Codex (and subagents) into regular ChatGPT chat during the '28 days of changes'; main worry is shared usage limits",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "regular chats gaining agentic features/subagents"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "to be merged into ChatGPT"
+  },
+  {
+   "name": "ChatGPT Work / Dots",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "named in the quoted tweet as products being merged with Chat"
+  }
+ ],
+ "claims": [
+  "Speculation that Codex will be merged into ChatGPT within the next week, during OpenAI's '28 days' rollout; nobody knows the date",
+  "Main user concern: whether free/Plus limits will be pooled between Chat and Codex",
+  "Feedback from users says keep the two products separate because they do different things"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "X post by Token Gremlin (@TokenGremlin): 'Now it's official: regular ChatGPT Chats are starting to get agentic features, including subagents that we previously only saw in Work and Codex. These are the first real signs that Chat is being merged with Work, Codex, and Dots, and I wouldn't be surprised if we start seeing this much more clearly during Tibo's \"28 improvements\" rollout. OpenAI, I'm asking for one thing: be generous with the limits (especially for Plus users!), and PLEASE don't kill ChatGPT's personality by stuffing it with agentic features if that ends up making the conversation experience worse.'",
+  "Overlay: 'CHATGPT TO BE MERGED WITH CODEX?! GOOD OR BAD?'"
+ ],
+ "cta": "Comment good change or keep separate; follow for AI news",
+ "relevance": {
+  "score": 1,
+  "why": "OpenAI product gossip, unconfirmed, no bearing on a Claude Code workflow."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to do."
+ },
+ "verify": [
+  "Has OpenAI actually announced a Codex/ChatGPT merge, or is this one tweet's inference?",
+  "Any limit changes for Plus users?"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: liked set already has the OpenAI '28 days of updates' Day 2 recap and Dev Day coverage; this adds only an unverified merge rumor"
+ }
+}

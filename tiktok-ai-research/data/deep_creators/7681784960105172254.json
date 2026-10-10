@@ -1,0 +1,71 @@
+{
+ "id": "7681784960105172254",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7681784960105172254",
+ "creator": "ducktate.com",
+ "title": "Founder of Ducktate uses a Claude 20x Max weekend token reset to run Fable 5.1 on 'Ultracode' effort with a /goal skill for a complex Notion/Obsidian/Linear-style notes canvas feature",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code (Fable 5.1, Effort: Ultracode)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Effort slider Faster -> Smarter set to max 'Ultracode'; status bar 'Fable 5.1 | Ultracode'"
+  },
+  {
+   "name": "/goal skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "creator's goal-setting skill; '/goal' command visible in the prompt"
+  },
+  {
+   "name": "Claude 20x Max plan",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "tokens reset Tuesday; weekend reset bonus"
+  },
+  {
+   "name": "Ducktate",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "creator's Mac app: captures everything you think/say/do, 'Get lifetime access'"
+  }
+ ],
+ "claims": [
+  "Claude gave a usage reset for the weekend; his 20x Max tokens reset Tuesday so he wants to spend them",
+  "Usually runs Fable on low or medium effort; switching to Ultracode for extremely complex features",
+  "Gave an extremely clear goal using his 'goal skill'",
+  "Prompt shown: build a notes canvas that mimics Notion/Obsidian/Linear feel, every block behavior tested, then behavior spec, mockup, TDD slices"
+ ],
+ "how_to_steps": [
+  "Open Claude Code effort setting, drag to Ultracode (max)",
+  "Write a very explicit goal via /goal (desired UX reference products, test requirements, production-ready bar)",
+  "Let it run a multi-step plan: notes editor -> behavior spec -> mockup -> TDD slices",
+  "Report results later"
+ ],
+ "on_screen_only": [
+  "Effort popover: 'Effort  Ultracode  Faster ---- Smarter' slider at max; status 'Fable 5.1  Ultracode'",
+  "Prompt text (partial): '/goal Okay, so I have a very simple goal. What I want you to do now is exactly mimic our notes, canvas, to exactly how Obsidian and Linear are handling their canvas... the toggle header needs to be fully tested... I would be proud to ship this to production... write the notes editor, then a behavior spec, then a mockup, then TDD slices'",
+  "Status line: 'notes-canvas-gap-map', 'Workflow 12 agents 2m 41s', 'Read AGENT-PLAYBOOK.md, ran 2 commands, used a tool', 'running (11 Sonnet researchers plus a critic, background)'",
+  "Ducktate marketing site: 'Where did it go? The pricing you promised. The idea in the shower...' and 'Here. Everything you think, say, and do. Caught, cleaned, and filed on your Mac.' with 'Get lifetime access' / 'See it work'",
+  "Meme 'MY TOKENS / CLAUDE FABLES' (burning)"
+ ],
+ "cta": "Follow for the update",
+ "relevance": {
+  "score": 2,
+  "why": "Shows a real founder workflow: effort tiers by task complexity, a /goal skill, parallel Sonnet researcher subagents plus a critic. Relevant signal, but it is a teaser with no result."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Takeaway worth copying: keep effort low/medium by default and reserve max for hard features at usage-reset time; have a /goal template that forces acceptance criteria and test plan. His skill is not shared."
+ },
+ "verify": [
+  "Did the Ultracode run actually ship the feature (follow-up video)?",
+  "Is the '/goal' skill published anywhere?",
+  "The weekend reset was a time-limited Anthropic promo; check current limits"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Largely duplicate of liked content on /effort and goal-first prompting; minor new signal is a 12-agent 'researchers + critic' workflow status line."
+ }
+}

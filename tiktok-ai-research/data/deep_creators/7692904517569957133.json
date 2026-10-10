@@ -1,0 +1,69 @@
+{
+ "id": "7692904517569957133",
+ "url": "https://www.tiktok.com/@sirakinb/video/7692904517569957133",
+ "creator": "sirakinb",
+ "title": "Instaforge launched 'InstaCloud': spin up your own hosted agent environment (Claude Code, Codex, Pi harness) from a template in minutes, instead of a VPS plus Cloudflare tunnel",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "InstaCloud (by Instaforge)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Template-based hosted agent environments; names as heard, spelling unverified"
+  },
+  {
+   "name": "Instaforge",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Backend/infra platform the creator has used for a year for web and mobile app backends"
+  },
+  {
+   "name": "'Rock Zoo' (open-source grok-bot platform)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Name as heard; creator forked it into a service-business agent with CRM + agent workspace"
+  },
+  {
+   "name": "Cloudflare Tunnel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used with a VPS for the old self-hosted route"
+  },
+  {
+   "name": "Claude Code / Codex / Pi harnesses",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Harness options InstaCloud templates can spin up"
+  }
+ ],
+ "claims": [
+  "Creator built a service-business agent platform (own CRM + agent workspace) on a VPS with a Cloudflare tunnel; InstaCloud does the equivalent 'in minutes' from a template",
+  "Direction of travel: people will run their own harnesses/agent environments to swap models per use case"
+ ],
+ "how_to_steps": [
+  "Old way: rent a VPS, set up a Cloudflare tunnel, deploy an open-source agent platform fork",
+  "New way: sign into InstaCloud, pick a template for Claude Code / Codex / Pi harness, get a hosted agent environment"
+ ],
+ "on_screen_only": [
+  "Walking selfie video, no screen content, no URLs"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already has multiple 'host your own Jarvis/Hermes harness on a VPS' items liked; this is a product-announcement with no demo, URL, or pricing. Hosted harness-in-a-box could cut setup time but is unproven."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to do until the product and pricing are verified; Claude Code cloud sessions and Cowork scheduled tasks already cover most of this need for Haji."
+ },
+ "verify": [
+  "Exact product names/spellings (Instaforge, InstaCloud, 'Rock Zoo') and whether InstaCloud actually exists and is GA",
+  "Pricing, data residency, and whether you can bring your own Anthropic subscription vs API key",
+  "Is the creator affiliated/sponsored by Instaforge"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "Largely duplicate of liked 'host your own agent harness' content; only adds the (unverified) InstaCloud template-hosting product name."
+ }
+}

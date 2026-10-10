@@ -1,0 +1,85 @@
+{
+ "id": "7648366262938111245",
+ "url": "https://www.tiktok.com/@jasoncooperson/video/7648366262938111245",
+ "creator": "jasoncooperson",
+ "title": "Claude Code 'ig-competitor-research' skill: Apify scrapes a competitor list's last week of Instagram posts, a Python script ranks top 3 per creator by outlier score, sub-agents transcribe/analyze each, orchestrator writes an HTML report of what to post",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code skill 'ig-competitor-research'",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Folder shown with scripts/, README.md, SKILL.md; files sold inside creator's Skool community"
+  },
+  {
+   "name": "Apify",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Scrapes last week's Instagram Reels and carousels per account in the competitor list"
+  },
+  {
+   "name": "Python ranking script",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Ranks posts and selects top 3 per creator (likes, comments, outlier/breakout score)"
+  },
+  {
+   "name": "Claude Code sub-agents (fan-out)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "One background agent per video: transcript + visual-format analysis; orchestrator assembles HTML report"
+  },
+  {
+   "name": "Skool community",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Paid; holds all files, code and setup guide"
+  },
+  {
+   "name": "Loom",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Automated Instagram Competitor Research Tool Demo' recording"
+  }
+ ],
+ "claims": [
+  "Creator's last post using the skill got over 200,000 views; clients also got viral videos",
+  "Report shows per post: full transcript, visual analysis, like count, hook, comment count, outlier score (e.g. @mavgpt reel 58,865 likes, 49.3x breakout, 26,174 comments)",
+  "Works for both Reels and carousels",
+  "Three phases: scrape -> fan-out analysis -> orchestrator HTML report"
+ ],
+ "how_to_steps": [
+  "Phase 1: skill reads a competitor list (or a user-supplied list of accounts), calls Apify to scrape each account's last week of posts, then a Python script ranks and selects the top 3 posts per creator",
+  "Phase 2: Claude fans out one sub-agent per video to pull the transcript and analyze the visual format (hook, format e.g. 'Talking Head Listicle', breakdown)",
+  "Phase 3: the main orchestrator collects all sub-agent output and writes an HTML report ('What's working in the niche')",
+  "Comment 'SKILL' for the free video breakdown; pay for the Skool community to get the files"
+ ],
+ "on_screen_only": [
+  "Report card for @mavgpt REEL: 58,865 likes, '49.3x breakout', 26,174 comments; HOOK 'For writing, this is bad, this is good, this c...'; FORMAT 'Talking Head Listicle'; BREAKDOWN 'Talking head ranking Grok vs ChatGPT vs Claude...'",
+  "Competitor list file with Instagram handles and notes: Noe Varner (@noevarner.ai), MavGPT (@mavgpt), Mariah Brunner (@itsmariahbrunner), Chase H (@chase.h.ai), Nicholas Puru (@nicholas.puru), Liam Johnston (@liamjohnston.ai); YouTube: Jeff Su (@JeffSu)",
+  "Claude Code 'Background tasks' pane with ~8 'Break down reel #N' agents running in parallel; log line 'Parsing out all 8 breakdowns in parallel now -- each downloads its own media, transcribes and writes to...'",
+  "Google Sheets-style table of scraped posts with columns Handle, Format, Likes, Breakout, Hook (e.g. 'This is 30 grams of protein', 'The reason you have flabby arms is bicep curls')",
+  "Finder window: ig-competitor-research / scripts, README.md, SKILL.md",
+  "Loom: 'Automated Instagram Competitor Research Tool Demo'"
+ ],
+ "cta": "Comment 'SKILL' for a free video breakdown; paid Skool community for files",
+ "relevance": {
+  "score": 3,
+  "why": "Haji already liked Apify-based hook scraping and TikTok hook testing; this is the Instagram version with a cleaner 3-phase skill architecture (scrape -> fan-out sub-agents -> HTML report). Useful if he markets his apps on social, otherwise secondary."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Buildable in an afternoon with Claude Code: Apify Instagram scraper actor (~$5/mo tier), a ranking script, Agent-tool fan-out, HTML report. The SKILL.md pattern is the reusable part; no need to buy the Skool files."
+ },
+ "verify": [
+  "Which Apify actor is used for Instagram and whether it still works/cost per 1k posts",
+  "Does the outlier/breakout score formula come from Apify data or the creator's script",
+  "Transcription source for Reels (Whisper locally vs an API)",
+  "200k-view result is anecdotal; no control"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a concrete skill architecture (Apify -> ranking script -> parallel sub-agents -> HTML report) for competitor content research; liked set covered hook scoring but not a full competitor-analysis skill with sub-agent fan-out."
+ }
+}

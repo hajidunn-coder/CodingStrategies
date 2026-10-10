@@ -1,0 +1,58 @@
+{
+ "id": "7685891674052037908",
+ "url": "https://www.tiktok.com/@adamstewartmarketing/video/7685891674052037908",
+ "creator": "adamstewartmarketing",
+ "title": "Silent side-by-side: GPT-6 Astra + Blender vs Fable 5.1 + Blender given the same prompt to build an 'iPhone Duo' foldable product reveal video; outputs shown but no verdict or prompt",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "GPT-6 Astra",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'GPT-6 Astra + Blender' top panel"
+  },
+  {
+   "name": "Claude Fable 5.1",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'Fable 5.1 + Blender' bottom panel"
+  },
+  {
+   "name": "Blender",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "3D render/animation driven by each model (presumably via scripting/MCP, not shown)"
+  }
+ ],
+ "claims": [
+  "Caption: 'I gave GPT-6 Astra and Fable 5.1 the exact same prompt: build an iPho...' (truncated; the render shows an 'iPhone Duo - One device. A new perspective' foldable concept)",
+  "Visual read: Astra's render is a dual-camera white device with higher-contrast, Apple-ad-style shots ('Beautiful from every angle', 'Room for more'); Fable's is a lighter, softer rendering with a glossy blue-gradient fold and the same captions ('Open up', 'Room for more', 'Beautiful!')"
+ ],
+ "how_to_steps": [
+  "Give each model the identical prompt to script a Blender product-reveal animation",
+  "Render and compare frame by frame (no process shown)"
+ ],
+ "on_screen_only": [
+  "Header 'GPT-6 Astra vs Fable 5.1' on every frame",
+  "Scene captions: 'iPhone Duo.', 'Open up.', 'Room for more.', 'Beautiful from every angle.' / 'Beautiful!', 'iPhone Duo - One device. A new perspective.'",
+  "Dual-lens camera module close-up (Astra) vs blurred hinge close-up (Fable)"
+ ],
+ "cta": "none visible (caption truncated)",
+ "relevance": {
+  "score": 2,
+  "why": "Model comparison on a 3D-animation task is tangential to Haji's app building; no prompt, pipeline or verdict shown"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable; Blender-via-LLM is not part of Haji's stack"
+ },
+ "verify": [
+  "How each model drove Blender (MCP? Python scripting?) and how many iterations",
+  "Full caption and the creator's stated winner"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "No new tool or technique; only a visual Astra-vs-Fable comparison with no method"
+ }
+}

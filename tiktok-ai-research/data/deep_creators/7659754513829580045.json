@@ -1,0 +1,44 @@
+{
+ "id": "7659754513829580045",
+ "url": "https://www.tiktok.com/@leadwithzoe/video/7659754513829580045",
+ "creator": "leadwithzoe",
+ "title": "Use Claude Cowork to organize a messy desktop/photos: attach the folder, prompt with your organizing scheme (by year/topic), answer its clarifying questions",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Claude Cowork (desktop app)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Chat / Cowork / Code tabs; attach a folder (Desktop or Documents)"
+  }
+ ],
+ "claims": [
+  "Organizing files that used to take hours now takes a couple of minutes"
+ ],
+ "how_to_steps": [
+  "Open the Claude desktop app, click Cowork, attach the folder you want organized (Desktop/Documents)",
+  "Write a prompt asking it to organize files and photos; give the scheme you want (by year, by topic)",
+  "Answer Claude's clarifying questions carefully since they shape the whole system"
+ ],
+ "on_screen_only": [
+  "Desktop screenshot covered in files; Claude app sidebar with Chat / Cowork / Code, New chat, Projects, Artifacts, Customize; Cowork prompt 'What's on your plate today?'",
+  "Handwritten overlay list: 1. connect in cowork, 2. write a prompt, 3. clarify"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Consumer file-tidying; Haji already uses Cowork for far more. Nothing for apps or business."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Trivial; could run once on a Downloads folder, but it is not a workflow improvement."
+ },
+ "verify": [
+  "Cowork moves/renames files on disk; confirm it offers a dry-run plan before executing"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "Below the level of liked content; no new tool or technique."
+ }
+}

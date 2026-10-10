@@ -1,0 +1,69 @@
+{
+ "id": "7684689972007275807",
+ "url": "https://www.tiktok.com/@krisd.ai/video/7684689972007275807",
+ "creator": "krisd.ai",
+ "title": "AI engineer's top three first-install Claude Code skills: Agent Reach (browser access for the agent), humanizer (de-slop writing), and a 'codebase memory' skill that builds knowledge graphs over your folder",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Agent Reach",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "gives the agent browser access; said to beat generic web search / copy-paste"
+  },
+  {
+   "name": "humanizer",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "converts AI-slop text into human-sounding writing (likely blader/humanizer)"
+  },
+  {
+   "name": "codebase memory",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "auto-builds knowledge graphs across your whole folder so the agent understands your business"
+  },
+  {
+   "name": "Claude Code / Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator uses both 8+ hours/day"
+  }
+ ],
+ "claims": [
+  "Creator spends 8+ hours a day in Claude Code and Codex",
+  "Browser access is one of the biggest advantages an agent can have",
+  "humanizer removes AI slop from all produced writing",
+  "'codebase memory' automatically creates knowledge graphs across the folder"
+ ],
+ "how_to_steps": [
+  "Install Agent Reach skill",
+  "Install humanizer skill",
+  "Install codebase memory skill",
+  "Comment 'skills' for the full list"
+ ],
+ "on_screen_only": [
+  "Overlay 'These skills will level up your Claude Code setup'",
+  "Closing overlay 'Comment \"skills\" for the full guide'",
+  "Talking head only; no repo names or URLs shown"
+ ],
+ "cta": "Comment 'skills' for the full skills list",
+ "relevance": {
+  "score": 2,
+  "why": "Browser access and codebase graph memory are relevant, but no repo names, no demo, comment-bait format."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Haji already has browser tooling (Claude in Chrome / built-in browser / Playwright) and memory options (claude-mem); only worth a look if 'Agent Reach' or 'codebase memory' turn out to be distinct, maintained repos."
+ },
+ "verify": [
+  "Does 'Agent Reach' exist as a named skill/repo, or is it a generic description of a browser MCP?",
+  "'codebase memory' repo identity (could be claude-mem, codegraph, or Serena-like)",
+  "humanizer presumably blader/humanizer"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: humanizer and cross-session memory already liked; browser access covered by Playwright plugin video. No new identifiable tool."
+ }
+}

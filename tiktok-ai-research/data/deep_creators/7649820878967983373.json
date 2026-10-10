@@ -1,0 +1,55 @@
+{
+ "id": "7649820878967983373",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7649820878967983373",
+ "creator": "kevinfremon",
+ "title": "Trillion adds a 'Subagent Routine Manager': per-agent settings panel with a routine editor to schedule when each subagent fires and what it does; waitlist passed 1,000 (goal 5,000)",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "voice-first local AI agent; GitHub repo waitlist at hellotrillion.ai"
+  },
+  {
+   "name": "Subagent Routine Manager",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "settings modal: pick agent on left, configure routines (time of day/week, task) on right"
+  }
+ ],
+ "claims": [
+  "GitHub repo waitlist hit 1,000+ signups; goal 5,000 before diverting energy to release it free",
+  "Each subagent gets its own editing panel; routine editor schedules exactly when each agent fires and what it does",
+  "Voice-first design had hidden what routines were doing; the panel restores transparency and editability",
+  "Routines should be tuned over time as agents' outputs are reviewed; prompt to be shared once hardened"
+ ],
+ "how_to_steps": [
+  "Open settings icon in the agent UI",
+  "Select a subagent from the left list",
+  "Scroll to existing routines; set time of week/day, edit the instruction, or add a new routine"
+ ],
+ "on_screen_only": [
+  "hellotrillion.ai page 'The road to the repo' - LIVE COUNT 1,009 signed up so far, 3,991 to go until focused work on a deploy-ready build",
+  "Settings modal with list of subagents (avatars) on the left and routine fields on the right: schedule, instructions text area, 'Weekly digest' style routine, save button",
+  "Glowing orb agent visualization on the laptop"
+ ],
+ "cta": "Share videos, sign up for the repo waitlist",
+ "relevance": {
+  "score": 2,
+  "why": "The need (visible, editable schedules for agent routines) is real for Haji's Routines/cron-driven Claude sessions, but the video is a product-progress update with no shareable prompt or code."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Equivalent already exists for Haji via Claude Code Routines (create_trigger/list_triggers); the lesson is to keep a reviewable list of routine prompts and tune them. Nothing to install."
+ },
+ "verify": [
+  "Repo still unreleased; waitlist-gated",
+  "Promised prompt not yet published"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: liked set already covers Trillion and scheduled-task/routine tooling (Cowork cloud scheduled tasks, Paperclip heartbeat scheduling)"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "id": "7682057823743724814",
+ "url": "https://www.tiktok.com/@luispdoesai/video/7682057823743724814",
+ "creator": "luispdoesai",
+ "title": "Anthropic open-sourced 'Claude Commerce Agents' (commerce-agents repo): a shopping agent for customers and a merchant agent for back office, with customer questions flowing as demand signals to the merchant agent",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude Commerce Agents / commerce-agents repo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub repo 'commerce-agents' (Apache-2.0); README 'Claude Commerce Agents', quick start `git clone https://github.com/.../commerce-agents`, Python 3.11+ and Node 22; folders claude-plugin, commerce-common, docs, merchant-agent, plugins/commerce-builder, scripts, shopping-agent, tests; files CLAUDE.md, pyproject.toml, requirements-dev.txt"
+  },
+  {
+   "name": "Claude Messages API, Claude Agent SDK, Managed Agents",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "README: 'runs on the Messages API, the Claude Agent SDK, and Managed Agents; four runnable verticals'"
+  },
+  {
+   "name": "Anthropic 'Building commerce agents with Claude' page",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "'Retailers running shopping agents on Claude have seen carts up to 35% larger and shoppers 60% more likely to complete a purchase'"
+  }
+ ],
+ "claims": [
+  "Two agents: shopping agent (lives in your app: search catalog, compare, build cart, answer order/policy questions, remembers preferences) and merchant agent (listings, pricing, campaigns, inventory flags), all actions staged for human approval",
+  "Core insight: every customer question is demand data; out-of-stock requests and price comparisons flow to the merchant agent as restock/price/promo signals in real time",
+  "Anthropic page claim: carts up to 35% larger, 60% more likely to complete purchase",
+  "README: everything (ACME) is fictional; payment is left to your existing checkout or agentic payments provider; verticals run on ports 3000-3003 (retail, travel, etc.)"
+ ],
+ "how_to_steps": [
+  "Clone the commerce-agents repo (Python 3.11+, Node 22)",
+  "pip install requirements, set ANTHROPIC_API_KEY in .env, run the demos (`python scripts/run_demo.py` style; four verticals on ports 3000-3003)",
+  "Shopping agent integrates at catalog, cart, checkout, customer preferences, order history",
+  "Merchant agent answers sales questions, tracks inventory, recommends pricing, drafts campaigns; human approves before changes",
+  "Use the Claude plugin / commerce-builder plugin in the repo to scaffold for your own store"
+ ],
+ "on_screen_only": [
+  "GitHub README text: 'Two commerce agents built on Claude: a shopping agent a business embeds in its app for customers, and a merchant agent its staff use to run the back office. Each is defined once (prompt, skills, tool contracts, gates) and runs on the Messages API, the Claude Agent SDK, and Managed Agents; four runnable verticals show both over the same libraries.'",
+  "Note: 'Every company, brand, product, and person here is fictional; the only company is ACME. Nothing places an order, charges a card, or changes a live listing... Business rules, authorization, and compliance are the deployment's.'",
+  "Diagrams: 'Customer question (out of stock or price check) -> Shopping agent logs every interaction -> demand signal -> merchant agent'; 'Customer signals: Restock signal / Price signal / Promo signal -> business acts today'",
+  "Anthropic site card 'Building commerce agents with Claude'",
+  "Repo owner visible as 'anthropics' in file list header; 4-day-old commits 'building commerce agents using claude'"
+ ],
+ "cta": "Comment 'commerce' for the repo link",
+ "relevance": {
+  "score": 3,
+  "why": "Relevant if any of Haji's apps sells products or services; the shopping/merchant split with human-approval gates and the demand-signal loop is a reusable architecture. Otherwise a reference repo"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Clone and read the repo (prompts, tool contracts, approval gates) as a pattern library for in-app agents; a weekend to adapt the shopping agent to a store. Only worth it for a commerce product"
+ },
+ "verify": [
+  "Repo URL and license (screen shows Apache-2.0 under anthropics org) and whether it is maintained",
+  "Does the demand-signal loop exist in code or is it the creator's framing of the diagram?",
+  "Source of the 35%/60% numbers on Anthropic's page"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Anthropic's official open-source commerce-agents reference (shopping + merchant agents, Agent SDK, approval gates) was not in the liked set"
+ }
+}

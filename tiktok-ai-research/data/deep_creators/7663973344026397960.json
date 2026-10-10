@@ -1,0 +1,84 @@
+{
+ "id": "7663973344026397960",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7663973344026397960",
+ "creator": "nocode.joshua",
+ "title": "Seven Claude marketing skills listicle: Head of Content (Brad Automates), AI SEO, Brand Guidelines, Anthropic Marketing plugin (HubSpot/Slack/Canva/Klaviyo), Marketing Council, Lessie lead-finder, Campaign Launcher OSS",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Head of Content skill (by Brad Automates)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Tracks top creators and turns their patterns into a content plan"
+  },
+  {
+   "name": "AI SEO skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Rewrites content to rank in AI engines (ChatGPT/Claude/Perplexity)"
+  },
+  {
+   "name": "Brand Guidelines skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Applies colours, fonts, voice across the business"
+  },
+  {
+   "name": "Anthropic Marketing plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Six commands, integrations with HubSpot, Slack, Canva, Klaviyo"
+  },
+  {
+   "name": "Marketing Council skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Simulated board: Brand Strategist, Growth Marketer, Data Analyst, Content Lead, Customer Advocate, Creative Director"
+  },
+  {
+   "name": "Lessie skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Finds creators and B2B leads across ~100 live sources and verifies emails"
+  },
+  {
+   "name": "Campaign Launcher OSS skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Plans and launches a multi-channel ad campaign"
+  }
+ ],
+ "claims": [
+  "Anthropic Marketing plugin: one install gives six commands wired into HubSpot, Slack, Canva and Klaviyo",
+  "Lessie finds creators and B2B leads across 100 live sources and verifies each email",
+  "Campaign Launcher OSS plans and launches a multi-channel ad campaign directly"
+ ],
+ "how_to_steps": [
+  "Listicle only; no install steps shown"
+ ],
+ "on_screen_only": [
+  "Title card '10/10 Claude Skills for Marketing (But they increase in power)' with Claude logo",
+  "Skill cards: 'SKILL 01 Head of Content - Brad Automates', 'SKILL 02 AI SEO - Makes content rank in AI search' (ChatGPT, Claude, Perplexity icons), brand-system board (colour swatches, 'Aa' type), 'SKILL 04 Anthropic Marketing Plugin - One install connects six commands to HubSpot, Slack, Canva, and Klaviyo', Marketing Council board with six persona cards and 'Get a balanced recommendation from every angle', 'SKILL 06 Lessie - Finds creators and B2B leads, then verifies emails' (100+ sources, 'verified' badge), 'SKILL 07 Campaign Launcher OSS - Plans and launches a multi-channel ad campaign' (Social, Email, Ads, Analytics, Landing Page)",
+  "No URLs or repo names shown for any skill"
+ ],
+ "cta": "Follow for more Claude tips",
+ "relevance": {
+  "score": 3,
+  "why": "Marketing is the weak leg for a solo founder; the Anthropic Marketing plugin and a Marketing Council (which mirrors Haji's liked 'board of advisors' pattern) are directly usable. Rest is unverified names."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Install the official Anthropic Marketing plugin via /plugins and try it on one app launch; build a 'Marketing Council' persona skill yourself (Haji already has the council pattern). Skip Lessie/Campaign Launcher until sources are found."
+ },
+ "verify": [
+  "Only 7 of the promised 10 skills are named",
+  "Where each skill lives (GitHub repo? paid?) -- no URLs shown; 'Brad Automates', 'Lessie', 'Campaign Launcher OSS' need locating",
+  "Anthropic Marketing plugin: is it the official marketplace plugin and what do its 6 commands actually do",
+  "Lessie's '100 live sources' lead-finding likely requires paid data APIs"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the official Anthropic Marketing plugin (HubSpot/Slack/Canva/Klaviyo) and named marketing skills (AI SEO, Lessie, Campaign Launcher OSS); liked set had Corey Haines marketing-skills and ad skills but not these."
+ }
+}

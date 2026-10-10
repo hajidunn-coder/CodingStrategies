@@ -1,0 +1,64 @@
+{
+ "id": "7678864888353082654",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7678864888353082654",
+ "creator": "nate.b.jones",
+ "title": "Plain-English explainer of how agent logins (ChatGPT Work, Grok bot) work via OAuth-style access tokens so the agent never sees your password; hotel-key-card analogy",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "ChatGPT Work (agent login feature)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "new feature: sign in to a site in a browser pane, agent acts as you via an expiring access token"
+  },
+  {
+   "name": "Grok bot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "did the same login-to-token pattern 'a couple of weeks' earlier"
+  },
+  {
+   "name": "MCP",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "cited as the analogy: a pattern that became ubiquitous for agents"
+  }
+ ],
+ "claims": [
+  "ChatGPT Work can sign in to a website with your password but the agent never sees the password",
+  "Mechanism: you authenticate directly in the browser to the target site (Amazon etc.); the agent is then issued an access token that lets it act as you on that one site",
+  "Access tokens expire, so you periodically have to re-login",
+  "Grok bot shipped this first, a couple of weeks before ChatGPT Work",
+  "Creator expects this to become a universal agent pattern 'like MCP'",
+  "Creator uses it but will not let an agent log in to his bank account"
+ ],
+ "how_to_steps": [
+  "Open the agent's login screen for the site you want it to use",
+  "Enter your credentials directly in that browser pane (goes to the site, not the agent)",
+  "The agent receives a scoped, time-limited access token and acts as you on that site",
+  "When the token expires, log in again",
+  "Decide per-site what you are comfortable delegating (he excludes banking)"
+ ],
+ "on_screen_only": [
+  "Title card: 'AI Explained: Agent Logins Are Actually Secure. Here's Why.'",
+  "Talking head only; no UI, URLs or repos shown"
+ ],
+ "cta": "Share with someone who doesn't understand; comment where you would/wouldn't let an agent log in",
+ "relevance": {
+  "score": 2,
+  "why": "Useful mental model for explaining agent auth to customers/users of Haji's apps, but nothing actionable for a Claude Code builder; it is consumer-facing explainer content."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement. At most, when building agent features into an app, use delegated OAuth tokens rather than storing user passwords, which is already standard practice."
+ },
+ "verify": [
+  "Does 'ChatGPT Work' actually use OAuth/delegated tokens vs. a stored browser session cookie (he conflates the two)?",
+  "Token scoping claim: a site session cookie is often full-account access, not 'one room' as the key-card analogy suggests"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set covers app-side security checklists and Jev/agent products, but not a consumer-level explanation of how agents get delegated site access via expiring tokens. Marginal value."
+ }
+}

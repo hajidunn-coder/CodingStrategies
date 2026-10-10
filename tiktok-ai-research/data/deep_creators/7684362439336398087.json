@@ -1,0 +1,71 @@
+{
+ "id": "7684362439336398087",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7684362439336398087",
+ "creator": "ai.samaritan",
+ "title": "Three non-programmer Claude skills: 'i-have-adhd' (answer-first, numbered steps, no filler; 27.9k stars), 'no-AI-slop' (strips 20+ AI tells, lists changes, scores AI-ness), and hyperframes (Claude writes a file that renders to MP4 motion graphics, 21 templates, runs in Claude Code)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "i-have-adhd",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "github ayghri/i-have-adhd, 27.9k stars; forces answer-first, numbered steps, cuts 'great question' filler"
+  },
+  {
+   "name": "No AI Slop",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "removes 20+ AI writing tells, keeps voice, lists edits, can score how AI a text sounds"
+  },
+  {
+   "name": "hyperframes",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claude writes a spec file; hyperframes renders MP4 with motion graphics, animated captions, soundtrack; 21 templates; requires Claude Code"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "required for hyperframes"
+  }
+ ],
+ "claims": [
+  "A skill is just an instruction file: drop it in once and Claude follows it forever",
+  "i-have-adhd has ~27k stars and is for everyone, not just ADHD",
+  "No AI Slop catches 20+ patterns and tells you exactly what it changed; can scan text and rate AI-ness",
+  "hyperframes produces finished MP4 videos with no code written by you; 21 templates; replaces an editing subscription",
+  "All three are free; first two install in ~30 seconds"
+ ],
+ "how_to_steps": [
+  "Install i-have-adhd skill into Claude (30 s)",
+  "Install No AI Slop skill (30 s)",
+  "For hyperframes: set up in Claude Code, pick a template, have Claude write the composition file, render to MP4"
+ ],
+ "on_screen_only": [
+  "GitHub star widget 'Star 27.9k'; repo header 'ayghri / i-have-adhd Public' with brain emoji",
+  "i-have-adhd README 'What changes' Before/After example: Before is a long 'Great question! Let me think about this...' paragraph; After is 'Run npm install jsonwebtoken@latest, then edit src/auth.ts: 1. Open src/auth.ts 2. Replace verifyToken (lines 42-58) with the snippet below 3. Run npm test -- auth.spec.ts'",
+  "No AI Slop README 'The slop that this skill catches': 1 Binary contrasts ('It's not X. It's Y.') 2 Throat-clearing openers 3 Faux-insight setups 4 Colon reveals 5 Dramatic fragments 6 Superficial analysis 7 Importance puffery 8 Weasel attribution 9 Synonym cycling 10 Fake-profound endings; 'also checks the fundamentals: lead with the point...'",
+  "hyperframes terminal/handoff screenshot: a HANDOFF.md-driven session (social-edit branch, 'Start from branch claude/existing-fermi-...', whisper transcription, word-synced captions, 'PracticalAI'-branded video), Claude Code usage-limit banner 'Resets Thu Jul 16 8:00 PM', '+22,837 -124 Create PR'",
+  "Rendered video preview with three talking-head frames and 'PracticalAI' logo"
+ ],
+ "cta": "None explicit (install this week)",
+ "relevance": {
+  "score": 3,
+  "why": "Answer-first output formatting and de-slop are useful daily for a time-poor founder; hyperframes could produce VA explainer videos but is heavier."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "i-have-adhd: paste its rules into CLAUDE.md or a global skill (minutes). No-AI-slop overlaps with humanizer; pick one. hyperframes: a weekend project if video content is a goal."
+ },
+ "verify": [
+  "Repo ayghri/i-have-adhd star count (27.9k shown)",
+  "Exact repo name for 'No AI Slop' skill is not shown",
+  "hyperframes maintenance status and render pipeline (ffmpeg? Remotion?) and whether it really needs Claude Code"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "hyperframes and humanizers are in the liked set, but 'i-have-adhd' (answer-first, no-filler output formatting skill) is new and the cheapest win here."
+ }
+}

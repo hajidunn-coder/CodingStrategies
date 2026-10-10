@@ -1,0 +1,54 @@
+{
+ "id": "7690285921308183838",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7690285921308183838",
+ "creator": "aiwithabhijay",
+ "title": "Free 'linkedin-agent-skill' repo (Jakeshincariol/linkedin-agent-skill): 11 Claude skills for LinkedIn posts (21 hook formulas), comments, replies, profile, weekly plan, plus a humanizer that strips Claude's watermark and passes 5 AI detectors",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Jakeshincariol/linkedin-agent-skill",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub, MIT, ~761 stars; 'Eleven free Claude skills that run a LinkedIn account... Free, MIT, no API key, nothing to connect'; folders .claude-plugin, skills, templates; topics claude-skills, linkedin-agent, humanizer"
+  },
+  {
+   "name": "Humanizer skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Removes em dashes, AI buzzwords, 'Claude watermark'; runs 5 AI detectors"
+  }
+ ],
+ "claims": [
+  "11 skills: Post Writer (21 hook formulas), Comment Drafter, Reply Handler, Profile Optimizer, Content Planner, Humanizer, Hook Extractor, Repurposer, Thread Monitor, Engagement Analytics, Employee Advocacy",
+  "Profile Optimizer scores your profile out of 100",
+  "Humanizer passes content through five AI detectors so it is not flagged"
+ ],
+ "how_to_steps": [
+  "Download/install the repo as a Claude plugin; follow + comment 'X' for the setup guide"
+ ],
+ "on_screen_only": [
+  "GitHub repo page: Jakeshincariol / linkedin-agent-skill (Public), README 'The LinkedIn agent skill: Eleven Claude skills that run a LinkedIn account. Free, MIT, no API key, nothing to connect. One of them writes your posts off 21 hook formulas. One comments on other people's posts. One handles the replies...'; About: 'Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.'; 761 stars, 118 forks, 7 watching; files .claude-plugin, skills, templates, .gitignore, LICENSE, README.md",
+  "Skill icon grid: Post Writer, Comment Drafter, Reply Handler, Profile Optimizer, Content Planner, Humanizer, Hook Extractor, Repurposer, Thread Monitor, Engagement Analytics, Employee Advocacy",
+  "Content Planner mock: Mon Write post - Hook #7, Tue Comment on 6 posts, Wed Reply to all DMs, Thu Draft article outline, Fri Post + engage 30 min, Sat Rest, Sun Plan next week",
+  "Humanizer mock: Em dashes Removed, AI buzzwords Removed, Claude watermark Removed, AI detectors (5/5) Passed"
+ ],
+ "cta": "Follow and comment 'X' for the setup guide",
+ "relevance": {
+  "score": 2,
+  "why": "Haji has already liked this exact repo twice ('linkedin-agent-skill' 11/12 skills videos). Only new detail is the repo owner handle and star count."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already on the list; if Haji wants LinkedIn presence for his apps, install once from github.com/Jakeshincariol/linkedin-agent-skill and use Post Writer + Humanizer."
+ },
+ "verify": [
+  "Repo owner spelling 'Jakeshincariol' from screen; confirm it is the same repo as the liked videos",
+  "Whether the 5 'AI detectors' are real API calls or heuristics",
+  "LinkedIn ToS risk for auto-commenting"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of liked 'linkedin-agent-skill' content; adds only the GitHub owner (Jakeshincariol) and star count (~761)."
+ }
+}

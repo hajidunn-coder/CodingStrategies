@@ -1,0 +1,77 @@
+{
+ "id": "7679199648770215182",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7679199648770215182",
+ "creator": "chase_ai_",
+ "title": "Three-step workflow for the new Claude Code /design skill: feed reference screenshots (Pinterest/Dribbble/Landbook/Twitter), stack it with Impeccable or Taste, then iterate with multiple versions and the artboard's properties panel and Tweaks sliders",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude Code /design skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "ClaudeDevs post: '/design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop on artifacts. Run /design to get editable artboards for your UI - pick one, tweak, then have Claude implement it'"
+  },
+  {
+   "name": "Impeccable",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "README: '1 skill, 23 commands, live browser iteration, 59 deterministic detector rules'; install `npx impeccable install`, `/impeccable init` writes PRODUCT.md and offers DESIGN.md; commands polish, audit, critique, quieter; docs impeccable.style"
+  },
+  {
+   "name": "Taste skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "alternative front-end design skill to stack"
+  },
+  {
+   "name": "Pinterest, Dribbble, Landbook, Twitter",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "sources for design inspiration screenshots"
+  },
+  {
+   "name": "Claude Design artboard UI",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Edit/Code/Tweaks tabs, properties bar (Appearance: Background #212225, Radius, Overflow, Opacity; Sizing; Position), click any component to edit"
+  }
+ ],
+ "claims": [
+  "/design is 'the best upgrade Claude Code has gotten in a long time'",
+  "Skill stacking: /design plus Impeccable or Taste or any front-end skill in the same prompt",
+  "Tweaks section turns any parameter (background color, font size) into a slider via a prompt",
+  "Apply the inspiration -> skills -> iterate cycle at component level, not just page level"
+ ],
+ "how_to_steps": [
+  "Collect reference screenshots of the aesthetic (Pinterest, Dribbble, Landbook, Twitter) and feed them to Claude Code",
+  "Run /design and in the same instruction invoke Impeccable (or Taste) so the design skill and the design-system skill stack",
+  "Ask for several versions of the page/poster",
+  "In the artboard, click a component to open the properties panel; use Tweaks to prompt sliders for background color, font size, etc.",
+  "Repeat inspiration -> skills -> iterate per component, then have Claude implement the chosen artboard"
+ ],
+ "on_screen_only": [
+  "ClaudeDevs post text: 'Claude Code can design now. The new /design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop on artifacts. Run /design to get editable artboards for your UI - pick one, tweak, then have Claude implement it.'",
+  "Impeccable README: 'Why Impeccable? Anthropic's frontend-design was the first widely-used design skill for Claude... Every model trained on the same SaaS templates... purple-to-blue gradients, cards nested in cards, gray text on colored backgrounds, rounded-square icon tile above every heading. Impeccable adds: One setup flow (/impeccable init writes PRODUCT.md and offers DESIGN.md), 23 commands (polish, audit, critique, quieter...), 59 deterministic detector rules plus LLM-only critique checks. The CLI and browser extension work without an LLM or API key.' Quick start: `npx impeccable install` then `/impeccable <command> <target>`; Apache-2.0",
+  "Artboard demo 'The Rhythm Section - Set payday once. It loops forever.' with color swatch rows and a pricing card '[$X] / person / month'",
+  "Properties panel: Appearance Background #212225, Radius 0, Overflow visible, Opacity 1.00; Sizing Width 247px Height 128px; Position"
+ ],
+ "cta": "none explicit",
+ "relevance": {
+  "score": 4,
+  "why": "Haji liked Claude Design, Impeccable and Taste videos; this adds the /design skill inside Claude Code plus a practical stacking/iteration workflow that fits a time-poor founder building landing pages"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Immediate: run /design in Claude Code with Impeccable installed (`npx impeccable install`, `/impeccable init`), paste 3-5 reference screenshots, ask for 3 versions, use Tweaks sliders. An hour to adopt"
+ },
+ "verify": [
+  "Is /design available on Haji's plan/version (research preview) and does it work in CLI as well as Desktop?",
+  "Impeccable command list and whether 'init' overwrites an existing DESIGN.md",
+  "Whether stacking two design skills causes conflicting rules"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "The /design skill in Claude Code (research preview) and the explicit three-step inspiration -> skill-stack -> Tweaks-slider iteration loop; liked set covered Claude Design app and Impeccable separately"
+ }
+}

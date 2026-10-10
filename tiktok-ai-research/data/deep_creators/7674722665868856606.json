@@ -1,0 +1,61 @@
+{
+ "id": "7674722665868856606",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7674722665868856606",
+ "creator": "noevarner.ai",
+ "title": "Beginner install of Claude Code on a Mac: copy the curl line from the docs quickstart, paste in Terminal, run 'claude', accept permissions",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude Code docs quickstart",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Claude Code Docs > Getting started > Quickstart, 'Step 1: Install Claude Code'"
+  },
+  {
+   "name": "Native installer",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "curl -fsSL https://claude.ai/install.sh | bash (macOS/Linux/WSL); Windows PowerShell and CMD variants listed"
+  },
+  {
+   "name": "macOS Terminal",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": ""
+  }
+ ],
+ "claims": [
+  "No coding knowledge needed to install",
+  "Installer prints 'Claude Code successfully installed!' and 'Installation complete!'"
+ ],
+ "how_to_steps": [
+  "Open the Claude Code docs quickstart and copy the install line for your OS",
+  "Open Terminal, paste the line, hit Enter; wait for 'Setting up Claude Code...' then the green success message",
+  "Type 'claude' and Enter; answer the permission/trust prompt with 1 (Yes)",
+  "Comment 'Claude' for the full guide"
+ ],
+ "on_screen_only": [
+  "Overlay 'Easiest Way To Set Up Claude Code'",
+  "Terminal: 'noevarner@Mac ~ % curl -fsSL https://claude.ai/install.sh | bash', 'Setting up Claude Code...', 'Claude Code successfully installed!', 'Location: ~/.local/bin/claude', 'Next: Run claude --help to get started', 'Installation complete!'",
+  "Docs sidebar: Getting started, Quickstart, Core concepts, How Claude Code works, Extend Claude Code, Explore the .claude directory, Prompt caching, Use Claude Code, Store instructions and memories, Permission modes, Manage sessions",
+  "Install table: macOS/Linux/WSL curl; Windows PowerShell irm ... | iex; Windows CMD curl; note 'If the install fails with syntax error near unexpected token'",
+  "Trust prompt: 'Quick safety check: Is this a project you created or one you trust?'; 'Step 4: Ask you...'"
+ ],
+ "cta": "Comment 'Claude' for the full install guide",
+ "relevance": {
+  "score": 1,
+  "why": "Haji already runs Claude Code daily; pure beginner install content."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [
+  "Install command may change; check current docs"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate / below the level of liked content; beginner install only."
+ }
+}

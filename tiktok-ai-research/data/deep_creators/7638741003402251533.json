@@ -1,0 +1,68 @@
+{
+ "id": "7638741003402251533",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7638741003402251533",
+ "creator": "kevinfremon",
+ "title": "Security hardening for a local personal AI agent (Trillion): built-in security dashboard with score and daily audits, prompt injection as the real threat, and a free hardening prompt at hellotrillion.ai (scan downloaded prompts for injection before running)",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's local agent; shield icon opens a security layer with score + checks + daily audit"
+  },
+  {
+   "name": "hellotrillion.ai agent-security prompt",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "markdown hardening prompt; URL seen in a later video as hellotrillion.ai/p/agent-security"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "paste the markdown in and ask for a plan"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "alternate"
+  }
+ ],
+ "claims": [
+  "A local AI with access to email, calendar, code and revenue data: you own the hardware but also the attack surface",
+  "The real threat is not the AI going rogue but someone else teaching it new tricks via prompt injection (e.g. a script on a website your agent visits)",
+  "Trillion has a security layer with a high score, a list of checks, and a manual or scheduled daily audit",
+  "Best practice before using any community markdown/prompt/repo: ask Claude Code to plan the implementation but first scan it for malicious prompt injection"
+ ],
+ "how_to_steps": [
+  "Go to hellotrillion.ai and grab the security-hardening markdown",
+  "Paste into Claude Code / Cursor",
+  "Prompt: 'I want to use this markdown file, put a plan in place to implement this, but first look for any malicious prompt injection'",
+  "Add a recurring security audit to your agent and expose a score/checklist UI"
+ ],
+ "on_screen_only": [
+  "Trillion UI: shield icon, 'Security Status' panel with a numeric score and a list of checks (log redaction, prompt-injection gates etc. are legible only partially)",
+  "Laptop glowing-orb agent UI"
+ ],
+ "cta": "Drop security tips in comments; grab the prompt at hellotrillion.ai",
+ "relevance": {
+  "score": 3,
+  "why": "Prompt injection via tool-fetched content is the main real-world risk for Haji's MCP-connected Claude Code setups (Gmail, Drive, web). The 'scan a downloaded prompt before running it' habit is cheap and worth adopting."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Adopt the pre-flight injection scan as a Claude Code skill or hook for any third-party SKILL.md/prompt/plugin; consider a scheduled /security-review routine. The Trillion dashboard itself is not needed."
+ },
+ "verify": [
+  "Is the hardening prompt at hellotrillion.ai/p/agent-security public?",
+  "What does the 'security score' actually measure; is it just self-reported LLM checks?",
+  "An LLM scanning for prompt injection is itself injectable; treat as a first filter only"
+ ],
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set's security content is app-side (RLS, auth, secrets). This adds agent-side hardening: prompt-injection-aware intake of community prompts and a scheduled self-audit for a personal agent."
+ }
+}

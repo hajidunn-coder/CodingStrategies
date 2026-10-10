@@ -1,0 +1,60 @@
+{
+ "id": "7657147821795151111",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7657147821795151111",
+ "creator": "nocode.joshua",
+ "title": "Three personal Claude agents from a 5-year developer: voice 'Bring to Life' agent that prototypes ideas from a walk, a Capture agent that files tasks/notes into ~50 Notion databases, and a Daily Review agent with calendar/email/task access",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude (voice)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "voice chat to each agent"
+  },
+  {
+   "name": "Notion second brain",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "tasks, projects, notes, videos, ~50 databases"
+  },
+  {
+   "name": "Calendar / email / tasks connectors",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "used by the review agent"
+  }
+ ],
+ "claims": [
+  "Bring to Life agent: voice an idea on a walk, it returns a prototype or rough design sketch plus research plan by the time you are back at the desk",
+  "Capture agent organizes tasks, projects, notes, videos across 'another 50 databases' in Notion",
+  "Daily Review agent evaluates the day (what went well, what to improve, insights, plan for tomorrow) using calendar, emails, tasks, via voice"
+ ],
+ "how_to_steps": [
+  "Create a 'Bring to Life' agent whose goal is to output prototype/design/research plan from a voice idea",
+  "Create a Capture agent with Notion access to store info in the right databases",
+  "Create a Daily Review agent with calendar/email/task access and run it by voice each evening"
+ ],
+ "on_screen_only": [
+  "Diagram 'Input -> Bring To Life -> Output': Voice idea / Prompt / Notes / Sketch -> Prototype / Design / Research Plan",
+  "Capture Agent diagram feeding Notion Second Brain (Tasks, Projects, Notes, Content, Video Scripts)",
+  "'3. Daily Review Agent' diagram: Calendar, Emails, Tasks -> What went well, What can improve, Insights, Plan for tomorrow; 'End of Day Review (Voice)'",
+  "Title card '3 mindblowing yet simple Claude AI Agents - After 5+ years of building'"
+ ],
+ "cta": "none explicit",
+ "relevance": {
+  "score": 2,
+  "why": "Concept-level only; no prompts or setup shown. Haji has already liked more concrete Jarvis/chief-of-staff and Cowork agent builds"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The Daily Review routine could be a Claude Routine in 20 minutes if wanted, but the video gives no prompt; the others are ideas not recipes"
+ },
+ "verify": [
+  "How the 'agents' are implemented (Claude Projects? Cowork? custom app?) - never stated"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (personal assistant agents, daily briefing/review already covered in more depth)"
+ }
+}

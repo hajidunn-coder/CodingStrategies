@@ -1,0 +1,78 @@
+{
+ "id": "7689200894797253918",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7689200894797253918",
+ "creator": "aiwithabhijay",
+ "title": "Five Claude Code plugins pitch: OmniRoute (200+ providers, auto-switch on limits), claude-mem (cross-session memory), headroom (context trimming / prefix-cache savings), claude-code-setup (scans repo and recommends skills/hooks/subagents/MCPs), task-observer (meta-skill that learns your work and improves skills)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "OmniRoute",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Smart Router' connecting Claude Code to 200+ AI providers incl. free tiers; auto-switches on limits"
+  },
+  {
+   "name": "claude-mem",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub thedotmack/claude-mem (star history chart); folders .claude-plugin, .codex-plugin, .cursor-plugin, .agent-jobs, .agent/rules; 635 branches"
+  },
+  {
+   "name": "headroom",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub 'headroom' Public, 459 branches, 171 tags; folders .cargo, .claude-plugin, .codegraph, .devcontainer, .serena; shows Savings Breakdown: Compression $25.55 (5.3M tokens removed), Prefix Cache Discount $18.52, cache reads 20.6M"
+  },
+  {
+   "name": "claude-code-setup",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub 'claude-code-setup' by user 'rse', master branch, folders .claude, .config/ccstatusline, .tweakcc, bin, etc, MANIFEST.txt, Makefile; /quorum command"
+  },
+  {
+   "name": "task-observer",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "README 'task-observer - One Skill to Rule...' meta-skill, CC-BY-4.0; logged 1,500+ observations, 82 skills; identifies new skills and improves existing ones"
+  }
+ ],
+ "claims": [
+  "OmniRoute connects Claude Code to 200+ AI providers and auto-switches models on rate limits, giving a huge pool of free tokens",
+  "claude-mem gives memory across sessions so you don't re-explain project context",
+  "headroom removes unnecessary context before sending, same results with fewer tokens (screen: $25.55 saved via compression, $18.52 via prefix cache)",
+  "claude-code-setup scans your codebase and recommends skills, hooks, subagents and MCP servers",
+  "task-observer learns how you work and continuously improves your Claude Code workflows (README: 1,500+ observations, majority of 82 skills created by it)"
+ ],
+ "how_to_steps": [
+  "Install each as a Claude Code plugin (.claude-plugin folders visible)",
+  "Comment 'Claude' to get links and setup guide"
+ ],
+ "on_screen_only": [
+  "Title card 'Don't Use Claude Code Without These Five Plugins'",
+  "OmniRoute dashboard: Providers grid 'API Key Compatible Providers' and 'Free Tier Providers'; 'OmniRoute - Smart Router' terminal art with DeepSeek, Groq, xAI, GLM, MiniMax tiles",
+  "claude-mem repo: Pibomeister commit 'Prevent expired quota sm...'; star-history.com chart thedotmack/claude-mem",
+  "headroom repo: 3 people, commit 'fix(wrap): stop blocking the laun...'; REALIGNMENT folder; Savings Breakdown panel (Prefix Cache Impact: CACHE READS 20.6M $18.52 saved, CACHE WRITES 2.7M $0.664 write premium)",
+  "claude-code-setup: commit 'add one more lint step'; Claude Code welcome screen cwd /Users/rse/Work/speechflow/speechflow-cli; '/quorum  Query Multiple AIs for Quorum Answer (project, gitignored)'",
+  "task-observer observation log: correction 001.md newsletter-writing 'Lead with data. Avoid stock openers.'; gap 002.md new skill candidate weekly-report; self 003.md task-observer 'Log corrections before the rewrite'"
+ ],
+ "cta": "Comment 'Claude' for all five links and setup guide",
+ "relevance": {
+  "score": 3,
+  "why": "claude-mem and OmniRoute are already in Haji's liked set; headroom (token/cache savings) and task-observer (self-improving skill library) are directly relevant to a token-constrained solo builder."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Try headroom if token spend is a problem and task-observer as a lighter version of the session-learning habit. claude-code-setup looks like one developer's personal dotfiles ('rse'), not a general plugin; skip."
+ },
+ "verify": [
+  "headroom: which org/repo, does it work with Claude Code subscription (prefix caching is API-side) or only API usage?",
+  "task-observer: author/repo, CC-BY-4.0 means it is docs/prompt not code; does it need the 'Augmented Expert' framework mentioned in README?",
+  "claude-code-setup appears to be github.com/rse personal config, not a recommender tool as described",
+  "OmniRoute 'free tokens' claim; ToS risks of chaining free tiers"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "OmniRoute, claude-mem and Ponytail are already liked; new here are headroom (context compression + cache savings dashboard) and task-observer (meta-skill that mines corrections into new skills)."
+ }
+}

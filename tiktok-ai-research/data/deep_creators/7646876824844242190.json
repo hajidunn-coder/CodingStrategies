@@ -1,0 +1,78 @@
+{
+ "id": "7646876824844242190",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7646876824844242190",
+ "creator": "kevinfremon",
+ "title": "Kevin Fremon's 'Trillion' agent: why the orchestration layer (smart routing, async dispatch to specialist subagents, handoff tracking, hot-reloading agents, token-bleed control) matters, plus a new prompt library at hellotrillion.ai/prompts",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's voice-first local AI orchestrator; GitHub repo waitlist at hellotrillion.ai"
+  },
+  {
+   "name": "Trillion prompt library",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "hellotrillion.ai/prompts (markdown prompts to paste into Claude Code / Cursor / Aider)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "named as the target for pasting the prompts"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "alternate target"
+  },
+  {
+   "name": "Aider",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "alternate target"
+  }
+ ],
+ "claims": [
+  "Trillion's orchestrator does smart routing: figures out which specialist owns a request, dispatches asynchronously, surfaces results, offers handoffs, tracks the whole chain",
+  "New agents can hot-reload into the roster the moment they are created",
+  "A well-optimized orchestrator reduces token usage ('stops token bleeding') while maximizing output",
+  "He has documented all prompts used to build Trillion over the past two months in a prompt library"
+ ],
+ "how_to_steps": [
+  "Go to hellotrillion.ai/prompts",
+  "Grab the orchestration-layer markdown prompt",
+  "Paste it into Claude Code / Cursor / Aider against your own agent codebase to upgrade your orchestrator"
+ ],
+ "on_screen_only": [
+  "Browser at hellotrillion.ai/prompts showing prompt cards: 'Build a Head-of-Design Sub-Agent - From Vanilla HTML to a Composing Designer in One Session' (component primitives React.js + Tailwind + shadcn/ui + MagicUI + Framer Motion)",
+  "'Harden Your AI Agent Against Real Attacks - From Binary Trust to Audited in One Session' (log redaction, prompt-injection gates, timed approval for code execution, hardline shell blocklist, bearer-auth rate-limiting)",
+  "'Cut Your AI Voice Agent's Response Latency from 6 Seconds to 1' (pipeline LLM stream into TTS, hold-over-ahead)",
+  "'Lock in Your AI Agent's Personality So It Doesn't Drift Across Turns'",
+  "'Add a Voice-First Mobile PWA to your AI Agent'",
+  "Button 'Get the repo (free)'; link hellotrillion.ai/p/agent-security",
+  "Laptop shows the Trillion UI: glowing neural-globe visualization with agent avatars orbiting"
+ ],
+ "cta": "Visit the link / prompt library; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Orchestration/routing and token discipline are directly relevant to Haji's Claude Code subagent setups and any 'Jarvis' build. But Trillion itself is not released; value is the prompt library."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to try: pull the orchestration and agent-security prompts from hellotrillion.ai/prompts and run them through Claude Code in plan mode against an existing agent project. Review before running (creator says the same)."
+ },
+ "verify": [
+  "Is hellotrillion.ai/prompts live and free, or a lead magnet behind email?",
+  "Trillion GitHub repo still unreleased (waitlist); no code to evaluate",
+  "Token-saving claim is unquantified"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has two other Trillion videos (WWWHH handoff note, board of directors) but not the orchestration-layer rationale or the hellotrillion.ai/prompts library with the agent-security hardening and voice-latency prompts."
+ }
+}

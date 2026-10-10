@@ -1,0 +1,62 @@
+{
+ "id": "7683586609425534238",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7683586609425534238",
+ "creator": "ducktate.com",
+ "title": "Token Hacking Part 2: use Claude (Fable) as the planner and drive Codex CLI as the coder to stretch weekly limits; symlink CLAUDE.md to AGENTS.md and write a harness prompt to keep Codex on track",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code (Fable)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the 'brains', controls Codex through its CLI"
+  },
+  {
+   "name": "Codex CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "does hands-on coding; reads only AGENTS.md"
+  },
+  {
+   "name": "CLAUDE.md / AGENTS.md symlink",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "symlinks keep both files in sync"
+  }
+ ],
+ "claims": [
+  "Hitting the weekly Claude usage limit one day in is common",
+  "Codex gives more weekly usage than Fable/Claude currently",
+  "Claude can control Codex through the CLI; the blocker was Codex only reading AGENTS.md, solved with symlinks",
+  "An explicit 'harness' (a detailed prompt) is required to control how Fable talks to Codex so Codex does not go off the rails; still iterating on it"
+ ],
+ "how_to_steps": [
+  "Keep Claude as planner/reviewer; have it invoke Codex CLI for implementation",
+  "Symlink CLAUDE.md <-> AGENTS.md so Codex reads the same project instructions",
+  "Write a harness prompt that defines exactly how Claude delegates to Codex (scope, constraints, checks)",
+  "Iterate on the harness; creator plans a blog post with copy-able setup"
+ ],
+ "on_screen_only": [
+  "Title card 'Claude TOKEN HACKING Part 2'",
+  "Caption words only (WEEK, CODEX, AGENTS, SYNC, PROMPT, RESULTS, TRACKS); no code shown"
+ ],
+ "cta": "Comment what you think; 'see you tomorrow' (daily series)",
+ "relevance": {
+  "score": 3,
+  "why": "Haji liked 'Codex limit hack' and token-saving plugins; this is the mirror strategy (Claude plans, Codex executes). Practical for a Max subscriber who hits limits, but the harness is unfinished and nothing copy-able is shown"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Symlinking CLAUDE.md to AGENTS.md is a 1-minute win if Codex is in the stack. Claude-drives-Codex needs a harness prompt plus permission handling; a few hours to get reliable. Worth it only if weekly limits actually bite"
+ },
+ "verify": [
+  "Does Codex CLI currently ignore CLAUDE.md and read only AGENTS.md (vs supporting both)?",
+  "Whether the creator's harness/blog post exists",
+  "Relative weekly quotas of Codex vs Claude plans at the time"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The CLAUDE.md->AGENTS.md symlink trick and the 'Claude as orchestrator of Codex CLI' direction; liked content had the reverse (plan in ChatGPT, execute in Codex)"
+ }
+}
