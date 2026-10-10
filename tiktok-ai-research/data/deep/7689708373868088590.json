@@ -1,0 +1,80 @@
+{
+ "id": "7689708373868088590",
+ "url": "https://www.tiktok.com/@bengusberg/video/7689708373868088590",
+ "creator": "bengusberg",
+ "title": "NVIDIA offers free API endpoints for ~99 open and partner models (DeepSeek, GLM, Kimi, MiniMax, OpenAI open models); generate a key and drop it into Claude Code/Codex",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "NVIDIA free model API (build.nvidia.com / NIM endpoints)",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Site name not spoken; UI shows 'Prototype: Start building with a free API endpoint' and model cards with 'Free Endpoint' badge"
+  },
+  {
+   "name": "DeepSeek",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Logo shown"
+  },
+  {
+   "name": "GLM-5-3 (Zhipu AI)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Card: '753B-parameter text MoE with DeepSeek-style sparse attention, native FP8 weights, reasoning and tool calling', Free Endpoint"
+  },
+  {
+   "name": "Kimi AI (Moonshot)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Logo shown"
+  },
+  {
+   "name": "MiniMax",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Logo shown"
+  },
+  {
+   "name": "OpenAI (open-weight models)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "'even OpenAI models'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Drop the API key into Claude or Codex"
+  }
+ ],
+ "claims": [
+  "'You no longer need to pay for AI API keys'; NVIDIA gives free access to 99 of the top models in one place",
+  "Setup in '20 seconds or less'",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Go to the NVIDIA model catalog site",
+  "Click any model, generate an API key",
+  "Use the key with the OpenAI-compatible endpoint (code sample shows client.chat.completions.create with base_url integrate.api.nvidia.com/v1 and NVIDIA_API_KEY) in Claude Code/Codex, or paste the site URL into Claude/ChatGPT and have it wire up the API"
+ ],
+ "on_screen_only": [
+  "NVIDIA logo card with partner logos: Kimi AI, DeepSeek, MiniMax, OpenAI, Zhipu AI",
+  "Model card 'glm-5-3' with 'Free Endpoint' badge: '753B-parameter text MoE with DeepSeek-style sparse attention, native FP8 weights, reasoning and tool calling', tags 'reasoning' +4",
+  "'Prototype — Start building with a free API endpoint' panel with Python snippet (OpenAI client, base_url https://integrate.api.nvidia.com/v1, api_key NVIDIA_API_KEY, messages, temperature, top_p) and 'Specifications' sidebar"
+ ],
+ "cta": "Try it and let me know what you build; follow",
+ "relevance": {
+  "score": 3,
+  "why": "Free OpenAI-compatible endpoints are handy for prototyping features that call cheaper models (classification, summaries) inside products; not a replacement for Claude in Claude Code."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a bookmark for prototyping side-tasks with open models at zero cost; free tiers are rate-limited and unsuitable for production, so do not build the business on it."
+ },
+ "verify": [
+  "Exact site (build.nvidia.com?) and current free-tier limits (requests/min, credits) and terms for commercial use",
+  "Which 'OpenAI models' are offered (gpt-oss open weights, not GPT-4/5)",
+  "Data retention policy for prompts sent to free endpoints"
+ ]
+}

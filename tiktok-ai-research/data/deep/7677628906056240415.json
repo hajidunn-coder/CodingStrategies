@@ -1,0 +1,92 @@
+{
+ "id": "7677628906056240415",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7677628906056240415",
+ "creator": "noevarner.ai",
+ "title": "Skit + how-to: a voice 'Jarvis' built on Claude Code that reads daily app stats via Stripe, analytics, ads, Gmail MCPs, with a Claude Design UI and ElevenLabs voice",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Feed it a reference image of a Jarvis UI and it builds the dashboard code 'in 5 minutes'"
+  },
+  {
+   "name": "ElevenLabs API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Pick any voice (e.g. British) for the assistant"
+  },
+  {
+   "name": "Stripe MCP",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Pull previous-day revenue"
+  },
+  {
+   "name": "Zernio MCP (as heard)",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Pull TikTok/LinkedIn/Instagram organic metrics from the previous day (name uncertain)"
+  },
+  {
+   "name": "Meta Ads MCP",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Check ad spend/ROAS; download creatives and transcribe them so Claude Vision can judge which creatives work"
+  },
+  {
+   "name": "Gmail MCP",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Pull previous-day emails and respond with a Claude agent"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "'How to build your own JARVIS with Claude Code'"
+  },
+  {
+   "name": "Claude Vision",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Analyses ad creatives"
+  }
+ ],
+ "claims": [
+  "Skit numbers: 2,459 new downloads in 7 days; $289 revenue (overlay says $4,289); content reached 96,000; $475 ad spend at 1.5x ROAS; 13 support tickets resolved automatically; 3 users requested the same feature; work handed to 'Tom the developer agent'",
+  "Claude Design builds the Jarvis dashboard code in about 5 minutes from a reference image",
+  "Each stat is sourced from a specific MCP (Stripe, social analytics, Meta ads, Gmail)"
+ ],
+ "how_to_steps": [
+  "Find a reference image of a Jarvis-style dashboard online and feed it to Claude Design to generate the UI",
+  "Add voice with the ElevenLabs API, choosing any voice",
+  "Connect Stripe MCP to pull previous-day revenue",
+  "Connect a social analytics MCP to pull TikTok/LinkedIn/Instagram metrics",
+  "Connect Meta Ads MCP for spend/ROAS; download and transcribe creatives for Claude Vision analysis",
+  "Connect Gmail MCP to pull yesterday's emails and have a Claude agent answer them",
+  "Have the agent hand feature requests to a developer agent"
+ ],
+ "on_screen_only": [
+  "Opening overlay: 'POV: Jarvis is building you a $30k MRR app'; subtitle 'How's the app doing?'",
+  "Picture-in-picture captions: 'downloads and generated $4,289 in', 'On ads, you spent $475 at a 1.5 Return on ad', 'three users asked for the same feature, a'",
+  "Stripe 'S' logo and Gmail 'M' logo shown next to 'MCP to' captions",
+  "Multi-monitor Jarvis-style command-centre room B-roll"
+ ],
+ "cta": "Follow; comment a video link for him to react to",
+ "relevance": {
+  "score": 4,
+  "why": "The daily-metrics agent (Stripe + ads + socials + inbox into one spoken/visual brief) is a concrete, high-leverage pattern for a time-poor solo founder running apps, and it maps onto the GOOSE/morning-brief setup already in place."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Stripe and Gmail MCPs exist today; a Claude Code scheduled task could produce the brief in a few hours of work. Voice and Jarvis UI are cosmetic. The social-analytics MCP name is unclear and must be identified; the $30k MRR framing is a skit."
+ },
+ "verify": [
+  "What 'Zernio MCP' actually is (spelling/product) and whether a TikTok/LinkedIn/Instagram metrics MCP exists",
+  "Meta Ads MCP availability and auth",
+  "Is 'Claude Design' a real Anthropic product or the creator's term?",
+  "The revenue figure is inconsistent ($289 spoken vs $4,289 on screen) — numbers are illustrative"
+ ]
+}

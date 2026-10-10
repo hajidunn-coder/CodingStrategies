@@ -1,0 +1,72 @@
+{
+ "id": "7677273447218613517",
+ "url": "https://www.tiktok.com/@nateherkai/video/7677273447218613517",
+ "creator": "nateherkai",
+ "title": "Pitch: Claude Fable 5 at extra-high/max reasoning plus the Higgsfield MCP can generate cinematic 3D-scroll websites (image + video assets via Seedance) from a single prompt",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Claude Fable 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Set reasoning to 'extra high' or 'max' (slider shown: low / medium / high / extra high / max)"
+  },
+  {
+   "name": "Higgsfield MCP",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Lets Claude generate all images and videos for the site"
+  },
+  {
+   "name": "Seedance 2.0",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Video generation model Claude is told to use"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Composer shows model picker 'Opus 4.8 High' / 'Opus 5 High'"
+  },
+  {
+   "name": "Gemini 3 Flash (Antigravity-style IDE)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "A separate IDE pane shows 'Planning · Gemini 3 Flash' initialising Next.js"
+  }
+ ],
+ "claims": [
+  "Claude Fable 5 can now build websites 'people are charging $10,000 for' — cinematic 3D scrolling sites like Apple's homepage",
+  "One prompt can generate 'an award winning website from scratch'",
+  "Works for a luxury watch brand, personal portfolio, or a fictional business"
+ ],
+ "how_to_steps": [
+  "Switch Claude Code to Fable 5 and set reasoning to extra high or max",
+  "Connect the Higgsfield MCP so Claude can generate images and videos",
+  "Give one prompt describing the site (template shown: 'Build a website for my [business type]. Use [reference]...')",
+  "Tell Claude to generate all media using Seedance 2.0 and let it build the whole site"
+ ],
+ "on_screen_only": [
+  "Example sites: 'aicm — The Smarter, AI Powered Decentralized Marketplace'; Tesla Cybertruck 3D-scroll page as the aspiration; 'Creative Visual Designer' portfolio; 'Become a Martian Citizen — The Red Planet Awaits — Astronaut Registration'; 'Camply — Cabin In The Woods But In A Good Way!' with a crown graphic ('an award')",
+  "Claude Code composer with model 'Opus 4.8 High' then 'Opus 5 High'; prompt starts 'Build a website for my [business type]. Use [refere...'",
+  "Reasoning slider labelled 'Claude Fable 5 Reasoning' with arrow at extra high / max",
+  "IDE pane: 'Progress Updates: Initializing Next.js and installing dependencies... Creating mock dataset and utility functions', files utils.ts, albums.ts, 'Ask anything (⌘L)', 'Planning · Gemini 3 Flash'",
+  "DM keyword 'FABLE'"
+ ],
+ "cta": "DM 'FABLE' on Instagram; links in bio",
+ "relevance": {
+  "score": 3,
+  "why": "Same stack as the chase_ai_ video but compressed into a funnel; the only actionable bits are 'max reasoning for front-end builds' and Higgsfield MCP for assets. The $10k claim is marketing."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Trying max reasoning plus a strong single prompt with reference URL costs nothing; Higgsfield MCP adds real asset generation but paid credits. Expect several iterations, not one-shot."
+ },
+ "verify": [
+  "Are the showcased sites actually one-prompt outputs?",
+  "Higgsfield MCP availability, pricing, and whether Seedance 2.0 is exposed",
+  "Token cost of 'max' reasoning on a multi-page site build",
+  "The example sites shown appear to be generic AI demos, not paying client work"
+ ]
+}

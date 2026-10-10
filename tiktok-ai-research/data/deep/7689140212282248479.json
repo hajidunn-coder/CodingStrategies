@@ -1,0 +1,73 @@
+{
+ "id": "7689140212282248479",
+ "url": "https://www.tiktok.com/@jasoncooperson/video/7689140212282248479",
+ "creator": "jasoncooperson",
+ "title": "Live demo of an AI phone receptionist for an auto shop built in ~30 min with Claude Code + Bland AI; pitched as a $2k + $500/mo agency offer, free GitHub/Notion template",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Bland AI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Voice agent platform; pathway builder shown with nodes"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used to build the workflow in about 30 minutes"
+  },
+  {
+   "name": "GitHub template repo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "'Get the template on GitHub' link on Notion page; repo name not shown"
+  },
+  {
+   "name": "Notion page 'AI Phone Receptionist (Bland + Claude Code)'",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "notion.so page created September 17, 2026 with Loom walkthrough + GitHub link"
+  },
+  {
+   "name": "Loom",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Full walkthrough video in the Notion page"
+  }
+ ],
+ "claims": [
+  "Receptionist answers, offers availability (Tue 9 / 11:30 / 2), books 11:30, captures 2017 BMW 340i, lists services (SOS fix, reverse lamp, charge pipe + front grill install, fluids/modules check), texts confirmation mid-call asking for the part link, discloses it is an AI when asked, hangs up on its own",
+  "Built in about 30 minutes with Claude Code and Bland AI",
+  "Local businesses miss calls all day; an AI agency could sell this build for ~$2,000 plus ~$500/month retainer",
+  "Entire build, workflow, GitHub repo, Notion page and Loom walkthrough are free for commenters"
+ ],
+ "how_to_steps": [
+  "Design a Bland AI conversational pathway: Greeting -> Offer Availability -> Caller + Vehicle -> Capture Service List -> Text VIN + Parts -> Wrap Up -> Confirm + End, with global nodes AI Disclosure and Transfer to Human",
+  "Use Claude Code to generate/configure the pathway and supporting workflow (send SMS mid-call, calendar booking)",
+  "Test by calling the number; agent books slot and texts confirmation",
+  "Package as a service for local shops ($2k build + $500/mo)"
+ ],
+ "on_screen_only": [
+  "Bland pathway nodes: Greeting, Offer Availability, Caller + Vehicle, Capture Service List, Text VIN + Parts, Wrap Up, Confirm + End; GLOBAL: AI Disclosure, Transfer to Human",
+  "Graphic: Claude logo + Bland logo, '30 MINUTES'",
+  "Graphic: MISSED CALLS / PICKING UP CALLS / BOOKING APPOINTMENTS",
+  "Graphic: '$2,000 BUILD + $500/MO RETAINER'",
+  "Notion page: 'AI Phone Receptionist (Bland + Claude Code)', Created time September 17, 2026 2:22 PM, 'Get the template on GitHub', description: 'An AI receptionist that answers your business line, books the appointment, gets the caller's name and what they drive, takes down everything the car needs, texts them a confirmation mid...'"
+ ],
+ "cta": "Comment 'AGENT' to get the full build (GitHub repo + Notion page + Loom) for free",
+ "relevance": {
+  "score": 4,
+  "why": "A concrete, demonstrably working voice-agent product with a clear local-business sales pitch; for a founder who builds businesses with Claude Code this is a sellable offer or a feature for existing apps (booking)."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Feasible in a day using Bland's pathway builder plus Claude Code for the glue; the hard part is sales/ops (phone numbers, calendar integration, per-minute Bland cost, handling edge cases), not the build. Worth a weekend prototype if a service-business niche is in reach."
+ },
+ "verify": [
+  "Bland AI per-minute pricing and whether the demo call quality holds under real callers",
+  "Is the GitHub template actually public and what does it contain (pathway JSON? SMS webhook code?)",
+  "Comment-to-DM funnel likely leads to a lead magnet / community; what is the catch?",
+  "Calendar integration: which calendar did the booking actually land in?"
+ ]
+}

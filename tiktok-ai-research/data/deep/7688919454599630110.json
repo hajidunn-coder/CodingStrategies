@@ -1,0 +1,57 @@
+{
+ "id": "7688919454599630110",
+ "url": "https://www.tiktok.com/@bengusberg/video/7688919454599630110",
+ "creator": "bengusberg",
+ "title": "Promotes 'Unlazy', a free anti-laziness skill (Depth Tree method) that makes Claude/ChatGPT split tasks into subtasks so it stops skipping steps",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Unlazy",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Free skill; invoked as '/unlazy' at the start of a project; GitHub 'About' says 'Anti-laziness skill for AI agents. Core: the Depth Tree method'"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Target of the skill"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Target of the skill"
+  }
+ ],
+ "claims": [
+  "Anthropic and OpenAI 'designed their latest models to be lazy, cut corners, and lie that the job is done' (framing; official term given as 'partial compliance')",
+  "Fix takes '20 seconds or less' to install",
+  "Unlazy forces the model to split tasks into subtasks and give each the full time to complete",
+  "Creator intro: Stanford founder of an AI startup that raised $4 million"
+ ],
+ "how_to_steps": [
+  "Go to the Unlazy website/repo (URL not legible in frames)",
+  "Copy the URL into Claude or ChatGPT and tell it to help you install the skill",
+  "When starting a project, type /unlazy so the task is split into sub-tasks each given full effort"
+ ],
+ "on_screen_only": [
+  "Title card 'Combating lazy AI'",
+  "Snippet: 'Partial compliance in AI occurs when an artificial intelligence system or its provider satisfies some—but not all—regulatory, safety, or operational requirements'",
+  "GitHub About box: 'Anti-laziness skill for AI agents. Core: the Depth Tree method, which splits a task N layers deep and gives every leaf the full time budget of the whole task, so effort multiplies with depth. Grounded in 2025–2026 research on model laziness, underthinking and premature completion.'"
+ ],
+ "cta": "Try it and let me know what you build; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Premature 'done' claims from agents are a real pain for a solo founder reviewing Claude Code output; a skill that forces decomposition and per-leaf effort is relevant, though the repo/author is not named."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to trial as a Claude Code skill if the repo is real; the underlying idea (make Claude write a task tree and verify each leaf before declaring done) can also be done with a short CLAUDE.md rule in 10 minutes."
+ },
+ "verify": [
+  "Find the actual Unlazy repo and author; is it maintained and what does the skill file actually contain?",
+  "Does the 'Depth Tree' approach blow up token cost/time on simple tasks?",
+  "Is the 'models designed to be lazy' framing supported by anything, or just the hook?"
+ ]
+}

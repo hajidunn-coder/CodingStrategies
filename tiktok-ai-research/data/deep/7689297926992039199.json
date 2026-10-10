@@ -1,0 +1,56 @@
+{
+ "id": "7689297926992039199",
+ "url": "https://www.tiktok.com/@bengusberg/video/7689297926992039199",
+ "creator": "bengusberg",
+ "title": "Prompt Claude with the Minto Pyramid Principle (conclusion first, three reasons, then evidence) so all docs and emails read like consultant writing",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Minto Pyramid Principle",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Writing framework by ex-McKinsey consultant Barbara Minto"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Add the prompt to custom instructions"
+  },
+  {
+   "name": "McKinsey & Company",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Logo shown; framework origin"
+  }
+ ],
+ "claims": [
+  "Every McKinsey consultant learns this one framework",
+  "Claude by default gives fluff first and the conclusion last; people do not read to the end",
+  "Setup takes '30 seconds or less'",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Structure: 1) start with the conclusion, 2) give three supporting reasons, 3) end with supporting evidence/data",
+  "Use the prompt on anything you write (prompt text not shown legibly; paraphrase: 'Rewrite this using the Minto Pyramid Principle: conclusion first, three reasons, then evidence')",
+  "Optionally add it to Claude custom instructions so every output follows it"
+ ],
+ "on_screen_only": [
+  "McKinsey & Company logo",
+  "Photo of Barbara Minto",
+  "Pyramid diagram: 'Main Recommendation/Goal/Idea' at top -> three 'Supporting Arguments' -> 'Supporting Data / Insights / Conclusions' under each"
+ ],
+ "cta": "Try it and let me know what you write; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "Useful for investor updates, customer emails, PRDs and docs a time-poor founder writes with Claude; not a coding workflow."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Ten-minute win: add a 'writing' skill or CLAUDE.md rule enforcing conclusion-first, three reasons, evidence last for any doc/email output."
+ },
+ "verify": [
+  "Exact prompt text was not shown; write your own",
+  "Minto's book 'The Pyramid Principle' is the primary source if deeper structure (MECE grouping) is wanted"
+ ]
+}

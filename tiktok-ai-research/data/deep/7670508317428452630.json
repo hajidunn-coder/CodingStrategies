@@ -1,0 +1,47 @@
+{
+ "id": "7670508317428452630",
+ "url": "https://www.tiktok.com/@thesojournersfamily/video/7670508317428452630",
+ "creator": "thesojournersfamily",
+ "title": "A family lists five non-coding ways they use Claude: investing alerts, learning-to-action plans, homeschool curriculum, travel itineraries, finance/curriculum dashboards",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used for research, planning, and building dashboards"
+  }
+ ],
+ "claims": [
+  "They pick a stock, have Claude research expert opinions, set an entry price, and Claude 'notifies us whenever the stock hits that price'",
+  "They feed podcast/documentary learnings into Claude to produce action plans",
+  "Built a personalised curriculum for their daughter by giving Claude transcripts of YouTube videos from curricula and educational psychologists they admire",
+  "Claude builds travel itineraries matched to local events, spots and child-friendly restaurants",
+  "Claude built a finance dashboard and a curriculum dashboard their daughter's tutor also uses to track assessments"
+ ],
+ "how_to_steps": [
+  "Investing: choose an investment, ask Claude to summarise expert views, decide an entry price, get alerted at that price",
+  "Learning: paste podcast/doc content into Claude and ask for an implementation action plan",
+  "Curriculum: collect YouTube transcripts of admired educators, feed to Claude, ask for a personalised curriculum",
+  "Travel: give Claude dates/location/child constraints and ask for an itinerary",
+  "Dashboards: ask Claude to build a finance dashboard and a curriculum-tracking dashboard shared with a tutor"
+ ],
+ "on_screen_only": [
+  "Title card: 'How we use Claude — as a family building wealth'",
+  "Numbered section labels: 1 Investing, 2 Learning, 3 Our Curriculum, 4 Travel, 5 Dashboards",
+  "No UI, prompts, or products shown — talking-head only"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Consumer/lifestyle use; nothing about building apps or Claude Code. Mild signal that 'ask Claude to build me a dashboard' is now a mainstream expectation."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The only reusable idea is a Claude-built personal finance/KPI dashboard, which the founder can already do. The 'stock price alert' claim is not something Claude does natively and would need a separate alerting tool."
+ },
+ "verify": [
+  "How does Claude 'notify' them of a stock price — a scheduled task, a third-party app, or exaggeration?",
+  "Are the dashboards Claude artifacts or deployed apps?"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "7689206147579972895",
+ "url": "https://www.tiktok.com/@jploftofficial/video/7689206147579972895",
+ "creator": "jploftofficial",
+ "title": "Five UX features a 10-year app agency puts in almost every app: skeleton loaders, autofill, optimistic UI, save state, proper error handling",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "JPLoft (app development agency)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Creator's agency; 'follow JPLoft'"
+  }
+ ],
+ "claims": [
+  "Creator has built apps for over 10 years",
+  "Skeleton loaders make an app 'feel 100 times faster and more polished' vs a spinner",
+  "Autofill/prefill removes 'a ridiculous amount of friction'",
+  "Optimistic UI: update immediately, process in background, reverse only on failure",
+  "Save state: drafts, unfinished forms, filters, searches, carts should survive app close",
+  "Error handling: catch errors, preserve progress, explain in plain language, give a retry button; never show a raw 404/backend message or wipe user work"
+ ],
+ "how_to_steps": [
+  "Replace loading spinners with skeleton loaders that mirror the content layout",
+  "Use native autofill and prefill any field the app already knows (name, email, phone)",
+  "Apply optimistic UI to save/like/delete/complete actions; roll back on server error",
+  "Persist drafts, form progress, filters, searches and carts; restore on return",
+  "Wrap API/network failures: preserve state, show human-readable message, offer 'try again'"
+ ],
+ "on_screen_only": [
+  "Title card: 'Here are 5 features I'd put in almost EVERY app (after building apps for 10+ years)'",
+  "Mock form: Name 'Alex Morgan', Email 'alex@mail.com', Phone '+1 555 0100' (prefilled in green)",
+  "Mock buttons: Save / Delete / Complete",
+  "Mock: 'Form · 50%' progress bar with 'App closed' note",
+  "Mock error list: 'API fails', 'Connection lost', 'Something breaks' under warning icon",
+  "'Bonus' badge for item 6 (follow JPLoft)"
+ ],
+ "cta": "Follow JPLoft for more app-building lessons",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable product-quality checklist for anyone shipping apps with Claude Code; these are the polish items vibe-coded apps most often lack."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Zero cost: paste these five rules into CLAUDE.md / a UI-standards skill so every new screen gets skeletons, prefill, optimistic updates, draft persistence and friendly error states by default."
+ },
+ "verify": [
+  "None of this is tool-specific; just confirm the patterns fit the stack (e.g. optimistic UI with your data layer)"
+ ]
+}

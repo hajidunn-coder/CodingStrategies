@@ -1,0 +1,58 @@
+{
+ "id": "7677437944822631694",
+ "url": "https://www.tiktok.com/@bengusberg/video/7677437944822631694",
+ "creator": "bengusberg",
+ "title": "GStack: Garry Tan's free open-source Claude Code setup that turns it into a virtual software team (CEO -> eng manager -> QA -> ship) with memory of past bugs",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "GStack",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub garrytan/gstack — 'Use Garry Tan's exact Claude Code setup. 23 specialized tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "GStack is a set of Claude Code skills/commands"
+  },
+  {
+   "name": "Y Combinator",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Garry Tan is YC CEO; logo shown"
+  }
+ ],
+ "claims": [
+  "One-person company with '30 AI employees'; 129,000 people have already downloaded the setup for free",
+  "GStack is one system where each role feeds the next: CEO plans, Eng Manager builds the plan, QA Lead tests, and so on",
+  "It has memory and learns from its own bugs 'so it never makes the same mistake twice'",
+  "Creator: Stanford founder, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Go to the GStack GitHub repo and install it into Claude Code",
+  "Use the role commands in sequence (plan with CEO, review with eng manager/designer, QA, ship)"
+ ],
+ "on_screen_only": [
+  "Headline: 'GStack Turns Claude Code into a Virtual Software Development Team'",
+  "GitHub About box: 'Use Garry Tan's exact Claude Code setup. 23 specialized tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA' with a circled download/star count",
+  "Skills table (Skill / Your specialist / What they do): /office-hours — YC Office Hours; /plan-ceo-review — CEO/Founder; /plan-eng-review — Eng Manager; /design-review — Senior Designer; /qa — Developer Experience QA Lead; /design — Design Partner; /ship — Staff Engineer (approximate names; small text)",
+  "GitHub repo page for gstack with README"
+ ],
+ "cta": "Try it and comment what you build; follow for AI founder content",
+ "relevance": {
+  "score": 4,
+  "why": "A free, well-known-author Claude Code role pipeline is exactly what a solo founder lacks: plan review, design review, QA and release discipline without hiring. Transcript's '30 employees' is inflated (repo says 23 tools) but the shape is right."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Clone garrytan/gstack, run /plan-ceo-review and /qa on the next feature; a couple of hours to evaluate. Compare against the existing Council-gate and code-review flow; adopt the pieces that are missing (release manager, doc engineer)."
+ },
+ "verify": [
+  "Confirm garrytan/gstack on GitHub, license, stars, and that it is maintained",
+  "How the 'learns from its own bugs' memory works and where it stores data",
+  "Token cost of running the full role chain per feature",
+  "Overlap with Anthropic official plugins / Code Review already in use"
+ ]
+}

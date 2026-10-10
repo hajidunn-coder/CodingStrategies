@@ -1,0 +1,57 @@
+{
+ "id": "7674457472270191902",
+ "url": "https://www.tiktok.com/@bengusberg/video/7674457472270191902",
+ "creator": "bengusberg",
+ "title": "Install the Apify connector in Claude to scrape any website (Google Maps, LinkedIn, competitors) with a $5/month free tier, then ask Claude how to use it for your business",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Apify",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "apify.com; site banner shows '58,344 tools for your AI'; free account gets $5 credit/month"
+  },
+  {
+   "name": "Claude Connectors (Apify)",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Claude app -> Settings -> Connectors -> search 'Apify' -> Install -> Enable"
+  },
+  {
+   "name": "Claude (Sonnet 5)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Composer shows 'Sonnet 5 · High' and a 'Cowork' tab"
+  }
+ ],
+ "claims": [
+  "One connector gives Claude access to 'thousands of scrapers' for Google Maps, social platforms, websites, competitor tracking",
+  "Apify free account includes $5 of credit every month",
+  "Setup takes about 30 seconds / three steps",
+  "Creator: Stanford founder of an AI startup that raised $4 million; personally uses it for scraping LinkedIn and competitor data"
+ ],
+ "how_to_steps": [
+  "Step 1: go to apify.com and create a free account ($5 free credit per month)",
+  "Step 2: open Claude -> Settings -> Connectors -> search 'Apify' -> Install -> Enable",
+  "Step 3: start a new Claude chat and ask: 'Based on what you know about me, map out the best ways to use Apify for my business.'",
+  "Use the resulting ideas (competitor sites, reviews, social signals) as scraping tasks"
+ ],
+ "on_screen_only": [
+  "apify.com homepage: '58,344 tools for your AI', 'Actors now work where you do', logos of enterprise customers",
+  "Claude composer with the exact prompt 'Based on what you know about me, map out the best ways to use Apify for my business.' and model 'Sonnet 5 · High', tabs 'Chat' / 'Cowork', 'Project or folder', 'Manual'"
+ ],
+ "cta": "Comment what you try it for; follow for AI founder content",
+ "relevance": {
+  "score": 3,
+  "why": "Competitor/lead research is a recurring founder chore; a hosted scraper library reachable from Claude (and via MCP from Claude Code) cuts that to minutes. Veteran-business angles: scrape VA/SBA directories, local Google Maps leads."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Low effort (free account + connector). Real cost is per-actor compute beyond $5; LinkedIn scraping carries ToS/legal risk. Worth enabling for Google Maps/review scraping and competitor pricing checks."
+ },
+ "verify": [
+  "Is the Apify connector available in the Claude desktop/web app for this plan, and is there an MCP for Claude Code?",
+  "Actual per-run costs after the $5 credit; which actors are included",
+  "Legal/ToS exposure of scraping LinkedIn and social platforms"
+ ]
+}

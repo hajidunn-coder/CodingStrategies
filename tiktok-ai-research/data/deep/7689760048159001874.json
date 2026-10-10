@@ -1,0 +1,62 @@
+{
+ "id": "7689760048159001874",
+ "url": "https://www.tiktok.com/@kaithevibecoder/video/7689760048159001874",
+ "creator": "kaithevibecoder",
+ "title": "Sponsored stitch promoting Manus: paste a 'senior content strategist' prompt that scrapes top 50 niche Reels/TikToks and outputs a viral short-form playbook",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Manus",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "General AI agent; #manuspartner (sponsored); prompt pasted into Manus homepage 'What can I do for you?'"
+  },
+  {
+   "name": "Instagram Insights",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Original creator's stats: 3,527,049 views last 30 days (Apr 4 – May 3), 89.3% non-followers, 1,922,973 accounts reached (+241.7%)"
+  },
+  {
+   "name": "Google Docs",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Prompt deliverables: Google Doc link, Markdown backup, CSV of the 50"
+  }
+ ],
+ "claims": [
+  "Original creator says Manus helped him post every day and get millions of views",
+  "A minute later Manus 'researched the entire internet, including Instagram and TikTok' and generated a comprehensive playbook with executive summary, methodology, profile snapshots, 5+ winning patterns, hook formula library, recommended video structures",
+  "Manus can also browse/research and run agents that take action"
+ ],
+ "how_to_steps": [
+  "Log into Manus",
+  "Paste the prompt (on-screen): 'You are a senior content strategist and viral video researcher. Reverse engineer the top 50 Instagram Reels in my niche...' with NICHE and MY POSITIONING filled in",
+  "Step 1 'Source the 50': search Instagram last 90 days via hashtags, caption keywords, explore page, mid-tier creators; cap 3 videos per creator, no duplicate concepts",
+  "Step 2 'Annotate every video': exact opening line (first 3 s), full transcript, visual structure, on-screen text cards with timing, caption, hashtags, audio, cuts in first 3 s, total cuts, CTA",
+  "Step 3 'Pattern analysis': hook patterns, 25-template hook bank, structure templates, caption formulae, hashtag matrix, audio, length/pacing (top 10 vs bottom 10), what NOT to do",
+  "Step 4 'The playbook': one Google Doc '[NICHE] Viral Reels Playbook — [DATE]' with executive summary etc.; deliverables Google Doc link, Markdown backup, CSV of the 50; rules: cite, don't guess",
+  "Review the output: executive summary, quantitative snapshot, winning content patterns, hook formula library, recommended structures"
+ ],
+ "on_screen_only": [
+  "manus logo; banner 'This AI will make you go viral and grow your social media'",
+  "Instagram Views 3,527,049 (Last 30 days, Apr 4 – May 3); Followers 10.7% / Non-followers 89.3%; Accounts reached 1,922,973 +241.7%",
+  "Manus home 'What can I do for you?' with pasted_content.txt attached",
+  "Output doc: 'Viral Short-Form Video Playbook for AI Productivity and Business Tools — Prepared by: Manus AI — Date: May 4, 2026'; sections Executive Summary, 'Quantitative Snapshot of the Public Sample' (TikTok directly observed vs Instagram directly observed), 'Winning Content Patterns — Pattern 1: Lead with an entrepreneur identity, not a generic AI claim', 'Hook Formula Library' table (archetypes like Reframe, Ranked stack, Tool-to-task map, Workflow proof, Before/after, Anti-hype), 'Recommended video structures'",
+  "Names appearing in output: Dan Martell, Sabrina Ramonov, Codie Sanchez",
+  "Overlay 'Comment \"Manus\" for the full link'"
+ ],
+ "cta": "Comment 'Manus' to receive the link (sponsored, #manuspartner)",
+ "relevance": {
+  "score": 2,
+  "why": "Marketing-content research, not building; sponsored and the 'researched the entire internet in a minute' claim is hype. The prompt structure itself is reusable with Claude for market/competitor research."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Do not buy Manus for this; if content marketing is on the roadmap, run the same 4-step prompt in Claude with web search once and keep the hook bank."
+ },
+ "verify": [
+  "Manus pricing/credits and whether it can actually access Instagram/TikTok data or is extrapolating",
+  "Sponsored (#manuspartner) — claims about 'millions of views' belong to the original creator, not the stitcher (745 views)"
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "id": "7675882960125431053",
+ "url": "https://www.tiktok.com/@askcatgpt/video/7675882960125431053",
+ "creator": "askcatgpt",
+ "title": "Sponsored demo of Granola, an AI meeting note-taker that merges your typed notes with the auto-generated transcript summary",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Granola",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "meetgranola; promo code CATGPT for one month free; link in bio; #GranolaPartner"
+  },
+  {
+   "name": "Google Meet",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Call was held in Google Meet in Chrome"
+  },
+  {
+   "name": "Apple Notes",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "What she used before"
+  }
+ ],
+ "claims": [
+  "Granola listens to the call, then after it ends analyses the transcript and merges its notes with the notes you typed during the call",
+  "It organises by topic, so something mentioned late in the call is filed with the earlier discussion of that topic",
+  "Main benefit: your notes and the AI's notes are no longer scattered across two apps"
+ ],
+ "how_to_steps": [
+  "Open Granola alongside the meeting (Google Meet in Chrome) and type your own notes in it",
+  "End the call; Granola processes the transcript and merges it into your notes automatically",
+  "Review the merged, topic-organised notes"
+ ],
+ "on_screen_only": [
+  "Title overlay: 'This app mixes your meeting notes with the full call transcript'",
+  "Granola note titled 'CG/MZ' with sections Plants, Cleaning, Locksmith; typed bullets: 'plants getting fixed (final) in 2 wks', 'cleaning only coming every other week', 'locksmith situation closed out; going to be friday prob (ppl coming by on friday)'",
+  "Date on Mac menu bar: Wed Aug 12, 11:53 AM; 'CALL DON'T TEXT' phone-booth sign"
+ ],
+ "cta": "Use code CATGPT for one month free, link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Paid partnership; useful only if the founder takes a lot of calls. Does not touch Claude Code or app-building, though meeting transcripts could feed Claude for follow-ups."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only worth it if the founder has recurring customer/partner calls; otherwise skip. Trial is free with the code; check it exports to markdown so notes can go into the project repo."
+ },
+ "verify": [
+  "Granola pricing after the free month; Windows support; export formats/API",
+  "Privacy — recording consent requirements for calls with clients",
+  "This is an ad (#GranolaPartner)"
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": "7675060885118848270",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7675060885118848270",
+ "creator": "duncanrogoff",
+ "title": "Five Claude Code plugins the creator keeps on every project: claude-mem, Anthropic's official plugin pack, Obsidian second-brain skill, Anthropic Code Review, and Ponytail for token savings",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "claude-mem",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Site tagline 'Months later. One query.'; Product Hunt listing shown; local UI at localhost:37777"
+  },
+  {
+   "name": "Anthropic official plugin pack",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "GitHub plugins directory listing: code-simplifier, commit-commands, csharp-lsp, example-plugin, explanatory-output-style, feature-dev, frontend-design, hookify, kotlin-lsp, learning-output-style, lua-lsp, ... (anthropics official plugins repo)"
+  },
+  {
+   "name": "obsidian-second-brain",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "GitHub eugeniughelbur/obsidian-second-brain (Public, 2 branches, 10 tags, has .claude-plugin folder)"
+  },
+  {
+   "name": "Claude Code Review",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Anthropic 'Introducing Code Review — Debug and destress' page; runs multiple agents in parallel over changes"
+  },
+  {
+   "name": "Ponytail",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "README benchmark table vs no-skill baseline"
+  },
+  {
+   "name": "Claude Code Club",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's paid community, ~8,000 members, 'JOIN $9/month'"
+  }
+ ],
+ "claims": [
+  "claude-mem holds project context across sessions so you stop re-explaining setup every morning",
+  "Anthropic's official pack is the easiest first plugin install because it is built by the Claude Code team",
+  "Obsidian skill maps the codebase so Claude sees how files connect instead of guessing from the open tab",
+  "Code Review runs 'a handful of agents over your changes in parallel' and flags issues you would find days later in production",
+  "Ponytail 'noticeably' reduced token spend with no felt drop in quality; README table: ponytail -34% LOC, -39% tokens, -27% cost, -33% time, 100% safe vs baseline; 'caveman' terse-prose control -20%/+7%/+3%/+2%/86%; 'YAGNI + one-liners' prompt -33%/-14%/-21%/-30%/95%",
+  "5 installs, 10 minutes of setup",
+  "Claude Code Club has almost 8,000 members 'building and selling real things'"
+ ],
+ "how_to_steps": [
+  "Install claude-mem first (memory)",
+  "Install Anthropic's official plugin pack",
+  "Install the Obsidian second-brain skill/plugin",
+  "Enable Code Review and run it before shipping",
+  "Install Ponytail to cut token usage",
+  "Links are in the pinned comment"
+ ],
+ "on_screen_only": [
+  "Terminal with Claude Code pixel-cowboy mascot and a claude-mem session; localhost:37777 viewer open next to Product Hunt",
+  "GitHub repo listing of official plugins with commit message 'Add Apache 2.0 LICENSE files to all internal plugins'",
+  "GitHub: eugeniughelbur / obsidian-second-brain, main, 2 Branches, 10 Tags, folders .claude-plugin, .github, _includes; commit 'Do not read frontmatter as an unda...'",
+  "Anthropic Code Review marketing page: 'Introducing Code Review', 'Debug and destress'",
+  "Ponytail README comparison table (numbers captured in claims)",
+  "Code Review finding example: 'endpoint should verify req.auth.userId matches session.userId ... accessToken and refreshToken ... should never be sent to the client' with 'Create PR' button",
+  "Claude Code Club card: 8k Members, 'Master Claude Code and the tools... Build Websites, Apps, Content & Tools to earn online', JOIN $9/month"
+ ],
+ "cta": "Pinned comment has the 5 install links plus Claude Code Club community link",
+ "relevance": {
+  "score": 4,
+  "why": "This is exactly the Claude Code tooling layer a solo founder should standardise: memory, official plugins, codebase map, automated review before ship, token savings. The security-style review finding shown is the kind of thing a solo dev misses."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "All five are free installs; ~1 hour to set up and a week to judge. Highest value: Anthropic official plugins + Code Review (official, maintained) and claude-mem. Ponytail is a quick A/B on token cost. Skip the $9/month club."
+ },
+ "verify": [
+  "Exact repo for the 'official pack' (anthropics/claude-plugins-official?) and which plugins in it are actually useful vs LSPs",
+  "Is Code Review a paid/limited feature on the founder's plan?",
+  "claude-mem data storage and whether it inflates context (token cost) in practice",
+  "Ponytail benchmark methodology (12 tasks, Haiku) — small sample, author-run"
+ ]
+}

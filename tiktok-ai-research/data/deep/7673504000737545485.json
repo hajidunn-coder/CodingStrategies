@@ -1,0 +1,49 @@
+{
+ "id": "7673504000737545485",
+ "url": "https://www.tiktok.com/@itsmariahbrunner/video/7673504000737545485",
+ "creator": "itsmariahbrunner",
+ "title": "Seven one-line 'mode' prompts (red team, Socratic, creative director, CEO, teacher, devil's advocate, consultant) to paste at the start of a ChatGPT chat",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Prompts shown typed into the ChatGPT composer with reasoning set to 'Extra High'"
+  }
+ ],
+ "claims": [
+  "'Most people tell AI what to do; people getting insane results tell it how to think first'",
+  "Pasting one line at the start of a chat 'completely changes how it thinks and answers'",
+  "Red Team mode finds every flaw; Socratic mode interviews you until it nails the question; CEO mode cuts to the 1-2 decisions that matter; Devil's Advocate argues the hardest case against you; Consultant mode produces a plan"
+ ],
+ "how_to_steps": [
+  "Pick a mode for the situation (red team when in love with your idea; Socratic when you do not know the question; creative director when safe is not enough; CEO when buried in detail; teacher for new topics; devil's advocate before committing; consultant for complex problems)",
+  "Paste the one-line mode prompt as the first message of a new chat",
+  "Then ask your actual question"
+ ],
+ "on_screen_only": [
+  "Title card: '7 Secret ChatGPT Modes'",
+  "Exact prompt 1: 'Enter Red Team mode. Challenge every assumption, find every weakness, and try to make my idea fail before the real world does. Don't be agreeable.'",
+  "Exact prompt 3: 'Enter Creative Director mode. Prioritize originality, emotional impact, and attention over being safe or obvious.'",
+  "Exact prompt 4: 'Enter CEO mode. Ignore the low-leverage details. Focus only on the biggest strategic decisions that will have the highest impact.'",
+  "Exact prompt 5: 'Enter Teacher mode. Assume I'm intelligent but brand new to this topic. Explain it using simple language, analogies, and examples.'",
+  "Exact prompt 6: 'Enter Devil's Advocate mode. Take the opposite position from mine and make the strongest possible argument against my thinking.'",
+  "Exact prompt 7: 'Enter Management Consultant mode. Analyze this the way a top-tier strategy consultant would. Break down the problem, identify the tradeoffs, and give me a prioritized recommendation.'",
+  "Socratic mode prompt text not shown (only a 'SOCRATIC MODE' graphic)",
+  "ChatGPT composer shows reasoning selector set to 'Extra High'"
+ ],
+ "cta": "Comment 'enter' on Instagram @Itsmariahbrunner to receive all seven prompts",
+ "relevance": {
+  "score": 2,
+  "why": "Generic prompting; ChatGPT-focused. The red-team / devil's-advocate framing is mildly useful for a founder who makes decisions alone with no co-founder to push back."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap win: turn 'red team' and 'CEO' into Claude Code slash commands or a Council-style review step before shipping features or pricing changes. 15 minutes to add; six of seven prompts are fully visible on screen so no DM needed."
+ },
+ "verify": [
+  "No evidence offered that these outperform just asking for critique directly",
+  "Socratic mode wording is missing — write your own"
+ ]
+}

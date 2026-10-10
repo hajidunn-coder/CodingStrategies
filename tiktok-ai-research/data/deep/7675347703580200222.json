@@ -1,0 +1,60 @@
+{
+ "id": "7675347703580200222",
+ "url": "https://www.tiktok.com/@alanonai/video/7675347703580200222",
+ "creator": "alanonai",
+ "title": "Why AI keeps recommending Supabase to vibe coders, and why you should still ask whether it is right for your app (Engineering for Vibe Coders series)",
+ "category": "vibe-coding-infra",
+ "tools": [
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Postgres database, auth, edge functions, storage in one platform"
+  },
+  {
+   "name": "PostgreSQL",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Underlying database"
+  },
+  {
+   "name": "AWS / Azure / Cloudflare",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Mentioned as alternatives the same 'why is this right for me' question applies to"
+  },
+  {
+   "name": "Engineering for Vibe Coders (article series)",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Creator's article on Supabase; link in comments"
+  }
+ ],
+ "claims": [
+  "Supabase is one of the most-recommended third-party systems by AI coding tools",
+  "Reason: in one system the AI can cover Postgres, authentication (one of the most complex parts of an app), edge functions and storage",
+  "'Supabase did not make all of that engineering disappear' — there is still a real PostgreSQL database underneath (caption)",
+  "Being recommended by AI does not mean it is right for your app; you must ask 'why is this right for me?'"
+ ],
+ "how_to_steps": [
+  "When AI proposes Supabase (or AWS/Azure/Cloudflare), stop and ask why it fits your app specifically",
+  "Read the creator's article on Supabase benefits and gotchas (link in comments)"
+ ],
+ "on_screen_only": [
+  "Talking head outdoors with burned-in captions only; no UI shown",
+  "Caption fragment: 'as part of my Engineering for Vibe Coders' series"
+ ],
+ "cta": "Link to article in comments; asks for feedback",
+ "relevance": {
+  "score": 3,
+  "why": "Founder already builds with Claude Code and almost certainly gets Supabase suggested by default. The message (own the architecture decision; understand the Postgres, RLS, auth you inherit) is sound and veteran-relevant for anything handling user data."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "No concrete technique; it is a mindset reminder. Practical action: add a CLAUDE.md rule requiring Claude to justify infra choices and list Supabase gotchas (RLS, service-role key exposure, cold starts) before scaffolding."
+ },
+ "verify": [
+  "Read the actual article to see which Supabase gotchas he lists",
+  "Is this creator's series substantive or a funnel?"
+ ]
+}

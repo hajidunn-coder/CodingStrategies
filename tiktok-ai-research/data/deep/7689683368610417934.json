@@ -1,0 +1,47 @@
+{
+ "id": "7689683368610417934",
+ "url": "https://www.tiktok.com/@bengusberg/video/7689683368610417934",
+ "creator": "bengusberg",
+ "title": "Six login-security gaps Claude usually leaves in vibe-coded apps (exposed secrets, no email verification, no rate limiting, non-expiring reset links, unhashed passwords, unencrypted PII) and a prompt to fix them",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Share the video link and ask it to fix every issue mentioned"
+  }
+ ],
+ "claims": [
+  "The login flow is 'the easiest place to get hacked'",
+  "1. Secret keys visible to anyone (client-exposed API keys)",
+  "2. No email verification: fake sign-ups and impersonation",
+  "3. No rate limiting on login attempts: bots brute-force passwords",
+  "4. Password reset links never expire",
+  "5. Passwords not hashed: database leak exposes all passwords",
+  "6. PII (name, address, birthday) not encrypted: 'you can get sued'",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Save the video and give Claude the link (or this list) with: 'go through this video and fix every security issue that's mentioned'",
+  "Audit: move secrets to server-side env vars; enforce email verification; add login rate limiting/lockout; expire and single-use reset tokens; hash passwords (bcrypt/argon2); encrypt sensitive PII at rest"
+ ],
+ "on_screen_only": [
+  "Title card 'PROTECT AGAINST CYBER ATTACKS'",
+  "Numbered captions: '1. Your secret keys are visible to anyone', '2. You don't have email verification', '3. You don't have rate limiting set up for login attempts', '4. Your password reset links don't expire', '5. You're not hashing user passwords', '6. You're not encrypting private information'"
+ ],
+ "cta": "Save and share the video with Claude; let me know what you build; follow",
+ "relevance": {
+  "score": 5,
+  "why": "Exactly the class of omissions that ship in Claude Code-built apps; a solo founder with real users carries the legal and reputational risk."
+ },
+ "implement_score": {
+  "score": 5,
+  "why": "Turn the six items into a pre-launch security checklist/skill run on every app; most are solved by using a managed auth provider (Supabase Auth, Clerk, Auth0) plus rate limiting and server-only secrets. Hours, not days."
+ },
+ "verify": [
+  "Claude cannot actually watch a TikTok link; paste the list as text instead",
+  "Check which items your auth provider already handles so Claude does not reimplement them badly",
+  "Encrypting PII at rest: confirm requirements for your jurisdiction/industry rather than the 'you can get sued' claim"
+ ]
+}

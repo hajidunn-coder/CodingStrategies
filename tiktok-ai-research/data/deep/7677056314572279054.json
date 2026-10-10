@@ -1,0 +1,137 @@
+{
+ "id": "7677056314572279054",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7677056314572279054",
+ "creator": "chase_ai_",
+ "title": "16-minute walkthrough: find design inspiration, clone a reference site with a /clone-site Claude Code skill, generate a hero video via Higgsfield MCP (Seedream 5 image -> Seedance 2.5 video), then iterate with a /remix-site skill (variations + tweak panel)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "clone-site (SITE CLONE) skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Creator's GitHub repo; README: 'Point Claude Code at a URL. Get back a handwritten Next.js app and a verified, near pixel-identical rebuild.' Invoked as a slash command (spoken as '/cyclone')"
+  },
+  {
+   "name": "remix-site skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Same repo; asks for 'amplitude' and 'anchors', outputs N variations on one page plus a tweak panel"
+  },
+  {
+   "name": "Higgsfield MCP",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "higgsfield.ai -> 'MCP and CLI' section -> copy the install prompt into Claude Code; installs MCP plus skills"
+  },
+  {
+   "name": "Seedance 2.5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Image-to-video for the hero section"
+  },
+  {
+   "name": "Seedream 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Used to create the reference first-frame image"
+  },
+  {
+   "name": "Nano Banana Pro / GPT Image 2",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Alternative image generators mentioned"
+  },
+  {
+   "name": "Land Book",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Landing-page inspiration gallery that links to live sites"
+  },
+  {
+   "name": "Twitter / Pinterest",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Other inspiration sources"
+  },
+  {
+   "name": "Plinth (plinth.ai)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Reference site cloned: 'A marketplace of AI agents. Pay per call.'"
+  },
+  {
+   "name": "Finn.com",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Inspiration site found on Land Book"
+  },
+  {
+   "name": "impeccable skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Front-end design skill the creator recommends layering on"
+  },
+  {
+   "name": "taste skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Second front-end design skill mentioned"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Drives everything including image/video generation via MCP"
+  },
+  {
+   "name": "Chase AI+ / Claude Code Master Class",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Creator's paid program"
+  }
+ ],
+ "claims": [
+  "The clone-site skill rebuilds a URL 'pretty much pixel by pixel' including animations, on a local dev server",
+  "Giving Claude the live site's code is far better than screenshots as a foundation",
+  "Keep a personal 'taste vault' of sites you like; building it with Claude Code takes five minutes",
+  "For hero video: generate a first-frame image first, with lots of dead space where the copy goes, then animate subtly; serve the still image to mobile users",
+  "remix-site asks for amplitude (how different) and anchors (aesthetic references); with the taste vault + Higgsfield MCP as anchors it produced three very different directions ('Monolith', 'Clymora', a third)",
+  "The tweak panel is more granular than the Claude desktop app: grain, gradient reach, video brightness, presets (Pitch Black, Soft Studio, loud, watermark), page spacing, reveal stagger",
+  "'Less is more' for motion; entry/reveal motion gives the most bang for the buck"
+ ],
+ "how_to_steps": [
+  "Find inspiration on Land Book / Twitter / Pinterest; save URLs and screenshots into a taste vault (ask Claude Code to create a library file)",
+  "Install the clone-site skill from the creator's GitHub, run the slash command pointed at the reference URL; review the local rebuild",
+  "Install Higgsfield MCP: higgsfield.ai -> MCP and CLI section -> paste the setup prompt into Claude Code",
+  "Ask Claude Code to generate a reference image (Seedream 5) composed with dead space on the copy side",
+  "Ask Claude Code: 'use Seedance 2.5 and the reference image to generate a video for our landing page' describing subtle motion (glowing orb)",
+  "Tell Claude to insert the video as the hero of the cloned site; fix header overlay and hard cut to body",
+  "Prompt Claude to rewrite all copy for your actual product (demo: AI analytics company renamed 'Delphi')",
+  "Run /remix-site; answer amplitude ('go big') and anchors ('look at my taste library, pick three very different anchors; use Higgsfield MCP / GPT Image 2 for new assets')",
+  "Pick a variation (Monolith), bring the video back, use the tweak panel for grain/gradient/brightness/stagger",
+  "Keep iterating with prompts and layer impeccable / taste skills; serve still image instead of video on mobile"
+ ],
+ "on_screen_only": [
+  "README 'SITE CLONE': 'Point Claude Code at a URL. Get back a handwritten Next.js app and a verified, near pixel-identical rebuild. clone-site: ... measures the live page in a real browser, explains every effect so it's exact, rebuilds it with an automated pixel-diff against the original'; 'What's in the box: two main, four Claude Code skills'; commands shown as clone-site and remix-site",
+  "Cloned Plinth page at localhost: nav Overview/Features/Pricing/Docs/Start building; hero 'A marketplace of AI agents. Pay per call.' with classical statue over mountains; 'Three steps to a paid agent' section",
+  "Taste vault file contents (grid of saved sites: 'Every Great Structure Begins with a Blueprint', 'The waitlist is now open', 'The AI workspace for one thing at a time', 'The data & AI platform for modern finance', 'Halftone Sails Collage', 'SPADE', 'Stillpage', etc.)",
+  "Remixed variants: 'Delphi — One question becomes a cited, reproducible answer' (green), 'Delphi — Ask your data. One answer. Pay per question.' (dark Monolith with statue holding glowing orb)",
+  "Claude Code terminal panes with long prompts about hero video integration and tweak-panel settings; a plan listing 'Pricing bar', 'Hero color contrast', 'Tweak panel controls'",
+  "Variation picker page showing three thumbnails side by side"
+ ],
+ "cta": "Check out Chase AI+ for the Claude Code Master Class; comment feedback",
+ "relevance": {
+  "score": 4,
+  "why": "Most complete, actually-demonstrated Claude Code front-end workflow in the batch. The clone -> rebrand -> remix loop is directly usable for every product landing page the founder ships, and the taste vault idea is cheap."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install clone-site/remix-site skills and build a taste vault (1-2 hours). Hero video via Higgsfield is optional and costs credits. Caution: cloning a competitor's site pixel-for-pixel then shipping it is a copyright/brand risk — use as scaffold only, as the creator himself stresses."
+ },
+ "verify": [
+  "Find the GitHub repo for clone-site / remix-site (name sounds like 'cyclone' in audio) and check license, Next.js version, maintenance",
+  "Higgsfield MCP pricing per image/video and whether Seedance 2.5 / Seedream 5 are available through it",
+  "Legal line between 'inspiration' and copying someone's site code; the skill literally pixel-diffs against the original",
+  "Does the tweak panel ship in the built site or is it dev-only?"
+ ]
+}

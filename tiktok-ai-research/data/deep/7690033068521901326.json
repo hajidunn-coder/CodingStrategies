@@ -1,0 +1,59 @@
+{
+ "id": "7690033068521901326",
+ "url": "https://www.tiktok.com/@bengusberg/video/7690033068521901326",
+ "creator": "bengusberg",
+ "title": "Postiz (gitroomhq/postiz-app), a 36k-star open-source social media scheduler with AI-agent integrations, pitched as a free Claude/ChatGPT social media manager",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Postiz",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "github.com/gitroomhq/postiz-app (Public); '36.4k stars' on screen; transcript says 36,000"
+  },
+  {
+   "name": "Claude / ChatGPT / Grok / Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "'Works with your favorite AI agent' row of logos"
+  },
+  {
+   "name": "Instagram, TikTok, YouTube, LinkedIn",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Supported platforms named"
+  }
+ ],
+ "claims": [
+  "Turns Claude or ChatGPT into your social media manager; post and schedule on autopilot across any platform, for free",
+  "Already has 36,000 stars on GitHub",
+  "Works with 'all of the major AI platforms like Claude, ChatGPT, Grok, Cursor and more'",
+  "Setup in '20 seconds or less'",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Open the Postiz GitHub repo (gitroomhq/postiz-app)",
+  "Paste the URL into Claude or ChatGPT and ask it to help you install (self-host) and connect social accounts",
+  "Use the AI-agent integration to draft and schedule posts"
+ ],
+ "on_screen_only": [
+  "Postiz dashboard screenshots (purple UI, calendar/scheduling panels)",
+  "'36.4k stars' badge",
+  "'With your favorite AI agent:' row of ~14 logos",
+  "Repo header 'gitroomhq / postiz-app  Public'"
+ ],
+ "cta": "Try it and share your content with me; follow",
+ "relevance": {
+  "score": 3,
+  "why": "A founder marketing their own apps needs scheduling; an open-source tool with agent/MCP hooks fits a Claude Code-centric workflow, but self-hosting is not '20 seconds'."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Reasonable to trial: either the hosted plan or a Docker self-host plus its MCP/agent integration so Claude Code can queue posts. Budget a few hours, not 20 seconds; weigh against just using a paid scheduler."
+ },
+ "verify": [
+  "Postiz hosted pricing vs self-host requirements (Postgres, Redis, Docker); social platform API approvals needed",
+  "What the 'AI agent' integration actually is (MCP server? API?) and whether it supports Claude Code today",
+  "'Free' only applies to self-hosting"
+ ]
+}

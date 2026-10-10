@@ -1,0 +1,58 @@
+{
+ "id": "7669441588178832660",
+ "url": "https://www.tiktok.com/@lucca.the.develop/video/7669441588178832660",
+ "creator": "lucca.the.develop",
+ "title": "Screen recording of a 3D scroll-animated smash-burger landing page built with Antigravity, Nano Banana 2, Claude Code and Cursor (no spoken content)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Antigravity",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Listed in the on-screen tool stack overlay (Google's agentic IDE)"
+  },
+  {
+   "name": "Nano Banana 2",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Listed in overlay; presumably used for the burger/griddle imagery"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Listed in overlay"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Listed in overlay"
+  }
+ ],
+ "claims": [
+  "Creator can teach you to build 'premium 3D websites like this' (caption); full workflow sent on DM"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Persistent overlay: 'Antigravity / Nano Banana 2 / Claude Code / Cursor'",
+  "Browser on a MacBook showing a dark cinematic site titled 'SMASH // THE SEAR' with a 'SCROLL NOW' button",
+  "Scroll sections: 'SPECIFICATIONS // 02. THE CUT' with temperature callouts 125°C, 201°C, 230°C; '03. THE SMASH' with 'MAILLARD' label; final frame is an assembled burger hero image",
+  "Scroll-driven frame-sequence animation (gloved hand placing patty, smashing, adding cheese, bun exploding apart) — looks like a pre-rendered image/video sequence scrubbed by scroll",
+  "URL bar appears to be a *.vercel.app deployment (text too small to read reliably)"
+ ],
+ "cta": "Send a DM to receive the full workflow",
+ "relevance": {
+  "score": 2,
+  "why": "Pure showcase with no spoken method; only value is the implied stack (AI image model for frames + Claude Code/Cursor for scroll-scrub animation). Not a business-app pattern."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The scroll-scrub frame-sequence technique is reproducible with Claude Code (generate N frames with an image model, canvas/IntersectionObserver scrub), but only matters for a marketing page, not core product. Half a day if ever needed."
+ },
+ "verify": [
+  "Is the site actually generated end-to-end by AI, or hand-polished?",
+  "Which tool did what — Nano Banana 2 for frame generation vs. video?",
+  "Is 'Antigravity' Google's Antigravity IDE and does it add anything over Claude Code here?"
+ ]
+}

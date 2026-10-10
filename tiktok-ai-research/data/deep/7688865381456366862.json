@@ -1,0 +1,111 @@
+{
+ "id": "7688865381456366862",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7688865381456366862",
+ "creator": "chase_ai_",
+ "title": "Demo of a paid 'Agentic OS v2' personal AI OS: Jev classifier routes requests into 3 tiers, runs Claude Code or Codex, local voice, Obsidian vault",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Agentic OS V2 / Astra (Chase AI+)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Creator's paid personal AI OS; HUD labeled 'AGENTIC OS V2' and 'ASTRA' with Claude Code / Codex toggle; sold via 'chase ai+' link in bio"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Built-in terminal shows 'Fable 5.1 with high effort · Claude Max', '~\\The Vault', '/mcp', '/model'"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Swap between Claude Code and Codex with a button; HUD shows 'GPT-6 Astra · Codex mode'"
+  },
+  {
+   "name": "Jev (classifier model)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Spoken as 'JEV/JEB'; 'amazing classifier, very fast, very cheap'; sorts every request into tier 1/2/3"
+  },
+  {
+   "name": "Obsidian",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Obsidian plugin lives inside 'The Vault' (plain markdown shared memory)"
+  },
+  {
+   "name": "Whisper",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Speech service 'Whisper = ears' (local)"
+  },
+  {
+   "name": "Kokoro",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Speech service 'Kokoro = voice' (local TTS)"
+  },
+  {
+   "name": "Claude Haiku",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Tier 2 'small fast model (Haiku / Luna)'"
+  },
+  {
+   "name": "Luna (GPT 6 Sol & Luna)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Tier 2 alternative; dashboard video title 'GPT 6 Sol & Luna Are Here (And 50% CHEAPER)'"
+  },
+  {
+   "name": "Gmail / Google Calendar / Drive / YouTube",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "Diagram node 'Connects: Gmail · Calendar · Drive · YouTube'"
+  }
+ ],
+ "claims": [
+  "System works with both Codex and Claude Code and can switch between them with one button",
+  "Runs Jev in the background as a request classifier because it is 'very fast, very cheap'",
+  "All requests go through Jev and are divided into tier 1, 2, 3 so each gets the appropriate model ('fast and cheap')",
+  "Has a fully local voice system and works inside Obsidian",
+  "'Real sell' of AIOS systems is that you can hand them to team members or sell them to clients",
+  "Built on top of a 'whole skill library'"
+ ],
+ "how_to_steps": [
+  "User gives the OS a command (voice via tap-to-talk, or text box 'Ask or continue...')",
+  "Request hits 'The Bridge' (one brain for both apps) which sends it to Jev",
+  "Jev classifies into: Tier 1 = rules + saved data, no AI, instant (e.g. 'what are my priorities?'); Tier 2 = quick answer from small fast model Haiku/Luna (e.g. 'summarize today's AI news'); Tier 3 = real work, opens a Claude Code or Codex terminal or runs a skill in the background",
+  "Tier 3 saves reports into 'The Vault' (plain markdown: daily notes, reports + research, conversations, receipts of every request) which the Obsidian plugin reads",
+  "Jarvis HUD web app in browser exposes same buttons and voice; skills quick-access: Plan Today, Inbox Brief, Deep Research, Content Cascade",
+  "Get the setup via the link in bio (paid community)"
+ ],
+ "on_screen_only": [
+  "Dashboard header 'AGENTIC OS V2' with tabs OVERVIEW / AUDIENCE / RESEARCH, stats 173K and 16.6M, 2%",
+  "Latest upload: 'GPT 6 Sol & Luna Are Here (And 50% CHEAPER)' 52.7K views 535 likes 44 comments",
+  "Day schedule items: Morning brief + inbox triage, Hack + title workshop, Demo prep, 'Script + outline: Jarvis HUD + Hologram', Chase AI+ Shoot post update, Thumbnail concepts, Editor handoff",
+  "Claude Code terminal: 'Fable 5.1 with high effort · Claude Max', '~\\The Vault', warning '8 MCP servers need authentication · run /mcp', 'Get to finished work sooner with Opus 5.5. Switch anytime with /model', status line 'The Vault | Fable 5.1 | ctx: --'",
+  "Architecture diagram: Obsidian plugin (lives inside the vault, ears + dashboard + terminal tabs) -> THE BRIDGE (one brain for both apps, takes every request from both front doors) -> JEV (sorts each request into the right tier) -> Tier 1/2/3 -> saves reports -> THE VAULT: shared memory",
+  "Speech service: 'Whisper = ears · Kokoro = voice'; 'Jarvis HUD: web app in the browser, same buttons, same voice'",
+  "Astra HUD: 'GPT-6 Astra · Codex mode', states Idle / Listening / Working / Speaking / Error / Auto, 'V2 · Connected vault · Shared agent terminals', 'Shared with Obsidian'",
+  "Obsidian file tab '2026-09-23-intel' with Graph view",
+  "Skills quick access: Plan Today, Inbox Brief, Deep Research, Content Cascade, 'Browse all skills'; VOICE: 'Tap to talk · Whisper / Kokoro · local speech'"
+ ],
+ "cta": "Link in bio / check description to get the exact setup in 'chase ai+' (paid)",
+ "relevance": {
+  "score": 3,
+  "why": "The tiered-routing pattern (rules -> cheap small model -> Claude Code for real work) and markdown vault as shared memory are directly applicable ideas for a solo founder running Claude Code; the product itself is a paid, heavy personal-OS build that a time-poor founder does not need."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth buying or replicating the whole OS. Worth stealing one idea: route trivial/lookup requests away from the expensive model and keep a plain-markdown vault that Claude Code writes reports into. Everything else (voice, HUD, Obsidian plugin) is days of yak-shaving."
+ },
+ "verify": [
+  "What is 'Jev' exactly (appears to be a small classifier model from console.typesafe.ai per another video in this batch) and what does it cost?",
+  "Is the Agentic OS a one-time purchase or a community subscription; what is the price?",
+  "Are 'GPT-6', 'Opus 5.5', 'Luna' real shipped models or creator labels on the UI?",
+  "Does the skill library work standalone with Claude Code without the HUD?"
+ ]
+}

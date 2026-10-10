@@ -1,0 +1,56 @@
+{
+ "id": "7689307743835983134",
+ "url": "https://www.tiktok.com/@bengusberg/video/7689307743835983134",
+ "creator": "bengusberg",
+ "title": "'Context Transfer' skill prompt: have Claude/ChatGPT summarize a long thread into one paste-able block to escape context rot and continue in a fresh chat",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Context Transfer (custom skill)",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Created from the shown prompt; invoked as /contexttransfer"
+  },
+  {
+   "name": "Claude (claude.ai / Cowork)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "UI shows Chat / Cowork tabs and model selector 'Opus 5.3 Medium'"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Same prompt works there"
+  }
+ ],
+ "claims": [
+  "'Researchers found models get up to 39% dumber the longer a conversation goes' (terms: semantic degradation / context rot)",
+  "Framing: Anthropic and OpenAI 'designed their models to get dumber the more you use them'",
+  "Skill produces a single text block capturing every goal, task, person, link, file",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Open a new chat in Claude or ChatGPT and paste the skill-creation prompt (full text below)",
+  "When a conversation degrades, type /contexttransfer in that thread",
+  "Copy the single text block it returns into a fresh chat and continue"
+ ],
+ "on_screen_only": [
+  "Full prompt: 'Create the following skill and call it \"Context Transfer\". You're an expert at context summary. Your sole job is to package all key information from a conversation thread, so that I can use it in a new thread and continue the conversation without missing anything. Create a single text block with the following: 1. Our goals, task, key decisions & reasoning 2. Progress update: what's finished, in progress, not started 3. Every important file, link, name, figure, or detail 4. Where we left off & next steps 5. Any other key details - be granular as needed. Your response must be a single text block I can copy & paste into the new chat. The new chat must be able to seamlessly continue the conversation with no prior context other than your text block.'",
+  "Title card 'AI gets dumber the longer you chat'",
+  "Model selector reads 'Opus 5.3 Medium'; tabs 'Chat' / 'Cowork'; overlay '/contexttransfer'"
+ ],
+ "cta": "Try this and let me know what you build; follow for more",
+ "relevance": {
+  "score": 4,
+  "why": "Context rot is a daily problem for a founder running long Claude sessions; the prompt is complete and reusable. In Claude Code the native /compact and handoff files already cover this, but the structure is a good handoff template."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Five minutes: save the prompt as a skill (claude.ai) or as a /handoff command in Claude Code that writes the five sections to a markdown file; aligns with the existing session-handoff practice."
+ },
+ "verify": [
+  "Source of the 'up to 39% dumber' figure (likely the Microsoft/Salesforce 'LLMs Get Lost in Multi-Turn Conversation' paper, which reported ~39% average drop) — confirm before quoting",
+  "Whether claude.ai skills can be invoked with a slash command the way shown"
+ ]
+}

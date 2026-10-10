@@ -1,0 +1,49 @@
+{
+ "id": "7689336669148810526",
+ "url": "https://www.tiktok.com/@bengusberg/video/7689336669148810526",
+ "creator": "bengusberg",
+ "title": "Four-prompt sequence: ask ChatGPT/Claude for the fastest $10k/mo path based on your profile, find a real person doing it, build a <$100 30-day plan, then 'what do I do right now'",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Use whichever model knows more about you (memory)"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Alternative"
+  }
+ ],
+ "claims": [
+  "Creator's result: sell AI training courses at $5k each; model named 'John and Bethany' as examples to study",
+  "Most people make a plan and never start; the fourth prompt forces a first action",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Prompt 1: 'Based on everything you know about me, what's the fastest path to making an extra $10k/month? Requirements are (1) it has to be something I can start working on this weekend, (2) must take less than $100 to start, and (3) must be based on my actual skills.'",
+  "Prompt 2 (same chat): 'Find at least one person already making money in this exact way. Name them and link me to their profile. Then, break down in excruciating detail the exact step-by-step process they used to succeed so I can copy their playbook.'",
+  "Prompt 3: 'Based on everything you learned, write me a 30-day plan that costs under $100 to start and lands my first paying customer as quickly as possible. Tell me exactly what to do each day.'",
+  "Prompt 4: 'Ok - now we have the plan. What should I do right now to start?'"
+ ],
+ "on_screen_only": [
+  "Title card: 'Don't ask ChatGPT how to make money. Do this instead:'",
+  "Each of the four prompts shown as a screenshot in the ChatGPT composer (text transcribed in how_to_steps)"
+ ],
+ "cta": "Try it and let me know what you build; follow for more",
+ "relevance": {
+  "score": 2,
+  "why": "Generic make-money prompting; a founder already building products gets little beyond prompt 2 (competitor/playbook teardown), which is a reasonable research pattern."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only prompt 2 and 3 are worth borrowing as a quick 'find who already does this and reverse-engineer their playbook' research step before building a new offer; otherwise skip."
+ },
+ "verify": [
+  "Models may hallucinate named people/profiles in prompt 2; verify any person cited",
+  "Depends on memory being enabled in ChatGPT/Claude"
+ ]
+}

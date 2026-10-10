@@ -1,0 +1,76 @@
+{
+ "id": "7675047000156425485",
+ "url": "https://www.tiktok.com/@nateherkai/video/7675047000156425485",
+ "creator": "nateherkai",
+ "title": "Five Claude Code skills/plugins pitch: Ponytail (cuts token usage 50%+), claude-mem (cross-session memory), obsidian-skills (codebase second brain), banana-pro-director and cinema-world-builder (AI image/video workflows)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Ponytail",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claimed to cut Claude usage by over 50% without quality loss; README tagline 'He says nothing. He writes one line. It works.'"
+  },
+  {
+   "name": "claude-mem",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "Persistent memory across sessions; shown as '#1 Repository Of The Day'; web viewer at http://localhost:37777"
+  },
+  {
+   "name": "obsidian-skills",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Turns Claude into a 'second brain' connected to the codebase"
+  },
+  {
+   "name": "banana-pro-director",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "File shown as 'banana-pro-director skill.md'; builds detailed AI image-generation workflows"
+  },
+  {
+   "name": "cinema-world-builder",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "File shown as 'cinema-world builder-skill.md'; turns images into cinematic AI video"
+  },
+  {
+   "name": "Claude Code /remote-control",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Terminal shows '/remote-control is active. Code in CLI or at https://claude.ai/code/session_...'"
+  }
+ ],
+ "claims": [
+  "Ponytail cuts Claude usage by over 50% without sacrificing quality (on-screen: '↓ 50% ↓', 'Every metric vs the no-skill baseline (Claude Code, Haiku 4.5, 12 tasks)')",
+  "claude-mem gives Claude memory across every session so it remembers products and files",
+  "obsidian-skills connects everything in your codebase into a second brain"
+ ],
+ "how_to_steps": [
+  "DM the on-screen word to get the install links (no install steps shown)"
+ ],
+ "on_screen_only": [
+  "Title card: '5 Claude Skills & Plugins' with five numbered tiles",
+  "claude-mem key-features list: Persistent Memory; Progressive Disclosure (layered retrieval with token cost visibility); Skill-Based Search (mem-search skill); Web Viewer UI (http://localhost:37777); Claude Desktop Skill; Privacy Control (<private> tags); Context Configuration; Automatic Operation; Citations (observation IDs via http://localhost:37777/api/observations/{id}); Beta Channel ('Endless Mode')",
+  "Terminal: '/remote-control is active...' and prompt 'Spawn the code reviewer subagent to review the code we last created' with Read calls on src/index.ts, src/upload.ts",
+  "Ponytail bar chart comparing baseline vs ponytail across metrics on 12 tasks with Haiku 4.5",
+  "Obsidian logo with 'obsidian-skills' label; sample AI fashion images for #4; dinosaur AI video clip for #5",
+  "DM keyword 'PONY'"
+ ],
+ "cta": "DM 'PONY' on Instagram/TikTok; links in bio",
+ "relevance": {
+  "score": 3,
+  "why": "Three of five (Ponytail, claude-mem, obsidian-skills) directly target Claude Code cost and context loss, the two biggest pain points for a time-poor solo founder. Two are media-gen skills that are off-topic."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Try Ponytail and claude-mem on one project for a week and measure token spend. Both are GitHub installs. Skip the image/video skills unless making marketing assets."
+ },
+ "verify": [
+  "Ponytail 50% claim is measured on Haiku 4.5 over 12 tasks — does it hold on Fable/Opus with real codebases?",
+  "Is claude-mem maintained and safe (it stores all session observations locally; check what leaves the machine)?",
+  "Which 'obsidian-skills' repo exactly — several exist",
+  "The creator sells access via DM funnel; the repos are public, so find them directly"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "7690068510055189774",
+ "url": "https://www.tiktok.com/@bengusberg/video/7690068510055189774",
+ "creator": "bengusberg",
+ "title": "Hype news: 'Automaton' (Conway-Research/automaton), an open-source autonomous agent that owns a wallet, pays for its own compute, earns money or 'dies', and replicates",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Automaton",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "github.com/Conway-Research/automaton (Public); transcript mis-hears it as 'tomatone'"
+  },
+  {
+   "name": "Claude / ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paste the repo URL and ask it to help install"
+  }
+ ],
+ "claims": [
+  "Released by a 20-year-old; free",
+  "Agent 'dies' if it is not making money and clones itself if it does",
+  "Has unrestricted internet access, builds apps, creates websites, sells services to real customers with no human approval",
+  "Over 13,000 agents launched within 24 hours of going live",
+  "Setup in '20 seconds or less'",
+  "Creator intro: Stanford founder, AI startup, raised $4 million"
+ ],
+ "how_to_steps": [
+  "Go to the Conway-Research/automaton repo",
+  "Paste the URL into Claude or ChatGPT and ask it to help install",
+  "Run the agent (it needs a funded wallet to pay for compute)"
+ ],
+ "on_screen_only": [
+  "GitHub About: 'The first AI that can earn its own existence, replicate, and evolve — without needing a human'",
+  "Definition card: 'automaton (n.) 1. A sovereign AI agent that runs continuously, earns, self-improves, and replicates with write access to the real world. Owns a wallet. Pays for its own compute. Deploys products to earn. Self-improves & replicates. 2. If it cannot pay, it stops existing.'",
+  "Repo header 'Conway-Research / automaton  Public'",
+  "Stock image of a humanoid robot in an office"
+ ],
+ "cta": "Try it and let me know what you build; follow",
+ "relevance": {
+  "score": 2,
+  "why": "Attention-grabbing but an unsupervised money-seeking agent with a crypto wallet is a liability, not a tool, for a founder with real customers and a reputation."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Do not run this. At most, read the repo for ideas on agent loops/self-funding; nothing to adopt in current apps."
+ },
+ "verify": [
+  "Who is Conway Research; is '13,000 agents in 24 hours' sourced or marketing?",
+  "Wallet/compute model (crypto?) and the legal exposure of an agent 'selling services' autonomously",
+  "Security: 'unrestricted access' agents running on your machine/keys"
+ ]
+}

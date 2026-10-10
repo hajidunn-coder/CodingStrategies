@@ -1,0 +1,82 @@
+{
+ "id": "7689488245217824022",
+ "url": "https://www.tiktok.com/@itstundealao/video/7689488245217824022",
+ "creator": "itstundealao",
+ "title": "Fact-or-hype test of MiroFish, an open-source multi-agent 'prediction' simulator, used to predict which of 5 video scripts performs best on Instagram",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "MiroFish",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Open-source GitHub repo (Chinese UI, switchable to English); tagline 'Predict Anything before it happens' / 'Upload Reports, Predict the Future'; run locally at localhost"
+  },
+  {
+   "name": "OpenAI API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Simulation consumes OpenAI credits ('hope this does not kill my OpenAI credits')"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Asked the same question as a baseline; picked Episode 14"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Terminal-style agent output: 'Transcribed all 5 videos locally with Whisper and combined them into one PDF'"
+  },
+  {
+   "name": "Whisper",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Local transcription of the 5 videos"
+  },
+  {
+   "name": "GitHub Desktop",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Open GitHub Desktop' dialog when cloning"
+  }
+ ],
+ "claims": [
+  "MiroFish spins up 'hundreds of AI people' who debate a question like social media users; site says up to million-scale agents",
+  "Creator fed transcripts of 5 recent videos; MiroFish picked the '/brag' video (Episode 17), which did get the most views (900,000 at time of recording)",
+  "Claude asked the same question picked Episode 14, 'pretty sure actually the worst performing one'",
+  "Verdict: FACT, but 'not sure until I test it on more cases'",
+  "Simulation 'is taking a while' and costs OpenAI credits"
+ ],
+ "how_to_steps": [
+  "Clone the MiroFish repo, add environment variables (OpenAI key), run it",
+  "Switch UI language from Chinese to English",
+  "Have Claude Code transcribe source videos with Whisper and compile into a PDF (one per page with titles)",
+  "Upload the PDF and ask 'Which video will perform the best on Instagram'",
+  "Pipeline stages: Graph Build -> Env Setup -> Simulation -> Report -> Interaction; wait for 'report generation is complete'",
+  "Read the 'Instagram Video Performance Prediction Report' and compare to real results"
+ ],
+ "on_screen_only": [
+  "Overlay 'Fact or Hype?' with FACT / HYPE checkboxes; FACT checked at the end",
+  "MiroFish landing: 'Predict Anything', 'The World's First Simple and Universal Open-Source Swarm Intelligence Engine', 'Join the waitlist', 'Upload Reports, Predict the Future... extracts every needed entity to auto-generate a parallel world with up to million-scale Agents... Let Agents rehearse the future, let decisions prevail'; badges 'Low Cost', 'Scalable'",
+  "Knowledge graph with Chinese node labels (e.g. 华中科技大学, 抖音/短视频平台, Reddit, 青年教师, 中国社会科学院)",
+  "Claude Code output: 'Done. Transcribed all 5 videos locally with Whisper and combined them into one PDF each on its own page with a short title. Episode 15: Claude Skill for Startup Pricing; Episode 17: The /brag Skill: Instant Launch Videos; Episode 16: Claude Code Builds a 3D Rocket Game; Episode 15: Caveman Skill Cuts Claude Token Usage; Episode 14: Connecting a WOOP Tracker to Claude Code'; later 'My pick: Episode 14 (WOOP heart rate tracker)... Runner-up would be Episode 16 (3D rocket/game build)'",
+  "MiroFish Report Agent: 'Based on the provided scripts, the video that is likely to perform the best on Instagram would be one that features Episode 17: The /brag Skill: Instant Launch Videos' and 'Key factors in video performance' sections",
+  "Localhost UI with tabs Graph Build / Simulation / Report Generation; Chinese agent posts/comments in the simulated feed"
+ ],
+ "cta": "None explicit (fact-or-hype series)",
+ "relevance": {
+  "score": 2,
+  "why": "Interesting but a single-case anecdote; agent-swarm simulation is slow, costs API credits and is unproven as a product-decision tool for a time-poor founder."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Do not adopt. If content prediction matters, a cheap alternative is asking Claude to score hooks against known patterns; revisit only if independent evaluations show MiroFish beats a baseline."
+ },
+ "verify": [
+  "MiroFish GitHub org/repo, license, maintenance status and actual agent count/cost per run",
+  "One correct pick out of five is weak evidence; any benchmark on real prediction accuracy?",
+  "Does the tool send your documents to third-party APIs?"
+ ]
+}

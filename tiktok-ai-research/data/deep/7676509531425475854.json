@@ -1,0 +1,88 @@
+{
+ "id": "7676509531425475854",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7676509531425475854",
+ "creator": "adam_ha_yes",
+ "title": "Seven resources to make a vibe-coded landing page look good: 21st.dev, getdesign.md, WebGPU, impeccable.style, a site-recreation repo, awesome-design.md, and a 'Taste Skill' repo",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "21st.dev",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'The living library of interfaces' — high-quality UI components/assets"
+  },
+  {
+   "name": "getdesign.md",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'Steal any famous design system' — DESIGN.md files for known brands"
+  },
+  {
+   "name": "WebGPU",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "For web animations; screen shows a gallery of shader/GPU demos"
+  },
+  {
+   "name": "impeccable.style",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "'The missing design vocabulary for agents' — design prompting/skill"
+  },
+  {
+   "name": "Landing-page recreation GitHub repo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Name not shown; demo shows a 'Ramp HQ' dashboard screenshot being recreated"
+  },
+  {
+   "name": "awesome-design (Awesome DESIGN.md)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub list to break down the design blocks of any brand"
+  },
+  {
+   "name": "Taste Skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "GitHub repo: 'The Anti-Slop Frontend Framework for AI Agents' — gives Claude 'actual taste'"
+  }
+ ],
+ "claims": [
+  "These seven tools make vibe-coded landing pages 'actually look good'",
+  "getdesign.md lets you 'steal any famous design system'",
+  "Taste Skill gives Claude 'actual taste'"
+ ],
+ "how_to_steps": [
+  "1. Pull high-quality design assets/components from 21st.dev",
+  "2. Grab a famous brand's design system as a DESIGN.md from getdesign.md",
+  "3. Add WebGPU-based animations",
+  "4. Use impeccable.style design prompting with your agent",
+  "5. Recreate a reference landing page with the (unnamed) GitHub repo",
+  "6. Use awesome-design to break down any brand's design blocks",
+  "7. Install the Taste Skill repo so Claude produces less slop"
+ ],
+ "on_screen_only": [
+  "21st.dev homepage: 'The living library of interfaces' with 'Get inspired with us' hero",
+  "getdesign.md: long table of brand/design-system entries (names unreadable)",
+  "WebGPU: grid of ~30 shader demo thumbnails",
+  "impeccable.style hero: 'The missing design vocabulary for agents' with a chat example 'Ship the launch plan by Friday'",
+  "Repo demo screenshot of a 'Ramp HQ' finance dashboard",
+  "GitHub README header 'Awesome DESIGN.md'",
+  "GitHub page: 'Taste Skill — The Anti-Slop Frontend Framework for AI Agents' with example cards 'Built ... AI agency presence' and 'Less slop, design pop'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 4,
+  "why": "Founder ships landing pages and app UIs with Claude Code; design slop is the visible weakness of vibe-coded products. impeccable.style, Taste Skill and DESIGN.md files are skill-style inputs that drop straight into a Claude Code project."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Install impeccable + Taste Skill and pick one DESIGN.md as the house style: an afternoon, reusable across every app. WebGPU and 21st.dev are nice-to-have. Unnamed repos need identifying first."
+ },
+ "verify": [
+  "Identify the two unnamed GitHub repos (#5 landing-page recreation, #7 Taste Skill) and check stars/maintenance",
+  "Licensing of components from 21st.dev and of copied brand design systems",
+  "Do impeccable.style and Taste Skill conflict when both loaded in Claude Code?"
+ ]
+}

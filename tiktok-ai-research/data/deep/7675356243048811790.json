@@ -1,0 +1,98 @@
+{
+ "id": "7675356243048811790",
+ "url": "https://www.tiktok.com/@luke.builds.ai/video/7675356243048811790",
+ "creator": "luke.builds.ai",
+ "title": "Nine-step weekend recipe for a personal 'Jarvis' agent: host, Hermes Agent harness, swappable model, business context, Hancho AI memory, skills, tool connections, chat/voice channels, Claude Design UI",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Hermes Agent",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agentic harness: 'turns a model into a real agent, runs the loop — plans, acts, checks its own work'"
+  },
+  {
+   "name": "Claude / Codex / Gemini",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Interchangeable model choice: Claude reasoning, Codex code-heavy, Gemini long context/multimodal"
+  },
+  {
+   "name": "Hancho AI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Persistent memory layer; 'remembers past conversations'"
+  },
+  {
+   "name": "Hermes Voice",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Voice powered by ElevenLabs, 'British voice'"
+  },
+  {
+   "name": "ElevenLabs",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "TTS behind Hermes Voice"
+  },
+  {
+   "name": "Claude Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used in step 9 to build a custom Jarvis interface"
+  },
+  {
+   "name": "Slack / Telegram / iMessage",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Communication channels for the agent"
+  },
+  {
+   "name": "Free email course",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "Comment 'Jarvis' to receive the full weekend setup"
+  }
+ ],
+ "claims": [
+  "You can build your own Jarvis in one weekend with nine steps; 'by Sunday night you'll have a real Jarvis'",
+  "You do not need to build a model, just connect pieces: home, harness, model, context, memory, skills, tools, channels, interface",
+  "Without a harness 'it's just a chatbot'",
+  "You are not locked into any model; swap the brain anytime"
+ ],
+ "how_to_steps": [
+  "Step 1: give it a home — old laptop, Mac Mini, or cloud server",
+  "Step 2: install an agentic harness (Hermes Agent)",
+  "Step 3: choose the model (Claude, Codex, Gemini)",
+  "Step 4: teach it who you are, what you do, how your business works",
+  "Step 5: add persistent memory (Hancho AI)",
+  "Step 6: add skills for specific jobs ('built once, used forever; skills compound')",
+  "Step 7: connect tools — email & calendar, documents, browser",
+  "Step 8: connect channels — Slack, Telegram, iMessage; add Hermes Voice (ElevenLabs)",
+  "Step 9: build a custom interface with Claude Design and wire Hermes Voice to it"
+ ],
+ "on_screen_only": [
+  "Step cards with sub-bullets, e.g. 'STEP 2 Install an Agentic Harness: Hermes Agent — turns a model into a real agent; Runs the loop — plans, acts, checks its own work; The engine — everything else plugs into this'",
+  "'STEP 3 Choose the Model: Claude — reasoning and judgment; Codex — code-heavy workflows; Gemini — long context, multimodal. You're not locked in. Swap the brain anytime.'",
+  "'STEP 5 Give It Persistent Memory: Hancho AI — remembers past conversations; No repeating yourself; Gets sharper the more you use'",
+  "'STEP 7 Connect the Tools: Email & calendar — reads, drafts, schedules; Documents — pulls and edits your files; Browser — goes and gets the answer'",
+  "'STEP 8 Connect Communication Channels: Slack, Telegram, iMessage; Hermes Voice — powered by ElevenLabs; That British voice'",
+  "'STEP 9 Build the Jarvis Interface: Claude Design — build a custom interface; Connect Hermes Voice; Just like Iron Man'",
+  "Lower-third tags: THE ENGINE, NOT LOCKED IN, IT REMEMBERS, SKILL STACK, TOOLS ONLINE, IT TALKS BACK, JARVIS ONLINE"
+ ],
+ "cta": "Comment 'Jarvis' to get the free email course link",
+ "relevance": {
+  "score": 3,
+  "why": "The layered architecture (harness, model, memory, skills, tools, channels) is the same shape as the founder's GOOSE/Claude Code setup, so it is a useful checklist. But it is a 488k-view funnel with no demo of anything working."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Founder already has most layers via Claude Code + skills + MCP connectors. Only novel items are a Telegram/Slack channel and voice. Hermes Agent and Hancho AI are unverified dependencies; do not rebuild the stack around them."
+ },
+ "verify": [
+  "Hermes Agent — is this Nous Research's open-source agent framework, and is it production-usable?",
+  "Hancho AI — does it exist, pricing, maintained?",
+  "'Claude Design' — is this an Anthropic product or the creator's name for Claude artifacts/Claude Code frontend?",
+  "Is a 'weekend' realistic or is the course the actual product?"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "id": "7689275803690929421",
+ "url": "https://www.tiktok.com/@chase_ai_/video/7689275803690929421",
+ "creator": "chase_ai_",
+ "title": "Higgsfield launched a pay-as-you-go API; creator's open-source 'Higgsfield API Skill' lets Claude Code/Codex generate images/video with model recommendation and budget caps",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Higgsfield API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Pay-per-use image/video generation API; billing via Higgsfield Console"
+  },
+  {
+   "name": "Higgsfield API Skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "git clone https://github.com/cth9191/higgsfield-api-ski... (repo name cut off, likely higgsfield-api-skill); invoked as $higgsfield-api"
+  },
+  {
+   "name": "Seedance 2.5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Video model; 'from $0.2057/s', 30% off to $0.144/s"
+  },
+  {
+   "name": "Seedance 2.0",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "up to 4k, from $0.1407/s"
+  },
+  {
+   "name": "Kling 3.0 / 2.6 / 2.5 / O1 (Omni) / O3",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Kling 3.0 up to 1080p from $0.084/s; Kling 2.6 from $0.07/s; Kling 2.5 from $0.042/s; O1 and O3 from $0.084/s"
+  },
+  {
+   "name": "Genjutsu Motion Transfer",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "50% off, from $0.159/s (was $0.318/s)"
+  },
+  {
+   "name": "Nano Banana Pro",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Subscription math: 3,000 credits = 1500 Nano Banana Pro generations"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Skill target"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Install: clone into skills dir or $CODEX_HOME/skills/higgsfield-api"
+  }
+ ],
+ "claims": [
+  "Higgsfield subscription costs '200+ dollars a month'; the API means you only pay for what you use",
+  "API prices are 'just as low or lower than anyone else on the market'",
+  "Skill installs with 'one single line of code' and walks you through the whole install",
+  "You can name the model, ask for recommendations, or give it a budget to stay under",
+  "'Totally open source'; searching 'Higgsfield API skill' on GitHub finds it",
+  "Description promises 'discounted API pricing' via the link"
+ ],
+ "how_to_steps": [
+  "Create API access/billing in Higgsfield Console",
+  "git clone https://github.com/cth9191/higgsfield-api-skill into your Claude Code or Codex skills directory (or $CODEX_HOME/skills/higgsfield-api); if already installed, update the checkout instead of re-cloning",
+  "Start a new session; the skill walks through API hookup",
+  "Prompt e.g. 'Use $higgsfield-api to generate a 5-second 720p Seedance clip: a cinematic tracking shot along a sunlit coastal road'",
+  "Or 'Use $higgsfield-api to recommend a model for animating ...; compare estimated costs before generating anything'",
+  "Or 'Use $higgsfield-api to create three short clips ...; keep the total estimated cost under $10' (budget caps optional; when set, helper tracks spend and blocks over-budget requests)"
+ ],
+ "on_screen_only": [
+  "Higgsfield pricing card: ULTRA 23% OFF BEST VALUE, $99/mo billed annually (was $129), 3,000 credits/mo = 1500 Nano Banana Pro generations = 133 Seedance 2.0 videos, slider 3,000/6,000/9,000, 'Save $360 compared to monthly', UNLIMITED tier below",
+  "API model price table: Seedance 2.5 up to 720p 4s/30s from $0.2057/s (5 modes); Seedance 2.0 up to 4k 4s/15s from $0.1407/s (10 modes); Kling 3.0 up to 1080p 1s/3s/15s from $0.084/s; Kling 2.6 from $0.07/s; Kling 2.5 up to 1080p 5s/10s from $0.042/s; Kling O1 (Omni) from $0.084/s; Kling O3 from $0.084/s; 'Marketing Studi...' up to 4k from $0.0126/image",
+  "README text: 'This is an independent community skill, not an official Higgsfield product. API access and billing are configured through Higgsfield Console.'",
+  "Install commands shown for macOS/Linux and Windows PowerShell: git clone https://github.com/cth9191/higgsfield-api-ski...",
+  "Example generated image: isometric 3D office scene with pie chart and bar charts (frontend design use case)"
+ ],
+ "cta": "Check description for the skill and discounted API pricing",
+ "relevance": {
+  "score": 2,
+  "why": "Only matters if the founder generates marketing images/video or app hero assets; it is not about building apps. Per-second pricing is useful reference if video assets are ever needed."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Install is trivial (one git clone) but value is niche; try only when a specific asset need arises. Prefer budget cap prompt to avoid runaway spend."
+ },
+ "verify": [
+  "Exact repo URL (cth9191/higgsfield-api-skill?) and whether it is maintained; audit the skill code before giving it API keys",
+  "Actual Higgsfield API pricing vs fal.ai/Replicate for the same models",
+  "'Discounted API pricing' in description likely an affiliate link",
+  "Does the skill work in Claude Code or only Codex (README install text targets Codex)?"
+ ]
+}
