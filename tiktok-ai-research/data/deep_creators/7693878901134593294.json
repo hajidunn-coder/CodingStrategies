@@ -1,0 +1,58 @@
+{
+ "id": "7693878901134593294",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7693878901134593294",
+ "creator": "colton.deannn",
+ "title": "Build Claude/Codex skills from reference examples (videos, ads you like) instead of describing them from scratch, so the AI reverse-engineers the target output",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude Code skills (SKILL.md)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "SKILL.md file icon shown with Claude and ChatGPT logos"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as the other place skills run"
+  }
+ ],
+ "claims": [
+  "A skill is a task the AI runs the exact same way every time",
+  "Describing what you like in words makes the AI guess; giving reference artifacts stops the guessing",
+  "You can give as many reference examples as you want",
+  "Outputs from reference-built skills are 'ridiculously better' than from-scratch skills"
+ ],
+ "how_to_steps": [
+  "Decide the skill's job (e.g. editing videos, writing ads)",
+  "Collect real examples of the output you want (videos edited the way you like, ads you admire)",
+  "Give the examples to the AI with notes on what you like and dislike about each",
+  "Ask it to reverse-engineer them into a skill ('I want to make a skill out of this type of ad')",
+  "Add more references over time to tighten the skill"
+ ],
+ "on_screen_only": [
+  "Title card 'THE RIGHT WAY TO BUILD AI SKILLS'",
+  "'What's an AI skill?' with a SKILL.md file graphic next to Claude and ChatGPT logos",
+  "'Not like this' example prompt: 'Hey, I want to make this skill about editing videos.'",
+  "'Find a video you like' row of thumbnails labelled ONLINE; 'As many as you want' with an infinity symbol labelled REFERENCES",
+  "Final bar chart 'Your output: FROM SCRATCH (short bar) vs FROM REFERENCES (long bar)'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "A simple, correct principle (few-shot from real artifacts) for anyone writing skills; Haji already builds skills so the value is a reminder, not a discovery"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Zero cost: when creating a skill, drop 3-5 reference artifacts into the skill folder or prompt and have Claude derive the rules. Pairs with the skill-creator workflow already in use"
+ },
+ "verify": [
+  "No evidence beyond assertion that reference-built skills outperform; test on one skill with an A/B"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Technique: seed skills with reference artifacts and like/dislike notes rather than descriptions; liked set listed many skill repos but not this authoring method"
+ }
+}

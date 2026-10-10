@@ -1,0 +1,66 @@
+{
+ "id": "7657623598462455054",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7657623598462455054",
+ "creator": "kevinfremon",
+ "title": "SuperSchema founder wires his Trillion agent's 'Lift' growth sub-agent to Supabase funnel data so it researches each sign-up's website and sends personalised, human-sounding lifecycle emails",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's own agent product; UI at localhost:7777 on screen; 'Lift' is a named growth/lifecycle sub-agent"
+  },
+  {
+   "name": "SuperSchema",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's app; scans a site and shows which AI citations/recommendations it gets"
+  },
+  {
+   "name": "Supabase",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "product database connected directly to Trillion"
+  }
+ ],
+ "claims": [
+  "Goal: $1M ARR; this loop is 'probably one of the most impactful things' toward it",
+  "SuperSchema funnel: scan website -> see AI citations -> answer a few questions -> data captured",
+  "Trillion has direct access to all captured funnel data via Supabase",
+  "Sub-agent 'Lift' researches the person's website and emails them based on intent, 'in a very non used-car-saleswoman way'",
+  "Recipients are replying thinking Trillion is a real person (creator says he is not trying to deceive)"
+ ],
+ "how_to_steps": [
+  "Capture intent data in the onboarding/growth funnel and store it in Supabase",
+  "Connect the agent to the Supabase database",
+  "Set up a loop so each new funnel completion is picked up by a growth sub-agent",
+  "Sub-agent researches the lead's website, writes a personalised email matched to their intent, and sends it",
+  "Agent reports back; scale top-of-funnel once the loop works"
+ ],
+ "on_screen_only": [
+  "SuperSchema admin 'Growth Funnel' dashboard with stage counts 35 / 29 / 13 / 12 / 4 / 0 and conversion rates 82.9% / 44.8% / 92.3% / 33.3% / 0%",
+  "Trillion UI at localhost:7777 showing a space-like node graph of agents/memories with avatar row of sub-agents",
+  "Draft email overlay: 'Hey Cara, I know it has been a few days and you are probably juggling a lot, so I will keep this short. I keep coming back to that question we asked ChatGPT, Claude, and Gemini: Do I know if I need a fractional COO or an executive coach for my business? That is exactly what your founders and CEOs are typing into AI right now...' with tags like 'goal, website_manager'",
+  "Hook captions: 'MILLION DOLLARS IN ARR GOAL', 'REACH OUT TO THESE PEOPLE AS IF SHE', 'NON-USED CAR'"
+ ],
+ "cta": "none (promises a follow-up)",
+ "relevance": {
+  "score": 3,
+  "why": "Pattern of an agent doing researched lifecycle outreach from your own app's funnel data is directly applicable to a solo founder's SaaS; but it runs on the creator's unreleased Trillion product"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Replicable without Trillion: a scheduled Claude Code / cron agent reading new Supabase sign-ups, fetching their site, drafting an intent-matched email and sending via Gmail/Resend. Needs care around disclosure and spam rules"
+ },
+ "verify": [
+  "Is Trillion publicly available or still waitlist (hellotrillion.ai)",
+  "Legal/ethical check: AI emails that recipients mistake for a human (disclosure, CAN-SPAM)",
+  "No reply-rate or revenue numbers given; 'working incredibly well' is anecdotal"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the lifecycle-outreach use case (agent reads funnel data from Supabase, researches each lead's site, sends personalised follow-up); liked Trillion videos covered handoff notes, a board of advisors and design, not automated growth email"
+ }
+}

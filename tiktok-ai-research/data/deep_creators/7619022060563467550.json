@@ -1,0 +1,67 @@
+{
+ "id": "7619022060563467550",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7619022060563467550",
+ "creator": "ethanplusai",
+ "title": "Skit: voice 'JARVIS' built on Claude Code builds a React nutrition tracker ('Daily Fuel') from a voice request in a parked Tesla and suggests hosting it on Vercel",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "JARVIS says 'Claude Code is assembling the tracker now'"
+  },
+  {
+   "name": "JARVIS (ethanplusai/jarvis)",
+   "kind": "repo",
+   "where_seen": "caption",
+   "detail": "creator's voice assistant; repo name known from his other liked video, not shown here"
+  },
+  {
+   "name": "Vercel",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "transcribed as 'post it on the sale'; suggested host so the app syncs across devices"
+  },
+  {
+   "name": "React",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "requested app stack"
+  }
+ ],
+ "claims": [
+  "A voice request ('simple React app to track protein and calories day by day') is turned into a working tracker by Claude Code while the creator waits",
+  "The app tallies calories, protein, carbs and fats against targets and shows a visual breakdown",
+  "Hosting on Vercel keeps it synced across devices"
+ ],
+ "how_to_steps": [
+  "Speak the app request to the voice agent, which restates it as a spec and confirms",
+  "Agent hands the build to Claude Code and reports progress by voice",
+  "Agent opens the finished app in the browser and walks through it",
+  "Ask the agent for a hosting recommendation (Vercel) to use it on a phone"
+ ],
+ "on_screen_only": [
+  "Overlay: 'POV: Iron Man was your favorite super hero as a kid and now JARVIS does all of your work for you'",
+  "Laptop shows a dark particle/orb visualizer while JARVIS speaks",
+  "Browser tab 'Daily Fuel - Nutrition Tracker'; page header 'Daily Fuel  NUTRITION LOG', 'Track what you eat. Know how you feel.', date 'Sunday, March 15', DAILY TOTALS ring gauges for protein and calories, 'Nothing logged yet', 'Add Food' button",
+  "'Add Food' modal with fields for food name, calories and protein"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Entertainment skit; the Jarvis-on-Claude-Code pattern is already in Haji's liked set from the same creator"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing new to implement beyond what the liked JARVIS 2.0 video already showed"
+ },
+ "verify": [
+  "Whether the build was real-time or edited (the app appears fully built within the skit)"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (ethanplusai JARVIS 2.0 and other Jarvis skits)"
+ }
+}

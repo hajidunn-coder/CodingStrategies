@@ -1,0 +1,59 @@
+{
+ "id": "7668594616723131668",
+ "url": "https://www.tiktok.com/@brandnat/video/7668594616723131668",
+ "creator": "brandnat",
+ "title": "Five CLAUDE.md tips attributed to Claude Code's creator at the Opus 5 launch: delete old instructions every 6 months, start fresh per model, add rules only after repeated mistakes, give goal/guardrails/success criteria, stop micromanaging",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "CLAUDE.md instructions file"
+  },
+  {
+   "name": "Claude Opus 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "tips framed around the Opus 5 launch interview"
+  }
+ ],
+ "claims": [
+  "Claude Code's creator said in an interview at the Opus 5 launch that you should delete your CLAUDE.md",
+  "Tip 1: delete old instructions every six months",
+  "Tip 2: start fresh with every new model because each model behaves differently",
+  "Tip 3: only add rules after a repeated mistake",
+  "Tip 4: give it goals, guardrails and success criteria (creator says this one has not changed)",
+  "Tip 5: stop micromanaging; tell it to do the thing instead of listing 20 steps",
+  "Old instructions from 6 months ago may be what is holding a capable model back"
+ ],
+ "how_to_steps": [
+  "Back up your current CLAUDE.md somewhere in case the leaner version performs worse",
+  "Delete stale instructions (creator suggests a six-month cadence) and start fresh when a new model ships",
+  "Only re-add a rule after Claude repeats the same mistake",
+  "Write the goal, guardrails and success criteria rather than step-by-step procedures",
+  "Retry harder problems the old setup could not solve with fewer prompts and compare"
+ ],
+ "on_screen_only": [
+  "Phone notes page titled '5 Claude Code Ti...' listing: 1. Delete old instructions every six months 2. Start fresh with every new model 3. Add rules only after repeated mistakes 4. Give the goal, guardrails, and success criteria 5. Stop micromanaging and let the AI work",
+  "Opening banner: DELETE YOUR CLAUDE.MD"
+ ],
+ "cta": "comment whether you have tried this on Opus 5",
+ "relevance": {
+  "score": 3,
+  "why": "Directly about how a heavy Claude Code user should maintain CLAUDE.md; secondhand paraphrase of an interview rather than a demo"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to do: archive the current CLAUDE.md, cut it to goals/guardrails/success criteria, and re-add rules only on repeated failures. Overlaps with the 'keep CLAUDE.md thin' advice already liked"
+ },
+ "verify": [
+  "Which interview and which Anthropic person (Boris Cherny?) actually said 'delete your CLAUDE.md', and the exact wording",
+  "Whether 'every six months' is the source's number or the creator's embellishment"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a maintenance cadence for CLAUDE.md (purge on each new model / every ~6 months, rules only after repeated mistakes); the liked set covered keeping CLAUDE.md thin but not when to reset it"
+ }
+}

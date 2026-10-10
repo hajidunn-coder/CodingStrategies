@@ -1,0 +1,46 @@
+{
+ "id": "7680681208912694542",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7680681208912694542",
+ "creator": "adam_ha_yes",
+ "title": "20 'Laws of UX' (Hick's, Fitts's, Jakob's, Miller's, Doherty, Von Restorff, Peak-end, Zeigarnik, Tesler's, Postel's, Parkinson's, Occam, Pareto...) as one-line rules to put in a markdown file for Claude-generated UI",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "UX laws markdown instructions",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'Comment \"UX\" for the full MD instructions'; a CLAUDE.md/DESIGN.md-style rules file"
+  }
+ ],
+ "claims": [
+  "Spoken rules, in order: reduce choices per screen; make targets large; follow familiar patterns; group related information; break content into chunks; interactions within 400 ms; highlight the primary action; place key actions nearby; put essentials first; end flows memorably; show visible progress; simplify complex interfaces; use sensible defaults; prevent errors proactively; make errors recoverable; maintain pattern consistency; connect related elements visually; reduce task completion time; reveal complexity gradually; make completion feel closer"
+ ],
+ "how_to_steps": [
+  "Translate each UX law into a one-line imperative rule",
+  "Put the 20 rules in a markdown file Claude reads when designing (CLAUDE.md / DESIGN.md / a design skill)",
+  "Comment 'UX' to get the creator's full MD file"
+ ],
+ "on_screen_only": [
+  "Title: '20 \"UX Laws\" to tell Claude for better Design'",
+  "Numbered list revealed progressively: 1. Hick's law 2. Fitts's law 3. Jakob's law 4. Law of proximity 5. Miller's law 6. Doherty threshold 7. Von Restorff effect 8. Minimize target distance 9. Serial position effect 10. Peak-end rule 11. Zeigarnik effect 12. Law of Pragnanz 13. Law of similarity 14. Uniform connectedness 15. Tesler's law 16. Postel's law 17. Parkinson's law 18. Occam's Razor 19. Pareto principle 20. (illegible; spoken rule 'make completion feel closer' = goal-gradient effect)",
+  "Footer: 'Comment \"UX\" for the full MD instructions'"
+ ],
+ "cta": "comment 'UX' for the full markdown file",
+ "relevance": {
+  "score": 4,
+  "why": "Compact, well-founded design heuristics that slot straight into the DESIGN.md / design-skill approach Haji already likes; no tool dependency"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Write the 20 one-liners (all spoken in the video, so no need for the gated file) into the project design skill or DESIGN.md; 15 minutes, then every UI Claude builds inherits them"
+ },
+ "verify": [
+  "Rules are standard Laws of UX (lawsofux.com); check wording of the 20th law",
+  "Whether 20 extra lines in CLAUDE.md are better placed in an on-demand design skill to keep CLAUDE.md thin"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "A ready-made list of 20 UX laws as Claude design rules; liked set had design-system skills (Impeccable, awesome-design, Taste) and 5 agency UX features but not the laws-of-UX checklist"
+ }
+}

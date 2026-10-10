@@ -1,0 +1,87 @@
+{
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "GPT-6 Astra",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "on-screen 'model: gpt-6-astra'; OpenAI model used as the 'worker'"
+  },
+  {
+   "name": "Claude Fable 5.1",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "labelled 'FABLE 5.1 BOSS' on screen; transcript just says 'Fable'"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "orchestrating session; auto mode on"
+  },
+  {
+   "name": "Codex CLI",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "must be installed alongside Claude Code"
+  },
+  {
+   "name": "openai/codex-plugin-cc",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "/plugin marketplace add openai/codex-plugin-cc ; /plugin install codex@openai-codex"
+  },
+  {
+   "name": "astra-advisor skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Skill(astra-advisor:astra-advisor) loaded inside Claude Code"
+  }
+ ],
+ "claims": [
+  "You can run OpenAI's GPT-6 Astra inside Claude Code and stop burning through Claude token limits",
+  "Pattern: make Fable the boss and Astra the worker; they hand work back and forth and check each other",
+  "You get both models while using less of each",
+  "Setup needs a ChatGPT account, a Claude account, Codex and Claude Code installed, the connecting plugin, and a few CLAUDE.md sections"
+ ],
+ "how_to_steps": [
+  "Have both a ChatGPT (Codex) and Claude subscription; install Codex CLI and Claude Code",
+  "In Claude Code run /plugin marketplace add openai/codex-plugin-cc, then /plugin install codex@openai-codex, then /reload-plugins",
+  "Add an 'AI Collaboration Rules' section to CLAUDE.md telling Claude when to ask Astra/Codex for an opinion and to have Codex review final changes",
+  "Work normally: Claude plans, consults Astra via the skill, implements, then asks Codex to review and fixes valid findings before running tests"
+ ],
+ "on_screen_only": [
+  "Terminal: '/plugin marketplace add openai/codex-plugin-cc' -> 'Successfully added marketplace: openai-codex'; '/reload-plugins' -> 'Reloaded: 8 plugins . 83 skills . 6 agents . 3 hooks . 35 plugin MCP servers . 0 plugin LSP servers'; 'codex@openai-co... Use Codex from Claude Code to review code or...'; '> /plugin install codex@openai-codex'; 'auto mode on (shift+tab to cycle)'",
+  "Claude Code transcript: 'Skill(astra-advisor:astra-advisor) Successfully loaded skill', 'Read 2 files, ran 2 shell commands', 'Codex CLI is available. Now I'll write the brief and consult Astra.', 'Astra's verdict is in. Now I'll build the landing page directly with plain HTML/CSS/JS as recommended.', 'Write(index.html) Wrote 424 lines', title 'Flowstate - Focus on what matters', 'The page is built. Now let's have Codex review it.'",
+  "CLAUDE.md excerpt titled '# AI Collaboration Rules': 'When a task is complicated, use Codex or Astra for a second opinion. For important technical decisions: 1. Ask Astra for an independent opinion. 2. Review the advice. 3. Make the final decision. 4. Implement the change. 5. Use Codex to review the final changes. 6. Fix valid problems found by the review. 7. Run the tests before finishing. Do not use Astra or Codex for every small task. The main Claude Code session remains responsible for the final decision.'",
+  "Markdown editor with project 'astra-demo' and headings Overview / Commands / Architecture / Conventions with TODO placeholders",
+  "Skill file path 'skills > landing-page-des...' with sections '# PART A - Strategy', '## A7. SEO and AEO', '## A8. Pitfalls'",
+  "Notice: 'Get to finished work sooner with Opus 5.5. Switch anytime with /model.'",
+  "Title cards: 'OpenAI GPT-6 ASTRA' with 'model: gpt-6-astra', banner 'GPT-6 ASTRA + CLAUDE [without wasting of tokens]', pixel-art 'CLAUDE CODE', card 'FABLE 5.1 BOSS'",
+  "Separate terminal with a red tint running a Python http.server on localhost:8000 and a background 'gpt-6-astra default fast' agent listening"
+ ],
+ "cta": "save the video",
+ "relevance": {
+  "score": 4,
+  "why": "A concrete, low-effort way for a Max-plan solo founder to offload second opinions and code review to a second frontier model and stretch Claude quota; the plugin commands are shown on screen"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Two slash commands plus a short CLAUDE.md section; requires a paid ChatGPT/Codex subscription. Worth trying for review-before-ship on real apps"
+ },
+ "verify": [
+  "Does the openai/codex-plugin-cc marketplace and codex@openai-codex plugin exist and is it maintained by OpenAI",
+  "Is 'GPT-6 Astra' a real model name available through Codex, and what does the 'astra-advisor' skill actually call",
+  "Whether consulting a second model actually reduces Claude token usage versus adding overhead (no measurements given)",
+  "Both videos (ai.honeycove and ai_vanta_ai) use the identical script and footage; likely a syndicated/AI-generated content farm"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of 7693734571367550222 (same footage and script); see that record for the plugin details"
+ },
+ "id": "7694844199467879713",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7694844199467879713",
+ "creator": "ai_vanta_ai",
+ "title": "Identical script to ai.honeycove: install openai/codex-plugin-cc in Claude Code so Fable 5.1 (boss) delegates to GPT-6 Astra/Codex (worker) and reviews via CLAUDE.md collaboration rules"
+}

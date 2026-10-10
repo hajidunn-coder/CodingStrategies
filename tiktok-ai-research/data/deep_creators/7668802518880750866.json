@@ -1,0 +1,44 @@
+{
+ "id": "7668802518880750866",
+ "url": "https://www.tiktok.com/@robert.triebwasser/video/7668802518880750866",
+ "creator": "robert.triebwasser",
+ "title": "Non-coder testimonial: six months with Claude Code and he runs his whole business and content through it as a 'digital employee'; install it in a scratch project and give it 3 hours",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "used for dashboards and content ops, not real programming"
+  }
+ ],
+ "claims": [
+  "Creator had never written code six months ago (dropped one university programming class)",
+  "Now operates his entire business and all content through Claude Code",
+  "It takes about 3 hours to learn",
+  "'Best way to use any agnostic frameworks out there right now'"
+ ],
+ "how_to_steps": [
+  "Download Claude Code",
+  "Point it at a dedicated project folder so you cannot break anything",
+  "Play with it for ~3 hours"
+ ],
+ "on_screen_only": [
+  "Title card: 'Claude Code  NOT for Programmers?'"
+ ],
+ "cta": "try Claude Code today",
+ "relevance": {
+  "score": 1,
+  "why": "Motivational, no technique or tool; Haji is far past this stage"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content; generic 'just try Claude Code' encouragement with no new tool or technique"
+ }
+}

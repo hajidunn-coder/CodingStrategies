@@ -1,0 +1,50 @@
+{
+ "id": "7678726337523207437",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7678726337523207437",
+ "creator": "chase.builds.ai",
+ "title": "Anthropic made Auto Mode the default in Claude Code on Aug 14: users approved 97% of permission prompts (1,053 paid users), human review caught 13.6% of harmful actions vs auto mode's 89%",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code Auto Mode",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "default on Pro, Max and Team since August 14; still stops for irreversible, destructive or out-of-environment actions"
+  }
+ ],
+ "claims": [
+  "Users approve 97% of permission prompts Claude Code shows",
+  "Measured by Anthropic across 1,053 paid users",
+  "Human review caught 13.6% of harmful actions in the same test; auto mode caught 89%",
+  "Auto mode became the default on Pro, Max and Team on August 14",
+  "It still stops for anything irreversible, destructive or pointed outside your environment",
+  "Creator stopped rubber-stamping prompts he wasn't reading"
+ ],
+ "how_to_steps": [
+  "Leave auto mode on (it is now the default) instead of approving every prompt",
+  "Rely on its hard stops for destructive/irreversible/external actions",
+  "Follow a plan -> build -> review workflow rather than per-action approval (creator's lesson is linked in bio)"
+ ],
+ "on_screen_only": [
+  "Caption cards: 'you approve 97%', '1,05[3]', 'human review: 13.6%', 'default since Aug 14', 'irreversible . destru[ctive]', 'no more rubber-stamping', 'lesson in bio', 'Build review workflow'"
+ ],
+ "cta": "lesson on the safe plan/build/review workflow via link in bio",
+ "relevance": {
+  "score": 4,
+  "why": "Directly affects daily Claude Code use for a time-poor founder: permission fatigue is real and the numbers (if accurate) justify trusting auto mode"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Near-zero effort: confirm auto mode is on, stop reading every prompt, and move verification to a review step (code review / tests) instead of per-action approval"
+ },
+ "verify": [
+  "Source of the 97% / 1,053 users / 13.6% vs 89% figures (Anthropic blog or changelog?) and whether 'harmful actions' were real or injected test cases",
+  "Whether auto mode is truly default for all Pro/Max/Team users as of Aug 14 or a staged rollout",
+  "Exactly which action classes still prompt under auto mode"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the auto-mode-by-default change and Anthropic's permission-approval statistics; nothing in the liked set covered permission handling"
+ }
+}

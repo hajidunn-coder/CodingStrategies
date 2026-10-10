@@ -1,0 +1,47 @@
+{
+ "id": "7621652868700949774",
+ "url": "https://www.tiktok.com/@opichillc/video/7621652868700949774",
+ "creator": "opichillc",
+ "title": "Set up a global ~/.claude/CLAUDE.md (30-50 lines of personal conventions) that layers with each project's CLAUDE.md",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code global CLAUDE.md",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "file in the home directory (~/.claude/CLAUDE.md) read at the start of every session"
+  }
+ ],
+ "claims": [
+  "A global CLAUDE.md in your home directory is read automatically at the start of every session in every project",
+  "Project-level CLAUDE.md handles codebase specifics; the global one handles you; Claude reads both and they layer",
+  "Keep the global file short: 30-50 lines",
+  "Next video promises one command that teaches Claude your whole project structure in seconds"
+ ],
+ "how_to_steps": [
+  "Create a CLAUDE.md in the home directory's .claude folder",
+  "Put in cross-project preferences: coding style, git conventions (e.g. conventional commits), preferred frameworks (e.g. TypeScript over JavaScript), 'run tests before committing'",
+  "Keep project-specific context in each repo's CLAUDE.md",
+  "Keep the global file to the things you'd tell a new teammate on day one"
+ ],
+ "on_screen_only": [
+  "Persistent banner: 'Don't skip this Claude Code feature!'"
+ ],
+ "cta": "DM or book a call via link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Correct but basic; a veteran Claude Code user almost certainly already has a global CLAUDE.md"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Five-minute task if not already done; worth a quick audit that the global file is still under ~50 lines given the 'thin CLAUDE.md' advice"
+ },
+ "verify": [
+  "Exact path is ~/.claude/CLAUDE.md (creator says 'home directory' and points at the screen without naming it)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Only adds the global-vs-project CLAUDE.md layering and a 30-50 line budget; minor next to the liked 'keep CLAUDE.md thin' content"
+ }
+}

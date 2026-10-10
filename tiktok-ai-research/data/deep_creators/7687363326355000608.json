@@ -1,0 +1,65 @@
+{
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Open Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "free Claude Design alternative that works with any AI; link gated behind commenting 'design'"
+  },
+  {
+   "name": "Claude Design",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the paid product Open Design mirrors"
+  },
+  {
+   "name": "K2.5",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'From video to a fully built website. Made with K2.5' on a Jesko Jet clone demo"
+  }
+ ],
+ "claims": [
+  "Open Design works exactly like Claude Design and can be used with whichever AI you like",
+  "Builds websites, mobile app prototypes, pitch decks, slides and full motion graphics",
+  "Ships with 259 professional skills and 142 design systems built in"
+ ],
+ "how_to_steps": [
+  "Comment 'design' to receive the link",
+  "Install Open Design and point it at your preferred model",
+  "Pick from the bundled skills and design systems to build sites, prototypes, decks or motion graphics"
+ ],
+ "on_screen_only": [
+  "Logo card 'Open Design'",
+  "Grid of skill tiles: Scriptwriting, Competitive Research, Visuals, AI Avatar, Audio, Lead Forest, Workflow, Prompt System",
+  "Side-by-side: 'Original Video (Cr: Jesko Jet)' luxury-jet site vs rebuilt 'Fly in Luxury 650ER' page, caption 'From video to a fully built website. Made with K2.5'",
+  "FIFA World Cup motion graphic on a laptop; video-editor timeline with a phone mockup 'Welcome, Sam'",
+  "Counters '165 PROFESSIONAL SKILLS' and '51 DESIGN SYSTEMS' animating up to '259 PROFESSIONAL SKILLS / 142 DESIGN SYSTEMS  ALREADY BUILT IN'",
+  "Skill list snippets: 'Code migration - Patch-edit ... build-test devloop with diff review', 'Design brief'",
+  "Banner 'Claude Design is now completely FREE'; end card COMMENT \"DESIGN\""
+ ],
+ "cta": "comment 'design' for the link",
+ "relevance": {
+  "score": 3,
+  "why": "A free, model-agnostic Claude Design clone with bundled design systems would help a time-poor founder ship nicer UI; but no repo name or URL is shown and the pitch is a lead-magnet"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Cannot act without the link; if it is a real open-source repo, trying it is a 30-minute experiment. Haji already has Claude Design access"
+ },
+ "verify": [
+  "What 'Open Design' actually is (GitHub repo? who maintains it?) and whether it is an official open-source release or a third-party clone",
+  "Whether the 259 skills / 142 design systems numbers are real or repackaged from awesome-claude-design-style repos",
+  "'Made with K2.5' suggests demos were generated with Kimi K2.5, not Claude"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Names 'Open Design', a free model-agnostic Claude Design alternative with bundled skills/design systems; liked set covered Claude Design itself and Awesome Claude Design but not an open clone"
+ },
+ "id": "7687363326355000608",
+ "url": "https://www.tiktok.com/@forcceee_/video/7687363326355000608",
+ "creator": "forcceee_",
+ "title": "'Open Design': a free, model-agnostic clone of Claude Design with 259 skills and 142 design systems for sites, app prototypes, decks and motion graphics (link via comment)"
+}

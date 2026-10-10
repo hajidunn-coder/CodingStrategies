@@ -1,0 +1,76 @@
+{
+ "id": "7672897983205166367",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7672897983205166367",
+ "creator": "noevarner.ai",
+ "title": "Claude Code 'ad spy' skill: reads your offer, finds 15 competitors (direct/adjacent/aspirational), scrapes every Meta Ad Library ad, tags hook/angle/copy/creative into an Airtable-style table for ~$1, then remakes chosen ads for your product",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "runs the skill; Claude Cowork UI also shown with Sonnet 5 High"
+  },
+  {
+   "name": "Meta Ad Library",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "facebook.com/ads/library URL pasted into Claude"
+  },
+  {
+   "name": "Airtable",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "'Ad Spy Vault' base/table where each ad row gets a breakdown"
+  },
+  {
+   "name": "ad-spy skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "creator's own skill, sent on commenting 'skills'"
+  }
+ ],
+ "claims": [
+  "Scraped 'hundreds' of competitor ads; each row has hooks, copy, images and funnel",
+  "Setup takes under 30 seconds with one prompt",
+  "Claude finds 15 competitors and sorts them into direct, adjacent or aspirational",
+  "It pulls every ad from every page in the Meta Ad Library, watches every video and image, and tags hook and angle",
+  "Total cost about one dollar",
+  "You can then ask Claude to remake a chosen ad for your own product"
+ ],
+ "how_to_steps": [
+  "Open Claude Code (or Cowork) and paste the creator's prompt/skill",
+  "Claude reads your offer and lists 15 competitors by direct / adjacent / aspirational",
+  "Claude opens the Meta Ad Library for each page and pulls all active ads",
+  "Each video/image is analysed and tagged (hook, angle, copy, creative, funnel) into a table",
+  "Paste an ad library URL and say 'remake this ad for me' to adapt a winner to your offer"
+ ],
+ "on_screen_only": [
+  "Title card 'I BUILT AN AD SPY AGENT'",
+  "Airtable gallery and grid views titled 'Ad Spy Vault' with ad thumbnails and columns for hook/copy",
+  "Claude Cowork home: 'What can we tackle together?', model 'Sonnet 5 High', Chat/Cowork toggle, 'Project or folder', suggested tasks 'Polish my notes into one doc', 'Prep tomorrow before I log off', 'Clean up my Desktop'",
+  "Meta Ad Library results page with video ads",
+  "Claude prompt box: pasted 'https://www.facebook.com/ads/library/...' followed by 'remake this ad for me', with 'Accept edits' and 'Sonnet 5 High' controls",
+  "Whiteboard behind creator: 'Ad vault', 'System', 'Static / Video', 'Copy', 'Zapier', 'Done conversation'",
+  "End card COMMENT \"SKILLS\" with a blurred skill-file preview"
+ ],
+ "cta": "comment 'skills' to receive the skill",
+ "relevance": {
+  "score": 3,
+  "why": "Competitor ad intelligence for ~$1 is useful whenever Haji runs paid acquisition for an app; relies on a comment-gated skill and the Meta Ad Library's scrapability"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Rebuildable in an afternoon: a skill that uses Apify/Playwright on the Meta Ad Library, a tagging rubric, and output to Airtable/CSV. Only worth it when actively running ads"
+ },
+ "verify": [
+  "How the skill accesses the Ad Library (scraper/Apify/Playwright) and whether Meta's terms/rate limits block it",
+  "Whether '$1' covers model tokens only or also scraping costs",
+  "Did the 'hundreds of ads' really come from one 30-second run"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "A concrete competitor-ad-spy recipe (direct/adjacent/aspirational sourcing, per-ad hook/angle tagging, remake-this-ad loop); liked set had Meta ads run by Claude and Apify scraping generally, not this workflow"
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "id": "7608980607082990871",
+ "url": "https://www.tiktok.com/@itstundealao/video/7608980607082990871",
+ "creator": "itstundealao",
+ "title": "Head-to-head: same 'build a working Excel in Next.js + shadcn' prompt; Claude Code's version doubled typed letters and got SUM wrong, Cursor (Opus 4.6 agent) got formulas working",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "run via terminal, output had input-doubling and wrong SUM"
+  },
+  {
+   "name": "Cursor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Agent mode, model 'Opus 4.6' per the on-screen chat, Local, 'Try Plan Mode'"
+  },
+  {
+   "name": "Next.js + shadcn",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "stack named in the prompt"
+  }
+ ],
+ "claims": [
+  "Claude Code's Excel clone looked good but doubled every typed letter and computed =SUM(B2:B4) incorrectly",
+  "Cursor's build with the identical prompt rendered the same UI and =SUM(B2:B4) worked",
+  "Creator scores the round to Cursor and asks why people moved from Cursor to Claude Code"
+ ],
+ "how_to_steps": [
+  "Paste the prompt into Claude Code, run npm run dev, test typing and a SUM formula",
+  "Paste the exact same prompt into Cursor Agent, let it run the app, repeat the tests"
+ ],
+ "on_screen_only": [
+  "Title card 'Claude Code vs Cursor Building Excel' with checkbox scoreboard; Claude Code gets a red X by the end",
+  "Claude Code welcome screen: 'Make a CLAUDE.md file for instructions. Claude will read it every single time.'; terminal 'cd ... && npm run dev'",
+  "Cursor chat prompt: 'Build a working version of Excel with next.js and shadcn. I want basic formulas working. Don't worry about authentication and backend, do everything on the front-end.' with 'Agent', 'Opus 4.6', 'Local', 'Try Plan Mode'",
+  "Both spreadsheets: columns Month/Revenue, rows Jan 1000, Feb 3000, Mar 4000; formula bar '=SUM(B2:B4)'; Cursor result shows '8,000'",
+  "Browser tab 'Excel Clone' (Claude Code) vs 'Spreadsheet' (Cursor)"
+ ],
+ "cta": "comment why you moved from Cursor to Claude Code",
+ "relevance": {
+  "score": 2,
+  "why": "A single-run anecdote; the Claude Code bug is the kind of thing one follow-up prompt fixes. Not a basis for tool choice"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to adopt; at most a reminder to test a generated UI before judging it"
+ },
+ "verify": [
+  "Which model/version Claude Code used (not shown) versus Cursor's Opus 4.6",
+  "Whether the Claude Code run was given a second turn to fix the bug (n=1 comparison)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Anecdotal one-shot comparison with no technique, tool or correction worth keeping"
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "id": "7675154100618562846",
+ "url": "https://www.tiktok.com/@nate.b.jones/video/7675154100618562846",
+ "creator": "nate.b.jones",
+ "title": "Cure 'Claudish' prose: tell Claude/ChatGPT to make a skill based on Google's public developer documentation style guide and communicate in that voice (active tense, short sentences, no cuteness)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Google developer documentation style guide",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "public guide; creator says he will link it under the video (developers.google.com/style)"
+  },
+  {
+   "name": "Claude skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "'make a skill based on Google developer documentation' as the communication style"
+  }
+ ],
+ "claims": [
+  "There is a word for Claude's annoying house style: 'Claudish'; the fix also works for OpenAI models",
+  "Google's developer documentation guide uses active tense, short sentences, explains technical and non-technical things clearly, and has no poetic fake cuteness",
+  "When the model drifts back, say 'please use Google developer documentation language' and it corrects"
+ ],
+ "how_to_steps": [
+  "Tell the model: 'Look at Google's Developer Documentation Guide (public)'",
+  "Say: 'Make a skill based on Google developer documentation. That is how I want you to communicate with me.'",
+  "Whenever the model slips into Claudish/OpenAI-ish, repeat 'Please use Google developer documentation language'"
+ ],
+ "on_screen_only": [
+  "Banner: 'AI Hack: The Fix For Annoying Claude-Speak'"
+ ],
+ "cta": "let me know what you think; link to the guide under the video",
+ "relevance": {
+  "score": 4,
+  "why": "Every doc, email and README Haji generates benefits from a consistent plain technical voice; it is a one-line instruction, no tooling"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Add a writing-style skill or a CLAUDE.md line referencing the Google developer docs style guide; combine with the Minto Pyramid prompt already liked. Ten minutes"
+ },
+ "verify": [
+  "Whether the model can actually fetch the guide or just pattern-matches on its name (likely the latter; still works)",
+  "Compare against the 'humanizer' and Minto approaches already in the liked set"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "A specific, free style reference (Google developer documentation style guide) packaged as a communication skill; liked set had Minto Pyramid and humanizer skills but not this one"
+ }
+}
