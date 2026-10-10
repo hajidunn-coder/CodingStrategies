@@ -1,0 +1,567 @@
+[
+ {
+  "name": "Hermes Agent (Nous Research)",
+  "kind": "repo",
+  "official_url": "https://github.com/NousResearch/hermes-agent",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 252,449 stars, 54,560 forks, 47,752 open issues, pushed 2026-10-10, MIT, Python. README: install via curl|bash, providers Nous Portal/OpenRouter/OpenAI/own endpoint; 7 terminal backends (local, Docker, SSH, Modal, Daytona, Vercel Sandbox, Singularity); gateways Telegram/Discord/Slack/WhatsApp/Signal/Email. providers.md (raw.githubusercontent): 'Anthropic OAuth' path borrows Claude Code credentials and 'routes as Claude Code'; 'only works if you're on a Claude Max plan and have purchased extra usage credits'; Pro cannot. CVE-2026-9353 and CVE-2026-9366 (injection in skills_guard.py and prompt_builder.py, <=2026.4.23). Nous Portal tiers reported by third party only: Free, Plus $20, Super $100, Ultra $200/mo.",
+  "cost": "free (MIT) + model spend; Nous Portal from $20/mo (unverified, third-party)",
+  "maintained": "active",
+  "what_it_does": "Self-hosted always-on agent harness with tool loop, skills that it writes for itself, FTS memory, and chat-app gateways, model-agnostic.",
+  "claimed_in_videos": "'The engine' of a weekend Jarvis: plans, acts, checks its own work; swap the brain anytime; add Hermes Voice and messaging channels (luke.builds.ai, taki.gpt); guessed as the stack behind a restaurant-calling Jarvis.",
+  "reality_check": "It exists and is enormous (252k stars), but the videos never show it running and the claims are generic. The Claude-subscription path is the thing Anthropic blocked on 2026-04-04 (OpenClaw-style harnesses) and now bills to extra usage, not your Max allowance. 47k open issues and two 2026 injection CVEs in a project that pipes Telegram/WhatsApp DMs into a shell-capable agent is a real attack surface. Voice is a mode with pluggable TTS (Edge/ElevenLabs/OpenAI), not a product called 'Hermes Voice'.",
+  "verdict": "WATCH",
+  "why": "Haji already has the whole Hermes layer cake in Claude Code: skills, memory, MCP connectors, Routines, Desktop scheduled tasks, Projects. Running a second Python harness with its own skill/memory format, CVEs and a ToS-gray auth path is maintenance, not leverage. The only gap Hermes fills is a Telegram/WhatsApp front door to an always-on agent, which is not on the critical path for shipping apps.",
+  "how_to_adopt": "Do nothing now. If a chat-app front door becomes a real need, trial it on a throwaway $5 VPS in Docker backend mode with an API key (not borrowed Claude Code OAuth), one messaging gateway, DM pairing on, and no access to real credentials. Install: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash",
+  "risks": "ToS: borrowed Claude Code OAuth is exactly the pattern Anthropic enforces against; it only 'works' by drawing extra-usage billing. Security: injection CVEs, chat gateways as untrusted input into a shell agent, 'local' backend default. Hype: videos are funnel content ('comment Jarvis') with no demo.",
+  "source_video_ids": [
+   "7675356243048811790",
+   "7681134258269850897",
+   "7681031247258242318"
+  ]
+ },
+ {
+  "name": "Hermes Voice",
+  "kind": "product",
+  "official_url": "https://github.com/NousResearch/hermes-agent",
+  "exists": "renamed",
+  "evidence": "No product named 'Hermes Voice' in the Hermes README, docs index, or search. Hermes has a voice mode with provider options Edge TTS (free), ElevenLabs, OpenAI TTS, NeuTTS; a June 2026 third-party video shows ElevenLabs + Twilio phone agent on Hermes.",
+  "cost": "free (Edge TTS) or ElevenLabs usage",
+  "maintained": "active",
+  "what_it_does": "Voice mode of Hermes Agent, not a separate product.",
+  "claimed_in_videos": "'Hermes Voice, powered by ElevenLabs, that British voice' as a step in the weekend Jarvis.",
+  "reality_check": "Creator's label for Hermes voice mode. Cosmetic.",
+  "verdict": "SKIP",
+  "why": "Voice output adds nothing to shipping apps; a spoken morning brief is a 20-line ElevenLabs call if ever wanted.",
+  "how_to_adopt": "n/a",
+  "risks": "None beyond ElevenLabs cost.",
+  "source_video_ids": [
+   "7675356243048811790"
+  ]
+ },
+ {
+  "name": "ethanplusai/jarvis (JARVIS 2.0)",
+  "kind": "repo",
+  "official_url": "https://github.com/ethanplusai/jarvis",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 847 stars, 299 forks, 20 open issues, created 2026-03-26, pushed 2026-09-10, v2.0.0 release Sept 2026, license 'Other'. LICENSE (raw): free for personal/educational/non-commercial; commercial use, paid products, SaaS require a license from ethanplus.ai. README: macOS only (AppleScript for terminals/screenshots), Chrome required (Web Speech API), Fish Audio API key required for voice ('no fallback voice'), Claude Code >=2.1.224, Python 3.11, Node 18. Brain is 'ONE long-lived claude -p process' on 'your Claude subscription, same login as the terminal'; strips ANTHROPIC_* env so the CLI uses the login; builds run claude -p with --dangerously-skip-permissions by default ('full-privilege process'); watches every Claude Code session on the machine. 'Orcha' does not appear anywhere.",
+  "cost": "free (non-commercial) + Fish Audio usage + your Claude subscription",
+  "maintained": "stale",
+  "what_it_does": "macOS voice front end that brainstorms with you, then spawns and monitors headless Claude Code sessions, with markdown memory and a dashboard (runs, specs, usage).",
+  "claimed_in_videos": "API key gone, runs on Claude Max; persistent markdown memory; can message existing Claude Code sessions; dashboard with spec approval and 5-hour/weekly usage meters; 'background Sonic model'.",
+  "reality_check": "Claims hold: it really drives unmodified `claude -p` under your own login, which Anthropic's legal page explicitly allows ('Nor does it prevent an end user from signing in to the unmodified Claude Code binary with their own Claude subscription'), and Anthropic's 2026-10-07 support note says claude -p still draws from subscription limits. But: one month without a commit, 847 stars, macOS+Chrome+Fish Audio lock-in, non-commercial license, and every build runs with permissions skipped. 'Sonic' is the creator's name for Sonnet. 'Orcha' is just a window on his second monitor, not part of the repo.",
+  "verdict": "WATCH",
+  "why": "Not worth installing: Haji does not need a voice front end, and the two ideas worth having (spec-approve-then-background-build, usage meter) already exist natively as Claude Code plan mode, Projects' 'Suggested threads / propose before starting', and claude.ai/settings/usage. The non-commercial license also makes it a dead end for anything Haji sells.",
+  "how_to_adopt": "Spend 20 minutes reading README.md and the dashboard/spec code for the approval-gate flow; then recreate the gate natively: Projects with 'Propose threads and wait for my go-ahead', or plan mode in Desktop. Do not clone into any product repo.",
+  "risks": "License: non-commercial. Security: --dangerously-skip-permissions by default, Chrome mic always on. Usage: a long-lived claude -p plus background builds will eat Max limits fast. ToS: fine for personal use on the unmodified binary; would not be fine to offer to customers.",
+  "source_video_ids": [
+   "7682070844729822495"
+  ]
+ },
+ {
+  "name": "Orcha",
+  "kind": "product",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "Not in the ethanplusai/jarvis README, releases, or any search result; only visible as a window title on the creator's monitor.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "Unknown; appears to be a separate terminal/log tool or project name on screen.",
+  "claimed_in_videos": "Nothing claimed; seen on screen only.",
+  "reality_check": "No public artifact found.",
+  "verdict": "SKIP",
+  "why": "Nothing to adopt.",
+  "how_to_adopt": "n/a",
+  "risks": "n/a",
+  "source_video_ids": [
+   "7682070844729822495"
+  ]
+ },
+ {
+  "name": "Running background agents on a Claude Max login (ToS reality)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/legal-and-compliance",
+  "exists": "verified",
+  "evidence": "Anthropic legal page (fetched 2026-10-10): OAuth is 'intended exclusively for purchasers of ... subscription plans ... to support ordinary use of Claude Code and other native Anthropic applications'; developers 'should use API key authentication'; 'Anthropic does not permit third-party developers to offer Claude.ai login into their own applications, or to route requests through Free, Pro, or Max plan credentials on behalf of their users'; 'may not collect, store, or intermediate Claude.ai credentials or session tokens'; but it 'does not prevent an end user from signing in to the unmodified Claude Code binary with their own Claude subscription'; 'Advertised usage limits for Pro and Max plans assume ordinary, individual usage of Claude Code and the Agent SDK'; 'Anthropic reserves the right to take measures to enforce these restrictions and may do so without prior notice.' Support article 15036540 (fetched): 'Update October 7, 2026: Claude Max and Team plans now include monthly API credits' covering Agent SDK, claude -p, the Claude API and Managed Agents; 'Subscription limits still apply to the Claude Agent SDK, claude -p, and third-party apps'; June 15 2026 note: previously announced SDK-credit changes were paused. Timeline from press (Gigazine, InfoWorld, AlternativeTo): server-side block of subscription OAuth outside Claude Code/Claude.ai 2026-01-09; terms clarified 2026-02-19; enforcement against OpenClaw-style harnesses from 2026-04-04 with usage routed to 'extra usage' and a one-time credit equal to one month's fee.",
+  "cost": "included in Max; overflow via usage credits/extra usage; Max/Team now get monthly API credits (amounts not retrievable this session)",
+  "maintained": "active",
+  "what_it_does": "Defines which 'Jarvis' architectures are inside Anthropic's rules.",
+  "claimed_in_videos": "'Anthropic API key is gone entirely, runs through Claude Max' (ethanplusai); 'Claude Max' shown in the Agentic OS terminal; Hermes 'swap the brain'.",
+  "reality_check": "Allowed and drawing from your subscription: the unmodified Claude Code CLI/Desktop, `claude -p`, Routines, Desktop scheduled tasks, Projects, Cowork, GitHub Actions under your own login. Not allowed on subscription: a third-party harness that reuses your OAuth token and pretends to be Claude Code (Hermes 'Anthropic OAuth', OpenClaw); since April 2026 those are billed to extra usage and Anthropic can cut them off without notice. Never allowed: any product you ship to customers that logs in with their Claude.ai account or your Max plan on their behalf.",
+  "verdict": "USE NOW",
+  "why": "Haji is Max-heavy; the cheapest, safest always-on agent is the native one. Every background automation he builds should sit on Routines, Desktop scheduled tasks, Projects, or `claude -p` under his own login. Anything he ships to customers must use an API key (or Managed Agents), full stop.",
+  "how_to_adopt": "Rule for the repo: personal automations = native Claude Code surfaces on the Max login; customer-facing agents = ANTHROPIC_API_KEY in the product (Agent SDK or Managed Agents). Check usage at https://claude.ai/settings/usage and turn on usage credits there before a routine goes live so it does not silently stop.",
+  "risks": "Enforcement without notice; usage limits are sized for 'ordinary individual usage', so a chain of background builds can lock the interactive session Haji needs to ship. Borrowed-token harnesses risk the account.",
+  "source_video_ids": [
+   "7682070844729822495",
+   "7688865381456366862",
+   "7675356243048811790",
+   "7681134258269850897"
+  ]
+ },
+ {
+  "name": "Paperclip (paperclipai/paperclip)",
+  "kind": "repo",
+  "official_url": "https://github.com/paperclipai/paperclip",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 99,514 stars, 16,792 forks, 6,330 open issues, created 2026-03-02, pushed 2026-10-10, MIT, TypeScript (Node server + React UI), homepage paperclip.ing. Docs (docs.paperclip.ing via search): built-in adapters claude_local and codex_local; claude_local runs the Claude Code CLI headless and 'dangerouslySkipPermissions defaults to true'; heartbeat = scheduled wake that triggers a run; adapters parse usage/cost; per-agent budgets that pause at 100%. Hosted 'PaperclipCloud $69/mo' appears only in a Hostinger affiliate article; Railway says self-hosted only. No independent cost or security review found.",
+  "cost": "free (MIT) + model spend; hosted price unverified",
+  "maintained": "active",
+  "what_it_does": "Local web app that runs AI agents as a company: org chart, heartbeat scheduling, task assignment, budgets, one dashboard, with Claude Code or Codex as the worker runtime.",
+  "claimed_in_videos": "'Over 90,000 stars', write one goal and the CEO agent hires CTO/engineers/designers/marketers, every agent runs on a heartbeat, installs in a minute, one dashboard replaces babysitting terminals.",
+  "reality_check": "Star count was true (99.5k today). Install and heartbeat claims are plausible. The org-chart metaphor is theatre: Anthropic's own multi-agent guidance says role-split teams (planner/implementer/tester/reviewer) 'spent more tokens coordinating than doing the work' and multi-agent runs cost 3-10x tokens. 6,330 open issues two months after launch signals churn. The Claude adapter runs your subscription CLI headless with permissions skipped, so an agent 'company' with repo and shell access is unsupervised by default.",
+  "verdict": "SKIP",
+  "why": "Claude Code Projects (coordinator + parallel cloud threads + memory + Overview pane) and Routines (heartbeats) give Haji the useful 20% of Paperclip with no Node server, no org chart and Anthropic-native cost accounting. Haji's bottleneck is review time, not a shortage of agents; Paperclip multiplies unreviewed output.",
+  "how_to_adopt": "Only revisit if a client specifically wants a non-technical 'board' dashboard over mixed Claude+Codex agents. Otherwise skip.",
+  "risks": "Token burn from idle heartbeats and coordination; headless Claude Code with permissions off; subscription usage for every heartbeat; MIT project moving fast with thousands of open issues.",
+  "source_video_ids": [
+   "7690676444594195743"
+  ]
+ },
+ {
+  "name": "Automaton (Conway-Research/automaton)",
+  "kind": "repo",
+  "official_url": "https://github.com/Conway-Research/automaton",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 7,144 stars, 1,600 forks, 261 open issues, created 2026-02-14, pushed 2026-08-26 (six weeks idle), MIT, TypeScript, homepage web4.ai. README (fetched): generates an Ethereum wallet on first boot, Sign-In-With-Ethereum for its API key, pays Conway Cloud via x402 stablecoins, has 'Linux sandbox, shell execution, file I/O, port exposure', domain management, on-chain transactions, 'can edit its own source code, install new tools, modify its heartbeat schedule'. No '13,000 agents in 24 hours' figure anywhere in the README or in coverage (Decrypt, HackerNoon, DiarioBitcoin). Founder Sigil Wen (Thiel Fellow); Dealroom: a16z announced leading Conway Research's round on 2026-10-02 (flagship product 'Underdog', an on-device assistant), amount undisclosed. Conway token reportedly pumped 3,600% after the Web 4.0 post.",
+  "cost": "free (MIT) + USDC you fund the wallet with + Conway Cloud compute",
+  "maintained": "stale",
+  "what_it_does": "Crypto-funded, self-modifying agent runtime that must earn USDC to keep paying for its own compute.",
+  "claimed_in_videos": "Released by a 20-year-old; dies if it stops earning, clones itself if it earns; unrestricted internet, sells services with no human approval; 13,000 agents in 24 hours; setup in 20 seconds.",
+  "reality_check": "Repo is real but the 13,000 figure is unsourced and the creator's intro ('Stanford founder, raised $4M') is his own pitch, not evidence about Automaton. It is a crypto-native experiment with a token attached; the a16z money is for the company's other product. Last commit 2026-08-26.",
+  "verdict": "SKIP",
+  "why": "An unsupervised agent with a wallet, shell and self-modifying code that 'sells services to real customers' is a liability for a founder with real customers and a reputation: any contract it enters, any spam it sends, any payment it makes is Haji's. Nothing here helps ship apps.",
+  "how_to_adopt": "n/a. If curious, read the README for the heartbeat/survival loop design; never run it on a machine with real keys.",
+  "risks": "Legal exposure for autonomous commerce; wallet drain; self-modification; crypto token hype cycle; abandoned-looking repo.",
+  "source_video_ids": [
+   "7690068510055189774"
+  ]
+ },
+ {
+  "name": "12-Factor Agents (humanlayer)",
+  "kind": "repo",
+  "official_url": "https://github.com/humanlayer/12-factor-agents",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 26,637 stars, 1,990 forks, created 2025-03-30, last push 2025-09-21; code Apache-2.0, content CC BY-SA 4.0. README (fetched) lists the 12 factors (natural language to tool calls, own your prompts, own your context window, tools are structured outputs, unify execution and business state, launch/pause/resume with simple APIs, contact humans with tool calls, own your control flow, compact errors into context, small focused agents, trigger from anywhere, stateless reducer) plus factor 13 'pre-fetch context'. It argues against building around a framework.",
+  "cost": "free",
+  "maintained": "stale",
+  "what_it_does": "A principles document for production LLM software; not a framework.",
+  "claimed_in_videos": "Referenced in the Claude-Code-workflow theme as the way to think about agents (not in this theme's 14 videos; assigned here by the research brief).",
+  "reality_check": "Holds up. It is a year old and the repo is quiet, but the principles are the same ones Anthropic's own multi-agent post repeats (small focused agents, own the control flow, context-centric splits).",
+  "verdict": "USE NOW",
+  "why": "It is a 30-minute read that gives Haji a vocabulary for deciding what to put in Claude Code vs. deterministic code inside his apps. Factors 3, 8, 10 and 12 are the antidote to every 'AI company' pitch in this batch.",
+  "how_to_adopt": "Read https://github.com/humanlayer/12-factor-agents/blob/main/README.md; add a one-line note per factor to CLAUDE.md for any app that embeds an agent loop; use factor 7 (contact humans via tool calls) as the design for approval gates.",
+  "risks": "None. Content is CC BY-SA if quoted at length.",
+  "source_video_ids": []
+ },
+ {
+  "name": "WWWHH sub-agent handoff note (Why / What next / Where / Heads up / How sure)",
+  "kind": "pattern",
+  "official_url": "https://www.tiktok.com/@kevinfremon/video/7668012508401110285",
+  "exists": "verified",
+  "evidence": "Defined on screen in the video; hellotrillion.ai's prompt library (search result) describes an orchestration-layer prompt covering routing, tool scoping, failure isolation and human approval gates by the same creator. Native comparison: Claude Code subagent docs (fetched) say each subagent 'returns only its final summary', reports are scanned and labeled as subagent output, SubagentHandback is the report channel for background subagents; dynamic workflows (fetched) let `agent(prompt, { schema })` force a JSON report shape with required fields.",
+  "cost": "free",
+  "maintained": "n-a",
+  "what_it_does": "A five-field report every subagent returns so the orchestrator gets paths instead of file contents, a next action, dependencies and a confidence number it can gate on.",
+  "claimed_in_videos": "Handoffs 'got way better'; file locations instead of contents keep the orchestrator context small; a confidence threshold lets the orchestrator bounce work back.",
+  "reality_check": "Holds, with one caveat: self-reported confidence from an LLM is not calibrated, so treat the number as a triage flag (send below-threshold work to a verifier subagent) rather than as truth. The pattern is compatible with Claude Code's existing SubagentHandback/final-report flow; it just standardises the content.",
+  "verdict": "USE NOW",
+  "why": "Fifteen minutes, no tooling, directly reduces the orchestrator context bloat Haji hits in long Claude Code sessions, and gives a mechanical rule for when to re-run a subagent.",
+  "how_to_adopt": "Add to every file in .claude/agents/*.md: 'Final report must contain exactly: WHY (ready), NEXT (one action), WHERE (absolute paths only, no contents), HEADS UP (deps/env), CONFIDENCE (0-100). Below 70, say what would raise it.' In dynamic workflows, pass schema: {required: ['why','next','paths','heads_up','confidence']} to agent(). Orchestrator rule: confidence < 70 => spawn a verifier, do not pass on.",
+  "risks": "False confidence; agents padding WHERE with contents anyway (say 'paths only').",
+  "source_video_ids": [
+   "7668012508401110285"
+  ]
+ },
+ {
+  "name": "Trillion (hellotrillion.ai)",
+  "kind": "product",
+  "official_url": "https://hellotrillion.ai/",
+  "exists": "verified",
+  "evidence": "Site found via search (DNS blocked from this sandbox for direct fetch): 'Voice-First AI Co-Founder' by Kevin Fremon / Lightbulb Moment Labs; named sub-agents Flux (engineering), Relay (support), Scout (user testing), Prism (design); listed as free, 'open-source on GitHub coming soon'; TikTok says the 5,000-signup waitlist goal was hit and he is making the repo ready. No GitHub repo exists under that name today (GitHub search returned nothing). Site hosts a prompt library (e.g. /p/orchestration, /p/start-here) for building your own orchestrator in Claude Code.",
+  "cost": "free (claimed); nothing shipped",
+  "maintained": "n-a",
+  "what_it_does": "Creator's personal orchestrator with voice and named sub-agents; currently a waitlist plus prompt library.",
+  "claimed_in_videos": "3,510 then 5,000 waitlist signups; open-source drop promised at 5,000 (screen said 10,000).",
+  "reality_check": "Nothing to install. The waitlist number moved between video and screen. The prompt library is the only usable artifact and it is generic orchestration advice.",
+  "verdict": "WATCH",
+  "why": "Zero cost to wait; if the repo drops, skim it for the handoff and approval-gate code. Do not sign up for the funnel.",
+  "how_to_adopt": "Check https://github.com/trillion-labs is NOT it (that is a Korean LLM lab); watch @kevinfremon for the real repo link.",
+  "risks": "Vapourware risk; funnel marketing.",
+  "source_video_ids": [
+   "7668012508401110285"
+  ]
+ },
+ {
+  "name": "Four-agent dev team in Cowork (Architect / Coder / Tester / Manager)",
+  "kind": "pattern",
+  "official_url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+  "exists": "verified",
+  "evidence": "Cowork help article (fetched 2026-10-10): paid plans only; 'Claude breaks complex work into subtasks and may coordinate multiple sub-agents working in parallel'; no feature for user-defined, persistent, named agents; scheduled tasks via /schedule run in the cloud; permission modes Manual/Auto/Skip. Anthropic blog 'Building multi-agent systems: when and how' (fetched): role splits like planner/implementer/tester/reviewer are 'often counterproductive', in one experiment they 'spent more tokens coordinating than doing the work'; multi-agent costs 3-10x tokens; recommends context-centric splits and a 'blackbox verifier' subagent with concrete criteria. Claude Code agent teams (fetched): experimental, off by default, 'significantly more tokens'.",
+  "cost": "included in plan; 3-10x tokens vs one agent",
+  "maintained": "active",
+  "what_it_does": "A prompt that asks Cowork to role-play four named agents on one small product.",
+  "claimed_in_videos": "Stanford founder who raised $4M uses four Claude agents as his dev team; they argue, that's the point; you don't need to review the code, just know your customer.",
+  "reality_check": "Cowork does not create persistent named agents from a prompt; it will role-play them inside one task and spin internal sub-agents as it sees fit. Anthropic's own guidance says this exact split is the one that wastes tokens. 'Don't review the code' is only safe for a throwaway waitlist page; the creator's credentials are a pitch, not evidence.",
+  "verdict": "SKIP",
+  "why": "Haji already runs a Council-gate and code-review skill; adding an architect/coder/manager trio adds coordination cost without a new check. The one role worth keeping is the Tester, as a read-only verifier subagent with concrete pass criteria, which is what Anthropic recommends.",
+  "how_to_adopt": "Instead: one implementer session + a `verifier` subagent in .claude/agents/ (tools: Read, Bash, Grep; prompt: 'run the tests and the acceptance checklist in docs/acceptance.md, report pass/fail per item, never edit'). In Cowork, run the build and then a separate 'break this' task.",
+  "risks": "Unreviewed code shipped to paying users; token cost; agents 'arguing' is latency, not quality.",
+  "source_video_ids": [
+   "7664755185134193950"
+  ]
+ },
+ {
+  "name": "Multi-model routing / chaining / council (and 'board of advisors')",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/workflows",
+  "exists": "verified",
+  "evidence": "Evidence for councils is thin: one non-peer-reviewed 2026 preprint claims a single reviewer misses about half the defects a multi-model panel catches; an IEEE TAI survey listing claims generate-then-independent-judge ensembles beat single pipelines (experiments not visible); the self-preference bias of a model judging its own output is well documented. Anthropic: multi-agent is 3-10x tokens. Native equivalents fetched: Claude Code /deep-research workflow 'votes on each claim' and filters claims that fail cross-checking; dynamic workflows can 'draft a plan from several angles and weigh them'; Managed Agents and the Messages API expose an 'advisor' model the primary agent consults (Opus 5/5.5 advice is redacted to the client; Opus 4.8 returns plaintext). GPT-6 Astra/Sol/Luna are real (Sep 3 and Sep 22, 2026). Haji's own council-gate skill is already an 8-voice single-model council.",
+  "cost": "roughly 4x tokens per task for a 3-model council plus a judge",
+  "maintained": "n-a",
+  "what_it_does": "Level 1 route by task, Level 2 chain outputs across models, Level 3 run models in parallel and have them rank each other.",
+  "claimed_in_videos": "Chaining 'puts you ahead of 90%', council is 'how the top 1% use AI', set up 'in under 60 seconds' (only diagrams shown).",
+  "reality_check": "Routing and chaining are trivially true and already how Haji works (Claude for code, Gemini for image/long context). The council is unproven for coding, expensive, and the video shows no tooling. Where a second opinion matters, Anthropic now ships it natively (advisor, adversarial verification in workflows).",
+  "verdict": "WATCH",
+  "why": "Keep the existing council-gate skill for decisions; do not build a cross-vendor council for code. Use the native cross-checking workflow when a decision is expensive to get wrong (pricing, architecture, legal), and a second-model review only on auto-merge paths.",
+  "how_to_adopt": "For high-stakes plans: 'use a workflow to draft this plan from three independent angles and adversarially reconcile them'. For code: one Claude implementer + one read-only reviewer subagent on a different model (model: sonnet or a Codex CLI review via gstack's outside-review flow).",
+  "risks": "Token cost; false sense of safety from 'three models agreed'; every extra vendor is another key and another ToS.",
+  "source_video_ids": [
+   "7658427816177863943",
+   "7693222410807463182"
+  ]
+ },
+ {
+  "name": "24/7 on-call engineer loop (error -> reproduce -> fix -> verify -> risk-gated merge)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/routines",
+  "exists": "verified",
+  "evidence": "Claude Code Routines doc (fetched 2026-10-10, research preview, Pro/Max/Team/Enterprise): API trigger = POST https://api.anthropic.com/v1/claude_code/routines/{id}/fire with a per-routine bearer token and optional `text` (arrives wrapped as untrusted <routine-fire-payload>); the doc's own example is 'Alert triage: your monitoring tool calls the routine's API endpoint ... opens a draft pull request with a proposed fix'; GitHub triggers on pull_request/release; runs are full cloud sessions with no permission prompts; limits 100 scheduled runs/hour per account, 30 Run-now/API fires per routine per hour; usage draws from the subscription. PostHog docs (search): error-tracking alerts to Slack/Discord/Teams or an HTTP webhook on issue created/reopened, plus spike alerts. Claude Code Projects (fetched): cloud threads open PRs and 'watch the pull request with auto-fix turned on', pushing fixes when CI fails. Cursor: cloud agents have a REST API and Automations with Sentry/PagerDuty/webhook triggers per a third-party guide; Cursor's own webhooks only emit status changes. Models named: Opus 5.5 real; Grok 4.7 was still unreleased per early-Sept coverage and GPT 6.1 could not be verified.",
+  "cost": "subscription usage for Routines (overflow via usage credits); PostHog error tracking free tier allows 2 alerts",
+  "maintained": "active",
+  "what_it_does": "Error tracker fires a webhook; a cloud agent must reproduce the bug first, fix it, verify with app-specific skills, classify merge risk, get a second-model review, and auto-merge only small safe diffs.",
+  "claimed_in_videos": "Fixes bugs while the creator sleeps; reproduce-first; verified against production data; three models must agree; 'not cheap but cheaper than an engineer'.",
+  "reality_check": "The whole loop is buildable today on Claude Code without Cursor: PostHog webhook -> Routine API trigger -> cloud session that must write a failing test before fixing -> PR -> GitHub-trigger review routine. The weak spots in the creator's version are 'production data' (PII in an agent sandbox) and 'three frontier subscriptions' (unnecessary: one strong model plus a read-only reviewer is what the evidence supports). Model names on his screen are partly unverifiable.",
+  "verdict": "USE NOW",
+  "why": "This is the single highest-leverage pattern in the batch for a time-poor founder: bugs get a reproduction and a draft PR before Haji even sees them. Start with review-required PRs, not auto-merge, and let the merge gate earn trust.",
+  "how_to_adopt": "Stage 1 (one evening): create a routine at https://claude.ai/code/routines with the app repo, API trigger, prompt: 'Investigate the error in the routine-fire-payload block. First write a failing test that reproduces it; if you cannot reproduce, open an issue and stop. Then fix, run the full test suite and the /verify skill, open a draft PR titled fix: <issue> with a RISK: small|large line.' Point PostHog's error-tracking webhook at the /fire URL. Stage 2: a second routine on pull_request.opened filtered to author = you and title starts with 'fix:' that reviews with the code-review skill and labels safe-to-merge. Stage 3 (only after ~20 clean PRs): enable auto-merge for label safe-to-merge + RISK: small via a GitHub ruleset.",
+  "risks": "PII: never pass raw production rows; send redacted stack traces and let the agent synthesise fixtures. Leaked bearer token = anyone can fire the routine (payload is wrapped as untrusted, but still). Auto-merge of a wrong 'small' fix. Hourly caps on fires; subscription drain during an error storm (PostHog spike alerts should throttle).",
+  "source_video_ids": [
+   "7693222410807463182"
+  ]
+ },
+ {
+  "name": "Jev decision model (TypeSafe AI)",
+  "kind": "model",
+  "official_url": "https://www.typesafe.ai/",
+  "exists": "verified",
+  "evidence": "Vendor domains were DNS-blocked from this sandbox; evidence is from Composio, Requesty, AI/ML API, Gradually and merginit write-ups: early access launched 2026-09-15; primitives Choice (up to 255 options, returns label + probabilities + confidence), Score (expected value over ordered levels), Noul (P(true)); mixes question types in one call, each evaluated independently; $0.042 per 1M input tokens, output unbilled (AI/ML API resells at $0.0578); claimed 70-500 ms, a reseller measured 140 ms server / 0.84 s end-to-end median; model id jev-latest; available via TypeSafe console, OpenRouter, AI/ML API. Reseller benchmark: on 77-intent routing Opus 5.5 and GPT-6 Sol beat Jev by ~7 points and cheap LLMs tied it; best F1 on offensive-content moderation; weakest at rating answer quality. No independent calibration study found. The 'jev_decide' MCP in the video was generated by Codex, not shipped by TypeSafe.",
+  "cost": "usage-based: $0.042 per 1M input tokens",
+  "maintained": "active",
+  "what_it_does": "A non-generative model that returns typed decisions (choice/score/yes-no) with probabilities, meant to sit in front of a big model for routing and classification.",
+  "claimed_in_videos": "Decisions in a fraction of a second at a fraction of the cost; 'the slow part is the big model deciding what you want'; 0.70 s routing with 100% confidence; Codex wired it 'in one go'.",
+  "reality_check": "Real, cheap and fast, but the sub-second claim is about the server; end-to-end it is ~0.8 s, about the same as Haiku 5.5 with a short prompt. Accuracy trails frontier models on routing and the '100% confidence' on screen is exactly the kind of overconfident output nobody has calibrated. One more vendor, one more key, early-access API.",
+  "verdict": "WATCH",
+  "why": "For Haji's products, Claude Haiku 5.5 ($0.10/$0.50 per MTok) with structured outputs already classifies and routes with no new dependency and the same prompt cache. Jev only wins at very high volume (millions of decisions/day) or for moderation. Revisit when it exits early access and someone publishes calibration data.",
+  "how_to_adopt": "Before adding Jev: build the router as a Haiku 5.5 call with output_config.format JSON {task_type, urgent, tier} on 200 labelled messages from the real app; only then A/B Jev via OpenRouter (model typesafe/jev) if cost or latency is actually the problem.",
+  "risks": "Early-access vendor lock-in; uncalibrated confidence driving tier decisions; third-party resellers with different prices.",
+  "source_video_ids": [
+   "7688339317080493330",
+   "7688865381456366862"
+  ]
+ },
+ {
+  "name": "OpenAI Decisions API",
+  "kind": "api",
+  "official_url": "https://platform.openai.com/docs/guides/decisions",
+  "exists": "verified",
+  "evidence": "OpenAI's docs were DNS-blocked from this sandbox; consistent secondary coverage (eesel, promptfoo provider docs, The New Stack, Dealroom, AI Weekly): limited preview at DevDay 2026-09-29, public beta for all developers 2026-10-06; POST /v1/decisions on GPT-6 Luna; three output types predicates / choices / scores with confidence; text and image input; OpenAI claims ~10x faster than Luna via Responses (~150 ms vs ~1.6 s, unverified); pricing reported as $0.10 per 1M input tokens with no output charge by one source, 'not published' per another.",
+  "cost": "usage-based (reported $0.10 per 1M input tokens, unconfirmed)",
+  "maintained": "active",
+  "what_it_does": "Same idea as Jev from OpenAI: pick an answer from a fixed set instead of generating text.",
+  "claimed_in_videos": "Not in the videos; researched because the brief asked and because it is the direct competitor to Jev shown in two videos.",
+  "reality_check": "Real and days old. Validates the 'decision model' category but is OpenAI-only and beta.",
+  "verdict": "WATCH",
+  "why": "Haji does not run an OpenAI stack; Haiku 5.5 structured outputs covers the need. Note it as the comparison point if a classifier ever becomes a cost line.",
+  "how_to_adopt": "None now. If evaluating, promptfoo has a provider for it so a bake-off against Haiku is cheap.",
+  "risks": "Beta; vendor split; pricing not confirmed.",
+  "source_video_ids": [
+   "7688339317080493330"
+  ]
+ },
+ {
+  "name": "Tiered request routing + markdown vault (Agentic OS idea)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/desktop-scheduled-tasks",
+  "exists": "verified",
+  "evidence": "Pattern from the Chase AI+ demo: Tier 1 rules/saved data, Tier 2 small model (Haiku/Luna), Tier 3 Claude Code or Codex session; reports saved to a plain-markdown vault that Obsidian reads. Native pieces fetched: Desktop scheduled tasks run locally with file access and a per-task permission mode (min interval 1 minute); subagents support `memory: project` MEMORY.md directories; Claude Haiku 5.5 is $0.10/$0.50 per MTok per the claude-api skill's model table (cached 2026-10-06).",
+  "cost": "free pattern; Haiku pennies",
+  "maintained": "n-a",
+  "what_it_does": "Keep trivial requests away from the expensive model and write every report to a markdown folder that doubles as shared memory.",
+  "claimed_in_videos": "'All requests go through Jev into tiers 1/2/3 so each gets the appropriate model'; fully local voice; works inside Obsidian; 'real sell is you can hand it to team members or sell to clients'.",
+  "reality_check": "The tiering is sound and cheap to copy; Jev is not required (Haiku 5.5 does it). The HUD, Whisper/Kokoro voice, Obsidian plugin and 'Bridge' are days of yak-shaving that the creator sells access to.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Haji already keeps markdown memory for GOOSE; making every scheduled task write to one vault folder (reports/, daily/, receipts/) and routing lookups to a Haiku subagent costs an hour and cuts Opus/Fable spend on chores.",
+  "how_to_adopt": "1) Create vault/{daily,reports,receipts}/ in the ops repo and tell every Desktop scheduled task and routine prompt to write its output there with a dated filename. 2) Add .claude/agents/lookup.md with model: haiku, tools: Read, Grep, for 'what are my priorities / summarise X' questions. 3) Skip HUD and voice.",
+  "risks": "Vault sprawl without a retention rule; secrets accidentally written to markdown.",
+  "source_video_ids": [
+   "7688865381456366862"
+  ]
+ },
+ {
+  "name": "Agentic OS V2 / Chase AI+",
+  "kind": "course",
+  "official_url": "https://www.skool.com/chase-ai",
+  "exists": "verified",
+  "evidence": "Chase AI+ is a Skool community run by Chase Hannegan, $98/month or $58/month annual per a third-party review (aifunnelinsider), 90-day refund, 1,000+ members, focused on building an AI agency with Claude Code. 'Agentic OS V2 / Astra' is the creator's product name inside that community; no standalone listing found. The HUD label 'GPT-6 Astra · Codex mode' refers to the real GPT-6 Astra model (released 2026-09-03).",
+  "cost": "$98/mo or $58/mo annual (third-party figure)",
+  "maintained": "active",
+  "what_it_does": "Paid community that sells the Agentic OS setup, skill library and HUD.",
+  "claimed_in_videos": "Switch Claude Code and Codex with a button; Jev tiering; local voice; Obsidian vault; sell the OS to clients.",
+  "reality_check": "A $98/month funnel for an architecture Haji can reproduce from this document in an afternoon. 'Hand it to clients' is the actual business model being demonstrated.",
+  "verdict": "SKIP",
+  "why": "Time-poor founders should not pay for a HUD. Copy the one idea (tiered routing + vault) above.",
+  "how_to_adopt": "n/a",
+  "risks": "Recurring fee; lock-in to a creator's templates.",
+  "source_video_ids": [
+   "7688865381456366862"
+  ]
+ },
+ {
+  "name": "gstack (garrytan/gstack)",
+  "kind": "skill",
+  "official_url": "https://github.com/garrytan/gstack",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 135,800 stars, 20,162 forks, 186 open issues, created 2026-03-11, pushed 2026-10-09, MIT, TypeScript. README (fetched): install `git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`; needs Claude Code, git, Bun >=1.4.2; skills grouped by sprint stage: /office-hours, /plan-ceo-review, /plan-eng-review, /design-review, /review, /qa, /ship, /retro, /learn, plus /careful, /freeze, /guard and browser/iOS QA; 'learns from bugs' = /learn per-project learnings file that compounds across sessions; global state ~/.gstack/, egress audit ledger ~/.gstack/security/egress.jsonl; /design uses OpenAI gpt-5.5 and gpt-image-2 by default (GSTACK_DESIGN_MODEL override); outside reviews need Claude Code or Codex signed in; telemetry opt-in, default off. No independent token-cost measurement exists.",
+  "cost": "free (MIT) + your Claude usage; OpenAI key only for /design",
+  "maintained": "active",
+  "what_it_does": "A pack of 23 opinionated Claude Code skills that make the model act as CEO reviewer, eng manager, designer, QA, release manager and doc engineer in sequence, with cross-session learnings.",
+  "claimed_in_videos": "'30 AI employees'; 129,000 downloads; learns from its own bugs so it never repeats a mistake; one system where each role feeds the next.",
+  "reality_check": "Mostly holds: 23 tools, 135k stars, actively maintained by the YC CEO. 'Never makes the same mistake twice' is a /learn notes file, not magic. The role chain is heavy on tokens (nobody has measured it) and overlaps with Haji's council-gate, code-review and session-learning skills. Tan's '810x' productivity numbers are self-reported.",
+  "verdict": "TRY THIS WEEK",
+  "why": "The planning and shipping discipline (/plan-eng-review, /qa, /ship, /retro) is exactly what a solo founder lacks, it is free, and it installs as plain skills next to Haji's own. Evaluate on one real feature, then keep the 3-4 skills that beat what he already has and delete the rest to avoid skill-description bloat.",
+  "how_to_adopt": "Run the clone+setup above, then on the next feature: /plan-eng-review before building, /qa after, /ship to release; after a week run /retro and compare with session-learning. Skip /design unless an OpenAI key is already in use. Keep telemetry off.",
+  "risks": "Token cost of the full chain; 23 skill descriptions add to the context budget (Claude Code warns above 15k tokens of subagent descriptions); overlap with existing council and review skills; /ship pushes releases, so read /careful and /freeze first.",
+  "source_video_ids": [
+   "7677437944822631694"
+  ]
+ },
+ {
+  "name": "Daily 'Jarvis' metrics brief (Stripe + social analytics + Meta Ads + Gmail via MCP)",
+  "kind": "pattern",
+  "official_url": "https://code.claude.com/docs/en/routines",
+  "exists": "verified",
+  "evidence": "'Zernio MCP' is real: Zernio hosts an MCP server at mcp.zernio.com with 280+ tools across 15-16 social networks and 7 ad platforms (incl. TikTok, LinkedIn, Instagram analytics); pricing per connected account: first 2 free, $6/account/month for accounts 3-10, MCP access included on the free tier. Stripe's official MCP server exists (known; not re-fetched this session). A vendor-neutral 'Meta Ads MCP' was not verified; community servers exist and need a Marketing API token. Claude Design is a real Anthropic Labs product (research preview 2026-04-17, Pro/Max/Team/Enterprise). Claude Code Routines/Desktop scheduled tasks support connectors and schedules; Haji already has a /morning skill and GOOSE sync.",
+  "cost": "Zernio free for 2 accounts; Routines on subscription",
+  "maintained": "active",
+  "what_it_does": "One scheduled agent run pulls yesterday's revenue, social reach, ad spend/ROAS and inbox, writes a brief, and hands feature requests to a build task.",
+  "claimed_in_videos": "Skit numbers ($289 spoken vs $4,289 on screen), Claude Design builds the Jarvis UI in 5 minutes, each stat from a specific MCP, 'Tom the developer agent' gets the feature.",
+  "reality_check": "The data plumbing is real and cheap; the numbers and the UI are a skit. Voice and HUD are cosmetic. Feature-request-to-build handoff is exactly what Claude Code Projects does (paste the request, a thread opens a PR).",
+  "verdict": "USE NOW",
+  "why": "Haji already runs a morning brief; adding Stripe + Zernio + Gmail connectors to that routine is an hour and replaces three dashboards. It is the one 'Jarvis' in the batch that pays for itself.",
+  "how_to_adopt": "1) Connect Stripe and Zernio (free tier) at https://claude.ai/customize/connectors. 2) Extend the existing morning routine prompt: 'Pull yesterday: Stripe net revenue and new subs; Zernio reach/followers for TikTok/LinkedIn/IG; Gmail unread needing reply; output a 10-line brief to vault/daily/YYYY-MM-DD.md and list any feature request mentioned by 2+ users.' 3) Pipe repeated requests into a Claude Code Project as threads. Ads only if Meta spend restarts.",
+  "risks": "Connectors in a routine can take write actions without prompting: remove Gmail send scope or instruct 'read only'. Zernio pass-through charges for X. Do not auto-reply to customer email from a routine.",
+  "source_video_ids": [
+   "7677628906056240415"
+  ]
+ },
+ {
+  "name": "Phone-calling Jarvis (Hermes + Twilio voice loop)",
+  "kind": "pattern",
+  "official_url": "",
+  "exists": "unverified",
+  "evidence": "The video is a reaction to @zubair_trabzada's demo and guesses the stack; no repo. A June 2026 third-party write-up shows a Hermes + ElevenLabs + Twilio phone agent exists as a pattern. The on-screen 'OPUS-5' badge is a real model name.",
+  "cost": "Twilio voice + STT/TTS usage",
+  "maintained": "n-a",
+  "what_it_does": "Agent places a real call, negotiates, hangs up, reports back.",
+  "claimed_in_videos": "Negotiated 7 pm vs 8 pm with a restaurant; 'this is what an agent is'.",
+  "reality_check": "Feasible (Twilio + realtime STT/TTS) but a multi-day build with no relevance to shipping apps; AI-voice disclosure and consent rules apply to outbound calls (TCPA treats AI voices as artificial; B2B calls are lower risk but still disclose).",
+  "verdict": "SKIP",
+  "why": "Not core; large build; legal friction.",
+  "how_to_adopt": "n/a",
+  "risks": "Consent/disclosure law; brand damage if the agent misbehaves on a call.",
+  "source_video_ids": [
+   "7681031247258242318"
+  ]
+ },
+ {
+  "name": "Hancho AI",
+  "kind": "product",
+  "official_url": "",
+  "exists": "does-not-exist",
+  "evidence": "No product called 'Hancho AI' found in any search. Hermes' README credits 'Honcho dialectic user modeling' (Honcho by Plastic Labs, honcho.dev, a memory/reasoning layer with LangGraph/CrewAI/n8n guides and a Hermes memory plugin). Almost certainly a mishearing of Honcho.",
+  "cost": "unknown",
+  "maintained": "n-a",
+  "what_it_does": "n/a (Honcho: hosted memory layer for agents).",
+  "claimed_in_videos": "'Persistent memory layer; remembers past conversations; gets sharper the more you use'.",
+  "reality_check": "Does not exist under that name; Honcho does but is only relevant if running Hermes.",
+  "verdict": "SKIP",
+  "why": "Claude Code has subagent memory (memory: project), CLAUDE.md, and Haji's markdown vault; a hosted memory API is a dependency without a need.",
+  "how_to_adopt": "n/a",
+  "risks": "n/a",
+  "source_video_ids": [
+   "7675356243048811790"
+  ]
+ },
+ {
+  "name": "Claude Design",
+  "kind": "product",
+  "official_url": "https://claude.ai/design",
+  "exists": "verified",
+  "evidence": "TechCrunch, unite.ai, pulse2 (2026-04-17): Anthropic Labs research preview; runs on Opus 4.7 at launch; Pro, Max, Team, Enterprise (admin-enabled); prompts/uploads/codebase in, prototypes, decks, one-pagers out; exports PDF/PPTX/HTML/Canva and hands off to Claude Code; builds a design system from your codebase during onboarding.",
+  "cost": "included in paid plans (preview)",
+  "maintained": "active",
+  "what_it_does": "Anthropic's visual prototyping and deck tool.",
+  "claimed_in_videos": "Feed it a Jarvis reference image and it writes the dashboard in 5 minutes; step 9 of the weekend Jarvis.",
+  "reality_check": "Real product; the Jarvis HUD use is the least useful thing to do with it.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Already in Haji's plan. Use it for landing pages, pitch decks and app onboarding mockups that hand off to Claude Code, not for a command-centre UI.",
+  "how_to_adopt": "Open Claude Design, point it at one app repo so it learns the design system, generate the next landing page or deck, export HTML, hand off to Claude Code.",
+  "risks": "Research preview; output still needs a human eye.",
+  "source_video_ids": [
+   "7677628906056240415",
+   "7675356243048811790"
+  ]
+ },
+ {
+  "name": "Claude Code Routines (cloud: schedule / API / GitHub triggers)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/routines",
+  "exists": "verified",
+  "evidence": "Official doc fetched 2026-10-10 (research preview): saved prompt + repos + connectors run on Anthropic cloud (or self-hosted env); triggers schedule (min 1 hour), API (per-routine /fire endpoint, bearer token, beta header experimental-cc-routine-2026-04-01), GitHub (pull_request, release with filters); Pro/Max/Team/Enterprise; create at claude.ai/code/routines or /schedule; no permission prompts; connectors included by default; usage draws from subscription, overflow via usage credits; 100 scheduled runs/hour per account.",
+  "cost": "included (subscription usage)",
+  "maintained": "active",
+  "what_it_does": "Anthropic's native heartbeat/webhook/cron for Claude Code sessions in the cloud.",
+  "claimed_in_videos": "Not named; it is the native replacement for Paperclip heartbeats, Hermes-on-a-VPS, and Cursor automations.",
+  "reality_check": "Does what the third-party tools promise, on the login Haji already pays for.",
+  "verdict": "USE NOW",
+  "why": "Every always-on idea in this batch (nightly maintenance, error triage, PR review, docs drift) maps to a routine. Zero new infra.",
+  "how_to_adopt": "/schedule in Claude Code or https://claude.ai/code/routines; start with a nightly 'triage open issues and propose threads' routine on the main app repo; remove unneeded connectors from each routine.",
+  "risks": "Runs autonomously with every included connector's write tools; GitHub actions appear as Haji; token leak on API triggers; research-preview limits.",
+  "source_video_ids": [
+   "7693222410807463182",
+   "7690676444594195743",
+   "7681134258269850897"
+  ]
+ },
+ {
+  "name": "Claude Code Projects (coordinator + parallel cloud threads)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/claude-projects",
+  "exists": "verified",
+  "evidence": "Official doc fetched 2026-10-10: public beta on Pro and Max, gradual rollout (waitlist at claude.com/form/projects); one coordinating conversation starts a cloud thread per task; threads share repos, instructions and project memory; Overview pane shows Ready for review / Waiting on you / Working; threads open PRs and watch them with auto-fix; defaults to Opus at high effort for threads; you can say 'Propose threads and wait for my go-ahead' or 'Run at most two threads at a time'; Routines tab inside the project.",
+  "cost": "included (uses plan limits faster)",
+  "maintained": "active",
+  "what_it_does": "The native 'AI company without the org chart': a lead that routes work to parallel workers and tells you what needs you.",
+  "claimed_in_videos": "Not named; it is what Paperclip, Trillion, and the Jarvis dashboards are imitating.",
+  "reality_check": "Beta and rolling out, but it is Anthropic-run, PR-based and reviewable.",
+  "verdict": "TRY THIS WEEK",
+  "why": "Gives Haji the spec-approval gate and the 'what is waiting on me' view from the Jarvis videos, with PRs as the unit of review. Check whether the account has it; join the waitlist if not.",
+  "how_to_adopt": "Open https://claude.ai/code, look for Projects in the sidebar; create one per app with instructions 'target branch main, always open a PR, propose threads before starting, max 2 threads'; set Thread model to Sonnet for routine work to protect limits.",
+  "risks": "Burns plan limits fast at Opus/high; only GitHub.com repos with the Claude GitHub App; beta behaviour changes.",
+  "source_video_ids": [
+   "7682070844729822495",
+   "7690676444594195743",
+   "7677628906056240415"
+  ]
+ },
+ {
+  "name": "Claude Code dynamic workflows (/deep-research, ultracode, agent() with schema)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/workflows",
+  "exists": "verified",
+  "evidence": "Official doc fetched 2026-10-10: available on all paid plans (Pro enables in /config); Claude writes a JS script that runs many subagents (agent(), pipeline(), parallel()) with results kept out of the main context; bundled /deep-research cross-checks and votes on claims; agent(prompt, {schema}) forces structured JSON reports; up to 16 concurrent agents, 1,000 per run; 'Large workflow' warning above 25 agents or 1.5M projected tokens; size guideline small/medium/large; runs count against plan usage.",
+  "cost": "included (meaningfully more tokens per run)",
+  "maintained": "active",
+  "what_it_does": "Native fan-out/verify orchestration that replaces hand-rolled councils and multi-agent audits.",
+  "claimed_in_videos": "Not named; it is the native form of the council, the multi-model review and the orchestrator-with-confidence-gates.",
+  "reality_check": "Real, shipped, and the handoff shape (schema) is exactly where WWWHH belongs.",
+  "verdict": "TRY THIS WEEK",
+  "why": "One command (/deep-research) gives Haji cross-checked research for business decisions; a saved workflow with a schema'd verifier phase gives the 'tester' and 'council' benefits without extra vendors.",
+  "how_to_adopt": "Run /deep-research on the next market question; then 'use a workflow to review every file changed in this PR for correctness and adversarially verify each finding', press s in /workflows to save it as /pr-audit; set /config workflowSizeGuideline=small.",
+  "risks": "Token spend; ultracode mode turns every task into workflows; keep it off by default.",
+  "source_video_ids": [
+   "7658427816177863943",
+   "7668012508401110285",
+   "7664755185134193950"
+  ]
+ },
+ {
+  "name": "Claude Code agent teams (lead + teammates with SendMessage)",
+  "kind": "product",
+  "official_url": "https://code.claude.com/docs/en/agent-teams",
+  "exists": "verified",
+  "evidence": "Official doc fetched 2026-10-10: experimental, disabled by default (CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1); lead spawns named teammates (full sessions) that message each other and share a task list; 'significantly more tokens than a single session'; no session resumption of in-process teammates; teammates not worktree-isolated; interactive only (not -p/SDK); best for research/review/competing hypotheses, worse for sequential or same-file work.",
+  "cost": "included; token cost scales linearly with teammates",
+  "maintained": "active",
+  "what_it_does": "The native version of the 'four-agent dev team' with real inter-agent messaging.",
+  "claimed_in_videos": "Not named; the Cowork four-agent prompt is a role-play of this.",
+  "reality_check": "Exists, but Anthropic itself warns it is experimental and expensive, and points to subagents and workflows first.",
+  "verdict": "WATCH",
+  "why": "For a solo founder the review bottleneck is Haji, not parallel coding capacity. Try it once for a 'five competing hypotheses' debugging session; do not leave it enabled, because it silently turns named subagents into teammates.",
+  "how_to_adopt": "Only for a hard bug: set the env var for one session, prompt 'Spawn 3 teammates to investigate different hypotheses and try to disprove each other', then set it back to 0.",
+  "risks": "Token burn; teams forming by accident; no resume; file conflicts.",
+  "source_video_ids": [
+   "7664755185134193950"
+  ]
+ },
+ {
+  "name": "Claude Managed Agents + Agent SDK (for agents inside Haji's products)",
+  "kind": "api",
+  "official_url": "https://platform.claude.com/docs/en/managed-agents/overview",
+  "exists": "verified",
+  "evidence": "Managed Agents overview fetched 2026-10-10: beta (header managed-agents-2026-04-01), enabled for all API accounts; agent + environment + session + events; Anthropic-managed or self-hosted sandbox; scheduled deployments on cron; multiagent orchestration (subagents up to 25 child threads, dynamic workflows, advisor model); session budgets as hard dollar caps that pause the session (budgets doc fetched); pricing per third-party summaries of Anthropic's page: $0.08 per session-hour billed to the millisecond plus tokens, web search $10/1k, idle not billed, ~ $0.70 for a one-hour coding session example; not ZDR/HIPAA eligible. Agent SDK overview fetched: Python/TypeScript library around the Claude Code binary; note: 'Anthropic does not allow third party developers to offer claude.ai login or rate limits for their products, including agents built on the Claude Agent SDK. Use the API key'.",
+  "cost": "usage-based: tokens + $0.08/session-hour (Managed Agents); Agent SDK is tokens only on your own infra",
+  "maintained": "active",
+  "what_it_does": "The surfaces to use when an agent ships inside one of Haji's apps for customers: hosted harness with budgets and schedules, or the Claude Code harness as a library.",
+  "claimed_in_videos": "Not named; the videos sell self-hosted Jarvises and agent companies where Anthropic now offers hosted ones.",
+  "reality_check": "This is where the 'agent with a budget on a heartbeat' idea from Paperclip and Automaton lives legitimately: dollar-capped sessions on a cron, with vault credentials instead of keys in a sandbox.",
+  "verdict": "WATCH",
+  "why": "Not for personal automation (Routines are cheaper and simpler). It becomes USE the day Haji ships an agent feature to customers, because it is the only compliant way to run agents on behalf of users at scale.",
+  "how_to_adopt": "When a product needs a background agent: /claude-api managed-agents-onboard in Claude Code, start with one agent + scheduled deployment + a $5 session budget; API key in the product, never a Claude.ai login.",
+  "risks": "Beta; data retention (no ZDR); session-hour meter for always-on agents (~$58/month runtime alone if never idle).",
+  "source_video_ids": [
+   "7690676444594195743",
+   "7690068510055189774"
+  ]
+ },
+ {
+  "name": "OpenHands",
+  "kind": "repo",
+  "official_url": "https://github.com/OpenHands/OpenHands",
+  "exists": "verified",
+  "evidence": "GitHub API via MCP 2026-10-10: 90,481 stars, 11,975 forks, 966 open issues, pushed 2026-10-10, MIT, homepage openhands.dev (org renamed from All-Hands-AI). Pricing (openhands.dev/pricing via search): free local, free Individual SaaS (BYO key or pay-as-you-go at 2x API price), Pro $20/mo (1x API price), Enterprise custom; hub mirror shows $40/user which conflicts. V1 is an Agent SDK (Python) with CLI, server and Cloud on top; Claude via LiteLLM slugs (anthropic/claude-...).",
+  "cost": "free (MIT) + model spend; Cloud Pro $20/mo",
+  "maintained": "active",
+  "what_it_does": "Open-source coding-agent harness and cloud with its own SDK, model-agnostic.",
+  "claimed_in_videos": "Not in the videos; researched at the brief's request.",
+  "reality_check": "Mature and active, but it is a parallel universe to Claude Code with its own skills/config conventions.",
+  "verdict": "SKIP",
+  "why": "Haji's leverage is depth in one harness. OpenHands only makes sense if he needs an open-weight or non-Anthropic model for a product, or a client mandates it.",
+  "how_to_adopt": "n/a",
+  "risks": "Duplicate tooling; 2x markup on pay-as-you-go cloud.",
+  "source_video_ids": []
+ },
+ {
+  "name": "Model names shown on creators' screens",
+  "kind": "model",
+  "official_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+  "exists": "verified",
+  "evidence": "Real: Claude Opus 5 and Opus 5.5, Fable 5.1, Haiku 5.5 (claude-api skill table cached 2026-10-06); GPT-6 Astra (2026-09-03), GPT-6 Sol and Luna (2026-09-22; Sol $2/$10, Luna $0.10/$0.50 per MTok); GPT-5.6-Sol was an interim name for Sol on an OpenAI help page. Unverified: 'GPT 6.1' (no source), 'Grok 4.7' (Musk said 'ten days' in early Sept, slipped; docs.x.ai topped out at grok-4.6 as of Aug 13; no launch confirmed in this session's sources). 'Sonic' = creator's word for Sonnet.",
+  "cost": "n/a",
+  "maintained": "n-a",
+  "what_it_does": "Sanity check on the model badges in the videos.",
+  "claimed_in_videos": "Grok 4.7 implements, GPT 6.1 and Opus 5.5 review (youraveragetechbro); GPT-6-Astra / GPT-5.6-Sol in a router UI; 'Luna'; 'OPUS-5'.",
+  "reality_check": "Mostly real; two names unverifiable, which matters because the on-call video's 'three models must agree' claim rests on them.",
+  "verdict": "WATCH",
+  "why": "Do not pick models from TikTok badges; use the Models API (client.models.list()) and the pricing table.",
+  "how_to_adopt": "n/a",
+  "risks": "n/a",
+  "source_video_ids": [
+   "7693222410807463182",
+   "7688339317080493330",
+   "7688865381456366862",
+   "7681031247258242318"
+  ]
+ }
+]
