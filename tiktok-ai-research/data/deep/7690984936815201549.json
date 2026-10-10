@@ -1,0 +1,109 @@
+{
+ "id": "7690984936815201549",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7690984936815201549",
+ "creator": "angusthenontechnical",
+ "title": "Build a $30k-style 'website listening' funnel yourself: PostHog tracks visitors, AI clusters them into archetypes, Jev classifies each new visitor, and the site sends an archetype-specific follow-up email",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "PostHog",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Product analytics installed on the landing page; records $pageview, click, $pageleave; creator is a PostHog channel partner (disclosed in caption)"
+  },
+  {
+   "name": "Jev (TypeSafe decision model)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "POST https://api.typesafe.ai/v1/systemone, model 'jev-latest' -> response model 'jev-1.13.0' with persona choice + confidence"
+  },
+  {
+   "name": "HubSpot",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "CRM record check ('already emailed?'); contact shows 'Original Source: PostHog identify', 'Visitor Persona: Decision Maker'"
+  },
+  {
+   "name": "RB2B",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Person-level visitor identification (US visitors)"
+  },
+  {
+   "name": "Vector",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Contact-level visitor identification"
+  },
+  {
+   "name": "Snitcher",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Company-level visitor identification"
+  },
+  {
+   "name": "Dealfront",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Company-level visitor identification"
+  },
+  {
+   "name": "Warmly (partially visible)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Fifth identification tool, logo cut off"
+  },
+  {
+   "name": "IP geolocation / ASN lookup service",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Summary panel showing ASN AS396982 Google LLC, range 160.79.106.0/24, Company Anthropic PBC, 'Probenet Live'"
+  },
+  {
+   "name": "'AI Inbound Autopilot' (agency offer)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "The $30,000/year 'MOST POPULAR' plan he says you can replace"
+  }
+ ],
+ "claims": [
+  "Agencies charge ~$30,000/year for an 'AI inbound autopilot' that tracks visitors and emails them; you can build it yourself with Jev + PostHog",
+  "Wait about two weeks after installing PostHog to have enough visitor data",
+  "Identification tools only find a visitor's email ~20% of the time if they have not opted in",
+  "Jev response on screen: persona 'investor' with confidence 0.94 (decision_maker 0.04, job_applicant 0.01, junior_champion 0.02)",
+  "PostHog dashboard sample: 878 visitors, 1.28K page views, 940 sessions, 2m 11s session duration"
+ ],
+ "how_to_steps": [
+  "Prompt 1: have your AI install PostHog on your existing landing page",
+  "Wait ~2 weeks for data",
+  "Prompt 2: analyze PostHog data (where people click, what companies they are from) and cluster into visitor archetypes (e.g. Decision Maker, Investor, Job Applicant, Junior Champion, Veteran Sales Guy, Happy Customer, Competitor, Researcher)",
+  "Write one follow-up email per archetype",
+  "Prompt 3: build the system -- on $pageleave, check CRM (HubSpot) whether the person was already emailed; if not, send activity + IP data to Jev to predict archetype; send the matching email",
+  "If the visitor has not opted in, optionally use an identification tool (RB2B, Vector, Snitcher, Dealfront) to find their email (~20% hit rate)"
+ ],
+ "on_screen_only": [
+  "Title card: 'Build a $30k listening website'; pricing card 'AI Inbound Autopilot -- Inbound that runs... Starting at $30,000 /year -- From 10K credits / mo -- MOST POPULAR'",
+  "Pipeline diagram: visitor lands -> PostHog (records every move: $pageview, click, $pageleave) -> HubSpot (CRM record) + RB2B (who is this) -> already emailed? -> Jev picks one (decision maker / investor / job applicant / junior champion) -> send the right email in their inbox",
+  "PostHog Web analytics: Visitors 878, Page views 1.28K, Sessions 940, Session duration 2m 11s; Paths and Persons views",
+  "IP lookup: Location Columbus, Ohio US; ASN AS396982 Google LLC #132; Range 160.79.106.0/24; Company Anthropic, PBC; Hosted domains 0; Privacy true; Anycast false; AS Type Hosting; Abuse contact arin@anthropic.com; 'Access unlimited lookups, API and downloads, data enrichment, and Probenet Live -- Get started for free'",
+  "Archetype cards: The Decision Maker, The Investor, The Job Applicant, The Junior Champion, The Veteran Sales Guy, The Happy Customer, The Competitor, The Researcher",
+  "HubSpot contact: Sarah Lin, VP Finance at Acme Freight, sarah.lin@acmefreight.com, Create Date 09/22/2026, Lifecycle Stage Marketing Qualified Lead, Original Source PostHog identify, Visitor Persona Decision Maker",
+  "API request: POST https://api.typesafe.ai/v1/systemone {\"model\":\"jev-latest\",\"state\":{\"pages\":[\"/\",\"/investors\",\"/pricing\",\"/team\"],\"time_on_site\":\"6m 40s\",\"referrer\":\"linkedin.com\",\"location\":\"San Francisco, US\",\"crm\":{\"title\":\"Partner\"}},\"questions\":{\"persona\":{\"type\":\"choice\",\"instructions\":\"Which visitor...\",\"criteria\":{\"decision_maker\":null,\"investor\":null,\"job_applicant\":null,\"junior_champion\":null}}}} -> 200 OK {\"model\":\"jev-1.13.0\",\"answers\":{\"persona\":{\"type\":\"choice\",\"choice\":\"investor\",\"confidence\":0.94,\"probabilities\":{...\"investor\":0.94,\"job_applicant\":0.01,\"junior_champion\":0.02}}}}",
+  "Identification tool list: RB2B (person-level ID, US visitors), Vector (contact-level ID), Snitcher (company-level ID), Dealfront (company-level ID), W... (cut off)"
+ ],
+ "cta": "Follow -- 'I'll keep shit posting ideas like this for free'",
+ "relevance": {
+  "score": 3,
+  "why": "A real growth mechanic for a B2B landing page, buildable with Claude Code in a day. But it depends on Jev (unverified) and de-anonymization vendors with privacy/legal exposure (GDPR/CCPA), and for consumer apps the archetype email play is weak."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Simplified version is worth doing: PostHog on every landing page now (free tier), then after 2 weeks have Claude cluster visitors and tailor onboarding emails to opted-in signups. Skip IP de-anonymization and replace Jev with a cheap Claude/Haiku classification call. One day of work."
+ },
+ "verify": [
+  "Does TypeSafe's Jev / api.typesafe.ai exist, what does it cost, and is it better than a Haiku structured-output call for 4-way classification?",
+  "Legal: emailing people identified from IP/visitor-ID tools without opt-in (CAN-SPAM, GDPR, CCPA); the 20% match claim",
+  "Creator is a PostHog channel partner -- commercial bias",
+  "Pricing of RB2B/Vector/Snitcher/Dealfront versus the $30k agency he compares to"
+ ]
+}

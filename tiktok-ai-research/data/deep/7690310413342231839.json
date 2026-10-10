@@ -1,0 +1,78 @@
+{
+ "id": "7690310413342231839",
+ "url": "https://www.tiktok.com/@aiwithabhijay/video/7690310413342231839",
+ "creator": "aiwithabhijay",
+ "title": "Free open-source 'LinkedIn agent skill' repo: 11 Claude skills for writing/commenting/planning LinkedIn content plus a humanizer",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "linkedin-agent-skill (GitHub repo)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub 'jakeschincariol / linkedin-agent-skill' (Public, MIT). Folders: claude-plugin, skills, templates. README: 'Eleven Claude skills that run a LinkedIn account. Free, MIT, no signup, no API key, nothing to connect.'"
+  },
+  {
+   "name": "Claude / Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Skills are packaged as a claude-plugin folder; repo topics include claude-skills and claude-code"
+  },
+  {
+   "name": "Humanizer skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Removes em dashes, AI buzzwords, 'Claude watermark', then checks against 5 AI detectors"
+  },
+  {
+   "name": "Content Planner skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Builds a weekly posting/engagement plan (Mon post with Hook #7, Tue comment on 6 posts, etc.)"
+  },
+  {
+   "name": "LinkedIn",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Target platform; animation shows Claude 'Connected' to LinkedIn"
+  }
+ ],
+ "claims": [
+  "11 different skills, each built for a different task, completely free",
+  "Post writer uses '21 proven hook formulas'",
+  "Humanizer removes em dashes, obvious AI-style words and 'Claude's watermark', then runs content through 5 AI detectors so it does not get flagged",
+  "Creator says 'you can now connect Claude to LinkedIn and it can manage your entire account' -- but the repo README on screen says 'nothing to connect, no API key'; the skills generate text, they do not post for you",
+  "Repo shows roughly 114 stars (small number visible in header) and 'Eleven free Claude skills' in the About box"
+ ],
+ "how_to_steps": [
+  "Open the GitHub repo jakeschincariol/linkedin-agent-skill",
+  "Install the claude-plugin / skills folder into Claude (Claude Code plugin or skills dir)",
+  "Use individual skills: Post Writer (21 hook formulas), Comment Drafter, Reply Handler, Profile Optimizer, Content Planner (weekly plan), Humanizer, Hook Extractor, Repurposer, Thread Monitor, Engagement Analytics, Employee Advocacy",
+  "Run drafts through the Humanizer before posting"
+ ],
+ "on_screen_only": [
+  "GitHub header: 'jakeschincariol / linkedin-agent-skill' Public; tabs Code/Issues/Pull requests/Actions/Projects/Security; folders claude-plugin, skills, templates, .gitignore, LICENSE, README.md",
+  "About text: 'Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.' Topics: claude-skills, claude-code, linkedin, content-marketing, agent-skills",
+  "README headline: 'The LinkedIn agent skill -- Eleven Claude skills that run a LinkedIn account. Free, MIT, no signup, no API key, nothing to connect. One of them writes your posts off 21 hook formulas... scores your profile out of 100 and rewrites...'",
+  "11 skill tiles: Post Writer, Comment Drafter, Reply Handler, Profile Optimizer, Content Planner, Humanizer, Hook Extractor, Repurposer, Thread Monitor, Engagement Analytics, Employee Advocacy",
+  "Sample post: 'I lost $10K before I learned this lesson. Hard work isn't enough. Tracking the right numbers is. Here's what changed everything for me:'",
+  "Sample reply to 'Morgan James, Product Lead': 'Completely agree, Morgan -- speed without direction just gets you lost faster.'",
+  "Content Planner week: Mon Write post -- Hook #7; Tue Comment on 6 posts; Wed Reply to all DMs; Thu Draft article outline; Fri Post + engage 30 min; Sat Rest -- no action; Sun Plan next week",
+  "Humanizer panel: 'This isn't just a tactic -- it's a game changer. Moreover, it will elevate your entire strategy.' -> flags Em dashes / AI buzzwords / Claude watermark / AI detectors (5/5) -> Removed/Removed/Removed/Passed; 'Checking content: Detector 1-4' checklist",
+  "Title card: 'CLAUDE JUST KILLED LINKEDIN'; Anthropic-to-LinkedIn 'Connected' animation"
+ ],
+ "cta": "Follow and comment 'X' to get the setup guide by DM",
+ "relevance": {
+  "score": 3,
+  "why": "Founder marketing on LinkedIn is a real lever, and skill packs that encode hook formulas + a humanizer are directly reusable in Claude Code. But it is text generation only, not account automation, and the creator oversells it."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Cheap to try: clone the repo, drop the skills folder into ~/.claude/skills or install the plugin, and use Post Writer + Humanizer for weekly LinkedIn drafts. Half a day. The Hook Extractor and Content Planner ideas are also worth stealing into our own content skill."
+ },
+ "verify": [
+  "Does github.com/jakeschincariol/linkedin-agent-skill exist and what is the real star count / last commit?",
+  "Are the 11 skills real SKILL.md files with substance, or thin prompt stubs?",
+  "The 'runs through 5 AI detectors' claim -- does it call real detector APIs (cost? keys?) or just a self-check prompt?",
+  "The creator's 'connect Claude to LinkedIn' framing contradicts the README's 'nothing to connect' -- confirm no LinkedIn API/automation (LinkedIn ToS risk)"
+ ]
+}

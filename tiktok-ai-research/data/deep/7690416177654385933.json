@@ -1,0 +1,60 @@
+{
+ "id": "7690416177654385933",
+ "url": "https://www.tiktok.com/@bengusberg/video/7690416177654385933",
+ "creator": "bengusberg",
+ "title": "Third-party GitHub repo 'Anthropic-Cybersecurity-Skills' with 818 cybersecurity skills you can load into Claude or ChatGPT",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Anthropic-Cybersecurity-Skills (GitHub repo)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "GitHub 'mukul975 / Anthropic-Cybersecurity-Skills' (Public) -- '818 production-grade cybersecurity skills'; NOT an official Anthropic repo despite the name"
+  },
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Paste the repo link into Claude and ask it to install the skills"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Also claimed to work with ChatGPT"
+  }
+ ],
+ "claims": [
+  "Over 800 cybersecurity skills (on screen: 818 'production-grade') for Claude or ChatGPT, free",
+  "Covers cloud and network security, malware and threat hunting, honey-token schemes",
+  "Installing them 'turns Claude or ChatGPT into the world's expert on cyber security'",
+  "Creator: Stanford founder of an AI startup that raised $4M",
+  "Category counts on screen: Network Security 43 (IDS/IPS, firewall rules, VLAN segmentation, traffic analysis); Threat Hunting 58 (hypothesis-driven hunts, LOTL detection, EVTX hunting, fleet hunting)"
+ ],
+ "how_to_steps": [
+  "Go to the GitHub repo mukul975/Anthropic-Cybersecurity-Skills",
+  "Copy the repo link, paste it into Claude or ChatGPT and ask it to help you install the skills",
+  "Use the installed skills to review/protect your website, app, or family devices"
+ ],
+ "on_screen_only": [
+  "Title card: 'ANTHROPIC CYBERSECURITY SKILLS'",
+  "Repo header: 'mukul975 / Anthropic-Cybersecurity-Skills  Public'",
+  "Banner: '818 production-grade cybersecurity skills'",
+  "Table rows: 'Network Security | 43 | IDS/IPS - firewall rules - VLAN segmentation - traffic analysis'; 'Threat Hunting | 58 | Hypothesis-driven hunts - LOTL detection - EVTX hunting - fleet hunting'"
+ ],
+ "cta": "Save the video; follow for more on AI, founder life and leadership",
+ "relevance": {
+  "score": 2,
+  "why": "A security-skill library could help audit our apps' auth, secrets and deployment, but 818 skills is a bloated catalog mostly aimed at SOC/enterprise work (EVTX, VLANs), not a solo founder's SaaS. The 'Anthropic' name is misleading."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Maybe cherry-pick 3-5 skills (web app security review, secrets scanning, cloud IAM hardening) into our skills dir after reading them. Loading all 818 would pollute context and skill selection. An hour to triage; low priority versus a focused security-review skill we already have."
+ },
+ "verify": [
+  "Repo author mukul975 -- who are they; is this official or an unaffiliated repo trading on the Anthropic name?",
+  "Are the 818 skills real, tested SKILL.md content or auto-generated boilerplate? Check a few in depth",
+  "License and last-commit date",
+  "Does the 'install into ChatGPT' path actually work (ChatGPT has no skills folder concept)?"
+ ]
+}

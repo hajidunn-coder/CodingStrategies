@@ -1,0 +1,57 @@
+{
+ "id": "7690993516842994958",
+ "url": "https://www.tiktok.com/@siroccomask/video/7690993516842994958",
+ "creator": "siroccomask",
+ "title": "Read '12-Factor Agents' (humanlayer/12-factor-agents by Dex Horthy) -- the 12 engineering principles for reliable LLM agents, still valid a year on",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "12-Factor Agents",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "https://github.com/humanlayer/12-factor-agents -- 'Principles for building reliable LLM applications', by dexhorthy, Creative Commons, 15 open issues, last updated 'last year'"
+  },
+  {
+   "name": "HumanLayer",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Org that hosts the repo"
+  },
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Cited as an example of Factor 11 (SMS-first agent that meets users where they are)"
+  }
+ ],
+ "claims": [
+  "The guide has been up for 12 months and everything in it is still true; 'an hour well spent'",
+  "Key factors named: natural language to tool calls, own your prompts, own your context window, tools are structured outputs, unify execution state and business state, trigger agents from anywhere / meet users where they are (Factor 11)",
+  "Free under a Creative Commons licence"
+ ],
+ "how_to_steps": [
+  "Open github.com/humanlayer/12-factor-agents",
+  "Read 'The Short Version: The 12 Factors' and click each factor's page",
+  "Apply the principles when building any agent product"
+ ],
+ "on_screen_only": [
+  "Page title: '12-Factor Agents - Principles for building reliable LLM applications'; 'In the spirit of 12 Factor Apps. The source for this project is public at https://github.com/humanlayer/12-factor-agents'",
+  "Overlay: 'Stop reading twitter for AI' / 'Read this'; 'this is an hour well spent i promise you'",
+  "Full factor list: How We Got Here: A Brief History of Software; 1 Natural Language to Tool Calls; 2 Own your prompts; 3 Own your context window; 4 Tools are just structured outputs; 5 Unify execution state and business state; 6 Launch/Pause/Resume with simple APIs; 7 Contact humans with tool calls; 8 Own your control flow; 9 Compact Errors into Context Window; 10 Small, Focused Agents; 11 Trigger from anywhere, meet users where they are; 12 Make your agent a stateless reducer; Visual Nav",
+  "Tip box: 'Missed the AI Engineer World's Fair? Catch the talk here'; 'Want to contribute? Jump straight to factor-agents thread'",
+  "GitHub repo view: humanlayer / 12-factor-agents, Public, Issues 15, main branch, author dexhorthy, folders content, drafts, hack, img, packages, workshops"
+ ],
+ "cta": "None beyond 'go read this'",
+ "relevance": {
+  "score": 4,
+  "why": "Foundational, free, and directly about building shippable agent products -- exactly the shape of apps we build with Claude Code. Factors 2, 3, 4, 8, 9, 10 and 11 map onto Claude Code skill/subagent design and onto any agent feature inside our apps."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "One hour to read; then fold the factors into our CLAUDE.md / agent-architecture checklist (own prompts, structured-output tools, small focused agents, human-in-the-loop via tool calls, meet users in SMS/WhatsApp). No cost."
+ },
+ "verify": [
+  "Check whether the repo has been updated since (video says 'last year'); any v2 or added factors?",
+  "License terms for reuse in internal docs (Creative Commons variant)"
+ ]
+}

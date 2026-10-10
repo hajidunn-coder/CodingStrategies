@@ -1,0 +1,46 @@
+{
+ "id": "7691013290583051533",
+ "url": "https://www.tiktok.com/@mar_antaya/video/7691013290583051533",
+ "creator": "mar_antaya",
+ "title": "OpenAI Dev Day clip: the Decisions API (preview) built on the small Luna model -- the model picks from a predefined set of options (routing, classification, next-agent choice) very fast",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "OpenAI Decisions API",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "'Decisions API -- In preview' on the Dev Day stage"
+  },
+  {
+   "name": "Luna (OpenAI model)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Small model the Decisions API is built on; keeps image understanding, broad language support and safety"
+  }
+ ],
+ "claims": [
+  "Decisions API gives the model a predefined set of options to choose from -- routing a request, classifying an image, deciding which agent to call next",
+  "By focusing the model on that choice it is 'extremely fast' while keeping image understanding, broad language support and safety precautions",
+  "Demo: 'Find a one-way, nonstop flight from SFO to Seattle on Friday after 6 a.m.' routed into a Flights UI"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'OpenAI unveils the Decisions API'",
+  "Stage slide: 'Decisions API -- In preview' with demo prompt 'Find a one-way, nonstop flight from SFO to Seattle on Friday after 6 a.m.' and a Flights results screen with date picker",
+  "Caption tags @OpenAI; creator filming from the Dev Day audience"
+ ],
+ "cta": "None",
+ "relevance": {
+  "score": 3,
+  "why": "A fast, cheap 'pick one of N options' API is useful inside our apps for routing/classification steps (intent routing, triage, next-agent selection), and it is the OpenAI answer to Jev. We are Claude-first, but the pattern -- constrained-choice calls with a small model -- is worth copying with Haiku + structured outputs."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing to do yet: preview, no pricing. Keep in mind for routing layers; we can already do constrained choice with Claude structured outputs. Revisit when GA with pricing."
+ },
+ "verify": [
+  "Decisions API availability, pricing, latency (the news article in a sibling video says 150 ms) and whether it returns confidence scores",
+  "What 'Luna' is in OpenAI's lineup (smallest/cheapest model?) and its context/image limits",
+  "Whether the equivalent is achievable with Claude Haiku + tool-use enum outputs at similar cost"
+ ]
+}

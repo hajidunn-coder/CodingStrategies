@@ -1,0 +1,57 @@
+{
+ "id": "7691342895621606662",
+ "url": "https://www.tiktok.com/@kaithevibecoder/video/7691342895621606662",
+ "creator": "kaithevibecoder",
+ "title": "Three vibe-coding site tools in 30 seconds: Componentry (free animated React components), Manus.im (backend-powered apps with analytics/SEO, sponsored), Realtime Colors (preview palette/fonts on a real site)",
+ "category": "design-ui",
+ "tools": [
+  {
+   "name": "Componentry",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "componentry.dev -- 'Components for React', animated components, free and copy-pasteable"
+  },
+  {
+   "name": "Manus.im",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "manus.im -- build backend-powered apps/websites with AI; built-in page analytics and SEO; sponsored (#manuspartner); comment 'Manus' for free credits"
+  },
+  {
+   "name": "Realtime Colors",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "realtimecolors.com -- test colour palette and fonts on a mock real website before building"
+  }
+ ],
+ "claims": [
+  "Componentry is a 'hidden gem': gorgeous animated components, all free and copy-pasteable",
+  "Manus.im is 'hands down the best tool for building backend-powered apps and websites with AI' and includes page analytics and SEO (sponsored claim)",
+  "Realtime Colors lets you see exactly how a palette and fonts look on a real site before you build"
+ ],
+ "how_to_steps": [
+  "Grab animated React components from componentry.dev and paste into your project",
+  "Use Manus.im to generate backend-powered sites with analytics/SEO (creator's sponsor)",
+  "Prototype your palette and typography on realtimecolors.com, then apply to the build"
+ ],
+ "on_screen_only": [
+  "Title: '3 years of vibe coding ball knowledge in 30 seconds' with a 30-second countdown timer",
+  "Tool cards: 'Componentry (componentry.dev)' with logo; 'Manus.im (manus.im)' with logo; 'Realtime Colors (realtimecolors.com)' with logo",
+  "Componentry site: 'Components for React'; Manus analytics dashboard with visitor stats (e.g. 2,728 / 1,236 / ... / 96.6%); Realtime Colors preview page with 'Visualize your colors on a real website'",
+  "'Comment \"Manus\"' overlay; caption credits @Dyl (duet partner)"
+ ],
+ "cta": "Comment 'Manus' for free credits and the list of sites",
+ "relevance": {
+  "score": 3,
+  "why": "Two of the three (Componentry, Realtime Colors) are quick free wins for shipping nicer-looking apps fast; Manus is a sponsored pitch and competes with building in Claude Code."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Add componentry.dev and realtimecolors.com to our design-ui reference list and point Claude Code at a chosen palette/components when scaffolding frontends. 20 minutes. Skip Manus."
+ },
+ "verify": [
+  "componentry.dev: real site, license (MIT?), React/Tailwind compatibility, maintenance",
+  "realtimecolors.com: free tier limits, export format (CSS vars/Tailwind config)",
+  "Manus.im claims are sponsored (#manuspartner)"
+ ]
+}

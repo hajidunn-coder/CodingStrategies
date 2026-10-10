@@ -1,0 +1,58 @@
+{
+ "id": "7691452012348722446",
+ "url": "https://www.tiktok.com/@jodell._08/video/7691452012348722446",
+ "creator": "jodell._08",
+ "title": "Readdy ambassador pitch: find local businesses without websites on Google Maps, paste their info/reviews into Readdy to generate a site in minutes, sell it for ~$1,000",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Readdy",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "AI website builder; paste business info and reviews, ask for a full website; result shown is a restaurant site ('Ember & Oak'); creator is a #readdyambassador"
+  },
+  {
+   "name": "Google Maps",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Search local businesses (e.g. coffee shops) that lack a website"
+  },
+  {
+   "name": "Google Search",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Query 'how much do agencies charge for website design' to anchor pricing"
+  }
+ ],
+ "claims": [
+  "Creator makes 'an ungodly amount of money every month' building sites for local businesses with Readdy; 'an easy thousand dollars' per site",
+  "Readdy builds a full site in about 10 minutes (caption) / 'a couple minutes later' (transcript)",
+  "Agencies charge far more than small businesses can afford; undercut them"
+ ],
+ "how_to_steps": [
+  "Search Google Maps for businesses in your area that have no website",
+  "Google what agencies charge for a site to set a cheaper price",
+  "Go to Readdy, paste the business's info and reviews, ask it to build a full website",
+  "Send the finished site to the business and charge (~$1,000)"
+ ],
+ "on_screen_only": [
+  "Google Maps results for local coffee shops ('Cariboo Coffee', 'The Twisted Oak Coffee House' etc.) with pins",
+  "Google search 'how much do agencies charge for website design' autocomplete",
+  "Readdy app: template/project selector, a chat prompt pane 'Generating now, it will take about 5 minutes', and a generated dark restaurant site 'Ember & Oak'",
+  "Creator opening with 'I'm probably going to have to delete this in the next 24 hours'"
+ ],
+ "cta": "Like and save the video (ambassador link implied)",
+ "relevance": {
+  "score": 2,
+  "why": "Generic 'sell AI websites to local businesses' hustle, delivered by a paid ambassador with no proof. We can already generate better sites with Claude Code; the only reusable idea is the Google Maps prospecting step."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not a fit for a founder building products; a local-web-design service is a time-for-money trap. If ever needed, scaffold with Claude Code instead of Readdy."
+ },
+ "verify": [
+  "Readdy pricing, ownership/export of generated sites, hosting",
+  "Ambassador/affiliate relationship (#readdyambassador) -- claims of income are unsupported",
+  "Views: 177 -- negligible traction"
+ ]
+}

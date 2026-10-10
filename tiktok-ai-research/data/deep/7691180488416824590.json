@@ -1,0 +1,60 @@
+{
+ "id": "7691180488416824590",
+ "url": "https://www.tiktok.com/@luispdoesai/video/7691180488416824590",
+ "creator": "luispdoesai",
+ "title": "OpenAI's Decisions API (built on Luna, Dev Day) replicates TypeSafe's Jev decision model -- 'if your company is a feature, you're one keynote away from death'",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "OpenAI Decisions API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Announced at Dev Day; returns predefined answers with confidence scores in ~150 ms (per article on screen); pricing unknown; built on Luna"
+  },
+  {
+   "name": "Luna (OpenAI model)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'the smallest and most affordable model in its current lineup'"
+  },
+  {
+   "name": "Jev (TypeSafe)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "'A classifier with confidence scores' -- decision model that went viral days earlier"
+  },
+  {
+   "name": "The New Stack article",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "thenewstack.io: 'OpenAI answers TypeSafe's Jev with a Decision API built on Luna'"
+  }
+ ],
+ "claims": [
+  "Jev AI blew up on 'decision models, not chat'; it is a classifier with confidence scores",
+  "OpenAI's Decisions API is 'pretty much the same thing', built on Luna",
+  "Article: returns predefined answers with confidence scores in 150 milliseconds; pricing still unknown",
+  "Lesson: a company that is a feature is one keynote away from death"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'OpenAi just killed Jev Ai'",
+  "thenewstack.io headline: 'OpenAI answers TypeSafe's Jev with a Decision API built on Luna' -- 'OpenAI's Decision API, built on its small Luna model, returns predefined answers with confidence scores in 150 milliseconds. Pricing is still unknown.'",
+  "Article body: 'With the sudden rise of TypeSafe's Jev, decision models have become incredibly popular...' 'The company's new Decisions API is based on the company's Luna model -- the smallest and most affordable model in its current lineup'",
+  "Dev Day stage photo: 'Decisions API -- In preview'"
+ ],
+ "cta": "Follow for daily AI coverage; send to a friend who hyped Jev",
+ "relevance": {
+  "score": 3,
+  "why": "Strategic reminder for a founder: do not build a business that is one API feature; and a practical note that fast cheap classification-with-confidence is becoming a commodity we can use for routing in our apps."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "No action beyond noting the pattern; evaluate Decisions API vs Haiku structured outputs when pricing lands. Apply the 'feature vs company' test to our own product ideas."
+ },
+ "verify": [
+  "Decisions API GA date, pricing, and whether it exposes probabilities like Jev",
+  "What TypeSafe/Jev actually offers and whether it survives (pricing, latency, accuracy benchmarks)",
+  "The 150 ms latency figure from The New Stack -- source?"
+ ]
+}

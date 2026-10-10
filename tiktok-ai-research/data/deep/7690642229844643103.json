@@ -1,0 +1,65 @@
+{
+ "id": "7690642229844643103",
+ "url": "https://www.tiktok.com/@haejuicyy/video/7690642229844643103",
+ "creator": "haejuicyy",
+ "title": "Anthropic promo: claim $100/$250 free Claude Code credits (by Oct 7) for new cloud sessions that run on Anthropic-hosted infrastructure",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Code cloud sessions",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Run a session on Anthropic-hosted infra; start from claude.ai/code, the Code tab in the Claude mobile app, the desktop app, or 'claude --cloud' in the CLI"
+  },
+  {
+   "name": "/claim-credit",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Claude Code slash command shown; claim page claude.ai/code/claim-credit/..."
+  },
+  {
+   "name": "GitHub",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Connect GitHub to claim and to run cloud sessions on a repo"
+  },
+  {
+   "name": "@ClaudeDevs (X account)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Tweet explaining cloud sessions"
+  }
+ ],
+ "claims": [
+  "Anthropic gives a one-time $100 or $250 credit for Claude Code cloud sessions; claim by 11:59 PM PT Oct 7, credit expires 11:59 PM PT Nov 4 (on screen)",
+  "Setup took the creator under a minute: click claim link, connect GitHub, done",
+  "Cloud sessions keep running with your laptop closed, and keep going even after you hit a local rate limit, until the credit runs out (on screen)"
+ ],
+ "how_to_steps": [
+  "Open the claim link (claude.ai/code/claim-credit/...) or run /claim-credit in Claude Code",
+  "Connect your GitHub account",
+  "Start a cloud session from the CLI (claude --cloud), desktop app, web (claude.ai/code) or the mobile app's Code tab"
+ ],
+ "on_screen_only": [
+  "Title card: 'Free $250 Claude Code Credits (Claim by Oct 7th)'",
+  "Claude Code UI: '> /claim-credit' with bullets 'Start a cloud session -- From the CLI, desktop app or web'; 'Close your laptop -- It runs on Anthropic-hosted infrastructure'; 'The session keeps going -- Even after you hit a rate limit locally, until your credit runs out'; link 'claude.ai/code/claim-credit/10'; 'Claim by 11:59 PM PT, Oct 7. Expires 11:59 PM PT, Nov 4. Terms apply.'",
+  "@ClaudeDevs tweet: 'Cloud sessions run on Anthropic-hosted infrastructure, so the work keeps going even without your computer running. Start one at claude.ai/code, from the Code tab in the Claude mobile app, from the desktop app, or with claude --cloud in the CLI.'",
+  "Diagram: Laptop -> Cloud",
+  "'Claim Link in bio' with blurred screenshot of instructions"
+ ],
+ "cta": "Follow and click link in bio for the claim link and setup instructions",
+ "relevance": {
+  "score": 3,
+  "why": "Free credits and the cloud-session feature are directly useful for a time-poor founder who wants long-running Claude Code work while away from the laptop. However the claim window (Oct 7) has already passed as of Oct 10, 2026."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The credit itself is likely expired; the durable takeaway is to use 'claude --cloud' / claude.ai/code for background sessions on our repos. Five minutes to check /claim-credit in case the offer was extended."
+ },
+ "verify": [
+  "Was the offer extended past Oct 7, 2026? Run /claim-credit in Claude Code",
+  "Which plans qualify for $100 vs $250?",
+  "Cloud session pricing after credits run out and whether usage counts against the subscription",
+  "Which GitHub permissions the cloud session needs"
+ ]
+}

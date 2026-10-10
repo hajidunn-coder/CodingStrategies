@@ -1,0 +1,75 @@
+{
+ "id": "7690623522225327374",
+ "url": "https://www.tiktok.com/@angusthenontechnical/video/7690623522225327374",
+ "creator": "angusthenontechnical",
+ "title": "Hormozi-style hook testing with an agent: scrape your TikTok hooks via Apify into hooks.json, have Claude brainstorm hooks and a small model (Jev) score them -- creator found human-written hooks beat AI hooks every time, so now he only uses AI to score",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude (Claude Desktop, Opus 5)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Claude Desktop (macOS) chat titled 'Hook scoring', model selector shows 'Opus 5'; main model that brainstorms hooks and loops"
+  },
+  {
+   "name": "Jev (TypeSafe decision model)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Small classifier model that scores each hook against winners/losers; transcript mis-transcribes it as 'Jeff'"
+  },
+  {
+   "name": "Apify",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Scrapes the creator's own TikTok to produce hooks.json"
+  },
+  {
+   "name": "hooks.json",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "File with source, median_views, winners[] and flops[] each as {hook, views}"
+  },
+  {
+   "name": "Alex Hormozi content strategy",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "Post many pieces/day, find hooks that work, re-use them until they stop working"
+  }
+ ],
+ "claims": [
+  "Hormozi posts ~29 pieces of content a day, then re-uses the hooks that perform until they stop working",
+  "System loops: Claude generates hook -> small model scores it against your winners/losers -> keep only hooks scoring >90%",
+  "Creator tested for a few months with 'a couple different Jev-adjacent models'; his own hand-written hooks beat AI-written hooks 'every single time' in A/B posting",
+  "Now he writes hooks himself and only uses the system to score them -- that worked much better; 'don't outsource your creativity to an AI agent'",
+  "Screen: Jev scored 16 hooks against the last 5 months of TikTok openers; three cleared the bar: 'AI engineers are looting Alex Hormozi' 91%, 'Anybody can reverse engineer Hormozi's virality' 88%, 'Anybody can reverse engineer Hormozi's success' 82%"
+ ],
+ "how_to_steps": [
+  "Scrape your own past videos (TikTok via Apify) and save hooks with view counts into hooks.json, split into winners and flops around median views",
+  "Have the main model (Claude) brainstorm many candidate hooks",
+  "Feed each candidate plus the winners/losers file to a small, fast model (Jev) and ask it to predict whether the hook will perform; get a score",
+  "Loop until you have enough hooks above ~90%; kill the rest",
+  "Creator's revised version: write hooks yourself 'off the dome', then use the scorer only to rank them; post multiple versions and let real views decide"
+ ],
+ "on_screen_only": [
+  "Title card: 'The failed content kryptonite' with Hormozi photo",
+  "Pipeline diagram: your TikTok -> Apify -> hooks.json; Claude (writes hooks) -> new hook -> Jev (scores each hook) -> score -> top hooks; loop diagram Claude <-> Jev with 'kill' branch",
+  "hooks.json contents: {\"source\": \"tiktok, last 5 months\", \"median_views\": 2934, \"winners\": [{\"hook\": \"vibe coders are looting Carvana\", \"views\": 420294}, {\"hook\": \"Bro, vibe coders are price gouging Expedia\", \"views\": 104290}, {\"hook\": \"Vibe coding courses are being replaced by self-learning apps\"}, {\"hook\": \"This billboard just predicted its own company's downfall\"}, {\"hook\": \"Vibe coders aren't building internal tools anymore\", \"views\": 47399}, {\"hook\": \"anybody can reverse engineer this clavicular dude's virality\"}, {\"hook\": \"You got lied to, bro. The hottest job in AI right now pays $200,000 plus\"}, {\"hook\": \"vibe coders are destroying the galactic empire that is Salesforce\"}, {\"hook\": \"Job applicants are bypassing the resume filter with ChatGPT\"}, ...], \"flops\": [{\"hook\": \"This rented human just predicted the downfall of AI content\"}, {\"hook\": \"Humans are being rented out by AI agents\", \"views\": 143}, {\"hook\": \"scamming travelers with your mystery getaway is now a Claude skill\"}, {\"hook\": \"Marketers are AI outsmarting Sydney Sweeney\", \"views\": 451}, {\"hook\": \"founders are using fake humans to do market research\", \"views\": 674}, {\"hook\": \"content creators have figured out how to clone Mr Beast\", \"views\": 680}, {\"hook\": \"Dude, vibe coders are market manipulating Ticketmaster\", \"views\": 703}, ...]}",
+  "Claude Desktop chat 'Hook scoring' (Claude Desktop (macOS)), user asks 'which ones win?', 'Used 3 tools', answer lists the 91%/88%/82% hooks and says cut 'Turns out we've been all testing content wrong' flops; composer shows model 'Opus 5'",
+  "Grid of the creator's TikTok thumbnails with view counts (1,090; 299K; 169K; 77.3K; 18.2K etc.) and titles like 'Pirate a $5k sales coach', 'Everything is a Jev wrapper', 'Hunter Biden is a $1.9M api call', 'Ashton Hall is a Claude wrapper', 'Scalp a $650m concert ticket'"
+ ],
+ "cta": "Follow -- 'I'm gonna keep posting shit like this for free'",
+ "relevance": {
+  "score": 4,
+  "why": "Directly applicable to marketing our apps on short-form: a tiny, cheap loop (scrape own hooks -> score new ones) with a sober finding that AI-written hooks underperform human ones. Honest negative result is more valuable than the hype pieces."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap: one Apify TikTok actor run (or manual export) to build hooks.json, then a Claude Code skill that scores our hand-written hooks against winners/flops using a cheap small model (Haiku, or Jev if it is real). Half a day. Use it as a scorer/ranker, not a writer, per the creator's own test."
+ },
+ "verify": [
+  "Is 'Jev' (TypeSafe) a real, available decision/classifier model with pricing, and what did the creator actually use ('Jev-adjacent')?",
+  "Apify TikTok scraper cost and ToS; can we get our own view data from TikTok Studio export instead?",
+  "Is the 90% threshold anything but arbitrary; sample size for his 'human beats AI every time' claim?",
+  "'Opus 5' in the Claude Desktop model picker -- confirm the model name shown"
+ ]
+}

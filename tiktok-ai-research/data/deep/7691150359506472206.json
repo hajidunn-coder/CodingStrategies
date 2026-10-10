@@ -1,0 +1,69 @@
+{
+ "id": "7691150359506472206",
+ "url": "https://www.tiktok.com/@automatedintelligenceai/video/7691150359506472206",
+ "creator": "automatedintelligenceai",
+ "title": "Manus 2.0 and its new 'Cue' app: each agent gets its own email, phone number, wallet and computer; agent group chats; new timeline video editor; prompt-injection warning",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Manus 2.0",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Launched 'Monday'; general agent platform"
+  },
+  {
+   "name": "Cue (Manus app, 'Q')",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Gives each agent a real identity: email, phone number, wallet with budget, own computer; forward calls to the agent; group chats; 'Every QR code, an agent'; free with a code (see bio)"
+  },
+  {
+   "name": "Manus video editor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Timeline with separate clip/image/text/audio layers; edit then hand back and the agent continues from your edits"
+  },
+  {
+   "name": "Manus Build Games / Automations",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Feature tiles shown: 'Build Games' with asset grid and a platformer scene, 'Automations'"
+  }
+ ],
+ "claims": [
+  "Until now agents acted through your login/card/inbox so everything bottlenecked on your approval; Cue gives each agent its own email, phone, wallet and computer",
+  "Agent pays within a budget you set, takes your phone calls and leaves a summary",
+  "Several agents in a group chat with one shared goal hand work to each other (one researches venues, one shortlists, one drafts the deck)",
+  "Video editor: previously a change meant rewriting the prompt and regenerating the whole video; now you edit the timeline directly",
+  "Four days before launch, researchers showed a hidden instruction in an email could run code inside a Manus environment -- agents with wallets raise the stakes",
+  "On-screen stat: 'Average Speedup 8.1%' and 'Average Tokens / Session'"
+ ],
+ "how_to_steps": [
+  "Get Cue (free with a code from the creator's bio)",
+  "Create an agent; it receives its own email, phone number, wallet (set a budget) and computer",
+  "Optionally forward your calls to the agent; share agent QR codes; create a group chat of agents with one goal",
+  "For video: generate, then open the timeline editor, swap clips/images/text/audio, hand back to the agent"
+ ],
+ "on_screen_only": [
+  "Panels: 'Average Speedup 8.1%', 'Average Tokens / Session'; 'Agent identity' with agent avatars; 'Create group chat'; 'Forward calls to your agent'; QR code on a 'Lucky Dumpling' restaurant window; 'Saved to your team'",
+  "Agents list UI: Lucky Dumpling ('Ready to take your order'), Christine ('Your Resy account is confirm...'), Travel Planner ('Found 3 nonstop flights to To...'), Stay Scout",
+  "'Every QR code, an agent.' street scene with Florist / Laundry / Cafe / Bakery agents",
+  "Video editor timeline UI ('Untitled video', Media/Text/Graphics/Effects tabs, 'Generating footage')",
+  "'Build Games' tile with sprite/asset grid and a snowy platformer scene; 'Automations' tile"
+ ],
+ "cta": "'Q is free with code -- check my bio'",
+ "relevance": {
+  "score": 2,
+  "why": "Interesting signal (agent identity + wallet, agent-to-agent group chats) and a sober security note, but Manus is a competing general-agent platform rather than something that improves a Claude Code build workflow. Possibly useful for AI video ads."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Not worth adopting now: prompt-injection risk with wallets, unclear pricing, and overlaps with what we do in Claude Code. Maybe test the video editor for ad creative later."
+ },
+ "verify": [
+  "Is the app really called 'Cue' and is it free; what is the referral code economics for the creator?",
+  "Details of the prompt-injection research (who, what was executed) and Manus's fix",
+  "Who holds the wallet funds and liability if an agent overspends?",
+  "Manus 2.0 pricing / credits"
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "7690687813305650445",
+ "url": "https://www.tiktok.com/@nicholewischoff/video/7690687813305650445",
+ "creator": "nicholewischoff",
+ "title": "VC walks through Instinct, a free iMessage/WhatsApp personal-assistant agent (raised $1B Series C at $10B), with use cases: Gmail/calendar, flights, shopping via Checkmate, reservations, reminders, shared family 'network'",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Instinct",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Text/voice personal assistant inside iMessage or WhatsApp; integrates Gmail, calendar, note apps; free, possibly invite-only; founder 'Noah'"
+  },
+  {
+   "name": "Checkmate / Open Stock",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Her portfolio company; discounts/cashback engine shown generating a Brooklinen 20% off + 7.5% cashback offer inside Instinct"
+  },
+  {
+   "name": "Gmail",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Connected as 'system of record'"
+  },
+  {
+   "name": "Granola",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Note-taking app mentioned as an integration"
+  },
+  {
+   "name": "Muse",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Another assistant she is onboarding to"
+  },
+  {
+   "name": "Rockbot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Another assistant she tried (name as transcribed)"
+  },
+  {
+   "name": "United MileagePlus",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "Instinct pulls her mileage numbers to book flights"
+  }
+ ],
+ "claims": [
+  "Instinct raised a $1B Series C at a $10B valuation; company less than a year old",
+  "Completely free, and she thinks they plan to keep it that way; may still be invite-only",
+  "'Network' feature: invite family/friends so you can text 'put this on Xander's calendar' and it adds to his calendar after he confirms",
+  "Many users share their credit card with it so it can check out and buy things; it cannot log into bank accounts yet",
+  "Can call restaurants and doctors' offices on your behalf; proactive reminders ('remind me every 30 minutes until I confirm')",
+  "Screen: 'I want to buy new linen, what deals can you generate for me?' -> Brooklinen 20% off sitewide + 7.5% cashback via Checkmate, code INSTINCT-BF20, Luxe Sateen Core Sheet Set $167.20, ordered, arriving Thursday",
+  "Speculative use cases she pitches: proactive food reordering, recurring nails/spa/gym bookings, gifting wishlists, travel confirmation checks"
+ ],
+ "how_to_steps": [
+  "Download/join Instinct (free; check invite status)",
+  "Connect Gmail, calendar and note-taking apps",
+  "Text it in iMessage/WhatsApp to confirm bookings, add calendar items for family members, set recurring reminders, buy items",
+  "Invite close family/friends to your Instinct 'network' to coordinate logistics"
+ ],
+ "on_screen_only": [
+  "Gmail logo overlay",
+  "iMessage screenshot with Instinct: 'I want to buy new linen, what deals can you generate for me?' / 'Done, I generated you a Brooklinen offer through Checkmate: 20% off sitewide plus 7.5% cashback.' / card 'brooklinen 20% off sitewide +7.5% cashback, INSTINCT-BF20, Luxe Sateen Core Sheet Set $167.20, Verified by Checkmate' / 'Want me to order it in queen, white? $167.20, at your door by Thursday.' / 'Yes, go for it' / 'Ordered, arriving Thursday. Your cashback lands in the Checkmate wallet after delivery.'"
+ ],
+ "cta": "Download Instinct (free); no explicit follow ask. Discloses 'not an investor' in Instinct but Checkmate is her portfolio company",
+ "relevance": {
+  "score": 2,
+  "why": "Consumer assistant, not a build tool. Useful as a signal of where agent UX is going (SMS-first, proactive, shared-network) and as a possible channel/partner for consumer apps, but it does not change our Claude Code workflow."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could trial it for personal admin (flights, reminders) to save founder time -- 10 minutes if we can get access. Nothing to build. The 'meet users in iMessage/WhatsApp' pattern is worth noting for any consumer app we ship."
+ },
+ "verify": [
+  "Confirm Instinct's funding ($1B Series C, $10B) from a primary source; the claim comes from a VC enthusiast",
+  "Is it actually free / invite-only right now, and what data permissions does it take (Gmail full access, stored card)?",
+  "Her conflict of interest: Checkmate is her portfolio company and is featured in the demo"
+ ]
+}

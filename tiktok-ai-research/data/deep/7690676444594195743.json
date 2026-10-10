@@ -1,0 +1,63 @@
+{
+ "id": "7690676444594195743",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7690676444594195743",
+ "creator": "buildwithneej",
+ "title": "Paperclip: open-source repo that runs AI coding agents as a company with an org chart (CEO/CTO/engineers), heartbeat scheduling, budgets and one dashboard",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Paperclip",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Open-source, 'over 90,000 stars'; installs locally in about a minute; dashboard with agents, assignments, budget approvals"
+  },
+  {
+   "name": "Claude (Claude Code)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Org chart: 'CEO runs on Claude', 'CTO runs on Claude', 'ClaudeCoder runs on Claude'"
+  },
+  {
+   "name": "OpenAI Codex",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "One org-chart node 'runs on Codex' -- you pick which AI runs each role"
+  }
+ ],
+ "claims": [
+  "Repo has over 90,000 GitHub stars 'at the moment' and is free",
+  "You write one goal; the CEO agent hires the team (CTO, engineers, designers, marketers) on its own; you set the budget, approve, hit go",
+  "Every agent runs on a heartbeat: wakes on a schedule, checks its work, acts or goes back to sleep",
+  "Installs locally in about a minute; one dashboard replaces babysitting agents across many terminals"
+ ],
+ "how_to_steps": [
+  "Install Paperclip locally (about a minute)",
+  "Write down a single goal",
+  "Pick which model/agent runtime powers each role (Claude, Codex, etc.)",
+  "CEO agent proposes hires; set a budget and approve",
+  "Hit go and watch agents on the dashboard; they run on heartbeat schedules"
+ ],
+ "on_screen_only": [
+  "Title card: 'Turn Claude into a whole AI Company'",
+  "'over 90,000+' / 'BLOWING UP ON GITHUB'",
+  "Org chart: CEO (runs on Claude) -> CTO (runs on Claude), [role] (runs on Codex), ClaudeCoder (runs on Claude)",
+  "List: CTO / ENGINEERS / DESIGNERS / MARKETERS -- each tagged 'hired' -- 'whoever the goal needs'",
+  "Paperclip dashboard: sidebar with agents (CEO, CTO, ...), CEO page with 'Assign Task' / 'Pause' buttons, bar charts (Run Activity, Agent Activity?, Budget), 'Recent Issues' list, 'Checking'",
+  "CTA overlay: comment 'COMPANY'"
+ ],
+ "cta": "Comment 'Company' to get the repo link by DM",
+ "relevance": {
+  "score": 3,
+  "why": "Multi-agent orchestration with budgets and heartbeats is interesting for a solo founder who wants work to continue unattended, but a CEO/CTO hierarchy of agents is mostly theatre; the useful bits (scheduled wake-ups, budget caps, single dashboard) can be done with Claude Code routines/subagents already."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth adopting wholesale: adds a heavy framework and token burn for an org-chart metaphor. Worth 30 minutes to read the repo for the heartbeat + budget-approval pattern and maybe reuse the idea in our own scheduled Claude Code routines."
+ },
+ "verify": [
+  "Find the actual repo (owner/paperclip) and verify the 90k-star claim -- that is enormous and may be inflated",
+  "Which agent runtimes it supports (Claude Code, Codex CLI, others) and how it meters budget",
+  "Token cost of idle heartbeats; security of agents with repo/shell access",
+  "License and maintenance activity"
+ ]
+}

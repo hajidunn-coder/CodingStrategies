@@ -1,0 +1,64 @@
+{
+ "id": "7691360250565233951",
+ "url": "https://www.tiktok.com/@karenxcheng/video/7691360250565233951",
+ "creator": "karenxcheng",
+ "title": "Karen X Cheng's 'personalized newspaper' bot built with Grok bot (SpaceX AI sponsored): connects calendar/email, prints a custom paper with news, newsletters, package arrivals and a comic an hour before you wake",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Karen's newspaper bot",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "newspaper.karenx.com -- 'The Karen Times'; link in bio"
+  },
+  {
+   "name": "Grok bot",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "The agent/bot platform used to build it (sponsored by 'SpaceX AI')"
+  },
+  {
+   "name": "Gmail / calendar integration",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "Gmail inbox shown ('The next big thing is a smaller audience' newsletter); connect to get readings, packages arriving today"
+  },
+  {
+   "name": "Printer (auto-print)",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "Prints by itself an hour before wake-up time"
+  }
+ ],
+ "claims": [
+  "Add her bot plus Grok bot; connect calendar and email to get your readings and packages arriving today",
+  "Prints newsletters you never have time to read, and draws a comic based on your life that can look like you",
+  "Printing starts automatically one hour before you wake up (setup asks 'What time do you usually wake up?')"
+ ],
+ "how_to_steps": [
+  "Open newspaper.karenx.com (link in bio) and add her bot and Grok bot",
+  "Connect calendar and email",
+  "Set your usual wake-up time",
+  "Connect a printer; the paper prints itself an hour before you wake"
+ ],
+ "on_screen_only": [
+  "Caption: 'i got an AI agent to make me a personalized newspaper'; 'POV: you want to stop checking your phone first thing'",
+  "Printed paper masthead 'The Karen Times' with items like 'Dentist at 3:30, Dinner with Maya at 7', weather '56 / 63'",
+  "Gmail screenshot: newsletter 'The next big thing is a smaller audience' from The Margin Note",
+  "Setup dialog: 'What time do you usually wake up? Or pick: Another time...' with time options",
+  "URL: newspaper.karenx.com"
+ ],
+ "cta": "Link in bio to try the bot",
+ "relevance": {
+  "score": 2,
+  "why": "Fun consumer demo and a good example of a shareable agent product with a physical output, but built on Grok's bot platform (sponsored) and not related to our Claude Code workflow."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to adopt. If we ever want a 'morning brief' artifact, we already have one; the print-to-paper gimmick is not worth the time."
+ },
+ "verify": [
+  "What 'Grok bot' / 'SpaceX AI' platform this actually runs on and whether third parties can build bots there",
+  "Data access scope (email + calendar) and sponsorship disclosure"
+ ]
+}

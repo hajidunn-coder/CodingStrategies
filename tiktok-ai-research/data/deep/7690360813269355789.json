@@ -1,0 +1,91 @@
+{
+ "id": "7690360813269355789",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7690360813269355789",
+ "creator": "mr.paidsocial",
+ "title": "12-year Meta ads buyer reacts to a creator who let Claude Code run her Meta ads ($2,019 spend -> $15,235 sales) and points to a GitHub repo of Claude Code ad skills to replicate it",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Used to build and launch Meta ads end-to-end, including buying the ads with the creator's card"
+  },
+  {
+   "name": "Meta Ads / Meta Marketing API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "Claude walks you through getting a 'Meta API key' so it can control the ad account"
+  },
+  {
+   "name": "Claude Code Meta-ads skills repo (GitHub)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Said to have ~1,100 stars; the only URL fragment visible on screen is '.../arcads-claude-code' and a repo under 'knusemediallc' with .claude, skills, scripts, references, shared, AGENTS.md, CLAUDE.md, MASTER_CONTEXT.template.md"
+  },
+  {
+   "name": "Arcads AI Video -- Agent Skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Skill card: 'Create AI marketing videos and images using your Arcads ... Cursor. Supports the full Arcads creative stack'"
+  },
+  {
+   "name": "Skool community (mr.paidsocial)",
+   "kind": "course",
+   "where_seen": "screen",
+   "detail": "Promo: $350/year (was $1,164, 70% off), moving to $150/month Aug 1; includes 'Meta Masterclass MC1-MC5, Airtable and Claude Code ad build systems, custom GPTs for copy and compliance'"
+  },
+  {
+   "name": "Airtable",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Mentioned as part of his 'Airtable and Claude Code ad build systems'"
+  },
+  {
+   "name": "Gemini Omni Flash prompting guide",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Latest commit message in the repo listing: 'Add Gemini Omni Flash prompting guide'"
+  }
+ ],
+ "claims": [
+  "Creator's Claude agent spent $2,019.18 in 7 days and generated $15,235 gross sales (7.5x) selling landline phones; she had never run Meta ads before",
+  "Creator gave Claude her videos, said 'turn them into ads and go sell the phones', and gave it credit-card access to buy ads itself",
+  "mr.paidsocial: 12 years running Meta ads, $150M+ spent; 'this is the best way to run ads on Meta right now'",
+  "His own anniversary sale for his Skool community generated $30,000+ in revenue with Claude generating creatives and copy; he did not click a button in Ads Manager",
+  "The GitHub repo has 1,100 stars and 'all the skills you need'",
+  "Ads Manager screenshot shows rows of $2,466.59 spend -> $8,400 purchases ($102.77 CPA, 26 purchases), $1,204.10 -> $6,300 ($178.01, 18), totals ~$11,876 spend -> $30,800 purchase value, $134.96 cost/purchase"
+ ],
+ "how_to_steps": [
+  "Go to the GitHub repo (URL fragment on screen: .../arcads-claude-code)",
+  "Open Claude Code, paste the repo URL and say 'help me set this up'",
+  "Answer Claude's setup questions; it explains how to obtain a Meta API key / access token so it can control the ad account",
+  "Give Claude your existing organic videos; it generates ad creatives and ad copy and launches campaigns",
+  "Example prompt (creator's, on screen): go through the Meta library of high-performing organic content, tell me what you need to get ads running, ask for COGS context, then propose a plan to sell through remaining inventory"
+ ],
+ "on_screen_only": [
+  "Overlay: 'CREATOR SOLD $15K USING CLAUDE X META' and '+$15,235.00 (7.5x return)'",
+  "Creator's prompt text: '...library of high-performing organic content that you can use as ads. I want you to go through the Meta library, see what you can find if you have access to these videos, and tell me what you need from me in order to get these ads running. Also, if you need any additional context about COGS or anything like that, let me know. Given all of that, I want you to come up with a plan for how we should approach using Meta ads to sell through the rest of the inventory using the organic content that we already have.'",
+  "Terminal: '.../arcads-claude-code help me set this up' with worktree tab",
+  "Repo file list under 'knusemediallc': folders .claude, references, scripts, shared, skills; files .env.example, .gitignore, .gitignore.bak, AGENTS.md, AGENTS.txt.md, CLAUDE.md, LICENSE, MASTER_CONTEXT.template.md; commit 'Add Gemini Omni Flash prompting guide'",
+  "'Arcads AI Video -- Agent Skill: Create AI marketing videos and images using your Arcads ... Cursor. Supports the full Arcads creative stack...'",
+  "Ads Manager table (Amount spent / Purchases conversion value / Cost per purchase / Purchases) with the figures listed in claims",
+  "Skool sales page: '1 YEAR ANNIVERSARY -- WAS $1,164 -- $350 PER YEAR -- 70% OFF ENDS AUG 1'; copy about Meta Masterclass MC1-MC5, Airtable + Claude Code ad build systems, custom GPTs for copy and compliance, monthly calls with people running 8-figure accounts"
+ ],
+ "cta": "Save this video; (implicit) join his Skool community",
+ "relevance": {
+  "score": 4,
+  "why": "Paid acquisition is the step most solo founders avoid; an agent that turns existing video into Meta ads and manages spend via the Marketing API maps directly onto launching our own apps. Numbers are specific and the pattern (skills repo + Marketing API token + budget cap) is implementable in Claude Code."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Worth a pilot once we have a product to sell: clone the repo, create a Meta system-user token with ads_management scope, set a hard daily budget cap, and let Claude propose campaigns with human approval before publish. Do NOT hand it a card with no cap. One or two days to wire up; the risk is burning spend on untested creative."
+ },
+ "verify": [
+  "Identify the actual repo: is it 'arcads-claude-code' (Arcads video skill) or a separate Meta-ads skills repo? Confirm 1,100 stars and maintenance",
+  "Does the repo really drive the Meta Marketing API (campaign creation, budgets) or only generate creative/copy?",
+  "Is the $2,019 -> $15,235 case a sponsored/affiliate story (creator is selling a Skool course)? Any attribution window caveats?",
+  "Meta Marketing API access requirements: app review, system user tokens, spend limits -- what is the real setup friction?",
+  "Arcads pricing (AI UGC video) if the creative step depends on it"
+ ]
+}
