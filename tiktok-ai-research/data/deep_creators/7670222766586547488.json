@@ -1,0 +1,68 @@
+{
+ "id": "7670222766586547488",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7670222766586547488",
+ "creator": "bettercreatingofficial",
+ "title": "Claude Cowork on mobile/web: cloud scheduled tasks and cross-device handoff, but desktop local-folder sessions do not sync up; creator keeps his setup portable via Skills, Connectors and Dropbox (sells a Cowork OS template)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Cowork (mobile + web)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "scheduled tasks run in the cloud; start on phone, finish on desktop"
+  },
+  {
+   "name": "Dropbox",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "used to keep the Cowork OS folder available across devices and multiple MacBooks"
+  },
+  {
+   "name": "Claude CoWork OS",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "bettercreating.com, 'A templated operating system that helps you master Claude CoWork. Fast.' with Buy now button"
+  },
+  {
+   "name": "Opus 4.6",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "model label in phone app"
+  }
+ ],
+ "claims": [
+  "Cowork landed on mobile and web alongside desktop; scheduled tasks now run in the cloud with the laptop shut",
+  "Sessions can follow you across devices (start on phone, finish at desk)",
+  "Catch: sync is one-way; everything built in a desktop session stays on that computer, phone/web cannot see it, so mobile Claude 'drops back to generic Claude that knows nothing about you' if your setup lives in a local folder",
+  "His workaround keeps the 'coworker OS' live on every device online/offline using Skills, Connectors and Dropbox (how-to promised on YouTube)"
+ ],
+ "how_to_steps": [
+  "Move context/instruction files out of a purely local folder into things Cowork syncs: Skills and Connectors, plus a Dropbox-hosted folder",
+  "Full method deferred to the 'Systems Made Better' YouTube channel or the paid template"
+ ],
+ "on_screen_only": [
+  "Cowork 'Progress' card: '1 Schedule morning Acme research + prep doc task', '2 Schedule post-meeting recap task'",
+  "Phone app showing a long Claude message about 'curated channels' and 'saving it to the project as a reference resource', model 'Opus 4.6'",
+  "SKILL.md open on laptop (working rules text, unreadable)",
+  "Phone: bettercreating.com product page 'Claude CoWork OS - A templated operating system that helps you master Claude CoWork. Fast.' 'Buy now' (price ~$12x USD)",
+  "iOS dock: Claude app icon between a hammer app and Finder"
+ ],
+ "cta": "YouTube channel 'Systems Made Better' for the how-to; bettercreating.com for the template",
+ "relevance": {
+  "score": 2,
+  "why": "Haji works in Claude Code with cloud sessions and connectors, where this local-folder gap mostly does not apply. The warning is useful if he ever leans on Cowork desktop local folders."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Takeaway only: keep instruction files in a synced repo/connector rather than a desktop-only Cowork folder. No build needed."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a warning missing from the liked Cowork-mobile news video: desktop local-folder context does not sync to mobile/web (one-way), plus the Dropbox/Skills/Connectors workaround."
+ },
+ "verify": [
+  "Is the one-way sync limitation current, or has Anthropic added folder sync?",
+  "Does Dropbox-hosted context actually load in mobile Cowork or only via a connector?"
+ ]
+}

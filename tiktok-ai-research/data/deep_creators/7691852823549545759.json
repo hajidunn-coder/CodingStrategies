@@ -1,0 +1,54 @@
+{
+ "id": "7691852823549545759",
+ "url": "https://www.tiktok.com/@malikontech/video/7691852823549545759",
+ "creator": "malikontech",
+ "title": "Claude Code cloud sessions are GA; Pro gets $100 and Max $250 one-time cloud credit via /claim-credit, cloud-only, expires November 4",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "Claude Code cloud sessions",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "/claim-credit command shown in Claude Code; sessions keep running with laptop closed"
+  },
+  {
+   "name": "@ClaudeDevs tweet",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "x.com announcement of cloud sessions out of research preview"
+  }
+ ],
+ "claims": [
+  "Pro subscribers get $100 and Max subscribers $250 in credits, usable only on cloud sessions (not desktop/local)",
+  "Cloud program launched 'a week ago'; credits expire November 4",
+  "Credit is 'on top of your plan and outside your usage limits'"
+ ],
+ "how_to_steps": [
+  "In Claude Code run /claim-credit",
+  "Start a cloud session; close your laptop; the session keeps going on Anthropic-hosted infrastructure",
+  "Use before the expiry date"
+ ],
+ "on_screen_only": [
+  "Tweet @ClaudeDevs: 'Cloud sessions are officially available and out of research preview! They let you keep Claude Code working, even when your laptop is closed. Existing subscribers get a one-time credit to try them: $100 on Pro, $250 on Max.'",
+  "Claude Code panel: 'Claude Code cloud session credit - Keep going in the cloud - A one-time credit for existing Pro and Max subscribers, on top of your plan and outside your usage limits. Pro $100 / Max $250'; steps 'Start a cloud session', 'Close your laptop', 'The session keeps going'; command '/claim-credit'",
+  "Caption typo: 'CLAUDE JUST GAVE 250 or 150 DOLLARS IN CREDITS!'"
+ ],
+ "cta": "follow for news 'without the BS'",
+ "relevance": {
+  "score": 4,
+  "why": "Free money for exactly the long-running unattended work a time-poor founder wants to offload; Haji is already running cloud sessions."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Two minutes: run /claim-credit and schedule cloud work before expiry. Only question is which expiry date is right."
+ },
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content ('Anthropic promo: claim $100/$250 free Claude Code credits'); only difference is the stated expiry (Nov 4 here vs Oct 7 in the liked video) which must be checked"
+ },
+ "verify": [
+  "Which expiry is correct, Oct 7 or Nov 4 (claim deadline vs spend deadline)?",
+  "Does /claim-credit exist in the current CLI and has Haji already claimed it?"
+ ]
+}

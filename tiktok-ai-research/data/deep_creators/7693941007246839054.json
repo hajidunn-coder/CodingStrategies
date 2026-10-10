@@ -1,0 +1,66 @@
+{
+ "id": "7693941007246839054",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7693941007246839054",
+ "creator": "chase.builds.ai",
+ "title": "From Anthropic's official plugin directory (anthropics/claude-plugins-official, ~45 plugins, 36.7k stars) install three first: code-review (4 agents per PR), security-guidance (injection/secret warnings while coding), commit-commands (commit+push+PR in one)",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "anthropics/claude-plugins-official",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "official plugin directory; Star 36.7k, Fork 4.1k"
+  },
+  {
+   "name": "code-review plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "runs four agents on a PR and posts only high-confidence issues"
+  },
+  {
+   "name": "security-guidance plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "warns about injections and hard-coded secrets as Claude writes code"
+  },
+  {
+   "name": "commit-commands plugin",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "commit, push and open a PR in one step"
+  }
+ ],
+ "claims": [
+  "Anthropic has built ~45 Claude Code plugins in the official directory with 36,000+ stars",
+  "code-review posts only the issues it is confident about",
+  "One shared plugin set is how 10 people end up using Claude Code the same way"
+ ],
+ "how_to_steps": [
+  "Open the anthropics/claude-plugins-official marketplace",
+  "Install code-review, security-guidance and commit-commands",
+  "For a team, standardize on one shared plugin set on day one"
+ ],
+ "on_screen_only": [
+  "GitHub header: Notifications / Fork 4.1k / Star 36.7k with 'anthropics/claude-plugins-official' label",
+  "Cards: '~45 official plugins', 'install these 3 first', '4 agents per PR', '2. security guida[nce]', 'injections, secrets', '3. commit commands', 'commit, push, PR: one step', 'rolling out to a team?', 'one shared plugin set'"
+ ],
+ "cta": "directory link in bio; follow",
+ "relevance": {
+  "score": 4,
+  "why": "Official, free, maintained by Anthropic; security-guidance directly addresses the vibe-coding security gaps Haji has liked several videos about"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Ten minutes: install security-guidance and commit-commands on every repo; code-review already in liked set. Lowest-risk plugin adoption available"
+ },
+ "verify": [
+  "Exact plugin names in the official marketplace and whether security-guidance is a hook or a skill",
+  "Does code-review need a GitHub integration / PR context to run?",
+  "Is the ~45 count current?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate (duncanrogoff liked video covered the official plugin pack and Code Review); adds the specific names security-guidance and commit-commands"
+ }
+}

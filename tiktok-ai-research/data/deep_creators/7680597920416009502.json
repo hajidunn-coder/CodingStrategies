@@ -1,0 +1,55 @@
+{
+ "id": "7680597920416009502",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7680597920416009502",
+ "creator": "noevarner.ai",
+ "title": "Beginner explainer: plain Claude (connect apps, simple skills) vs Claude Cowork (scheduled/triggered tasks like email triage and ad reporting) vs Claude Code (app building and complex automations)",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "connect apps, build simple skills"
+  },
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "scheduled runs: email triage, content research/ideation, daily ad-account reporting"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "app/website building, complex build-outs"
+  }
+ ],
+ "claims": [
+  "Most people use only 50-70% of plain Claude's power; connecting apps and building simple skills gets you much further",
+  "Cowork's differentiator is running tasks on a scheduled trigger",
+  "Business owners don't strictly need Claude Code, but using it is 'using 100% of your brain'; Cowork alone beats 90% of people"
+ ],
+ "how_to_steps": [
+  "Start with Claude + connectors + simple skills; graduate to Cowork for scheduled workflows; use Claude Code for builds"
+ ],
+ "on_screen_only": [
+  "Overlay 'Claude vs Cowork vs Code'; no UI shown"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Haji is far past this; nothing new."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content / beginner framing with no tools or techniques"
+ },
+ "verify": [
+  "None needed"
+ ]
+}

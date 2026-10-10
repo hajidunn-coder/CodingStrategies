@@ -1,0 +1,63 @@
+{
+ "id": "7672518593845742855",
+ "url": "https://www.tiktok.com/@ai.samaritan/video/7672518593845742855",
+ "creator": "ai.samaritan",
+ "title": "Claude Code cross-session messaging: one session sends a summary to another (e.g. 'renamed customer_email to contact_email') and the receiving session fixes its in-progress work; summary-only, both must be running",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code cross-session messaging",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Docs page 'Agents and parallel work - Message your other Claude Code sessions' (list and message sessions on one machine)"
+  },
+  {
+   "name": "@ClaudeDevs announcement",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "tweet Aug 8, ~2.1M views"
+  },
+  {
+   "name": "practicallyAI newsletter",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "practically.ai, 'Get 1% Better at AI Every Single Day', 10,500+ subscribers"
+  }
+ ],
+ "claims": [
+  "Until this week you were the messenger between sessions; now session A can tell session B about a change and B adjusts mid-task",
+  "Anthropic demo: session 1 renames a DB column; session 2, building an email digest, receives the note and updates its SELECT from customer_email to contact_email before shipping",
+  "Only a summary is sent (no history or files); the receiver decides what to do",
+  "Caveats: summaries drop nuance; both sessions must be running; it is a memo, not shared memory"
+ ],
+ "how_to_steps": [
+  "Run two Claude Code sessions on the same machine",
+  "In session 1, ask Claude to list sessions and message the other one with what changed",
+  "Session 2 receives the message mid-task and adjusts"
+ ],
+ "on_screen_only": [
+  "Docs card: 'Claude Code Docs - Agents and parallel work - Message your other Claude Code sessions - Let Claude list and message your other Claude Code sessions on one machine, and reply to your sessio...'",
+  "Tweet: 'New in Claude Code: your sessions can now message each other. Instead of having to re-explain yourself in another session, you can now tell Claude to do it, it sends a summary (not your history or files), and the other session picks it up mid-task.' (Aug 8; 1.9K likes, 2.1M views)",
+  "Diagram 'Claude Code's Cross Session Messaging': Session 1 'Renames database column' -> message -> Session 2 'EMAIL DIGEST BUILDER - Mid-task: building email digest' query 'SELECT id, name, customer_email FROM users WHERE active = true' -> 'Receives message and takes action' -> 'contact_email' -> 'Updated and ready to ship'; '1. Sends a summary, not everything - It's a heads-up, not a mind-meld. Only the key update is shared - no full history or files.' '2. The receiver decides'",
+  "Newsletter: '37.78x better at AI after 365 days of reading'"
+ ],
+ "cta": "practically.ai newsletter",
+ "relevance": {
+  "score": 4,
+  "why": "Haji runs parallel sessions (and remote sessions with send_message); native session-to-session memos remove the re-explain tax when two agents touch the same codebase."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Built in, zero setup: when running parallel sessions on one repo, instruct the finishing session to message the others with a WWWHH-style summary. Pairs with the liked handoff-note format."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has sub-agent handoff notes and orchestration but not the native Claude Code cross-session messaging feature or its limits (same machine, both running, summary only)."
+ },
+ "verify": [
+  "Is the feature limited to sessions on one machine, and does it work for cloud/remote sessions?",
+  "Exact docs URL and CLI command/tool name",
+  "Tweet date (Aug 8) vs the 'this week' framing"
+ ]
+}

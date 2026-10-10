@@ -1,0 +1,61 @@
+{
+ "id": "7639497794415365389",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7639497794415365389",
+ "creator": "kevinfremon",
+ "title": "Trillion voice agent gets a 'Prism' head-of-design subagent that builds animated landing pages with Nano Banana images via Gemini API; prompt promised on hellotrillion.ai, repo on waitlist",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "creator's voice-first 'Jarvis' startup-team agent; hellotrillion.ai; repo 'coming'"
+  },
+  {
+   "name": "Prism subagent",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "head-of-design subagent that runs in its own tab with a preview and status"
+  },
+  {
+   "name": "Nano Banana via Gemini API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "image generation for landing page visuals"
+  }
+ ],
+ "claims": [
+  "Voice prompt to Trillion -> Prism designs a full SaaS landing page with animations and generated visuals in one shot",
+  "Subagent docks in a tab so he can see it working; later Prism will hand tasks to his programming subagent",
+  "Prompt to create your own design subagent will be posted on hellotrillion.ai; suggests pasting it into Claude Code and asking it to improve it"
+ ],
+ "how_to_steps": [
+  "Define a named design subagent with a persona and remit (landing/marketing pages)",
+  "Give it an image-generation tool (Gemini Nano Banana API)",
+  "Invoke by voice/orchestrator; show a working indicator and preview tab",
+  "Get the starter prompt from hellotrillion.ai and have Claude Code refine it"
+ ],
+ "on_screen_only": [
+  "'GET ON THE REPO WAITLIST - HELLOTRILLION.AI'",
+  "Trillion UI: glowing orb visualization, 'USER: Can you analyze this data stream?' terminal log",
+  "Generated landing page: 'Your AI cofounder is already here - Trillion lives ambient in your workspace. She has opinions, memory, and personality...' with 'START WORKING WITH TRILLION' button and audio waveform"
+ ],
+ "cta": "get the prompt at hellotrillion.ai; join repo waitlist; comments",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already has artifact-design and a council gate; a named design subagent is a modest pattern. Trillion content was already liked several times and the repo is still vaporware."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Could define a 'design' subagent prompt that loads the artifact-design skill plus an image tool, but the promised prompt is not in the video."
+ },
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Trillion WWWHH handoff, board of directors, Nano Banana via Gemini API key already liked); only adds the 'Prism' naming"
+ },
+ "verify": [
+  "Is the Prism prompt actually posted at hellotrillion.ai?",
+  "Has the Trillion repo shipped?"
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "7619358635772136734",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7619358635772136734",
+ "creator": "ethanplusai",
+ "title": "JARVIS explains its own v1 architecture: FastAPI Python server on a Mac, WebSocket voice I/O, Fish Audio TTS, Anthropic Claude API, with screen vision, calendar/email/notes/tasks, AppleScript terminal, Chrome automation and Claude Code spawning",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "FastAPI (Python)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "main application backend"
+  },
+  {
+   "name": "WebSocket",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "real-time voice input/output streaming"
+  },
+  {
+   "name": "Fish Audio TTS",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "text-to-speech engine for responses"
+  },
+  {
+   "name": "Anthropic Claude API",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "intelligence/reasoning layer (v1 used the API, 2.0 moved to Claude Code/Max)"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "spawned for building projects"
+  },
+  {
+   "name": "Apple Notes",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "JARVIS writes the architecture breakdown into Apple Notes on request"
+  }
+ ],
+ "claims": [
+  "Lives in ~/desktop/jarvis/",
+  "Captures screen, reads calendar and email, manages tasks, spawns Claude Code, browses the web"
+ ],
+ "how_to_steps": [
+  "Run a FastAPI server locally that accepts voice over WebSocket",
+  "Transcribe speech, send to Claude with tools for screen capture, calendar, mail, notes, tasks, file system, terminal (AppleScript), Chrome, and a Claude Code spawner",
+  "Synthesize replies with Fish Audio TTS and stream them back"
+ ],
+ "on_screen_only": [
+  "Reply-to-comment overlay: 'Reply to tombrady1657's comment: What did you used to create this awesomeness'",
+  "Apple Notes 'JARVIS Architecture Breakdown' (March 19, 2026 at 1:50 PM): 'JARVIS: Just A Rather Very Intelligent System. CORE STACK: FastAPI server (Python) -- Main application backend; WebSocket connection -- Real-time voice input/output streaming; Fish Audio TTS -- Text-to-speech engine for responses; Anthropic Claude API -- Intelligence and reasoning layer. CAPABILITIES & INTEGRATIONS: Screen vision -- can see active windows, take screenshots, identify open...; Calendar access -- read today's events and upcoming schedule; Email (read-only) -- view unread messages, search by sender/subject; Apple Notes -- create new notes, read existing ones; Tasks -- create, complete, and manage to-do items with priorities and due...; File system -- create projects, manage folders, check git status; Terminal control -- open Terminal.app via AppleScript; Chrome automation -- open browser, navigate URLs, perform searches; Claude Code -- spawn code editor for building projects and development t...; [speech rec]ognition captures input'",
+  "Blue particle-sphere voice UI on a MacBook; monitors with terminal logs behind"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "A clean one-screen stack summary for a local voice agent; useful reference only if Haji builds a voice layer, which the liked JARVIS 2.0 and Jarvis-recipe videos already cover"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Not worth building; the reusable bit is the integration checklist and Fish Audio as a cheaper TTS than ElevenLabs"
+ },
+ "verify": [
+  "Fish Audio TTS pricing/latency vs ElevenLabs",
+  "Whether the open-sourced repo matches this architecture or the later Claude Code-based 2.0"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked JARVIS 2.0 content; adds the v1 stack specifics (FastAPI + WebSocket + Fish Audio TTS + Claude API) and the integration list"
+ }
+}

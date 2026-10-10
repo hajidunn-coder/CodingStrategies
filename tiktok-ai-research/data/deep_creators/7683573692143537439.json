@@ -1,0 +1,53 @@
+{
+ "id": "7683573692143537439",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7683573692143537439",
+ "creator": "buildwithneej",
+ "title": "Ponytail plugin explained: a 7-step 'does this need to exist?' ladder makes Claude Code write minimal code (3,629 -> 490 LOC on the same task) while never skipping security/accessibility",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Ponytail",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "MIT-licensed Claude Code plugin/skill; ~100k stars claimed; '#1 Repository Of The Day' badge on README"
+  }
+ ],
+ "claims": [
+  "100,000 stars (spoken); overlay claims '22% fewer tokens'",
+  "Same task, same tests, same model: 3,629 lines without the skill vs 490 lines with Ponytail (author's own benchmark); on-screen bar shows LOC -54%",
+  "Security validation, data-loss handling and accessibility are hard-coded as 'never skip'",
+  "Lazy about the solution, never about reading the codebase"
+ ],
+ "how_to_steps": [
+  "Install the Ponytail plugin in Claude Code",
+  "Before writing code the agent climbs the ladder: 1 Does this need to exist? (no -> skip) 2 Already in this codebase? (reuse) 3 Stdlib does it? (use it) 4 Native platform feature? (STOP HERE) 5 Installed dependency? (use it) 6 One line? 7 Only then: the minimum that works",
+  "Example: a date picker becomes one <input type=date> instead of npm i flatpickr + a 120-line wrapper component"
+ ],
+ "on_screen_only": [
+  "'Claude Code + this plugin = 22% fewer tokens'",
+  "README badges: MIT license, '#1 Repository Of The Day', stars ~153k, release v4.9.0 (small text, low confidence)",
+  "'Your agent over-builds it': npm i flatpickr +1 dependency / new DatePicker wrapper component +120 lines",
+  "Full 7-step ladder with verdict per rung (skip it / reuse it / use it / STOP HERE / use it / one line / the minimum that works)",
+  "'Lazy, not negligent' panel: Accessibility and data-loss handling hard-coded as never skip",
+  "Benchmark panel 'vs the same agent with no skill': LOC -54%, Tokens, Cost, Time, Safe bars; 490 vs 3,629 lines"
+ ],
+ "cta": "comment 'lazy' for the link",
+ "relevance": {
+  "score": 3,
+  "why": "Token/LOC savings matter on a Max plan, but Ponytail is already in three liked videos; this one adds the exact ladder rules"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Already flagged from liked content; the only new action is to compare its ladder against the /simplify + pstack stack Haji liked and pick one de-bloat layer, not both"
+ },
+ "verify": [
+  "Reconcile star counts: 100k spoken, ~153k on screen, 145k in another video -- which repo and is it real?",
+  "Benchmark is the author's own; the liked caveman fact-check showed claims shrink when measured",
+  "Does the 'never skip security/accessibility' rule actually fire, or is it README copy?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Ponytail in nateherkai, youraveragetechbro, duncanrogoff); only adds the 7-rung ladder text and the date-picker example"
+ }
+}

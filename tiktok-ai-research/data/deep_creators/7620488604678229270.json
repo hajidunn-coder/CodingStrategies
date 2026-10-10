@@ -1,0 +1,75 @@
+{
+ "id": "7620488604678229270",
+ "url": "https://www.tiktok.com/@itstundealao/video/7620488604678229270",
+ "creator": "itstundealao",
+ "title": "Gmail-MCP 'email please' skill: Claude Code triages inbox into a review text file, you type one-line intents under each email, Claude batch-creates Gmail drafts",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "desktop app with 'Press shift+tab to automatically approve code edits' bar"
+  },
+  {
+   "name": "claude.ai Gmail MCP",
+   "kind": "api",
+   "where_seen": "screen",
+   "detail": "MCP servers panel: claude.ai Gmail, claude.ai Google Calendar, claude.ai Notion, one more claude.ai connector; tools gmail_search_messages and gmail_create_draft invoked"
+  },
+  {
+   "name": "custom SKILL.md 'inbox review' skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "Phase 1: Fetch and Triage Emails (buckets: Auto-archive, Needs Tunde's response ...), Phase 2: Auto-Archive and Report; triggered by typing 'email please'"
+  },
+  {
+   "name": "inbox-review.txt",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "Users/tunde/Desktop/inbox-review.txt, 'INBOX REVIEW - March 23, 2026'"
+  }
+ ],
+ "claims": [
+  "Every morning he types 'email please' and Claude fetches ~20 days of inbox via Gmail MCP and writes a summary file",
+  "The file lists each email needing a reply (subject + summary) with a blank 'YOUR RESPONSE:' line; he types rough intents like 'no', 'please', 'maybe next time'",
+  "On 'send to gmail draft' Claude calls gmail_create_draft for each and the drafts appear in Gmail for review before sending",
+  "Part 4 of a 'Craziest use case of Claude' series"
+ ],
+ "how_to_steps": [
+  "Connect the claude.ai Gmail MCP connector to Claude Code (MCP servers panel)",
+  "Write a SKILL.md with Phase 1 (fetch last ~20 days, triage into buckets: auto-archive / needs response / etc.) and Phase 2 (auto-archive and report)",
+  "Type 'email please'; Claude writes inbox-review.txt with each email's subject, summary, and a 'YOUR RESPONSE:' slot",
+  "Open the file, type a one-line intent under each email (e.g. 'no sorry not interested')",
+  "Tell Claude 'send to gmail draft'; it creates a Gmail draft per email via gmail_create_draft",
+  "Review drafts in Gmail (filter Drafts) and send"
+ ],
+ "on_screen_only": [
+  "MCP servers panel: claude.ai Gmail / claude.ai Google Calendar / claude.ai (How It Grow?) / claude.ai Notion, each 'Connected'",
+  "SKILL.md headers: '## Phase 1: Fetch and Triage Emails', '### Bucket A: Auto-archive (no response needed)', '### Bucket B: Needs Tunde's response', 'Important: When in doubt, put it in Bucket B', '## Phase 2: Auto-Archive and Report'",
+  "Claude run log: 'Starting Phase 1 - fetching your inbox emails from the last 20 days', 'Claude AI Gmail [gmail_search_messages]'",
+  "inbox-review.txt: '5 emails need your response. Write a quick note under each one telling me how you want to respond, then let me know when you're done.' with items like 'SUBJECT: Potential Partnership Opportunity with DealMirror', 'SUBJECT: Tunde Alao collab w/ ZWO', 'Upfluence is pitching you for a campaign with ZWO'",
+  "Prompt typed: 'send to gmail draft'; tool calls 'Claude AI Gmail [gmail_create_draft]' with draft IDs",
+  "Gmail drafts list: SendGrid, Wahab, Upfluence, Pratyush drafts",
+  "Overlay: 'Craziest use case of Claude - Part 4'"
+ ],
+ "cta": "comment 'CC' to get a link to the skill",
+ "relevance": {
+  "score": 4,
+  "why": "Email triage is a daily time sink; the annotate-a-file-then-batch-draft loop is a clean human-in-the-loop pattern for a time-poor founder and uses only the first-party Gmail connector."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Haji already runs a haji-email skill with its own triage/draft/approval gate, so this is an incremental idea: add a 'review file with one-line intents' step so all replies are decided in one pass. An hour to fold in; the skill itself is not shared (comment-gated)."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The liked set covers email agents (Town, Jarvis reading Gmail) but not this specific technique: a two-phase skill that dumps triage into a text file, lets you annotate intents in bulk, then batch-creates Gmail drafts via the first-party Gmail MCP."
+ },
+ "verify": [
+  "Does the shared SKILL.md exist publicly or only via comment/DM funnel?",
+  "Does the claude.ai Gmail connector expose gmail_create_draft in Claude Code (vs Cowork)?",
+  "How does the skill handle the 20-day window on a large inbox (token cost)?"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "7627533806106381599",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7627533806106381599",
+ "creator": "ethanplusai",
+ "title": "Skit: JARVIS gives a hotel-room morning briefing (Las Vegas weather, conference at 11am, flight at 11pm, offers to order breakfast at the Wynn); caption credits the Claude Max plan",
+ "category": "other",
+ "tools": [
+  {
+   "name": "JARVIS",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "creator's voice agent; no stack shown"
+  },
+  {
+   "name": "Claude Max plan",
+   "kind": "product",
+   "where_seen": "caption",
+   "detail": "'Claude max plan is crazy lol'"
+  }
+ ],
+ "claims": [
+  "JARVIS knows local weather, today's conference time, tonight's flight and the hotel's breakfast options"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'POV: You built your own JARVIS and now every morning feels like this'",
+  "Laptop on hotel bed showing the particle-sphere UI; sunlit Las Vegas hotel room"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Pure lifestyle skit; no technique, tool or claim to act on"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement"
+ },
+ "verify": [
+  "Whether the breakfast-menu answer came from a real tool call or scripted dialogue"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Jarvis skits / JARVIS 2.0)"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "id": "7637228010638200078",
+ "url": "https://www.tiktok.com/@kevinfremon/video/7637228010638200078",
+ "creator": "kevinfremon",
+ "title": "Trillion/SuperSchema founder's top 3 design-leaning Claude Code skills: ClaudeKit (marketing sites), UI UX Pro Max (apps), Superpowers (brainstorm-in-browser), plus Addy Osmani's agent-skills as a bonus",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "ClaudeKit skills",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/mrgoonie/claudekit-skills -- design skills for marketing/website pages"
+  },
+  {
+   "name": "UI UX Pro Max",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "github.com/nextlevelbuilder/ui-ux-pro-max-skill -- app UI/UX skill he invokes most on SuperSchema"
+  },
+  {
+   "name": "Superpowers",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "github.com/obra/superpowers -- his #1 pick; 'brainstorm' feature opens a browser and walks through iterations/choices"
+  },
+  {
+   "name": "agent-skills (Addy Osmani)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "github.com/addyosmani/agent-skills -- full-lifecycle (ideation, dev, testing, migration) skill suite; still evaluating"
+  },
+  {
+   "name": "Trillion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "his AI co-founder agent product, referenced as 'Trillion subagents'"
+  },
+  {
+   "name": "SuperSchema",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "superschema.ai -- his production app; landing copy 'If AI can't understand you, it can't...' shown in a browser tab"
+  }
+ ],
+ "claims": [
+  "ClaudeKit is best for normal marketing/website pages; UI UX Pro Max is the one to use for app UI",
+  "Superpowers is 'by far the coolest skill I've ever downloaded'; if you install only one, pick Superpowers",
+  "Addy Osmani's agent-skills is similar to Superpowers but covers the whole SDLC from ideation through development, testing and migration"
+ ],
+ "how_to_steps": [
+  "Install ClaudeKit skills for marketing/landing pages",
+  "Install UI UX Pro Max and invoke it while building app screens",
+  "Install Superpowers and use its brainstorm feature (pops up a browser to walk through design choices) before building features",
+  "Optionally trial addyosmani/agent-skills for an end-to-end engineering workflow"
+ ],
+ "on_screen_only": [
+  "1. CLAUDEKIT github.com/mrgoonie/claudekit-skills",
+  "2. UI UX PRO MAX github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "3. SUPERPOWERS github.com/obra/superpowers",
+  "AGENT SKILLS github.com/addyosmani/agent-skills",
+  "Browser tab: superschema.ai landing page 'THE AI ECONOMY PLATFORM -- If AI can't understand you, it can't...'"
+ ],
+ "cta": "comment with skills you find valuable",
+ "relevance": {
+  "score": 4,
+  "why": "Same creator Haji already follows (Trillion/SuperSchema/Impeccable); names three concrete design-oriented skills with GitHub paths, directly applicable to app UI quality"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Superpowers (obra) brainstorm-first workflow and UI UX Pro Max are cheap to install and test on one feature; ClaudeKit only if building marketing pages. One evening to trial all three"
+ },
+ "verify": [
+  "Does obra/superpowers still work on current Claude Code plugin format and does the brainstorm browser UI exist as described?",
+  "Is nextlevelbuilder/ui-ux-pro-max-skill maintained and does it conflict with Impeccable/awesome-design skills already liked?",
+  "Is mrgoonie/claudekit-skills free/open-source or a funnel for a paid kit?",
+  "Overlap between addyosmani/agent-skills and the Osmani command set already in the liked list"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Adds Superpowers (obra), UI UX Pro Max and ClaudeKit -- none in the liked set; the liked set covered Impeccable, awesome-design, Taste skill and Osmani's commands but not these three"
+ }
+}

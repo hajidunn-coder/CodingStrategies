@@ -1,0 +1,66 @@
+{
+ "id": "7674101926191058190",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7674101926191058190",
+ "creator": "mr.paidsocial",
+ "title": "Use here.now (Vercel's agent-friendly micro-site builder) so Claude Code publishes review pages: timestamped video comments, 50-creative pick-your-favorites canvases, lead-magnet galleries",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "here.now",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Vercel product; 'micro website builder specifically made for AI agents' with its own agent integration; URLs like timber-olive-p49x.here.now"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "edits videos / motion graphics, renders versions (V9, V10) and publishes canvases"
+  },
+  {
+   "name": "Remotion",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "render log mentions reduced-worker renders at ~3.7GB free memory (implied React video renderer)"
+  }
+ ],
+ "claims": [
+  "He edits entire videos and motion graphics with Claude Code",
+  "Reviewing a video inside the chat and typing feedback below it 'sucks', so Claude builds an HTML page where he watches and leaves comments per timestamp, then he tells Claude 'I left all the feedback on the site' for the next version",
+  "Generated 50 ad creatives into a canvas, selected favorites, then had Claude build the ads from the favorites",
+  "Pages are mobile friendly ('I'm usually doing this from bed'); also used for lead-magnet sites showing original vs AI ads with prompts underneath"
+ ],
+ "how_to_steps": [
+  "Give Claude Code the here.now agent integration",
+  "After each render, have Claude publish an HTML review page with the video and a timestamp comment box",
+  "Leave comments on the page; tell Claude 'I left all the feedback on the site, do the next version'",
+  "For creative batches: have Claude publish a selectable canvas of all variants, pick favorites, then build from favorites",
+  "Reuse the same flow for shareable lead-magnet galleries with prompts under each example"
+ ],
+ "on_screen_only": [
+  "Claude log: 'V10 - all 10 notes + music removed. Canvas: https://timber-olive-p49x.here.now'; 'Background task completed... Restart V10 render... ~3.7GB free... reduced-worker render is slower but still running'; 'V10 is live: 720p preview in this chat'",
+  "Review page: 'Comments - Click a timestamp to jump', comment '#1 - 1:48.8'",
+  "here.now dashboard list: 'An animated eight card Instagram carousel', 'The Ai Ads Alchemists 100 Claude Code A...', 'A curated review canvas featuring 100 creati...', 'wander-forge-6svc', 'Anniversary Film Review - A collection of Pixar style music video clips', 'AI Ads Workflow Slides', 'Published by you'",
+  "Style grid page: 'BLUEPRINT SCHEMATIC', 'Film Noir', 'Gingerbread Candy', 'Graffiti', 'Holographic Wireframe', 'Ice Sculpture', 'Charcoal Sketch', 'Comic', 'Knitted Yarn', 'Lego Brick', 'Low Poly', each with a 'Prompt' link",
+  "Ad canvas with 'Select / Copy picks / Clear' controls and numbered ad tiles"
+ ],
+ "cta": "'if you want a link to check this out' (comment/DM for the here.now link)",
+ "relevance": {
+  "score": 3,
+  "why": "The pattern (agent publishes a review surface; you annotate; agent reads annotations) is strong for async review from a phone. Haji's Claude Code already has Artifacts with comments that do this natively, so here.now is a parallel tool rather than a need."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Adopt the workflow, not the tool: standardize 'publish a review artifact with per-item comment slots' for creative/video/batch outputs using the built-in Artifact + ArtifactComments. Zero new accounts; an afternoon to template."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New tool (here.now by Vercel) and a new technique: agent-built review pages with timestamped comments as the feedback loop for Claude-edited video and bulk creative selection. Liked set only had open-slide's comment-to-edit loop for slides."
+ },
+ "verify": [
+  "Does here.now exist as a Vercel product with an agent API/skill, and what does it cost?",
+  "Is Remotion the actual renderer (log only implies it)?",
+  "Haji's existing Artifact tool already supports comments to Claude; is a third-party host needed at all?"
+ ]
+}

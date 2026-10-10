@@ -1,0 +1,52 @@
+{
+ "id": "7680239458679131406",
+ "url": "https://www.tiktok.com/@leadwithzoe/video/7680239458679131406",
+ "creator": "leadwithzoe",
+ "title": "Five lesser-known Claude Code desktop features: side chat on highlighted text, bypass-permissions toggle, cloud routines, grouping sessions into folders, dock icon bounce when Claude needs you",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code desktop app",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "side chat, bypass permissions, cloud routines, task groups, dock bounce"
+  }
+ ],
+ "claims": [
+  "Side chat: highlight text, press side chat, converse about just that selection",
+  "Bypass permission mode makes approvals automatic instead of clicking approve",
+  "Routines/scheduled tasks used to be local (computer must be open); cloud routines remove that",
+  "You can group tasks/sessions into folders",
+  "'In Claude Code 5' the Claude dock icon bounces when it needs something from you"
+ ],
+ "how_to_steps": [
+  "Highlight text in a response and choose 'side chat'",
+  "Settings: toggle 'Allow bypass permissions mode'",
+  "Create routines as cloud routines rather than local",
+  "Group sessions into folders",
+  "Enable dock icon bounce notification"
+ ],
+ "on_screen_only": [
+  "Title: '5 underrated claude code features'; list builds: 1. side chat 2. bypass permission 3. cloud routine 4. group 5. icon bounce",
+  "Settings dialog text: 'Allow bypass permissions mode - Bypass all permission checks and let Claude work uninterrupted. This works well for workflows like fixing lint errors or generating boilerplate code. Letting Claude run arbitrary commands is risky and can result in data loss, system corruption, or data exfiltration (e.g., via prompt injection attacks). See best practices for safe usage' with toggle",
+  "Scheduled tasks list panel and a settings/environment panel (unreadable)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Small ergonomics wins for someone living in Claude Code all day; side chat and dock bounce reduce babysitting. Bypass permissions carries the exact prompt-injection risk the dialog warns about."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Five minutes to try side chat, folders and dock bounce. Keep bypass permissions off except in sandboxed cloud sessions."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds minor UI features (side chat, session folders, dock bounce) not in the liked set; cloud routines and bypass mode were already covered."
+ },
+ "verify": [
+  "Is 'Claude Code 5' a real version label or the creator conflating with Claude 5?",
+  "Does side chat exist in the CLI or only the desktop app?"
+ ]
+}

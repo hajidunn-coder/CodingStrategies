@@ -1,0 +1,54 @@
+{
+ "id": "7693198478087949581",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7693198478087949581",
+ "creator": "chase.builds.ai",
+ "title": "Ponytail skill (145k stars, MIT): makes Claude write the minimum code (one <input> instead of a date-picker library); author's benchmark on 12 feature tests shows ~half the code and ~20% lower cost, and says Caveman used more tokens",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Ponytail",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "Claude Code skill; GitHub badge Star 145k, Fork 7.8k; MIT"
+  },
+  {
+   "name": "Caveman",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "token-saving skill the Ponytail author benchmarked against; reportedly used more tokens"
+  }
+ ],
+ "claims": [
+  "145,000 developers starred it",
+  "On 12 feature tests in a repo it wrote about half the code and cost about 20% less (author's benchmark, not the creator's)",
+  "Caveman used more tokens in the same benchmark",
+  "Every line your agent writes, your team has to review -- the real cost of over-building"
+ ],
+ "how_to_steps": [
+  "Install the Ponytail skill (MIT, free)",
+  "Ask for features as usual; the agent prefers native/platform features over libraries and wrappers"
+ ],
+ "on_screen_only": [
+  "GitHub header: Fork 7.8k, Star 145k, '145K devs starred it'",
+  "Cards: 'Claude writes less code', 'the laziest senior dev', 'library + wrapper', 'one input tag', '~half the code', '~20% cheaper', 'Caveman used more', 'their numbers, not mine', 'every line = review', 'MIT, free'"
+ ],
+ "cta": "repo link in bio",
+ "relevance": {
+  "score": 2,
+  "why": "Fourth sighting of Ponytail; the only addition is the Caveman comparison and the creator's honest caveat that the numbers are the author's"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Same action as before: pick one de-bloat layer (Ponytail vs /simplify + pstack) and measure on one real task; do not stack them"
+ },
+ "verify": [
+  "Star count inconsistency across creators (100k / 145k / ~153k) -- confirm the repo",
+  "Independent benchmark vs. author's; the liked caveman fact-check found claims inflated",
+  "Whether 'lazy' output skips tests or error handling in practice"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Ponytail x3 in liked set); adds only the Ponytail-vs-Caveman benchmark remark"
+ }
+}

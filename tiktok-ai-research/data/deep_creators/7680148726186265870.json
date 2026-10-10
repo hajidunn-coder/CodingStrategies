@@ -1,0 +1,71 @@
+{
+ "id": "7680148726186265870",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7680148726186265870",
+ "creator": "colton.deannn",
+ "title": "Usage-limit hack: run /context to see every MCP server, skill, agent and memory file loaded each session, have Claude prune the unused ones, and keep CLAUDE.md under 200 lines",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "/context (Claude Code)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in command showing context usage by category and every loaded MCP tool/agent/skill/memory file"
+  },
+  {
+   "name": "CLAUDE.md",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "project instructions file; keep <200 lines because it is read every session"
+  },
+  {
+   "name": "Claude Code desktop app",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'Claude Code' tab UI; project 'Seedance2.0'"
+  },
+  {
+   "name": "superpowers plugin",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "superpowers:write-plan, superpowers:execute-plan, superpowers:code-reviewer appear in his loaded agents/skills list"
+  }
+ ],
+ "claims": [
+  "/context shows all skills and MCP servers that render every single session",
+  "Removing unused ones 'should save you a lot of space'",
+  "CLAUDE.md is read every session; anything much past 200 lines burns tokens fast"
+ ],
+ "how_to_steps": [
+  "In Claude Code type /context and send it",
+  "Read the per-category table (system prompt, system tools, MCP tools, custom agents, memory files, skills, messages, free space)",
+  "Ask Claude: 'help me get rid of things that I am not using in this project'",
+  "Open the project's CLAUDE.md and trim it to under ~200 lines"
+ ],
+ "on_screen_only": [
+  "Context Usage panel: 'Model: claude-opus-4-7 [1m]' (low confidence), 'Tokens: 59.3k (4%)'; rows System prompt ~9.6k 1.0%, System tools ~10.3k, MCP tools (deferred) ~17.6k, Custom agents, Memory files ~11k, Skills, Messages, Free space ~92%, Autocompact buffer 33k 3.3%",
+  "MCP tools listed: mcp__claude_ai_Gmail_* (authenticate, search, etc.), mcp__claude_ai_Google_Calendar_*, mcp__playwright_browser_* (navigate, click, type, snapshot, console_messages...)",
+  "Custom agents: harness-optimizer (User 47), planner (User 77), security-reviewer (User 112), superpowers:code-reviewer (Plugin 353)",
+  "Memory files: /Users/coltondean/.claude/rules/common/coding-style.md, git-workflow.md, testing.md, performance.md, hooks.md, code-review.md, development-workflow.md, security.md; /Users/coltondean/Documents/Seedance2.0/CLAUDE.md (~387 tokens)",
+  "Skills list includes build-fix, save-session, checkpoint, superpowers:execute-plan, codebase-..., brand-design, update-config, keybindings-help, simplify, fewer-permission-prompts, security-review, init",
+  "CLAUDE.md for 'Seedance2.0' with '## Installed project skills', '## Fonts' (Fontshare list: Helvetica, Satoshi?, ...), '## Design principles' sections around lines 127-154"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 4,
+  "why": "Directly attacks the Max-plan limit pain; /context audit is a 5-minute habit any time-poor founder can adopt"
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Run /context in each active project, prune unused MCP servers/plugins/rules, cap CLAUDE.md -- an hour across all repos. Note: his own screen shows MCP tools and skills are already 'deferred', so savings are smaller than implied; the real wins are memory/rules files and CLAUDE.md"
+ },
+ "verify": [
+  "Do deferred MCP tools/skills actually cost tokens per session, or only their names? His screenshot says '(deferred)'",
+  "Is 200 lines a real threshold or a rule of thumb? Compare with Anthropic's own 'keep CLAUDE.md thin' guidance in the liked set",
+  "Whether 'tokens' here are the main driver of plan usage vs. output/agent turns"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a concrete /context audit-and-prune routine; liked set had 'keep CLAUDE.md thin' advice and context-transfer prompts but not the /context inspection step"
+ }
+}

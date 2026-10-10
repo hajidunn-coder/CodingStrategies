@@ -1,0 +1,57 @@
+{
+ "id": "7673639572936477982",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7673639572936477982",
+ "creator": "buildwithneej",
+ "title": "'last30days' Claude Code skill: one command searches Reddit, YouTube, X, LinkedIn, HN, GitHub and Polymarket for what real people said in the last 30 days and ranks results by engagement",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "last30days skill",
+   "kind": "skill",
+   "where_seen": "transcript",
+   "detail": "/last30days \"<topic>\" -- free, open-source; sources: reddit, x, youtube, polymarket, hn, github, web"
+  },
+  {
+   "name": "Polymarket",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "used as a signal source ('real-money odds' vs 'pundit's guess')"
+  }
+ ],
+ "claims": [
+  "Ranks by real engagement: a Reddit thread with 15 upvotes beats a blog post nobody read",
+  "Cold-email query returned up-to-date practices from Reddit, YouTube and LinkedIn",
+  "Free and open source; creator ran it in every session that week"
+ ],
+ "how_to_steps": [
+  "Install the last30days skill",
+  "Run /last30days \"cold email tactics\" (or any topic)",
+  "Skill pulls threads/videos/posts from the last 30 days across sources, matches YouTube transcripts by timestamp, cross-checks Polymarket odds, and returns results ranked by engagement"
+ ],
+ "on_screen_only": [
+  "Terminal 'claude -- /last30days': '> /last30days claude code skills -- synced 4 sources · ranked by engagement', '#1 trending · 57K', cards r/ClaudeAI 'searched this before I even opened claude', @postmortem_dev 'found the skill everyone's using rn', transcript 12:04 'pulls receipts before you write a line', 'will this replace manual research?'",
+  "Status lines: 'scanning r/ClaudeAI, r/ChatGPTCoding', 'pulling X threads from the last 30 days', 'matching YouTube transcripts for timestamps', 'cross-checking Polymarket odds'",
+  "Cold email run: r/ColdEmail 'operators comparing subject-line tests', @gtm_ops 'threads on deliverability changes', transcript 8:41 'walkthrough of a working sequence'; '7 sources indexed · ranking by engagement'; 'raw items collected 118, from the last 30 days 55'",
+  "'SIGNAL CHECK' r/marketing 'the cold email breakdown that's actually working right now' 1,489 upvotes; Polymarket '$66K volume' vs 'PUNDIT'S GUESS'; 'DRY RUN: 0 results across 7 sources'",
+  "Footer text like 'last30days.skill' / 'v2' (small, low confidence); terminal panels look stylized/mocked rather than raw output"
+ ],
+ "cta": "comment 'research' for the link",
+ "relevance": {
+  "score": 3,
+  "why": "A fast 'what's working right now' research tool fits a time-poor founder doing marketing or feature research, if it really scrapes those sources"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Install and run one query on a topic Haji cares about (e.g. VA claims community chatter, app marketing). Needs API keys/scrapers for X, Reddit, YouTube -- expect setup friction and possible breakage"
+ },
+ "verify": [
+  "Repo name/owner and whether it is free -- the screen UI looks like a designed mock, not real terminal output",
+  "How it accesses X/Reddit/LinkedIn (official APIs, Apify, or scraping that may break or violate ToS)",
+  "Token cost per run and whether results are cached"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: a time-boxed, engagement-ranked social research skill; liked set had Apify scraping and hook scoring but no 'recent discourse' research command"
+ }
+}

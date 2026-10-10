@@ -1,0 +1,41 @@
+{
+ "id": "7624588828535229726",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7624588828535229726",
+ "creator": "ethanplusai",
+ "title": "Skit: walking through town, creator asks JARVIS by phone for his schedule, has it create briefs for two meetings and open them in the desktop browser, and gets a pitch summary for a fictional 'Meridian Account'",
+ "category": "other",
+ "tools": [
+  {
+   "name": "JARVIS",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "accessed remotely from a phone; claims to create files and open them on the desktop"
+  }
+ ],
+ "claims": [
+  "JARVIS reads the calendar (2:30 client call, 4:00 design review), pending tasks, creates meeting briefs and opens them on the desktop browser remotely",
+  "Recalls tomorrow's pitch context (Meridian Account, clean energy rebrand, three design concepts) -- reads as scripted demo data"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "'POV: You have your own JARVIS that manages all of your work for you remotely'",
+  "Phone in hand while walking a downtown street with Tampa Bay Rays signage; no app UI visible"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Scripted lifestyle skit with no implementation detail; remote phone-to-desktop control is the only interesting capability and it is not shown"
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement; the real how-to is in the liked JARVIS 2.0 video"
+ },
+ "verify": [
+  "Whether remote phone access exists in the public repo or is staged"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Jarvis skits); no new tool or technique"
+ }
+}

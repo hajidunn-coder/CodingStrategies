@@ -1,0 +1,80 @@
+{
+ "id": "7692935794222238998",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7692935794222238998",
+ "creator": "artificialcorner",
+ "title": "Silent 7-second clip: creator 'tried 33 Claude Code skills' in a scored tryout board and keeps 6 (skill-creator, grill-me, lint-fixer, api-mocker, readme-glow, branch-namer visible); full list lives in the caption",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Skill Creator (anthropics/skills)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "anthropics/skills card scored 9.4 and kept; caption item 1 'Skill Creator'"
+  },
+  {
+   "name": "grill-me (mattpocock/skills)",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "mattpocock/skills card 'grill-me' scored ~9.x and kept"
+  },
+  {
+   "name": "lint-fixer",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'Auto-fixes every lint error' card, checked"
+  },
+  {
+   "name": "api-mocker",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'Mock any API from a spec' card, checked"
+  },
+  {
+   "name": "readme-glow",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "'Prettier READMEs in one pass' card -- shown rejected (red X, score ~5.7) in one frame"
+  },
+  {
+   "name": "branch-namer",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "card visible in last frame, score not shown"
+  }
+ ],
+ "claims": [
+  "Tried 33 Claude Code skills; 6 are worth keeping",
+  "Scoring rule shown on the board: keep if score >= 8"
+ ],
+ "how_to_steps": [
+  "Install a batch of skills into a scratch folder (/best-claude-code-skills, 33 installed)",
+  "Run each on a real task and score it out of 10",
+  "Keep only those scoring >= 8; uninstall the rest"
+ ],
+ "on_screen_only": [
+  "Overlay: 'I tried 33 Claude Code skills so you don't have to' / 'Here are the 6 best skills'",
+  "Board UI: 'Skill Tryouts  /best-claude-code-skills · 33 installed · scoring 4/33 ... 9/33', 'KEPT 0/7 ... 1/7', 'SCORING · KEEP >= 8'",
+  "Cards: readme-glow (Prettier READMEs in one pass), skill-creator, lint-fixer (Auto-fixes every lint error), grill-me (mattpocock/skills), api-mocker (Mock any API from a spec), branch-namer, anthropics/skills (9.4, kept)",
+  "Claude desktop app tabs '03-claude-skills', 'Start chat', 'Share'; orange Claude mascot on top of monitor",
+  "Caption (truncated): 'Here are the 6 Claude Code skills I actually use: 1. Skill Creator \"/...'"
+ ],
+ "cta": "none visible (list is in caption)",
+ "relevance": {
+  "score": 2,
+  "why": "No audio and the list of six is cut off in the caption; the only solid takeaways are grill-me (Matt Pocock) and the tryout-and-score discipline"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a 10-minute look at mattpocock/skills (grill-me interrogates your spec before coding) and anthropics/skills skill-creator; the 'tryout board' is a visual, not a tool"
+ },
+ "verify": [
+  "Fetch the full caption to get all 6 skill names",
+  "Does mattpocock/skills exist and what does grill-me do exactly?",
+  "Are lint-fixer / api-mocker / readme-glow / branch-namer real published skills or placeholder names on a mock board?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Adds mattpocock/skills 'grill-me' and the 'install many, score, keep >= 8' pruning practice; liked set had skill lists but not a scoring/pruning method"
+ }
+}

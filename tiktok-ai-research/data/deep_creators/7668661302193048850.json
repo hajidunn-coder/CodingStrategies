@@ -1,0 +1,55 @@
+{
+ "id": "7668661302193048850",
+ "url": "https://www.tiktok.com/@nocode.joshua/video/7668661302193048850",
+ "creator": "nocode.joshua",
+ "title": "Second-hand report that Boris Cherny (Claude Code creator) recommends deleting your CLAUDE.md files and skills every six months because they were written for older models",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "CLAUDE.md and skills"
+  },
+  {
+   "name": "Claude Opus 5",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "release the talk was about, per creator"
+  }
+ ],
+ "claims": [
+  "Boris Cherny (on-screen: 'Head of Claude Code, Anthropic') said at a conference around the Opus 5 release that he recommends deleting all CLAUDE.md files and skills every six months",
+  "Reason given: instructions were written for models that no longer exist; newer models need much less context/instruction",
+  "Creator says it is 'day 411' of his series (on-screen card says 'Day 11')"
+ ],
+ "how_to_steps": [
+  "Every ~6 months, delete (or at least re-audit) CLAUDE.md files and skills",
+  "Re-create only the instructions the current model actually still needs"
+ ],
+ "on_screen_only": [
+  "Title card: 'You Need to DELETE your Claude skills and Claude.md file'",
+  "Card: 'Day 11 of Breaking down AI for You'",
+  "Lower-third on conference clip: 'Boris Cherny - Head of Claude Code, Anthropic'",
+  "Graphics: 'Claude Skills' folder, 'Better Models', 'Less Context'"
+ ],
+ "cta": "'what do you guys think?' (comment engagement)",
+ "relevance": {
+  "score": 3,
+  "why": "Haji has a large skill library and many CLAUDE.md/rule files; stale model-era rules (NEVER lists, workarounds for old failure modes) are real context bloat. But wholesale deletion would destroy business-specific knowledge (email voice, council gate, handoff formats)."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Do a periodic audit, not a purge: diff each skill/CLAUDE.md for rules that compensate for old model behavior and remove them; keep domain knowledge. A half-day calendar task every model generation."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Adds a cadence heuristic (re-set instruction files every ~6 months / each model generation) on top of the already-liked 'Anthropic cut 80% of the system prompt, keep CLAUDE.md thin' video. Mostly a reframing; the quote is second-hand."
+ },
+ "verify": [
+  "Find the actual Boris Cherny talk/clip; did he say 'delete' or 'review'?",
+  "Is 'Opus 5' the correct model name for the release he references?",
+  "Day count inconsistency (411 vs 11) suggests sloppy reporting"
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": "7665880390439111956",
+ "url": "https://www.tiktok.com/@millee.md/video/7665880390439111956",
+ "creator": "millee.md",
+ "title": "Three pre-launch security fixes for vibe-coded apps with the exact prompts: enable RLS on every table, rate-limit paid routes, move all keys server-side",
+ "category": "security-legal",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "mock terminal 'Welcome to Claude Code! cwd: ~/my-app'"
+  },
+  {
+   "name": "Row Level Security",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "database-level per-user policies (Supabase/Postgres style)"
+  }
+ ],
+ "claims": [
+  "By default many vibe-coded apps let anyone pull other users' data straight from the database",
+  "Without rate limiting someone can loop your endpoints and cause a $10,000 API bill overnight (screenshot shows $10,335.23 usage)",
+  "API keys in browser-side code can be found and used to spend your money"
+ ],
+ "how_to_steps": [
+  "Prompt: 'turn on row level security for every table and write policies so each user can only ever read and write their own rows'",
+  "Prompt: 'add rate limiting to all my API routes, especially anything that costs money per request'",
+  "Prompt: 'move every key and secret to the server side and confirm nothing sensitive ships in the frontend'",
+  "Do all three before anyone else touches the app"
+ ],
+ "on_screen_only": [
+  "Overlay: 'Securitymaxxing your vibecoded app'",
+  "Mock Claude output: 'Enabling row-level security... RLS enabled on all 12 tables, policies written: own rows only, done - nobody can touch anyone else's data'",
+  "Mock output: 'Adding rate limits... limiter on every route 100 req/min'",
+  "Suggested follow-up prompt in input box: 'try \"audit my auth flow\"'",
+  "Usage dashboard screenshot '$10335.23 Last 30 days' with daily $300+ bars"
+ ],
+ "cta": "follow for part two",
+ "relevance": {
+  "score": 4,
+  "why": "Exactly the launch checklist a solo founder shipping Claude-built apps needs; the three prompts are copy-pasteable."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap and essential: run the three prompts (plus 'audit my auth flow') as a pre-launch checklist on every app, ideally as a skill. Already partly covered by Haji's security-review skill and liked content."
+ },
+ "topic_match": "security-legal",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (RLS/authZ, six login gaps, top-5 vibe-coding holes); adds nothing beyond verbatim prompts"
+ },
+ "verify": [
+  "RLS only applies to Postgres/Supabase-style DBs; need equivalent for other stacks",
+  "100 req/min is arbitrary; per-route limits for paid endpoints should be lower"
+ ]
+}

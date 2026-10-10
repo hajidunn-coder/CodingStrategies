@@ -1,0 +1,73 @@
+{
+ "id": "7681005047458696461",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7681005047458696461",
+ "creator": "mr.paidsocial",
+ "title": "Media buyer has Claude Code stitch one ad body with 21 recorded hooks into 21 test-ready variants (auto loudness match, descriptive filenames) and proposes mining top ads into hook/body/CTA parts to remix",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "did the whole job via ffmpeg-style commands; ran on files over SMB share (smb://100.67.237.120/...)"
+  },
+  {
+   "name": "Arcads",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "body ad file named arcads-ad-v5.mp4 (AI UGC ad tool); referenced GitHub repo path partially legible 'github.com/.../arcads-claude-code'"
+  },
+  {
+   "name": "CapCut",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "the manual alternative, one variant at a time"
+  },
+  {
+   "name": "AI Ad Alchemists (Skool)",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "his Skool community, 680+ members; upcoming 'Edit videos with Claude Code' course"
+  }
+ ],
+ "claims": [
+  "21 unique ads produced in ~5 minutes from one body + 21 hooks",
+  "Claude noticed hook clips had different volume than the body and normalized it unprompted (screen: loudness -14.01 LUFS / -1.29 dB, identical SPS/PPS encoder params)",
+  "It screenshotted each hook to generate meaningful filenames (e.g. cap-cinematic-body, hyperfocus-cinematic, gut-check, thumbstopper)",
+  "Naming alone would take a media buyer ~30 minutes manually"
+ ],
+ "how_to_steps": [
+  "Record N hooks as separate clips; keep one edited 'body' ad",
+  "Prompt: 'I want you to take this body: <path to body.mp4> and combine it with every hook here: <hooks folder>. We should end with 21 videos.' Ask for a unique naming convention per hook+body",
+  "Claude checks specs (1080x1920, 30fps, h264), matches loudness, concatenates, verifies audio/video, writes hook-NN-<name>-body-edited.mp4",
+  "Next level: download your top ads from the ad account (last 90 days), have Claude split each into hook / body / CTA, then mix and match every element"
+ ],
+ "on_screen_only": [
+  "Prompt text: 'I want you to take this body: smb://100.67.237.120/Caleb Personal/AI Projects/Caleb Projects/internal-automations/Videos/arcads-ad-0901/arcads-ad-v5.mp4 and combine it with every hook here: smb://100.67.237.120/.../Videos/hooks ... We should end with 21 videos.'",
+  "Claude transcript lines: '21 hooks, one body... body share identical specs (1080x1920, 30fps, h264 yuv420p)... hooks run 47s', 'v8 has byte-identical SPS/PPS to v5 and the same loudness treatment (-14.01 LUFS / -1.29 dB...)', 'Ran a command, read cmp-3.png', 'Six resolved, and one surprise: H01's title says sparkling water...', 'Captions run throughout v8. Now mapping each hook to...'",
+  "Finder 'Final Ads' on Caleb's MacBook Pro: hook-05-thumb-st...-body-edited.mp4, hook-06-lookalike-..., hook-07-lookalike, hook-08/09-launch-da..., hook-10-hyperfocu..., hook-11-cap-knitte..., hook-12-cap-anime-body-edited.mp4, hook-13/14-burn-rate, hook-15-mute-butt..., hook-16/17-algorithm, hook-18-conversio..., hook-19-pixel-perf..., hook-20-lookalike",
+  "'Edited Body Versions' folder: hook-01-cap-cinematic-body-edited.mp4, hook-02-hyperfocus-cinematic-body-edited.mp4, hook-03-...-cinematic, hook-04-...-board",
+  "Timeline UI 'burn-rate-anime.mp4' with SCENES / SPEECH / ON-SCREEN TEXT / CTA tracks; HOOK | BODY | CTA grid graphic",
+  "Overlays: '1 AD INTO 21 ADS WITH CLAUDE CODE', 'NEW COURSE: EDIT VIDEOS WITH CLAUDE CODE'",
+  "Claude desktop 'Start a side chat / Reply' UI (Claude app, not terminal)"
+ ],
+ "cta": "comment 'skool' for the community/course link",
+ "relevance": {
+  "score": 3,
+  "why": "Useful only if Haji is running paid video ads for his apps; the technique (Claude Code + ffmpeg as a batch video assembler) is generic and cheap"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "If running Meta/TikTok ads: one afternoon to set up a hooks/ folder + body and let Claude Code batch-assemble and name variants. Pairs with the liked 'Claude Code Meta ads skills' and hook-scoring videos"
+ },
+ "verify": [
+  "Is ffmpeg actually the tool under the hood, and does concatenation re-encode (quality loss) or stream-copy?",
+  "Whether the 'arcads-claude-code' GitHub repo seen on screen is public",
+  "Ad-platform policy on mass variants (creative fatigue / account health)"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "New technique: local batch video assembly (hook x body permutations, loudness normalization, auto-naming) with Claude Code; liked set covered ad buying skills and hook scoring but not creative production"
+ }
+}

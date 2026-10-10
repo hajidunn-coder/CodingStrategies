@@ -1,0 +1,70 @@
+{
+ "id": "7690723954218028301",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7690723954218028301",
+ "creator": "mr.paidsocial",
+ "title": "Claude Code as video editor: transcribes ~10 hour-long Skool guest sessions, pulls relevant clips into 9:16 Remotion mashups with captions, speaker tags and end cards, then pushes them straight into his connected Meta Ads account",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "transcribes, selects clips, assembles mashups, uploads ads"
+  },
+  {
+   "name": "Remotion",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "spec note: '9:16 (motion graphics) - branded header, speaker cards, karaoke captions, progress bar, CTA + branded end card - Remotion'"
+  },
+  {
+   "name": "Meta Ads Manager",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "connected to Claude Code; 11 'Mashup' ads listed with ad-set delivery and spend columns"
+  },
+  {
+   "name": "Skool",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "his community (The AI Ad Alchemists); source of guest-speaker recordings and the thing the ads promote"
+  }
+ ],
+ "claims": [
+  "Claude Code can extract video content, cut it together, add text overlays, voiceovers, B-roll and subtitles",
+  "It dissected ~10 hour-long guest sessions, created themed mashups (e.g. '5 operators on what AI actually changes', 'Why ugly ads beat polished ones'), with a dynamic name/role tag under each speaker",
+  "All mashups are already live in his Meta ad account; no editor, no CapCut; done 'while I was at lunch'"
+ ],
+ "how_to_steps": [
+  "Point Claude Code at long-form recordings; have it transcribe them",
+  "Give it themes; it pulls the most relevant quotes/clips per theme",
+  "Have it build 9:16 Remotion compositions: branded header, speaker card with name/role tag, karaoke captions, progress bar, CTA, branded end card",
+  "Render multiple variations",
+  "With Meta Ads connected, have Claude upload them as ads"
+ ],
+ "on_screen_only": [
+  "Spec text: '9:16 (motion graphics) - branded header, speaker cards, karaoke captions, progress bar, CTA + branded end card - Remotion'",
+  "Mashup titles: 'THE AI AD ALCHEMISTS - AI ADS REALITY CHECK - 5 OPERATORS ON WHAT AI ACTUALLY CHANGES - Founders and buyers, no theory, one line each'; 'CREATIVE TEARDOWN - WHY UGLY ADS BEAT POLISHED ONES - 6 operators on relevance over production'",
+  "Speaker tags: 'Barry Hott', 'Max Rosewater - DTC AGENCY FOUNDER', others",
+  "Meta Ads Manager rows: 'Mashup 1 9x16 | The Heavy Hitters', 'Mashup 10 | Director's Cut', 'Mashup 8 | Five Punches In Thirty', 'Mashup 9 | The Full Room', 'Mashup 7 | Let The Data Speak', 'Mashup 6 | Leverage Or Get Left', 'Mashup 11 | The Heavy Hitters', 'Mashup 5 | You're Doing Nothing', 'Mashup 3 | Stop Making It Pretty', 'Mashup 2 | Build It Yourself', 'Mashup 4 | Show Me The Spend'; columns 'Ad set delivery', 'Amount spent $0.00'; tabs 'Had delivery', 'ROAS reporting'"
+ ],
+ "cta": "join his Skool community",
+ "relevance": {
+  "score": 3,
+  "why": "A real, working content-repurposing pipeline (long-form -> ad variants -> ad account) that a solo founder could run for his own products; depends on having long-form footage and Meta ads spend."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Feasible with Remotion + Whisper transcription + a Meta Marketing API MCP; a weekend to build a repeatable skill. Only worth it if Haji is running video ads or repurposing recordings."
+ },
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set had Remotion as a repo pitch, Claude Motion, and a reaction to Claude Code running Meta ads; this is the first end-to-end technique: transcript-driven clip selection, Remotion mashup templates with dynamic speaker tags, and direct upload to Meta Ads."
+ },
+ "verify": [
+  "How is Meta Ads 'connected' (official MCP, Marketing API script)?",
+  "Transcription tool used (Whisper?) and render time/cost for 11 variants",
+  "Rights to reuse guest speakers' footage in ads"
+ ]
+}

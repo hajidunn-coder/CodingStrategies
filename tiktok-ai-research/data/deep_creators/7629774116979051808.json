@@ -1,0 +1,80 @@
+{
+ "id": "7629774116979051808",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7629774116979051808",
+ "creator": "bettercreatingofficial",
+ "title": "Teaser: '7 steps' to set up Claude Cowork on Mac (email, calendar, voice, Notion, scheduled tasks); steps not given, points to his YouTube/Cowork OS",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Mac desktop app, Chat/Cowork/Code tabs; scheduled tasks"
+  },
+  {
+   "name": "Notion",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "connected as workspace / second brain"
+  },
+  {
+   "name": "skill-creator",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "listed under Skills in his Cowork folder"
+  },
+  {
+   "name": "Cowork connectors",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Canva, Context7, GitHub, Gmail, Google Calendar, Google Drive, Make, Notion, Slack, Supabase, Vercel, Claude in Chrome; not connected: Apify MCP, Figma, Filesystem"
+  },
+  {
+   "name": "Opus 4.6",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "model picker in Cowork"
+  },
+  {
+   "name": "Simon Pittman / Systems Made Better",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "simonpittman.com 'Better Tech for Non-Technical'; AgentOS Master Profile"
+  }
+ ],
+ "claims": [
+  "Cowork now reads his email, manages calendar, writes in his voice, connects to Notion workspace and second brain, makes PowerPoints, cleans desktop, codes websites",
+  "Scheduled tasks in Cowork run while he sleeps",
+  "7 steps, 'a morning's work', no code needed; puts you 'ahead of 99% of people'"
+ ],
+ "how_to_steps": [
+  "No steps shown; video is a hook for a longer tutorial. Visible structure: a '/Users/simon/Claude CoWork' folder of context markdown files, skills, connectors, personal plugins, and scheduled tasks (weekday inbox triage, weekly briefing)"
+ ],
+ "on_screen_only": [
+  "Cowork home: 'Let's knock something off your list'; Scheduled: 'Weekday inbox triage - Tomorrow at 9:37', 'Weekly briefing - Tue 24 Mar at 10:00'",
+  "Scheduled task detail: 'Weekly briefing', Active, Description 'Summarise my current events, urgent or important emails and tasks and projects for the week', Folders '/Users/simon/Claude CoWork', Repeats 'Every Tuesday at 10:00', Always allowed 'Gmail: Create Gmail Draft'",
+  "Folder files: my-context-map.md, about-me.md, project-memory-template.md, project-brief-template.md, current-state-audit.md, onboarding-coach-concept.md, architecture-decisions.md, project-memory.md, project-brief.md; Skills: skill-creator",
+  "Personal plugins: Apollo (Anthropic & Partners), Customer support, Brand voice, Legal, Engineering, Marketing strategy, Social repurposing, Youtube specialist, Specialist sub-agents, Apollo (Local)",
+  "Figma 'ABM_Design_Vision_v2.2' mockup: 'Coaches - Welcome back, Simon - Consolidate Coach / Architect Coach / Scale Coach'",
+  "Phone 'Dispatch' chat: 'Please could you find out what's going on in my calendar today?' returning a day schedule",
+  "Claude prompt: 'What do you want to tackle first on the CoWork OS? 1 Build it all (Recommended) 2 Onboarding coach plugin 3 Template files + README 4 Distribution format first'; 'Located AskUserQuestion tool in codebase'"
+ ],
+ "cta": "implicit: follow for the 7 steps (YouTube channel / bettercreating.com)",
+ "relevance": {
+  "score": 2,
+  "why": "Hook-only video for a non-technical Cowork audience; Haji already works in Claude Code with connectors and skills. The visible folder layout (about-me, project-brief, project-memory, architecture-decisions) is the only reusable bit."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing actionable in the clip itself; the steps live elsewhere behind a product."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (Cowork setups: Karpathy wiki, board of advisors, four-agent team in Cowork already liked)"
+ },
+ "verify": [
+  "Are the 7 steps published free on the 'Systems Made Better' YouTube or paywalled in the Cowork OS template?",
+  "Is 'Opus 4.6' a real model label or a UI mock?"
+ ]
+}

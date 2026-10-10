@@ -1,0 +1,62 @@
+{
+ "id": "7688355358431071501",
+ "url": "https://www.tiktok.com/@duncanrogoff/video/7688355358431071501",
+ "creator": "duncanrogoff",
+ "title": "Pitch for 'Everything Claude Code' (ECC), a free GitHub harness of ~60+ agents, ~260-290 skills, ~90 commands, hooks, rules and MCP servers that also runs on Cursor, Codex and Gemini; funnel to Claude Code Club",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Everything Claude Code (ECC)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub; 'Agent Harness Index' page: 64 agents, 261 skills, 84 commands, 103 rules, 28 hooks, 32 MCP servers = 572 building blocks (video says 292 skills, 68 sub-agents, 94 commands)"
+  },
+  {
+   "name": "AgentShield",
+   "kind": "other",
+   "where_seen": "screen",
+   "detail": "listed as 'Included' in the ECC feature table (security component)"
+  },
+  {
+   "name": "Claude Code Club",
+   "kind": "course",
+   "where_seen": "transcript",
+   "detail": "creator's community, ~8,000 members; link in pinned comment"
+  }
+ ],
+ "claims": [
+  "Someone spent 10 months building the setup and open-sourced it",
+  "292 skills and 68 sub-agents; one catches security holes, one keeps context tidy, one learns patterns from how you coded before",
+  "Not locked to Claude Code: runs on Cursor, Codex and Gemini",
+  "Completely free on GitHub"
+ ],
+ "how_to_steps": [
+  "None shown; get the repo link from the pinned comment"
+ ],
+ "on_screen_only": [
+  "Feature table: 'Included / Count - Agents 68 agents - Skills 292 skills - Commands 94 commands - Hooks and memory Runtime - Rules Selective - AgentShield Included'",
+  "Orange card: 'EVERYTHING CLAUDE CODE - Every agent, skill, command, rule, hook & MCP server in the ECC harness - 572 building blocks, one searchable index. 64 AGENTS 261 SKILLS 84 COMMANDS 103 RULES 28 HOOKS 32 MCP SERVERS'; header 'AGENT HARNESS INDEX'",
+  "Doc cards: 'Stop slop at runtime - Quality gates and hook profiles catch drift before it compounds. Noise control belongs in the harness.'; 'Audit first - Measure the harness before you trust the loop'",
+  "Plan/diagram UI showing 'OpenCode / Your agent / ECC' flow; Cursor logo"
+ ],
+ "cta": "pinned comment for repo link + Claude Code Club community",
+ "relevance": {
+  "score": 2,
+  "why": "A 572-piece harness is the opposite of the thin-context advice Haji has liked; for a time-poor founder it is a rabbit hole. Individual pieces (security audit agent, context-tidy hook) might be worth cherry-picking."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Do not install wholesale. If anything, skim the index for 2-3 hooks/skills (security scan, context hygiene) and port them. Numbers in the video and the card disagree, which signals hype."
+ },
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Adds the ECC harness repo, not in the liked set (which had GStack, Addy Osmani's agent-skills, Paperclip, 818 cybersecurity skills). Same genre as those, bigger and less curated."
+ },
+ "verify": [
+  "Exact GitHub repo and maintainer (affaan-m/everything-claude-code?); star count and last commit",
+  "Real counts: 292/68/94 vs 261/64/84",
+  "What AgentShield is and whether it is more than a rules file",
+  "Token/context cost of loading the harness"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "7673159945189100814",
+ "url": "https://www.tiktok.com/@chase.builds.ai/video/7673159945189100814",
+ "creator": "chase.builds.ai",
+ "title": "Pointer to 'awesome-claude-code', a 51k-star curated list of Claude Code commands, hooks, workflows and real setups; creator took three of his workflows and his sub-agent patterns from it",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "awesome-claude-code",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "GitHub list; Star 51.8k (badge), Fork 4.5k; owner not shown (likely hesreallyhim/awesome-claude-code -- verify)"
+  }
+ ],
+ "claims": [
+  "Over 50,000 stars (51,340 on screen) and updated constantly",
+  "Every entry is something someone actually runs, not a blog list",
+  "Creator pulled three of his own workflows and his sub-agent patterns straight from it"
+ ],
+ "how_to_steps": [
+  "Open the awesome-claude-code repo",
+  "Browse commands, hooks, workflows and published setups",
+  "Copy a published setup instead of inventing your own"
+ ],
+ "on_screen_only": [
+  "Cards: '51,000 stars', 'hand-picked', 'nobody opens it', 'commands · hooks · workflows', 'real setups', 'not a random blog', 'everything here is real', '3 of my workflows', 'the subagent patterns', 'someone publish[ed]', 'follow for more'",
+  "GitHub header badge: Fork 4.5k, Star 51.8k, '51,340 stars'"
+ ],
+ "cta": "link in bio; follow for more",
+ "relevance": {
+  "score": 3,
+  "why": "A good index for hooks and sub-agent patterns, but it is a list to mine, not a tool to install; time cost is browsing"
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Bookmark and skim the hooks and workflows sections once (30 min) when setting up a new repo; otherwise low priority"
+ },
+ "verify": [
+  "Which repo exactly (hesreallyhim/awesome-claude-code?) and current star count",
+  "Whether the list is curated with quality checks or accepts any PR"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The liked set had 'five repos to learn Claude Code' and Osmani's commands but not the awesome-claude-code index itself"
+ }
+}

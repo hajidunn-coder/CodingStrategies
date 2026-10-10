@@ -1,0 +1,91 @@
+{
+ "id": "7634569553216851213",
+ "url": "https://www.tiktok.com/@youraveragetechbro/video/7634569553216851213",
+ "creator": "youraveragetechbro",
+ "title": "Replacing Conductor with a terminal workflow: a 'yw' script makes a git worktree, runs conductor-setup.sh (copies .env/.vercel, pnpm install/build), Warp launches Claude Code in a split pane, and neovim (Kickstart + diffview.nvim) reviews diffs with LSP",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launched automatically in the right pane of each new Warp tab"
+  },
+  {
+   "name": "Conductor",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "parallel-agent desktop app he stopped using because its diff viewer lacks LSP features; he still reuses its conductor-setup.sh"
+  },
+  {
+   "name": "Warp terminal",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "launch configuration runs setup script on the left and claude on the right"
+  },
+  {
+   "name": "Kickstart neovim",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "near-vanilla config; space gs git status, space hd horizontal diff, grd go to definition, grr references"
+  },
+  {
+   "name": "diffview.nvim",
+   "kind": "plugin",
+   "where_seen": "transcript",
+   "detail": "space do opens VS Code-style diff with changed-file list and side-by-side view"
+  },
+  {
+   "name": "yw (yorby workspace) script",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "bash: fetch origin main, git worktree add $YORBY_WORKTREE_BASE/$branch -b $branch origin/main, run ../scripts/conductor-setup.sh, then claude"
+  },
+  {
+   "name": "Yorbi",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "his startup: AI social media marketer"
+  }
+ ],
+ "claims": [
+  "Agentic coding means you review code more than write it, so the diff viewer needs jump-to-definition and find-references, which Conductor's plain viewer lacked",
+  "The whole Conductor parallel-agent experience can be rebuilt in a terminal with worktrees plus neovim",
+  "conductor-setup.sh pulls env vars from the parent local environment and from the cloud, then runs pnpm install and pnpm build",
+  "Agent-first terminals (Warp, 'Sea Monkeys') let you spin up multiple workspaces/agents in parallel"
+ ],
+ "how_to_steps": [
+  "Write a script (yw <branch>) that: replaces spaces with hyphens, fetches origin main, creates a git worktree in a base dir on a new branch from origin/main, cds into it",
+  "Have it run a setup script that copies gitignored env files (packages/supabase/.env.local, packages/resend/.env.local) and config dirs (apps/yorby-web/.vercel) from the root repo, then pnpm install && pnpm build",
+  "End the script by launching claude",
+  "Configure Warp so a new tab runs the script in a left pane and Claude Code in the right pane",
+  "After Claude edits, open neovim: space gs for changed files, space hd for side-by-side diff, grd/grr for definition/references, space do for diffview.nvim",
+  "Repeat per parallel agent/worktree"
+ ],
+ "on_screen_only": [
+  "Conductor web UI with 'Download Conductor' button and a workspace diff summary",
+  "Script source: '# Replace spaces with hyphens', 'local worktree_path=\"$YORBY_WORKTREE_BASE/$branch\"', 'git -C \"$YORBY_MAIN_REPO\" fetch origin main', 'git worktree add \"$worktree_path\" -b \"$branch\" origin/main', '../scripts/conductor-setup.sh', 'claude'",
+  "Setup script: ENV_FILES list ('packages/supabase/.env.local', 'packages/resend/.env.local'), CONFIG_DIRS ('apps/yorby-web/.vercel', 'apps/yorby-admin-web/.vercel'), echo 'Copying env files from root repo...', 'Copying config directories (e.g. .vercel) from root repo...', COPIED/SKIPPED counters",
+  "Warp split: left pane 'New terminal session' running setup, right pane Claude Code banner",
+  "neovim side-by-side diff of photo-library-panel.tsx with updateTitleMutation / useMutation changes"
+ ],
+ "cta": "watch the linked long-form neovim + Claude Code setup video",
+ "relevance": {
+  "score": 3,
+  "why": "Parallel worktree sessions with a one-command bootstrap (env copy + install + launch claude) is directly useful for running several Claude Code agents on Haji's apps. The neovim half is a developer preference, not a time saver for a time-poor founder."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Port the worktree + setup script idea (30 minutes per repo) so each parallel Claude session starts with env and deps ready; skip neovim and use whatever diff viewer is already at hand."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has no parallel-worktree bootstrap or diff-review workflow; adds the worktree script pattern, env/config copying from the root repo, Warp launch configs, Conductor as a reference tool, and diffview.nvim."
+ },
+ "verify": [
+  "Does Warp's launch configuration support split-pane scripts as shown?",
+  "Conductor's current diff viewer may have LSP by now",
+  "Copying .env files between worktrees duplicates secrets on disk; acceptable?"
+ ]
+}

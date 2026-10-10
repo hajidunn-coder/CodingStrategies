@@ -1,0 +1,64 @@
+{
+ "id": "7683174985552186654",
+ "url": "https://www.tiktok.com/@buildwithneej/video/7683174985552186654",
+ "creator": "buildwithneej",
+ "title": "'Scientific Agent Skills' repo (by K-Dense): 163 science skills for Claude Code/Cursor/Codex plus a lookup skill hitting 100+ databases (PubMed, clinical trials); creator suspects it is a funnel for the paid K-Dense product",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Scientific Agent Skills (formerly Claude Scientific Skills)",
+   "kind": "repo",
+   "where_seen": "screen",
+   "detail": "README badges: Skills 163, Databases 100+, Agent Skills standard, works with Cursor | Claude Code | Codex | Google Antigravity; weekly security scan"
+  },
+  {
+   "name": "K-Dense BYOK",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "free open-source desktop 'AI co-scientist' on top of the skills; bring your own API keys, 40+ models; 'Hello, Scientist' UI"
+  },
+  {
+   "name": "PubMed",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "skill calls PubMed live; got 400+ hits, self-narrowed the query"
+  }
+ ],
+ "claims": [
+  "Over 100 science skills (README says 163) plus a lookup skill covering 70+ (README: 100+) databases and clinical trials",
+  "Each skill documents the real way to call each database",
+  "Gene-editing query: PubMed returned 400+ hits, the agent noticed its search was too broad and re-ran with narrower topics",
+  "Creator: 'I think this is a funnel for a paid startup'"
+ ],
+ "how_to_steps": [
+  "Install the Scientific Agent Skills repo into Claude Code (or any Agent Skills-compatible tool)",
+  "Ask a literature question; the lookup skill queries PubMed/other databases and refines its own search",
+  "Optionally use the K-Dense BYOK desktop app with your own API keys for a full research workspace"
+ ],
+ "on_screen_only": [
+  "GitHub repo tree: .github, docs, skills, tests, README; commits 'chore: update security scan', 'feat: enhance skill security scan'; 2,609 stars (low confidence), Version 2.65.0",
+  "Badges: License, Skills 163, Databases 100+, Standard: Agent Skills, Agent Plugins, Weekly Security Scan, Skill Tests; Works with Cursor/Claude Code/Codex/Google Antigravity; social links @k_dense_ai, LinkedIn K-Dense Inc, YouTube",
+  "README text: 'Claude Scientific Skills is now Scientific Agent Skills... New: K-Dense BYOK -- A free, open-source AI co-scientist that runs on your desktop... access to all 163 skills'",
+  "Diagrams: Method Validation, AnnData, HTR Coordinator Loop, Infer Gene..., Astrophy Data, Full-Text Evid..., 'Reproducible Literature Retrieval' pipeline, Session Files tree",
+  "Overlays: 'Turn Claude into a PhD Scientist', 'Your AI Scientist -- free repo', 'Full research -- verified databases'"
+ ],
+ "cta": "comment 'science' for the report",
+ "relevance": {
+  "score": 2,
+  "why": "Not for app building; the one angle for Haji is PubMed/clinical-literature lookup to support medical nexus research for VA claims in Veteran AI"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only worth a look if Veteran AI needs cited medical literature; otherwise skip. Installing 163 skills bloats context (see the /context video in this batch)"
+ },
+ "verify": [
+  "Exact repo path (K-Dense org) and license; is the PubMed skill usable standalone without the rest?",
+  "Is K-Dense BYOK truly free/open or a trial for a paid SaaS?",
+  "Rate limits / API keys needed for PubMed, clinical trials databases"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New tool: a domain skill pack for scientific/medical database lookup; nothing in the liked set covers literature research skills"
+ }
+}

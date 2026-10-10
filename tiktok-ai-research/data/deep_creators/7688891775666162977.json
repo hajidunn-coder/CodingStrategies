@@ -1,0 +1,71 @@
+{
+ "id": "7688891775666162977",
+ "url": "https://www.tiktok.com/@ai_vanta_ai/video/7688891775666162977",
+ "creator": "ai_vanta_ai",
+ "title": "Generic 6-step pipeline to ship an iOS/Android app with Claude Code: React Native + Expo, MVP first, test via Expo QR, Claude writes listing/certificates, a mockup skill makes App Store screenshots, submit",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "installs stack, writes app, store listing"
+  },
+  {
+   "name": "React Native + Expo",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "npx create-expo-app my-app; one codebase for iOS and Android"
+  },
+  {
+   "name": "/mockup-app-skill",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "unnamed Claude skill that generates App Store screenshot sets (shown with 'CalTracker - Calories This Week')"
+  },
+  {
+   "name": "OpenRouter",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "logo in intro graphic only"
+  }
+ ],
+ "claims": [
+  "You can build and launch a full mobile app to the App Store with zero coding skills",
+  "React Native + Expo is 'by far the fastest stack' for iOS and Android from one codebase",
+  "Claude can write the title, description and 'certificates' for submission"
+ ],
+ "how_to_steps": [
+  "Ask Claude to install React Native and Expo in the terminal",
+  "Build the most basic MVP, then add features and 'reactivation loop' hooks that bring people back",
+  "Test in Chrome, then scan the Expo QR code to run on your phone",
+  "Ask Claude to write the App Store title, description and handle certificates",
+  "Use a Claude skill (/mockup-app-skill) to generate the App Store screenshot set",
+  "Submit for review; publish once approved"
+ ],
+ "on_screen_only": [
+  "'BUILD APPS WITH CLAUDE [No coding skills required]' with Claude Code and OpenRouter logos",
+  "Terminal: 'Installing React Native & Expo - $ npx create-expo-app my-app - react-native installed - expo installed - Done - ready to run!'; 'npm run ios', 'npm run android'",
+  "'/mockup-app-skill' with CalTracker phone mockup; 'Publish CalTracker' form; 'App Store Review - Approved by Apple'",
+  "Stock footage of a 'Vue 101 - Getting Started With Vue - LevelUpTuts' YouTube video (unrelated)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 3,
+  "why": "Haji builds apps; a mobile shipping path matters, but this is surface-level and skips the painful parts (Apple developer account, EAS build, provisioning, review rejections)."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "The stack choice (Expo) is sound and the screenshot-skill idea is handy, but the skill is unnamed and nothing here saves real time versus Expo's own docs. Worth a note, not a project."
+ },
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set has no mobile/App Store pipeline at all; adds Expo-with-Claude-Code as the stack and the idea of a skill that generates App Store screenshot sets."
+ },
+ "verify": [
+  "Which skill is '/mockup-app-skill' (repo?) and does it output Apple-compliant screenshot sizes?",
+  "'Certificates' cannot be written by Claude; needs Apple Developer account + EAS/Xcode signing",
+  "Is OpenRouter actually part of the workflow or just a logo?"
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "7622727491580415263",
+ "url": "https://www.tiktok.com/@ethanplusai/video/7622727491580415263",
+ "creator": "ethanplusai",
+ "title": "JARVIS v1 open-sourced on GitHub: a voice orchestration layer on a Mac with read access to Apple Calendar/Mail/Reminders/Notes, browser and terminal control, spawns Claude Code for builds, plus a 'fix yourself' self-editing mode and a settings tab for API keys",
+ "category": "agent-architecture",
+ "tools": [
+  {
+   "name": "JARVIS (ethanplusai/jarvis)",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "live on his GitHub; stripped of personalization so anyone can adapt it; V1"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "JARVIS spawns Claude Code in the background for coding tasks"
+  },
+  {
+   "name": "Apple Calendar / Mail / Reminders / Notes",
+   "kind": "api",
+   "where_seen": "transcript",
+   "detail": "read access, can add notes and calendar events"
+  }
+ ],
+ "claims": [
+  "Capabilities (spoken by JARVIS): open terminals and Chrome, browse the web, spawn Claude Code, create project folders, check git status, plan the day from calendar and tasks, take screenshots, manage to-dos, read email and notes, remember facts, work on any desktop project",
+  "'Fix yourself' mode lets JARVIS edit its own repo while you talk through changes -- warning that the backend server may go down",
+  "Settings tab for managing API keys"
+ ],
+ "how_to_steps": [
+  "Clone the JARVIS repo from the creator's GitHub",
+  "Add API keys in the quick settings tab",
+  "Talk to it; use 'fix yourself' or your own coding agent to extend it"
+ ],
+ "on_screen_only": [
+  "'POV: You now have access to your own JARVIS' overlay",
+  "Green particle-sphere voice UI in a browser window; menu with Settings / Restart Server items (partially legible)",
+  "GitHub repo page (ethanplusai/jarvis, low confidence) in last frame; cluttered desktop with many project folders (e.g. 'tiktok-creator-fund', 'instagram', 'brickin...')",
+  "Terminal windows with agent logs behind the UI"
+ ],
+ "cta": "check out the GitHub repo",
+ "relevance": {
+  "score": 2,
+  "why": "Haji already liked JARVIS 2.0 from this creator; this is the earlier v1 release announcement with the same architecture"
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Only if Haji wants a Mac-local voice front end; JARVIS 2.0 (liked) supersedes this. The 'fix yourself' self-modifying mode is a risk, not a feature, for production use"
+ },
+ "verify": [
+  "Repo URL and whether v1 is still maintained vs. replaced by 2.0",
+  "macOS-only dependencies (AppleScript, Apple apps) and API key costs",
+  "Security of giving an agent mail/calendar read access plus shell and self-edit"
+ ],
+ "topic_match": "agents",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (JARVIS 2.0 record); adds only the 'fix yourself' self-editing mode and settings tab from v1"
+ }
+}
