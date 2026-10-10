@@ -1,0 +1,48 @@
+{
+ "id": "7667625720130080032",
+ "url": "https://www.tiktok.com/@bettercreatingofficial/video/7667625720130080032",
+ "creator": "bettercreatingofficial",
+ "title": "Pitch for the creator's paid 'Claude CoWork OS' ($129 Notion-based template system) to set up Claude Cowork as a personal assistant (email, calendar, voice, Notion, scheduled tasks) in one morning",
+ "category": "business-with-ai",
+ "tools": [
+  {"name": "Claude Cowork", "kind": "product", "where_seen": "transcript", "detail": "Claude desktop 'Cowork' tab shown; reads emails, manages calendar, writes in creator's voice, connects to Notion, runs scheduled tasks while away"},
+  {"name": "Claude Cowork scheduled tasks", "kind": "product", "where_seen": "transcript", "detail": "New feature cited as why Cowork now 'works while I sleep'"},
+  {"name": "Claude CoWork OS (Better Creating)", "kind": "course", "where_seen": "screen", "detail": "Creator's product: 'A templated operating system that helps you master Claude CoWork - Fast.' Buy now button shows $129.00 USD on bettercreating.com (phone screenshot)"},
+  {"name": "Notion", "kind": "product", "where_seen": "screen", "detail": "'Better Creating - Business OS' Notion workspace with To Do / Today and Our Projects; Cowork is connected to the whole workspace"},
+  {"name": "Gmail", "kind": "product", "where_seen": "screen", "detail": "Gmail icon shown alongside Claude and a calendar icon as the connected apps"},
+  {"name": "Claude skills (SKILL.md)", "kind": "skill", "where_seen": "screen", "detail": "Frame shows Claude 'Writing SKILL.md... ~7,293 characters' - the OS appears to generate skills for the user"}
+ ],
+ "claims": [
+  "Creator initially closed Cowork after 10 minutes of a blank screen, not knowing what to do with it",
+  "Now Cowork reads his emails, manages his calendar, writes in his voice, connects to his entire Notion workspace, and with scheduled tasks works while he sleeps",
+  "'CoWork OS' onboards you, sets everything up and improves over time; 'gets you ahead of 99% of users'",
+  "Setup is 'only really a morning's work', no code, no tech background; 'a full working assistant with you by lunch'",
+  "Product page (on screen): templated system with folder structure, onboarding coach, instruction templates, skills and specialist plugins; priced $129.00 USD"
+ ],
+ "how_to_steps": [
+  "Install the Claude desktop app and open the Cowork tab",
+  "Connect Gmail, calendar and Notion as connectors",
+  "Load the creator's CoWork OS templates (folder structure, instruction files, onboarding coach) and let Claude write SKILL.md files for your context",
+  "Use scheduled tasks so Cowork runs routines while you are away",
+  "Iterate: the system is pitched as improving over time as it learns your voice and workflows"
+ ],
+ "on_screen_only": [
+  "Claude desktop header tabs: 'Chat | Cowork | Code' with cursor on Cowork",
+  "App icons: Claude, Gmail, calendar",
+  "Notion page: 'Better Creating - Business OS - Agentic systems that simplify & scale' with sections 'To Do & Today', 'Our Projects'",
+  "Phone showing product page: 'Claude CoWork OS - A templated operating system that helps you master Claude CoWork - Fast.' with 'CoWork OS' box art, description 'A complete templated system that helps you setup Claude CoWork better and faster - with folder structure, onboarding coach, instruction templates, skills and specialist plugins', 'Buy now $129.00 USD'",
+  "Second phone screen: 'The system that gets smarter the longer you use it' landing-page section",
+  "Claude Cowork chat: 'Good, I've got the skill structure down. Now ... is the heart of the product - the conversation...' then 'Writing file > Writing SKILL.md... ~7,293 characters', 'Claude is AI and can make mistakes'",
+  "macOS dock with Claude icon between a hammer-tool app and Finder; calendar grid in background"
+ ],
+ "cta": "Implicit: buy the Claude CoWork OS ($129) from the creator's site (no explicit link-in-bio spoken)",
+ "relevance": {"score": 2, "why": "Haji already runs Claude Cowork with Gmail/Calendar/Drive/Notion-style connectors, custom skills and scheduled routines; this is a beginner-onboarding product. The only takeaway is confirmation that packaged 'Cowork OS' templates sell at ~$129, which is a business-with-AI data point."},
+ "implement_score": {"score": 1, "why": "Nothing to implement; Haji's existing skills (haji-email, morning, session-handoff, routines) already exceed what is pitched. Not worth $129. Possible indirect idea: productize a Cowork setup for veterans or small-business owners the same way."},
+ "verify": [
+  "Does bettercreating.com actually sell 'Claude CoWork OS' at $129 and what is inside (templates vs. real skills/plugins)?",
+  "Does Cowork's scheduled tasks feature exist as described (the liked set mentions cloud scheduled tasks moving to mobile)?",
+  "Is the 'writes in my voice' claim backed by a specific voice-profile skill or just prompt instructions?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {"is_new": false, "what": "Duplicate of liked content: Cowork assistant setups (Jarvis recipes, AIOS dashboard, board-of-advisors in Cowork, scheduled tasks news) are already covered. Only new element is a paid $129 'CoWork OS' template product as a sellable-info-product example."}
+}

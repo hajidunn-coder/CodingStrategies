@@ -1,0 +1,38 @@
+{
+ "id": "7673918104405069087",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7673918104405069087",
+ "creator": "noevarner.ai",
+ "title": "Comedy stitch rejecting a Y Combinator clip's advice to delete your CLAUDE.md, skills and hooks every six months; creator calls it a usage-saving 'conspiracy'",
+ "category": "claude-code-workflow",
+ "tools": [
+  {"name": "CLAUDE.md", "kind": "other", "where_seen": "screen", "detail": "Claude Code project memory file; the stitched clip says to delete it every six months (transcript mishears it as 'Quantum D')"},
+  {"name": "Claude Code skills", "kind": "skill", "where_seen": "transcript", "detail": "Generic reference to user-built skills folders; no specific skill named"},
+  {"name": "Claude Code hooks", "kind": "other", "where_seen": "transcript", "detail": "Generic reference to hooks; no specific hook named"},
+  {"name": "Y Combinator (stitched clip)", "kind": "site", "where_seen": "screen", "detail": "Source of the stitched advice; 'Y Combinator' watermark and 'NEO NICHE.' logo visible on the first three frames, speaker not identified"}
+ ],
+ "claims": [
+  "Stitched YC clip: every six months, delete your CLAUDE.md, delete your skills, delete your hooks (presumably so you rebuild them against the current model's capabilities)",
+  "Creator's rebuttal: many hours of 'blood, sweat and tears' went into optimizing those skills, so deleting them is unacceptable",
+  "Creator's joke theory: the advice is a 'conspiracy' to make people use less usage so Anthropic saves money (no evidence offered)"
+ ],
+ "how_to_steps": [
+  "No how-to; it is a reaction skit. The only actionable idea is the stitched one: periodically throw away accumulated CLAUDE.md / skills / hooks and rebuild lean"
+ ],
+ "on_screen_only": [
+  "Overlay on stitched clip: 'Delete your CLAUDE.md every six months'",
+  "Yellow karaoke captions on stitched clip: 'Every 6 months', 'your skills', 'delete your hooks'",
+  "'Stitch Incoming...' label over the YC clip; 'Y Combinator' watermark bottom-left; 'NEO NICHE.' logo top-left",
+  "Creator's own captions: 'Buddy, do you understand', 'blood,', 'optimizing these skills?', 'conspiracy', 'I think you're trying to', 'us to use less usage'",
+  "No repos, URLs, prompts or code shown"
+ ],
+ "cta": "none",
+ "relevance": {"score": 2, "why": "Zero new information; the only substantive point is the stitched YC advice, which overlaps with the already-liked 'keep CLAUDE.md thin, replace NEVER rules with judgment' video. Entertainment for people who maintain skills/hooks, which Haji does."},
+ "implement_score": {"score": 2, "why": "Not worth acting on from this clip. The underlying idea (periodically audit and prune CLAUDE.md/skills/hooks so they do not encode workarounds for old model weaknesses) is sound and cheap: a quarterly pass with /doctor and a review of each skill's purpose. But a wholesale delete is a bad fit for a time-poor founder; version them in git and prune instead."},
+ "verify": [
+  "Who said this in the YC clip and what was the full reasoning (e.g. Claude 5 made most rules obsolete)?",
+  "Does Anthropic's own Claude 5 guidance (80% system-prompt cut, /doctor) actually recommend deleting vs. slimming?",
+  "Is the 'NEO NICHE.' brand the creator's own channel/product?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {"is_new": false, "what": "Duplicate of liked content: the 'keep CLAUDE.md thin, skills on demand, run /doctor' video already covers the prune-your-config idea in more depth. Only new angle is the stronger 'delete everything every six months' framing from a YC speaker, with no argument given."}
+}
