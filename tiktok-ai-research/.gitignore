@@ -6,3 +6,4 @@ data/frames/
 *.pcm
 export_raw/
 cookies*
+__pycache__/
