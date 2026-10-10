@@ -1,0 +1,58 @@
+{
+ "id": "7690302602105359647",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7690302602105359647",
+ "creator": "ducktate.com",
+ "title": "Token Hacking ep.10: on a 390-question benchmark, Claude 'max' effort spent ~15x the tokens of 'extra high' (4,970 vs 338 avg) for ~1% better accuracy, so default to extra high and skip max",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude effort level setting (Low / Medium default / High / Extra / Max)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Claude app Effort picker; Max is labelled '5.5x or more usage'; 'Higher effort means more thorough responses, but takes longer and uses your limits faster'"
+  },
+  {
+   "name": "Unnamed multi-model benchmark table (390 tests, % Right, Errors, $ cost, tokens)",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Source not named; rows like claude-opus-5.5-xhigh 78% vs claude-opus-5.5-max 79% circled"
+  }
+ ],
+ "claims": [
+  "Average token spend per question: extra high = 338 tokens, max = 4,970 tokens (~15x)",
+  "That 15x token increase bought only ~1% better output on the benchmark",
+  "Conclusion: 'do not even bother with the max setting' when building with Claude",
+  "Max effort is labelled in the Claude UI as '5.5x or more usage'"
+ ],
+ "how_to_steps": [
+  "Open the Effort picker in Claude (Low / Medium / High / Extra / Max)",
+  "Leave it on Extra (xhigh) for building; do not select Max",
+  "Compare xhigh vs max rows in the benchmark table to see accuracy is nearly identical while tokens/cost explode"
+ ],
+ "on_screen_only": [
+  "Title card: 'CLAUDE EFFORT LEVEL MATTERS MORE THEN YOU THINK' / 'TOKEN HACKING EPISODE 10'",
+  "Benchmark table (Model | Tests | % Right | Errors): kimi-k3 60%, muse-spark-1.3 82%, grok-4.5 76%, gemini-3.1-pro-preview 95%, claude-sonnet-5-xhigh 37%, claude-sonnet-5-max 57%, claude-opus-5-xhigh 83%, claude-opus-5-max 83%, claude-fable-5-xhigh 84%, claude-fable-5-max 82%, claude-opus-5.5-xhigh 78% (circled), claude-opus-5.5-max 79% (circled), claude-opus-4.8-xhigh 74%, claude-opus-4.8-max 75%, claude-4.6-sonnet 66%, claude-4.5-opus-thinking-high 62%, claude-4.6-opus-thinking-high 70%, gpt-5.4-xhigh 80%, gpt-5-high 78% -- all 390/390 tests",
+  "A wider version of the same table shows per-model $ cost and token columns (e.g. values ~$0.04-$0.19 and token counts 118 to 4,970) with one cell circled in red",
+  "NOTE: the on-screen table contradicts the blanket advice for Sonnet 5: xhigh 37% vs max 57% (a 20-point jump); fable-5 max (82%) actually scored lower than xhigh (84%)"
+ ],
+ "cta": "none beyond 'keep building, see you tomorrow' (daily series)",
+ "relevance": {
+  "score": 4,
+  "why": "Haji runs Claude Code on a subscription with weekly limits; effort level is a one-click lever that directly controls burn. The number (15x tokens for 1%) is the kind of concrete, zero-effort rule he can apply today."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Zero cost: set /effort to extra-high (not max) as the default for Claude Code and Cowork sessions; reserve max for a single hard reasoning task. Caveat from the table itself: for Sonnet-class models max helped a lot, so the rule is 'skip max on Opus/Fable', not universally."
+ },
+ "verify": [
+  "Which benchmark is the table from (390 tests, cost + token columns)? Is it public, who ran it, and is 'tokens' output tokens per question?",
+  "Does the 338 vs 4,970 figure refer to claude-opus-5.5 only, or an average across models?",
+  "Confirm current Claude Code /effort levels and what 'Max 5.5x or more usage' means for Max-plan weekly limits",
+  "Sonnet-5 xhigh 37% vs max 57% suggests effort matters much more on smaller models -- test on Haji's actual tasks before setting a global default"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Liked set mentions /effort and 'extra-high/max reasoning' pitches but has no cost/benefit data; this adds a measured number (max ~15x tokens for ~1% accuracy) and the Max='5.5x or more usage' UI label -- plus an unspoken counter-example for Sonnet in the same table."
+ }
+}

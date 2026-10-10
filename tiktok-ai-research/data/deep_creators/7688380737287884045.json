@@ -1,0 +1,61 @@
+{
+ "id": "7688380737287884045",
+ "url": "https://www.tiktok.com/@opichillc/video/7688380737287884045",
+ "creator": "opichillc",
+ "title": "Claude Code now falls back to AGENTS.md when no CLAUDE.md exists, so cross-tool projects can keep one instructions file and cloned repos with AGENTS.md work natively",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "AGENTS.md",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Generic agent-instructions file read by 'just about every other AI coding tool'; Claude Code now reads it if no CLAUDE.md is present"
+  },
+  {
+   "name": "CLAUDE.md",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Claude Code's native instructions file; can be archived if you migrate to AGENTS.md"
+  },
+  {
+   "name": "Symlink workaround",
+   "kind": "other",
+   "where_seen": "transcript",
+   "detail": "Old method: symlink CLAUDE.md to AGENTS.md or add a 'read the other file' note"
+  }
+ ],
+ "claims": [
+  "Anthropic added support for AGENTS.md: Claude checks for agents.md if there is no Claude.md",
+  "If you maintain both, you can migrate everything to AGENTS.md and archive CLAUDE.md for a single source of truth",
+  "Cloned repos that ship an AGENTS.md no longer need to be wired to a CLAUDE.md",
+  "Net effect for most users: 'not very much'; keeping both is harmless"
+ ],
+ "how_to_steps": [
+  "If you use multiple AI coding tools, consolidate instructions into AGENTS.md",
+  "Remove or archive CLAUDE.md (Claude Code will read AGENTS.md only when CLAUDE.md is absent)",
+  "For cloned repos with AGENTS.md, do nothing -- Claude Code picks it up natively",
+  "Or keep both files if you prefer"
+ ],
+ "on_screen_only": [
+  "Karaoke captions only ('AND HERE'S WHAT', 'FOR THE AGENTS.MD', 'CLAUDE.MD.', 'FROM SOMEBODY ELSE'S', 'LET ME KNOW'); creator Courtney on camera, no screen content"
+ ],
+ "cta": "Like/follow; comment whether you will switch to AGENTS.md exclusively",
+ "relevance": {
+  "score": 3,
+  "why": "Haji runs Claude Code alongside Codex at times (per liked content); knowing the fallback rule avoids duplicate instruction files and makes third-party repos with AGENTS.md work without setup."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Low effort, low impact: for Claude-first projects keep CLAUDE.md (it takes precedence and supports Claude-specific features like imports); only consolidate to AGENTS.md on repos shared with Codex/Cursor users. Check the precedence rule first."
+ },
+ "verify": [
+  "Confirm in the Claude Code changelog: is AGENTS.md read only when CLAUDE.md is absent, or always/alongside? Does it apply to nested directories and ~/.claude?",
+  "Do CLAUDE.md-only features (@file imports, /memory, auto-memory) work from AGENTS.md?",
+  "Which Claude Code version introduced it"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New small fact: Claude Code's AGENTS.md fallback and the migrate-or-keep-both decision; liked set has CLAUDE.md-thinning advice but nothing on AGENTS.md interoperability."
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "id": "7680798060535942414",
+ "url": "https://www.tiktok.com/@luispdoesai/video/7680798060535942414",
+ "creator": "luispdoesai",
+ "title": "Motivational take: if you build with Claude Code/Codex/Gemini you are in the 'top 1%' of AI users, and understanding agentic systems puts you in '0.05%' -- 'we are so stupid early'",
+ "category": "other",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named as an example builder tool"
+  },
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named"
+  },
+  {
+   "name": "Gemini",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "named"
+  }
+ ],
+ "claims": [
+  "Using Claude Code, Gemini or Codex to build software puts you in the top 1% of the world actually using AI (no source)",
+  "Learning agentic systems and frameworks puts you in the 0.05% (no source)"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'The uncomfortable truth about the \"Ai race\"'"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "No tool, technique or news; only reassurance. Haji is time-poor and already building."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement."
+ },
+ "verify": [
+  "Percentages are made up / unsourced"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (pure motivation, nothing new)"
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "id": "7692898216026705166",
+ "url": "https://www.tiktok.com/@mikelikes_it/video/7692898216026705166",
+ "creator": "mikelikes_it",
+ "title": "OpenAI Dev Day (Sept 29 2026) clip: GPT-6.1 Sol launches as a near-Astra-level model at one fifth the price, with cached input at a 95% discount, pitched as the 'daily workhorse' for agents",
+ "category": "model-news",
+ "tools": [
+  {
+   "name": "GPT-6.1 Sol",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "OpenAI; 'very near Astra level intelligence at a fifth of the price'; launched 'today' (Sept 29 2026)"
+  },
+  {
+   "name": "GPT-6 Astra",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "Flagship used as the comparison in the pricing slide"
+  }
+ ],
+ "claims": [
+  "GPT-6.1 Sol: near-Astra intelligence at 1/5 the price",
+  "Cached input is a 95% discount on standard input, making context reuse and long agent tasks much cheaper",
+  "'Smarter than Astra in some ways'; positioned as the daily workhorse for coding and building"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Frame branding: 'ON POINT TECH SOLUTIONS' / 'Agent work gets a lower price tag.' / 'SAM ALTMAN | OPENAI DEV DAY'",
+  "'WHAT THIS CHANGES' flow: ASTRA -> SOL -> REUSED CONTEXT; 'OpenAI claims near-Astra intelligence at one fifth the price.'",
+  "'SOURCE: OPENAI / SEPTEMBER 29, 2026. Keynote excerpt. Claims are OpenAI's.'",
+  "Keynote slides: 'GPT-6.1 Sol' with a DeepSWE benchmark chart (cost per task vs score) and a pricing table GPT-6.1 Sol vs GPT-6 Astra (Input / Cached input / Output -- values too small to read)"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Haji is Claude-first, but a 1/5-price near-flagship with 95% cache discount is relevant for cost-sensitive agent backends in his apps and for any Codex usage. Liked set already has three other Dev Day clips, so marginal."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "No action now; if an app feature needs cheap bulk LLM calls, benchmark Sol against Claude Haiku/Sonnet-class pricing. Otherwise file under model-news."
+ },
+ "verify": [
+  "Actual GPT-6.1 Sol per-token prices (input/cached/output) vs Astra and vs Claude's current tiers",
+  "Is Sol available in Codex CLI/subscriptions, or API only?",
+  "'Near-Astra' is OpenAI's own claim -- check independent benchmarks (DeepSWE, Terminal-Bench)"
+ ],
+ "topic_match": "model-news",
+ "gap": {
+  "is_new": true,
+  "what": "The GPT-6.1 Sol launch and its 1/5-price + 95% cached-input numbers are not in the liked set (which covers Dev Day's Decisions API, Marketplace, and '28 days' recap, and DeepSeek V4 pricing pressure)."
+ }
+}

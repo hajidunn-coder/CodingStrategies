@@ -1,0 +1,40 @@
+{
+ "id": "7683196578919615766",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7683196578919615766",
+ "creator": "artificialcorner",
+ "title": "6-second lead-gen clip: 'build one Claude skill and it stops telling you you're right every time' (anti-sycophancy honest-feedback skill) -- comment HONEST for the prompt; no content shown",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "Claude skill (unnamed, 'honest' decision-review skill)",
+   "kind": "skill",
+   "where_seen": "caption",
+   "detail": "Desc: 'You bring Claude a decision...' and it pushes back instead of agreeing; built from a prompt sent via DM"
+  }
+ ],
+ "claims": [
+  "One skill makes Claude stop agreeing with you on every decision"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlays: 'POV: you build one Claude skill and it stops telling you you're right every single time' / 'Here's the prompt to build it'",
+  "Monitor shows a long unreadable prompt/skill text with several bold section headers; orange Claude figurine on monitor"
+ ],
+ "cta": "Comment 'HONEST' to be DMed the prompt",
+ "relevance": {
+  "score": 2,
+  "why": "Anti-sycophancy review is genuinely valuable for a solo founder with no co-founder to push back, but the clip gives nothing; Haji already has a 'council-gate' skill and the liked set has board-of-advisors/Skeptic persona content doing exactly this."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Already implemented in Haji's environment (council-gate 8-voice debate, devil's-advocate modes). No action beyond ensuring that skill fires on decisions."
+ },
+ "verify": [
+  "Whether the DMed prompt is anything beyond a 'be a skeptical critic, list counterarguments' persona"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (board of advisors with Skeptic persona, devil's-advocate mode prompts, council-style decision review)"
+ }
+}

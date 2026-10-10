@@ -1,0 +1,58 @@
+{
+ "id": "7683149051537280287",
+ "url": "https://www.tiktok.com/@noevarner.ai/video/7683149051537280287",
+ "creator": "noevarner.ai",
+ "title": "Replace a $400/mo Instagram posting hire: connect your social accounts to a scheduler SaaS ('Zernio' as transcribed), generate an API key, add its MCP to Claude, and have Claude post to up to 20 accounts",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Zernio (name as heard in transcript; spelling unverified)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Social scheduler with a Connections page (Bluesky, Instagram, Pinterest, Telegram, LinkedIn, Threads, X...) and an API key; exposes an MCP server"
+  },
+  {
+   "name": "Claude (MCP connector)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Connect the scheduler's MCP to Claude so Claude posts on your behalf"
+  }
+ ],
+ "claims": [
+  "Someone offered $400/month ($100/week) for a human to upload posts to one Instagram account",
+  "You can connect 20 Instagram accounts (and 'a thousand accounts' per the hook) to one scheduler profile",
+  "After connecting the MCP, Claude posts to all connected accounts for free"
+ ],
+ "how_to_steps": [
+  "Create an account on the scheduler ('Zernio')",
+  "On its Connections page, connect every social profile you want to post to (Instagram, Bluesky, Pinterest, LinkedIn, Threads, X, Telegram...)",
+  "Create an API key in the scheduler",
+  "Add the scheduler's MCP server to Claude",
+  "Ask Claude to post content; it publishes to all connected accounts"
+ ],
+ "on_screen_only": [
+  "Stitched clip of @JACOB_SULLIVAN05: 'Hiring IG account manager / Will pay $400/mo'",
+  "Overlay: 'Automating this with Claude...'",
+  "Scheduler UI: 'Connections -- Manage profiles and platform integrations', 'Platforms', 'Default Profile', Bluesky (Not connected / Connect), Instagram (Connected, @noevarner.ai, Disconnect), Pinterest, Telegram, plus more rows; browser URL partially visible ending in '...nio.com/...connections?profile=...'",
+  "Secondary tab bar in the scheduler: Google, Funnel, Instagram, Social media, AI Tools (hard to read)"
+ ],
+ "cta": "Comment 'Claude' for the full breakdown",
+ "relevance": {
+  "score": 2,
+  "why": "Haji may want automated posting for his own businesses, but the liked set already has Postiz (open-source) and this is a thin lead-gen pitch for an unverified hosted tool with no pricing shown."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "If social autoposting is wanted, the pattern (scheduler with MCP + Claude) is right, but Postiz (already liked, open-source, MCP support) is the better-vetted route. Only pursue the named tool after confirming it exists and its cost."
+ },
+ "verify": [
+  "What is the actual product name/URL (transcribed as 'Zernio', screen shows '...nio.com')? Does it have an MCP server and pricing?",
+  "Instagram API: posting to 20 accounts from one tool requires Business/Creator accounts via Meta Graph API -- is 'connect 20 IG accounts' realistic and ToS-safe?",
+  "Does Claude (chat) support this MCP via Connectors, or is it Claude Code only?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Variant of liked Postiz content (Claude as social media manager via an MCP-enabled scheduler); only new element is an unverified hosted tool name."
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "id": "7692864638328802582",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7692864638328802582",
+ "creator": "artificialcorner",
+ "title": "Silent screen tour of a 'Prompt Rewrite' tool based on Anthropic's 2026 prompting guide: drop hype/threat phrases ('CRITICAL: You MUST', 'Take a deep breath', 'think step by step', 'IMPORTANT!!! You MUST NEVER', 'Please', 'Make it less generic'), keep concrete constraints",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Prompt Rewrite page (/prompt-claude-2026, 'updated for Anthropic's 2026 guide')",
+   "kind": "site",
+   "where_seen": "screen",
+   "detail": "Browser tool at a claude.ai-looking artifact URL (partly readable 'claude.ai/artifact/...'); shows 'rewrite 72..76' counter and a 'LAST YEAR'S HABIT? REWRITE IT' section"
+  },
+  {
+   "name": "Anthropic prompting guide (2026)",
+   "kind": "site",
+   "where_seen": "caption",
+   "detail": "'I read Claude's new official prompting guide so you don't have to'"
+  }
+ ],
+ "claims": [
+  "Caption: drop two habits (the desc says 'DROP these 2...'); on screen the struck-through ones are 'CRITICAL: You MUST', 'Take a deep breath', 'think step by step', 'IMPORTANT!!! You MUST NEVER', 'Make it less generic', 'Please'",
+  "Keep/rewrite into concrete constraints: 'Keep it short', 'put the KPIs in a table', 'Under 150 words. I'll read it on my phone', 'Make this a spreadsheet, one row per vendor', 'Fix my resume. You're a career coach', 'Don't use \"delve\" or em dashes', 'Don't add an intro', 'Summarize this report', 'Rewrite this email', 'Plan the launch'"
+ ],
+ "how_to_steps": [
+  "Take a prompt with last year's habits (caps-lock MUST, threats, 'take a deep breath', 'think step by step')",
+  "Strip the hype/threat/politeness filler",
+  "Replace with concrete, checkable constraints: length, format, audience, role, banned words"
+ ],
+ "on_screen_only": [
+  "All content is on-screen; audio is a single word ('You')",
+  "Overlays: 'I read Claude's new official prompting guide so you don't have to.' / 'Here's the best way to prompt Claude (what to drop & what to keep)'",
+  "Prompt Rewrite UI: header 'Prompt Rewrite -- /prompt-claude-2026 -- updated for Anthropic's 2026 guide', counter 'rewrite 72' through '76'; section label 'LAST YEAR'S HABIT? REWRITE IT' with '2026' column",
+  "Red strikethrough (drop): 'CRITICAL: You MUST', 'Take a deep breath', 'think step by step', 'IMPORTANT!!! You MUST NEVER', 'Make it less generic', 'Please'",
+  "Green (keep): 'Keep it short', 'put the KPIs in a table', 'Summarize this report', 'Make this a spreadsheet, one row per vendor', 'Fix my resume. You're a career coach', 'Under 150 words. I'll read it on my phone', 'Rewrite this email', 'Don't use \"delve\" or em dashes', 'Don't add an intro', 'Plan the launch'",
+  "Footer counters: '\"think step by step\" x24', 'MUST x10', '\"deep breath\" x2'",
+  "Orange Claude 'Clawd' figurine on top of the monitor"
+ ],
+ "cta": "none visible (creator's other videos use comment-for-prompt)",
+ "relevance": {
+  "score": 3,
+  "why": "Directly about prompting Claude 5-era models; the specific 'drop' list is useful for cleaning CLAUDE.md and skill files that still carry NEVER/MUST shouting."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "30-minute pass over CLAUDE.md, skills and system prompts: remove caps-lock MUST/NEVER, 'think step by step', 'take a deep breath'; replace with concrete constraints. Aligns with the already-liked 'Anthropic cut 80% of the system prompt / replace NEVER rules with judgment' video."
+ },
+ "verify": [
+  "Which Anthropic document is 'the new official prompting guide (2026)'? Does it actually say to drop 'think step by step' (extended thinking makes it redundant) and emphatic MUST?",
+  "Is the Prompt Rewrite page the creator's own artifact (lead magnet) or public?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "Mostly duplicate: liked set has the Claude 5 system-prompt rewrite (drop NEVER rules) and prompting-rule videos; only adds the concrete drop list ('take a deep breath', 'think step by step', 'Please') in visual form."
+ }
+}

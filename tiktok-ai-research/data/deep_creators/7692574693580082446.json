@@ -1,0 +1,62 @@
+{
+ "id": "7692574693580082446",
+ "url": "https://www.tiktok.com/@siroccomask/video/7692574693580082446",
+ "creator": "siroccomask",
+ "title": "Stop watching your Codex/Claude agent threads: write a thorough prompt, hit enter, only review when done, restart if wrong -- forces better upfront prompts and saves your time (credits Theo)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Codex",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator's main agent; 'get the most out of your Codex sub'"
+  },
+  {
+   "name": "Claude (agents)",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Overlay 'Don't watch your codex/claude agents'"
+  },
+  {
+   "name": "Theo (t3) YouTube",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Source of the idea; 'go follow Theo on YouTube'"
+  }
+ ],
+ "claims": [
+  "Watching the agent work does not make the output better; you are just reading for a chance to interrupt",
+  "Interrupting mid-thread to correct things you forgot to say is a bad habit; instead let it finish, review, and re-run with a fuller prompt",
+  "Reviewing only at the end builds a feedback loop that makes your initial prompts more complete",
+  "Creator commits to never watching Codex threads again"
+ ],
+ "how_to_steps": [
+  "Write a thorough prompt that pre-empts the mistakes you usually catch mid-run",
+  "Hit enter and do not look until the thread finishes",
+  "Review the final result; if wrong, start the prompt again with the missing instruction instead of patching mid-run",
+  "Capture recurring misses as prompt additions or skills so the behaviors stop recurring (on-screen note)"
+ ],
+ "on_screen_only": [
+  "Overlay throughout: 'Don't watch your codex/claude agents'",
+  "Late overlay: 'or skills that prompt these common behaviors to not recur'",
+  "Filmed in a car; no screen content"
+ ],
+ "cta": "Follow Theo on YouTube",
+ "relevance": {
+  "score": 3,
+  "why": "Time-poor founder: the single biggest time sink with agents is babysitting runs. Reframing it as 'prompt fully, walk away, review once' plus turning recurring corrections into skills is exactly the discipline that lets Haji run several Claude Code sessions in parallel."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Zero cost habit change: batch prompts with a WWWHH-style brief (already liked), kick off, use hooks/notifications on Stop instead of watching, and log each post-hoc correction into CLAUDE.md or a skill. Pairs with the liked verification-skills approach."
+ },
+ "verify": [
+  "Which Theo video/stream is the source, and does he add nuance (e.g. still watch long destructive runs)?",
+  "For destructive or billable actions, un-watched runs need permission gates -- confirm Haji's settings before going hands-off"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New workflow discipline: never watch agent threads, review-only-at-end, and convert each post-hoc correction into a prompt/skill rule; liked set covers handoff notes and verification skills but not this operator habit."
+ }
+}

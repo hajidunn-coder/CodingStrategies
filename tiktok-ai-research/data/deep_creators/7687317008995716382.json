@@ -1,0 +1,39 @@
+{
+ "id": "7687317008995716382",
+ "url": "https://www.tiktok.com/@james_creates_/video/7687317008995716382",
+ "creator": "james_creates_",
+ "title": "8-second comedy skit: typing an abusive 'did you even read what I said' message at ChatGPT when it keeps giving bad answers",
+ "category": "other",
+ "tools": [
+  {
+   "name": "ChatGPT mobile app",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "iOS chat input with mic and send button"
+  }
+ ],
+ "claims": [
+  "Caption jokes that swearing at the model 'sometimes will work'"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay: 'POV: when chatGPT keeps giving you a terrible answer so you pull this method...'",
+  "Typed message: 'Fucking dumbass did you even read wtf I said...read that sbit again and get that mf right or im switching'",
+  "No spoken audio; whisper transcript empty"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 1,
+  "why": "Pure meme; no technique, tool, or information."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement. Abusive prompting does not improve outputs; the liked set already covers real prompt-quality techniques."
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (no content at all; entertainment only)"
+ }
+}

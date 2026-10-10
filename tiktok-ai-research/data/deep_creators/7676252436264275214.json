@@ -1,0 +1,56 @@
+{
+ "id": "7676252436264275214",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7676252436264275214",
+ "creator": "colton.deannn",
+ "title": "'Six rules' for prompting attributed to Anthropic: give a why, say what not to do, let it act ('when you have enough to act, act'), make it prove it's done, skip narrated reasoning, say less -- then save them in Claude profile preferences",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Claude Settings > Profile preferences",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "'What personal preferences should Claude consider in its responses?' -- where to paste the rules once"
+  }
+ ],
+ "claims": [
+  "'Anthropic just released six rules on how you should be prompting your AI' (source not shown)",
+  "Rule 1: give it a why (who the email is for, what you want)",
+  "Rule 2: tell it what not to do, brief it like an intern ('Don't add these features')",
+  "Rule 3: let it act -- add 'When you have enough to act, act' to stop clarifying-question stalls",
+  "Rule 4: make it prove it's done -- 'Show me the result that proves that it's done. If it's not verified, tell me'",
+  "Rule 5: skip the play-by-play -- 'just give me the result', no narrated step-by-step",
+  "Rule 6: say less, lead with the outcome; save it once in settings",
+  "Claims outputs become 'a million times better'"
+ ],
+ "how_to_steps": [
+  "State intent and audience in every task prompt",
+  "Add explicit exclusions ('don't add these features')",
+  "Append 'When you have enough to act, act' to reduce clarifying questions",
+  "Append 'Show me the result that proves it's done; if it's not verified, tell me'",
+  "Ask for results only, not narrated reasoning",
+  "Keep prompts short and outcome-first; paste the rule block once into Claude's Profile preferences"
+ ],
+ "on_screen_only": [
+  "Title card: 'How to get the BEST AI Results'",
+  "Rule cards: 'RULE 1/6 GIVE IT A WHY' (mock Claude input 'Write an email t'), 'RULE 2/6 TELL IT WHAT NOT TO DO' ('Don't add these features' / 'brief it like an intern'), 'RULE 3/6 LET IT ACT' ('When you have enough to act, act.'), 'RULE 3/6 MAKE IT PROVE IT' (mis-numbered on screen; 'Show me the result that proves that it's done' + PROVE IT stamp), 'RULE 4/6 SKIP THE PLAY-BY-PLAY' (Thinking... narrating every step: Step 1/2/3), 'RULE 5/6 SAY LESS' (28 words counter), 'RULE 6/6 SAVE IT ONCE' (Settings > Profile)",
+  "End card: 'COMMENT CLAUDE -- I'll DM you all 6 rules + the copy-paste block'"
+ ],
+ "cta": "Comment 'CLAUDE' for the six rules and a copy-paste settings block",
+ "relevance": {
+  "score": 2,
+  "why": "Generic prompting hygiene Haji already practices; the 'prove it's done' and 'when you have enough to act, act' lines are the only ones worth lifting into CLAUDE.md, and the liked set already has verification-skill content."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Two one-line additions to CLAUDE.md / global prefs: 'when you have enough context, act without asking' and 'show verified evidence before claiming done'. Five minutes; the rest is already covered."
+ },
+ "verify": [
+  "Did Anthropic actually publish 'six rules'? This looks like a creator's paraphrase of Anthropic prompting docs / the Claude 5 system-prompt philosophy, not an official list",
+  "'Skip the play-by-play' conflicts with wanting reasoning on hard tasks -- apply selectively"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content: liked set already has Anthropic's Claude 5 prompt-philosophy video, Minto-style prompting, and verification skills; attribution to Anthropic is unverified."
+ }
+}

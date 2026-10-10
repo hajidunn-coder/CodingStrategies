@@ -1,0 +1,47 @@
+{
+ "id": "7686955812719316254",
+ "url": "https://www.tiktok.com/@krisd.ai/video/7686955812719316254",
+ "creator": "krisd.ai",
+ "title": "duck.ai (DuckDuckGo) gives free, no-account, no-history chat access to GPT-5.6 and Claude models",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Duck.ai by DuckDuckGo",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "duck.ai -- free chat, no account, does not store chat history; model picker shows GPT-5.6 (Lite), GPT-5.4 mini, Claude Haiku 4.5, Mistral Small 3, gpt-oss 120b, Gemma 4 12b (approximate, small text)"
+  }
+ ],
+ "claims": [
+  "Free access to 'GPT 5.6 and Claude' with no account and no stored chat history",
+  "Caption: 'Why am I even paying for tokens?'"
+ ],
+ "how_to_steps": [
+  "Go to duck.ai",
+  "Pick a model from the dropdown (GPT-5.6 Lite, Claude Haiku, Mistral, gpt-oss, Gemma...)",
+  "Chat; nothing else required"
+ ],
+ "on_screen_only": [
+  "Overlay: 'Getting access to top AI models for free has never been easier'",
+  "Duck.ai page: 'Duck.ai, by DuckDuckGo -- Ask anything privately', toggles 'Fast / 5.6 Lite', model list (GPT-5.6 Lite, GPT-5.4 mini, Claude Haiku 4.5, Mistral Small 3, gpt-oss 120b, Gemma 4 12b -- approximate), 'Subscribe for more. Try for free' row at bottom (suggests paid tier for bigger models)",
+  "A Gartner hype-cycle chart is open on a second screen ('Technology Trigger', 'Trough of Disillusionment', 'Slope of Enlightenment', 'Plateau of Productivity')"
+ ],
+ "cta": "Comment 'AI' for the link; save the video",
+ "relevance": {
+  "score": 1,
+  "why": "Haji builds with Claude Code on a paid plan; duck.ai is a consumer chat front-end with small/lite models and no API or tool use -- irrelevant to building apps."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to do. At most a throwaway private chat for a quick question; the screen itself shows the free tier is the Lite/Haiku class with a paid 'Subscribe for more' upsell."
+ },
+ "verify": [
+  "Exactly which models are free on duck.ai vs behind 'Subscribe for more' (screen shows GPT-5.6 Lite and Claude Haiku 4.5, not flagship models)",
+  "No API, so it cannot replace tokens for Claude Code -- the 'why pay for tokens' framing is misleading"
+ ],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "Liked set already covers free model access (NVIDIA free endpoints, OmniRoute); duck.ai is a weaker consumer-chat variant with no API."
+ }
+}

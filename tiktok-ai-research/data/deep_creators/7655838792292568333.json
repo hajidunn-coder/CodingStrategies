@@ -1,0 +1,103 @@
+{
+ "id": "7655838792292568333",
+ "url": "https://www.tiktok.com/@adam_ha_yes/video/7655838792292568333",
+ "creator": "adam_ha_yes",
+ "title": "Designer's 'vibe coder evolution' ladder: study product structure and Laws of UX -> Bolt/Lovable -> Mobbin/Pinterest references -> Claude Code CLI -> Codex for full features -> Ghostty with 6 terminals + GitHub",
+ "category": "learning-resource",
+ "tools": [
+  {
+   "name": "Laws of UX",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "'21+ laws', read all of them to understand grouping and aesthetics-for-conversion"
+  },
+  {
+   "name": "Bolt",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Beginner describe-an-app builder"
+  },
+  {
+   "name": "Lovable",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Beginner describe-an-app builder"
+  },
+  {
+   "name": "Mobbin",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Design reference library ('Mobin design'); use screens as reference images"
+  },
+  {
+   "name": "Pinterest",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Find designs you like, use as reference images"
+  },
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "CLI; 'create an iOS app for you in this folder', run in Xcode; creator still uses it for most front-end"
+  },
+  {
+   "name": "Codex (CLI)",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Creator says currently better than Claude at full features"
+  },
+  {
+   "name": "Ghostty",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Terminal app; runs up to 6 terminals with Codex and Claude Code side by side"
+  },
+  {
+   "name": "GitHub",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Push to origin main or branches, test locally"
+  }
+ ],
+ "claims": [
+  "Creator has spent 'tens of thousands of dollars' on Claude Code and Codex",
+  "Started as a UI/UX product designer, now ships full-stack features without knowing how to code",
+  "'Right now Codex is actually a lot better at full features than Claude'; Claude still used for most front-end",
+  "Runs up to 6 terminals at once doing different operations",
+  "Vibe coding is 'pretty cheap right now and might be more expensive in the future'"
+ ],
+ "how_to_steps": [
+  "Study how everyday products (LinkedIn, X, TikTok) are structured and why UI elements are where they are",
+  "Read the 21+ Laws of UX",
+  "Start with Bolt or Lovable by describing an app (e.g. 'a meditation app')",
+  "Layer in taste: pull references from Mobbin or Pinterest and feed them as reference images",
+  "Move to Claude Code CLI in the terminal; ask it to scaffold an iOS app in a folder and run it in Xcode",
+  "Add Codex CLI for full features; keep Claude for front-end",
+  "Use Ghostty with multiple terminals (up to 6) running Codex and Claude Code in parallel",
+  "Connect the project to GitHub; push to main/branches, test locally"
+ ],
+ "on_screen_only": [
+  "Caption overlay throughout: 'The evolution of a \"vibe coder\"'",
+  "One frame shows a mobile app design board (Figma/Mobbin-style grid of phone screens: red logo splash, product photos, color swatches, 'Onboarding' notes) -- no readable text"
+ ],
+ "cta": "none",
+ "relevance": {
+  "score": 2,
+  "why": "Beginner ladder; Haji is already at the top rung (Claude Code daily). Only the design-taste inputs (Laws of UX, Mobbin) and the Ghostty multi-terminal habit are usable nuggets."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Bookmark Mobbin + Laws of UX as reference sources to feed Claude Design / Claude Code when building UI; optional: try Ghostty for parallel Claude Code + Codex panes. An hour, no money."
+ },
+ "verify": [
+  "Is Mobbin free enough to be useful (it is largely paid)?",
+  "Creator's 'Codex better at full features' is a point-in-time opinion -- re-check against current Claude Fable 5 / Opus 5.5",
+  "Ghostty: macOS/Linux only; confirm it adds anything over tmux/iTerm splits for Haji"
+ ],
+ "topic_match": "design-ui",
+ "gap": {
+  "is_new": true,
+  "what": "Minor: names Mobbin and Laws of UX as taste inputs for vibe-coded UI (liked set covers design skills like Impeccable/Taste but not these reference libraries) and the Ghostty multi-terminal parallel-agent habit."
+ }
+}

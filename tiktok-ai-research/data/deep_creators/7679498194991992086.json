@@ -1,0 +1,31 @@
+{
+ "id": "7679498194991992086",
+ "url": "https://www.tiktok.com/@artificialcorner/video/7679498194991992086",
+ "creator": "artificialcorner",
+ "title": "6-second lead-gen clip: 'the prompt I run at the beginning of every Claude session to make it sound like me' -- comment PROMPT to receive it; no content shown",
+ "category": "other",
+ "tools": [],
+ "claims": [
+  "Creator has a session-start prompt that makes Claude write in his voice"
+ ],
+ "how_to_steps": [],
+ "on_screen_only": [
+  "Overlay only: 'The prompt I run at the beginning of every Claude session to make it sound like me'",
+  "Creator at a desk with keyboard; no screen content, no audio"
+ ],
+ "cta": "Comment 'PROMPT' to get the prompt",
+ "relevance": {
+  "score": 1,
+  "why": "No information; pure comment-bait. A voice/style prompt is trivially authored by Haji himself (or stored in CLAUDE.md / memory)."
+ },
+ "implement_score": {
+  "score": 1,
+  "why": "Nothing to implement from this video. If voice-matching is wanted, a style guide in CLAUDE.md or Claude memory does it with no DM required."
+ },
+ "verify": [],
+ "topic_match": "none",
+ "gap": {
+  "is_new": false,
+  "what": "duplicate of liked content (voice/style prompting is covered; this clip has no substance)"
+ }
+}

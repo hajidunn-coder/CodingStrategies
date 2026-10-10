@@ -1,0 +1,59 @@
+{
+ "id": "7680334347664149773",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7680334347664149773",
+ "creator": "colton.deannn",
+ "title": "Claude's built-in 'Import memory from other AI providers' flow: Settings > Capabilities > Memory > Start import gives an export prompt to paste into ChatGPT, then paste the result back and click Add to memory",
+ "category": "ai-product-tool",
+ "tools": [
+  {
+   "name": "Claude Memory -- Import memory from other AI providers",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "claude.ai Settings > Capabilities > Memory > 'Import memory from other AI providers' > Start import"
+  },
+  {
+   "name": "ChatGPT",
+   "kind": "product",
+   "where_seen": "screen",
+   "detail": "Source AI; returns a markdown memory dump (## Instructions / ## Identity / ## Career sections)"
+  }
+ ],
+ "claims": [
+  "Claude can ingest another AI's memory so 'it remembers everything'",
+  "After Add to memory, the imported content appears in Claude's Manage memory text"
+ ],
+ "how_to_steps": [
+  "In Claude, click profile > Settings > Capabilities",
+  "Under Memory, find 'Import memory from other AI providers' and click Start import",
+  "Copy the provided prompt: 'Export all of my stored memories and any context you've learned about me from past conversations. Preserve my wording verbatim where possible, especially for instructions and preferences.'",
+  "Paste it into the other AI (ChatGPT shown) and send",
+  "Copy its output, return to the Claude dialog, paste under 'Paste results below to add to Claude's memory', click Add to memory",
+  "Open Manage memory to confirm the content is stored"
+ ],
+ "on_screen_only": [
+  "Overlay: 'Claude hack part two'",
+  "Memory settings page: 'Search and reference chats', 'Generate memory from chat history (Allow Claude to remember relevant context from your chats...)', 'Memory from your chats -- Updated 9 hours ago', 'Import memory from other AI providers', 'Tool access mode: Load tools when needed / Tools already loaded', Visuals/Artifacts/AI-powered artifacts toggles",
+  "Dialog title: 'Import memory to Claude' with step 1 'Copy this prompt into a chat with your other AI provider' (prompt text as above, Copy button) and step 2 'Paste results below to add to Claude's memory', Cancel / Add to memory",
+  "ChatGPT output headed '## Instructions' (user prefers ChatGPT to respond..., 'User wants to be reminded...'), '## Identity', '## Career' -- 'This is the complete set of stored memories currently available'",
+  "Creator's Claude sidebar project names: Reviewing recent conversation hi..., Modern development tools and pl..., Understanding git terminology, RESUME EDITOR, WEBSITE, Running OpenClaw on Parallels, Weekend activities near UPenn, Consolidating payout data into CP..., TAX HELP, GITHUB CHECKER, LLC registration guidance"
+ ],
+ "cta": "none (part of a 'Claude hack' series)",
+ "relevance": {
+  "score": 2,
+  "why": "Haji is Claude-native already; the import flow matters only if he still has preferences stranded in ChatGPT. Useful to know it exists as a native feature rather than a hack."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "15-minute one-off: run the export prompt in any other assistant he has used, paste into Claude. Note Haji's Claude Code environment already lists an 'import-memory' skill that does the same thing conversationally."
+ },
+ "verify": [
+  "Is 'Import memory from other AI providers' available on Haji's plan (Max/Team) and in Cowork, or only claude.ai chat?",
+  "Does imported memory feed Claude Code / Cowork sessions, or only chat?",
+  "Transcript says 'Settings > Capabilities' but the screen shows the import under the Memory section -- confirm the current menu path"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "Native Claude memory-import feature with the exact export prompt; liked set covers context-transfer and chat-history mining but not this built-in flow."
+ }
+}

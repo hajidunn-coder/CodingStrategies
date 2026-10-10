@@ -1,0 +1,66 @@
+{
+ "id": "7688011423980473630",
+ "url": "https://www.tiktok.com/@ducktate.com/video/7688011423980473630",
+ "creator": "ducktate.com",
+ "title": "Token Hacking ep.7: measured 30-question code-search test -- plain Claude 6.72M tokens, Graphify alone 7.72M (+15%, worse), Graphify + Jev file-ranking 5.45M (-19%)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Graphify",
+   "kind": "repo",
+   "where_seen": "transcript",
+   "detail": "Codebase graph tool 'heard was amazing at saving tokens'; out of the box it increased tokens 15%"
+  },
+  {
+   "name": "Jev (TypeSafe AI)",
+   "kind": "model",
+   "where_seen": "transcript",
+   "detail": "Small classifier model used to rank/pick the right file from the graph; '$0.002' per ranking shown on screen"
+  },
+  {
+   "name": "Claude (Sonnet agent)",
+   "kind": "model",
+   "where_seen": "screen",
+   "detail": "'one Claude Sonnet agent per question, same repo'"
+  }
+ ],
+ "claims": [
+  "Baseline Claude workflow burned ~6.72M tokens across 30 code questions (27/30 correct)",
+  "Adding Graphify out of the box burned 7.72M tokens, +15% vs baseline, and got fewer right (25/30)",
+  "Graphify + Jev ranking burned 5.45M tokens, -19% vs baseline, 27/30 correct, ranked for $0.002",
+  "Transcript rounds this to 'saving 2 million vs Graphify and 1 million vs out-of-the-box Claude'",
+  "Creator hits his weekly usage limit 'a couple days into my reset'"
+ ],
+ "how_to_steps": [
+  "Record a baseline: run your workflow (30 code questions, one Sonnet agent each) and log tokens processed",
+  "Install Graphify on the repo and rerun; compare tokens and correctness",
+  "Add Jev as a ranking step so it picks the right file from the graph before Claude reads it; rerun",
+  "Optionally have Claude implement Graphify + Jev itself, or use the creator's one-shot prompt from the first comment"
+ ],
+ "on_screen_only": [
+  "'TOKEN HACKING EPISODE 7' title",
+  "Bar chart card: 'STEP 03 -- TOKENS TO FIND THE CODE / Add Jev ranking / Same graph. Jev picks the right file. Fewest tokens.' Bars: grep only (BASELINE) 6.72M, 27 of 30 correct; Graphify (OUT OF THE BOX) 7.72M, +15% vs baseline, 25 of 30 correct; Graphify + Jev (RANKED FOR $0.002) 5.45M, -19% vs baseline, 27 of 30 correct",
+  "Footnote: 'Tokens processed, in millions. 30 code questions, one Claude Sonnet agent per question, same repo, 0 errors. Bars start at zero.'",
+  "Top and bottom of the chart card are pixelated/blurred (hidden content)"
+ ],
+ "cta": "One-shot prompt is 'the first comment in the description'; daily series",
+ "relevance": {
+  "score": 3,
+  "why": "Token burn on weekly limits is Haji's real constraint, and this is one of the few creators publishing before/after numbers. But the series is heavily Jev/TypeSafe-centric (already saturated in the liked set) and the net gain is ~19%, not 'millions'."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Worth a one-hour experiment only if Haji already has a Jev key: baseline tokens, then Graphify + Jev file ranking. The real takeaway is cheaper: graph/index tools can INCREASE tokens, so measure before adopting any 'token saver'."
+ },
+ "verify": [
+  "What exactly is Graphify (repo/author)? Is it a Claude Code skill, MCP, or CLI, and is it maintained?",
+  "Is ducktate sponsored by or affiliated with TypeSafe/Jev (episodes 7 and 10 both push Jev)?",
+  "Methodology: 'tokens processed' includes cached input? 30 questions on one repo is a small sample",
+  "Jev pricing/availability for a solo founder ($0.002 per ranking claim)"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "New tool name (Graphify) and a measured warning that it raised token use 15% on its own; Jev-as-file-ranker is a new use of an already-liked model. Also a general correction: 'token saver' tools need A/B measurement."
+ }
+}
