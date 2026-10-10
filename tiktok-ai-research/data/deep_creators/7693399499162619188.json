@@ -1,0 +1,51 @@
+{
+ "id": "7693399499162619188",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7693399499162619188",
+ "creator": "brooke_wrightmode",
+ "title": "'i-have-adhd' (ayghri/i-have-adhd): free MIT skill/plugin for Claude Code, Codex and Cursor that forces action-first, numbered, tangent-free answers with no preamble or closers",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "i-have-adhd",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "GitHub ayghri/i-have-adhd, public, MIT; folders .agents/plugins, .claude-plugin, .codex-plugin, .cursor/skills/i-have-adhd, .github/workflows, evals, hooks, scripts, skills/i-have-adhd, tests; uninstall via 'claude plugin uninstall i-have-adhd' / 'claude plugin marketplace remove ...'"
+  }
+ ],
+ "claims": [
+  "Stops Claude or ChatGPT giving verbose, overwhelming answers and gives only what you need to get started",
+  "README: 'A skill for your coding assistant that stops it from burying the answer. Action first. Steps numbered. No \"Hope this helps!\"'",
+  "Ten rules: 1 lead with the next action, 2 number multi-step tasks, 3 end with one concrete next step, 4 suppress tangents, 5 (one action per turn, partly obscured), 6 (partly obscured), 7 make wins visible, 8 matter-of-fact errors, 9 cap lists at 5 items, 10 no preamble, no recap, no closers"
+ ],
+ "how_to_steps": [
+  "Install from the GitHub repo (INSTALL.md referenced; Claude plugin, Codex plugin and Cursor skill variants present)",
+  "Use normally; answers come action-first and numbered",
+  "To customize: fork, edit skills/i-have-adhd/SKILL.md, then swap in your copy with 'claude plugin uninstall i-have-adhd' and 'claude plugin marketplace remove ...' before reinstalling"
+ ],
+ "on_screen_only": [
+  "Title overlay 'If you use AI + have ADHD you NEED this'",
+  "GitHub mobile view: 'ayghri / i-have-adhd', Public, Issues 5, branch main, last commit 'ayghri 6 hours ago', README + MIT license",
+  "README 'What it does' / 'What changes' with Before ('Great question! Let me think about this. Your auth flow has a few moving pieces: the middleware, the token verification, and the cookie handling. Looking at...') vs After example",
+  "'The rules: 10 rules. Full text in SKILL.md' and 'Tune it: Fork, edit skills/i-have-adhd/SKILL.md, then swap your copy in: claude plugin uninstall i-have-adhd / claude plugin marketplace remove'",
+  "Overlays 'Drop ADHD below', 'Save + follow for more'"
+ ],
+ "cta": "Comment 'ADHD' for the repo link; save and follow",
+ "relevance": {
+  "score": 3,
+  "why": "A time-poor founder benefits from terse, next-action-first output; the repo is small, multi-platform (Claude/Codex/Cursor) and comes with evals/tests, which is more than most prompt-style skills. Overlaps with output-style settings and existing terse-output skills."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Trivial to install or to just paste the 10 rules into CLAUDE.md / a custom output style. Cheap experiment; check it does not suppress explanations needed for review of risky changes (rule 'cap lists at 5' could hide items)."
+ },
+ "verify": [
+  "Does github.com/ayghri/i-have-adhd exist and what is the exact install command (INSTALL.md)?",
+  "Does the plugin apply via hooks (folder 'hooks' present) or only as a skill, and does it conflict with other output-style skills?",
+  "Any measured effect on token use or accuracy (there is an 'evals' folder)?"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "New repo in the 'make Claude terse' family (liked set has caveman, Ponytail, Unlazy, Minto Pyramid): this one is a 10-rule action-first output skill with evals and Claude/Codex/Cursor packaging. Marginal addition; concept is largely covered."
+ }
+}

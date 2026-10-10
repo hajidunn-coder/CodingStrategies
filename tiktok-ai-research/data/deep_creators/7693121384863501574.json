@@ -1,0 +1,66 @@
+{
+ "id": "7693121384863501574",
+ "url": "https://www.tiktok.com/@brooke_wrightmode/video/7693121384863501574",
+ "creator": "brooke_wrightmode",
+ "title": "'hormozi-skills' (alexsmedile/hormozi-skills): free Claude Code plugin with one orchestrator, 5 subagents and 17 skills that turn a business idea into an Alex Hormozi-style offer, pricing, objection handling and landing-page copy",
+ "category": "plugins-skills",
+ "tools": [
+  {
+   "name": "hormozi-skills",
+   "kind": "plugin",
+   "where_seen": "screen",
+   "detail": "GitHub alexsmedile/hormozi-skills; install: 'claude plugin marketplace add alexsmedile/hormozi-skills' then 'claude plugin install hormozi-skills@hormozi-skills'; badges: Claude Code compatible, platform Claude Code | Codex | Cursor, inspired by Alex Hormozi; MIT license"
+  },
+  {
+   "name": "hormozi-orchestrator agent",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "orchestrator agent in the plugin; writes MARKET_RESEARCH.md, OFFER.md, OFFER_ANGLES.md and other output files"
+  },
+  {
+   "name": "/audit-offer, /pricing-strategy, /landing-page-copy",
+   "kind": "skill",
+   "where_seen": "screen",
+   "detail": "individual skills callable standalone with no prior context"
+  }
+ ],
+ "claims": [
+  "Turns Claude into 'Hormozi': creates offers and copy based on Hormozi's formulas",
+  "Includes over 10 skills for offer, pricing strategy, objection handling and landing copy that converts",
+  "README: 'One orchestrator, five specialized subagents, 17 skills, 11 output files'; 'describe your business and get a complete offer system -- market research, offer structure, pricing, pitch, hooks, landing page -- written to files in one session'",
+  "README problem statement: founders write vague offers that don't convert, price wrong (too low or too high without justification), or skip the sales layer (no hooks, pitch, landing copy)"
+ ],
+ "how_to_steps": [
+  "Add the marketplace: claude plugin marketplace add alexsmedile/hormozi-skills",
+  "Install: claude plugin install hormozi-skills@hormozi-skills",
+  "Describe your business and run the hormozi-orchestrator agent for the full offer system, or call a single skill such as /audit-offer, /pricing-strategy or /landing-page-copy",
+  "Read the generated files (MARKET_RESEARCH.md, OFFER.md, OFFER_ANGLES.md, etc.)"
+ ],
+ "on_screen_only": [
+  "Title overlay 'Claude is now Hormozi'",
+  "GitHub README of 'hormozi-skills': 'Turn a business idea into a complete, sellable offer -- using Alex Hormozi's frameworks'; contributors 'claude' and 'alexsm...' (alexsmedile)",
+  "Skill table (names partly cut off): '...model: Choose and structure the right business model', '...y: Frame offer as DFY / DWY / DIY tiers', '...duction: Reduce perceived effort in the offer', '...product: Turn rough idea into productized offer', '...page-copy: Generate landing page copy from an existing offer', '...search: Research market pain and demand signals', '...-destroyer: Map and neutralize common objections', '...les: Generate multiple positioning angles', '...strategy: Price anchoring and packaging', '...e: Productize a service business', '...elerator: Increase perceived value', '...ception: Improve how value is communicated'",
+  "'Skip the orchestrator and call any skill directly: /audit-offer, /pricing-strategy, /landing-page-copy -- works standalone with no prior context needed'",
+  "'System' section: orchestrator -> market = MARKET_RESEARCH.md, offer = OFFER.md + OFFER_ANGLES.md",
+  "Overlay 'comment HORMOZI'"
+ ],
+ "cta": "Comment 'Hormozi' to get the repo link; save and follow",
+ "relevance": {
+  "score": 4,
+  "why": "Directly useful for a founder packaging apps/services into offers: a structured, file-producing plugin for pricing, positioning, objections and landing copy, installable via Claude Code's plugin marketplace in two commands."
+ },
+ "implement_score": {
+  "score": 4,
+  "why": "Cheap to try (two commands, MIT). Run /audit-offer and /pricing-strategy against each of our products; the orchestrator's MARKET_RESEARCH/OFFER/OFFER_ANGLES files slot into the existing planning docs. Risk: generic 'Hormozi' output and 5 subagents burning tokens."
+ },
+ "verify": [
+  "Does github.com/alexsmedile/hormozi-skills exist, is it maintained (no releases shown), and is the marketplace install command accurate?",
+  "Quality of outputs vs. just prompting Claude with $100M Offers concepts; is the 'inspired by Alex Hormozi' content original or lifted?",
+  "Token cost of the orchestrator + 5 subagents in one session"
+ ],
+ "topic_match": "skills-plugins",
+ "gap": {
+  "is_new": true,
+  "what": "Different from the liked 'Hormozi AI Skill' (which searches 9,330 transcript passages for cited diagnoses): this is an offer-building workflow plugin (orchestrator + 17 skills producing OFFER.md, pricing, objection and landing-copy files). New repo and new use (packaging/pricing offers)."
+ }
+}

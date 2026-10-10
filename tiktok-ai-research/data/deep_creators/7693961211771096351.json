@@ -1,0 +1,48 @@
+{
+ "id": "7693961211771096351",
+ "url": "https://www.tiktok.com/@alanonai/video/7693961211771096351",
+ "creator": "alanonai",
+ "title": "Anthropic uses Claude Code to build Claude Code and then grew its product team; solo builders should spend more time on product decisions (what to build, which bug first) and ask their AI to help do product work",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Anthropic reportedly uses it to build and support Claude Code itself"
+  }
+ ],
+ "claims": [
+  "Anthropic uses Claude Code to build, support, and fix bugs in Claude Code",
+  "When engineers got faster, Anthropic hired more product strategy / product ownership / product management staff, not more coders",
+  "Deciding what feature to add or which bug to fix first are product decisions, not coding decisions",
+  "Because you can code fast does not mean you should add every feature; think about what customers want and what adds value"
+ ],
+ "how_to_steps": [
+  "Recognize that with fast coding, product thinking becomes the bottleneck",
+  "Before adding features, ask what the app should do, what customers want, and what actually adds value",
+  "Have a conversation with your AI about 'what does it mean to do product work for my app' and let it help you structure that work"
+ ],
+ "on_screen_only": [
+  "Talking head only; auto-captions mirror speech ('THEY DO. IT MAKES THEIR', 'PRODUCT MANAGEMENT, NOT', 'WHAT NEW FEATURE SHOULD THEY', 'EVEN THOUGH THEY CREATED', 'BECAUSE CODING TIME', 'THINK ABOUT WHAT YOUR', 'AND YOUR AI CAN HELP YOU')",
+  "No URLs, repos, UI or prompts shown"
+ ],
+ "cta": "'Let me know' if helpful; no link",
+ "relevance": {
+  "score": 3,
+  "why": "Same message as the creator's sibling video, aimed squarely at solo app builders; the one practical nudge is to use Claude itself as a product-management thinking partner (prioritization, feature value) rather than only as a coder."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Low effort: add a recurring 'product session' prompt (customer, value, which bug first) in Claude before coding sprints. No tool, no measurable claim; duplicate of 7692806131793677599 minus the newsletter plug."
+ },
+ "verify": [
+  "Source for 'Anthropic hired more product people' after Claude Code -- public statement or creator inference?",
+  "Is 'Anthropic uses Claude Code to build Claude Code' the well-known dogfooding claim from Anthropic engineering posts (likely yes)?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": false,
+  "what": "Duplicate of the same creator's 7692806131793677599 (product-time vs coding-time lesson); only addition is 'ask your AI to help you do product work'. The liked set does not cover product-management discipline either, but this adds no tool or technique."
+ }
+}

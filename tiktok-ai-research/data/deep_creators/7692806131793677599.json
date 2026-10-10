@@ -1,0 +1,60 @@
+{
+ "id": "7692806131793677599",
+ "url": "https://www.tiktok.com/@alanonai/video/7692806131793677599",
+ "creator": "alanonai",
+ "title": "Lesson for solo AI builders: after Claude Code sped up coding, Anthropic hired more product people; a solo founder must deliberately split 'product' time from 'coding' time (newsletter plug)",
+ "category": "business-with-ai",
+ "tools": [
+  {
+   "name": "Claude Code",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "Anthropic's coding agent, cited as the thing that made coding fast"
+  },
+  {
+   "name": "Claude Cowork",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "mentioned as one of the Anthropic products still needing dev work"
+  },
+  {
+   "name": "alanonai weekly newsletter",
+   "kind": "site",
+   "where_seen": "transcript",
+   "detail": "Sunday newsletter with a 'Founder Spotlight' article; link promised in comments, no URL shown"
+  }
+ ],
+ "claims": [
+  "Anthropic responded to faster coding (via Claude Code) by hiring more product people, not more engineers",
+  "Fast coding does not equal fast development; product definition and planning remain the bottleneck",
+  "Solo builders are 'the product people' and must take on product definition/planning roles themselves",
+  "Newsletter is weekly, Sundays, built for people building apps/agents/businesses with AI"
+ ],
+ "how_to_steps": [
+  "Separate your work into two modes: product work (defining what to build, which feature, why) and coding work",
+  "Spend deliberate time in product mode before coding, since coding is now cheap",
+  "Treat yourself as the whole product team when working solo"
+ ],
+ "on_screen_only": [
+  "Talking head only, auto-captions of the spoken words (e.g. 'AND CODING BECAME SO MUCH FASTER', 'THEN YOU CAN'T HIRE MORE PRODUCT PEOPLE', 'AND SINCE YOU CAN'T CREATE A PRODUCT TEAM', 'IT COMES OUT ON SUNDAYS', 'AND BUILDING A BUSINESS AROUND THAT.')",
+  "No URLs, repos, UI or prompts shown"
+ ],
+ "cta": "Link to the weekly newsletter in the comments; subscribe (unsubscribe anytime)",
+ "relevance": {
+  "score": 3,
+  "why": "Directly aimed at solo founders building with Claude Code; the point (coding is no longer the bottleneck, product decisions are) is true and worth hearing for a time-poor builder deciding what to build next. No tool or technique though."
+ },
+ "implement_score": {
+  "score": 2,
+  "why": "Nothing concrete to install. Actionable only as a habit: block a product-definition session (what/why/for whom) before each build sprint, or keep a PRODUCT.md next to CLAUDE.md. Low effort, modest payoff; the anecdote about Anthropic hiring is unverified."
+ },
+ "verify": [
+  "Is the claim that Anthropic hired more product people after Claude Code sourced from anything public (interview, blog) or the creator's inference?",
+  "What is the newsletter name/URL and is the 'Founder Spotlight' article worth reading?"
+ ],
+ "topic_match": "business-with-ai",
+ "gap": {
+  "is_new": true,
+  "what": "A mindset correction the liked set lacks: the liked content is tool-heavy (skills, agents, design), none of it addresses product management discipline for solo AI builders. Not a tool, just a framing; near-duplicate of the creator's other video 7693961211771096351."
+ }
+}

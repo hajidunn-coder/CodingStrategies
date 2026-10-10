@@ -1,0 +1,81 @@
+{
+ "id": "7678478945817300254",
+ "url": "https://www.tiktok.com/@colton.deannn/video/7678478945817300254",
+ "creator": "colton.deannn",
+ "title": "Five built-in Claude Code commands: /rewind (undo to before Claude touched files), /compact (run at ~50% context), /context (see what fills the window), /output-style explanatory, /memory (edit CLAUDE.md rules)",
+ "category": "claude-code-workflow",
+ "tools": [
+  {
+   "name": "Claude Code /rewind",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in command; jump back to before Claude touched anything"
+  },
+  {
+   "name": "Claude Code /compact",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in; summarizes context; creator says run at ~50% context"
+  },
+  {
+   "name": "Claude Code /context",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in; shows what is in the context window and how much remains"
+  },
+  {
+   "name": "Claude Code /output-style",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in; 'explanatory' style makes Claude explain each decision while coding"
+  },
+  {
+   "name": "Claude Code /memory",
+   "kind": "product",
+   "where_seen": "transcript",
+   "detail": "built-in; opens the project memory file (CLAUDE.md) to set persistent rules"
+  }
+ ],
+ "claims": [
+  "/rewind returns the project to the state before Claude touched anything",
+  "/compact should be run around halfway through the context window to avoid 'context rot'",
+  "/context shows exactly what is in the context window and how much is left",
+  "/output-style explanatory makes Claude explain why it makes each decision; good when building something new",
+  "/memory sets rules once so Claude follows them every session, so you stop repeating yourself"
+ ],
+ "how_to_steps": [
+  "When Claude breaks something: /rewind to restore the pre-change state",
+  "Around 50% context usage: /compact to summarize the conversation",
+  "Check usage with /context before deciding whether to compact",
+  "On a new build: /output-style and choose Explanatory so it narrates its reasoning",
+  "Open /memory and write project rules into CLAUDE.md (e.g. TypeScript strict mode, run tests before commit, match existing code style)"
+ ],
+ "on_screen_only": [
+  "Title card: '5 Most Useful Claude Code Commands'",
+  "Mock terminal for /rewind: src/auth.ts with removed lines '- skipChecks()' and '- grantAdmin(user)' and a 'build failing' badge, tagline 'jump back to before Claude touched anything'",
+  "Mock for /compact: 'CONTEXT WINDOW 92%' with 'context rot' warning, then '24%' with 'tip: run it around 50%' and 'summary - 1 tidy message'; tagline 'shrink your context before it rots'",
+  "Mock for /context: '> /context', 'System prompt 2.5k' bar; tagline 'see exactly what's in your window'",
+  "Mock for /output-style: 'Explanatory on', code 'const cache = new Map() // why: memoize so we don't recompute / return cache.get(key) ?? compute(key) // why: only fall back on a cache miss // why: keeps hot paths O(1)', note 'great when you're building something new'",
+  "Mock for /memory: 'CLAUDE.md project memory', '## Project rules - Always use TypeScript, strict mode - Run tests before every commit - Match the existing code style', 'Saved', 'applied every session'",
+  "End card 'THE CHEAT SHEET / THE 5 CLAUDE CODE COMMANDS: /rewind undo a mistake, /compact free up context, /context see what's loaded, /output-style explain decisions, /memory remember your rules', 'COMMENT \"CODES\"', handles '@colton.ai.dean - colton.deannn'"
+ ],
+ "cta": "Comment 'CODES' to get a doc explaining when/how to use the commands",
+ "relevance": {
+  "score": 3,
+  "why": "All five are real built-in Claude Code commands and the '/compact at ~50%' and 'explanatory output style for new builds' habits are useful, but a veteran Claude Code user likely already knows /compact, /context and /memory."
+ },
+ "implement_score": {
+  "score": 3,
+  "why": "Zero install cost. Worth adopting: check /context and compact proactively near 50%, use /output-style explanatory on unfamiliar builds, and keep rules in CLAUDE.md via /memory. The rewind guidance is handy but the UI shown is a mock-up."
+ },
+ "verify": [
+  "Is /rewind the actual current command name and does it restore file state as well as conversation (vs. checkpoint/Esc-Esc behaviour)?",
+  "Does /output-style still exist in the current Claude Code release or was it folded into another setting?",
+  "Is 'compact at 50%' better than auto-compact defaults, or just a rule of thumb?"
+ ],
+ "topic_match": "claude-code-workflow",
+ "gap": {
+  "is_new": true,
+  "what": "The liked set's slash-command video covered /ultrareview, /effort, /simplify, /loop, /mcp; this one covers a different five (/rewind, /compact, /context, /output-style, /memory) plus the '50% compact' and 'explanatory style on new builds' heuristics. Small, beginner-level addition."
+ }
+}
